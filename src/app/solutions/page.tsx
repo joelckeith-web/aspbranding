@@ -18,7 +18,9 @@ export default function SolutionsPage() {
         eyebrow="Our Solutions"
         heading="Digital Marketing<br>Solutions That Deliver"
         subheading="Proven strategies designed for home service professionals and law firms. Every solution is built on our ASP Growth System™."
-        bgType="dark"
+        bgType="image"
+        imageUrl="/images/backgrounds/hero-solutions.avif"
+        imagePosition="center center"
         showTrustLogos
         showForm
       />

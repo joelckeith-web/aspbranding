@@ -43,7 +43,9 @@ export default async function ServicePage({
         eyebrow="Solutions"
         heading={service.name}
         subheading={service.description}
-        bgType="dark"
+        bgType="image"
+        imageUrl="/images/backgrounds/hero-solutions.avif"
+        imagePosition="center center"
         showTrustLogos
         showForm
       />
