@@ -35,6 +35,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-# Large images - add optimized versions
-public/images/backgrounds/team-*.jpg
-public/images/portfolio/viking-hvac-1.jpg
