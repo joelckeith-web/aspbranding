@@ -116,8 +116,8 @@ export function Hero({
         </div>
 
         {showTrustLogos && (
-          <div className="mt-16 flex flex-wrap items-center gap-8 opacity-60">
-            <span className="text-xs uppercase tracking-widest text-white/50 font-bold">
+          <div className="mt-16 flex flex-wrap items-center gap-8">
+            <span className="text-xs uppercase tracking-widest text-white/70 font-bold">
               Trusted Partners
             </span>
             {["google-partner-light.png", "meta-business-partner.webp", "nahb-light.png", "superior-service-color.png"].map(
