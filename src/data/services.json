@@ -4,41 +4,161 @@
     "name": "Local SEO",
     "tagline": "Dominate Local Search Results",
     "description": "Get found by customers in your area. Our local SEO strategies put your business at the top of Google Maps and local search results, driving qualified leads directly to your door.",
-    "icon": "map-pin"
+    "icon": "map-pin",
+    "longDescription": "Local SEO is the foundation of any service-based business's digital marketing strategy. When a homeowner searches for 'HVAC repair near me' or 'best plumber in Austin,' your business needs to be the first result they see — not buried on page two behind your competitors. Our Local SEO system doesn't just improve rankings; it builds a complete local search presence that generates consistent, qualified leads month after month.",
+    "benefits": [
+      "Appear in the Google Map Pack for your key service areas",
+      "Optimized Google Business Profile that converts browsers to callers",
+      "Consistent NAP citations across 50+ directories",
+      "Review generation and reputation management system",
+      "Local content strategy targeting your service areas",
+      "Monthly ranking reports with transparent ROI tracking"
+    ],
+    "process": [
+      { "title": "Audit & Analysis", "description": "Complete analysis of your current local presence, competitor landscape, and keyword opportunities in your service area." },
+      { "title": "Foundation Setup", "description": "Google Business Profile optimization, citation building, on-site SEO, and schema markup implementation." },
+      { "title": "Content & Authority", "description": "Localized content creation, review generation campaigns, and local link building to establish authority." },
+      { "title": "Monitor & Scale", "description": "Monthly reporting, ranking tracking, and continuous optimization to expand into new service areas." }
+    ],
+    "stats": [
+      { "value": "3x", "label": "Average increase in Map Pack visibility" },
+      { "value": "150%", "label": "More qualified leads within 6 months" },
+      { "value": "50+", "label": "Directory citations built per client" }
+    ]
   },
   {
     "slug": "ppc-management",
     "name": "PPC Management",
     "tagline": "Maximize Your Ad Spend ROI",
     "description": "Stop wasting money on ads that don't convert. Our data-driven PPC campaigns on Google Ads and LSA deliver high-quality leads at the lowest possible cost per acquisition.",
-    "icon": "target"
+    "icon": "target",
+    "longDescription": "Pay-per-click advertising is the fastest way to generate leads for your service business — but only when managed correctly. Too many agencies burn through your ad budget with broad targeting, poor ad copy, and no conversion tracking. Our PPC management is built around one goal: getting you the highest quality leads at the lowest possible cost. Every dollar is tracked, every campaign is optimized, and every click is accounted for.",
+    "benefits": [
+      "Google Ads campaigns optimized for service-area targeting",
+      "Local Service Ads (LSA) setup and management",
+      "Call tracking with recorded calls for quality analysis",
+      "Landing page optimization for maximum conversions",
+      "Negative keyword management to eliminate waste",
+      "Weekly optimization and monthly strategy reviews"
+    ],
+    "process": [
+      { "title": "Account Audit", "description": "Deep analysis of your current campaigns, competitor ads, and market opportunity to identify quick wins and long-term strategy." },
+      { "title": "Campaign Build", "description": "Custom campaign structure with targeted ad groups, compelling ad copy, and conversion-optimized landing pages." },
+      { "title": "Launch & Optimize", "description": "Campaign launch with daily monitoring, bid management, and A/B testing to drive down cost per lead." },
+      { "title": "Scale & Report", "description": "Expand winning campaigns, test new markets, and deliver transparent monthly ROI reports." }
+    ],
+    "stats": [
+      { "value": "40%", "label": "Average reduction in cost per lead" },
+      { "value": "2.5x", "label": "ROAS improvement in first 90 days" },
+      { "value": "100%", "label": "Transparent reporting on every dollar" }
+    ]
   },
   {
     "slug": "social-media-marketing",
     "name": "Social Media Marketing",
     "tagline": "Build Your Brand & Engage Your Audience",
     "description": "Transform your social media presence from an afterthought to a lead-generating machine. Strategic content, community management, and paid social campaigns that drive real results.",
-    "icon": "share"
+    "icon": "share",
+    "longDescription": "Social media isn't just about posting pretty pictures — it's a powerful tool for building brand awareness, generating leads, and establishing trust with your target audience. Our social media marketing goes beyond vanity metrics like likes and followers. We create strategic content that positions your business as the authority in your market, engages your ideal customers, and drives real business results you can measure.",
+    "benefits": [
+      "Custom content strategy aligned with your business goals",
+      "Professional content creation and graphic design",
+      "Community management and engagement",
+      "Paid social campaigns on Facebook, Instagram, and LinkedIn",
+      "Monthly content calendars with approval workflow",
+      "Performance analytics and ROI reporting"
+    ],
+    "process": [
+      { "title": "Brand Audit", "description": "Analysis of your current social presence, competitor activity, and audience demographics to build a data-driven strategy." },
+      { "title": "Strategy & Calendar", "description": "Custom content strategy with monthly editorial calendars, brand voice guidelines, and content themes." },
+      { "title": "Create & Publish", "description": "Professional content creation, scheduling, and community management across all platforms." },
+      { "title": "Analyze & Grow", "description": "Monthly performance reviews, audience growth tracking, and strategy adjustments for continuous improvement." }
+    ],
+    "stats": [
+      { "value": "200%", "label": "Average engagement increase" },
+      { "value": "5x", "label": "More brand impressions monthly" },
+      { "value": "30+", "label": "Custom posts created per month" }
+    ]
   },
   {
     "slug": "web-design",
     "name": "Web Design & Development",
     "tagline": "Websites Built to Convert",
     "description": "Beautiful, fast, and conversion-optimized websites that turn visitors into customers. Custom designs, ADA-compliant, SEO-ready, and built on secure, modern platforms.",
-    "icon": "monitor"
+    "icon": "monitor",
+    "longDescription": "Your website is your most important digital asset — it's where first impressions are made and where leads are won or lost. We don't build template websites that look like everyone else's. Every site we create is custom-designed for your brand, optimized for conversions, and built on modern technology that's fast, secure, and easy to maintain. ADA-compliant, mobile-responsive, and SEO-ready from day one.",
+    "benefits": [
+      "Custom designs tailored to your brand identity",
+      "Mobile-responsive layouts that look great on every device",
+      "ADA/WCAG compliant for accessibility",
+      "SEO-optimized structure and content",
+      "Fast load times with modern hosting",
+      "SSL security and daily backups included"
+    ],
+    "process": [
+      { "title": "Discovery & Strategy", "description": "Deep dive into your brand, audience, and goals to create a website strategy that drives conversions." },
+      { "title": "Design & Prototype", "description": "Custom design mockups with revision rounds until every page matches your vision." },
+      { "title": "Development & QA", "description": "Build on modern platforms with rigorous testing across browsers, devices, and accessibility standards." },
+      { "title": "Launch & Support", "description": "Site launch with training, ongoing support, and performance monitoring." }
+    ],
+    "stats": [
+      { "value": "3s", "label": "Average page load time or less" },
+      { "value": "100%", "label": "Mobile responsive and ADA compliant" },
+      { "value": "2x", "label": "Conversion rate improvement average" }
+    ]
   },
   {
     "slug": "branding",
     "name": "Branding & Graphic Design",
     "tagline": "Stand Out From the Competition",
     "description": "Create a brand identity that commands attention and builds trust. From logos and brand guidelines to marketing collateral and presentation design.",
-    "icon": "palette"
+    "icon": "palette",
+    "longDescription": "Your brand is more than a logo — it's the promise you make to every customer and the perception they carry after every interaction. We create complete brand identities that differentiate you from competitors, build instant trust, and give your business a professional presence that matches the quality of your work. From initial concept to final brand guidelines, we craft every element with intention.",
+    "benefits": [
+      "Custom logo design with multiple concepts",
+      "Complete brand style guide with colors, fonts, and usage rules",
+      "Business card, letterhead, and collateral design",
+      "Vehicle wrap and signage design",
+      "Social media templates and branded assets",
+      "Presentation and pitch deck design"
+    ],
+    "process": [
+      { "title": "Brand Discovery", "description": "Workshop to understand your values, audience, competitors, and the personality your brand needs to project." },
+      { "title": "Concept Development", "description": "Multiple creative directions explored and refined through collaborative feedback rounds." },
+      { "title": "Design Execution", "description": "Final brand identity built out across all touchpoints — digital, print, and environmental." },
+      { "title": "Brand Delivery", "description": "Complete brand guide, asset library, and templates delivered for consistent brand application." }
+    ],
+    "stats": [
+      { "value": "100%", "label": "Custom designs — never templates" },
+      { "value": "3+", "label": "Creative concepts per project" },
+      { "value": "Full", "label": "Ownership of all brand assets" }
+    ]
   },
   {
     "slug": "consulting",
     "name": "Consulting & Brand Therapy",
     "tagline": "Strategic Guidance for Growth",
     "description": "Get expert guidance from senior strategists who have helped businesses scale from startup to multi-million dollar operations. Business coaching, brand strategy, and growth planning.",
-    "icon": "lightbulb"
+    "icon": "lightbulb",
+    "longDescription": "Sometimes you don't need more marketing — you need a clearer strategy. Our consulting and brand therapy sessions are designed for business owners who are ready to step back, assess their position, and build a roadmap for sustainable growth. Whether you're stuck at a revenue plateau, overwhelmed by marketing options, or need an objective expert to evaluate your current efforts, our senior strategists provide the clarity and direction you need.",
+    "benefits": [
+      "One-on-one sessions with senior growth strategists",
+      "Complete business and marketing audit",
+      "Revenue barrier analysis and breakthrough plan",
+      "Competitive landscape assessment",
+      "90-day growth roadmap with clear milestones",
+      "Ongoing accountability and support"
+    ],
+    "process": [
+      { "title": "Discovery Session", "description": "Deep dive into your business, revenue, goals, and the barriers preventing your next stage of growth." },
+      { "title": "Audit & Analysis", "description": "Complete review of your marketing, operations, and competitive position with data-driven insights." },
+      { "title": "Strategy Build", "description": "Custom growth strategy with prioritized action items, timeline, and expected outcomes." },
+      { "title": "Execute & Coach", "description": "Ongoing coaching sessions to guide implementation, troubleshoot challenges, and keep momentum." }
+    ],
+    "stats": [
+      { "value": "200+", "label": "Businesses coached and consulted" },
+      { "value": "85%", "label": "Clients break through their revenue barrier" },
+      { "value": "1:1", "label": "Dedicated senior strategist" }
+    ]
   }
 ]

@@ -36,9 +36,16 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const relatedServices = servicesData.filter((s) => s.slug !== slug).slice(0, 3);
+  const svc = service as typeof service & {
+    longDescription?: string;
+    benefits?: string[];
+    process?: { title: string; description: string }[];
+    stats?: { value: string; label: string }[];
+  };
 
   return (
     <main id="primary" className="site-main">
+      {/* Hero with form */}
       <Hero
         eyebrow="Solutions"
         heading={service.name}
@@ -51,34 +58,144 @@ export default async function ServicePage({
       />
 
       {/* Trust bar */}
-      <section className="bg-asp-surface-light border-y border-gray-200 py-6">
-        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-center gap-8">
-          {["google-partner-light.png", "meta-business-partner.webp", "nahb-light.png"].map((badge) => (
-            <img key={badge} src={`/images/badges/${badge}`} alt="" className="h-12 w-auto object-contain opacity-60" loading="lazy" />
-          ))}
+      <section className="bg-white border-b border-gray-200 py-8">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-10">
+            {[
+              { file: "google-partner.png", alt: "Google Partner" },
+              { file: "meta-business-partner.webp", alt: "Meta Business Partner" },
+              { file: "nahb.png", alt: "NAHB" },
+              { file: "superior-service-color.png", alt: "Superior Service" },
+            ].map((badge) => (
+              <img
+                key={badge.alt}
+                src={`/images/badges/${badge.file}`}
+                alt={badge.alt}
+                className="h-12 md:h-16 w-auto object-contain"
+                loading="lazy"
+              />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Service Overview */}
+      {/* Service Overview — full description */}
       <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-[var(--spacing-content)] mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center mb-12">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <ScrollReveal>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 {service.tagline}
               </span>
               <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-6">
                 What is {service.name}?
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
-                {service.description}
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                {svc.longDescription || service.description}
               </p>
-            </div>
-          </ScrollReveal>
+              <Link
+                href="/contact"
+                className="inline-block bg-asp-blue text-white font-bold py-3 px-6 rounded-[var(--radius-asp-md)] hover:bg-asp-blue-dark transition-all no-underline text-sm"
+              >
+                Get Started Today
+              </Link>
+            </ScrollReveal>
+
+            {/* Stats */}
+            {svc.stats && (
+              <ScrollReveal animation="slide-left">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                  {svc.stats.map((stat) => (
+                    <div
+                      key={stat.label}
+                      className="bg-asp-gradient-hero rounded-[var(--radius-asp-xl)] p-6 text-center"
+                    >
+                      <p className="font-black text-3xl text-asp-blue-light mb-2">{stat.value}</p>
+                      <p className="text-white/70 text-sm">{stat.label}</p>
+                    </div>
+                  ))}
+                </div>
+              </ScrollReveal>
+            )}
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Benefits */}
+      {svc.benefits && (
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal>
+              <div className="text-center mb-14">
+                <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                  What You Get
+                </span>
+                <h2 className="font-black text-3xl md:text-4xl text-asp-blue">
+                  {service.name} Benefits
+                </h2>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal animation="stagger">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {svc.benefits.map((benefit, i) => (
+                  <div
+                    key={i}
+                    className="bg-white rounded-[var(--radius-asp-xl)] border border-gray-100 shadow-asp-sm p-6 flex items-start gap-4"
+                  >
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-asp-gradient-accent flex items-center justify-center">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed pt-2">{benefit}</p>
+                  </div>
+                ))}
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
+      {/* Process */}
+      {svc.process && (
+        <section className="py-16 md:py-24 bg-asp-gradient-hero text-white relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(76,201,240,0.08)_0%,transparent_60%)] pointer-events-none" />
+          <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <ScrollReveal>
+              <div className="text-center mb-14">
+                <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                  How It Works
+                </span>
+                <h2 className="font-black text-3xl md:text-4xl text-white">
+                  Our {service.name} Process
+                </h2>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal animation="stagger">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {svc.process.map((step, i) => (
+                  <div
+                    key={step.title}
+                    className="bg-white/[0.07] border border-white/10 rounded-[var(--radius-asp-xl)] p-8 relative"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-asp-gradient-accent flex items-center justify-center mb-5 shadow-asp-md">
+                      <span className="font-black text-lg text-white">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                    </div>
+                    <h3 className="font-black text-lg text-white mb-3">{step.title}</h3>
+                    <p className="text-white/70 text-sm leading-relaxed">{step.description}</p>
+                  </div>
+                ))}
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
+      {/* CTA */}
       <section className="py-16 md:py-24 bg-asp-blue text-white">
         <div className="max-w-[var(--spacing-content)] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
@@ -86,7 +203,7 @@ export default async function ServicePage({
               Ready to Get Started with {service.name}?
             </h2>
             <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-              Let&apos;s discuss how our {service.name.toLowerCase()} services can help your business grow.
+              Let&apos;s discuss how our {service.name.toLowerCase()} services can help your business break through to the next revenue level.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link href="/contact" className="inline-block bg-white text-asp-blue font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white/90 transition-all no-underline">
@@ -100,6 +217,7 @@ export default async function ServicePage({
         </div>
       </section>
 
+      {/* Testimonials */}
       <Testimonials />
 
       {/* Related Services */}
