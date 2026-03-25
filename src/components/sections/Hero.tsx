@@ -66,9 +66,9 @@ export function Hero({
 
       {/* Content */}
       <div className="relative z-20 w-full max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
-        <div className={showForm ? "grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center" : ""}>
+        <div className={showForm ? "grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start" : ""}>
           {/* Text side */}
-          <div className={showForm ? "" : "max-w-3xl"}>
+          <div className={showForm ? "lg:pt-8" : "max-w-3xl"}>
             {eyebrow && (
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 {eyebrow}

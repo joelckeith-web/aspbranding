@@ -43,11 +43,14 @@ export function Industries({ variant = "dark-transparent" }: { variant?: string 
         <ScrollReveal>
           <div className="text-center mb-14">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Who We Serve
+              Industries
             </span>
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white">
-              Industries We Serve
+            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white mb-4">
+              Who We Help
             </h2>
+            <p className="text-white/60 text-lg max-w-2xl mx-auto">
+              We specialize in marketing for local service businesses and professional firms that depend on leads to grow.
+            </p>
           </div>
         </ScrollReveal>
 

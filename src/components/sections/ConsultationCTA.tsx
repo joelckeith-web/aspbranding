@@ -5,9 +5,9 @@ import { BUSINESS } from "@/lib/constants";
 const DELIVERABLES = [
   "Complete ASP Growth System™ assessment",
   "Revenue barrier analysis and breakthrough strategy",
-  "Custom package recommendation based on revenue stage",
+  "Custom package recommendation based on your revenue stage",
   "90-day systematic implementation roadmap",
-  "No-obligation consultation with growth specialists",
+  "No-obligation consultation with our growth specialists",
 ];
 
 export function ConsultationCTA() {
@@ -28,9 +28,10 @@ export function ConsultationCTA() {
               Ready to Break Your Revenue Barrier?
             </p>
             <p className="text-white/70 leading-relaxed mb-8">
-              Stop guessing and start growing with a proven system designed for your
-              revenue stage. The ASP Growth System&trade; has helped 200+ businesses
-              break through to the next level.
+              Schedule your ASP Growth System&trade; assessment to discover which proven package
+              will systematically break through your revenue ceiling. We&apos;ll analyze your
+              current position and recommend the exact system that&apos;s helped hundreds of
+              home service professionals and law firms scale past their barriers.
             </p>
             <Link
               href="/contact"

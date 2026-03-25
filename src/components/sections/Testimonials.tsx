@@ -12,7 +12,7 @@ export function Testimonials({ testimonials = testimonialData }: TestimonialProp
         <ScrollReveal>
           <div className="text-center mb-14">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Client Success
+              Client Results
             </span>
             <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-asp-blue">
               What Our Clients Say

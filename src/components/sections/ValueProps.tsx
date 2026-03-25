@@ -5,40 +5,40 @@ const VALUE_PROPS = [
     title: "The ASP Growth System™",
     subtitle: "Proven System",
     description:
-      "200+ successful client transformations using our proprietary growth methodology. No guesswork — just systematic strategies proven to break revenue barriers.",
+      "Our systematic approach helps businesses break through revenue barriers with proven methods — no experiments, no guesswork. We've refined this system through 200+ successful client transformations.",
     icon: (
       <svg className="w-6 h-6 text-asp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
-    link: "/solutions",
-    linkText: "Explore Our System",
+    link: "/about",
+    linkText: "Learn More",
   },
   {
     title: "Complete Client Ownership",
     subtitle: "You Own Everything",
     description:
-      "Every ad account, every campaign, every piece of data — it's all yours. No vendor lock-in, no hidden fees, full transparency into everything we do.",
+      "Your website, ad accounts, analytics, and data belong to you. No vendor lock-in, no proprietary systems, full transparency. Build assets you own, not rented systems that disappear.",
     icon: (
       <svg className="w-6 h-6 text-asp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
       </svg>
     ),
     link: "/about",
-    linkText: "Our Promise",
+    linkText: "Learn More",
   },
   {
     title: "Revenue Barrier Specialists",
     subtitle: "Revenue-Stage Experts",
     description:
-      "Whether you're at $1M, $3M, or $5M — we've helped businesses at every stage break through to the next level with tailored strategies for your exact situation.",
+      "We specialize in helping home service companies and law firms break through the $1M, $3M, and $5M revenue barriers. We understand the specific challenges at each growth stage.",
     icon: (
       <svg className="w-6 h-6 text-asp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
       </svg>
     ),
-    link: "/solutions",
-    linkText: "See Our Packages",
+    link: "/about",
+    linkText: "Learn More",
   },
 ];
 
@@ -50,6 +50,17 @@ export function ValueProps() {
         style={{ backgroundImage: "url(/images/backgrounds/value-props-bg.png)", backgroundSize: "cover" }}
       />
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <ScrollReveal>
+          <div className="text-center mb-12">
+            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-asp-blue">
+              Why Home Service Professionals and Law Firms Choose ASP
+            </h2>
+            <p className="mt-4 text-asp-blue-light font-bold text-lg">
+              Proven Systems. You Own Everything. Revenue-Stage Experts.
+            </p>
+          </div>
+        </ScrollReveal>
+
         <ScrollReveal animation="stagger">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {VALUE_PROPS.map((prop) => (

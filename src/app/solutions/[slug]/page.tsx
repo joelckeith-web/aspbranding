@@ -57,28 +57,6 @@ export default async function ServicePage({
         showForm
       />
 
-      {/* Trust bar */}
-      <section className="bg-white border-b border-gray-200 py-8">
-        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-10">
-            {[
-              { file: "google-partner-rgb.png", alt: "Google Partner" },
-              { file: "meta-business-partner.webp", alt: "Meta Business Partner" },
-              { file: "nahb.png", alt: "NAHB" },
-              { file: "superior-service-color.png", alt: "Superior Service" },
-            ].map((badge) => (
-              <img
-                key={badge.alt}
-                src={`/images/badges/${badge.file}`}
-                alt={badge.alt}
-                className="h-14 md:h-20 w-auto object-contain"
-                loading="lazy"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Service Overview — full description */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">

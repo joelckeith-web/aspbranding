@@ -1,14 +1,14 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const POINTS = [
-  "ASP Growth System™ — Proven systematic approach to breaking revenue barriers",
-  "Complete client ownership of all assets, ad accounts, and data",
-  "Revenue-stage expertise — specialized in $1M, $3M, and $5M barriers",
-  "Home service and legal industry focus with deep vertical knowledge",
-  "Full transparency in every campaign, metric, and dollar spent",
-  "Phased approach that scales with your business growth",
-  "Proven revenue breakthroughs for 200+ client businesses",
-  "Systematic delivery using proven methods — no guesswork",
+  "ASP Growth System™ — Proven systematic approach to break revenue barriers",
+  "Complete client ownership of all digital assets and data",
+  "Revenue-stage expertise — Specialized in $1M, $3M, and $5M growth challenges",
+  "Home service and legal focus — Deep industry knowledge and systematic approaches",
+  "Full transparency in all campaigns and performance metrics",
+  "Phased approach — Systems that scale with your business growth",
+  "Proven revenue breakthroughs across home services and legal practices",
+  "Systematic delivery using proven methods, not experiments",
 ];
 
 export function WhyChoose() {
@@ -18,10 +18,10 @@ export function WhyChoose() {
         <ScrollReveal>
           <div className="text-center mb-12">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              The ASP Difference
+              Why Choose ASP
             </span>
             <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white">
-              Why Choose ASP
+              The Strategic Choice for Local Business Marketing
             </h2>
           </div>
         </ScrollReveal>

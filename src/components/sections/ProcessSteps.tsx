@@ -6,7 +6,7 @@ const STEPS = [
     title: "Assess Your Current Position",
     subtitle: "Revenue Barrier Analysis",
     description:
-      "We analyze your business stage, competition, and growth obstacles to understand exactly where you are and what's holding you back.",
+      "We analyze your business stage, competition, and growth obstacles to determine which systematic approach will break through your specific revenue barriers.",
     deliverable: "Custom ASP assessment and growth package recommendation",
   },
   {
@@ -14,16 +14,16 @@ const STEPS = [
     title: "Strategize Your Breakthrough",
     subtitle: "Systematic Growth Planning",
     description:
-      "We implement our proven ASP Growth System™ tailored to your specific revenue stage, industry, and growth goals.",
-    deliverable: "Complete systematic growth foundation",
+      "We implement our proven ASP Growth System™ using systematic methods that scale with your business as you grow through each revenue barrier.",
+    deliverable: "Complete systematic growth foundation optimized for your revenue stage",
   },
   {
     num: "03",
     title: "Perform & Execute",
     subtitle: "Systematic Implementation",
     description:
-      "Full transparency, complete asset ownership, and systematic execution that delivers measurable results month over month.",
-    deliverable: "Active growth system with transparent tracking",
+      "Your growth system launches with full transparency and systematic optimization. You own all assets and see exactly how each component drives revenue growth as your business scales.",
+    deliverable: "Active growth system with transparent performance tracking and scaling capability",
   },
 ];
 
@@ -38,7 +38,7 @@ export function ProcessSteps() {
         <ScrollReveal>
           <div className="text-center mb-14">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Our Process
+              The ASP Process
             </span>
             <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white">
               The ASP Growth System&trade;

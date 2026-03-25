@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 const FEATURES = [
   {
     title: "Optimized for Search",
-    description: "Built-in SEO foundations that help search engines find and rank your site.",
+    description: "Built-in SEO foundations so customers find you on Google.",
     icon: (
       <svg className="w-6 h-6 text-asp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -12,7 +12,7 @@ const FEATURES = [
   },
   {
     title: "Beautiful, Custom Designs",
-    description: "Unique designs crafted for your brand — not cookie-cutter templates.",
+    description: "Unique designs that reflect your brand — not cookie-cutter templates.",
     icon: (
       <svg className="w-6 h-6 text-asp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -21,7 +21,7 @@ const FEATURES = [
   },
   {
     title: "ADA-Compliant & Accessible",
-    description: "WCAG-compliant websites that every visitor can use with confidence.",
+    description: "WCAG-compliant so every visitor can use your site with ease.",
     icon: (
       <svg className="w-6 h-6 text-asp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -30,7 +30,7 @@ const FEATURES = [
   },
   {
     title: "Conversion-Focused",
-    description: "Every page engineered to turn visitors into leads and customers.",
+    description: "Every page designed to turn visitors into leads and customers.",
     icon: (
       <svg className="w-6 h-6 text-asp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -39,7 +39,7 @@ const FEATURES = [
   },
   {
     title: "Secure Hosting & SSL",
-    description: "Fast, secure hosting with daily backups and SSL certificates included.",
+    description: "Fast, secure hosting with SSL certificates and daily backups.",
     icon: (
       <svg className="w-6 h-6 text-asp-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />

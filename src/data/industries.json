@@ -1,32 +1,32 @@
 [
   {
     "name": "HVAC",
-    "description": "Dominate local search, fill your service calendar year-round with targeted SEO and PPC campaigns designed for heating and cooling professionals.",
+    "description": "Dominate local search and fill your service calendar year-round with targeted SEO, PPC, and content strategies built for HVAC companies.",
     "icon": "thermometer"
   },
   {
     "name": "Plumbing",
-    "description": "Generate emergency calls and build recurring customers with local visibility strategies that put your plumbing business first when homeowners need help.",
+    "description": "Get more emergency calls and recurring customers with local visibility strategies that put your business at the top when customers need you most.",
     "icon": "wrench"
   },
   {
     "name": "Electrical",
-    "description": "Build a professional online presence that generates trust and quality leads. Electrical contractors deserve marketing that matches their expertise.",
+    "description": "Stand out from competitors with a professional online presence that builds trust and generates high-quality residential and commercial leads.",
     "icon": "zap"
   },
   {
     "name": "Roofing",
-    "description": "Capture storm-driven demand and maintain a steady pipeline. Reputation management and lead generation built for roofing companies that want to grow.",
+    "description": "Capture storm-driven demand and build a steady pipeline of roofing projects with search, ads, and reputation management.",
     "icon": "home"
   },
   {
     "name": "Law Firms",
-    "description": "Build authority with content marketing, dominate local search results, and run conversion-focused campaigns that bring in qualified cases.",
+    "description": "Attract qualified clients with authority-building content, local SEO, and conversion-optimized campaigns designed for legal practices.",
     "icon": "scale"
   },
   {
     "name": "Home Inspectors",
-    "description": "Connect with real estate agents and target active homebuyers. Marketing strategies designed specifically for the home inspection industry.",
+    "description": "Build your inspection business with marketing strategies that connect you with real estate agents and homebuyers actively searching for your services.",
     "icon": "search"
   }
 ]
