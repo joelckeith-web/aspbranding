@@ -46,10 +46,10 @@ export function ProcessSteps() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left — YouTube in phone mockup */}
-          <ScrollReveal className="flex justify-center lg:sticky lg:top-32">
-            <div className="relative w-[295px] md:w-[320px]">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-10 items-start">
+          {/* Left — YouTube in phone mockup (2 cols) */}
+          <ScrollReveal className="lg:col-span-2 flex justify-center lg:sticky lg:top-32">
+            <div className="relative w-[280px] md:w-[300px]">
               <div className="bg-black rounded-[2.5rem] border-4 border-gray-700 overflow-hidden shadow-2xl">
                 <div className="h-6 bg-black flex justify-center items-end pb-1">
                   <div className="w-20 h-4 bg-gray-800 rounded-full" />
@@ -67,25 +67,25 @@ export function ProcessSteps() {
             </div>
           </ScrollReveal>
 
-          {/* Right — Steps (aligned to phone frame height) */}
-          <div className="flex flex-col justify-between h-full space-y-6 lg:space-y-0" style={{ minHeight: "calc(320px * 16 / 9 + 2rem)" }}>
+          {/* Right — Steps (3 cols, compact cards) */}
+          <div className="lg:col-span-3 flex flex-col gap-4">
             {STEPS.map((step) => (
               <ScrollReveal key={step.num}>
-                <div className="bg-white/[0.07] border border-white/10 rounded-[var(--radius-asp-xl)] p-8 lg:p-10">
-                  <div className="flex items-start gap-5">
-                    <div className="flex-shrink-0 w-14 h-14 rounded-full bg-asp-gradient-accent flex items-center justify-center shadow-asp-md">
-                      <span className="font-black text-lg text-white">{step.num}</span>
+                <div className="bg-white/[0.07] border border-white/10 rounded-[var(--radius-asp-xl)] p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-asp-gradient-accent flex items-center justify-center shadow-asp-md">
+                      <span className="font-black text-base text-white">{step.num}</span>
                     </div>
                     <div className="flex-1">
                       <p className="text-asp-blue-light font-bold text-xs uppercase tracking-widest mb-1">
                         {step.subtitle}
                       </p>
-                      <h3 className="font-black text-xl text-white mb-3">{step.title}</h3>
-                      <p className="text-white/70 leading-relaxed text-sm mb-4">
+                      <h3 className="font-black text-lg text-white mb-2">{step.title}</h3>
+                      <p className="text-white/70 leading-relaxed text-sm mb-3">
                         {step.description}
                       </p>
-                      <div className="bg-white/5 rounded-[var(--radius-asp-md)] px-4 py-3 border border-white/10">
-                        <p className="text-xs text-asp-blue-light font-bold uppercase tracking-wider mb-1">
+                      <div className="bg-white/5 rounded-[var(--radius-asp-md)] px-3 py-2.5 border border-white/10">
+                        <p className="text-xs text-asp-blue-light font-bold uppercase tracking-wider mb-0.5">
                           Deliverable
                         </p>
                         <p className="text-white/80 text-sm">{step.deliverable}</p>
