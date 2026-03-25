@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "local-seo",
+    "name": "Local SEO",
+    "tagline": "Dominate Local Search Results",
+    "description": "Get found by customers in your area. Our local SEO strategies put your business at the top of Google Maps and local search results, driving qualified leads directly to your door.",
+    "icon": "map-pin"
+  },
+  {
+    "slug": "ppc-management",
+    "name": "PPC Management",
+    "tagline": "Maximize Your Ad Spend ROI",
+    "description": "Stop wasting money on ads that don't convert. Our data-driven PPC campaigns on Google Ads and LSA deliver high-quality leads at the lowest possible cost per acquisition.",
+    "icon": "target"
+  },
+  {
+    "slug": "social-media-marketing",
+    "name": "Social Media Marketing",
+    "tagline": "Build Your Brand & Engage Your Audience",
+    "description": "Transform your social media presence from an afterthought to a lead-generating machine. Strategic content, community management, and paid social campaigns that drive real results.",
+    "icon": "share"
+  },
+  {
+    "slug": "web-design",
+    "name": "Web Design & Development",
+    "tagline": "Websites Built to Convert",
+    "description": "Beautiful, fast, and conversion-optimized websites that turn visitors into customers. Custom designs, ADA-compliant, SEO-ready, and built on secure, modern platforms.",
+    "icon": "monitor"
+  },
+  {
+    "slug": "branding",
+    "name": "Branding & Graphic Design",
+    "tagline": "Stand Out From the Competition",
+    "description": "Create a brand identity that commands attention and builds trust. From logos and brand guidelines to marketing collateral and presentation design.",
+    "icon": "palette"
+  },
+  {
+    "slug": "consulting",
+    "name": "Consulting & Brand Therapy",
+    "tagline": "Strategic Guidance for Growth",
+    "description": "Get expert guidance from senior strategists who have helped businesses scale from startup to multi-million dollar operations. Business coaching, brand strategy, and growth planning.",
+    "icon": "lightbulb"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Foundation Builder",
+    "price": "$2,200",
+    "period": "/month",
+    "tagline": "Perfect for breaking the $1M barrier",
+    "featured": false,
+    "features": [
+      "Complete ASP Growth System™ assessment",
+      "Local SEO foundation & optimization",
+      "Google Ads + Local Service Ads management",
+      "Monthly strategy consulting session",
+      "Foundation marketing systems installation"
+    ],
+    "bestFor": "Ready to systematically scale past $1M",
+    "note": "Ad spend not included"
+  },
+  {
+    "name": "Growth Accelerator",
+    "price": "$3,850",
+    "period": "/month",
+    "tagline": "Perfect for scaling to the $3M barrier",
+    "featured": true,
+    "features": [
+      "Full ASP Growth System™ implementation",
+      "Advanced PPC + LSA campaign management",
+      "Strategic SEO + backlink building",
+      "Enhanced bi-weekly consulting sessions",
+      "Priority support & dedicated strategist"
+    ],
+    "bestFor": "$1M+ ready to dominate your market",
+    "note": "Ad spend not included"
+  },
+  {
+    "name": "Premium Partnership",
+    "price": "$5,500",
+    "period": "/month",
+    "tagline": "Perfect for breaking the $5M barrier",
+    "featured": false,
+    "features": [
+      "Custom system optimization & scaling",
+      "Multi-platform ads (Google, Meta, LSA)",
+      "Comprehensive SEO + social media strategy",
+      "Dedicated account management & weekly calls",
+      "Enterprise-level marketing systems"
+    ],
+    "bestFor": "$3M+ ready for market leadership",
+    "note": "Ad spend not included"
+  }
+]

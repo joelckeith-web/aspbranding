@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* ── ASP Design Tokens ── */
+@theme {
+  --color-asp-black: #000000;
+  --color-asp-blue: #002366;
+  --color-asp-blue-dark: #001a4d;
+  --color-asp-blue-light: #4CC9F0;
+  --color-asp-purple: #9F4CFF;
+  --color-asp-surface-light: #f8f9fa;
+  --color-asp-surface-navy: #001233;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-asp-sm: 0 2px 8px rgba(0, 35, 102, 0.06);
+  --shadow-asp-md: 0 4px 16px rgba(0, 35, 102, 0.1);
+  --shadow-asp-lg: 0 8px 32px rgba(0, 35, 102, 0.12);
+  --shadow-asp-xl: 0 16px 48px rgba(0, 35, 102, 0.16);
+
+  --radius-asp-sm: 0.25rem;
+  --radius-asp-md: 0.5rem;
+  --radius-asp-lg: 0.75rem;
+  --radius-asp-xl: 1rem;
+  --radius-asp-2xl: 1.25rem;
+
+  --spacing-wide: 80rem;
+  --spacing-content: 48rem;
+  --spacing-ultra: 90rem;
+}
+
+/* ── Base styles ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Gradient utilities ── */
+.bg-asp-gradient-hero {
+  background: linear-gradient(135deg, #000000 0%, #002366 60%, #001a4d 100%);
+}
+
+.bg-asp-gradient-primary {
+  background: linear-gradient(135deg, #002366 0%, #4CC9F0 100%);
+}
+
+.bg-asp-gradient-accent {
+  background: linear-gradient(135deg, #4CC9F0 0%, #9F4CFF 100%);
+}
+
+.bg-asp-gradient-cta {
+  background: linear-gradient(90deg, #4CC9F0 0%, #9F4CFF 100%);
+}
+
+.hero-text-gradient {
+  background: linear-gradient(90deg, #4CC9F0 0%, #9F4CFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Logo marquee ── */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.logo-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.logo-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ── Scroll reveal animations ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reveal-hidden {
+  opacity: 0;
+}
+
+.reveal-visible.fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.reveal-visible.slide-right {
+  animation: slideRight 0.6s ease-out forwards;
+}
+
+.reveal-visible.slide-left {
+  animation: slideLeft 0.6s ease-out forwards;
+}
+
+.reveal-visible.stagger > * {
+  opacity: 0;
+  animation: fadeUp 0.5s ease-out forwards;
+}
+
+.reveal-visible.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.reveal-visible.stagger > *:nth-child(2) { animation-delay: 100ms; }
+.reveal-visible.stagger > *:nth-child(3) { animation-delay: 200ms; }
+.reveal-visible.stagger > *:nth-child(4) { animation-delay: 300ms; }
+.reveal-visible.stagger > *:nth-child(5) { animation-delay: 400ms; }
+.reveal-visible.stagger > *:nth-child(6) { animation-delay: 500ms; }
+.reveal-visible.stagger > *:nth-child(7) { animation-delay: 600ms; }
+.reveal-visible.stagger > *:nth-child(8) { animation-delay: 700ms; }
+
+/* ── FAQ Accordion ── */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-content.open {
+  max-height: 500px;
+}
+
+.faq-icon.open {
+  transform: rotate(180deg);
+}
+
+/* ── Nav menu item styles ── */
+.nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: color 0.15s;
+}
+
+.nav-link:hover {
+  color: #4CC9F0;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4CC9F0;
+  transition: width 0.15s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ── Pricing featured card scale ── */
+.pricing-featured {
+  transform: scale(1.08);
+  z-index: 10;
+}
+
+@media (max-width: 1023px) {
+  .pricing-featured {
+    transform: scale(1);
+  }
+}
+
+/* ── Hamburger animation ── */
+.hamburger-open .hamburger-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.hamburger-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-open .hamburger-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}

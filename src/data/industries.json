@@ -1,0 +1,32 @@
+[
+  {
+    "name": "HVAC",
+    "description": "Dominate local search, fill your service calendar year-round with targeted SEO and PPC campaigns designed for heating and cooling professionals.",
+    "icon": "thermometer"
+  },
+  {
+    "name": "Plumbing",
+    "description": "Generate emergency calls and build recurring customers with local visibility strategies that put your plumbing business first when homeowners need help.",
+    "icon": "wrench"
+  },
+  {
+    "name": "Electrical",
+    "description": "Build a professional online presence that generates trust and quality leads. Electrical contractors deserve marketing that matches their expertise.",
+    "icon": "zap"
+  },
+  {
+    "name": "Roofing",
+    "description": "Capture storm-driven demand and maintain a steady pipeline. Reputation management and lead generation built for roofing companies that want to grow.",
+    "icon": "home"
+  },
+  {
+    "name": "Law Firms",
+    "description": "Build authority with content marketing, dominate local search results, and run conversion-focused campaigns that bring in qualified cases.",
+    "icon": "scale"
+  },
+  {
+    "name": "Home Inspectors",
+    "description": "Connect with real estate agents and target active homebuyers. Marketing strategies designed specifically for the home inspection industry.",
+    "icon": "search"
+  }
+]

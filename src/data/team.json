@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Rachel Stein",
+    "title": "CEO & Founder",
+    "specialty": "Sales & Brand Development",
+    "headshot": "/images/team/rachel-stein.avif",
+    "linkedin": "",
+    "order": 1
+  },
+  {
+    "name": "Mike Stein",
+    "title": "Digital Marketing & CFO",
+    "specialty": "Digital Strategy & Operations",
+    "headshot": "/images/team/mike-stein.avif",
+    "linkedin": "",
+    "order": 2
+  },
+  {
+    "name": "Joel Keith",
+    "title": "Creative Director",
+    "specialty": "Design & Web Development",
+    "headshot": "/images/team/joel-keith.avif",
+    "linkedin": "",
+    "order": 3
+  }
+]
