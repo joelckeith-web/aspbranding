@@ -18,10 +18,9 @@ export default function SolutionsPage() {
         eyebrow="Our Solutions"
         heading="Digital Marketing<br>Solutions That Deliver"
         subheading="Proven strategies designed for home service professionals and law firms. Every solution is built on our ASP Growth System™."
-        ctaText="Get Your Free Strategy Session"
-        ctaUrl="/contact"
         bgType="dark"
         showTrustLogos
+        showForm
       />
 
       <section className="py-16 md:py-24 bg-white">

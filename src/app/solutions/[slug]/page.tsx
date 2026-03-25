@@ -43,10 +43,9 @@ export default async function ServicePage({
         eyebrow="Solutions"
         heading={service.name}
         subheading={service.description}
-        ctaText="Get Your Free Strategy Session"
-        ctaUrl="/contact"
         bgType="dark"
         showTrustLogos
+        showForm
       />
 
       {/* Trust bar */}
