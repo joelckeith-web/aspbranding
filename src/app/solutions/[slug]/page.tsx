@@ -62,7 +62,7 @@ export default async function ServicePage({
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-10">
             {[
-              { file: "google-partner.png", alt: "Google Partner" },
+              { file: "google-partner-rgb.png", alt: "Google Partner" },
               { file: "meta-business-partner.webp", alt: "Meta Business Partner" },
               { file: "nahb.png", alt: "NAHB" },
               { file: "superior-service-color.png", alt: "Superior Service" },
@@ -71,7 +71,7 @@ export default async function ServicePage({
                 key={badge.alt}
                 src={`/images/badges/${badge.file}`}
                 alt={badge.alt}
-                className="h-12 md:h-16 w-auto object-contain"
+                className="h-14 md:h-20 w-auto object-contain"
                 loading="lazy"
               />
             ))}

@@ -1,7 +1,7 @@
 const BADGES = [
-  { file: "google-partner-light.png", alt: "Google Partner", height: "h-14 md:h-20" },
+  { file: "google-partner-rgb.png", alt: "Google Partner", height: "h-14 md:h-20" },
   { file: "meta-business-partner.webp", alt: "Meta Business Partner", height: "h-14 md:h-20" },
-  { file: "nahb-light.png", alt: "NAHB", height: "h-14 md:h-20" },
+  { file: "nahb.png", alt: "NAHB", height: "h-14 md:h-20" },
   { file: "superior-service-color.png", alt: "Superior Service", height: "h-14 md:h-20" },
 ];
 
