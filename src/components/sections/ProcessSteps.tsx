@@ -56,7 +56,7 @@ export function ProcessSteps() {
                 </div>
                 <div className="aspect-[9/16] bg-gray-900">
                   <iframe
-                    src="https://www.youtube.com/embed/qpT2xpI5Lu4?autoplay=0&mute=1&loop=1&playlist=qpT2xpI5Lu4&controls=1&modestbranding=1&playsinline=1"
+                    src="https://www.youtube.com/embed/EzSbYswcjUM?autoplay=0&mute=1&loop=1&playlist=EzSbYswcjUM&controls=1&modestbranding=1&playsinline=1"
                     className="w-full h-full"
                     allow="autoplay; encrypted-media"
                     title="ASP Growth System Video"
@@ -67,8 +67,8 @@ export function ProcessSteps() {
             </div>
           </ScrollReveal>
 
-          {/* Right — Steps */}
-          <div className="space-y-8">
+          {/* Right — Steps (aligned to phone frame height) */}
+          <div className="flex flex-col justify-between h-full space-y-6 lg:space-y-0" style={{ minHeight: "calc(320px * 16 / 9 + 2rem)" }}>
             {STEPS.map((step) => (
               <ScrollReveal key={step.num}>
                 <div className="bg-white/[0.07] border border-white/10 rounded-[var(--radius-asp-xl)] p-8 lg:p-10">

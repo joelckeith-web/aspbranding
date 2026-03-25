@@ -18,13 +18,10 @@ export default function HomePage() {
         heading='Assess. Strategize.<br><span class="hero-text-gradient">PERFORM.</span>'
         pillars="No Guesswork. No Experiments. Just Results."
         subheading="We help home service professionals and law firms break through the $1M–$5M revenue ceiling with our proven systematic approach."
-        ctaText="Get Your Free Strategy Session"
-        ctaUrl="/contact"
-        cta2Text="Explore Our Solutions"
-        cta2Url="/solutions"
         bgType="video"
         youtubeId="qpT2xpI5Lu4"
         showTrustLogos
+        showForm
       />
 
       {/* 2. Value Propositions */}

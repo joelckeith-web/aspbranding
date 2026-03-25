@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BUSINESS } from "@/lib/constants";
+import { HeroContactForm } from "@/components/sections/HeroContactForm";
 
 interface HeroProps {
   heading: string;
@@ -14,6 +14,7 @@ interface HeroProps {
   imageUrl?: string;
   imagePosition?: string;
   showTrustLogos?: boolean;
+  showForm?: boolean;
   pillars?: string;
 }
 
@@ -30,6 +31,7 @@ export function Hero({
   imageUrl,
   imagePosition = "center center",
   showTrustLogos = false,
+  showForm = false,
   pillars,
 }: HeroProps) {
   return (
@@ -64,47 +66,53 @@ export function Hero({
 
       {/* Content */}
       <div className="relative z-20 w-full max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
-        <div className="max-w-3xl">
-          {eyebrow && (
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              {eyebrow}
-            </span>
-          )}
-          <h1
-            className="font-black text-5xl md:text-6xl lg:text-7xl leading-none mb-6"
-            dangerouslySetInnerHTML={{ __html: heading }}
-          />
-          {pillars && (
-            <p className="text-lg md:text-xl font-bold text-asp-blue-light mb-4">
-              {pillars}
-            </p>
-          )}
-          {subheading && (
-            <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
-              {subheading}
-            </p>
-          )}
+        <div className={showForm ? "grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center" : ""}>
+          {/* Text side */}
+          <div className={showForm ? "" : "max-w-3xl"}>
+            {eyebrow && (
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                {eyebrow}
+              </span>
+            )}
+            <h1
+              className="font-black text-5xl md:text-6xl lg:text-7xl leading-none mb-6"
+              dangerouslySetInnerHTML={{ __html: heading }}
+            />
+            {pillars && (
+              <p className="text-lg md:text-xl font-bold text-asp-blue-light mb-4">
+                {pillars}
+              </p>
+            )}
+            {subheading && (
+              <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
+                {subheading}
+              </p>
+            )}
 
-          {(ctaText || cta2Text) && (
-            <div className="flex flex-wrap items-center gap-4">
-              {ctaText && (
-                <Link
-                  href={ctaUrl}
-                  className="inline-block bg-white text-asp-blue font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white/90 transition-all duration-150 no-underline text-base"
-                >
-                  {ctaText}
-                </Link>
-              )}
-              {cta2Text && cta2Url && (
-                <Link
-                  href={cta2Url}
-                  className="inline-block border border-white/30 text-white font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white/5 hover:border-white/50 transition-all duration-150 no-underline text-base"
-                >
-                  {cta2Text}
-                </Link>
-              )}
-            </div>
-          )}
+            {!showForm && (ctaText || cta2Text) && (
+              <div className="flex flex-wrap items-center gap-4">
+                {ctaText && (
+                  <Link
+                    href={ctaUrl}
+                    className="inline-block bg-white text-asp-blue font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white/90 transition-all duration-150 no-underline text-base"
+                  >
+                    {ctaText}
+                  </Link>
+                )}
+                {cta2Text && cta2Url && (
+                  <Link
+                    href={cta2Url}
+                    className="inline-block border border-white/30 text-white font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white/5 hover:border-white/50 transition-all duration-150 no-underline text-base"
+                  >
+                    {cta2Text}
+                  </Link>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Form side */}
+          {showForm && <HeroContactForm />}
         </div>
 
         {showTrustLogos && (

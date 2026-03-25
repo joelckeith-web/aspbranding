@@ -27,7 +27,7 @@ export function Footer() {
               Strategic digital marketing for home service professionals and law firms.
             </p>
             <p className="text-sm text-white/50 italic">
-              You own the data. You own the assets. We own the results.
+              You own the data. You own the assets. You get the results.
             </p>
           </div>
 
