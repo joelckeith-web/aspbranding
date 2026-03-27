@@ -51,7 +51,7 @@ export default async function ServicePage({
         heading={service.name}
         subheading={service.description}
         bgType="image"
-        imageUrl="/images/backgrounds/hero-solutions.avif"
+        imageUrl="/images/backgrounds/hero-trades-1.jpg"
         imagePosition="center center"
         showTrustLogos
         showForm

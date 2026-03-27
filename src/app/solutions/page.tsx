@@ -19,7 +19,7 @@ export default function SolutionsPage() {
         heading="Digital Marketing<br>Solutions That Deliver"
         subheading="Proven strategies designed for home service professionals and law firms. Every solution is built on our ASP Growth System™."
         bgType="image"
-        imageUrl="/images/backgrounds/hero-solutions.avif"
+        imageUrl="/images/backgrounds/hero-trades-1.jpg"
         imagePosition="center center"
         showTrustLogos
         showForm
