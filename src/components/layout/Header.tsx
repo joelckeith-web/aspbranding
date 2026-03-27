@@ -1,37 +1,83 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { NAV_LINKS } from "@/lib/constants";
 
+function isLightBackground(el: Element | null): boolean {
+  if (!el) return false;
+  const style = window.getComputedStyle(el);
+  const bg = style.backgroundColor;
+  // Parse rgb(a) values
+  const match = bg.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
+  if (!match) return false;
+  const [, r, g, b] = match.map(Number);
+  // Perceived brightness formula
+  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+  return brightness > 180;
+}
+
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [overLight, setOverLight] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+  const checkBackground = useCallback(() => {
+    // Sample a point just below the header (about 70px down, center of screen)
+    const x = window.innerWidth / 2;
+    const y = 70;
+    // Temporarily hide the header to sample what's behind it
+    const header = document.querySelector("header");
+    if (header) {
+      const prevPointerEvents = header.style.pointerEvents;
+      const prevVisibility = header.style.visibility;
+      header.style.pointerEvents = "none";
+      header.style.visibility = "hidden";
+      const el = document.elementFromPoint(x, y);
+      header.style.pointerEvents = prevPointerEvents;
+      header.style.visibility = prevVisibility;
+
+      if (el) {
+        // Walk up to find the nearest element with a background
+        let current: Element | null = el;
+        let foundLight = false;
+        while (current && current !== document.documentElement) {
+          if (isLightBackground(current)) {
+            foundLight = true;
+            break;
+          }
+          const bg = window.getComputedStyle(current).backgroundColor;
+          const match = bg.match(/rgba?\((\d+),\s*(\d+),\s*(\d+),?\s*([\d.]*)/);
+          if (match) {
+            const alpha = match[4] !== "" ? parseFloat(match[4]) : 1;
+            if (alpha > 0.5) break; // Has a non-transparent dark background
+          }
+          current = current.parentElement;
+        }
+        setOverLight(foundLight);
+      }
+    }
   }, []);
 
+  useEffect(() => {
+    checkBackground();
+    window.addEventListener("scroll", checkBackground, { passive: true });
+    return () => window.removeEventListener("scroll", checkBackground);
+  }, [checkBackground]);
+
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        ""
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center" aria-label="ASP — Home">
               <Image
-                src="/images/logos/asp-white.png"
+                src={overLight ? "/images/logos/asp-black.png" : "/images/logos/asp-white.png"}
                 alt="ASP"
                 width={120}
                 height={32}
-                className="h-8 w-auto"
+                className="h-8 w-auto transition-opacity duration-300"
                 priority
               />
             </Link>
@@ -39,7 +85,11 @@ export function Header() {
 
           {/* Desktop Navigation — contained pill */}
           <nav
-            className="hidden lg:flex items-center gap-7 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-8 py-2.5"
+            className={`hidden lg:flex items-center gap-7 backdrop-blur-md border rounded-full px-8 py-2.5 transition-all duration-300 ${
+              overLight
+                ? "bg-asp-blue/95 border-asp-blue/80 shadow-asp-md"
+                : "bg-white/10 border-white/15"
+            }`}
             aria-label="Primary Navigation"
           >
             {NAV_LINKS.map((link) => (
@@ -66,9 +116,9 @@ export function Header() {
             aria-label="Toggle mobile menu"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
-            <span className="hamburger-line block w-5 h-0.5 bg-white transition-transform duration-150" />
-            <span className="hamburger-line block w-5 h-0.5 bg-white transition-opacity duration-150" />
-            <span className="hamburger-line block w-5 h-0.5 bg-white transition-transform duration-150" />
+            <span className={`hamburger-line block w-5 h-0.5 transition-all duration-150 ${overLight ? "bg-asp-blue" : "bg-white"}`} />
+            <span className={`hamburger-line block w-5 h-0.5 transition-all duration-150 ${overLight ? "bg-asp-blue" : "bg-white"}`} />
+            <span className={`hamburger-line block w-5 h-0.5 transition-all duration-150 ${overLight ? "bg-asp-blue" : "bg-white"}`} />
           </button>
         </div>
       </div>
