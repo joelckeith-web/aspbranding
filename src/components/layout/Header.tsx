@@ -18,7 +18,7 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled ? "bg-black/40 backdrop-blur-md" : ""
+        ""
       }`}
     >
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 py-4">
