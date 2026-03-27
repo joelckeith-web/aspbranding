@@ -66,7 +66,7 @@ export default function AboutPage() {
         ctaUrl="/contact"
         bgType="image"
         imageUrl="/images/backgrounds/team-hero.jpg"
-        imagePosition="center 55%"
+        imagePosition="center 40%"
         showTrustLogos
       />
 
