@@ -18,7 +18,7 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-md shadow-asp-md" : ""
+        scrolled ? "bg-black/40 backdrop-blur-md" : ""
       }`}
     >
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-14 py-4">
@@ -27,7 +27,7 @@ export function Header() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center" aria-label="ASP — Home">
               <Image
-                src={scrolled ? "/images/logos/asp-black.png" : "/images/logos/asp-white.png"}
+                src="/images/logos/asp-white.png"
                 alt="ASP"
                 width={120}
                 height={32}
@@ -39,30 +39,18 @@ export function Header() {
 
           {/* Desktop Navigation — contained pill */}
           <nav
-            className={`hidden lg:flex items-center gap-7 backdrop-blur-md border rounded-full px-8 py-2.5 transition-all duration-300 ${
-              scrolled
-                ? "bg-gray-100/80 border-gray-200"
-                : "bg-white/10 border-white/15"
-            }`}
+            className="hidden lg:flex items-center gap-7 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-8 py-2.5"
             aria-label="Primary Navigation"
           >
             {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`${scrolled ? "nav-link-scrolled" : "nav-link"} no-underline`}
-              >
+              <Link key={link.href} href={link.href} className="nav-link no-underline">
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact"
-              className={`inline-block font-bold py-2 px-6 rounded-full transition-all duration-150 no-underline text-sm ${
-                scrolled
-                  ? "bg-asp-blue text-white hover:bg-asp-blue-dark"
-                  : "bg-asp-blue-light text-white hover:bg-white hover:text-asp-blue"
-              }`}
-              style={scrolled ? undefined : { textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
+              className="inline-block bg-asp-blue-light text-white font-bold py-2 px-6 rounded-full hover:bg-white hover:text-asp-blue transition-all duration-150 no-underline text-sm"
+              style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
             >
               Get Started
             </Link>
@@ -78,9 +66,9 @@ export function Header() {
             aria-label="Toggle mobile menu"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
-            <span className={`hamburger-line block w-5 h-0.5 transition-transform duration-150 ${scrolled ? "bg-asp-blue" : "bg-white"}`} />
-            <span className={`hamburger-line block w-5 h-0.5 transition-opacity duration-150 ${scrolled ? "bg-asp-blue" : "bg-white"}`} />
-            <span className={`hamburger-line block w-5 h-0.5 transition-transform duration-150 ${scrolled ? "bg-asp-blue" : "bg-white"}`} />
+            <span className="hamburger-line block w-5 h-0.5 bg-white transition-transform duration-150" />
+            <span className="hamburger-line block w-5 h-0.5 bg-white transition-opacity duration-150" />
+            <span className="hamburger-line block w-5 h-0.5 bg-white transition-transform duration-150" />
           </button>
         </div>
       </div>
@@ -88,9 +76,7 @@ export function Header() {
       {/* Mobile Navigation */}
       <div
         id="mobile-menu"
-        className={`lg:hidden backdrop-blur-lg border-t overflow-hidden transition-all duration-300 ${
-          scrolled ? "bg-white/98 border-gray-200" : "bg-asp-blue/98 border-white/10"
-        } ${
+        className={`lg:hidden bg-asp-blue/98 backdrop-blur-lg border-t border-white/10 overflow-hidden transition-all duration-300 ${
           mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -99,9 +85,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`block font-semibold py-3 text-lg no-underline transition-colors ${
-                scrolled ? "text-gray-700 hover:text-asp-blue" : "text-white/85 hover:text-asp-blue-light"
-              }`}
+              className="block text-white/85 hover:text-asp-blue-light font-semibold py-3 text-lg no-underline transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
