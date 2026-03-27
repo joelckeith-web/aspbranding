@@ -147,6 +147,29 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Trust Badges */}
+      <div className="border-t border-white/10">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+            {[
+              { src: "/images/badges/google-partner-light.png", alt: "Google Partner" },
+              { src: "/images/badges/meta-business-partner.webp", alt: "Meta Business Partner" },
+              { src: "/images/badges/nahb-light.png", alt: "NAHB Member" },
+              { src: "/images/badges/superior-service-color.png", alt: "Superior Service" },
+              { src: "/images/badges/hcp-affiliate.png", alt: "Certified Housecall Pro Affiliate" },
+            ].map((badge) => (
+              <img
+                key={badge.src}
+                src={badge.src}
+                alt={badge.alt}
+                className="h-12 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200"
+                loading="lazy"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
