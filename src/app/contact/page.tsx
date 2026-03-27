@@ -43,7 +43,7 @@ export default function ContactPage() {
         bgType="dark"
       />
 
-      <section className="pb-16 md:pb-24 bg-asp-surface-light relative z-20 flex flex-col overflow-visible">
+      <section className="pb-12 md:pb-16 lg:pb-18 2xl:pb-24 bg-asp-surface-light relative z-20 flex flex-col overflow-visible">
         {/* Contact Cards — overlapping hero */}
         <div className="w-full max-w-[var(--spacing-ultra)] mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16" style={{ marginTop: "-80px" }}>
           <ScrollReveal animation="stagger">
@@ -93,7 +93,7 @@ export default function ContactPage() {
         </div>
 
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-10 2xl:gap-16">
             {/* Left: Form */}
             <div className="lg:col-span-3">
               <ScrollReveal>

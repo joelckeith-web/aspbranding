@@ -35,7 +35,7 @@ export function Hero({
   pillars,
 }: HeroProps) {
   return (
-    <section className="hero relative min-h-[85vh] flex items-center text-white overflow-hidden">
+    <section className="hero relative min-h-[70vh] xl:min-h-[75vh] 2xl:min-h-[85vh] flex items-center text-white overflow-hidden">
       {/* Background */}
       {bgType === "video" && youtubeId && (
         <div className="absolute inset-0 z-0">
@@ -65,8 +65,8 @@ export function Hero({
       )}
 
       {/* Content */}
-      <div className="relative z-20 w-full max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
-        <div className={showForm ? "grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start" : ""}>
+      <div className="relative z-20 w-full max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-28 2xl:py-32 3xl:py-40">
+        <div className={showForm ? "grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 2xl:gap-16 items-start" : ""}>
           {/* Text side */}
           <div className={showForm ? "lg:pt-8" : "max-w-3xl"}>
             {eyebrow && (
@@ -75,7 +75,7 @@ export function Hero({
               </span>
             )}
             <h1
-              className="font-black text-5xl md:text-6xl lg:text-7xl leading-none mb-6"
+              className="font-black text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-none mb-6"
               dangerouslySetInnerHTML={{ __html: heading }}
             />
             {pillars && (
@@ -84,7 +84,7 @@ export function Hero({
               </p>
             )}
             {subheading && (
-              <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
+              <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-6 lg:mb-8 2xl:mb-10 max-w-2xl">
                 {subheading}
               </p>
             )}
@@ -116,7 +116,7 @@ export function Hero({
         </div>
 
         {showTrustLogos && (
-          <div className="mt-16 flex flex-wrap items-center gap-8">
+          <div className="mt-10 2xl:mt-16 flex flex-wrap items-center gap-8">
             <span className="text-xs uppercase tracking-widest text-white/70 font-bold">
               Trusted Partners
             </span>

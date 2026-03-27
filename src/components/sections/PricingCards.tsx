@@ -4,14 +4,14 @@ import pricingData from "@/data/pricing.json";
 
 export function PricingCards() {
   return (
-    <section className="py-16 md:py-24 text-white">
+    <section className="py-12 md:py-16 lg:py-18 2xl:py-24 text-white">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 2xl:mb-14">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
               Investment
             </span>
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white mb-4">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white mb-4">
               Revenue-Stage Packages
             </h2>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
@@ -27,8 +27,8 @@ export function PricingCards() {
                 key={tier.name}
                 className={
                   tier.featured
-                    ? "bg-white text-black pricing-featured relative rounded-[var(--radius-asp-2xl)] p-8 lg:p-10 shadow-asp-xl"
-                    : "bg-white/5 border border-white/10 text-white rounded-[var(--radius-asp-2xl)] p-8 lg:p-10"
+                    ? "bg-white text-black pricing-featured relative rounded-[var(--radius-asp-2xl)] p-6 lg:p-8 2xl:p-10 shadow-asp-xl"
+                    : "bg-white/5 border border-white/10 text-white rounded-[var(--radius-asp-2xl)] p-6 lg:p-8 2xl:p-10"
                 }
               >
                 {tier.featured && (

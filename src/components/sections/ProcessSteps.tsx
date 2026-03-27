@@ -29,18 +29,18 @@ const STEPS = [
 
 export function ProcessSteps() {
   return (
-    <section className="py-16 md:py-24 bg-[#001233] text-white relative overflow-hidden">
+    <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-[#001233] text-white relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-10"
         style={{ backgroundImage: "url(/images/backgrounds/growth-system-bg.png)", backgroundSize: "cover" }}
       />
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal>
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 2xl:mb-14">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
               The ASP Process
             </span>
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white">
               The ASP Growth System&trade;
             </h2>
           </div>

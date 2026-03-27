@@ -30,6 +30,8 @@
   --spacing-wide: 80rem;
   --spacing-content: 48rem;
   --spacing-ultra: 90rem;
+
+  --breakpoint-3xl: 120rem;
 }
 
 /* ── Base styles ── */

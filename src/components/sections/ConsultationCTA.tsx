@@ -12,16 +12,16 @@ const DELIVERABLES = [
 
 export function ConsultationCTA() {
   return (
-    <section className="py-20 md:py-28 bg-asp-black text-white relative overflow-hidden">
+    <section className="py-14 md:py-18 lg:py-20 2xl:py-28 bg-asp-black text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(76,201,240,0.06)_0%,transparent_60%)] pointer-events-none" />
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 2xl:gap-20 items-center">
           {/* Left — Text */}
           <ScrollReveal>
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
               Take the Next Step
             </span>
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white mb-4">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white mb-4">
               Ready to Take Control of Your Marketing?
             </h2>
             <p className="text-lg text-asp-blue-light font-bold mb-4">
@@ -43,7 +43,7 @@ export function ConsultationCTA() {
 
           {/* Right — Dark Card */}
           <ScrollReveal animation="slide-left">
-            <div className="bg-white/[0.05] border border-white/10 rounded-[var(--radius-asp-xl)] p-8 lg:p-10">
+            <div className="bg-white/[0.05] border border-white/10 rounded-[var(--radius-asp-xl)] p-6 lg:p-8 2xl:p-10">
               <h3 className="font-bold text-xl text-white mb-6">
                 What You&apos;ll Get:
               </h3>

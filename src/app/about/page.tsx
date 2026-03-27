@@ -71,9 +71,9 @@ export default function AboutPage() {
       />
 
       {/* Mission & Vision */}
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-16 lg:py-18 2xl:py-24">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 2xl:gap-20 items-center">
             <ScrollReveal>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 Who We Are
@@ -101,16 +101,16 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="py-16 md:py-24 bg-asp-gradient-hero text-white relative overflow-hidden">
+      <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-asp-gradient-hero text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(76,201,240,0.08)_0%,transparent_60%)] pointer-events-none" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_80%,rgba(159,76,255,0.05)_0%,transparent_50%)] pointer-events-none" />
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal>
-            <div className="text-center mb-14">
+            <div className="text-center mb-10 2xl:mb-14">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 What We Stand For
               </span>
-              <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white">
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white">
                 Our Core Values
               </h2>
             </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
           <ScrollReveal animation="stagger">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
               {CORE_VALUES.map((v) => (
-                <div key={v.title} className="bg-white/[0.07] border border-white/10 rounded-[var(--radius-asp-xl)] p-8 lg:p-10 hover:bg-white/[0.1] transition-all duration-250">
+                <div key={v.title} className="bg-white/[0.07] border border-white/10 rounded-[var(--radius-asp-xl)] p-6 lg:p-8 2xl:p-10 hover:bg-white/[0.1] transition-all duration-250">
                   <div className="w-14 h-14 rounded-full bg-asp-gradient-accent flex items-center justify-center mb-6 shadow-asp-md">
                     {v.icon}
                   </div>
@@ -132,10 +132,10 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose ASP — 4-card */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-gray-50">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10 2xl:mb-16">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 What Makes Us Different
               </span>
@@ -195,9 +195,9 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-16 lg:py-18 2xl:py-24">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 2xl:gap-20 items-center">
             <ScrollReveal animation="slide-left">
               <img
                 src="/images/backgrounds/team-behind-scenes.jpg"
@@ -225,7 +225,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Grid */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-gray-50">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12">
@@ -250,7 +250,7 @@ export default function AboutPage() {
       </section>
 
       {/* Success CTA */}
-      <section className="py-16 md:py-24 bg-asp-blue text-white relative overflow-hidden">
+      <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-asp-blue text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center opacity-15" style={{ backgroundImage: "url(/images/backgrounds/growth-system-bg.png)" }} />
         <div className="absolute inset-0 bg-asp-blue/80" />
         <div className="max-w-[var(--spacing-content)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -258,10 +258,10 @@ export default function AboutPage() {
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
               Ready to Grow?
             </span>
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white mb-6">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white mb-6">
               Let&apos;s Build Your Success Together
             </h2>
-            <p className="text-white/80 leading-relaxed mb-10 max-w-2xl mx-auto">
+            <p className="text-white/80 leading-relaxed mb-6 lg:mb-8 2xl:mb-10 max-w-2xl mx-auto">
               Interested in working with a team that&apos;s dedicated to your growth? Whether you need a complete digital marketing overhaul, business coaching, or design solutions, ASP is here to help. Reach out today to see how we can drive success for your business.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">

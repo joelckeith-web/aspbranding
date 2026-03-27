@@ -13,14 +13,14 @@ const POINTS = [
 
 export function WhyChoose() {
   return (
-    <section className="py-20 md:py-28 bg-asp-blue text-white">
+    <section className="py-14 md:py-18 lg:py-20 2xl:py-28 bg-asp-blue text-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 lg:mb-10 2xl:mb-12">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
               Why Choose ASP
             </span>
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-white">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white">
               The Strategic Choice for Local Business Marketing
             </h2>
           </div>

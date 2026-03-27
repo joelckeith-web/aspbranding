@@ -44,15 +44,15 @@ const VALUE_PROPS = [
 
 export function ValueProps() {
   return (
-    <section className="py-16 md:py-24 bg-white relative overflow-hidden">
+    <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-white relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-5"
         style={{ backgroundImage: "url(/images/backgrounds/value-props-bg.png)", backgroundSize: "cover" }}
       />
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal>
-          <div className="text-center mb-12">
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-asp-blue">
+          <div className="text-center mb-8 lg:mb-10 2xl:mb-12">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
               Why Home Service Professionals and Law Firms Choose ASP
             </h2>
             <p className="mt-4 text-asp-blue-light font-bold text-lg">
@@ -66,7 +66,7 @@ export function ValueProps() {
             {VALUE_PROPS.map((prop) => (
               <div
                 key={prop.title}
-                className="bg-white rounded-[var(--radius-asp-2xl)] border border-gray-100 shadow-asp-md p-8 lg:p-10 hover:shadow-asp-xl hover:-translate-y-1 transition-all duration-250"
+                className="bg-white rounded-[var(--radius-asp-2xl)] border border-gray-100 shadow-asp-md p-6 lg:p-8 2xl:p-10 hover:shadow-asp-xl hover:-translate-y-1 transition-all duration-250"
               >
                 <div className="w-12 h-12 rounded-[var(--radius-asp-lg)] bg-asp-blue/5 flex items-center justify-center mb-5">
                   {prop.icon}

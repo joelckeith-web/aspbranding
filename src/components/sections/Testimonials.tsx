@@ -7,14 +7,14 @@ interface TestimonialProps {
 
 export function Testimonials({ testimonials = testimonialData }: TestimonialProps) {
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="py-14 md:py-18 lg:py-20 2xl:py-28 bg-white">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-14">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
               Client Results
             </span>
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl text-asp-blue">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
               What Our Clients Say
             </h2>
           </div>
@@ -25,7 +25,7 @@ export function Testimonials({ testimonials = testimonialData }: TestimonialProp
             {testimonials.map((t, i) => (
               <div
                 key={i}
-                className="bg-white rounded-[var(--radius-asp-2xl)] border border-gray-100 shadow-asp-sm p-8 lg:p-10"
+                className="bg-white rounded-[var(--radius-asp-2xl)] border border-gray-100 shadow-asp-sm p-6 lg:p-8 2xl:p-10"
               >
                 {/* Stars */}
                 <div className="flex gap-1 mb-5">
