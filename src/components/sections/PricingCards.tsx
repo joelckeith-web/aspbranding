@@ -108,10 +108,10 @@ export function PricingCards() {
 
                 <Link
                   href="/contact"
-                  className={`block text-center font-bold py-3 px-6 rounded-[var(--radius-asp-md)] transition-all duration-150 no-underline ${
+                  className={`block text-center font-bold py-3 px-6 rounded-[var(--radius-asp-md)] transition-all duration-150 no-underline hover:bg-asp-blue-light hover:text-white ${
                     tier.featured
-                      ? "bg-asp-blue text-white hover:bg-asp-blue-dark"
-                      : "border border-white/25 text-white hover:bg-white/10"
+                      ? "bg-asp-blue text-white"
+                      : "border border-white/25 text-white"
                   }`}
                 >
                   Get Started
