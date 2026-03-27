@@ -194,6 +194,34 @@ body {
   width: 100%;
 }
 
+/* ── Nav scrolled (dark text on white bg) ── */
+.nav-link-scrolled {
+  position: relative;
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: color 0.15s;
+}
+
+.nav-link-scrolled:hover {
+  color: #002366;
+}
+
+.nav-link-scrolled::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #002366;
+  transition: width 0.15s;
+}
+
+.nav-link-scrolled:hover::after {
+  width: 100%;
+}
+
 /* ── Pricing featured card scale ── */
 .pricing-featured {
   transform: scale(1.08);

@@ -44,7 +44,7 @@ const VALUE_PROPS = [
 
 export function ValueProps() {
   return (
-    <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-white relative overflow-hidden">
+    <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-white relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-5"
         style={{ backgroundImage: "url(/images/backgrounds/value-props-bg.png)", backgroundSize: "cover" }}

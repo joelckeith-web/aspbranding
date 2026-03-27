@@ -4,7 +4,7 @@ import servicesData from "@/data/services.json";
 
 export function ServicesGrid() {
   return (
-    <section className="py-10 md:py-14 lg:py-16 2xl:py-20 bg-white relative overflow-hidden">
+    <section className="py-8 md:py-10 lg:py-12 2xl:py-20 bg-white relative overflow-hidden">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal>
           <div className="text-center mb-10">

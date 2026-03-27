@@ -13,7 +13,7 @@ const POINTS = [
 
 export function WhyChoose() {
   return (
-    <section className="py-14 md:py-18 lg:py-20 2xl:py-28 bg-asp-blue text-white">
+    <section className="py-10 md:py-14 lg:py-16 2xl:py-28 bg-asp-blue text-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-8 lg:mb-10 2xl:mb-12">

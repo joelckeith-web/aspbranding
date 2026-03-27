@@ -25,7 +25,7 @@ export function CTABand({
       : "bg-asp-black";
 
   return (
-    <section className={`py-14 md:py-18 lg:py-20 2xl:py-28 text-white ${bgClass}`}>
+    <section className={`py-10 md:py-14 lg:py-16 2xl:py-28 text-white ${bgClass}`}>
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <ScrollReveal>
           <h2 className="font-black text-3xl md:text-4xl text-white mb-4">

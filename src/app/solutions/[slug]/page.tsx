@@ -58,7 +58,7 @@ export default async function ServicePage({
       />
 
       {/* Service Overview — full description */}
-      <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-white">
+      <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-white">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 2xl:gap-20 items-center">
             <ScrollReveal>
@@ -101,7 +101,7 @@ export default async function ServicePage({
 
       {/* Benefits */}
       {svc.benefits && (
-        <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-gray-50">
+        <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-gray-50">
           <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
             <ScrollReveal>
               <div className="text-center mb-10 2xl:mb-14">
@@ -137,7 +137,7 @@ export default async function ServicePage({
 
       {/* Process */}
       {svc.process && (
-        <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-asp-gradient-hero text-white relative overflow-hidden">
+        <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-asp-gradient-hero text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(76,201,240,0.08)_0%,transparent_60%)] pointer-events-none" />
           <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <ScrollReveal>
@@ -174,7 +174,7 @@ export default async function ServicePage({
       )}
 
       {/* CTA */}
-      <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-asp-blue text-white">
+      <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-asp-blue text-white">
         <div className="max-w-[var(--spacing-content)] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl text-white mb-6">
@@ -199,7 +199,7 @@ export default async function ServicePage({
       <Testimonials />
 
       {/* Related Services */}
-      <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-white">
+      <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-white">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-10">

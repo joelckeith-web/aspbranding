@@ -35,7 +35,7 @@ export function Hero({
   pillars,
 }: HeroProps) {
   return (
-    <section className="hero relative min-h-[70vh] xl:min-h-[75vh] 2xl:min-h-[85vh] flex items-center text-white overflow-hidden">
+    <section className="hero relative min-h-[60vh] lg:min-h-[65vh] 2xl:min-h-[85vh] flex items-center text-white overflow-hidden">
       {/* Background */}
       {bgType === "video" && youtubeId && (
         <div className="absolute inset-0 z-0">

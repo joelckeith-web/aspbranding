@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-asp-black text-white">
       {/* Main Footer */}
-      <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 2xl:py-20">
+      <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12 2xl:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 2xl:gap-16">
           {/* Brand Column */}
           <div className="lg:col-span-1">

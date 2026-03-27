@@ -17,7 +17,7 @@ export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: F
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-12 md:py-16 lg:py-18 2xl:py-24 bg-white">
+    <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-8 lg:mb-10 2xl:mb-12">

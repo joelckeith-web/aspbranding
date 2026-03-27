@@ -4,7 +4,7 @@ import pricingData from "@/data/pricing.json";
 
 export function PricingCards() {
   return (
-    <section className="py-12 md:py-16 lg:py-18 2xl:py-24 text-white">
+    <section className="py-10 md:py-12 lg:py-14 2xl:py-24 text-white">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-10 2xl:mb-14">

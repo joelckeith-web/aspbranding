@@ -43,7 +43,7 @@ export default function ContactPage() {
         bgType="dark"
       />
 
-      <section className="pb-12 md:pb-16 lg:pb-18 2xl:pb-24 bg-asp-surface-light relative z-20 flex flex-col overflow-visible">
+      <section className="pb-10 md:pb-12 lg:pb-14 2xl:pb-24 bg-asp-surface-light relative z-20 flex flex-col overflow-visible">
         {/* Contact Cards — overlapping hero */}
         <div className="w-full max-w-[var(--spacing-ultra)] mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16" style={{ marginTop: "-80px" }}>
           <ScrollReveal animation="stagger">

@@ -7,7 +7,7 @@ interface TestimonialProps {
 
 export function Testimonials({ testimonials = testimonialData }: TestimonialProps) {
   return (
-    <section className="py-14 md:py-18 lg:py-20 2xl:py-28 bg-white">
+    <section className="py-10 md:py-14 lg:py-16 2xl:py-28 bg-white">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-14">
