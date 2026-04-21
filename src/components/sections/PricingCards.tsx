@@ -106,108 +106,88 @@ export function PricingCards() {
                 key={tier.name}
                 className={
                   tier.featured
-                    ? "relative rounded-[var(--radius-asp-2xl)] p-[2px] bg-gradient-to-br from-asp-blue-light via-asp-purple to-asp-blue-light shadow-asp-xl lg:scale-[1.03]"
+                    ? "relative rounded-[var(--radius-asp-2xl)] p-[2px] bg-gradient-to-br from-asp-blue-light via-asp-purple to-asp-blue-light shadow-[0_20px_60px_-10px_rgba(76,201,240,0.4)] lg:scale-[1.05] lg:-translate-y-2"
                     : "relative rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-white/10 hover:bg-gradient-to-br hover:from-asp-blue-light/40 hover:via-asp-purple/30 hover:to-asp-blue-light/40 transition-all"
                 }
               >
                 <div
-                  className={
-                    tier.featured
-                      ? "h-full rounded-[calc(var(--radius-asp-2xl)-2px)] bg-white text-asp-blue p-8 2xl:p-10 flex flex-col"
-                      : "h-full rounded-[calc(var(--radius-asp-2xl)-1px)] bg-asp-surface-navy text-white p-8 2xl:p-10 flex flex-col"
-                  }
+                  className="h-full rounded-[calc(var(--radius-asp-2xl)-2px)] bg-asp-surface-navy text-white p-8 2xl:p-10 flex flex-col relative overflow-hidden"
                 >
                   {tier.featured && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                      <span className="bg-gradient-to-r from-asp-blue to-asp-purple text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">
-                        Most Popular
-                      </span>
-                    </div>
-                  )}
-
-                  <h3
-                    className={`font-black text-2xl 2xl:text-3xl mb-2 ${
-                      tier.featured ? "text-asp-blue" : "text-white"
-                    }`}
-                  >
-                    {tier.name}
-                  </h3>
-                  <p
-                    className={`text-sm mb-6 ${
-                      tier.featured ? "text-asp-blue/70" : "text-white/60"
-                    }`}
-                  >
-                    {tier.tagline}
-                  </p>
-
-                  <div className="flex items-baseline gap-2 mb-8">
-                    <span
-                      className={`font-black text-4xl 2xl:text-5xl ${
-                        tier.featured ? "text-asp-blue" : "text-white"
-                      }`}
-                    >
-                      {tier.price}
-                    </span>
-                    <span
-                      className={`text-sm ${
-                        tier.featured ? "text-asp-blue/60" : "text-white/50"
-                      }`}
-                    >
-                      {tier.period}
-                    </span>
-                  </div>
-
-                  <ul className="space-y-3 mb-6 flex-1">
-                    {tier.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3">
-                        <svg
-                          className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
-                            tier.featured ? "text-asp-purple" : "text-asp-blue-light"
-                          }`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                        <span
-                          className={`text-sm ${
-                            tier.featured ? "text-asp-blue/80" : "text-white/80"
-                          }`}
-                        >
-                          {f}
+                    <>
+                      <div
+                        aria-hidden
+                        className="absolute inset-0 opacity-30 pointer-events-none"
+                        style={{
+                          background:
+                            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(76, 201, 240, 0.45), transparent 70%)",
+                        }}
+                      />
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                        <span className="bg-gradient-to-r from-asp-blue-light to-asp-purple text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                          Most Popular
                         </span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {tier.footnote && (
-                    <p
-                      className={`text-xs leading-relaxed mb-6 pt-4 border-t ${
-                        tier.featured
-                          ? "text-asp-blue/60 border-asp-blue/10"
-                          : "text-white/50 border-white/10"
-                      }`}
-                    >
-                      {tier.footnote}
-                    </p>
+                      </div>
+                    </>
                   )}
 
-                  <Link
-                    href="/contact"
-                    className={`block text-center font-bold py-3.5 px-6 rounded-[var(--radius-asp-lg)] transition-all ${
-                      tier.featured
-                        ? "bg-gradient-to-r from-asp-blue to-asp-purple text-white hover:opacity-90"
-                        : "border border-white/25 text-white hover:bg-asp-blue-light hover:text-white hover:border-asp-blue-light"
-                    }`}
-                  >
-                    {tier.ctaLabel}
-                  </Link>
+                  <div className="relative z-10 flex flex-col h-full">
+                    <h3 className="font-black text-2xl 2xl:text-3xl mb-2 text-white">
+                      {tier.name}
+                    </h3>
+                    <p className="text-sm mb-6 text-white/60">{tier.tagline}</p>
+
+                    <div className="flex items-baseline gap-2 mb-8">
+                      <span
+                        className={`font-black text-4xl 2xl:text-5xl ${
+                          tier.featured
+                            ? "bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple"
+                            : "text-white"
+                        }`}
+                      >
+                        {tier.price}
+                      </span>
+                      <span className="text-sm text-white/50">{tier.period}</span>
+                    </div>
+
+                    <ul className="space-y-3 mb-6 flex-1">
+                      {tier.features.map((f) => (
+                        <li key={f} className="flex items-start gap-3">
+                          <svg
+                            className="w-5 h-5 flex-shrink-0 mt-0.5 text-asp-blue-light"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          <span className="text-sm text-white/80">{f}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {tier.footnote && (
+                      <p className="text-xs leading-relaxed mb-6 pt-4 border-t text-white/50 border-white/10">
+                        {tier.footnote}
+                      </p>
+                    )}
+
+                    <Link
+                      href="/contact"
+                      className={`block text-center font-bold py-3.5 px-6 rounded-[var(--radius-asp-lg)] transition-all ${
+                        tier.featured
+                          ? "bg-gradient-to-r from-asp-blue-light to-asp-purple text-white hover:opacity-90"
+                          : "border border-white/25 text-white hover:bg-asp-blue-light hover:text-white hover:border-asp-blue-light"
+                      }`}
+                    >
+                      {tier.ctaLabel}
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}

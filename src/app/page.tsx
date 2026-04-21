@@ -1,10 +1,13 @@
 import { Hero } from "@/components/sections/Hero";
+import { ClientLogos } from "@/components/sections/ClientLogos";
 import { GrowthSystem } from "@/components/sections/GrowthSystem";
 import { Industries } from "@/components/sections/Industries";
 import { ResultsBanner } from "@/components/sections/ResultsBanner";
 import { HCPPartnership } from "@/components/sections/HCPPartnership";
 import { PricingCards } from "@/components/sections/PricingCards";
 import { WhyChoose } from "@/components/sections/WhyChoose";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { PortfolioShowcase } from "@/components/sections/PortfolioShowcase";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
@@ -12,7 +15,7 @@ import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 export default function HomePage() {
   return (
     <main id="primary" className="site-main">
-      {/* 1. Hero */}
+      {/* 1. Hero — video bg restored */}
       <Hero
         eyebrow="AI integrators for home service businesses"
         heading='Assess. Strategize.<br><span class="hero-text-gradient">PERFORM.</span>'
@@ -21,39 +24,49 @@ export default function HomePage() {
         ctaUrl="/contact"
         cta2Text="See the Growth System"
         cta2Url="#pricing"
-        bgType="dark"
+        bgType="video"
+        youtubeId="qpT2xpI5Lu4"
         showTrustLogos
       />
 
-      {/* 2. The ASP Growth System — product band */}
+      {/* 2. Client logos marquee — social proof strip */}
+      <ClientLogos />
+
+      {/* 3. The ASP Growth System — image backdrop + dark navy */}
       <GrowthSystem />
 
-      {/* 3. Industries — broad trades grid (dark navy gradient bg) */}
+      {/* 4. Industries — dark navy band with pattern */}
       <div className="bg-gradient-to-b from-[#001233] via-[#001a4d] to-[#000000]">
         <Industries />
       </div>
 
-      {/* 4. Results banner — client-focused stats, light bg */}
+      {/* 5. Results banner — white bg, gradient borders */}
       <ResultsBanner />
 
-      {/* 5. HCP Partnership */}
+      {/* 6. HCP Partnership — black section with logo card */}
       <HCPPartnership />
 
-      {/* 6. Pricing — Growth System tiers + Fractional sidecar + entry products */}
+      {/* 7. Pricing — dark navy, brand-kit featured card */}
       <div className="bg-gradient-to-b from-[#000000] via-[#001233] to-[#001a4d]">
         <PricingCards />
       </div>
 
-      {/* 7. Why ASP — 4 proof points on navy */}
+      {/* 8. Why ASP — navy with team image backdrop */}
       <WhyChoose />
 
-      {/* 8. Newsletter — Beehiiv opt-in */}
+      {/* 9. Portfolio showcase — work images */}
+      <PortfolioShowcase />
+
+      {/* 10. Testimonials — light bg */}
+      <Testimonials />
+
+      {/* 11. Newsletter — dark card with gradient */}
       <Newsletter />
 
-      {/* 9. FAQ — home-specific */}
+      {/* 12. FAQ — light bg */}
       <FAQSection />
 
-      {/* 10. Final CTA — reuses ConsultationCTA */}
+      {/* 13. Final CTA */}
       <ConsultationCTA />
     </main>
   );

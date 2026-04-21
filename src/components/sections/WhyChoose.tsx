@@ -22,12 +22,30 @@ const PROOFS = [
 export function WhyChoose() {
   return (
     <section className="relative py-16 md:py-20 lg:py-24 2xl:py-32 bg-asp-blue text-white overflow-hidden">
+      {/* Team photo backdrop */}
       <div
         aria-hidden
-        className="absolute inset-0 opacity-20 pointer-events-none"
+        className="absolute inset-0 pointer-events-none opacity-15"
+        style={{
+          backgroundImage: "url(/images/backgrounds/team-at-work.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 50% 40% at 0% 100%, rgba(76, 201, 240, 0.3), transparent 70%), radial-gradient(ellipse 50% 40% at 100% 0%, rgba(159, 76, 255, 0.25), transparent 70%)",
+            "linear-gradient(180deg, rgba(0, 35, 102, 0.85) 0%, rgba(0, 35, 102, 0.75) 50%, rgba(0, 35, 102, 0.95) 100%)",
+        }}
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 opacity-30 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 50% 40% at 0% 100%, rgba(76, 201, 240, 0.35), transparent 70%), radial-gradient(ellipse 50% 40% at 100% 0%, rgba(159, 76, 255, 0.3), transparent 70%)",
         }}
       />
       <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
