@@ -1,61 +1,60 @@
 import { Hero } from "@/components/sections/Hero";
-import { ValueProps } from "@/components/sections/ValueProps";
-import { ClientLogos } from "@/components/sections/ClientLogos";
-import { ProcessSteps } from "@/components/sections/ProcessSteps";
+import { GrowthSystem } from "@/components/sections/GrowthSystem";
 import { Industries } from "@/components/sections/Industries";
+import { ResultsBanner } from "@/components/sections/ResultsBanner";
+import { HCPPartnership } from "@/components/sections/HCPPartnership";
 import { PricingCards } from "@/components/sections/PricingCards";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { PortfolioShowcase } from "@/components/sections/PortfolioShowcase";
 import { WhyChoose } from "@/components/sections/WhyChoose";
+import { Newsletter } from "@/components/sections/Newsletter";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
-import { ServicesGrid } from "@/components/sections/ServicesGrid";
 
 export default function HomePage() {
   return (
     <main id="primary" className="site-main">
       {/* 1. Hero */}
       <Hero
+        eyebrow="AI integrators for home service businesses"
         heading='Assess. Strategize.<br><span class="hero-text-gradient">PERFORM.</span>'
-        pillars="No Guesswork. No Experiments. Just Results."
-        subheading="We help home service professionals and law firms break through the $1M–$5M revenue ceiling with our proven systematic approach."
-        ctaText="Get Your Free Strategy Session"
+        subheading="We integrate AI, marketing, and operations into the growth systems modern home service businesses run on every day. More leads. More closed jobs. More margin — without trading away your data or your brand."
+        ctaText="Book a growth audit"
         ctaUrl="/contact"
-        cta2Text="Explore Our Solutions"
-        cta2Url="/solutions"
-        bgType="video"
-        youtubeId="qpT2xpI5Lu4"
+        cta2Text="See the Growth System"
+        cta2Url="#pricing"
+        bgType="dark"
         showTrustLogos
       />
 
-      {/* 2. Value Propositions */}
-      <ValueProps />
+      {/* 2. The ASP Growth System — product band */}
+      <GrowthSystem />
 
-      {/* 3. Client Logos */}
-      <ClientLogos />
-
-      {/* 4. Process — ASP Growth System */}
-      <ProcessSteps />
-
-      {/* 5–6. Industries + Pricing (unified gradient) */}
-      <div style={{ background: "linear-gradient(to bottom, #000000 0%, #001233 40%, #0a2450 100%)" }}>
+      {/* 3. Industries — broad trades grid (dark navy gradient bg) */}
+      <div className="bg-gradient-to-b from-[#001233] via-[#001a4d] to-[#000000]">
         <Industries />
+      </div>
+
+      {/* 4. Results banner — client-focused stats, light bg */}
+      <ResultsBanner />
+
+      {/* 5. HCP Partnership */}
+      <HCPPartnership />
+
+      {/* 6. Pricing — Growth System tiers + Fractional sidecar + entry products */}
+      <div className="bg-gradient-to-b from-[#000000] via-[#001233] to-[#001a4d]">
         <PricingCards />
       </div>
 
-      {/* 7. Testimonials */}
-      <Testimonials />
-
-      {/* 8. Portfolio Showcase */}
-      <PortfolioShowcase />
-
-      {/* 9. Why Choose ASP */}
+      {/* 7. Why ASP — 4 proof points on navy */}
       <WhyChoose />
 
-      {/* 10. Consultation CTA */}
-      <ConsultationCTA />
+      {/* 8. Newsletter — Beehiiv opt-in */}
+      <Newsletter />
 
-      {/* 11. Services Grid */}
-      <ServicesGrid />
+      {/* 9. FAQ — home-specific */}
+      <FAQSection />
+
+      {/* 10. Final CTA — reuses ConsultationCTA */}
+      <ConsultationCTA />
     </main>
   );
 }

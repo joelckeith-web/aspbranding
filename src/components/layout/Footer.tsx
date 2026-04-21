@@ -24,17 +24,17 @@ export function Footer() {
             <p className="text-white/60 text-sm mb-6 leading-relaxed">
               {BUSINESS.tagline}
               <br />
-              Strategic digital marketing for home service professionals and law firms.
+              Growth systems for home service businesses.
             </p>
             <p className="text-sm text-white/50 italic">
-              You own the data. You own the assets. You get the results.
+              You own the data. You own the assets. We deliver the results.
             </p>
           </div>
 
           {/* Solutions Column */}
           <div>
             <h3 className="text-white font-bold text-xs uppercase tracking-widest mb-5">
-              Solutions
+              The Growth System
             </h3>
             <ul className="space-y-3">
               {FOOTER_SOLUTIONS.map((item) => (

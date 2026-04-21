@@ -26,10 +26,10 @@ export const NAV_LINKS = [
 ] as const;
 
 export const FOOTER_SOLUTIONS = [
-  { label: "Local SEO", href: "/solutions/local-seo" },
-  { label: "PPC Management", href: "/solutions/ppc-management" },
-  { label: "Social Media Marketing", href: "/solutions/social-media-marketing" },
-  { label: "Web Design & Development", href: "/solutions/web-design" },
-  { label: "Branding & Graphic Design", href: "/solutions/branding" },
-  { label: "Consulting & Brand Therapy", href: "/solutions/consulting" },
+  { label: "Foundation", href: "/#pricing" },
+  { label: "Growth", href: "/#pricing" },
+  { label: "Premier", href: "/#pricing" },
+  { label: "Local SEO Pro", href: "/#pricing" },
+  { label: "StormFront", href: "/#pricing" },
+  { label: "Content Creation Package", href: "/#pricing" },
 ] as const;

@@ -120,7 +120,7 @@ export function Hero({
             <span className="text-xs uppercase tracking-widest text-white/70 font-bold">
               Trusted Partners
             </span>
-            {["google-partner-light.png", "meta-business-partner.webp", "nahb-light.png", "superior-service-color.png"].map(
+            {["hcp-affiliate.png", "google-partner-light.png", "meta-business-partner.webp", "nahb-light.png"].map(
               (badge) => (
                 <img
                   key={badge}
