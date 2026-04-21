@@ -117,7 +117,7 @@ export function Hero({
 
         {showTrustLogos && (
           <div className="mt-10 2xl:mt-16 flex flex-wrap items-center gap-10 md:gap-12">
-            {["hcp-affiliate.png", "google-partner-light.png", "meta-business-partner.webp", "nahb-light.png", "internachi-cpi.png"].map(
+            {["hcp-affiliate.png", "google-partner-light.png", "meta-business-partner.webp", "nahb-light.png", "superior-service-color.png"].map(
               (badge) => (
                 <img
                   key={badge}

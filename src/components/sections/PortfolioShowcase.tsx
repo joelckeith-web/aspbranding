@@ -22,10 +22,10 @@ const FEATURES = [
 
 export function PortfolioShowcase() {
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 bg-asp-surface-light overflow-hidden">
+    <section className="relative py-10 md:py-12 lg:py-14 2xl:py-16 bg-asp-surface-light overflow-hidden">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
-          <div className="text-center mb-12 2xl:mb-16 max-w-3xl mx-auto">
+          <div className="text-center mb-8 2xl:mb-10 max-w-3xl mx-auto">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
               Our work
             </span>
@@ -38,15 +38,15 @@ export function PortfolioShowcase() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-10 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_1fr] gap-8 lg:gap-12 items-center">
           {/* Device mockup — pre-rendered desktop + phone */}
           <ScrollReveal animation="slide-right">
-            <div className="relative">
+            <div className="relative lg:-ml-6 lg:-mr-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/portfolio/titan-mockup.png"
                 alt="Titan Inspection Services on desktop and mobile"
-                className="w-full h-auto drop-shadow-[0_30px_60px_rgba(0,35,102,0.25)]"
+                className="w-full h-auto drop-shadow-[0_40px_80px_rgba(0,0,0,0.45)]"
                 loading="lazy"
               />
             </div>

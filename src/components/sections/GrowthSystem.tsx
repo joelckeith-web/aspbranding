@@ -69,16 +69,16 @@ export function GrowthSystem() {
                 key={o.label}
                 className="relative group rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-gradient-to-br from-asp-blue-light/40 via-asp-purple/30 to-asp-blue-light/40 hover:from-asp-blue-light/70 hover:via-asp-purple/50 hover:to-asp-blue-light/70 transition-all duration-300"
               >
-                <div className="relative h-full rounded-[calc(var(--radius-asp-2xl)-1px)] bg-asp-surface-navy p-8 2xl:p-10 flex flex-col">
+                <div className="relative h-full rounded-[calc(var(--radius-asp-2xl)-1px)] bg-asp-surface-navy p-8 2xl:p-10 flex flex-col items-center text-center">
                   <div
-                    className={`inline-block self-start font-bold text-[11px] uppercase tracking-widest mb-5 px-3 py-1 rounded-full bg-gradient-to-r ${o.accent} text-white`}
+                    className={`inline-block font-bold text-[11px] uppercase tracking-widest mb-5 px-3 py-1 rounded-full bg-gradient-to-r ${o.accent} text-white`}
                   >
                     {o.label}
                   </div>
                   <h3 className="font-black text-2xl 2xl:text-3xl mb-4 leading-tight">
                     {o.headline}
                   </h3>
-                  <p className="text-white/70 leading-relaxed flex-1">{o.body}</p>
+                  <p className="text-white/70 leading-relaxed">{o.body}</p>
                 </div>
               </div>
             ))}
