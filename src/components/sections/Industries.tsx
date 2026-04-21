@@ -74,7 +74,7 @@ export function Industries() {
 
         <div
           ref={trackRef}
-          className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide px-4 sm:px-6 lg:px-[max(2rem,calc((100vw-var(--spacing-wide))/2))]"
+          className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide px-4 sm:px-6 lg:px-8"
         >
           {industriesData.map((industry) => (
             <div
