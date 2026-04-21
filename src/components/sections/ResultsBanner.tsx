@@ -26,7 +26,7 @@ const TILES = [
 
 export function ResultsBanner() {
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 text-white overflow-hidden">
+    <section className="relative pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24 2xl:pt-16 2xl:pb-28 text-white overflow-hidden">
       <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-12 max-w-3xl mx-auto">

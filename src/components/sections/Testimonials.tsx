@@ -7,14 +7,14 @@ interface TestimonialProps {
 
 export function Testimonials({ testimonials = testimonialData }: TestimonialProps) {
   return (
-    <section className="py-10 md:py-14 lg:py-16 2xl:py-28 bg-white">
+    <section className="py-10 md:py-12 lg:py-14 2xl:py-16 bg-white">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+          <div className="text-center mb-8 lg:mb-10">
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
               Client Results
             </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
+            <h2 className="font-black text-2xl md:text-3xl 2xl:text-4xl text-asp-blue">
               What Our Clients Say
             </h2>
           </div>

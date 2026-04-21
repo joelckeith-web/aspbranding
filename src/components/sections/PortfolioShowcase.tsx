@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 const FEATURES = [
   {
     title: "Built on our highest-converting structure",
-    body: "Every site we build starts from the structure that's been proven to convert — refined across our home service book of business.",
+    body: "Every site we build starts from the structure that's been proven to convert \u2014 refined across our home service book of business.",
   },
   {
     title: "Mobile-first, instantly.",
@@ -38,56 +38,67 @@ export function PortfolioShowcase() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-16 items-center">
-          {/* Device mockups: desktop + mobile side by side */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-10 lg:gap-16 items-center">
+          {/* Device mockups */}
           <ScrollReveal animation="slide-right">
             <div className="relative">
-              {/* Desktop frame */}
-              <div className="relative mx-auto max-w-[680px]">
-                <div className="relative rounded-[1.25rem] bg-gradient-to-br from-[#2a2a2a] to-[#0a0a0a] p-3 shadow-[0_30px_80px_-20px_rgba(0,35,102,0.35)]">
-                  <div className="rounded-[0.85rem] bg-[#f4f4f4] overflow-hidden">
-                    {/* Browser chrome */}
-                    <div className="flex items-center gap-2 px-4 py-3 bg-[#ececec] border-b border-black/5">
-                      <span className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-                      <span className="w-3 h-3 rounded-full bg-[#febc2e]" />
-                      <span className="w-3 h-3 rounded-full bg-[#28c840]" />
-                      <div className="flex-1 ml-3 mr-3">
-                        <div className="bg-white rounded-md px-3 py-1 text-[11px] text-gray-400 truncate max-w-[280px]">
-                          titaninspectionservices.com
+              {/* Laptop frame — 16:9 */}
+              <div className="relative mx-auto max-w-[760px]">
+                {/* Lid */}
+                <div className="relative rounded-t-[14px] bg-gradient-to-b from-[#2a2a2a] to-[#111]">
+                  <div className="relative bg-[#0a0a0a] rounded-t-[12px] px-4 pt-3 pb-0">
+                    {/* Camera notch */}
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#222] mx-auto mb-2" />
+                    {/* Screen bezel */}
+                    <div className="rounded-t-[6px] bg-black overflow-hidden">
+                      <div className="bg-white" style={{ aspectRatio: "16 / 10" }}>
+                        {/* Browser chrome */}
+                        <div className="flex items-center gap-1.5 px-3 py-2 bg-[#ececec] border-b border-black/5">
+                          <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
+                          <div className="flex-1 ml-2 mr-2">
+                            <div className="bg-white rounded px-2.5 py-0.5 text-[10px] text-gray-400 truncate">
+                              titaninspectionservices.com
+                            </div>
+                          </div>
+                        </div>
+                        {/* Screenshot — cropped to top portion only so it fills the 16:10 frame */}
+                        <div className="relative w-full overflow-hidden" style={{ height: "calc(100% - 28px)" }}>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src="/images/portfolio/titan-site-desktop.png"
+                            alt="Titan Inspection Services website"
+                            className="absolute top-0 left-0 w-full h-auto"
+                            loading="lazy"
+                          />
                         </div>
                       </div>
                     </div>
-                    {/* Screenshot */}
-                    <div className="relative h-[420px] lg:h-[480px] overflow-hidden bg-white">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src="/images/portfolio/titan-site-desktop.png"
-                        alt="Titan Inspection Services website on desktop"
-                        className="w-full h-auto"
-                        loading="lazy"
-                      />
-                    </div>
                   </div>
-                  {/* Laptop foot */}
-                  <div className="mx-auto mt-2 h-1.5 w-28 bg-[#1a1a1a] rounded-b-lg" />
+                </div>
+                {/* Base / hinge */}
+                <div className="relative">
+                  <div className="h-2 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a]" />
+                  <div className="h-3 mx-[3%] bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a] rounded-b-[20px] shadow-[0_30px_60px_-20px_rgba(0,35,102,0.45)]">
+                    <div className="mx-auto h-1 w-24 bg-[#0a0a0a] rounded-b-full" />
+                  </div>
                 </div>
               </div>
 
-              {/* Mobile frame */}
-              <div className="hidden md:block absolute -bottom-4 -right-2 lg:-right-6 w-[170px] lg:w-[200px]">
-                <div className="relative rounded-[2rem] bg-gradient-to-br from-[#2a2a2a] to-[#0a0a0a] p-1.5 shadow-[0_20px_50px_-10px_rgba(0,35,102,0.45)]">
-                  <div className="rounded-[1.65rem] bg-white overflow-hidden">
+              {/* Mobile frame — real mobile crop */}
+              <div className="hidden md:block absolute -bottom-6 right-0 lg:right-[-10px] w-[150px] lg:w-[180px]">
+                <div className="relative rounded-[2rem] bg-gradient-to-br from-[#2a2a2a] to-[#0a0a0a] p-[6px] shadow-[0_24px_60px_-10px_rgba(0,35,102,0.45)]">
+                  <div className="relative rounded-[1.6rem] bg-white overflow-hidden" style={{ aspectRatio: "9 / 19.5" }}>
                     {/* Notch */}
-                    <div className="relative bg-[#0a0a0a] h-5 flex items-center justify-center">
-                      <div className="w-14 h-3 bg-[#0a0a0a] rounded-full" />
-                    </div>
-                    {/* Mobile screenshot — reuse desktop, zoomed to top portion */}
-                    <div className="relative h-[320px] lg:h-[380px] overflow-hidden bg-white">
+                    <div className="absolute top-1.5 left-1/2 -translate-x-1/2 w-14 h-4 bg-black rounded-full z-10" />
+                    {/* Mobile-cropped screenshot — show narrow center slice from top */}
+                    <div className="absolute inset-0 overflow-hidden">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src="/images/portfolio/titan-site-desktop.png"
-                        alt="Titan Inspection Services website on mobile"
-                        className="w-[220%] h-auto -translate-x-[25%]"
+                        alt="Titan Inspection Services on mobile"
+                        className="absolute top-0 left-1/2 -translate-x-1/2 w-[380%] h-auto"
                         loading="lazy"
                       />
                     </div>

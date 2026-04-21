@@ -1,52 +1,37 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import industriesData from "@/data/industries.json";
-
-// Triple the list for seamless infinite wrap.
-const TRIPLED = [...industriesData, ...industriesData, ...industriesData];
 
 export function Industries() {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [mounted, setMounted] = useState(false);
 
-  const cardWidth = () => {
+  const cardStep = () => {
     if (typeof window === "undefined") return 340;
-    if (window.innerWidth >= 1024) return 380; // lg card + gap
+    if (window.innerWidth >= 1024) return 380;
     if (window.innerWidth >= 640) return 340;
     return 300;
   };
 
-  // Start centered on the middle copy so we can scroll infinitely left or right.
-  useEffect(() => {
-    const el = trackRef.current;
-    if (!el) return;
-    const middleStart = industriesData.length * cardWidth();
-    el.scrollLeft = middleStart;
-    setMounted(true);
-
-    const onScroll = () => {
-      const total = industriesData.length * cardWidth();
-      if (el.scrollLeft < total * 0.5) {
-        el.scrollLeft += total;
-      } else if (el.scrollLeft > total * 2.5) {
-        el.scrollLeft -= total;
-      }
-    };
-
-    el.addEventListener("scroll", onScroll, { passive: true });
-    return () => el.removeEventListener("scroll", onScroll);
-  }, []);
-
   const scroll = (dir: "left" | "right") => {
     const el = trackRef.current;
     if (!el) return;
-    const step = cardWidth() * 2;
-    el.scrollBy({ left: dir === "left" ? -step : step, behavior: "smooth" });
+    const step = cardStep() * 2;
+    const maxLeft = el.scrollWidth - el.clientWidth;
+    const atEnd = el.scrollLeft >= maxLeft - 10;
+    const atStart = el.scrollLeft <= 10;
+
+    if (dir === "right" && atEnd) {
+      el.scrollTo({ left: 0, behavior: "smooth" });
+    } else if (dir === "left" && atStart) {
+      el.scrollTo({ left: maxLeft, behavior: "smooth" });
+    } else {
+      el.scrollBy({ left: dir === "left" ? -step : step, behavior: "smooth" });
+    }
   };
 
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 text-white overflow-hidden">
+    <section className="relative pt-16 pb-8 md:pt-20 md:pb-10 lg:pt-24 lg:pb-12 2xl:pt-28 2xl:pb-16 text-white overflow-hidden">
       <div className="relative z-10">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 2xl:mb-14">
@@ -89,24 +74,32 @@ export function Industries() {
 
         <div
           ref={trackRef}
-          className={`flex gap-5 overflow-x-auto pb-6 scroll-smooth scrollbar-hide px-4 sm:px-6 lg:px-[max(2rem,calc((100vw-var(--spacing-wide))/2))] ${
-            mounted ? "" : "opacity-0"
-          }`}
+          className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide px-4 sm:px-6 lg:px-[max(2rem,calc((100vw-var(--spacing-wide))/2))]"
         >
-          {TRIPLED.map((industry, i) => (
+          {industriesData.map((industry) => (
             <div
-              key={`${industry.name}-${i}`}
+              key={industry.name}
               className="group flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[360px] bg-white/[0.03] border border-asp-blue-light/20 rounded-[var(--radius-asp-xl)] overflow-hidden hover:border-asp-blue-light/60 transition-all duration-300"
             >
               <div className="relative h-48 lg:h-56 overflow-hidden bg-asp-surface-navy">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={industry.image}
-                  alt={industry.name}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-transparent" />
+                {industry.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={industry.image}
+                    alt={industry.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(0,35,102,0.6) 0%, rgba(76,201,240,0.2) 50%, rgba(159,76,255,0.3) 100%)",
+                    }}
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent" />
                 <h3 className="absolute bottom-4 left-5 right-5 font-black text-xl lg:text-2xl text-white drop-shadow-lg">
                   {industry.name}
                 </h3>
@@ -118,7 +111,7 @@ export function Industries() {
           ))}
         </div>
 
-        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 mt-6">
           <p className="text-center text-white/40 text-sm max-w-2xl mx-auto">
             Don&apos;t see your trade listed? Reach out &mdash; there&apos;s a good chance we&apos;ve worked with a shop like yours.
           </p>
