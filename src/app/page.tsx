@@ -29,39 +29,39 @@ export default function HomePage() {
         showTrustLogos
       />
 
-      {/* 2. Client logos — WHITE strip (break) */}
+      {/* 2. Client logos — WHITE strip */}
       <ClientLogos />
 
-      {/* 3. The ASP Growth System — navy + image backdrop */}
+      {/* 3. Growth System — DARK navy + image */}
       <GrowthSystem />
 
-      {/* 4. Industries — BLACK carousel (layout break) */}
-      <Industries />
-
-      {/* 5. Results banner — BLACK + blue-outlined stat tiles */}
-      <ResultsBanner />
-
-      {/* 6. HCP Partnership — NAVY angular split, shorter */}
-      <HCPPartnership />
-
-      {/* 7. Testimonials — WHITE (break) */}
+      {/* 4. Testimonials — WHITE (break between Growth System and Industries) */}
       <Testimonials />
 
-      {/* 8. Pricing — BLACK gradient + brand-kit cards */}
+      {/* 5. Industries — BLACK carousel with stock photography */}
+      <Industries />
+
+      {/* 6. Results — BLACK with blue-outlined stat tiles */}
+      <ResultsBanner />
+
+      {/* 7. Portfolio showcase — WHITE (break) */}
+      <PortfolioShowcase />
+
+      {/* 8. Pricing — BLACK gradient (moved up from HCP slot) */}
       <div className="bg-gradient-to-b from-asp-black via-[#001233] to-asp-black">
         <PricingCards />
       </div>
 
-      {/* 9. Portfolio showcase — light (break) */}
-      <PortfolioShowcase />
-
-      {/* 10. Why ASP — BLACK with team image */}
+      {/* 9. Why ASP — BLACK with team image */}
       <WhyChoose />
 
-      {/* 11. Newsletter — white section with dark card (break) */}
+      {/* 10. Newsletter — WHITE section with dark card */}
       <Newsletter />
 
-      {/* 12. FAQ — light (continues break) */}
+      {/* 11. HCP Partnership — DARK angular split (moved from top) */}
+      <HCPPartnership />
+
+      {/* 12. FAQ — LIGHT */}
       <FAQSection />
 
       {/* 13. Final CTA */}

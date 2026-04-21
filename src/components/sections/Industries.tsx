@@ -148,13 +148,27 @@ export function Industries() {
           {industriesData.map((industry) => (
             <div
               key={industry.name}
-              className="flex-shrink-0 snap-start w-[280px] sm:w-[320px] lg:w-[340px] bg-white/[0.03] border border-asp-blue-light/20 rounded-[var(--radius-asp-xl)] p-7 hover:border-asp-blue-light/60 hover:bg-white/[0.06] transition-all duration-300"
+              className="group flex-shrink-0 snap-start w-[280px] sm:w-[320px] lg:w-[360px] bg-white/[0.03] border border-asp-blue-light/20 rounded-[var(--radius-asp-xl)] overflow-hidden hover:border-asp-blue-light/60 transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-[var(--radius-asp-lg)] bg-asp-blue-light/10 border border-asp-blue-light/20 flex items-center justify-center mb-5">
-                {ICONS[industry.icon] || ICONS.search}
+              <div className="relative h-44 lg:h-52 overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={industry.image}
+                  alt={industry.name}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                <div className="absolute top-4 left-4 w-11 h-11 rounded-[var(--radius-asp-lg)] bg-asp-black/80 backdrop-blur-sm border border-asp-blue-light/40 flex items-center justify-center">
+                  {ICONS[industry.icon] || ICONS.search}
+                </div>
+                <h3 className="absolute bottom-4 left-5 right-5 font-black text-xl lg:text-2xl text-white">
+                  {industry.name}
+                </h3>
               </div>
-              <h3 className="font-black text-xl text-white mb-3">{industry.name}</h3>
-              <p className="text-white/60 text-sm leading-relaxed">{industry.description}</p>
+              <div className="p-6">
+                <p className="text-white/65 text-sm leading-relaxed">{industry.description}</p>
+              </div>
             </div>
           ))}
         </div>

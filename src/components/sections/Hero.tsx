@@ -116,17 +116,14 @@ export function Hero({
         </div>
 
         {showTrustLogos && (
-          <div className="mt-10 2xl:mt-16 flex flex-wrap items-center gap-8">
-            <span className="text-xs uppercase tracking-widest text-white/70 font-bold">
-              Trusted Partners
-            </span>
+          <div className="mt-10 2xl:mt-16 flex flex-wrap items-center gap-10 md:gap-12">
             {["hcp-affiliate.png", "google-partner-light.png", "meta-business-partner.webp", "nahb-light.png"].map(
               (badge) => (
                 <img
                   key={badge}
                   src={`/images/badges/${badge}`}
                   alt={badge.replace(/[-_.]\w+$/, "").replace(/-/g, " ")}
-                  className="h-10 md:h-14 w-auto object-contain"
+                  className="h-14 md:h-16 lg:h-20 w-auto object-contain"
                   loading="lazy"
                 />
               )
