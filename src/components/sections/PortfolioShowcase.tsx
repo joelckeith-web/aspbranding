@@ -38,15 +38,15 @@ export function PortfolioShowcase() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_1fr] gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[2.2fr_1fr] gap-6 lg:gap-8 items-center">
           {/* Device mockup — pre-rendered desktop + phone */}
           <ScrollReveal animation="slide-right">
-            <div className="relative lg:-ml-6 lg:-mr-4">
+            <div className="relative lg:-ml-16 xl:-ml-24 lg:-my-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/portfolio/titan-mockup.png"
                 alt="Titan Inspection Services on desktop and mobile"
-                className="w-full h-auto drop-shadow-[0_40px_80px_rgba(0,0,0,0.45)]"
+                className="w-full lg:w-[118%] max-w-none h-auto drop-shadow-[0_40px_80px_rgba(0,0,0,0.5)]"
                 loading="lazy"
               />
             </div>
