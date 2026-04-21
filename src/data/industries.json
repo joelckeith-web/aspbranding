@@ -3,7 +3,7 @@
     "name": "Roofing",
     "description": "Capture storm-driven demand with StormFront weather-triggered content, LSA dominance, and reputation systems built for roofing operators.",
     "icon": "home",
-    "image": null
+    "image": "/images/industries/roofing.png"
   },
   {
     "name": "HVAC",
@@ -21,19 +21,19 @@
     "name": "Electrical",
     "description": "Build trust and generate residential plus commercial leads with professional positioning and conversion-focused campaigns.",
     "icon": "zap",
-    "image": null
+    "image": "/images/industries/electrical.jpg"
   },
   {
     "name": "Home Inspection",
     "description": "Connect with real estate agents and homebuyers actively searching \u2014 average 4\u20135\u00D7 ROAS on paid media with Growth System clients.",
     "icon": "search",
-    "image": null
+    "image": "/images/industries/home-inspection.jpg"
   },
   {
     "name": "Pressure Washing",
     "description": "Seasonal ramp-up done right. Paid + local + content systems that book appointments when demand spikes.",
     "icon": "droplet",
-    "image": null
+    "image": "/images/industries/pressure-washing.jpg"
   },
   {
     "name": "Pest Control",
