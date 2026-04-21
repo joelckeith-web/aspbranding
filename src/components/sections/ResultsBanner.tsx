@@ -26,15 +26,7 @@ const TILES = [
 
 export function ResultsBanner() {
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 bg-asp-black text-white overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-0 opacity-40 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 50% 40% at 50% 0%, rgba(76, 201, 240, 0.18), transparent 70%)",
-        }}
-      />
+    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 text-white overflow-hidden">
       <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-12 max-w-3xl mx-auto">

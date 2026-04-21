@@ -38,11 +38,21 @@ export default function HomePage() {
       {/* 4. Testimonials — WHITE (break between Growth System and Industries) */}
       <Testimonials />
 
-      {/* 5. Industries — BLACK carousel with stock photography */}
-      <Industries />
-
-      {/* 6. Results — BLACK with blue-outlined stat tiles */}
-      <ResultsBanner />
+      {/* 5-6. Industries + Results — shared gradient backdrop (black → purple mid → black) */}
+      <div className="relative bg-asp-black overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 80% 40% at 50% 50%, rgba(159, 76, 255, 0.22), transparent 70%), radial-gradient(ellipse 60% 30% at 20% 45%, rgba(76, 201, 240, 0.12), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10">
+          <Industries />
+          <ResultsBanner />
+        </div>
+      </div>
 
       {/* 7. Portfolio showcase — WHITE (break) */}
       <PortfolioShowcase />
