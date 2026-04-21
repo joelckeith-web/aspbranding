@@ -3,7 +3,7 @@
     "name": "Roofing",
     "description": "Capture storm-driven demand with StormFront weather-triggered content, LSA dominance, and reputation systems built for roofing operators.",
     "icon": "home",
-    "image": "https://images.pexels.com/photos/8092429/pexels-photo-8092429.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": null
   },
   {
     "name": "HVAC",
@@ -15,37 +15,37 @@
     "name": "Plumbing",
     "description": "Win emergency calls and recurring maintenance with local visibility that puts your shop at the top when customers need you most.",
     "icon": "wrench",
-    "image": "https://images.pexels.com/photos/8486944/pexels-photo-8486944.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": "/images/industries/plumbing.jpg"
   },
   {
     "name": "Electrical",
     "description": "Build trust and generate residential plus commercial leads with professional positioning and conversion-focused campaigns.",
     "icon": "zap",
-    "image": "https://images.pexels.com/photos/8005394/pexels-photo-8005394.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": null
   },
   {
     "name": "Home Inspection",
     "description": "Connect with real estate agents and homebuyers actively searching \u2014 average 4\u20135\u00D7 ROAS on paid media with Growth System clients.",
     "icon": "search",
-    "image": "https://images.pexels.com/photos/8486938/pexels-photo-8486938.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": null
   },
   {
     "name": "Pressure Washing",
     "description": "Seasonal ramp-up done right. Paid + local + content systems that book appointments when demand spikes.",
     "icon": "droplet",
-    "image": "https://images.pexels.com/photos/6032406/pexels-photo-6032406.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": null
   },
   {
     "name": "Pest Control",
     "description": "Recurring service models need recurring lead flow. Built-for-pest campaigns, review systems, and retention automations.",
     "icon": "bug",
-    "image": "https://images.pexels.com/photos/4792732/pexels-photo-4792732.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": "/images/industries/pest-control.png"
   },
   {
     "name": "Carpet Cleaning",
     "description": "Owner-operated shops moving into paid media and SEO for the first time \u2014 we build the system and train the team.",
     "icon": "sparkle",
-    "image": "https://images.pexels.com/photos/4107108/pexels-photo-4107108.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": "/images/industries/carpet-cleaning.png"
   },
   {
     "name": "Landscaping & Lawn Care",
@@ -57,19 +57,19 @@
     "name": "Appliance Repair",
     "description": "High-volume, low-ticket lead systems with smart qualification so your techs stay booked with jobs that actually pay.",
     "icon": "wrench",
-    "image": "https://images.pexels.com/photos/5591663/pexels-photo-5591663.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": "/images/industries/appliance-repair.jpg"
   },
   {
     "name": "Restoration & Remediation",
     "description": "Storm, fire, water \u2014 emergency demand requires emergency visibility. 24/7-ready systems and insurance partner positioning.",
     "icon": "home",
-    "image": "https://images.pexels.com/photos/128299/pexels-photo-128299.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": "/images/industries/restoration.png"
   },
   {
     "name": "Flooring",
     "description": "Showroom-meets-service marketing. Local SEO, portfolio content, and paid strategies for flooring installers and retailers.",
     "icon": "grid",
-    "image": "https://images.pexels.com/photos/6474473/pexels-photo-6474473.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    "image": "/images/industries/flooring.png"
   },
   {
     "name": "Remodeling & Exteriors",
