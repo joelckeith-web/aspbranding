@@ -197,7 +197,7 @@ export function PricingCards() {
         {/* Fractional C-Suite sidecar */}
         <ScrollReveal>
           <div className="mt-10 max-w-3xl mx-auto">
-            <div className="rounded-[var(--radius-asp-xl)] bg-white/[0.04] border border-white/10 p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6">
+            <div className="rounded-[var(--radius-asp-xl)] bg-white/[0.09] border border-asp-purple/30 p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 backdrop-blur-sm">
               <div className="flex-1">
                 <span className="inline-block font-bold text-[10px] uppercase tracking-widest text-asp-purple mb-2">
                   Fractional Leadership

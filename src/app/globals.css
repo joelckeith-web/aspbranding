@@ -69,6 +69,15 @@ body {
   background-clip: text;
 }
 
+/* Hide scrollbar for carousel tracks */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Subtle SVG noise overlay — adds texture to dark sections without darkening them */
 .bg-asp-grain::before {
   content: "";

@@ -29,41 +29,39 @@ export default function HomePage() {
         showTrustLogos
       />
 
-      {/* 2. Client logos marquee — social proof strip */}
+      {/* 2. Client logos — WHITE strip (break) */}
       <ClientLogos />
 
-      {/* 3. The ASP Growth System — image backdrop + dark navy */}
+      {/* 3. The ASP Growth System — navy + image backdrop */}
       <GrowthSystem />
 
-      {/* 4. Industries — dark navy band with pattern */}
-      <div className="bg-gradient-to-b from-[#001233] via-[#001a4d] to-[#000000]">
-        <Industries />
-      </div>
+      {/* 4. Industries — BLACK carousel (layout break) */}
+      <Industries />
 
-      {/* 5. Results banner — white bg, gradient borders */}
+      {/* 5. Results banner — BLACK + blue-outlined stat tiles */}
       <ResultsBanner />
 
-      {/* 6. HCP Partnership — black section with logo card */}
+      {/* 6. HCP Partnership — NAVY angular split, shorter */}
       <HCPPartnership />
 
-      {/* 7. Pricing — dark navy, brand-kit featured card */}
-      <div className="bg-gradient-to-b from-[#000000] via-[#001233] to-[#001a4d]">
+      {/* 7. Testimonials — WHITE (break) */}
+      <Testimonials />
+
+      {/* 8. Pricing — BLACK gradient + brand-kit cards */}
+      <div className="bg-gradient-to-b from-asp-black via-[#001233] to-asp-black">
         <PricingCards />
       </div>
 
-      {/* 8. Why ASP — navy with team image backdrop */}
-      <WhyChoose />
-
-      {/* 9. Portfolio showcase — work images */}
+      {/* 9. Portfolio showcase — light (break) */}
       <PortfolioShowcase />
 
-      {/* 10. Testimonials — light bg */}
-      <Testimonials />
+      {/* 10. Why ASP — BLACK with team image */}
+      <WhyChoose />
 
-      {/* 11. Newsletter — dark card with gradient */}
+      {/* 11. Newsletter — white section with dark card (break) */}
       <Newsletter />
 
-      {/* 12. FAQ — light bg */}
+      {/* 12. FAQ — light (continues break) */}
       <FAQSection />
 
       {/* 13. Final CTA */}

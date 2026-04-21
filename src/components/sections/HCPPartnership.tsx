@@ -4,71 +4,93 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export function HCPPartnership() {
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 text-white overflow-hidden bg-asp-black">
+    <section className="relative py-14 md:py-16 lg:py-20 text-white overflow-hidden bg-gradient-to-r from-asp-black via-asp-surface-navy to-asp-black">
+      {/* Angular diagonal split in the background */}
       <div
         aria-hidden
-        className="absolute inset-0 opacity-40 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 60% at 70% 50%, rgba(159, 76, 255, 0.18), transparent 70%), radial-gradient(ellipse 60% 50% at 10% 80%, rgba(76, 201, 240, 0.15), transparent 70%)",
-        }}
-      />
-      <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-        <ScrollReveal>
-          <div className="rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-gradient-to-br from-asp-blue-light via-asp-purple to-asp-blue-light">
-            <div className="rounded-[calc(var(--radius-asp-2xl)-1px)] bg-asp-surface-navy p-8 md:p-12 lg:p-16 2xl:p-20">
-              <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 lg:gap-16 items-start">
-                <div>
-                  <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                    Official Affiliate Partner
-                  </span>
-                  <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5 leading-tight">
-                    Your bridge between the trades and the AI that runs them.
-                  </h2>
-                  <p className="text-white/75 text-lg mb-5 leading-relaxed">
-                    Housecall Pro is rolling out a serious stack of AI tools — CSR AI, job attribution, automated dispatching, reporting. Most shop owners don&apos;t have time to figure out which ones to turn on, how to configure them, or how to wire them into their existing workflow. That&apos;s where we come in.
-                  </p>
-                  <p className="text-white/75 text-lg mb-5 leading-relaxed">
-                    As an Official Housecall Pro Affiliate Partner, we onboard, configure, and integrate HCP&apos;s AI stack so it works in your shop — not against it.
-                  </p>
-                  <div className="bg-asp-blue-light/10 border border-asp-blue-light/30 rounded-[var(--radius-asp-lg)] p-5 mb-6">
-                    <p className="text-white/90 text-base leading-relaxed">
-                      <span className="font-bold text-asp-blue-light">Looking to switch to Housecall Pro, or getting set up for the first time?</span>{" "}
-                      Talk to us. We&apos;ll help you get onboarded the right way — and, where it applies, help you secure partner discounts only available to new HCP accounts.
-                    </p>
-                  </div>
-                  <Link
-                    href="/contact?topic=hcp"
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold px-7 py-3.5 rounded-[var(--radius-asp-lg)] hover:opacity-90 transition-opacity"
-                  >
-                    Talk to us about Housecall Pro
-                    <span aria-hidden>→</span>
-                  </Link>
-                  <p className="text-white/40 text-xs mt-5 leading-relaxed">
-                    Official Housecall Pro Affiliate Partner · Discounts available for new HCP accounts only · Full terms shared during your growth audit.
-                  </p>
-                </div>
+        className="absolute inset-0 pointer-events-none overflow-hidden"
+      >
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(110deg, transparent 0%, transparent 45%, rgba(76, 201, 240, 0.06) 45%, rgba(76, 201, 240, 0.06) 55%, transparent 55%, transparent 100%)",
+          }}
+        />
+        <div
+          className="absolute top-0 bottom-0 left-1/2 w-px"
+          style={{
+            background:
+              "linear-gradient(180deg, transparent 0%, rgba(76, 201, 240, 0.4) 30%, rgba(159, 76, 255, 0.4) 70%, transparent 100%)",
+            transform: "rotate(15deg) translateX(-50%)",
+            transformOrigin: "center",
+          }}
+        />
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            background:
+              "radial-gradient(ellipse 40% 60% at 15% 50%, rgba(76, 201, 240, 0.15), transparent 70%), radial-gradient(ellipse 40% 60% at 85% 50%, rgba(159, 76, 255, 0.12), transparent 70%)",
+          }}
+        />
+      </div>
 
-                <div className="flex lg:flex-col items-center lg:items-start gap-4 lg:min-w-[200px]">
-                  <div className="bg-white rounded-[var(--radius-asp-xl)] p-6 flex items-center justify-center w-full">
-                    <Image
-                      src="/partners/hcp-logo.png"
-                      alt="Housecall Pro"
-                      width={280}
-                      height={60}
-                      className="h-auto w-full max-w-[240px]"
-                    />
-                  </div>
-                  <div className="text-center lg:text-left w-full">
-                    <span className="inline-block font-bold text-[10px] uppercase tracking-widest text-asp-blue-light">
-                      Official Affiliate Partner
-                    </span>
-                  </div>
-                </div>
+      <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-10 lg:gap-16 items-center">
+          {/* Left: Copy */}
+          <ScrollReveal>
+            <div>
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
+                Official Affiliate Partner
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
+                Your bridge between the trades and the AI that runs them.
+              </h2>
+              <p className="text-white/70 text-base lg:text-lg mb-4 leading-relaxed">
+                Housecall Pro is rolling out a serious AI stack — CSR AI, job attribution, automated dispatching, reporting. As an Official Affiliate Partner, we onboard, configure, and integrate it so it works in your shop from day one.
+              </p>
+              <p className="text-asp-blue-light text-base lg:text-lg mb-6 leading-relaxed font-semibold">
+                Switching to HCP or setting up for the first time? We&apos;ll get you onboarded the right way — and, where it applies, secure partner discounts available only on new HCP accounts.
+              </p>
+              <Link
+                href="/contact?topic=hcp"
+                className="inline-flex items-center gap-2 bg-asp-blue-light text-asp-black font-bold px-7 py-3.5 rounded-[var(--radius-asp-lg)] hover:bg-white transition-colors"
+              >
+                Talk to us about Housecall Pro
+                <span aria-hidden>&rarr;</span>
+              </Link>
+              <p className="text-white/30 text-xs mt-4">
+                Official Housecall Pro Affiliate Partner &middot; Discounts for new HCP accounts only &middot; Full terms shared during your growth audit.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          {/* Right: Logo card */}
+          <ScrollReveal>
+            <div className="relative">
+              <div
+                aria-hidden
+                className="absolute -inset-4 opacity-40 blur-3xl pointer-events-none"
+                style={{
+                  background:
+                    "radial-gradient(ellipse 80% 80% at 50% 50%, rgba(76, 201, 240, 0.35), transparent 70%)",
+                }}
+              />
+              <div className="relative rounded-[var(--radius-asp-2xl)] bg-white p-10 lg:p-12 flex flex-col items-center shadow-asp-xl">
+                <Image
+                  src="/partners/hcp-logo.png"
+                  alt="Housecall Pro"
+                  width={320}
+                  height={68}
+                  className="w-full h-auto max-w-[260px] mb-5"
+                />
+                <span className="inline-block font-bold text-[11px] uppercase tracking-widest text-asp-blue text-center">
+                  Official Affiliate Partner
+                </span>
               </div>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   );

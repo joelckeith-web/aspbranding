@@ -3,7 +3,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const TILES = [
   {
-    stat: "4–5\u00D7",
+    stat: "4\u20135\u00D7",
     unit: "ROAS",
     label: "Average return on ad spend for home inspection clients on the Growth System.",
   },
@@ -26,17 +26,25 @@ const TILES = [
 
 export function ResultsBanner() {
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 bg-white">
-      <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 bg-asp-black text-white overflow-hidden">
+      <div
+        aria-hidden
+        className="absolute inset-0 opacity-40 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 50% 40% at 50% 0%, rgba(76, 201, 240, 0.18), transparent 70%)",
+        }}
+      />
+      <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
               Results
             </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white mb-4">
               What the Growth System delivers for our clients.
             </h2>
-            <p className="text-asp-blue/70 text-lg">
+            <p className="text-white/70 text-lg">
               Industry-level averages pulled from our active book of business. Anonymized by client, reported by trade.
             </p>
           </div>
@@ -47,17 +55,15 @@ export function ResultsBanner() {
             {TILES.map((t, i) => (
               <div
                 key={i}
-                className="relative rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-gradient-to-br from-asp-blue via-asp-blue-light to-asp-purple"
+                className="rounded-[var(--radius-asp-2xl)] bg-asp-black border-2 border-asp-blue-light/40 hover:border-asp-blue-light transition-colors p-6 lg:p-8 flex flex-col items-start"
               >
-                <div className="h-full rounded-[calc(var(--radius-asp-2xl)-1px)] bg-white p-6 lg:p-8 flex flex-col items-start">
-                  <div className="font-black text-4xl lg:text-5xl 2xl:text-6xl text-asp-blue leading-none mb-2 bg-clip-text text-transparent bg-gradient-to-r from-asp-blue to-asp-purple">
-                    {t.stat}
-                  </div>
-                  <div className="font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                    {t.unit}
-                  </div>
-                  <p className="text-asp-blue/70 text-sm leading-relaxed">{t.label}</p>
+                <div className="font-black text-5xl lg:text-6xl 2xl:text-7xl text-asp-blue-light leading-none mb-3">
+                  {t.stat}
                 </div>
+                <div className="font-bold text-xs uppercase tracking-widest text-asp-blue-light/70 mb-4">
+                  {t.unit}
+                </div>
+                <p className="text-white/65 text-sm leading-relaxed">{t.label}</p>
               </div>
             ))}
           </div>
@@ -67,10 +73,10 @@ export function ResultsBanner() {
           <div className="text-center mt-10">
             <Link
               href="/case-studies"
-              className="inline-flex items-center gap-2 font-bold text-asp-blue hover:text-asp-purple transition-colors"
+              className="inline-flex items-center gap-2 font-bold text-asp-blue-light hover:text-white transition-colors"
             >
               Read the case studies
-              <span aria-hidden>→</span>
+              <span aria-hidden>&rarr;</span>
             </Link>
           </div>
         </ScrollReveal>
