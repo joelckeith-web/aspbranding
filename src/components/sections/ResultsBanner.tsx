@@ -47,7 +47,7 @@ export function ResultsBanner() {
             {TILES.map((t, i) => (
               <div
                 key={i}
-                className="rounded-[var(--radius-asp-2xl)] bg-asp-black border-2 border-asp-blue-light/40 hover:border-asp-blue-light transition-colors p-6 lg:p-8 flex flex-col items-start"
+                className="rounded-[var(--radius-asp-2xl)] bg-asp-black border-2 border-asp-blue-light/40 hover:border-asp-blue-light transition-colors p-6 lg:p-8 flex flex-col items-center text-center"
               >
                 <div className="font-black text-5xl lg:text-6xl 2xl:text-7xl text-asp-blue-light leading-none mb-3">
                   {t.stat}
