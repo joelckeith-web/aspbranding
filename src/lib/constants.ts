@@ -11,10 +11,13 @@ export const BUSINESS = {
     state: "TX",
     country: "US",
   },
+  // Social URLs: leave empty strings for channels ASP hasn't opened yet.
+  // Footer + schema rendering both skip empty values. Drop in the real
+  // handles as they come online.
   social: {
-    facebook: "https://www.facebook.com/atomicsoulsproductions/",
-    linkedin: "https://www.linkedin.com/company/atomicsoulsproductions/",
-    instagram: "https://www.instagram.com/atomicsoulsproductions/",
+    facebook: "",
+    linkedin: "",
+    instagram: "",
   },
 } as const;
 

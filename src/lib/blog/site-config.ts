@@ -45,18 +45,15 @@ export const siteConfig = {
   },
 
   // ── Social Media ──
+  // Empty until ASP-branded social handles are live. Drop in URLs as they
+  // come online; sameAs builder below automatically filters empties.
   social: {
-    facebook: "https://www.facebook.com/atomicsoulsproductions/",
-    linkedin: "https://www.linkedin.com/company/atomicsoulsproductions/",
-    instagram: "https://www.instagram.com/atomicsoulsproductions/",
+    facebook: "",
+    linkedin: "",
+    instagram: "",
   },
 
-  sameAs: [
-    "https://aspbranding.com",
-    "https://www.facebook.com/atomicsoulsproductions/",
-    "https://www.linkedin.com/company/atomicsoulsproductions/",
-    "https://www.instagram.com/atomicsoulsproductions/",
-  ],
+  sameAs: ["https://aspbranding.com"],
 
   // ── Author — Joel Keith (CEO) ──
   author: {
