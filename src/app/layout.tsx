@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Analytics, AnalyticsNoScript } from "@/components/analytics/Analytics";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -37,6 +38,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <body className="font-sans text-black bg-white antialiased">
+        <Analytics />
+        <AnalyticsNoScript />
         <a
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-asp-blue focus:text-white focus:px-4 focus:py-2 focus:rounded-asp-md"
           href="#primary"

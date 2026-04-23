@@ -11,25 +11,43 @@ export const BUSINESS = {
     state: "TX",
     country: "US",
   },
+  // Social URLs: leave empty strings for channels ASP hasn't opened yet.
+  // Footer + schema rendering both skip empty values. Drop in the real
+  // handles as they come online.
   social: {
-    facebook: "https://www.facebook.com/atomicsoulsproductions/",
-    linkedin: "https://www.linkedin.com/company/atomicsoulsproductions/",
-    instagram: "https://www.instagram.com/atomicsoulsproductions/",
+    facebook: "",
+    linkedin: "",
+    instagram: "",
   },
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Solutions", href: "/solutions" },
+  { label: "Home", href: "/" },
+  { label: "Growth System", href: "/growth-system" },
+  { label: "AI Integration", href: "/ai-integration" },
+  { label: "Pricing", href: "/pricing" },
+] as const;
+
+export const FOOTER_SYSTEM = [
+  { label: "The Growth System", href: "/growth-system" },
+  { label: "AI Integration", href: "/ai-integration" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Growth Diagnostic", href: "/diagnostic" },
+] as const;
+
+export const FOOTER_PRODUCTS = [
+  { label: "Local SEO Pro", href: "/local-seo-pro" },
+  { label: "StormFront", href: "/stormfront" },
+  { label: "Content Creation Package", href: "/content-creation" },
+  { label: "Fractional C-Suite", href: "/fractional" },
+] as const;
+
+export const FOOTER_COMPANY = [
   { label: "About", href: "/about" },
+  { label: "Fractional C-Suite", href: "/fractional" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
-export const FOOTER_SOLUTIONS = [
-  { label: "Local SEO", href: "/solutions/local-seo" },
-  { label: "PPC Management", href: "/solutions/ppc-management" },
-  { label: "Social Media Marketing", href: "/solutions/social-media-marketing" },
-  { label: "Web Design & Development", href: "/solutions/web-design" },
-  { label: "Branding & Graphic Design", href: "/solutions/branding" },
-  { label: "Consulting & Brand Therapy", href: "/solutions/consulting" },
-] as const;
+// Legacy export kept for any stragglers until the whole codebase is migrated.
+export const FOOTER_SOLUTIONS = FOOTER_SYSTEM;

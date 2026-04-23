@@ -1,75 +1,121 @@
-import { ScrollReveal } from "@/components/ui/ScrollReveal";
+"use client";
+
+import { useRef } from "react";
 import industriesData from "@/data/industries.json";
 
-const ICONS: Record<string, React.ReactNode> = {
-  thermometer: (
-    <svg className="w-6 h-6 text-asp-blue-light" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-    </svg>
-  ),
-  wrench: (
-    <svg className="w-6 h-6 text-asp-blue-light" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17l-5.1 5.1a2.121 2.121 0 01-3-3l5.1-5.1m2.96-2.96L17.57 3a2.121 2.121 0 013 3l-5.1 5.1m-2.96 2.96L9 12m2.42 3.17L15 18.54" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-9.003-9A4.125 4.125 0 0112 7.5c0 .414.168.79.44 1.06L15 11.1" />
-    </svg>
-  ),
-  zap: (
-    <svg className="w-6 h-6 text-asp-blue-light" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-    </svg>
-  ),
-  home: (
-    <svg className="w-6 h-6 text-asp-blue-light" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125V21m0 0h3.375c.621 0 1.125-.504 1.125-1.125V9.75l-8.25-7.5-8.25 7.5v10.125c0 .621.504 1.125 1.125 1.125H8.25z" />
-    </svg>
-  ),
-  scale: (
-    <svg className="w-6 h-6 text-asp-blue-light" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.97zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.97z" />
-    </svg>
-  ),
-  search: (
-    <svg className="w-6 h-6 text-asp-blue-light" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-    </svg>
-  ),
-};
+export function Industries() {
+  const trackRef = useRef<HTMLDivElement>(null);
 
-export function Industries({ variant = "dark-transparent" }: { variant?: string }) {
+  const cardStep = () => {
+    if (typeof window === "undefined") return 340;
+    if (window.innerWidth >= 1024) return 380;
+    if (window.innerWidth >= 640) return 340;
+    return 300;
+  };
+
+  const scroll = (dir: "left" | "right") => {
+    const el = trackRef.current;
+    if (!el) return;
+    const step = cardStep() * 2;
+    const maxLeft = el.scrollWidth - el.clientWidth;
+    const atEnd = el.scrollLeft >= maxLeft - 10;
+    const atStart = el.scrollLeft <= 10;
+
+    if (dir === "right" && atEnd) {
+      el.scrollTo({ left: 0, behavior: "smooth" });
+    } else if (dir === "left" && atStart) {
+      el.scrollTo({ left: maxLeft, behavior: "smooth" });
+    } else {
+      el.scrollBy({ left: dir === "left" ? -step : step, behavior: "smooth" });
+    }
+  };
+
   return (
-    <section className="py-10 md:py-12 lg:py-14 2xl:py-24 text-white">
-      <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-        <ScrollReveal>
-          <div className="text-center mb-10 2xl:mb-14">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Industries
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white mb-4">
-              Who We Help
-            </h2>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto">
-              We specialize in marketing for local service businesses and professional firms that depend on leads to grow.
-            </p>
-          </div>
-        </ScrollReveal>
+    <section className="relative pt-16 pb-8 md:pt-20 md:pb-10 lg:pt-24 lg:pb-12 2xl:pt-28 2xl:pb-16 text-white overflow-hidden">
+      <div className="relative z-10">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 2xl:mb-14">
+            <div className="max-w-2xl">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                Industries
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-white mb-4">
+                Who we help
+              </h2>
+              <p className="text-white/60 text-lg leading-relaxed">
+                We build growth systems for home service businesses &mdash; the trades that keep neighborhoods running. Whether you&apos;re in a category below or something adjacent, if you rely on local leads to grow, we&apos;ve probably worked with a business like yours.
+              </p>
+            </div>
 
-        <ScrollReveal animation="stagger">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {industriesData.map((industry) => (
-              <div
-                key={industry.name}
-                className="bg-white/[0.05] border border-white/10 rounded-[var(--radius-asp-xl)] p-8 group hover:bg-white/[0.08] transition-all duration-250"
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => scroll("left")}
+                aria-label="Previous"
+                className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-asp-purple hover:border-asp-purple hover:text-white transition-all"
               >
-                <div className="w-12 h-12 rounded-[var(--radius-asp-lg)] bg-asp-blue-light/10 flex items-center justify-center mb-5 group-hover:bg-asp-blue-light/20 transition-colors">
-                  {ICONS[industry.icon] || ICONS.search}
-                </div>
-                <h3 className="font-black text-xl text-white mb-2">{industry.name}</h3>
-                <p className="text-white/60 text-sm leading-relaxed">{industry.description}</p>
-              </div>
-            ))}
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                onClick={() => scroll("right")}
+                aria-label="Next"
+                className="w-12 h-12 rounded-full bg-asp-purple flex items-center justify-center text-white hover:bg-white hover:text-asp-purple transition-all"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
-        </ScrollReveal>
+        </div>
+
+        <div
+          ref={trackRef}
+          className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide px-4 sm:px-6 lg:px-8"
+        >
+          {industriesData.map((industry) => (
+            <div
+              key={industry.name}
+              className="group flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[360px] bg-white/[0.03] border border-asp-purple/20 rounded-[var(--radius-asp-xl)] overflow-hidden hover:border-asp-purple/60 transition-all duration-300"
+            >
+              <div className="relative h-48 lg:h-56 overflow-hidden bg-asp-surface-navy">
+                {industry.image ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={industry.image}
+                    alt={industry.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(0,35,102,0.6) 0%, rgba(76,201,240,0.2) 50%, rgba(159,76,255,0.3) 100%)",
+                    }}
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent" />
+                <h3 className="absolute bottom-4 left-5 right-5 font-black text-xl lg:text-2xl text-white drop-shadow-lg">
+                  {industry.name}
+                </h3>
+              </div>
+              <div className="p-6">
+                <p className="text-white/65 text-sm leading-relaxed">{industry.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+          <p className="text-center text-white/40 text-sm max-w-2xl mx-auto">
+            Don&apos;t see your trade listed? Reach out &mdash; there&apos;s a good chance we&apos;ve worked with a business like yours.
+          </p>
+        </div>
       </div>
     </section>
   );

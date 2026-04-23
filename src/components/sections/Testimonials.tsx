@@ -1,33 +1,44 @@
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import testimonialData from "@/data/testimonials.json";
 
-interface TestimonialProps {
-  testimonials?: typeof testimonialData;
+type Testimonial = { quote: string; verified: boolean };
+
+interface TestimonialsProps {
+  testimonials?: Testimonial[];
 }
 
-export function Testimonials({ testimonials = testimonialData }: TestimonialProps) {
+export function Testimonials({ testimonials = testimonialData }: TestimonialsProps) {
+  const verified = testimonials.filter((t) => t.verified);
+  if (verified.length === 0) return null;
+
+  const gridCols =
+    verified.length === 1
+      ? "grid-cols-1 max-w-2xl mx-auto"
+      : verified.length === 2
+      ? "grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto"
+      : "grid-cols-1 md:grid-cols-3";
+
   return (
-    <section className="py-10 md:py-14 lg:py-16 2xl:py-28 bg-white">
+    <section className="py-12 md:py-14 lg:py-16 2xl:py-20 bg-white">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
-          <div className="text-center mb-14">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Client Results
+          <div className="text-center mb-10 lg:mb-12">
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
+              From the operators we work with
             </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
-              What Our Clients Say
+            <h2 className="font-black text-2xl md:text-3xl 2xl:text-4xl text-asp-blue">
+              Real operators. Real results.
             </h2>
           </div>
         </ScrollReveal>
 
         <ScrollReveal animation="stagger">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-            {testimonials.map((t, i) => (
+          <div className={`grid gap-6 lg:gap-8 ${gridCols}`}>
+            {verified.map((t, i) => (
               <div
                 key={i}
-                className="bg-white rounded-[var(--radius-asp-2xl)] border border-gray-100 shadow-asp-sm p-6 lg:p-8 2xl:p-10"
+                className="bg-white rounded-[var(--radius-asp-2xl)] border border-gray-100 shadow-asp-sm p-6 lg:p-8 2xl:p-10 flex flex-col"
               >
-                {/* Stars */}
                 <div className="flex gap-1 mb-5">
                   {[...Array(5)].map((_, j) => (
                     <svg
@@ -41,18 +52,9 @@ export function Testimonials({ testimonials = testimonialData }: TestimonialProp
                   ))}
                 </div>
 
-                <blockquote className="text-gray-600 text-sm leading-relaxed mb-6 italic">
+                <blockquote className="text-gray-700 text-base lg:text-lg leading-relaxed font-medium">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
-
-                <div className="border-t border-gray-100 pt-4">
-                  <p className="font-bold text-asp-blue text-sm">{t.author}</p>
-                  {(t.title || t.company) && (
-                    <p className="text-gray-400 text-xs mt-1">
-                      {[t.title, t.company].filter(Boolean).join(" — ")}
-                    </p>
-                  )}
-                </div>
               </div>
             ))}
           </div>

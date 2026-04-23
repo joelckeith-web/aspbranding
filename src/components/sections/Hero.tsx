@@ -102,7 +102,8 @@ export function Hero({
                 {cta2Text && cta2Url && (
                   <Link
                     href={cta2Url}
-                    className="inline-block border border-white/30 text-white font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white/5 hover:border-white/50 transition-all duration-150 no-underline text-base"
+                    className="inline-block bg-asp-blue-light text-white font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white hover:text-asp-blue transition-all duration-150 no-underline text-base"
+                    style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
                   >
                     {cta2Text}
                   </Link>
@@ -116,17 +117,14 @@ export function Hero({
         </div>
 
         {showTrustLogos && (
-          <div className="mt-10 2xl:mt-16 flex flex-wrap items-center gap-8">
-            <span className="text-xs uppercase tracking-widest text-white/70 font-bold">
-              Trusted Partners
-            </span>
-            {["google-partner-light.png", "meta-business-partner.webp", "nahb-light.png", "superior-service-color.png"].map(
+          <div className="mt-10 2xl:mt-16 flex flex-wrap items-center gap-10 md:gap-12">
+            {["hcp-affiliate.png", "google-partner-light.png", "meta-business-partner.webp", "nahb-light.png", "superior-service-color.png"].map(
               (badge) => (
                 <img
                   key={badge}
                   src={`/images/badges/${badge}`}
                   alt={badge.replace(/[-_.]\w+$/, "").replace(/-/g, " ")}
-                  className="h-10 md:h-14 w-auto object-contain"
+                  className="h-14 md:h-16 lg:h-20 w-auto object-contain"
                   loading="lazy"
                 />
               )

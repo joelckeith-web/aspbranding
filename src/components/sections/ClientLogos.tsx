@@ -5,7 +5,6 @@ const CLIENTS = [
   { name: "Airstrike HVAC", file: "airstrike-hvac.jpg", height: "88px" },
   { name: "Crest Gold", file: "crest-gold.png", height: "79px" },
   { name: "Awkward Recovery", file: "awkward-recovery.jpg", height: "105px" },
-  { name: "Atomic Souls", file: "atomic-souls-text.png", height: "79px" },
   { name: "ML Monogram", file: "ml-monogram.jpg", height: "88px" },
   { name: "Window World", file: "brand-logo.svg", height: "79px" },
   { name: "Mr. Rooter", file: "mrr-color-logo.svg", height: "79px" },

@@ -1,6 +1,19 @@
 import { siteConfig } from "@/lib/blog/site-config";
 import type { BlogPost, FaqItem } from "@/lib/blog/types";
 
+// Normalize YYYY-MM-DD or partial dates to an ISO 8601 datetime with a
+// timezone offset. Schema.org / Google Rich Results require full ISO 8601
+// with timezone; bare dates trigger non-critical warnings in the validator.
+function toIso8601(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  // If already has a T and an offset or Z, pass through.
+  if (/T.*(Z|[+-]\d{2}:?\d{2})$/.test(value)) return value;
+  // Bare YYYY-MM-DD → noon UTC (noon avoids DST ambiguity across timezones).
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return `${value}T12:00:00Z`;
+  // Any other format: return as-is and let the validator complain.
+  return value;
+}
+
 // ═══════════════════════════════════════════════════════════
 //  Structured Data Components — JSON-LD for SEO
 //  Article, FAQ, Breadcrumb, BlogList schemas
@@ -22,8 +35,10 @@ export function ArticleSchema({ post }: ArticleSchemaProps) {
     image: frontmatter.featuredImage
       ? `${siteConfig.url}${frontmatter.featuredImage}`
       : undefined,
-    datePublished: frontmatter.publishDate,
-    dateModified: frontmatter.publishDate,
+    datePublished: toIso8601(frontmatter.publishDate),
+    dateModified: toIso8601(
+      (frontmatter as { dateModified?: string }).dateModified || frontmatter.publishDate
+    ),
     url: postUrl,
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -144,7 +159,7 @@ export function BlogListSchema({ posts }: BlogListSchemaProps) {
       "@type": "BlogPosting",
       headline: post.frontmatter.title,
       description: post.frontmatter.metaDescription,
-      datePublished: post.frontmatter.publishDate,
+      datePublished: toIso8601(post.frontmatter.publishDate),
       url: `${siteConfig.blogUrl}/${post.slug}`,
       author: {
         "@type": "Person",

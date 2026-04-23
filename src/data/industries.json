@@ -1,32 +1,80 @@
 [
   {
+    "name": "Roofing",
+    "description": "Capture storm-driven demand with StormFront weather-triggered content, LSA dominance, and reputation systems built for roofing operators.",
+    "icon": "home",
+    "image": "/images/industries/roofing.png"
+  },
+  {
     "name": "HVAC",
-    "description": "Dominate local search and fill your service calendar year-round with targeted SEO, PPC, and content strategies built for HVAC companies.",
-    "icon": "thermometer"
+    "description": "Fill the service calendar year-round with seasonal campaigns, local SEO, and HCP attribution tuned to heating and cooling cycles.",
+    "icon": "thermometer",
+    "image": "/images/industries/hvac-viking.jpg"
   },
   {
     "name": "Plumbing",
-    "description": "Get more emergency calls and recurring customers with local visibility strategies that put your business at the top when customers need you most.",
-    "icon": "wrench"
+    "description": "Win emergency calls and recurring maintenance with local visibility that puts your business at the top when customers need you most.",
+    "icon": "wrench",
+    "image": "/images/industries/plumbing.jpg"
   },
   {
     "name": "Electrical",
-    "description": "Stand out from competitors with a professional online presence that builds trust and generates high-quality residential and commercial leads.",
-    "icon": "zap"
+    "description": "Build trust and generate residential plus commercial leads with professional positioning and conversion-focused campaigns.",
+    "icon": "zap",
+    "image": "/images/industries/electrical.jpg"
   },
   {
-    "name": "Roofing",
-    "description": "Capture storm-driven demand and build a steady pipeline of roofing projects with search, ads, and reputation management.",
-    "icon": "home"
+    "name": "Home Inspection",
+    "description": "Connect with real estate agents and homebuyers actively searching \u2014 average 4\u20135\u00D7 ROAS on paid media with Growth System clients.",
+    "icon": "search",
+    "image": "/images/industries/home-inspection.jpg"
   },
   {
-    "name": "Law Firms",
-    "description": "Attract qualified clients with authority-building content, local SEO, and conversion-optimized campaigns designed for legal practices.",
-    "icon": "scale"
+    "name": "Pressure Washing",
+    "description": "Seasonal ramp-up done right. Paid + local + content systems that book appointments when demand spikes.",
+    "icon": "droplet",
+    "image": "/images/industries/pressure-washing.jpg"
   },
   {
-    "name": "Home Inspectors",
-    "description": "Build your inspection business with marketing strategies that connect you with real estate agents and homebuyers actively searching for your services.",
-    "icon": "search"
+    "name": "Pest Control",
+    "description": "Recurring service models need recurring lead flow. Built-for-pest campaigns, review systems, and retention automations.",
+    "icon": "bug",
+    "image": "/images/industries/pest-control.png"
+  },
+  {
+    "name": "Carpet Cleaning",
+    "description": "Owner-operated businesses moving into paid media and SEO for the first time \u2014 we build the system and train the team.",
+    "icon": "sparkle",
+    "image": "/images/industries/carpet-cleaning.png"
+  },
+  {
+    "name": "Landscaping & Lawn Care",
+    "description": "Route-density growth for lawn, landscape, and snow removal operators. Local SEO, seasonal content, and lead routing.",
+    "icon": "leaf",
+    "image": "/images/industries/landscape-outdoor.jpg"
+  },
+  {
+    "name": "Appliance Repair",
+    "description": "High-volume, low-ticket lead systems with smart qualification so your techs stay booked with jobs that actually pay.",
+    "icon": "wrench",
+    "image": "/images/industries/appliance-repair.jpg"
+  },
+  {
+    "name": "Restoration & Remediation",
+    "description": "Storm, fire, water \u2014 emergency demand requires emergency visibility. 24/7-ready systems and insurance partner positioning.",
+    "icon": "home",
+    "image": "/images/industries/restoration.png"
+  },
+  {
+    "name": "Flooring",
+    "description": "Showroom-meets-service marketing. Local SEO, portfolio content, and paid strategies for flooring installers and retailers.",
+    "icon": "grid",
+    "image": "/images/industries/flooring.png"
+  },
+  {
+    "name": "Remodeling & Exteriors",
+    "description": "High-ticket project pipelines require long-game content and paid strategy. We build both \u2014 and prove attribution.",
+    "icon": "home",
+    "image": "/images/industries/remodel-outdoor.jpg"
   }
 ]

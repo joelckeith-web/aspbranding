@@ -276,6 +276,39 @@ export default async function BlogPostPage({
                 </ScrollReveal>
               )}
 
+              {/* ── Author Bio ── */}
+              <ScrollReveal>
+                <div className="mt-16 pt-12 border-t border-gray-200">
+                  <div className="flex flex-col sm:flex-row items-start gap-6 bg-asp-blue/[0.03] border border-gray-200 rounded-[var(--radius-asp-xl)] p-6 md:p-8">
+                    {frontmatter.author.avatar && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={frontmatter.author.avatar}
+                        alt={frontmatter.author.name}
+                        className="w-20 h-20 rounded-full object-cover bg-white p-2 border border-gray-200 flex-shrink-0"
+                        loading="lazy"
+                      />
+                    )}
+                    <div className="flex-1 min-w-0">
+                      <div className="text-xs font-bold uppercase tracking-widest text-asp-purple mb-1">
+                        About the author
+                      </div>
+                      <h3 className="font-black text-xl text-asp-blue mb-1">
+                        {frontmatter.author.name}
+                      </h3>
+                      {frontmatter.author.title && (
+                        <p className="text-sm text-gray-500 font-semibold mb-3">
+                          {frontmatter.author.title}
+                        </p>
+                      )}
+                      <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                        {frontmatter.author.bio}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
               {/* ── CTA Block ── */}
               <ScrollReveal>
                 <div className="mt-16 bg-asp-gradient-hero rounded-[var(--radius-asp-xl)] p-8 md:p-10 text-white">
@@ -283,8 +316,7 @@ export default async function BlogPostPage({
                     Ready to Put This Into Action?
                   </h3>
                   <p className="text-white/80 leading-relaxed mb-6 max-w-xl">
-                    The ASP team can help you implement these strategies and
-                    build a marketing system that drives measurable growth.
+                    ASP can help you implement these strategies and build a marketing system that drives measurable growth.
                   </p>
                   <div className="flex flex-wrap items-center gap-4">
                     <Link
