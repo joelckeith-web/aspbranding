@@ -168,24 +168,29 @@ const PROCESS = [
 
 const FAQS = [
   {
-    q: "Do I need all three — CFO, CMO, and COO?",
-    a: "No. Most clients start with the CFO engagement — financial clarity has to come first — and layer in CMO or COO as the business is ready. Or bring in the full integrated team from day one if that's what the business needs. It's scoped to you.",
+    question: "Do I need all three — CFO, CMO, and COO?",
+    answer:
+      "No. Most clients start with the CFO engagement — financial clarity has to come first — and layer in CMO or COO as the business is ready. Or bring in the full integrated team from day one if that's what the business needs. It's scoped to you.",
   },
   {
-    q: "How is this different from hiring vendors?",
-    a: "Vendors execute assignments. A fractional leadership team strategizes, makes decisions, and connects the dots across every function. You don't need more people doing tasks — you need C-level thinking guiding the business.",
+    question: "How is this different from hiring vendors?",
+    answer:
+      "Vendors execute assignments. A fractional leadership team strategizes, makes decisions, and connects the dots across every function. You don't need more people doing tasks — you need C-level thinking guiding the business.",
   },
   {
-    q: "I already have a team. Why do I need this?",
-    a: "Most $5M–$20M operators already have a team. The gap isn't doers — it's senior leadership translating strategy into execution. Fractional C-suite fills that gap without the cost or commitment of a full-time hire.",
+    question: "I already have a team. Why do I need this?",
+    answer:
+      "Most $5M–$20M operators already have a team. The gap isn't doers — it's senior leadership translating strategy into execution. Fractional C-suite fills that gap without the cost or commitment of a full-time hire.",
   },
   {
-    q: "What if I'm not ready to commit to everything?",
-    a: "Start with one function. CFO Foundation at $600/mo is a low-friction entry point. Add CMO and COO leadership as the business grows into it.",
+    question: "What if I'm not ready to commit to everything?",
+    answer:
+      "Start with one function. CFO Foundation at $600/mo is a low-friction entry point. Add CMO and COO leadership as the business grows into it.",
   },
   {
-    q: "Who is this NOT for?",
-    a: "Under $5M — you need execution, not leadership. Over $20M — you likely need full-time C-suite with equity. Not willing to look honestly at the numbers — this engagement won't work. Looking for task execution — hire a vendor instead.",
+    question: "Who is this NOT for?",
+    answer:
+      "Under $5M — you need execution, not leadership. Over $20M — you likely need full-time C-suite with equity. Not willing to look honestly at the numbers — this engagement won't work. Looking for task execution — hire a vendor instead.",
   },
 ];
 
