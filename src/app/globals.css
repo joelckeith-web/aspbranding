@@ -35,7 +35,11 @@
 }
 
 /* ── Base styles ── */
-html {
+/* Intentionally no global `scroll-behavior: smooth` — cross-page nav
+   should jump instantly. Smooth scrolling for in-page anchors is opt-in via
+   the .smooth-anchor class below. */
+
+.smooth-anchor {
   scroll-behavior: smooth;
 }
 
@@ -147,30 +151,30 @@ body {
 }
 
 .reveal-visible.fade-up {
-  animation: fadeUp 0.6s ease-out forwards;
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
 
 .reveal-visible.slide-right {
-  animation: slideRight 0.6s ease-out forwards;
+  animation: slideRight 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
 
 .reveal-visible.slide-left {
-  animation: slideLeft 0.6s ease-out forwards;
+  animation: slideLeft 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
 }
 
 .reveal-visible.stagger > * {
   opacity: 0;
-  animation: fadeUp 0.5s ease-out forwards;
+  animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-.reveal-visible.stagger > *:nth-child(1) { animation-delay: 0ms; }
-.reveal-visible.stagger > *:nth-child(2) { animation-delay: 100ms; }
-.reveal-visible.stagger > *:nth-child(3) { animation-delay: 200ms; }
-.reveal-visible.stagger > *:nth-child(4) { animation-delay: 300ms; }
-.reveal-visible.stagger > *:nth-child(5) { animation-delay: 400ms; }
-.reveal-visible.stagger > *:nth-child(6) { animation-delay: 500ms; }
-.reveal-visible.stagger > *:nth-child(7) { animation-delay: 600ms; }
-.reveal-visible.stagger > *:nth-child(8) { animation-delay: 700ms; }
+.reveal-visible.stagger > *:nth-child(1) { animation-delay: 150ms; }
+.reveal-visible.stagger > *:nth-child(2) { animation-delay: 300ms; }
+.reveal-visible.stagger > *:nth-child(3) { animation-delay: 450ms; }
+.reveal-visible.stagger > *:nth-child(4) { animation-delay: 600ms; }
+.reveal-visible.stagger > *:nth-child(5) { animation-delay: 750ms; }
+.reveal-visible.stagger > *:nth-child(6) { animation-delay: 900ms; }
+.reveal-visible.stagger > *:nth-child(7) { animation-delay: 1050ms; }
+.reveal-visible.stagger > *:nth-child(8) { animation-delay: 1200ms; }
 
 /* ── FAQ Accordion ── */
 .faq-content {
