@@ -23,14 +23,12 @@ export const NAV_LINKS = [
   { label: "Growth System", href: "/growth-system" },
   { label: "AI Integration", href: "/ai-integration" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Case Studies", href: "/case-studies" },
 ] as const;
 
 export const FOOTER_SYSTEM = [
   { label: "The Growth System", href: "/growth-system" },
   { label: "AI Integration", href: "/ai-integration" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Case Studies", href: "/case-studies" },
   { label: "Growth Diagnostic", href: "/diagnostic" },
 ] as const;
 
