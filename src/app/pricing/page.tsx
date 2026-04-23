@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { PricingCards } from "@/components/sections/PricingCards";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -63,6 +64,29 @@ export default function PricingPage() {
       <div className="bg-gradient-to-b from-asp-black via-[#001233] to-asp-black">
         <PricingCards />
       </div>
+
+      <RelatedPages
+        items={[
+          {
+            label: "Pillar",
+            href: "/growth-system",
+            title: "The Growth System",
+            body: "What the tiers actually deliver. Marketing, operations, and follow-up integrated into a single system.",
+          },
+          {
+            label: "Pillar",
+            href: "/ai-integration",
+            title: "AI Integration",
+            body: "The Housecall Pro AI stack we configure inside Growth and Premier. CSR AI, attribution, follow-up automation.",
+          },
+          {
+            label: "Decision tool",
+            href: "/diagnostic",
+            title: "Growth Diagnostic",
+            body: "90 seconds, 7 questions. Find out which tier fits your business today — and get a calendar link to talk it through.",
+          },
+        ]}
+      />
 
       <TestimonialAnchor quote="I can't imagine using anyone else for marketing." />
 

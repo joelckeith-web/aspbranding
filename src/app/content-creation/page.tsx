@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -277,6 +278,29 @@ export default function ContentCreationPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      <RelatedPages
+        items={[
+          {
+            label: "Sibling product",
+            href: "/local-seo-pro",
+            title: "Local SEO Pro",
+            body: "Own the local map. GBP management, citations, heatmap reporting, and competitive intelligence for home service operators.",
+          },
+          {
+            label: "Sibling product",
+            href: "/stormfront",
+            title: "StormFront",
+            body: "A proprietary weather-triggered content system for storm-chasing and weather-driven operators.",
+          },
+          {
+            label: "Pillar",
+            href: "/growth-system",
+            title: "The Growth System",
+            body: "Content is one layer of a fully integrated growth stack. See how every channel feeds the same revenue number.",
+          },
+        ]}
+      />
 
       <TestimonialAnchor quote="I can't imagine using anyone else for marketing." />
 

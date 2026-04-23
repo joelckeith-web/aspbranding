@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -127,7 +128,7 @@ export default function AIIntegrationPage() {
                   Your bridge between the trades and the AI that runs them.
                 </h2>
                 <p className="text-white/75 text-base lg:text-lg leading-relaxed mb-4">
-                  Housecall Pro is the CRM of record for a huge share of the home service industry — and it&apos;s the platform where the AI features home service operators actually need are shipping fastest. Our partnership means we get early access, direct support, and the ability to configure it the way it was designed to work.
+                  Housecall Pro is the CRM of record for a huge share of the home service industry — and it&apos;s the platform where the AI features home service operators actually need are shipping fastest. Our partnership means we get early access, direct support, and the ability to configure it the way it was designed to work. This pillar is one of four inside <Link href="/growth-system" className="text-asp-blue-light hover:text-white font-semibold underline">the Growth System</Link>.
                 </p>
                 <p className="text-asp-blue-light text-base lg:text-lg font-semibold leading-relaxed">
                   Switching to HCP or setting up for the first time? Partner discounts available — on new HCP accounts only.
@@ -308,6 +309,29 @@ export default function AIIntegrationPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      <RelatedPages
+        items={[
+          {
+            label: "Pillar",
+            href: "/growth-system",
+            title: "The Growth System",
+            body: "AI Integration is one pillar inside the Growth System. See how marketing, operations, and follow-up integrate into a single stack.",
+          },
+          {
+            label: "Pricing",
+            href: "/pricing",
+            title: "Pricing & tiers",
+            body: "HCP onboarding starts in Growth. Premier adds custom AI integrations beyond Housecall Pro. See what's included at each level.",
+          },
+          {
+            label: "Proof",
+            href: "/case-studies",
+            title: "Case Studies",
+            body: "Industry-anonymized results from operators running the full Growth System with HCP AI configured from day one.",
+          },
+        ]}
+      />
 
       <TestimonialAnchor
         quote="I can't imagine using anyone else for marketing."

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -520,6 +521,30 @@ export default function FractionalPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      <RelatedPages
+        items={[
+          {
+            label: "Pillar",
+            href: "/growth-system",
+            title: "The Growth System",
+            body: "The execution layer that runs underneath a Fractional engagement. Marketing, operations, and follow-up integrated into one stack.",
+          },
+          {
+            label: "Pricing",
+            href: "/pricing",
+            title: "Pricing & tiers",
+            body: "Foundation, Growth, and Premier Partnership — the retainer tiers that Fractional leadership typically runs alongside.",
+          },
+          {
+            label: "Proof",
+            href: "/case-studies",
+            title: "Case Studies",
+            body: "Industry-anonymized results from operators running the Growth System. The track record behind the leadership engagement.",
+          },
+        ]}
+        variant="dark"
+      />
 
       <TestimonialAnchor quote="It's a night-and-day difference from our last company." />
 

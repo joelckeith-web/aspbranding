@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -191,8 +192,15 @@ export default function GrowthSystemPage() {
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
                 Ten components. One integrated system.
               </h2>
-              <p className="text-white/70 text-lg">
+              <p className="text-white/70 text-lg mb-4">
                 Every component below runs against the same revenue number. Each one is a lever most agencies sell as a separate retainer — we run them as one.
+              </p>
+              <p className="text-white/60 text-sm">
+                Four of these components are also available as standalone products:{" "}
+                <Link href="/local-seo-pro" className="text-asp-blue-light hover:text-white font-semibold">Local SEO Pro</Link>,{" "}
+                <Link href="/stormfront" className="text-asp-blue-light hover:text-white font-semibold">StormFront</Link>,{" "}
+                <Link href="/content-creation" className="text-asp-blue-light hover:text-white font-semibold">Content Creation Package</Link>, and{" "}
+                <Link href="/ai-integration" className="text-asp-blue-light hover:text-white font-semibold">AI Integration</Link>.
               </p>
             </div>
           </ScrollReveal>
@@ -379,6 +387,29 @@ export default function GrowthSystemPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      <RelatedPages
+        items={[
+          {
+            label: "Pillar",
+            href: "/ai-integration",
+            title: "AI Integration",
+            body: "The Housecall Pro AI stack — CSR AI, attribution, follow-up — integrated into your business by an Official Affiliate Partner.",
+          },
+          {
+            label: "Pricing",
+            href: "/pricing",
+            title: "Pricing & tiers",
+            body: "Foundation, Growth, and Premier Partnership. Plus three productized entry points that scale into the full system.",
+          },
+          {
+            label: "Leadership",
+            href: "/fractional",
+            title: "Fractional C-Suite",
+            body: "For $5M–$20M operators ready for senior CFO / CMO / COO leadership. One cohesive team, not disconnected vendors.",
+          },
+        ]}
+      />
 
       <TestimonialAnchor quote="It's a night-and-day difference from our last company." />
 

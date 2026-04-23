@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -328,6 +329,29 @@ export default function StormfrontPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      <RelatedPages
+        items={[
+          {
+            label: "Sibling product",
+            href: "/local-seo-pro",
+            title: "Local SEO Pro",
+            body: "Own the local map. Google Business Profile, citations, heatmap, and competitive intelligence for home service operators.",
+          },
+          {
+            label: "Sibling product",
+            href: "/content-creation",
+            title: "Content Creation Package",
+            body: "Monthly drops of branded social and GBP content. Written by humans, powered by your brand kit.",
+          },
+          {
+            label: "Pillar",
+            href: "/growth-system",
+            title: "The Growth System",
+            body: "StormFront is one lever in the full Growth System. See how weather-triggered content amplifies every other channel.",
+          },
+        ]}
+      />
 
       <TestimonialAnchor
         quote="It's a night-and-day difference from our last company."

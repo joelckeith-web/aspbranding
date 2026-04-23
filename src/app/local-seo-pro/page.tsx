@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
+import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -275,6 +276,29 @@ export default function LocalSeoProPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      <RelatedPages
+        items={[
+          {
+            label: "Sibling product",
+            href: "/stormfront",
+            title: "StormFront",
+            body: "A proprietary weather-triggered content system for storm-chasing and weather-driven home service operators.",
+          },
+          {
+            label: "Sibling product",
+            href: "/content-creation",
+            title: "Content Creation Package",
+            body: "Social and GBP content, done for you and ready to post. Written by humans, informed by AI analytics.",
+          },
+          {
+            label: "Pillar",
+            href: "/growth-system",
+            title: "The Growth System",
+            body: "Local SEO is one component of a fully integrated Growth System. See how every channel feeds the same revenue number.",
+          },
+        ]}
+      />
 
       <TestimonialAnchor quote="I can't imagine using anyone else for marketing." />
 
