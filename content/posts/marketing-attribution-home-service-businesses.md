@@ -5,8 +5,8 @@ publishDate: "2026-04-23"
 dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
-  title: "Founder & CEO, ASP Branding"
-  bio: "Joel Keith is the founder and CEO of ASP Branding, a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner."
+  title: "Founder & CEO, ASP"
+  bio: "Joel Keith is the founder and CEO of ASP, a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -38,7 +38,7 @@ readingTime: "8 min read"
 
 A few months ago I sat across from an operator running about $1.2M in revenue who told me he'd spent $47K on Google Ads the previous year and had no idea how many of those dollars turned into booked jobs. Not a rough estimate — no idea. The ads manager showed leads. Housecall Pro showed revenue. Nothing connected the two. He signed the renewal check every quarter because stopping felt riskier than continuing, which is maybe the worst reason to spend $47K on anything.
 
-That's the story behind marketing attribution for home service businesses. ASP Branding is a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner, and this specific gap — spend on one side, revenue on the other, a black box in the middle — is the single most common problem we diagnose. It's not a skill problem. It's a system problem. And it's fixable. This post walks through what attribution actually means, the four data sources you need, which model to use when, and how to close the loop between Housecall Pro and your ad platforms. It's the Attribution component of [our Growth System](/growth-system), explained the way we'd explain it in a working session.
+That's the story behind marketing attribution for home service businesses. ASP is a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner, and this specific gap — spend on one side, revenue on the other, a black box in the middle — is the single most common problem we diagnose. It's not a skill problem. It's a system problem. And it's fixable. This post walks through what attribution actually means, the four data sources you need, which model to use when, and how to close the loop between Housecall Pro and your ad platforms. It's the Attribution component of [our Growth System](/growth-system), explained the way we'd explain it in a working session.
 
 ## The real cost of guessing which marketing works
 

@@ -5,7 +5,7 @@ publishDate: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
-  bio: "ASP Branding builds integrated growth systems for home service operators."
+  bio: "ASP builds integrated growth systems for home service operators."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "social-media"

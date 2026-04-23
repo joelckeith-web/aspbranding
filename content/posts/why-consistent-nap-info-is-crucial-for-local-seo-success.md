@@ -6,12 +6,12 @@ dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
-  bio: "ASP Branding builds integrated growth systems for home service operators."
+  bio: "ASP builds integrated growth systems for home service operators."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "local-seo"
 tags: ["local-seo", "nap", "citations", "google-business-profile", "home-services"]
-metaTitle: "NAP Consistency and Local SEO | ASP Branding"
+metaTitle: "NAP Consistency and Local SEO | ASP"
 metaDescription: "Why consistent Name, Address, and Phone data across the web is one of the highest-leverage local SEO fixes for home service operators."
 featuredImage: "/images/industries/hvac-viking.jpg"
 schema:
@@ -34,7 +34,7 @@ contentPillar: "service-deep-dive"
 readingTime: "7 min read"
 ---
 
-This guide is published by ASP Branding — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, pressure washing, and other home service businesses across the US. Of all the local SEO fixes available to a home service business, NAP consistency is the one with the highest ratio of effort-to-impact — and the one most operators quietly neglect.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, pressure washing, and other home service businesses across the US. Of all the local SEO fixes available to a home service business, NAP consistency is the one with the highest ratio of effort-to-impact — and the one most operators quietly neglect.
 
 NAP stands for Name, Address, and Phone. The premise is simple: your business identity data needs to match exactly across every directory, citation source, and listing where your business appears online. When it does, Google treats you as a single trustworthy entity. When it doesn't, you end up splitting your own local authority between what Google sees as two or three different businesses.
 

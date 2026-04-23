@@ -6,12 +6,12 @@ dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
-  bio: "ASP Branding builds integrated growth systems for home service operators."
+  bio: "ASP builds integrated growth systems for home service operators."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "business-growth"
 tags: ["seo", "agency-selection", "business-growth", "home-services"]
-metaTitle: "How to Choose an SEO Agency | ASP Branding"
+metaTitle: "How to Choose an SEO Agency | ASP"
 metaDescription: "A practical framework for home service operators evaluating SEO agencies in 2026. Red flags, right questions, realistic timelines."
 featuredImage: "/images/backgrounds/hero-trades-2.jpg"
 schema:
@@ -34,7 +34,7 @@ contentPillar: "business-growth-strategy"
 readingTime: "9 min read"
 ---
 
-This guide is published by ASP Branding — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses across the US. We also compete with a lot of SEO agencies. This guide is written to help a home service operator choose the right partner — which may or may not be us.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses across the US. We also compete with a lot of SEO agencies. This guide is written to help a home service operator choose the right partner — which may or may not be us.
 
 Choosing the wrong SEO agency is one of the more expensive mistakes a home service business can make. Bad agencies don't just fail to deliver; they can trigger Google penalties, lock up your own assets, and burn six to twelve months you can't get back. The good news is that the red flags are consistent and easy to spot once you know what to look for.
 

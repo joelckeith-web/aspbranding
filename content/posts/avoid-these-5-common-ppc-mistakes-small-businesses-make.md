@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
-  bio: "ASP Branding builds integrated growth systems for home service operators."
+  bio: "ASP builds integrated growth systems for home service operators."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "ppc"
@@ -34,7 +34,7 @@ contentPillar: "service-deep-dive"
 readingTime: "7 min read"
 ---
 
-This guide is published by ASP Branding — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses across the US. PPC is one of the fastest ways for a home service business to generate leads — and one of the fastest ways to waste money if run without discipline. The mistakes we see are remarkably consistent across operators and trades. Fix these five and your paid search performance will improve measurably.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses across the US. PPC is one of the fastest ways for a home service business to generate leads — and one of the fastest ways to waste money if run without discipline. The mistakes we see are remarkably consistent across operators and trades. Fix these five and your paid search performance will improve measurably.
 
 For the full context on how paid search integrates with the rest of your channel mix, see our [PPC advertising guide for home service businesses](/blog/ppc-advertising-for-home-service-businesses). What follows is the focused diagnostic on where campaigns go wrong.
 

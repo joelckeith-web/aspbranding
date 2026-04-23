@@ -6,12 +6,12 @@ dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
-  bio: "ASP Branding builds integrated growth systems for home service operators."
+  bio: "ASP builds integrated growth systems for home service operators."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "seo"
 tags: ["seo", "google", "local-seo", "home-services", "algorithm"]
-metaTitle: "Google SEO Strategies 2026 | ASP Branding"
+metaTitle: "Google SEO Strategies 2026 | ASP"
 metaDescription: "Updated Google SEO strategies for home service operators in 2026. Local SEO, content, technical signals, and how it all ties to revenue."
 featuredImage: "/images/industries/plumbing.jpg"
 schema:
@@ -34,7 +34,7 @@ contentPillar: "google-algorithm-updates"
 readingTime: "8 min read"
 ---
 
-This guide is published by ASP Branding — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses nationwide. Search looks different in 2026 than it did even twelve months ago, and the strategies that worked on a 2023 checklist are now half the picture.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses nationwide. Search looks different in 2026 than it did even twelve months ago, and the strategies that worked on a 2023 checklist are now half the picture.
 
 This is a working playbook for home service operators who want to rank on Google in 2026 — and increasingly, in the AI-generated answers that now sit above the organic results. It assumes you're running a real business, not a content farm. Every recommendation below is something we deploy for paying clients.
 

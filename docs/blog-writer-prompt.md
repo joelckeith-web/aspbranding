@@ -1,6 +1,6 @@
 # Blog Post Writer Prompt (Joel Voice + SOP)
 
-Reusable prompt for drafting ASP Branding blog posts in Joel Keith's voice, grounded in the Core Content Creation SOP, the 12-month Hub + Spoke calendar, and the distilled voice profile.
+Reusable prompt for drafting ASP blog posts in Joel Keith's voice, grounded in the Core Content Creation SOP, the 12-month Hub + Spoke calendar, and the distilled voice profile.
 
 **How to use:** Provide a subagent with the prompt below, substituting the bracketed inputs for the specific Topic Expansion row. The agent reads the voice profile, the SOP, and the hub context, then produces a complete markdown file in `content/posts/{slug}.md` with populated frontmatter and schema-ready FAQs.
 
@@ -9,7 +9,7 @@ Reusable prompt for drafting ASP Branding blog posts in Joel Keith's voice, grou
 ## The Prompt
 
 ```
-You're drafting a blog post for ASP Branding in Joel Keith's voice. Joel is the founder/CEO of ASP Branding, a growth-systems marketing agency for home service operators. This post is part of the 12-month hub + spoke content calendar tied to the site's three pillar pages.
+You're drafting a blog post for ASP in Joel Keith's voice. Joel is the founder/CEO of ASP, a growth-systems marketing agency for home service operators. This post is part of the 12-month hub + spoke content calendar tied to the site's three pillar pages.
 
 # INPUT DATA
 
@@ -81,8 +81,8 @@ publishDate: "2026-04-23"
 dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
-  title: "Founder & CEO, ASP Branding"
-  bio: "Joel Keith is the founder and CEO of ASP Branding, a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner."
+  title: "Founder & CEO, ASP"
+  bio: "Joel Keith is the founder and CEO of ASP, a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "[one of: seo, ppc, social-media, web-design, local-seo, aeo, industry-trends, business-growth, tech-stack, case-studies]"
@@ -104,7 +104,7 @@ readingTime: "[estimate based on word count — usually 7–10 min read]"
 
 # ENTITY INTRO (required in first paragraph)
 
-Weave in a line like: "ASP Branding is a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner." Don't repeat it verbatim every post — vary the phrasing. But every post must establish the entity in the first paragraph.
+Weave in a line like: "ASP is a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner." Don't repeat it verbatim every post — vary the phrasing. But every post must establish the entity in the first paragraph.
 
 # JOEL VOICE NON-NEGOTIABLES
 

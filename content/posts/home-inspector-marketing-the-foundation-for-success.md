@@ -6,12 +6,12 @@ dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
-  bio: "ASP Branding builds integrated growth systems for home service operators."
+  bio: "ASP builds integrated growth systems for home service operators."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "business-growth"
 tags: ["home-inspection", "marketing", "local-seo", "lead-generation", "ashi", "internachi"]
-metaTitle: "Home Inspector Marketing Guide | ASP Branding"
+metaTitle: "Home Inspector Marketing Guide | ASP"
 metaDescription: "A complete marketing guide for home inspectors — website, Google Business Profile, real estate agent referrals, paid ads, and KPIs that matter."
 featuredImage: "/images/industries/home-inspection.jpg"
 schema:
@@ -34,7 +34,7 @@ contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
 
-This guide is published by ASP Branding — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with home inspectors as well as HVAC, plumbing, roofing, and other trade businesses across the US. Home inspection is one of the most referral-driven service categories in the home services space — and also one where the winners have quietly moved on from referral-only marketing.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with home inspectors as well as HVAC, plumbing, roofing, and other trade businesses across the US. Home inspection is one of the most referral-driven service categories in the home services space — and also one where the winners have quietly moved on from referral-only marketing.
 
 The old model was simple. Build a relationship with a handful of real estate agents, deliver clean reports on time, and your calendar fills. That model still works, partially. But agents now vet inspectors online before referring, homebuyers Google their agent's recommendations before booking, and the inspectors dominating metro markets all have a serious digital presence backing up their word-of-mouth reputation.
 

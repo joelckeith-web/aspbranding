@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
-  bio: "ASP Branding builds integrated growth systems for home service operators."
+  bio: "ASP builds integrated growth systems for home service operators."
   avatar: "/images/logos/asp-mark.png"
   website: "https://aspbranding.com"
 category: "tech-stack"
@@ -34,7 +34,7 @@ contentPillar: "tech-stack-case-study"
 readingTime: "9 min read"
 ---
 
-This guide is published by ASP Branding — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. Home service businesses across HVAC, plumbing, roofing, home inspection, pressure washing, and electrical have been testing AI tools aggressively through 2025 and into 2026. We've seen what works, what wastes money, and what creates more problems than it solves.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. Home service businesses across HVAC, plumbing, roofing, home inspection, pressure washing, and electrical have been testing AI tools aggressively through 2025 and into 2026. We've seen what works, what wastes money, and what creates more problems than it solves.
 
 The AI market for service businesses has matured fast. A year ago, most tools were novelty. Today, a focused AI stack can measurably move booked-appointment rates, lead quality, and operational efficiency. But the noise-to-signal ratio is still high — which is why this guide is organized around the specific tools we recommend to clients, the ones we tell them to skip, and how to sequence a rollout.
 
