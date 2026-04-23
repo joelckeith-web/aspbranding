@@ -2,6 +2,7 @@
 title: "5 PPC Mistakes Home Service Businesses Make (And How to Fix Them)"
 slug: "avoid-these-5-common-ppc-mistakes-small-businesses-make"
 publishDate: "2025-04-15"
+dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
@@ -12,7 +13,7 @@ category: "ppc"
 tags: ["ppc", "google-ads", "paid-search", "home-services", "lead-generation"]
 metaTitle: "5 PPC Mistakes Home Service Operators Make | ASP"
 metaDescription: "The five most common and costly PPC mistakes we see in home service businesses — and the fixes that actually improve lead quality and ROI."
-featuredImage: "/images/backgrounds/hero-trades-1.jpg"
+featuredImage: "/images/backgrounds/hero-trades-2.jpg"
 schema:
   type: "Article"
   faqItems:
@@ -48,7 +49,7 @@ Most underperforming PPC accounts started with someone saying "let's run some ad
 3. Who are your top three paid-search competitors, and what are they bidding on?
 4. What's your monthly budget ceiling before the campaign needs to pause?
 
-That document is the foundation of every campaign decision that follows. [Google's Ads best practices documentation](https://support.google.com/google-ads/answer/6146252) is a reasonable starting reference.
+That document is the foundation of every campaign decision that follows. [Google's Ads best practices documentation](https://support.google.com/google-ads/answer/6146252) is a reasonable starting reference, and [Wikipedia's entry on pay-per-click advertising](https://en.wikipedia.org/wiki/Pay-per-click) is a useful primer if anyone on your team is newer to the mechanics.
 
 **Key Takeaway:** A PPC campaign without a documented strategy is a slot machine. A campaign with one is an asset that compounds — you learn more each month, and each dollar works harder than the last.
 

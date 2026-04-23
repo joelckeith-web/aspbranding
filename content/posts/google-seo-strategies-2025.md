@@ -2,6 +2,7 @@
 title: "Google SEO Strategies for Home Service Businesses (2026)"
 slug: "google-seo-strategies-2025"
 publishDate: "2025-03-01"
+dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
@@ -12,7 +13,7 @@ category: "seo"
 tags: ["seo", "google", "local-seo", "home-services", "algorithm"]
 metaTitle: "Google SEO Strategies 2026 | ASP Branding"
 metaDescription: "Updated Google SEO strategies for home service operators in 2026. Local SEO, content, technical signals, and how it all ties to revenue."
-featuredImage: "/images/backgrounds/hero-trades-1.jpg"
+featuredImage: "/images/industries/plumbing.jpg"
 schema:
   type: "Article"
   faqItems:
@@ -60,7 +61,7 @@ For any home service operator, local SEO is where SEO investment pays back faste
 
 **Google Business Profile optimization.** Complete every field. Service categories aligned with what you actually offer. Service areas that match where your trucks go. Fresh photos monthly, fresh posts weekly, and a review response rate above 90%.
 
-**NAP consistency.** Your business name, address, and phone must match across every directory, citation source, and data aggregator. Inconsistent NAP data is one of the most common and most fixable causes of ranking stagnation — we go deep on this in [the NAP consistency guide](/blog/why-consistent-nap-info-is-crucial-for-local-seo-success).
+**NAP consistency.** Your business name, address, and phone must match across every directory, citation source, and data aggregator. Inconsistent NAP data is one of the most common and most fixable causes of ranking stagnation — we go deep on this in [the NAP consistency guide](/blog/why-consistent-nap-info-is-crucial-for-local-seo-success), and citation cleanup is the heaviest line item inside our [Local SEO Pro product](/local-seo-pro).
 
 **Location pages that aren't doorway spam.** If you serve multiple cities, each location page needs unique, locally relevant content. Copy-paste templates with the city name swapped get filtered by Google's spam algorithms within weeks.
 

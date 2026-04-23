@@ -2,6 +2,7 @@
 title: "Best AI Tools for Home Service Businesses in 2026"
 slug: "best-ai-tools-home-service-businesses-2025"
 publishDate: "2025-09-16"
+dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
@@ -12,7 +13,7 @@ category: "tech-stack"
 tags: ["ai-tools", "automation", "housecall-pro", "tech-stack", "home-services"]
 metaTitle: "Best AI Tools for Home Service Businesses | ASP"
 metaDescription: "The AI tools that actually move the needle for HVAC, plumbing, roofing, and home inspection operators in 2026 — plus the ones to skip."
-featuredImage: "/images/backgrounds/hero-trades-1.jpg"
+featuredImage: "/images/industries/electrical.jpg"
 schema:
   type: "Article"
   faqItems:

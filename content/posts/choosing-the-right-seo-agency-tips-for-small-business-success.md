@@ -2,6 +2,7 @@
 title: "How to Choose the Right SEO Agency for Your Business"
 slug: "choosing-the-right-seo-agency-tips-for-small-business-success"
 publishDate: "2025-05-02"
+dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
@@ -12,7 +13,7 @@ category: "business-growth"
 tags: ["seo", "agency-selection", "business-growth", "home-services"]
 metaTitle: "How to Choose an SEO Agency | ASP Branding"
 metaDescription: "A practical framework for home service operators evaluating SEO agencies in 2026. Red flags, right questions, realistic timelines."
-featuredImage: "/images/backgrounds/hero-trades-1.jpg"
+featuredImage: "/images/backgrounds/hero-trades-2.jpg"
 schema:
   type: "Article"
   faqItems:
@@ -39,7 +40,7 @@ Choosing the wrong SEO agency is one of the more expensive mistakes a home servi
 
 ## Why SEO matters in the first place
 
-Before you pick an agency, be clear on what you're buying. SEO is not "ranking on Google." SEO is a system of compounding digital assets that, over time, produce qualified leads at a materially lower cost per lead than paid advertising. Unlike ads, which stop delivering the moment you stop paying, SEO builds durable visibility you own. For home service operators, that usually means a combination of Google Business Profile optimization, [local SEO](/blog/local-seo-for-home-service-businesses), content, and technical work — all measured by booked jobs, not by rank-tracker screenshots.
+Before you pick an agency, be clear on what you're buying. [Search engine optimization](https://en.wikipedia.org/wiki/Search_engine_optimization) is not "ranking on Google." SEO is a system of compounding digital assets that, over time, produce qualified leads at a materially lower cost per lead than paid advertising. Unlike ads, which stop delivering the moment you stop paying, SEO builds durable visibility you own. For home service operators, that usually means a combination of Google Business Profile optimization, [local SEO](/blog/local-seo-for-home-service-businesses), content, and technical work — all measured by booked jobs, not by rank-tracker screenshots.
 
 **Key Takeaway:** Evaluate agencies against revenue outcomes, not traffic or ranking outputs. Traffic without booked jobs is vanity.
 
@@ -128,7 +129,7 @@ Every home service business wants faster results. Here's the honest curve:
 
 ## Pricing reality
 
-Serious SEO for a single-location home service business starts around $1,000 to $2,000 per month. Multi-location operations scale up from there. Our [Local SEO Pro product is $1,200/month](/pricing), which reflects what it actually costs to deliver the work at the quality bar a real home service business deserves.
+Serious SEO for a single-location home service business starts around $1,000 to $2,000 per month. Multi-location operations scale up from there. Our [Local SEO Pro product is $1,200/month](/local-seo-pro), which reflects what it actually costs to deliver the work at the quality bar a real home service business deserves.
 
 Anything priced meaningfully below that range — $299 monthly SEO packages, for instance — is almost always a thin content mill or a citation-submission service rebranded. It will waste money and, worse, waste time you can't get back.
 

@@ -2,6 +2,7 @@
 title: "AEO for Home Service Businesses: The 2026 Playbook"
 slug: "ai-optimization-aeo-home-service-businesses-2025"
 publishDate: "2025-09-02"
+dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
@@ -12,7 +13,7 @@ category: "aeo"
 tags: ["aeo", "ai-search", "seo", "home-services", "google-algorithm"]
 metaTitle: "AEO for Home Service Businesses | ASP"
 metaDescription: "Answer Engine Optimization for HVAC, plumbing, roofing, and home inspection operators. How AI-era search works and how to win in 2026."
-featuredImage: "/images/backgrounds/hero-trades-1.jpg"
+featuredImage: "/images/industries/roofing.png"
 schema:
   type: "Article"
   faqItems:

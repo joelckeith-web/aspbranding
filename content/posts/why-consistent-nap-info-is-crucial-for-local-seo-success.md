@@ -2,6 +2,7 @@
 title: "NAP Consistency: Why It Makes or Breaks Local SEO"
 slug: "why-consistent-nap-info-is-crucial-for-local-seo-success"
 publishDate: "2025-06-15"
+dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
@@ -12,7 +13,7 @@ category: "local-seo"
 tags: ["local-seo", "nap", "citations", "google-business-profile", "home-services"]
 metaTitle: "NAP Consistency and Local SEO | ASP Branding"
 metaDescription: "Why consistent Name, Address, and Phone data across the web is one of the highest-leverage local SEO fixes for home service operators."
-featuredImage: "/images/backgrounds/hero-trades-1.jpg"
+featuredImage: "/images/industries/hvac-viking.jpg"
 schema:
   type: "Article"
   faqItems:
@@ -49,7 +50,7 @@ These three fields create what is effectively your business's digital fingerprin
 
 ## Why this matters more for home service businesses than almost anyone else
 
-Home service operators live or die in the [local map pack](/blog/local-seo-for-home-service-businesses) — those top three results with the pin drops that appear for queries like "HVAC repair near me" or "emergency plumber Austin." The map pack is dominated by local ranking signals, and NAP consistency is among the most weighted of those signals. [Moz's Local Search Ranking Factors research](https://moz.com/local-search-ranking-factors) has placed citation consistency in the top tier of local ranking influencers for years running.
+Home service operators live or die in the [local map pack](/blog/local-seo-for-home-service-businesses) — those top three results with the pin drops that appear for queries like "HVAC repair near me" or "emergency plumber Austin." The map pack is dominated by local ranking signals, and NAP consistency is among the most weighted of those signals. [Wikipedia's overview of local search engine optimization](https://en.wikipedia.org/wiki/Local_search_engine_optimization) explains the broader mechanics, and Google's own [Business Profile help documentation](https://support.google.com/business/answer/3038177) confirms that accurate, consistent business information is a direct ranking input.
 
 **Key Takeaway:** For home service operators, NAP consistency is not a minor hygiene issue — it's one of the three or four signals that most directly controls whether you show up in the local map pack.
 
@@ -65,7 +66,7 @@ Google explicitly treats NAP inconsistency as a signal of business unreliability
 
 ### 3. Trust erosion with customers
 
-This is the cost most operators miss. A homeowner finds you on Google with one phone number, clicks through to your site and sees a different number, checks your Facebook page and sees a third. The friction doesn't just reduce conversion — it actively signals that something is off about your operation. Industry surveys from [BrightLocal](https://www.brightlocal.com) consistently show that conflicting business information erodes consumer trust measurably.
+This is the cost most operators miss. A homeowner finds you on Google with one phone number, clicks through to your site and sees a different number, checks your Facebook page and sees a third. The friction doesn't just reduce conversion — it actively signals that something is off about your operation. Industry surveys consistently show that conflicting business information erodes consumer trust measurably.
 
 ## The common NAP issues we see when auditing new clients
 
@@ -107,7 +108,7 @@ If you run a home service business with multiple service locations, each locatio
 
 ## Where this fits in the full Growth System
 
-NAP consistency is foundational work that sits underneath everything else in [the ASP Growth System](/growth-system). Our [Local SEO Pro product](/pricing) includes the citation audit, the full cleanup across major aggregators and directories, and ongoing monitoring — because we've seen too many operators spend on content and ads while a basic NAP issue silently caps their local visibility.
+NAP consistency is foundational work that sits underneath everything else in [the ASP Growth System](/growth-system). Our [Local SEO Pro product](/local-seo-pro) includes the citation audit, the full cleanup across major aggregators and directories, and ongoing monitoring — because we've seen too many operators spend on content and ads while a basic NAP issue silently caps their local visibility.
 
 You own everything we build and everything we fix. The cleaned-up citation footprint, the claimed profiles, the monitoring access — all of it belongs to your business from day one.
 

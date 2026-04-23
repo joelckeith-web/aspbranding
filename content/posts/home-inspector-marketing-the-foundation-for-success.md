@@ -2,6 +2,7 @@
 title: "Home Inspector Marketing: The Foundation for Real Growth"
 slug: "home-inspector-marketing-the-foundation-for-success"
 publishDate: "2025-06-01"
+dateModified: "2026-04-23"
 author:
   name: "ASP Team"
   title: "Growth System"
@@ -12,7 +13,7 @@ category: "business-growth"
 tags: ["home-inspection", "marketing", "local-seo", "lead-generation", "ashi", "internachi"]
 metaTitle: "Home Inspector Marketing Guide | ASP Branding"
 metaDescription: "A complete marketing guide for home inspectors — website, Google Business Profile, real estate agent referrals, paid ads, and KPIs that matter."
-featuredImage: "/images/backgrounds/hero-trades-1.jpg"
+featuredImage: "/images/industries/home-inspection.jpg"
 schema:
   type: "Article"
   faqItems:
