@@ -24,7 +24,7 @@ const OUTCOMES = [
 
 export function GrowthSystem() {
   return (
-    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-32 text-white overflow-hidden bg-asp-surface-navy">
+    <section className="relative py-16 md:py-20 lg:py-24 2xl:py-32 text-white overflow-hidden bg-asp-black">
       {/* Background image */}
       <div
         aria-hidden
@@ -41,7 +41,7 @@ export function GrowthSystem() {
         className="absolute inset-0 opacity-40 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 50% at 50% 0%, rgba(76, 201, 240, 0.3), transparent 70%), radial-gradient(ellipse 60% 50% at 50% 100%, rgba(159, 76, 255, 0.2), transparent 70%)",
+            "radial-gradient(ellipse 60% 50% at 50% 0%, rgba(76, 201, 240, 0.14), transparent 70%), radial-gradient(ellipse 60% 50% at 50% 100%, rgba(159, 76, 255, 0.12), transparent 70%)",
         }}
       />
       <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,7 +69,7 @@ export function GrowthSystem() {
                 key={o.label}
                 className="relative group rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-gradient-to-br from-asp-blue-light/40 via-asp-purple/30 to-asp-blue-light/40 hover:from-asp-blue-light/70 hover:via-asp-purple/50 hover:to-asp-blue-light/70 transition-all duration-300"
               >
-                <div className="relative h-full rounded-[calc(var(--radius-asp-2xl)-1px)] bg-asp-surface-navy p-8 2xl:p-10 flex flex-col items-center text-center">
+                <div className="relative h-full rounded-[calc(var(--radius-asp-2xl)-1px)] bg-asp-black p-8 2xl:p-10 flex flex-col items-center text-center">
                   <div
                     className={`inline-block font-bold text-[11px] uppercase tracking-widest mb-5 px-3 py-1 rounded-full bg-gradient-to-r ${o.accent} text-white`}
                   >

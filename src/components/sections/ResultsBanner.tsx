@@ -47,12 +47,12 @@ export function ResultsBanner() {
             {TILES.map((t, i) => (
               <div
                 key={i}
-                className="rounded-[var(--radius-asp-2xl)] bg-asp-black border-2 border-asp-blue-light/40 hover:border-asp-blue-light transition-colors p-6 lg:p-8 flex flex-col items-center text-center"
+                className="rounded-[var(--radius-asp-2xl)] bg-asp-black border-2 border-asp-purple/40 hover:border-asp-purple transition-colors p-6 lg:p-8 flex flex-col items-center text-center"
               >
-                <div className="font-black text-5xl lg:text-6xl 2xl:text-7xl text-asp-blue-light leading-none mb-3">
+                <div className="font-black text-5xl lg:text-6xl 2xl:text-7xl text-asp-purple leading-none mb-3">
                   {t.stat}
                 </div>
-                <div className="font-bold text-xs uppercase tracking-widest text-asp-blue-light/70 mb-4">
+                <div className="font-bold text-xs uppercase tracking-widest text-asp-purple/70 mb-4">
                   {t.unit}
                 </div>
                 <p className="text-white/65 text-sm leading-relaxed">{t.label}</p>
@@ -65,7 +65,7 @@ export function ResultsBanner() {
           <div className="text-center mt-10">
             <Link
               href="/case-studies"
-              className="inline-flex items-center gap-2 font-bold text-asp-blue-light hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 font-bold text-asp-purple hover:text-white transition-colors"
             >
               Read the case studies
               <span aria-hidden>&rarr;</span>

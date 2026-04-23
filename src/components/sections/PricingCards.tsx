@@ -6,7 +6,7 @@ const TIERS = [
     name: "Foundation",
     price: "$2,500",
     period: "/ month",
-    tagline: "For shops building their first real growth engine.",
+    tagline: "For businesses building their first real growth engine.",
     features: [
       "Monthly performance report",
       "Local SEO Pro (GBP, citations, heatmap, rankings)",

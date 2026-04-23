@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BUSINESS, FOOTER_SOLUTIONS } from "@/lib/constants";
+import { BUSINESS, FOOTER_SYSTEM, FOOTER_COMPANY } from "@/lib/constants";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -31,13 +31,13 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Solutions Column */}
+          {/* The System Column */}
           <div>
             <h3 className="text-white font-bold text-xs uppercase tracking-widest mb-5">
-              The Growth System
+              The System
             </h3>
             <ul className="space-y-3">
-              {FOOTER_SOLUTIONS.map((item) => (
+              {FOOTER_SYSTEM.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -56,30 +56,16 @@ export function Footer() {
               Company
             </h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-white/60 hover:text-asp-blue-light transition-colors duration-150 no-underline text-sm"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="text-white/60 hover:text-asp-blue-light transition-colors duration-150 no-underline text-sm"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-white/60 hover:text-asp-blue-light transition-colors duration-150 no-underline text-sm"
-                >
-                  Contact
-                </Link>
-              </li>
+              {FOOTER_COMPANY.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-white/60 hover:text-asp-blue-light transition-colors duration-150 no-underline text-sm"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

@@ -43,7 +43,7 @@ export function Industries() {
                 Who we help
               </h2>
               <p className="text-white/60 text-lg leading-relaxed">
-                We build growth systems for home service businesses &mdash; the trades that keep neighborhoods running. Whether you&apos;re in a category below or something adjacent, if you rely on local leads to grow, we&apos;ve probably worked with a shop like yours.
+                We build growth systems for home service businesses &mdash; the trades that keep neighborhoods running. Whether you&apos;re in a category below or something adjacent, if you rely on local leads to grow, we&apos;ve probably worked with a business like yours.
               </p>
             </div>
 
@@ -52,7 +52,7 @@ export function Industries() {
                 type="button"
                 onClick={() => scroll("left")}
                 aria-label="Previous"
-                className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-asp-blue-light hover:border-asp-blue-light hover:text-asp-black transition-all"
+                className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-asp-purple hover:border-asp-purple hover:text-white transition-all"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -62,7 +62,7 @@ export function Industries() {
                 type="button"
                 onClick={() => scroll("right")}
                 aria-label="Next"
-                className="w-12 h-12 rounded-full bg-asp-blue-light flex items-center justify-center text-asp-black hover:bg-white transition-all"
+                className="w-12 h-12 rounded-full bg-asp-purple flex items-center justify-center text-white hover:bg-white hover:text-asp-purple transition-all"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -79,7 +79,7 @@ export function Industries() {
           {industriesData.map((industry) => (
             <div
               key={industry.name}
-              className="group flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[360px] bg-white/[0.03] border border-asp-blue-light/20 rounded-[var(--radius-asp-xl)] overflow-hidden hover:border-asp-blue-light/60 transition-all duration-300"
+              className="group flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[360px] bg-white/[0.03] border border-asp-purple/20 rounded-[var(--radius-asp-xl)] overflow-hidden hover:border-asp-purple/60 transition-all duration-300"
             >
               <div className="relative h-48 lg:h-56 overflow-hidden bg-asp-surface-navy">
                 {industry.image ? (
@@ -113,7 +113,7 @@ export function Industries() {
 
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 mt-6">
           <p className="text-center text-white/40 text-sm max-w-2xl mx-auto">
-            Don&apos;t see your trade listed? Reach out &mdash; there&apos;s a good chance we&apos;ve worked with a shop like yours.
+            Don&apos;t see your trade listed? Reach out &mdash; there&apos;s a good chance we&apos;ve worked with a business like yours.
           </p>
         </div>
       </div>

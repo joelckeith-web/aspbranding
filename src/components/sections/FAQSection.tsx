@@ -9,7 +9,7 @@ export type FAQItem = { q: string; a: string };
 const DEFAULT_FAQS: FAQItem[] = [
   {
     q: "What trades do you actually work with?",
-    a: "We specialize in home service businesses — HVAC, plumbing, electrical, roofing, home inspection, pressure washing, pest control, landscaping, appliance repair, restoration, flooring, remodeling, and most adjacent trades. If you rely on local leads to grow, there's a good chance we've worked with a shop like yours.",
+    a: "We specialize in home service businesses — HVAC, plumbing, electrical, roofing, home inspection, pressure washing, pest control, landscaping, appliance repair, restoration, flooring, remodeling, and most adjacent trades. If you rely on local leads to grow, there's a good chance we've worked with a business like yours.",
   },
   {
     q: "What makes ASP different from other home service marketing agencies?",

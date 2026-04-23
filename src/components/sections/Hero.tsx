@@ -102,7 +102,8 @@ export function Hero({
                 {cta2Text && cta2Url && (
                   <Link
                     href={cta2Url}
-                    className="inline-block border border-white/30 text-white font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white/5 hover:border-white/50 transition-all duration-150 no-underline text-base"
+                    className="inline-block bg-asp-blue-light text-white font-bold py-4 px-8 rounded-[var(--radius-asp-md)] hover:bg-white hover:text-asp-blue transition-all duration-150 no-underline text-base"
+                    style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
                   >
                     {cta2Text}
                   </Link>

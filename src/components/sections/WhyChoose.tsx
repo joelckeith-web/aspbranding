@@ -45,13 +45,13 @@ export function WhyChoose() {
         className="absolute inset-0 opacity-40 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 50% 40% at 0% 100%, rgba(76, 201, 240, 0.2), transparent 70%), radial-gradient(ellipse 50% 40% at 100% 0%, rgba(159, 76, 255, 0.15), transparent 70%)",
+            "radial-gradient(ellipse 50% 40% at 0% 100%, rgba(76, 201, 240, 0.22), transparent 70%), radial-gradient(ellipse 50% 40% at 100% 0%, rgba(76, 201, 240, 0.14), transparent 70%)",
         }}
       />
       <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-12 2xl:mb-16 max-w-3xl mx-auto">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
               The difference
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5 leading-tight">

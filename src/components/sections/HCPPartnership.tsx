@@ -19,7 +19,7 @@ export function HCPPartnership() {
           className="absolute inset-0 opacity-40"
           style={{
             background:
-              "radial-gradient(ellipse 50% 60% at 15% 50%, rgba(76, 201, 240, 0.16), transparent 70%), radial-gradient(ellipse 50% 60% at 90% 50%, rgba(159, 76, 255, 0.12), transparent 70%)",
+              "radial-gradient(ellipse 50% 60% at 15% 50%, rgba(76, 201, 240, 0.2), transparent 70%), radial-gradient(ellipse 50% 60% at 90% 50%, rgba(76, 201, 240, 0.12), transparent 70%)",
           }}
         />
       </div>
@@ -29,14 +29,14 @@ export function HCPPartnership() {
           {/* Left: Copy */}
           <ScrollReveal>
             <div>
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">
                 Official Affiliate Partner
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
                 Your bridge between the trades and the AI that runs them.
               </h2>
               <p className="text-white/70 text-base lg:text-lg mb-4 leading-relaxed">
-                Housecall Pro is rolling out a serious AI stack &mdash; CSR AI, job attribution, automated dispatching, reporting. As an Official Affiliate Partner, we onboard, configure, and integrate it so it works in your shop from day one.
+                Housecall Pro is rolling out a serious AI stack &mdash; CSR AI, job attribution, automated dispatching, reporting. As an Official Affiliate Partner, we onboard, configure, and integrate it so it works in your business from day one.
               </p>
               <p className="text-asp-blue-light text-base lg:text-lg mb-6 leading-relaxed font-semibold">
                 Switching to HCP or setting up for the first time? We&apos;ll get you onboarded the right way &mdash; and, where it applies, secure partner discounts available only on new HCP accounts.

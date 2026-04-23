@@ -19,17 +19,27 @@ export const BUSINESS = {
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Solutions", href: "/solutions" },
+  { label: "Home", href: "/" },
+  { label: "Growth System", href: "/growth-system" },
+  { label: "AI Integration", href: "/ai-integration" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Case Studies", href: "/case-studies" },
+] as const;
+
+export const FOOTER_SYSTEM = [
+  { label: "The Growth System", href: "/growth-system" },
+  { label: "AI Integration", href: "/ai-integration" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Case Studies", href: "/case-studies" },
+  { label: "Growth Diagnostic", href: "/diagnostic" },
+] as const;
+
+export const FOOTER_COMPANY = [
   { label: "About", href: "/about" },
+  { label: "Fractional C-Suite", href: "/fractional" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
-export const FOOTER_SOLUTIONS = [
-  { label: "Foundation", href: "/#pricing" },
-  { label: "Growth", href: "/#pricing" },
-  { label: "Premier", href: "/#pricing" },
-  { label: "Local SEO Pro", href: "/#pricing" },
-  { label: "StormFront", href: "/#pricing" },
-  { label: "Content Creation Package", href: "/#pricing" },
-] as const;
+// Legacy export kept for any stragglers until the whole codebase is migrated.
+export const FOOTER_SOLUTIONS = FOOTER_SYSTEM;
