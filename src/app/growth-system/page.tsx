@@ -237,15 +237,15 @@ export default function GrowthSystemPage() {
               {VS_VENDORS.map((row, i) => (
                 <div
                   key={i}
-                  className="grid grid-cols-1 md:grid-cols-2 rounded-[var(--radius-asp-xl)] border border-gray-200 overflow-hidden"
+                  className="grid grid-cols-1 md:grid-cols-2 rounded-[var(--radius-asp-xl)] overflow-hidden"
                 >
-                  <div className="p-6 lg:p-7 bg-gray-50 text-gray-600 text-sm lg:text-base border-b md:border-b-0 md:border-r border-gray-200">
+                  <div className="p-6 lg:p-7 bg-white text-asp-blue text-sm lg:text-base border border-gray-200 rounded-[var(--radius-asp-xl)] md:rounded-r-none md:border-r-0">
                     <div className="font-bold text-xs uppercase tracking-widest text-gray-400 mb-2">
                       Industry standard
                     </div>
                     {row.them}
                   </div>
-                  <div className="p-6 lg:p-7 bg-white text-asp-blue text-sm lg:text-base">
+                  <div className="p-6 lg:p-7 bg-asp-blue text-white text-sm lg:text-base rounded-[var(--radius-asp-xl)] md:rounded-l-none">
                     <div className="font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-2">
                       The Growth System
                     </div>
