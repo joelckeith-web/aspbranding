@@ -1,0 +1,286 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Hero } from "@/components/sections/Hero";
+import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
+import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
+
+export const metadata: Metadata = {
+  title: "Content Creation Package | ASP",
+  description:
+    "Social and GBP content done for you — ready to post. Monthly drops of branded graphics, captions, and weekly Google Business Profile posts built on your brand kit.",
+};
+
+const DELIVERABLES = [
+  {
+    title: "12–16 branded social graphics",
+    body: "Monthly drop of Instagram, Facebook, and LinkedIn-ready graphics built on your brand kit — colors, fonts, logo, tone. Post-ready. No design review loops unless you want them.",
+  },
+  {
+    title: "Captions written in your voice",
+    body: "Every graphic paired with a caption drafted to match how you actually talk about your business. CTAs included — DMs, calls, bookings, or whatever converts in your channel.",
+  },
+  {
+    title: "Weekly GBP posts",
+    body: "Four to five Google Business Profile posts per month, optimized for the local search surface. Photo, copy, CTA — all in your brand system.",
+  },
+  {
+    title: "Hashtag + discoverability strategy",
+    body: "Researched hashtag sets by platform and topic, refreshed quarterly. Not copy-paste hashtag spam — intentional groupings tied to how your customers actually search.",
+  },
+  {
+    title: "Brand kit setup + maintenance",
+    body: "Logo, colors, fonts, voice guidelines codified in a brand kit at onboarding and refined as the business evolves. Every piece of content pulls from the same source.",
+  },
+  {
+    title: "Monthly content calendar",
+    body: "Delivered in advance so you see what&apos;s shipping before it ships. Approval workflow available for clients who want it, full autonomy for clients who don&apos;t.",
+  },
+];
+
+const AI_LAYER = [
+  {
+    title: "First-pass copy drafts",
+    body: "AI drafts caption variants and post hooks in your brand voice, using your product knowledge and recent business updates. Our content specialists pick, edit, and refine — AI doesn&apos;t publish on its own.",
+  },
+  {
+    title: "Graphic template multiplication",
+    body: "Our designers build the brand-consistent templates. AI extends them across sizes, platforms, and topics so the monthly drop gets 3× the variety without 3× the design time.",
+  },
+  {
+    title: "Voice drift detection",
+    body: "AI watches for drift toward generic agency language and flags it before publish. If a caption starts sounding like every other contractor&apos;s Instagram, we catch it.",
+  },
+  {
+    title: "Never AI slop",
+    body: "AI is a leverage tool, not a publishing tool. Every post in your calendar has passed through a human content specialist who knows your business. The goal is velocity without losing voice.",
+  },
+];
+
+export default function ContentCreationPage() {
+  return (
+    <main id="primary" className="site-main">
+      <Hero
+        eyebrow="Content Creation Package · $499/mo"
+        heading="Social and GBP content, done for you.<br><span class='hero-text-gradient'>Ready to post.</span>"
+        subheading="12–16 branded social graphics, captions in your voice, weekly GBP posts, and a monthly content calendar — built on your brand kit and reviewed by humans who actually know your business."
+        ctaText="Start with Content"
+        ctaUrl="/contact?topic=content-creation"
+        cta2Text="See how it fits the Growth System"
+        cta2Url="/growth-system"
+        bgType="image"
+        imageUrl="/images/industries/home-inspection.jpg"
+        imagePosition="center center"
+      />
+
+      {/* What it is */}
+      <section className="py-16 md:py-20 lg:py-24 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                What it is
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-5 leading-tight">
+                Managed content, without the agency overhead.
+              </h2>
+              <p className="text-gray-700 text-lg leading-relaxed mb-5">
+                Every home service operator knows social matters — and every home service operator runs out of time to ship it consistently. Content Creation Package is the done-for-you version: branded graphics, GBP posts, captions, and calendar, delivered monthly, ready to publish.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                It&apos;s the same content engine that ships inside Foundation, Growth, and Premier — available standalone for operators who want the channel handled before layering on the rest of the Growth System.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* What's inside */}
+      <section className="relative py-16 md:py-20 lg:py-24 bg-asp-black text-white overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-40 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(76, 201, 240, 0.16), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                What&apos;s included
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
+                Six deliverables. One monthly drop.
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal animation="stagger">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+              {DELIVERABLES.map((c) => (
+                <div
+                  key={c.title}
+                  className="rounded-[var(--radius-asp-xl)] bg-white/[0.03] border border-asp-blue-light/25 hover:border-asp-blue-light/60 transition-colors p-6 lg:p-7"
+                >
+                  <h3 className="font-black text-lg 2xl:text-xl text-white mb-2">
+                    {c.title}
+                  </h3>
+                  <p className="text-white/65 text-sm leading-relaxed">{c.body}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* How AI is wired in */}
+      <section className="py-16 md:py-20 lg:py-24 bg-white">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                Where AI plays in
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
+                AI is leverage. Humans are in charge.
+              </h2>
+              <p className="text-gray-600 text-lg">
+                This is where &ldquo;AI vs. AI slop&rdquo; matters most. We use AI to speed the work up — not to replace the judgment that makes the content sound like you.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal animation="stagger">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              {AI_LAYER.map((a) => (
+                <div
+                  key={a.title}
+                  className="rounded-[var(--radius-asp-xl)] border border-gray-200 p-7 bg-white shadow-asp-sm"
+                >
+                  <h3 className="font-black text-lg text-asp-blue mb-2">{a.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{a.body}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Why our team wins */}
+      <section className="relative py-16 md:py-20 lg:py-24 bg-asp-black text-white overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-35 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(159, 76, 255, 0.18), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal>
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+              Who&apos;s running it
+            </span>
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5 leading-tight">
+              Written by people who know the industry from the inside.
+            </h2>
+            <p className="text-white/80 text-lg leading-relaxed mb-5">
+              Our leadership team owns trades-based businesses. That means the content we ship doesn&apos;t read like it came from an agency that&apos;s never met a technician. It reads like it came from someone who&apos;s dispatched a truck, quoted a job, and picked up a call at 9pm on a Sunday.
+            </p>
+            <p className="text-white/60 leading-relaxed">
+              AI helps our specialists ship more. Industry ownership is why what ships is worth reading.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Pricing + Growth upsell */}
+      <section className="py-16 md:py-20 lg:py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                Pricing
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-4">
+                Two ways to buy the Content Creation Package.
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal animation="stagger">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              <div className="rounded-[var(--radius-asp-2xl)] border border-gray-200 p-8 bg-white shadow-asp-sm flex flex-col">
+                <div className="font-bold text-xs uppercase tracking-widest text-asp-purple mb-2">
+                  Standalone
+                </div>
+                <h3 className="font-black text-2xl text-asp-blue mb-2">
+                  Content Creation Package
+                </h3>
+                <div className="flex items-baseline gap-2 mb-4">
+                  <span className="font-black text-4xl text-asp-blue">$499</span>
+                  <span className="text-gray-500 text-sm">/ month</span>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Full monthly drop, delivered post-ready. Quarterly review to map the path into the full Growth System when the time is right.
+                </p>
+                <Link
+                  href="/contact?topic=content-creation"
+                  className="mt-auto inline-flex items-center justify-center gap-2 border-2 border-asp-blue text-asp-blue font-bold px-6 py-3 rounded-[var(--radius-asp-lg)] hover:bg-asp-blue hover:text-white transition-colors"
+                >
+                  Start with Content
+                </Link>
+              </div>
+
+              <div className="relative rounded-[var(--radius-asp-2xl)] p-[2px] bg-gradient-to-br from-asp-blue-light via-asp-purple to-asp-blue-light shadow-[0_20px_60px_-10px_rgba(76,201,240,0.3)]">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                  <span className="bg-gradient-to-r from-asp-blue-light to-asp-purple text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                    Most popular
+                  </span>
+                </div>
+                <div className="h-full rounded-[calc(var(--radius-asp-2xl)-2px)] bg-asp-surface-navy text-white p-8 flex flex-col">
+                  <div className="font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-2">
+                    Inside the system
+                  </div>
+                  <h3 className="font-black text-2xl mb-2">Growth Package</h3>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="font-black text-4xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple">
+                      $3,850
+                    </span>
+                    <span className="text-white/60 text-sm">/ month</span>
+                  </div>
+                  <p className="text-white/75 leading-relaxed mb-6">
+                    Content Creation Package <strong>plus</strong> Local SEO Pro, paid media, custom website, HCP AI integration, and fractional CMO-level direction. Content works harder when it&apos;s feeding a full funnel, not a standalone feed.
+                  </p>
+                  <Link
+                    href="/contact?topic=growth"
+                    className="mt-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold px-6 py-3 rounded-[var(--radius-asp-lg)] hover:opacity-90 transition-opacity"
+                  >
+                    Scale with Growth
+                    <span aria-hidden>&rarr;</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <p className="text-center text-gray-500 text-sm mt-8">
+              Not sure which way to go?{" "}
+              <Link href="/diagnostic" className="text-asp-blue hover:text-asp-blue-light font-semibold">
+                Run the Growth Diagnostic
+              </Link>{" "}
+              &mdash; 90 seconds.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <TestimonialAnchor quote="I can't imagine using anyone else for marketing." />
+
+      <ConsultationCTA />
+    </main>
+  );
+}

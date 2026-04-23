@@ -61,7 +61,8 @@ const ENTRY_PRODUCTS = [
     period: "/ month",
     oneLiner: "Own your local map. Rank where your customers search.",
     body: "Full-service GBP management, citation acquisition, local ranking heatmap, review capture automation, monthly ranking report.",
-    ctaLabel: "Start with Local SEO Pro",
+    ctaLabel: "Learn more",
+    href: "/local-seo-pro",
   },
   {
     name: "StormFront",
@@ -69,7 +70,8 @@ const ENTRY_PRODUCTS = [
     period: "/ month",
     oneLiner: "Weather-triggered content that shows up when your customers are searching.",
     body: "Fully managed weather-event-triggered blog system. Drafts, publishes, and indexes automatically when storms, heat waves, or seasonal triggers fire in your service area.",
-    ctaLabel: "Start with StormFront",
+    ctaLabel: "Learn more",
+    href: "/stormfront",
   },
   {
     name: "Content Creation Package",
@@ -77,7 +79,8 @@ const ENTRY_PRODUCTS = [
     period: "/ month",
     oneLiner: "Social and GBP content, done for you — ready to post.",
     body: "12–16 branded social graphics and captions, plus weekly Google Business Profile post content, delivered monthly. Built on your brand kit.",
-    ctaLabel: "Start with Content",
+    ctaLabel: "Learn more",
+    href: "/content-creation",
   },
 ];
 
@@ -249,7 +252,7 @@ export function PricingCards() {
                   <p className="text-white/80 font-semibold text-sm mb-3 leading-snug">{p.oneLiner}</p>
                   <p className="text-white/60 text-sm leading-relaxed flex-1 mb-5">{p.body}</p>
                   <Link
-                    href="/contact"
+                    href={p.href}
                     className="inline-flex items-center gap-2 text-asp-blue-light font-bold text-sm hover:text-white transition-colors"
                   >
                     {p.ctaLabel}

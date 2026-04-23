@@ -34,6 +34,13 @@ export const FOOTER_SYSTEM = [
   { label: "Growth Diagnostic", href: "/diagnostic" },
 ] as const;
 
+export const FOOTER_PRODUCTS = [
+  { label: "Local SEO Pro", href: "/local-seo-pro" },
+  { label: "StormFront", href: "/stormfront" },
+  { label: "Content Creation Package", href: "/content-creation" },
+  { label: "Fractional C-Suite", href: "/fractional" },
+] as const;
+
 export const FOOTER_COMPANY = [
   { label: "About", href: "/about" },
   { label: "Fractional C-Suite", href: "/fractional" },

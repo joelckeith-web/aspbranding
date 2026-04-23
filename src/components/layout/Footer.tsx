@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BUSINESS, FOOTER_SYSTEM, FOOTER_COMPANY } from "@/lib/constants";
+import { BUSINESS, FOOTER_SYSTEM, FOOTER_COMPANY, FOOTER_PRODUCTS } from "@/lib/constants";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="bg-asp-black text-white">
       {/* Main Footer */}
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12 2xl:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 2xl:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10 2xl:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-5">
@@ -38,6 +38,25 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               {FOOTER_SYSTEM.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-white/60 hover:text-asp-blue-light transition-colors duration-150 no-underline text-sm"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Products Column */}
+          <div>
+            <h3 className="text-white font-bold text-xs uppercase tracking-widest mb-5">
+              Products
+            </h3>
+            <ul className="space-y-3">
+              {FOOTER_PRODUCTS.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
