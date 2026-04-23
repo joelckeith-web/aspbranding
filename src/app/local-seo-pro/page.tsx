@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 export const metadata: Metadata = {
   title: "Local SEO Pro | ASP",
   description:
-    "Own the local map. Rank where your customers search. Full-service Google Business Profile, citation cleanup, local ranking heatmap, and review systems for home service operators.",
+    "Own the local map. Rank where your customers search. Full-service Google Business Profile, citation cleanup, local ranking heatmap, and local content strategy for home service operators.",
 };
 
 const INCLUDES = [
@@ -25,8 +25,8 @@ const INCLUDES = [
     body: "Monthly heatmap reporting from 50+ grid points across your service area. See exactly where you rank in every neighborhood, not just the city average.",
   },
   {
-    title: "Review generation + response",
-    body: "Automated review requests timed to job completion in Housecall Pro. Every review responded to within 24 hours — positive ones amplified, negative ones handled professionally.",
+    title: "Competitor + market intelligence",
+    body: "Ongoing analysis of your top local competitors, their ranking movements, and the market signals shaping your category. Informs every tactical decision month over month.",
   },
   {
     title: "Local schema + on-site optimization",
@@ -34,19 +34,11 @@ const INCLUDES = [
   },
   {
     title: "Monthly performance report",
-    body: "Rankings, review velocity, GBP engagement, call tracking, direction requests — reported against booked revenue in HCP, not vanity metrics.",
+    body: "Rankings, GBP engagement, call tracking, direction requests, competitive movement — reported against booked revenue in HCP, not vanity metrics.",
   },
 ];
 
 const AI_LAYER = [
-  {
-    title: "Review response drafting",
-    body: "AI drafts first-pass review responses in your brand voice — every response reviewed by a human before it publishes. Response time drops from days to minutes without sounding robotic.",
-  },
-  {
-    title: "Local content generation",
-    body: "Service-area pages, GBP posts, and local landing page copy drafted by AI using your business voice, your service details, and your actual market data — then edited by our specialists.",
-  },
   {
     title: "Ranking anomaly detection",
     body: "AI watches the daily ranking data and flags sudden drops, Google algorithm shifts, or competitor moves before they turn into lost revenue. Humans decide what to do about it.",
@@ -54,6 +46,14 @@ const AI_LAYER = [
   {
     title: "Citation auditing at scale",
     body: "AI cross-checks 60+ directories in minutes instead of hours. Our team focuses on the corrections that matter, not the grunt work of finding them.",
+  },
+  {
+    title: "Competitor + market trend analysis",
+    body: "AI digests local competitor movement, category-wide search trends, and seasonal patterns across your service area — surfacing the signals that change what we recommend next.",
+  },
+  {
+    title: "Past-performance intelligence",
+    body: "AI analyzes what&apos;s worked and what hasn&apos;t across your own local search history — ranking shifts, GBP engagement, converting queries — so every strategic recommendation is grounded in your data, not agency guesswork.",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function LocalSeoProPage() {
       <Hero
         eyebrow="Local SEO Pro · $1,200/mo"
         heading="Own your local map.<br><span class='hero-text-gradient'>Rank where your customers search.</span>"
-        subheading="Full-service Google Business Profile, citation cleanup, heatmap reporting, and review automation — run by specialists, accelerated by AI, grounded in home service reality."
+        subheading="Full-service Google Business Profile, citation cleanup, heatmap reporting, and competitive intelligence — run by specialists, sharpened by AI analytics, grounded in home service reality."
         ctaText="Start with Local SEO Pro"
         ctaUrl="/contact?topic=local-seo-pro"
         cta2Text="See how it fits the Growth System"
@@ -85,7 +85,7 @@ export default function LocalSeoProPage() {
                 The local search layer of the Growth System, delivered as a standalone product.
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-5">
-                Local SEO Pro is the same GBP management, citation hygiene, heatmap reporting, and review system that runs inside Foundation, Growth, and Premier — available on its own for operators who want the local channel handled before layering on the rest.
+                Local SEO Pro is the same GBP management, citation hygiene, heatmap reporting, and competitive intelligence that runs inside Foundation, Growth, and Premier — available on its own for operators who want the local channel handled before layering on the rest.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 It&apos;s not a scaled-down starter version. It&apos;s the same engine — just focused on one channel.
@@ -144,10 +144,10 @@ export default function LocalSeoProPage() {
                 Where AI plays in
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
-                AI accelerates the work. Humans make the call.
+                AI as your research layer.
               </h2>
               <p className="text-gray-600 text-lg">
-                We use AI where it&apos;s better than humans at the grunt work — and keep humans in charge of strategy, voice, and any content that touches a customer.
+                We use AI for research, analytics, and signal detection &mdash; the work humans can&apos;t do at scale. Strategy, voice, and anything that touches a customer stays with our specialists.
               </p>
             </div>
           </ScrollReveal>
@@ -235,28 +235,28 @@ export default function LocalSeoProPage() {
               <div className="relative rounded-[var(--radius-asp-2xl)] p-[2px] bg-gradient-to-br from-asp-blue-light via-asp-purple to-asp-blue-light shadow-[0_20px_60px_-10px_rgba(76,201,240,0.3)]">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                   <span className="bg-gradient-to-r from-asp-blue-light to-asp-purple text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
-                    Most popular
+                    Best value
                   </span>
                 </div>
                 <div className="h-full rounded-[calc(var(--radius-asp-2xl)-2px)] bg-asp-surface-navy text-white p-8 flex flex-col">
                   <div className="font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-2">
                     Inside the system
                   </div>
-                  <h3 className="font-black text-2xl mb-2">Growth Package</h3>
+                  <h3 className="font-black text-2xl mb-2">Foundation Package</h3>
                   <div className="flex items-baseline gap-2 mb-4">
                     <span className="font-black text-4xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple">
-                      $3,850
+                      $2,500
                     </span>
                     <span className="text-white/60 text-sm">/ month</span>
                   </div>
                   <p className="text-white/75 leading-relaxed mb-6">
-                    Local SEO Pro <strong>plus</strong> paid media, custom website, content, HCP AI integration, and fractional CMO-level direction. The local channel feeds every other channel in the stack.
+                    Local SEO Pro <strong>plus</strong> StormFront, the Content Creation Package, HCP attribution setup, and monthly performance reporting. Three productized services plus the reporting layer for $252 more than Local SEO Pro alone.
                   </p>
                   <Link
-                    href="/contact?topic=growth"
+                    href="/contact?topic=foundation"
                     className="mt-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold px-6 py-3 rounded-[var(--radius-asp-lg)] hover:opacity-90 transition-opacity"
                   >
-                    Scale with Growth
+                    Start with Foundation
                     <span aria-hidden>&rarr;</span>
                   </Link>
                 </div>

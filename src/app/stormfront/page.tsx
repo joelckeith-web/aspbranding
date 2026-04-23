@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 export const metadata: Metadata = {
   title: "StormFront | ASP",
   description:
-    "Weather-triggered content that publishes on the days your phones already ring. Built for roofing, HVAC, plumbing, and restoration operators who profit from weather events.",
+    "A proprietary content system built for storm-chasing and weather-driven home service operators. Watches your service area and fires targeted content when qualifying weather events hit.",
 };
 
 const INCLUDES = [
@@ -25,8 +25,8 @@ const INCLUDES = [
     body: "Direct publish to your blog, GBP posts, and social profiles. Zero human intervention required on a per-storm basis — the system ships without waiting on you.",
   },
   {
-    title: "Search indexing sprint",
-    body: "Fresh posts submitted to Google for priority indexing the moment they publish. Time-to-indexed drops from days to hours on triggered content.",
+    title: "Priority indexing submission",
+    body: "Fresh posts submitted to Google for priority indexing the moment they publish. Every new piece is pushed into the search index as quickly as the platform allows.",
   },
   {
     title: "Lead capture integration",
@@ -40,20 +40,20 @@ const INCLUDES = [
 
 const AI_LAYER = [
   {
-    title: "Localization at scale",
-    body: "AI localizes each post with your service area, nearby neighborhoods, and the specific weather event — turning one template into hundreds of indexable city/event combinations.",
+    title: "Trigger classification",
+    body: "AI parses National Weather Service feeds and other data sources to classify storm severity and recommend the right content playbook in real time &mdash; so the right piece fires at the right moment.",
   },
   {
-    title: "Trigger classification",
-    body: "AI parses National Weather Service feeds and other data sources to classify storm severity and recommend the right content playbook in real time.",
+    title: "Competitor + market signal analysis",
+    body: "AI watches how your local competitors respond to the same weather events and what category-wide search behavior is shifting &mdash; surfacing the market dynamics that inform every future recommendation.",
+  },
+  {
+    title: "Past-performance intelligence",
+    body: "AI analyzes which past StormFront posts actually drove engagement, calls, and booked revenue &mdash; feeding those insights back into the template library so the next fire is sharper than the last.",
   },
   {
     title: "Content freshness audits",
-    body: "AI watches for language that&apos;s aging poorly (stale statistics, outdated product references, old year mentions) and flags posts for refresh before they turn into liabilities.",
-  },
-  {
-    title: "Human-owned voice",
-    body: "The base content templates are written by our specialists in your brand voice first. AI localizes and targets — it never invents. Every piece is reviewed before the system is armed.",
+    body: "AI watches for language that is aging poorly &mdash; stale statistics, outdated product references, old year mentions &mdash; and flags posts for human refresh before they turn into liabilities.",
   },
 ];
 
@@ -71,8 +71,8 @@ export default function StormfrontPage() {
     <main id="primary" className="site-main">
       <Hero
         eyebrow="StormFront · $549/mo"
-        heading="Publish on the days your<br><span class='hero-text-gradient'>phones already ring.</span>"
-        subheading="Weather-triggered content that activates when storms, heat waves, freezes, and seasonal cycles fire in your service area. Built for operators whose demand curve moves with the weather."
+        heading="A proprietary content system<br><span class='hero-text-gradient'>for weather-driven operators.</span>"
+        subheading="Built for roofing, HVAC, plumbing, and restoration businesses that chase storm-driven demand. StormFront watches your service area, fires when qualifying weather events hit, and publishes targeted content timed to the spike in search."
         ctaText="Start with StormFront"
         ctaUrl="/contact?topic=stormfront"
         cta2Text="See how it fits the Growth System"
@@ -121,7 +121,7 @@ export default function StormfrontPage() {
                 Built for
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
-                Trades where the phone ring correlates with the radar.
+                Storm chasers and weather-driven operators.
               </h2>
             </div>
             <ul className="space-y-3">
@@ -197,10 +197,10 @@ export default function StormfrontPage() {
                 Where AI plays in
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
-                AI makes it scale. Humans make it real.
+                AI as your research layer.
               </h2>
               <p className="text-white/70 text-lg">
-                The base templates, voice guidelines, and trigger playbooks are built by our specialists. AI applies them at scale when the weather fires.
+                The content itself is written by our specialists in your brand voice. AI runs the research and analysis underneath &mdash; classification, competitor signals, historical performance &mdash; so every fire is informed by the best available data.
               </p>
             </div>
           </ScrollReveal>
@@ -288,28 +288,28 @@ export default function StormfrontPage() {
               <div className="relative rounded-[var(--radius-asp-2xl)] p-[2px] bg-gradient-to-br from-asp-blue-light via-asp-purple to-asp-blue-light shadow-[0_20px_60px_-10px_rgba(76,201,240,0.3)]">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
                   <span className="bg-gradient-to-r from-asp-blue-light to-asp-purple text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
-                    Most popular
+                    Best value
                   </span>
                 </div>
                 <div className="h-full rounded-[calc(var(--radius-asp-2xl)-2px)] bg-asp-surface-navy text-white p-8 flex flex-col">
                   <div className="font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-2">
                     Inside the system
                   </div>
-                  <h3 className="font-black text-2xl mb-2">Growth Package</h3>
+                  <h3 className="font-black text-2xl mb-2">Foundation Package</h3>
                   <div className="flex items-baseline gap-2 mb-4">
                     <span className="font-black text-4xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple">
-                      $3,850
+                      $2,500
                     </span>
                     <span className="text-white/60 text-sm">/ month</span>
                   </div>
                   <p className="text-white/75 leading-relaxed mb-6">
-                    StormFront <strong>plus</strong> Local SEO Pro, paid media, custom website, content, HCP AI integration, and fractional CMO-level direction. Weather-triggered content hits harder when every other channel is amplifying it.
+                    StormFront <strong>plus</strong> Local SEO Pro, the Content Creation Package, HCP attribution setup, and monthly performance reporting. The weather-triggered system lands harder when Local SEO and GBP are firing alongside it.
                   </p>
                   <Link
-                    href="/contact?topic=growth"
+                    href="/contact?topic=foundation"
                     className="mt-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold px-6 py-3 rounded-[var(--radius-asp-lg)] hover:opacity-90 transition-opacity"
                   >
-                    Scale with Growth
+                    Start with Foundation
                     <span aria-hidden>&rarr;</span>
                   </Link>
                 </div>
