@@ -51,7 +51,6 @@ const TIERS = [
       "AI-driven topic and hook analysis to inform every edit",
       "Dedicated account support with priority turnaround",
       "Exclusive access to our Podcast Growth Community",
-      "Add-on services unlocked",
     ],
     bonus: "Get 5 free extra social clips from your first batch.",
     featured: true,
@@ -124,7 +123,7 @@ const FAQS = [
   {
     question: "Can I start on Tier 1 and upgrade?",
     answer:
-      "Yes. Most clients start on Tier 1 or 2 and upgrade within the first quarter as their show grows. Add-ons unlock at Tier 2 and above.",
+      "Yes. Most clients start on Tier 1 or 2 and upgrade within the first quarter as their show grows. You can also layer any of our a-la-carte services — social management, growth strategy, YouTube campaigns, studio consulting — onto any tier at any time.",
   },
   {
     question: "What's included in the Podcast Growth Community?",
@@ -293,29 +292,31 @@ export default function PodcastPage() {
         </div>
       </section>
 
-      {/* Add-ons */}
+      {/* A-la-carte services */}
       <section className="py-16 md:py-20 lg:py-24 bg-asp-surface-light">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-10 max-w-3xl mx-auto">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                Add-ons for Tier 2 & 3
+                A-la-carte services
               </span>
               <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-3">
-                Extra leverage when you need it.
+                Pick what you need, when you need it.
               </h2>
               <p className="text-asp-blue/70 text-lg">
-                Available to Growth Accelerator and Domination clients. Scope up as the show scales.
+                Standalone productized services you can run alongside any tier — or on their own. Available to every client, any time.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-              {ADDONS.map((a) => (
+              {ADDONS.map((a, i) => (
                 <div
                   key={a.name}
-                  className="rounded-[var(--radius-asp-xl)] bg-white border border-asp-blue/10 shadow-asp-md hover:shadow-asp-lg transition-shadow p-6 lg:p-7"
+                  className={`rounded-[var(--radius-asp-xl)] bg-white border border-asp-blue/10 shadow-asp-md hover:shadow-asp-lg transition-shadow p-6 lg:p-7 ${
+                    i === ADDONS.length - 1 ? "md:col-span-2 lg:col-span-3" : ""
+                  }`}
                 >
                   <h3 className="font-black text-lg text-asp-blue mb-1">
                     {a.name}
@@ -370,17 +371,25 @@ export default function PodcastPage() {
       </section>
 
       {/* Client proof */}
-      <section className="relative py-16 md:py-20 lg:py-24 bg-asp-surface-light overflow-hidden">
-        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 md:py-20 lg:py-24 bg-asp-black text-white overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-40 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 50% at 20% 50%, rgba(76, 201, 240, 0.18), transparent 70%), radial-gradient(ellipse 60% 50% at 80% 50%, rgba(159, 76, 255, 0.14), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12 max-w-3xl mx-auto">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 Proof in production
               </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
                 Audiences we&apos;ve built.
               </h2>
-              <p className="text-asp-blue/70 text-lg">
+              <p className="text-white/70 text-lg">
                 Two current ASP clients running this exact playbook. Real platforms, real subscriber counts, real time windows.
               </p>
             </div>
@@ -389,71 +398,67 @@ export default function PodcastPage() {
           <ScrollReveal animation="stagger">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {/* Titan */}
-              <article className="bg-white rounded-[var(--radius-asp-2xl)] shadow-asp-lg border border-asp-blue/10 overflow-hidden">
-                <div className="bg-gradient-to-br from-asp-blue via-asp-blue to-asp-purple text-white p-7 lg:p-8">
+              <article className="flex flex-col rounded-[var(--radius-asp-2xl)] border border-white/10 bg-white/[0.04] backdrop-blur-sm shadow-asp-lg overflow-hidden">
+                <div className="p-7 lg:p-8 flex-1 flex flex-col">
                   <div className="text-xs font-bold uppercase tracking-widest text-asp-blue-light mb-4">
                     Titan Inspection Services · YouTube · 18 months
                   </div>
-                  <h3 className="font-black text-3xl lg:text-4xl leading-tight mb-3">
-                    320 → 25K YouTube subscribers.
+                  <h3 className="font-black text-3xl lg:text-4xl leading-tight mb-4">
+                    320 → 25,000 YouTube subscribers in 18 months.
                   </h3>
-                  <p className="text-white/80 leading-relaxed">
-                    From 320 to 5,000 subscribers in the first 18 months on the system, and past 25,000 subscribers today. Full-episode editing, short-form clip production, and channel optimization running in sync.
+                  <p className="text-white/75 leading-relaxed">
+                    Full-episode editing, short-form clip production, and channel optimization running in sync on the ASP system.
                   </p>
                 </div>
-                <div className="p-7 lg:p-8 grid grid-cols-3 gap-3">
-                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
-                    <div className="font-black text-2xl text-asp-blue leading-tight mb-1">
+                <div className="grid grid-cols-2 border-t border-white/10">
+                  <div className="p-6 lg:p-7 border-r border-white/10">
+                    <div className="font-black text-3xl lg:text-4xl text-white leading-tight mb-1">
                       320
                     </div>
-                    <div className="text-xs font-semibold text-asp-blue/60">Starting subs</div>
-                  </div>
-                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
-                    <div className="font-black text-2xl text-asp-purple leading-tight mb-1">
-                      5,000
+                    <div className="text-xs font-semibold text-white/60 uppercase tracking-widest">
+                      Starting subs
                     </div>
-                    <div className="text-xs font-semibold text-asp-blue/60">18 months in</div>
                   </div>
-                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
-                    <div className="font-black text-2xl text-asp-purple leading-tight mb-1">
-                      25K+
+                  <div className="p-6 lg:p-7">
+                    <div className="font-black text-3xl lg:text-4xl text-asp-blue-light leading-tight mb-1">
+                      25,000
                     </div>
-                    <div className="text-xs font-semibold text-asp-blue/60">Today</div>
+                    <div className="text-xs font-semibold text-white/60 uppercase tracking-widest">
+                      18 months later
+                    </div>
                   </div>
                 </div>
               </article>
 
               {/* Atomic Souls */}
-              <article className="bg-white rounded-[var(--radius-asp-2xl)] shadow-asp-lg border border-asp-blue/10 overflow-hidden">
-                <div className="bg-gradient-to-br from-asp-purple via-asp-purple to-asp-blue text-white p-7 lg:p-8">
+              <article className="flex flex-col rounded-[var(--radius-asp-2xl)] border border-white/10 bg-white/[0.04] backdrop-blur-sm shadow-asp-lg overflow-hidden">
+                <div className="p-7 lg:p-8 flex-1 flex flex-col">
                   <div className="text-xs font-bold uppercase tracking-widest text-asp-blue-light mb-4">
                     Atomic Souls Counseling · Podcast · 3 months
                   </div>
-                  <h3 className="font-black text-3xl lg:text-4xl leading-tight mb-3">
+                  <h3 className="font-black text-3xl lg:text-4xl leading-tight mb-4">
                     0 → 3,000 subscribers in 90 days.
                   </h3>
-                  <p className="text-white/80 leading-relaxed">
-                    New podcast launched from scratch. Three months into the ASP system, the show crossed 3,000 subscribers on the back of consistent full-episode production and vertical-clip distribution.
+                  <p className="text-white/75 leading-relaxed">
+                    New podcast launched from scratch. Full-episode production plus vertical-clip distribution crossed 3K inside the first quarter.
                   </p>
                 </div>
-                <div className="p-7 lg:p-8 grid grid-cols-3 gap-3">
-                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
-                    <div className="font-black text-2xl text-asp-blue leading-tight mb-1">
+                <div className="grid grid-cols-2 border-t border-white/10">
+                  <div className="p-6 lg:p-7 border-r border-white/10">
+                    <div className="font-black text-3xl lg:text-4xl text-white leading-tight mb-1">
                       0
                     </div>
-                    <div className="text-xs font-semibold text-asp-blue/60">At launch</div>
+                    <div className="text-xs font-semibold text-white/60 uppercase tracking-widest">
+                      At launch
+                    </div>
                   </div>
-                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
-                    <div className="font-black text-2xl text-asp-purple leading-tight mb-1">
+                  <div className="p-6 lg:p-7">
+                    <div className="font-black text-3xl lg:text-4xl text-asp-purple leading-tight mb-1">
                       3,000
                     </div>
-                    <div className="text-xs font-semibold text-asp-blue/60">Month 3</div>
-                  </div>
-                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
-                    <div className="font-black text-2xl text-asp-purple leading-tight mb-1">
-                      90 days
+                    <div className="text-xs font-semibold text-white/60 uppercase tracking-widest">
+                      90 days later
                     </div>
-                    <div className="text-xs font-semibold text-asp-blue/60">From zero</div>
                   </div>
                 </div>
               </article>
