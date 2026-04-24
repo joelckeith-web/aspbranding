@@ -10,6 +10,17 @@ export function HeroVideoBackground({ youtubeId }: HeroVideoBackgroundProps) {
   const [mount, setMount] = useState(false);
 
   useEffect(() => {
+    // Skip the video entirely on mobile and on users who prefer reduced data /
+    // motion. The static gradient background still renders from the server.
+    const vw = window.innerWidth;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    const saveData = (
+      navigator as Navigator & { connection?: { saveData?: boolean } }
+    ).connection?.saveData;
+    if (vw < 768 || prefersReducedMotion || saveData) return;
+
     const win = window as Window & {
       requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
     };
