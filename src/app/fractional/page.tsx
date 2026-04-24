@@ -7,7 +7,7 @@ import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Fractional C-Suite | ASP",
+  title: "Fractional C-Suite",
   description:
     "Fractional CFO, CMO, and COO leadership for $5M–$20M owner-operated service businesses. One integrated team. Leadership, not more vendors.",
 };

@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import caseStudies from "@/data/case-studies.json";
 
 export const metadata: Metadata = {
-  title: "Case Studies | ASP",
+  title: "Case Studies",
   description:
     "Industry-anonymized results from operators running the ASP Growth System — HVAC, home inspection, healthcare, commercial flooring, and legal.",
 };

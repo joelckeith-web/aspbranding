@@ -9,7 +9,7 @@ import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "The Growth System | ASP",
+  title: "The Growth System",
   description:
     "Marketing, operations, and follow-up integrated into one growth system for home service businesses already running $1M+. You own everything we build.",
 };

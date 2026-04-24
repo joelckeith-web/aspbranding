@@ -7,7 +7,7 @@ import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "StormFront | ASP",
+  title: "StormFront",
   description:
     "A proprietary content system built for storm-chasing and weather-driven home service operators. Watches your service area and fires targeted content when qualifying weather events hit.",
 };

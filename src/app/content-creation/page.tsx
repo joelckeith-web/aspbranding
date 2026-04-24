@@ -7,7 +7,7 @@ import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Content Creation Package | ASP",
+  title: "Content Creation Package",
   description:
     "Social and GBP content done for you — ready to post. Monthly drops of branded graphics, captions, and weekly Google Business Profile posts built on your brand kit.",
 };

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DiagnosticQuiz } from "@/components/sections/DiagnosticQuiz";
 
 export const metadata: Metadata = {
-  title: "Growth Diagnostic | ASP",
+  title: "Growth Diagnostic",
   description:
     "90 seconds. Seven questions. Find out which tier of the ASP Growth System fits your home service business today.",
 };

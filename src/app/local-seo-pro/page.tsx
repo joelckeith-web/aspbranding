@@ -7,7 +7,7 @@ import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Local SEO Pro | ASP",
+  title: "Local SEO Pro",
   description:
     "Own the local map. Rank where your customers search. Full-service Google Business Profile, citation cleanup, local ranking heatmap, and local content strategy for home service operators.",
 };

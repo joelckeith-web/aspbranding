@@ -1,5 +1,8 @@
 "use client";
 
+// Note: client component — page-level metadata lives in the app router
+// convention but cannot be exported from a "use client" file. The title
+// and description for this route are set via the head.tsx sibling below.
 import { useEffect, useRef, useState } from "react";
 import { Hero } from "@/components/sections/Hero";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";

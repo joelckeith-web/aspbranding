@@ -39,6 +39,50 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <body className="font-sans text-black bg-white antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://aspbranding.com/#organization",
+                  name: "ASP",
+                  alternateName: "ASP - Assess. Strategize. Perform.",
+                  url: "https://aspbranding.com",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://aspbranding.com/images/asp-logo.png",
+                  },
+                  email: "info@aspbranding.com",
+                  telephone: "+1-512-200-3190",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Austin",
+                    addressRegion: "TX",
+                    addressCountry: "US",
+                  },
+                  sameAs: [
+                    "https://www.facebook.com/aspbranding",
+                    "https://www.instagram.com/aspbranding",
+                    "https://www.linkedin.com/company/asp-branding",
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://aspbranding.com/#website",
+                  url: "https://aspbranding.com",
+                  name: "ASP",
+                  description:
+                    "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
+                  publisher: { "@id": "https://aspbranding.com/#organization" },
+                  inLanguage: "en-US",
+                },
+              ],
+            }),
+          }}
+        />
         <Analytics />
         <AnalyticsNoScript />
         <a

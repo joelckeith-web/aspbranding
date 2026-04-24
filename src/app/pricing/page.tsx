@@ -8,7 +8,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Pricing | ASP",
+  title: "Pricing",
   description:
     "Transparent pricing for the ASP Growth System. Three tiers — Foundation, Growth, Premier — plus three productized entry points. Built for home service operators.",
 };

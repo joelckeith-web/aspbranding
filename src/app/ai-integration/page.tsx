@@ -8,7 +8,7 @@ import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "AI Integration | ASP",
+  title: "AI Integration",
   description:
     "Official Housecall Pro Affiliate Partner. We integrate the HCP AI stack — CSR AI, dispatch, attribution, reporting — into your home service business, from day one.",
 };
