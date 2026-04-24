@@ -31,6 +31,8 @@ export const NAV_LINKS = [
 export const FOOTER_SYSTEM = [
   { label: "The Growth System", href: "/growth-system" },
   { label: "AI Integration", href: "/ai-integration" },
+  { label: "Housecall Pro Partnership", href: "/housecall-pro" },
+  { label: "Marketing by Trade", href: "/marketing" },
   { label: "Pricing", href: "/pricing" },
   { label: "Growth Diagnostic", href: "/diagnostic" },
 ] as const;

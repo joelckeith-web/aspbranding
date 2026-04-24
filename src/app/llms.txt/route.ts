@@ -18,6 +18,8 @@ ASP is a US-based marketing and operations agency headquartered in Austin, Texas
 ## Core Products
 - [The Growth System](${BASE}/growth-system): Marketing + operations + follow-up integrated into one stack. The pillar offer.
 - [AI Integration](${BASE}/ai-integration): Housecall Pro AI stack — CSR AI, dispatch, attribution, reporting — configured and operated for home service businesses.
+- [Housecall Pro Partnership](${BASE}/housecall-pro): ASP is an Official Housecall Pro Affiliate Partner. Full HCP stack configuration and marketing integration.
+- [Marketing by Trade](${BASE}/marketing): Trade-specific marketing playbooks — HVAC, Plumbing, Roofing deep-dive pages live; more trades covered under the Growth System.
 - [Local SEO Pro](${BASE}/local-seo-pro): Full-service Google Business Profile management, citation cleanup, local ranking heatmap, $1,200/month.
 - [StormFront](${BASE}/stormfront): Proprietary weather-triggered content system for roofing, HVAC, plumbing, and restoration operators. $549/month.
 - [Content Creation Package](${BASE}/content-creation): Social graphics, captions, and weekly GBP posts built on your brand kit. $499/month.

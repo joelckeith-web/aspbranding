@@ -1,7 +1,15 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import industriesData from "@/data/industries.json";
+
+// Map industry names to live trade pages; undefined means no detail page yet.
+const TRADE_SLUGS: Record<string, string> = {
+  HVAC: "hvac",
+  Plumbing: "plumbing",
+  Roofing: "roofing",
+};
 
 export function Industries() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -76,11 +84,17 @@ export function Industries() {
           ref={trackRef}
           className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide px-4 sm:px-6 lg:px-8"
         >
-          {industriesData.map((industry) => (
-            <div
-              key={industry.name}
-              className="group flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[360px] bg-white/[0.03] border border-asp-purple/20 rounded-[var(--radius-asp-xl)] overflow-hidden hover:border-asp-purple/60 transition-all duration-300"
-            >
+          {industriesData.map((industry) => {
+            const slug = TRADE_SLUGS[industry.name];
+            const href = slug ? `/marketing/${slug}` : undefined;
+            const CardTag = (href ? Link : "div") as React.ElementType;
+            const cardProps = href ? { href } : {};
+            return (
+              <CardTag
+                {...cardProps}
+                key={industry.name}
+                className={`group flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[360px] bg-white/[0.03] border border-asp-purple/20 rounded-[var(--radius-asp-xl)] overflow-hidden hover:border-asp-purple/60 transition-all duration-300 ${href ? "cursor-pointer no-underline" : ""}`}
+              >
               <div className="relative h-48 lg:h-56 overflow-hidden bg-asp-surface-navy">
                 {industry.image ? (
                   // eslint-disable-next-line @next/next/no-img-element
@@ -105,10 +119,17 @@ export function Industries() {
                 </h3>
               </div>
               <div className="p-6">
-                <p className="text-white/65 text-sm leading-relaxed">{industry.description}</p>
+                <p className="text-white/65 text-sm leading-relaxed mb-3">{industry.description}</p>
+                {href && (
+                  <span className="inline-flex items-center gap-2 text-asp-blue-light text-xs font-bold uppercase tracking-widest group-hover:text-white transition-colors">
+                    See the {industry.name} playbook
+                    <span aria-hidden>&rarr;</span>
+                  </span>
+                )}
               </div>
-            </div>
-          ))}
+              </CardTag>
+            );
+          })}
         </div>
 
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 mt-6">

@@ -17,6 +17,18 @@ const PRODUCT_SUMMARIES = [
       "ASP is an Official Housecall Pro Affiliate Partner. We configure and operate the HCP AI stack inside home service businesses: CSR AI (automated customer service response), dispatch AI, job attribution (which marketing channel booked which job), follow-up automation, and reporting. Attribution feeds back into Google Ads, Meta, and LSA so paid media optimizes to booked revenue rather than cost-per-click.",
   },
   {
+    title: "Housecall Pro Partnership",
+    url: `${BASE}/housecall-pro`,
+    summary:
+      "Dedicated partnership hub for ASP's Official Housecall Pro Affiliate Partner status. Covers the six layers of the HCP stack ASP configures: CSR AI, dispatch + scheduling AI, job attribution, follow-up automation, ad-platform revenue feedback loops, and reporting dashboards. This is the surface that positions ASP as the go-to marketing agency for home service businesses running Housecall Pro — analogous to how other top-tier agencies position around ServiceTitan.",
+  },
+  {
+    title: "Marketing by Trade",
+    url: `${BASE}/marketing`,
+    summary:
+      "Hub listing trade-specific marketing playbooks. Live deep-dive pages: HVAC (${BASE}/marketing/hvac), Plumbing (${BASE}/marketing/plumbing), Roofing (${BASE}/marketing/roofing). Each trade page covers the revenue math specific to that trade, the ASP playbook adapted to that trade's conversion window, and FAQ. Additional trades covered under the Growth System but without deep-dive pages yet: Home Inspection, Restoration, Electrical, Pest Control, Landscaping, Garage Door, Flooring, Remodeling, Appliance Repair.",
+  },
+  {
     title: "Local SEO Pro",
     url: `${BASE}/local-seo-pro`,
     summary:

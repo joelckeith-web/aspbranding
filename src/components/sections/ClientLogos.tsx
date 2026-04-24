@@ -22,15 +22,29 @@ export function ClientLogos() {
         <p className="text-center text-xs uppercase tracking-widest text-gray-400 font-bold mb-8 px-4">
           Trusted by Growing Businesses
         </p>
-        <div className="overflow-hidden">
+        <div
+          className="overflow-hidden"
+          style={{
+            maskImage:
+              "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
+          }}
+        >
           <div className="logo-marquee flex items-center gap-20">
             {allClients.map((client, i) => (
               <img
                 key={`${client.name}-${i}`}
                 src={`/images/clients/${client.file}`}
                 alt={client.name}
-                style={{ height: client.height, width: "auto" }}
-                className="object-contain flex-shrink-0"
+                style={{
+                  height: client.height,
+                  width: "auto",
+                  filter:
+                    "grayscale(1) brightness(0.6) contrast(1.1) opacity(0.65)",
+                  transition: "filter 0.2s ease",
+                }}
+                className="object-contain flex-shrink-0 hover:[filter:grayscale(1)_brightness(0.35)_contrast(1.2)_opacity(1)]"
                 loading="lazy"
               />
             ))}
