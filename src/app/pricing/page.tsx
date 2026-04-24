@@ -88,7 +88,7 @@ export default function PricingPage() {
         ]}
       />
 
-      <TestimonialAnchor quote="I can't imagine using anyone else for marketing." />
+      <TestimonialAnchor quote="Willing to go the extra mile." />
 
       <FAQSection />
     </main>

@@ -411,7 +411,7 @@ export default function GrowthSystemPage() {
         ]}
       />
 
-      <TestimonialAnchor quote="It's a night-and-day difference from our last company." />
+      <TestimonialAnchor quote="It's a no-brainer." />
 
       <ConsultationCTA />
     </main>

@@ -145,7 +145,7 @@ export default function CaseStudiesPage() {
         ]}
       />
 
-      <TestimonialAnchor quote="It's a night-and-day difference from our last company." />
+      <TestimonialAnchor quote="Dedication, professionalism, and attention to detail are unmatched." />
 
       <ConsultationCTA />
     </main>

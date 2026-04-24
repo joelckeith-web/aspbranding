@@ -300,7 +300,7 @@ export default function LocalSeoProPage() {
         ]}
       />
 
-      <TestimonialAnchor quote="I can't imagine using anyone else for marketing." />
+      <TestimonialAnchor quote="It's a night-and-day difference from our last company." />
 
       <ConsultationCTA />
     </main>

@@ -546,7 +546,7 @@ export default function FractionalPage() {
         variant="dark"
       />
 
-      <TestimonialAnchor quote="It's a night-and-day difference from our last company." />
+      <TestimonialAnchor quote="More than 10X ROI." />
 
       <FAQAccordion faqs={FAQS} />
 

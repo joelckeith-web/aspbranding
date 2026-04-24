@@ -302,7 +302,7 @@ export default function ContentCreationPage() {
         ]}
       />
 
-      <TestimonialAnchor quote="I can't imagine using anyone else for marketing." />
+      <TestimonialAnchor quote="First-rate, super knowledgeable, fast acting." />
 
       <ConsultationCTA />
     </main>

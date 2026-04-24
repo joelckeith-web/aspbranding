@@ -76,7 +76,7 @@ export default function HomePage() {
       <FAQSection />
 
       {/* 13. Anchor testimonial — dark, near-bottom prominence */}
-      <TestimonialAnchor quote="I can't imagine using anyone else for marketing." />
+      <TestimonialAnchor quote="A game-changer for my business." />
 
       {/* 14. Final CTA */}
       <ConsultationCTA />

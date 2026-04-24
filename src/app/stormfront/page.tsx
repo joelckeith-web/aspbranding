@@ -354,7 +354,7 @@ export default function StormfrontPage() {
       />
 
       <TestimonialAnchor
-        quote="It's a night-and-day difference from our last company."
+        quote="A great partner — looking forward to years to come."
         variant="light"
       />
 
