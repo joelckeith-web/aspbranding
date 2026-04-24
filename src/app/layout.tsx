@@ -19,15 +19,45 @@ export const metadata: Metadata = {
     template: "%s | ASP",
   },
   description:
-    "We help home service professionals and law firms break through the $1M–$5M revenue ceiling with proven systematic digital marketing.",
+    "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
   metadataBase: new URL("https://aspbranding.com"),
+  keywords: [
+    "home service marketing agency",
+    "HVAC marketing",
+    "plumbing marketing",
+    "roofing marketing",
+    "home inspection marketing",
+    "Housecall Pro affiliate partner",
+    "local SEO for home services",
+    "answer engine optimization",
+    "AEO for home services",
+    "CSR AI home service",
+    "marketing attribution HVAC",
+    "fractional CMO home service",
+  ],
+  authors: [{ name: "ASP", url: "https://aspbranding.com" }],
+  creator: "ASP",
+  publisher: "ASP",
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "ASP",
+    url: "https://aspbranding.com",
   },
   twitter: {
     card: "summary_large_image",
+    creator: "@aspbranding",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
   },
 };
 
@@ -94,6 +124,10 @@ export default function RootLayout({
                     "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
                   publisher: { "@id": "https://aspbranding.com/#organization" },
                   inLanguage: "en-US",
+                  speakable: {
+                    "@type": "SpeakableSpecification",
+                    cssSelector: ["h1", "h2", "[data-speakable]"],
+                  },
                 },
               ],
             }),
