@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Pricing", url: "https://aspbranding.com/pricing" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "Pricing", url: "https://www.aspbranding.com/pricing" }]} />
       <Hero
         eyebrow="Pricing"
         heading="Built for serious operators.<br><span class='hero-text-gradient'>Priced like one.</span>"

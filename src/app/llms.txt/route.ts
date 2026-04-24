@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const BASE = "https://aspbranding.com";
+const BASE = "https://www.aspbranding.com";
 
 const body = `# ASP — Assess. Strategize. Perform.
 

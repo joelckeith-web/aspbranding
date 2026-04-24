@@ -101,7 +101,7 @@ export function ServiceSchema({
           description,
           url,
           serviceType: serviceType ?? "Marketing",
-          provider: { "@id": "https://aspbranding.com/#organization" },
+          provider: { "@id": "https://www.aspbranding.com/#organization" },
           areaServed: { "@type": "Country", name: "United States" },
           ...(offers && { offers }),
         }),

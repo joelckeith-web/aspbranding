@@ -199,11 +199,11 @@ const FAQS = [
 export default function FractionalPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Fractional C-Suite", url: "https://aspbranding.com/fractional" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "Fractional C-Suite", url: "https://www.aspbranding.com/fractional" }]} />
       <ServiceSchema
         name="Fractional C-Suite"
         description="Fractional CFO, CMO, and COO leadership for $5M–$20M owner-operated service businesses. One integrated team delivering strategic direction, not just vendor output."
-        url="https://aspbranding.com/fractional"
+        url="https://www.aspbranding.com/fractional"
         serviceType="Fractional Executive Leadership"
       />
       <Hero

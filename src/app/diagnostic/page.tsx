@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function DiagnosticPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Growth Diagnostic", url: "https://aspbranding.com/diagnostic" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "Growth Diagnostic", url: "https://www.aspbranding.com/diagnostic" }]} />
       <DiagnosticQuiz />
     </main>
   );

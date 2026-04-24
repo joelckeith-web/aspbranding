@@ -71,11 +71,11 @@ const FITS = [
 export default function StormfrontPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "StormFront", url: "https://aspbranding.com/stormfront" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "StormFront", url: "https://www.aspbranding.com/stormfront" }]} />
       <ServiceSchema
         name="StormFront"
         description="A proprietary content system that watches your service area and fires targeted content when qualifying weather events hit. Built for storm-driven home service operators."
-        url="https://aspbranding.com/stormfront"
+        url="https://www.aspbranding.com/stormfront"
         serviceType="Weather-Triggered Content Marketing"
         price="549"
       />

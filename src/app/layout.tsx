@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description:
     "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
-  metadataBase: new URL("https://aspbranding.com"),
+  metadataBase: new URL("https://www.aspbranding.com"),
   keywords: [
     "home service marketing agency",
     "HVAC marketing",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
     "marketing attribution HVAC",
     "fractional CMO home service",
   ],
-  authors: [{ name: "ASP", url: "https://aspbranding.com" }],
+  authors: [{ name: "ASP", url: "https://www.aspbranding.com" }],
   creator: "ASP",
   publisher: "ASP",
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "ASP",
-    url: "https://aspbranding.com",
+    url: "https://www.aspbranding.com",
   },
   twitter: {
     card: "summary_large_image",
@@ -68,6 +68,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={poppins.variable}>
+      <head>
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+        <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://script.crazyegg.com" />
+      </head>
       <body className="font-sans text-black bg-white antialiased">
         <script
           type="application/ld+json"
@@ -77,17 +82,17 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
-                  "@id": "https://aspbranding.com/#organization",
+                  "@id": "https://www.aspbranding.com/#organization",
                   name: "ASP",
                   alternateName: "ASP - Assess. Strategize. Perform.",
                   description:
                     "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
-                  url: "https://aspbranding.com",
+                  url: "https://www.aspbranding.com",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://aspbranding.com/images/asp-logo.png",
+                    url: "https://www.aspbranding.com/images/asp-logo.png",
                   },
-                  image: "https://aspbranding.com/images/asp-logo.png",
+                  image: "https://www.aspbranding.com/images/asp-logo.png",
                   email: "info@aspbranding.com",
                   telephone: "+1-512-200-3190",
                   priceRange: "$$",
@@ -117,12 +122,12 @@ export default function RootLayout({
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://aspbranding.com/#website",
-                  url: "https://aspbranding.com",
+                  "@id": "https://www.aspbranding.com/#website",
+                  url: "https://www.aspbranding.com",
                   name: "ASP",
                   description:
                     "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
-                  publisher: { "@id": "https://aspbranding.com/#organization" },
+                  publisher: { "@id": "https://www.aspbranding.com/#organization" },
                   inLanguage: "en-US",
                   speakable: {
                     "@type": "SpeakableSpecification",

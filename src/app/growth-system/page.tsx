@@ -95,11 +95,11 @@ const OWN_LIST = [
 export default function GrowthSystemPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "The Growth System", url: "https://aspbranding.com/growth-system" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "The Growth System", url: "https://www.aspbranding.com/growth-system" }]} />
       <ServiceSchema
         name="The Growth System"
         description="Marketing, operations, and follow-up integrated into one growth system for home service businesses already running $1M+. You own everything we build."
-        url="https://aspbranding.com/growth-system"
+        url="https://www.aspbranding.com/growth-system"
         serviceType="Digital Marketing Agency"
       />
       <Hero

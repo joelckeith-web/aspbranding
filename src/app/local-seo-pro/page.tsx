@@ -62,11 +62,11 @@ const AI_LAYER = [
 export default function LocalSeoProPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Local SEO Pro", url: "https://aspbranding.com/local-seo-pro" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "Local SEO Pro", url: "https://www.aspbranding.com/local-seo-pro" }]} />
       <ServiceSchema
         name="Local SEO Pro"
         description="Full-service Google Business Profile management, citation cleanup, local ranking heatmap, and local content strategy for home service operators."
-        url="https://aspbranding.com/local-seo-pro"
+        url="https://www.aspbranding.com/local-seo-pro"
         serviceType="Local SEO Services"
         price="1200"
       />

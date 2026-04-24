@@ -111,7 +111,7 @@ export default function ContactPage() {
 
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Contact", url: "https://aspbranding.com/contact" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "Contact", url: "https://www.aspbranding.com/contact" }]} />
       <Hero
         eyebrow="Get Started"
         heading="Let's build your<br><span class='hero-text-gradient'>growth system.</span>"

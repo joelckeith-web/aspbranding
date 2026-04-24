@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { sendMail } from "@/lib/mailer";
 
 const MIN_SCORE = 0.5;
 
@@ -125,57 +126,38 @@ export async function POST(request: Request) {
       );
     }
 
-    const resendKey = process.env.RESEND_API_KEY;
-    if (resendKey) {
-      await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${resendKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from: "ASP Website <noreply@aspbranding.com>",
-          to: ["info@aspbranding.com"],
-          subject: `New Contact Form: ${name} — ${service || "General Inquiry"}`,
-          html: `
-            <h2>New Contact Form Submission</h2>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
-            <p><strong>Company:</strong> ${company || "Not provided"}</p>
-            <p><strong>Interest:</strong> ${service || "Not specified"}</p>
-            <p><strong>Marketing consent:</strong> ${consented ? "Yes — add to newsletter" : "No"}</p>
-            <hr />
-            <p><strong>Message:</strong></p>
-            <p>${String(message).replace(/\n/g, "<br>")}</p>
-          `,
-        }),
-      });
+    await sendMail({
+      to: "info@aspbranding.com",
+      subject: `New Contact Form: ${name} — ${service || "General Inquiry"}`,
+      replyTo: email,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+        <p><strong>Company:</strong> ${company || "Not provided"}</p>
+        <p><strong>Interest:</strong> ${service || "Not specified"}</p>
+        <p><strong>Marketing consent:</strong> ${consented ? "Yes — add to newsletter" : "No"}</p>
+        <hr />
+        <p><strong>Message:</strong></p>
+        <p>${String(message).replace(/\n/g, "<br>")}</p>
+      `,
+    });
 
-      if (consented) {
-        await fetch("https://api.resend.com/emails", {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${resendKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            from: "ASP Website <noreply@aspbranding.com>",
-            to: ["joel.keith@aspbranding.com"],
-            subject: `Newsletter Signup (via contact form): ${email}`,
-            html: `
-              <h2>Newsletter Signup (from contact form)</h2>
-              <p><strong>Name:</strong> ${name}</p>
-              <p><strong>Email:</strong> ${email}</p>
-              <p><strong>Company:</strong> ${company || "Not provided"}</p>
-              <hr />
-              <p><em>Marketing consent given. Beehiiv integration is paused — please add this subscriber manually.</em></p>
-            `,
-          }),
-        });
-      }
-    } else {
-      console.log("Contact form submission:", { name, email, phone, company, service, message, consented });
+    if (consented) {
+      await sendMail({
+        to: "joel.keith@aspbranding.com",
+        subject: `Newsletter Signup (via contact form): ${email}`,
+        replyTo: email,
+        html: `
+          <h2>Newsletter Signup (from contact form)</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Company:</strong> ${company || "Not provided"}</p>
+          <hr />
+          <p><em>Marketing consent given. Beehiiv integration is paused — please add this subscriber manually.</em></p>
+        `,
+      });
     }
 
     return NextResponse.json({ success: true });

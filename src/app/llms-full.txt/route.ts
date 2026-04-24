@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getAllPosts } from "@/lib/blog/posts";
 
-const BASE = "https://aspbranding.com";
+const BASE = "https://www.aspbranding.com";
 
 const PRODUCT_SUMMARIES = [
   {

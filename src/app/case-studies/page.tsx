@@ -42,7 +42,7 @@ const MAP_PACK = [
 export default function CaseStudiesPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Case Studies", url: "https://aspbranding.com/case-studies" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "Case Studies", url: "https://www.aspbranding.com/case-studies" }]} />
       <Hero
         eyebrow="Case Studies"
         heading="Industry-anonymized results.<br><span class='hero-text-gradient'>Real operators. Real revenue.</span>"

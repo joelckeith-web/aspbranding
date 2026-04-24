@@ -5,7 +5,7 @@ export const BUSINESS = {
   phone: "(512) 200-3190",
   phoneLink: "5122003190",
   email: "info@aspbranding.com",
-  url: "https://aspbranding.com",
+  url: "https://www.aspbranding.com",
   address: {
     city: "Austin",
     state: "TX",

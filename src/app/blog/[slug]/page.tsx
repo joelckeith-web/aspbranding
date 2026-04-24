@@ -42,12 +42,12 @@ const categoryBadgeColors: Record<BlogCategory, string> = {
 
 // ── Service links for sidebar ──
 const sidebarServices = [
-  { label: "Local SEO", href: "https://aspbranding.com/solutions/local-seo" },
-  { label: "PPC Management", href: "https://aspbranding.com/solutions/ppc-management" },
-  { label: "Social Media", href: "https://aspbranding.com/solutions/social-media-marketing" },
-  { label: "Web Design", href: "https://aspbranding.com/solutions/web-design" },
-  { label: "Branding", href: "https://aspbranding.com/solutions/branding" },
-  { label: "Consulting", href: "https://aspbranding.com/solutions/consulting" },
+  { label: "Local SEO", href: "https://www.aspbranding.com/solutions/local-seo" },
+  { label: "PPC Management", href: "https://www.aspbranding.com/solutions/ppc-management" },
+  { label: "Social Media", href: "https://www.aspbranding.com/solutions/social-media-marketing" },
+  { label: "Web Design", href: "https://www.aspbranding.com/solutions/web-design" },
+  { label: "Branding", href: "https://www.aspbranding.com/solutions/branding" },
+  { label: "Consulting", href: "https://www.aspbranding.com/solutions/consulting" },
 ];
 
 // ═══════════════════════════════════════════════════════════

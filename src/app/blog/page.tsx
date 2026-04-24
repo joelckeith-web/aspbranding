@@ -28,14 +28,14 @@ export const metadata: Metadata = {
 
 // ── Category filter pills with links to ASP service pages ──
 const categoryFilters: { label: string; category: BlogCategory; href: string }[] = [
-  { label: "SEO", category: "seo", href: "https://aspbranding.com/solutions/local-seo" },
-  { label: "Local SEO", category: "local-seo", href: "https://aspbranding.com/solutions/local-seo" },
-  { label: "PPC", category: "ppc", href: "https://aspbranding.com/solutions/ppc-management" },
-  { label: "Social Media", category: "social-media", href: "https://aspbranding.com/solutions/social-media-marketing" },
-  { label: "Web Design", category: "web-design", href: "https://aspbranding.com/solutions/web-design" },
-  { label: "AEO", category: "aeo", href: "https://aspbranding.com/solutions/local-seo" },
-  { label: "Business Growth", category: "business-growth", href: "https://aspbranding.com/solutions/consulting" },
-  { label: "Case Studies", category: "case-studies", href: "https://aspbranding.com/solutions" },
+  { label: "SEO", category: "seo", href: "https://www.aspbranding.com/solutions/local-seo" },
+  { label: "Local SEO", category: "local-seo", href: "https://www.aspbranding.com/solutions/local-seo" },
+  { label: "PPC", category: "ppc", href: "https://www.aspbranding.com/solutions/ppc-management" },
+  { label: "Social Media", category: "social-media", href: "https://www.aspbranding.com/solutions/social-media-marketing" },
+  { label: "Web Design", category: "web-design", href: "https://www.aspbranding.com/solutions/web-design" },
+  { label: "AEO", category: "aeo", href: "https://www.aspbranding.com/solutions/local-seo" },
+  { label: "Business Growth", category: "business-growth", href: "https://www.aspbranding.com/solutions/consulting" },
+  { label: "Case Studies", category: "case-studies", href: "https://www.aspbranding.com/solutions" },
 ];
 
 export default async function BlogPage() {

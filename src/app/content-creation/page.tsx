@@ -62,11 +62,11 @@ const AI_LAYER = [
 export default function ContentCreationPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Content Creation Package", url: "https://aspbranding.com/content-creation" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "Content Creation Package", url: "https://www.aspbranding.com/content-creation" }]} />
       <ServiceSchema
         name="Content Creation Package"
         description="Social and Google Business Profile content done for you — branded graphics, captions, weekly GBP posts, and a monthly content calendar, ready to post."
-        url="https://aspbranding.com/content-creation"
+        url="https://www.aspbranding.com/content-creation"
         serviceType="Content Marketing Services"
         price="499"
       />

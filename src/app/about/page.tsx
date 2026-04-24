@@ -58,7 +58,7 @@ const WHY_CHOOSE = [
 export default function AboutPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "About", url: "https://aspbranding.com/about" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "About", url: "https://www.aspbranding.com/about" }]} />
       {/* Hero */}
       <Hero
         eyebrow="About Us"

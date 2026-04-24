@@ -8,9 +8,9 @@ export const siteConfig = {
   name: "ASP",
   legalName: "ASP - Assess. Strategize. Perform.",
   tagline: "Assess. Strategize. Perform.",
-  url: "https://aspbranding.com",
+  url: "https://www.aspbranding.com",
   blogUrl:
-    process.env.NEXT_PUBLIC_SITE_URL || "https://aspbranding.com/blog",
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.aspbranding.com/blog",
   phone: "(512) 200-3190",
   phoneLink: "5122003190",
   email: "info@aspbranding.com",
@@ -53,7 +53,7 @@ export const siteConfig = {
     instagram: "",
   },
 
-  sameAs: ["https://aspbranding.com"],
+  sameAs: ["https://www.aspbranding.com"],
 
   // ── Author — Joel Keith (CEO) ──
   author: {
@@ -68,43 +68,43 @@ export const siteConfig = {
   services: {
     localSeo: {
       label: "Local SEO",
-      url: "https://aspbranding.com/solutions/local-seo",
+      url: "https://www.aspbranding.com/solutions/local-seo",
       description: "Dominate local search results and Google Maps",
     },
     ppc: {
       label: "PPC Management",
-      url: "https://aspbranding.com/solutions/ppc-management",
+      url: "https://www.aspbranding.com/solutions/ppc-management",
       description: "Data-driven paid advertising campaigns",
     },
     socialMedia: {
       label: "Social Media Marketing",
-      url: "https://aspbranding.com/solutions/social-media-marketing",
+      url: "https://www.aspbranding.com/solutions/social-media-marketing",
       description: "Strategic social media presence that generates leads",
     },
     webDesign: {
       label: "Web Design & Development",
-      url: "https://aspbranding.com/solutions/web-design",
+      url: "https://www.aspbranding.com/solutions/web-design",
       description: "Conversion-optimized websites built on modern platforms",
     },
     branding: {
       label: "Branding & Graphic Design",
-      url: "https://aspbranding.com/solutions/branding",
+      url: "https://www.aspbranding.com/solutions/branding",
       description: "Brand identities that differentiate and build trust",
     },
     consulting: {
       label: "Consulting & Brand Therapy",
-      url: "https://aspbranding.com/solutions/consulting",
+      url: "https://www.aspbranding.com/solutions/consulting",
       description: "Strategic guidance for breaking through revenue barriers",
     },
   },
 
   // ── Key Pages ──
   pages: {
-    home: "https://aspbranding.com/",
-    solutions: "https://aspbranding.com/solutions",
-    about: "https://aspbranding.com/about",
-    blog: "https://aspbranding.com/blog",
-    contact: "https://aspbranding.com/contact",
+    home: "https://www.aspbranding.com/",
+    solutions: "https://www.aspbranding.com/solutions",
+    about: "https://www.aspbranding.com/about",
+    blog: "https://www.aspbranding.com/blog",
+    contact: "https://www.aspbranding.com/contact",
   },
 
   // ── Content Pillars (4 posts/month rotation) ──

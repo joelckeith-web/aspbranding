@@ -86,11 +86,11 @@ const AI_VS_SLOP = [
 export default function AIIntegrationPage() {
   return (
     <main id="primary" className="site-main">
-      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "AI Integration", url: "https://aspbranding.com/ai-integration" }]} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "AI Integration", url: "https://www.aspbranding.com/ai-integration" }]} />
       <ServiceSchema
         name="AI Integration for Home Service Businesses"
         description="Official Housecall Pro Affiliate Partner. We integrate the HCP AI stack — CSR AI, dispatch, attribution, reporting — into your home service business."
-        url="https://aspbranding.com/ai-integration"
+        url="https://www.aspbranding.com/ai-integration"
         serviceType="AI Integration Services"
       />
       <Hero
