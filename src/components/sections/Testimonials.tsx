@@ -39,7 +39,7 @@ export function Testimonials({ testimonials = testimonialData }: TestimonialsPro
   };
 
   return (
-    <section className="py-12 md:py-14 lg:py-16 2xl:py-20 bg-white overflow-hidden">
+    <section className="py-12 md:py-14 lg:py-16 2xl:py-20 bg-asp-surface-light overflow-hidden">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 2xl:mb-12">
           <div className="max-w-2xl">
@@ -83,7 +83,7 @@ export function Testimonials({ testimonials = testimonialData }: TestimonialsPro
         {verified.map((t, i) => (
           <div
             key={i}
-            className="flex-shrink-0 w-[300px] sm:w-[340px] lg:w-[380px] bg-white rounded-[var(--radius-asp-2xl)] border border-gray-100 shadow-asp-sm p-6 lg:p-7 flex flex-col"
+            className="flex-shrink-0 w-[300px] sm:w-[340px] lg:w-[380px] bg-white rounded-[var(--radius-asp-2xl)] border border-asp-blue/10 shadow-asp-lg p-6 lg:p-7 flex flex-col"
           >
             <div className="flex gap-1 mb-4">
               {[...Array(5)].map((_, j) => (

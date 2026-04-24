@@ -67,8 +67,8 @@ export function FAQSection({
                   key={i}
                   className={`rounded-[var(--radius-asp-xl)] border transition-all ${
                     isOpen
-                      ? "border-asp-blue/30 bg-white shadow-asp-md"
-                      : "border-asp-blue/10 bg-white hover:border-asp-blue/20"
+                      ? "border-asp-blue/30 bg-white shadow-asp-lg"
+                      : "border-asp-blue/10 bg-white shadow-asp-md hover:border-asp-blue/20 hover:shadow-asp-lg"
                   }`}
                 >
                   <button

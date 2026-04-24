@@ -34,7 +34,7 @@ export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: F
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="border border-gray-200 rounded-[var(--radius-asp-lg)] overflow-hidden"
+              className="border border-gray-200 rounded-[var(--radius-asp-lg)] overflow-hidden shadow-asp-md hover:shadow-asp-lg transition-shadow bg-white"
             >
               <button
                 className="w-full flex items-center justify-between p-5 font-bold text-asp-blue hover:bg-gray-50 transition-colors text-left"

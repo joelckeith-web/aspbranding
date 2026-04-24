@@ -38,7 +38,7 @@ export function Newsletter() {
   return (
     <section className="relative py-16 md:py-20 lg:py-24 2xl:py-28 bg-white">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-gradient-to-br from-asp-blue via-asp-blue-light to-asp-purple">
+        <div className="relative rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-gradient-to-br from-asp-blue via-asp-blue-light to-asp-purple shadow-asp-xl">
           <div
             className="relative rounded-[calc(var(--radius-asp-2xl)-1px)] overflow-hidden bg-asp-surface-navy text-white p-8 md:p-12 lg:p-16 2xl:p-20"
           >
