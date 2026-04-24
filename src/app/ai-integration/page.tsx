@@ -6,7 +6,7 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { BreadcrumbSchema } from "@/components/schema/StructuredData";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
   title: "AI Integration for Home Service Businesses",
@@ -87,6 +87,12 @@ export default function AIIntegrationPage() {
   return (
     <main id="primary" className="site-main">
       <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "AI Integration", url: "https://aspbranding.com/ai-integration" }]} />
+      <ServiceSchema
+        name="AI Integration for Home Service Businesses"
+        description="Official Housecall Pro Affiliate Partner. We integrate the HCP AI stack — CSR AI, dispatch, attribution, reporting — into your home service business."
+        url="https://aspbranding.com/ai-integration"
+        serviceType="AI Integration Services"
+      />
       <Hero
         eyebrow="AI + Housecall Pro"
         heading="AI that works the job.<br><span class='hero-text-gradient'>Not the dashboard.</span>"

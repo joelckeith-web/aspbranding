@@ -5,7 +5,7 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { BreadcrumbSchema } from "@/components/schema/StructuredData";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
   title: "Fractional C-Suite — CFO, CMO, COO Leadership",
@@ -200,6 +200,12 @@ export default function FractionalPage() {
   return (
     <main id="primary" className="site-main">
       <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Fractional C-Suite", url: "https://aspbranding.com/fractional" }]} />
+      <ServiceSchema
+        name="Fractional C-Suite"
+        description="Fractional CFO, CMO, and COO leadership for $5M–$20M owner-operated service businesses. One integrated team delivering strategic direction, not just vendor output."
+        url="https://aspbranding.com/fractional"
+        serviceType="Fractional Executive Leadership"
+      />
       <Hero
         eyebrow="Fractional C-Suite"
         heading="You built a great business.<br>Now you need a <span class='hero-text-gradient'>leadership team.</span>"

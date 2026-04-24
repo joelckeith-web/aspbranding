@@ -7,7 +7,7 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { BreadcrumbSchema } from "@/components/schema/StructuredData";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
   title: "The Growth System — Marketing, Ops, Follow-Up",
@@ -96,6 +96,12 @@ export default function GrowthSystemPage() {
   return (
     <main id="primary" className="site-main">
       <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "The Growth System", url: "https://aspbranding.com/growth-system" }]} />
+      <ServiceSchema
+        name="The Growth System"
+        description="Marketing, operations, and follow-up integrated into one growth system for home service businesses already running $1M+. You own everything we build."
+        url="https://aspbranding.com/growth-system"
+        serviceType="Digital Marketing Agency"
+      />
       <Hero
         eyebrow="The Product"
         heading="The Growth System<br>Marketing, operations, and follow-up — <span class='hero-text-gradient'>integrated.</span>"

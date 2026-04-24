@@ -5,7 +5,7 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { BreadcrumbSchema } from "@/components/schema/StructuredData";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
   title: "Content Creation Package for Home Service Brands",
@@ -63,6 +63,13 @@ export default function ContentCreationPage() {
   return (
     <main id="primary" className="site-main">
       <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Content Creation Package", url: "https://aspbranding.com/content-creation" }]} />
+      <ServiceSchema
+        name="Content Creation Package"
+        description="Social and Google Business Profile content done for you — branded graphics, captions, weekly GBP posts, and a monthly content calendar, ready to post."
+        url="https://aspbranding.com/content-creation"
+        serviceType="Content Marketing Services"
+        price="499"
+      />
       <Hero
         eyebrow="Content Creation Package · $499/mo"
         heading="Social and GBP content, done for you.<br><span class='hero-text-gradient'>Ready to post.</span>"
