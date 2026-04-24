@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DiagnosticQuiz } from "@/components/sections/DiagnosticQuiz";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
   title: "Growth Diagnostic — Find Your ASP Tier in 90 Seconds",

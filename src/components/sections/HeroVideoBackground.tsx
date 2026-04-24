@@ -18,9 +18,7 @@ export function HeroVideoBackground({ youtubeId }: HeroVideoBackgroundProps) {
       : (cb: () => void) => window.setTimeout(cb, 600);
     const id = schedule(() => setMount(true));
     return () => {
-      if (win.requestIdleCallback) {
-        // no cancelIdleCallback polyfill needed — noop is fine
-      } else {
+      if (!win.requestIdleCallback) {
         window.clearTimeout(id as number);
       }
     };
