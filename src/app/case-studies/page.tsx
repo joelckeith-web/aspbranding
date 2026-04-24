@@ -252,7 +252,7 @@ export default function CaseStudiesPage() {
 
           <ScrollReveal>
             <div className="rounded-[var(--radius-asp-2xl)] border border-asp-blue/10 shadow-asp-md overflow-hidden bg-white">
-              <div className="grid grid-cols-4 bg-asp-blue text-white text-xs font-bold uppercase tracking-widest p-4">
+              <div className="hidden md:grid grid-cols-4 bg-asp-blue text-white text-xs font-bold uppercase tracking-widest p-4">
                 <span>Business</span>
                 <span className="text-center">Before</span>
                 <span className="text-center">After</span>
@@ -261,14 +261,29 @@ export default function CaseStudiesPage() {
               {MAP_PACK.map((row, i) => (
                 <div
                   key={row.business}
-                  className={`grid grid-cols-4 items-center p-4 text-sm ${
+                  className={`flex flex-col md:grid md:grid-cols-4 md:items-center gap-2 md:gap-0 p-4 text-sm ${
                     i % 2 === 0 ? "bg-white" : "bg-asp-surface-light"
                   }`}
                 >
                   <span className="font-bold text-asp-blue">{row.business}</span>
-                  <span className="text-center text-asp-blue/60">{row.before}</span>
-                  <span className="text-center font-bold text-asp-purple">{row.after}</span>
-                  <span className="text-right text-asp-blue/80 text-xs">{row.improvement}</span>
+                  <div className="flex md:contents items-center gap-3 text-sm">
+                    <span className="md:text-center text-asp-blue/60">
+                      <span className="md:hidden text-xs font-bold uppercase tracking-widest text-asp-blue/40 mr-1">
+                        Before:
+                      </span>
+                      {row.before}
+                    </span>
+                    <span aria-hidden className="md:hidden text-asp-blue/30">→</span>
+                    <span className="md:text-center font-bold text-asp-purple">
+                      <span className="md:hidden text-xs font-bold uppercase tracking-widest text-asp-purple/50 mr-1">
+                        After:
+                      </span>
+                      {row.after}
+                    </span>
+                  </div>
+                  <span className="md:text-right text-asp-blue/80 text-xs font-semibold">
+                    {row.improvement}
+                  </span>
                 </div>
               ))}
             </div>
