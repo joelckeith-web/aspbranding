@@ -38,7 +38,7 @@ const PRODUCT_SUMMARIES = [
     title: "Podcast Studio",
     url: `${BASE}/podcast`,
     summary:
-      "White-label podcast production for business owners, creators, and influencers. Three tiers: Content Essentials ($497/mo — 20 short-form clips + audio mastering), Podcast Growth Accelerator ($1,297/mo — 30 clips + 2 full episodes edited + community access), Podcast Domination ($2,797/mo — 40+ clips + 4 full episodes + growth and monetization coaching). Every clip and episode is human-edited. Intake capped at 10 new clients per quarter. Add-ons include social media management, podcast growth strategy, paid promotion, studio consulting, and a-la-carte episode editing.",
+      "White-label podcast production for business owners, creators, and influencers. Three tiers: Content Essentials ($497/mo — 20 short-form clips + audio mastering), Podcast Growth Accelerator ($1,297/mo — 30 clips + 2 full episodes edited + community access), Podcast Domination ($2,797/mo — 40+ clips + 4 full episodes + growth and monetization coaching). Edited by professional video editors, informed by AI-driven hook and topic analysis. Intake capped at 10 new clients per quarter. Add-ons: Social Media Management $750/mo, Podcast Growth Strategy $499/mo, YouTube Subscriber Growth Campaigns $749/mo, Studio Consulting $499/session. Client proof: Titan Inspection Services grew from 320 to 25K+ YouTube subscribers; Atomic Souls Counseling podcast went from zero to 3,000 subscribers in 90 days.",
   },
   {
     title: "Fractional C-Suite",

@@ -27,7 +27,7 @@ const TIERS = [
     body: "For business professionals and influencers who need consistent, branded social clips and clean audio without managing editors themselves.",
     highlights: [
       "20 short-form clips per month (9:16, under 90s)",
-      "Professionally human-edited — no AI automation",
+      "Edited by our professional video team — AI-assisted research, human-finished output",
       "Basic audio mastering, noise reduction, volume leveling",
       "Customized to your brand identity and aesthetic",
       "3–5 day turnaround on clips",
@@ -48,6 +48,7 @@ const TIERS = [
       "2 full-length episodes professionally edited each month (up to 90 min)",
       "Multi-camera video editing where applicable",
       "Advanced audio mastering — dialogue enhancement, de-reverb, EQ",
+      "AI-driven topic and hook analysis to inform every edit",
       "Dedicated account support with priority turnaround",
       "Exclusive access to our Podcast Growth Community",
       "Add-on services unlocked",
@@ -79,36 +80,31 @@ const TIERS = [
 const ADDONS = [
   {
     name: "Social Media Management",
-    price: "from $899/mo",
+    price: "$750/mo",
     body: "Posting and scheduling across up to four platforms (every other day), curated captions and hashtags, dedicated account manager, monthly analytics.",
   },
   {
     name: "Podcast Growth Strategy",
-    price: "one-time from $1,500",
-    body: "Custom content strategy roadmap based on trends and keyword analysis. Episode structure optimization and strategic planning for monetization.",
+    price: "$499/mo",
+    body: "Ongoing content strategy informed by trend analysis, keyword research, and competitive intelligence. Episode structure optimization and monetization planning.",
   },
   {
-    name: "Paid Promotion Campaigns",
-    price: "from $2,250/mo",
-    body: "Data-driven ad campaigns for listener growth. Targeted placements on YouTube, TikTok, and Instagram. Conversion-focused management. Ad spend not included.",
+    name: "YouTube Subscriber Growth Campaigns",
+    price: "$749/mo",
+    body: "Paid campaigns engineered for YouTube subscriber and watch-time growth. Audience targeting, creative testing, and conversion-focused management. Ad spend not included.",
   },
   {
     name: "Studio Consulting",
     price: "$499 per session",
     body: "1:1 live session with a broadcast specialist to optimize your recording setup, camera angles, and audio quality. Gear recommendations included.",
   },
-  {
-    name: "A-La-Carte Episode Editing",
-    price: "from $400 per episode",
-    body: "Full-length video and audio editing with premium mastering. Available to Growth and Domination clients.",
-  },
 ];
 
 const FAQS = [
   {
-    question: "Is this AI-edited or human-edited?",
+    question: "How does AI fit into your editing process?",
     answer:
-      "Every clip and full episode is edited by a real person on our production team. We use AI for research and analytics — never to generate the content itself. If you want fast, cheap, AI-cut clips, we're not the right fit.",
+      "AI is the research and analysis layer behind every edit — trend detection, hook analysis, clip-worthy moment identification, topic performance across your category. The editing itself is done by professional video editors on our team. AI makes the edits sharper; humans make sure they land.",
   },
   {
     question: "What kinds of creators is this built for?",
@@ -157,13 +153,13 @@ export default function PodcastPage() {
       <Hero
         eyebrow="Podcast Studio · from $497/mo"
         heading="Podcast editing, distribution,<br><span class='hero-text-gradient'>and growth strategy.</span>"
-        subheading="White-label production for business owners, creators, and influencers serious about the show. Human-edited clips and full episodes, advanced audio mastering, and — at higher tiers — monetization strategy. Limited to ten new clients per quarter."
+        subheading="White-label production for business owners, creators, and influencers serious about the show. Professional video editors, AI-informed strategy, advanced audio mastering, and — at higher tiers — monetization coaching. Limited to ten new clients per quarter."
         ctaText="Book a podcast audit"
         ctaUrl="/contact?topic=podcast"
         cta2Text="See the tiers"
         cta2Url="#tiers"
         bgType="image"
-        imageUrl="/images/industries/hvac-viking.jpg"
+        imageUrl="/images/backgrounds/team-at-work.jpg"
         imagePosition="center center"
       />
 
@@ -182,7 +178,7 @@ export default function PodcastPage() {
                 Recording is the easy part. What kills most shows is the editing cadence, the short-form distribution, and the compounding effect of consistently clean audio. Podcast Studio handles all three.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Every tier includes human-edited clips built for vertical feeds, professional audio mastering, and delivery timed to your publishing schedule. Higher tiers add full-episode editing, multi-cam video, growth strategy, and monetization coaching.
+                Every tier includes clips built for vertical feeds, professional audio mastering, and delivery timed to your publishing schedule. Professional video editors do the work, AI drives the research — which hooks are landing in your category, which moments are clip-worthy, which topics are pacing. Higher tiers add full-episode editing, multi-cam video, growth strategy, and monetization coaching.
               </p>
             </div>
           </ScrollReveal>
@@ -360,7 +356,7 @@ export default function PodcastPage() {
               Ten new clients per quarter. That&apos;s the cap.
             </h2>
             <p className="text-white/75 text-lg mb-8 leading-relaxed">
-              Every clip reviewed. Every episode mixed by a human. To hold that quality standard, we cap intake at ten new podcasts per quarter. Lock your spot before the window closes.
+              Every clip reviewed. Every episode mixed by a professional editor on our team. To hold that quality standard, we cap intake at ten new podcasts per quarter. Lock your spot before the window closes.
             </p>
             <Link
               href="/contact?topic=podcast"
@@ -369,6 +365,99 @@ export default function PodcastPage() {
               Book a podcast audit
               <span aria-hidden>&rarr;</span>
             </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Client proof */}
+      <section className="relative py-16 md:py-20 lg:py-24 bg-asp-surface-light overflow-hidden">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                Proof in production
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
+                Audiences we&apos;ve built.
+              </h2>
+              <p className="text-asp-blue/70 text-lg">
+                Two current ASP clients running this exact playbook. Real platforms, real subscriber counts, real time windows.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal animation="stagger">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              {/* Titan */}
+              <article className="bg-white rounded-[var(--radius-asp-2xl)] shadow-asp-lg border border-asp-blue/10 overflow-hidden">
+                <div className="bg-gradient-to-br from-asp-blue via-asp-blue to-asp-purple text-white p-7 lg:p-8">
+                  <div className="text-xs font-bold uppercase tracking-widest text-asp-blue-light mb-4">
+                    Titan Inspection Services · YouTube · 18 months
+                  </div>
+                  <h3 className="font-black text-3xl lg:text-4xl leading-tight mb-3">
+                    320 → 25K YouTube subscribers.
+                  </h3>
+                  <p className="text-white/80 leading-relaxed">
+                    From 320 to 5,000 subscribers in the first 18 months on the system, and past 25,000 subscribers today. Full-episode editing, short-form clip production, and channel optimization running in sync.
+                  </p>
+                </div>
+                <div className="p-7 lg:p-8 grid grid-cols-3 gap-3">
+                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
+                    <div className="font-black text-2xl text-asp-blue leading-tight mb-1">
+                      320
+                    </div>
+                    <div className="text-xs font-semibold text-asp-blue/60">Starting subs</div>
+                  </div>
+                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
+                    <div className="font-black text-2xl text-asp-purple leading-tight mb-1">
+                      5,000
+                    </div>
+                    <div className="text-xs font-semibold text-asp-blue/60">18 months in</div>
+                  </div>
+                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
+                    <div className="font-black text-2xl text-asp-purple leading-tight mb-1">
+                      25K+
+                    </div>
+                    <div className="text-xs font-semibold text-asp-blue/60">Today</div>
+                  </div>
+                </div>
+              </article>
+
+              {/* Atomic Souls */}
+              <article className="bg-white rounded-[var(--radius-asp-2xl)] shadow-asp-lg border border-asp-blue/10 overflow-hidden">
+                <div className="bg-gradient-to-br from-asp-purple via-asp-purple to-asp-blue text-white p-7 lg:p-8">
+                  <div className="text-xs font-bold uppercase tracking-widest text-asp-blue-light mb-4">
+                    Atomic Souls Counseling · Podcast · 3 months
+                  </div>
+                  <h3 className="font-black text-3xl lg:text-4xl leading-tight mb-3">
+                    0 → 3,000 subscribers in 90 days.
+                  </h3>
+                  <p className="text-white/80 leading-relaxed">
+                    New podcast launched from scratch. Three months into the ASP system, the show crossed 3,000 subscribers on the back of consistent full-episode production and vertical-clip distribution.
+                  </p>
+                </div>
+                <div className="p-7 lg:p-8 grid grid-cols-3 gap-3">
+                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
+                    <div className="font-black text-2xl text-asp-blue leading-tight mb-1">
+                      0
+                    </div>
+                    <div className="text-xs font-semibold text-asp-blue/60">At launch</div>
+                  </div>
+                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
+                    <div className="font-black text-2xl text-asp-purple leading-tight mb-1">
+                      3,000
+                    </div>
+                    <div className="text-xs font-semibold text-asp-blue/60">Month 3</div>
+                  </div>
+                  <div className="rounded-[var(--radius-asp-lg)] bg-asp-surface-light border border-asp-blue/10 p-4">
+                    <div className="font-black text-2xl text-asp-purple leading-tight mb-1">
+                      90 days
+                    </div>
+                    <div className="text-xs font-semibold text-asp-blue/60">From zero</div>
+                  </div>
+                </div>
+              </article>
+            </div>
           </ScrollReveal>
         </div>
       </section>
