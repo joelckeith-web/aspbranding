@@ -282,6 +282,7 @@ export default function ContactPage() {
                             type="text"
                             id="company"
                             name="company"
+                            required
                             className="w-full px-4 py-3 rounded-[var(--radius-asp-md)] border border-gray-200 focus:border-asp-blue focus:ring-2 focus:ring-asp-blue/20 transition-all outline-none text-base"
                           />
                         </div>
@@ -296,6 +297,7 @@ export default function ContactPage() {
                         <select
                           id="service"
                           name="service"
+                          required
                           className="w-full px-4 py-3 rounded-[var(--radius-asp-md)] border border-gray-200 focus:border-asp-blue focus:ring-2 focus:ring-asp-blue/20 transition-all outline-none text-base bg-white"
                           defaultValue=""
                         >

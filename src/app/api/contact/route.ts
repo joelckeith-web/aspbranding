@@ -95,9 +95,12 @@ export async function POST(request: Request) {
       recaptchaAction,
     } = body;
 
-    if (!name || !email || !message) {
+    if (!name || !email || !company || !service || !message) {
       return NextResponse.json(
-        { error: "Name, email, and message are required." },
+        {
+          error:
+            "Name, email, company, growth package, and message are all required.",
+        },
         { status: 400 }
       );
     }
@@ -106,6 +109,13 @@ export async function POST(request: Request) {
       marketingConsent === true ||
       marketingConsent === "yes" ||
       marketingConsent === "on";
+
+    if (!consented) {
+      return NextResponse.json(
+        { error: "Marketing consent is required to submit this form." },
+        { status: 400 }
+      );
+    }
 
     const captcha = await verifyRecaptcha(recaptchaToken, recaptchaAction);
     if (!captcha.ok) {
