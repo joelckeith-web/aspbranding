@@ -5,12 +5,18 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export function Newsletter() {
   const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (status === "loading") return;
+    if (!consent) {
+      setStatus("error");
+      setMessage("Please confirm you agree to receive marketing emails.");
+      return;
+    }
     setStatus("loading");
     setMessage("");
 
@@ -62,23 +68,37 @@ export function Newsletter() {
                   Every week, our CEO Joel Keith sends one tight email on growth strategy for service businesses — marketing, AI, operations, margin. No fluff. Just the plays we&apos;re running on our own book.
                 </p>
 
-                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="your@email.com"
-                    disabled={status === "loading"}
-                    className="flex-1 bg-white/10 border border-white/20 rounded-[var(--radius-asp-lg)] px-5 py-3.5 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-asp-blue-light focus:border-transparent disabled:opacity-50"
-                  />
-                  <button
-                    type="submit"
-                    disabled={status === "loading"}
-                    className="bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold px-7 py-3.5 rounded-[var(--radius-asp-lg)] hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
-                  >
-                    {status === "loading" ? "Subscribing…" : "Subscribe"}
-                  </button>
+                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <input
+                      type="email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="your@email.com"
+                      disabled={status === "loading"}
+                      className="flex-1 bg-white/10 border border-white/20 rounded-[var(--radius-asp-lg)] px-5 py-3.5 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-asp-blue-light focus:border-transparent disabled:opacity-50"
+                    />
+                    <button
+                      type="submit"
+                      disabled={status === "loading"}
+                      className="bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold px-7 py-3.5 rounded-[var(--radius-asp-lg)] hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+                    >
+                      {status === "loading" ? "Subscribing…" : "Subscribe"}
+                    </button>
+                  </div>
+                  <label className="flex items-start gap-3 text-white/70 text-sm cursor-pointer">
+                    <input
+                      type="checkbox"
+                      required
+                      checked={consent}
+                      onChange={(e) => setConsent(e.target.checked)}
+                      className="mt-0.5 w-4 h-4 rounded border-white/30 bg-white/10 accent-asp-blue-light flex-shrink-0"
+                    />
+                    <span>
+                      I agree to receive marketing and promotional emails from ASP. Unsubscribe anytime.
+                    </span>
+                  </label>
                 </form>
 
                 {message && (

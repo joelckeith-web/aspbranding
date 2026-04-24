@@ -94,6 +94,18 @@ export function HeroContactForm() {
             required
             className="w-full px-4 py-3 rounded-[var(--radius-asp-md)] bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-asp-blue focus:ring-2 focus:ring-asp-blue/20 transition-all outline-none text-sm resize-y"
           />
+          <label className="flex items-start gap-3 text-gray-600 text-xs cursor-pointer">
+            <input
+              type="checkbox"
+              name="marketingConsent"
+              value="yes"
+              required
+              className="mt-0.5 w-4 h-4 rounded border-gray-300 accent-asp-blue flex-shrink-0"
+            />
+            <span>
+              I agree to receive marketing and promotional emails from ASP and to be subscribed to the ASP newsletter. Unsubscribe anytime.
+            </span>
+          </label>
           {formState === "error" && (
             <p className="text-error text-xs">Something went wrong. Please try again.</p>
           )}

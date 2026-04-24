@@ -324,6 +324,18 @@ export default function ContactPage() {
                           className="w-full px-4 py-3 rounded-[var(--radius-asp-md)] border border-gray-200 focus:border-asp-blue focus:ring-2 focus:ring-asp-blue/20 transition-all outline-none text-base resize-y"
                         />
                       </div>
+                      <label className="flex items-start gap-3 text-gray-600 text-sm cursor-pointer">
+                        <input
+                          type="checkbox"
+                          name="marketingConsent"
+                          value="yes"
+                          required
+                          className="mt-0.5 w-4 h-4 rounded border-gray-300 accent-asp-blue flex-shrink-0"
+                        />
+                        <span>
+                          I agree to receive marketing and promotional emails from ASP and to be subscribed to the ASP newsletter. You can unsubscribe at any time.
+                        </span>
+                      </label>
                       {formState === "error" && (
                         <p className="text-error text-sm">
                           {errorMsg || "Something went wrong. Please try again or email us directly."}

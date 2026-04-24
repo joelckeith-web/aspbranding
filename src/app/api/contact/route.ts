@@ -90,6 +90,7 @@ export async function POST(request: Request) {
       company,
       service,
       message,
+      marketingConsent,
       recaptchaToken,
       recaptchaAction,
     } = body;
@@ -100,6 +101,11 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    const consented =
+      marketingConsent === true ||
+      marketingConsent === "yes" ||
+      marketingConsent === "on";
 
     const captcha = await verifyRecaptcha(recaptchaToken, recaptchaAction);
     if (!captcha.ok) {
@@ -128,14 +134,38 @@ export async function POST(request: Request) {
             <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
             <p><strong>Company:</strong> ${company || "Not provided"}</p>
             <p><strong>Interest:</strong> ${service || "Not specified"}</p>
+            <p><strong>Marketing consent:</strong> ${consented ? "Yes — add to newsletter" : "No"}</p>
             <hr />
             <p><strong>Message:</strong></p>
             <p>${String(message).replace(/\n/g, "<br>")}</p>
           `,
         }),
       });
+
+      if (consented) {
+        await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${resendKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: "ASP Website <noreply@aspbranding.com>",
+            to: ["joel.keith@aspbranding.com"],
+            subject: `Newsletter Signup (via contact form): ${email}`,
+            html: `
+              <h2>Newsletter Signup (from contact form)</h2>
+              <p><strong>Name:</strong> ${name}</p>
+              <p><strong>Email:</strong> ${email}</p>
+              <p><strong>Company:</strong> ${company || "Not provided"}</p>
+              <hr />
+              <p><em>Marketing consent given. Beehiiv integration is paused — please add this subscriber manually.</em></p>
+            `,
+          }),
+        });
+      }
     } else {
-      console.log("Contact form submission:", { name, email, phone, company, service, message });
+      console.log("Contact form submission:", { name, email, phone, company, service, message, consented });
     }
 
     return NextResponse.json({ success: true });
