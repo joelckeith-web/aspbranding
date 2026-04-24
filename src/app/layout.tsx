@@ -46,22 +46,38 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@graph": [
                 {
-                  "@type": "Organization",
+                  "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
                   "@id": "https://aspbranding.com/#organization",
                   name: "ASP",
                   alternateName: "ASP - Assess. Strategize. Perform.",
+                  description:
+                    "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
                   url: "https://aspbranding.com",
                   logo: {
                     "@type": "ImageObject",
                     url: "https://aspbranding.com/images/asp-logo.png",
                   },
+                  image: "https://aspbranding.com/images/asp-logo.png",
                   email: "info@aspbranding.com",
                   telephone: "+1-512-200-3190",
+                  priceRange: "$$",
                   address: {
                     "@type": "PostalAddress",
                     addressLocality: "Austin",
                     addressRegion: "TX",
                     addressCountry: "US",
+                  },
+                  areaServed: { "@type": "Country", name: "United States" },
+                  hasOfferCatalog: {
+                    "@type": "OfferCatalog",
+                    name: "ASP Growth System",
+                    itemListElement: [
+                      { "@type": "Offer", name: "Foundation", priceCurrency: "USD", price: "2500" },
+                      { "@type": "Offer", name: "Growth", priceCurrency: "USD", price: "3850" },
+                      { "@type": "Offer", name: "Local SEO Pro", priceCurrency: "USD", price: "1200" },
+                      { "@type": "Offer", name: "StormFront", priceCurrency: "USD", price: "549" },
+                      { "@type": "Offer", name: "Content Creation Package", priceCurrency: "USD", price: "499" },
+                    ],
                   },
                   sameAs: [
                     "https://www.facebook.com/aspbranding",

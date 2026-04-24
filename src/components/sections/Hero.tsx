@@ -110,17 +110,21 @@ export function Hero({
 
         {showTrustLogos && (
           <div className="mt-10 2xl:mt-16 flex flex-wrap items-center gap-10 md:gap-12">
-            {["hcp-affiliate.png", "google-partner-light.png", "meta-business-partner.webp", "nahb-light.png", "superior-service-color.png"].map(
-              (badge) => (
-                <img
-                  key={badge}
-                  src={`/images/badges/${badge}`}
-                  alt={badge.replace(/[-_.]\w+$/, "").replace(/-/g, " ")}
-                  className="h-14 md:h-16 lg:h-20 w-auto object-contain"
-                  loading="lazy"
-                />
-              )
-            )}
+            {[
+              { file: "hcp-affiliate.png", alt: "Housecall Pro Affiliate Partner" },
+              { file: "google-partner-light.png", alt: "Google Partner — ASP" },
+              { file: "meta-business-partner.webp", alt: "Meta Business Partner — ASP" },
+              { file: "nahb-light.png", alt: "NAHB Member — ASP" },
+              { file: "superior-service-color.png", alt: "Superior Service Award" },
+            ].map((badge) => (
+              <img
+                key={badge.file}
+                src={`/images/badges/${badge.file}`}
+                alt={badge.alt}
+                className="h-14 md:h-16 lg:h-20 w-auto object-contain"
+                loading="lazy"
+              />
+            ))}
           </div>
         )}
       </div>

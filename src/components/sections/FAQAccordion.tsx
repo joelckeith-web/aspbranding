@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { FaqPageSchema } from "@/components/schema/StructuredData";
 
 interface FAQ {
   question: string;
@@ -17,6 +18,8 @@ export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: F
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
+    <>
+      <FaqPageSchema items={faqs} />
     <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
@@ -70,5 +73,6 @@ export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: F
         </div>
       </div>
     </section>
+    </>
   );
 }

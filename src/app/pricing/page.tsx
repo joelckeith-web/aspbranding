@@ -6,9 +6,10 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Pricing",
+  title: "Pricing — Growth System Tiers for Home Service",
   description:
     "Transparent pricing for the ASP Growth System. Three tiers — Foundation, Growth, Premier — plus three productized entry points. Built for home service operators.",
 };
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <main id="primary" className="site-main">
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Pricing", url: "https://aspbranding.com/pricing" }]} />
       <Hero
         eyebrow="Pricing"
         heading="Built for serious operators.<br><span class='hero-text-gradient'>Priced like one.</span>"

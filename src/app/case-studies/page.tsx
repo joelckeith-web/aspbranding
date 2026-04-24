@@ -5,10 +5,11 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 import caseStudies from "@/data/case-studies.json";
 
 export const metadata: Metadata = {
-  title: "Case Studies",
+  title: "Case Studies — Home Service Growth Results",
   description:
     "Industry-anonymized results from operators running the ASP Growth System — HVAC, home inspection, healthcare, commercial flooring, and legal.",
 };
@@ -41,6 +42,7 @@ const MAP_PACK = [
 export default function CaseStudiesPage() {
   return (
     <main id="primary" className="site-main">
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Case Studies", url: "https://aspbranding.com/case-studies" }]} />
       <Hero
         eyebrow="Case Studies"
         heading="Industry-anonymized results.<br><span class='hero-text-gradient'>Real operators. Real revenue.</span>"

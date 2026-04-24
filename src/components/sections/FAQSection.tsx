@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { FaqPageSchema } from "@/components/schema/StructuredData";
 
 export type FAQItem = { q: string; a: string };
 
@@ -45,6 +46,8 @@ export function FAQSection({
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
+    <>
+      <FaqPageSchema items={items} />
     <section className="py-16 md:py-20 lg:py-24 2xl:py-28 bg-asp-surface-light">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
@@ -120,5 +123,6 @@ export function FAQSection({
         </ScrollReveal>
       </div>
     </section>
+    </>
   );
 }

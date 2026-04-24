@@ -5,9 +5,10 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Local SEO Pro",
+  title: "Local SEO Pro — GBP, Citations, & Map Pack",
   description:
     "Own the local map. Rank where your customers search. Full-service Google Business Profile, citation cleanup, local ranking heatmap, and local content strategy for home service operators.",
 };
@@ -61,6 +62,7 @@ const AI_LAYER = [
 export default function LocalSeoProPage() {
   return (
     <main id="primary" className="site-main">
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Local SEO Pro", url: "https://aspbranding.com/local-seo-pro" }]} />
       <Hero
         eyebrow="Local SEO Pro · $1,200/mo"
         heading="Own your local map.<br><span class='hero-text-gradient'>Rank where your customers search.</span>"

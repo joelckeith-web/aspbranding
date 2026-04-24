@@ -3,13 +3,14 @@ import { Hero } from "@/components/sections/Hero";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CTABand } from "@/components/sections/CTABand";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 import { TeamMemberCard } from "@/components/cards/TeamMemberCard";
 import { BUSINESS } from "@/lib/constants";
 import teamData from "@/data/team.json";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About ASP — Who We Are & How We Work",
   description:
     "Learn about ASP — a full-service digital marketing agency helping home service professionals and law firms break through revenue barriers with proven growth systems.",
 };
@@ -57,6 +58,7 @@ const WHY_CHOOSE = [
 export default function AboutPage() {
   return (
     <main id="primary" className="site-main">
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "About", url: "https://aspbranding.com/about" }]} />
       {/* Hero */}
       <Hero
         eyebrow="About Us"

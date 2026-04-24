@@ -15,7 +15,7 @@ export function Footer() {
             <Link href="/" className="inline-block mb-5">
               <Image
                 src="/images/logos/asp-white.png"
-                alt="ASP"
+                alt="ASP — Assess. Strategize. Perform."
                 width={120}
                 height={32}
                 className="h-8 w-auto"

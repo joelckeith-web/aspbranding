@@ -8,6 +8,7 @@ import { Hero } from "@/components/sections/Hero";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { CTABand } from "@/components/sections/CTABand";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 import { BUSINESS } from "@/lib/constants";
 import faqData from "@/data/faq.json";
 
@@ -110,6 +111,7 @@ export default function ContactPage() {
 
   return (
     <main id="primary" className="site-main">
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Contact", url: "https://aspbranding.com/contact" }]} />
       <Hero
         eyebrow="Get Started"
         heading="Let's build your<br><span class='hero-text-gradient'>growth system.</span>"

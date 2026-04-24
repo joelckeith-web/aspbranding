@@ -5,9 +5,10 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
-  title: "StormFront",
+  title: "StormFront — Weather-Triggered Content for Home Service",
   description:
     "A proprietary content system built for storm-chasing and weather-driven home service operators. Watches your service area and fires targeted content when qualifying weather events hit.",
 };
@@ -70,6 +71,7 @@ const FITS = [
 export default function StormfrontPage() {
   return (
     <main id="primary" className="site-main">
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "StormFront", url: "https://aspbranding.com/stormfront" }]} />
       <Hero
         eyebrow="StormFront · $549/mo"
         heading="A proprietary content system<br><span class='hero-text-gradient'>for weather-driven operators.</span>"

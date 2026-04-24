@@ -5,9 +5,10 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Content Creation Package",
+  title: "Content Creation Package for Home Service Brands",
   description:
     "Social and GBP content done for you — ready to post. Monthly drops of branded graphics, captions, and weekly Google Business Profile posts built on your brand kit.",
 };
@@ -61,6 +62,7 @@ const AI_LAYER = [
 export default function ContentCreationPage() {
   return (
     <main id="primary" className="site-main">
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "Content Creation Package", url: "https://aspbranding.com/content-creation" }]} />
       <Hero
         eyebrow="Content Creation Package · $499/mo"
         heading="Social and GBP content, done for you.<br><span class='hero-text-gradient'>Ready to post.</span>"

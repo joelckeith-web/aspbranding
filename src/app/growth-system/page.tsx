@@ -7,9 +7,10 @@ import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 
 export const metadata: Metadata = {
-  title: "The Growth System",
+  title: "The Growth System — Marketing, Ops, Follow-Up",
   description:
     "Marketing, operations, and follow-up integrated into one growth system for home service businesses already running $1M+. You own everything we build.",
 };
@@ -94,6 +95,7 @@ const OWN_LIST = [
 export default function GrowthSystemPage() {
   return (
     <main id="primary" className="site-main">
+      <BreadcrumbSchema items={[{ name: "Home", url: "https://aspbranding.com/" }, { name: "The Growth System", url: "https://aspbranding.com/growth-system" }]} />
       <Hero
         eyebrow="The Product"
         heading="The Growth System<br>Marketing, operations, and follow-up — <span class='hero-text-gradient'>integrated.</span>"
