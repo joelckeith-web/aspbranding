@@ -35,6 +35,12 @@ const PRODUCT_SUMMARIES = [
       "Monthly drop of 12–16 branded social graphics, captions in the client's voice, four to five Google Business Profile posts per week, hashtag and discoverability strategy, brand kit setup and maintenance, and a monthly content calendar. Content is written by humans, informed by AI analytics — never AI-generated. $499/month.",
   },
   {
+    title: "Podcast Studio",
+    url: `${BASE}/podcast`,
+    summary:
+      "White-label podcast production for business owners, creators, and influencers. Three tiers: Content Essentials ($497/mo — 20 short-form clips + audio mastering), Podcast Growth Accelerator ($1,297/mo — 30 clips + 2 full episodes edited + community access), Podcast Domination ($2,797/mo — 40+ clips + 4 full episodes + growth and monetization coaching). Every clip and episode is human-edited. Intake capped at 10 new clients per quarter. Add-ons include social media management, podcast growth strategy, paid promotion, studio consulting, and a-la-carte episode editing.",
+  },
+  {
     title: "Fractional C-Suite",
     url: `${BASE}/fractional`,
     summary:

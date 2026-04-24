@@ -12,6 +12,7 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/local-seo-pro", priority: 0.8, changeFrequency: "monthly" },
   { path: "/stormfront", priority: 0.8, changeFrequency: "monthly" },
   { path: "/content-creation", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/podcast", priority: 0.8, changeFrequency: "monthly" },
   { path: "/fractional", priority: 0.8, changeFrequency: "monthly" },
   { path: "/diagnostic", priority: 0.7, changeFrequency: "monthly" },
   { path: "/about", priority: 0.6, changeFrequency: "monthly" },

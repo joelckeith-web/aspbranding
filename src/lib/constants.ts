@@ -39,6 +39,7 @@ export const FOOTER_PRODUCTS = [
   { label: "Local SEO Pro", href: "/local-seo-pro" },
   { label: "StormFront", href: "/stormfront" },
   { label: "Content Creation Package", href: "/content-creation" },
+  { label: "Podcast Studio", href: "/podcast" },
   { label: "Fractional C-Suite", href: "/fractional" },
 ] as const;
 

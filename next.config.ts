@@ -76,7 +76,7 @@ const nextConfig: NextConfig = {
         destination: "/blog/social-media-for-home-service-businesses",
         permanent: true,
       },
-      { source: "/podcast-marketing-services", destination: "/growth-system", permanent: true },
+      { source: "/podcast-marketing-services", destination: "/podcast", permanent: true },
       { source: "/members-area/:path*", destination: "/", permanent: true },
       { source: "/blog/hashtags/:path*", destination: "/blog", permanent: true },
 
