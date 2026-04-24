@@ -40,19 +40,17 @@
       { "label": "Monthly ad spend savings", "value": "$10K" },
       { "label": "Lead growth", "value": "+20%" },
       { "label": "LSA leads generated", "value": "418" },
-      { "label": "YouTube subscribers", "value": "9,088" },
-      { "label": "Google reviews", "value": "813" },
-      { "label": "Cost per link click", "value": "$0.77" }
+      { "label": "Google reviews", "value": "813" }
     ],
     "footnote": "2.76M Facebook impressions · 834K Facebook Ads reach · 45,169 website sessions · 411K YouTube views · 892K Instagram reach · 42,518 GBP impressions."
   },
   {
     "slug": "recovery-center",
     "industry": "Healthcare · Addiction Recovery",
-    "timeframe": "6 Months (Year 1 launch)",
+    "timeframe": "Year 1 + Year 2 pacing",
     "services": ["Google Ads", "SEO", "GBP Optimization"],
-    "headline": "On track for $1M in Year 1.",
-    "challenge": "A newly launched recovery facility needed to stand up an online presence from scratch and generate qualified admissions. The sensitive category required careful messaging while the business needed revenue inside six months.",
+    "headline": "$1M Year 1. $2M Year 2 pacing.",
+    "challenge": "A newly launched recovery facility needed to stand up an online presence from scratch and generate qualified admissions. The sensitive category required careful messaging while the business needed revenue inside six months — and a clear path to doubling it in Year 2.",
     "solution": [
       "Google Ads campaigns built around compassionate, compliance-aware messaging",
       "Full SEO foundation laid for organic visibility",
@@ -60,7 +58,8 @@
       "Conversion-optimized landing pages deployed at launch"
     ],
     "results": [
-      { "label": "Revenue target", "value": "$1M (on track)" },
+      { "label": "Year 1 revenue", "value": "$1M (on track)" },
+      { "label": "Year 2 pacing", "value": "$2M" },
       { "label": "Google Ads conversions", "value": "238" },
       { "label": "Average CPC", "value": "$6.54" },
       { "label": "Organic impressions", "value": "126K" },
@@ -93,24 +92,5 @@
       { "term": "Concrete Coating", "position": "#3" }
     ],
     "footnote": "3.13% visibility improvement in the tracking period."
-  },
-  {
-    "slug": "personal-injury-law",
-    "industry": "Legal Services · Personal Injury",
-    "timeframe": "12 Months",
-    "services": ["Google Ads", "SEO", "Social Media", "Content Marketing"],
-    "headline": "78K sessions, 3.68M search impressions.",
-    "challenge": "A personal injury firm needed to compete for online visibility in one of the most expensive and saturated categories in paid search. Every top result had a national spend budget behind it.",
-    "solution": [
-      "Paid search structured for tight intent and creative relevance",
-      "SEO foundation rebuilt around practice-area landing pages",
-      "Social media program for brand presence and retargeting",
-      "Content marketing engine for organic lift"
-    ],
-    "results": [
-      { "label": "Website sessions", "value": "78,976" },
-      { "label": "Search impressions", "value": "3.68M" },
-      { "label": "Organic clicks", "value": "13,141" }
-    ]
   }
 ]

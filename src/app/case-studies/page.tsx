@@ -11,7 +11,7 @@ import caseStudies from "@/data/case-studies.json";
 export const metadata: Metadata = {
   title: "Case Studies — Home Service Growth Results",
   description:
-    "Industry-anonymized results from operators running the ASP Growth System — HVAC, home inspection, healthcare, commercial flooring, and legal.",
+    "Industry-anonymized results from operators running the ASP Growth System — HVAC, home inspection, healthcare, and commercial flooring.",
 };
 
 const HEADLINE_RESULTS = [
@@ -113,7 +113,7 @@ export default function CaseStudiesPage() {
                 The challenge, the system, the number on the other side.
               </h2>
               <p className="text-asp-blue/70 text-lg">
-                Five stories pulled directly from our client work. Industry, timeframe, and metrics verified against source platforms.
+                Four industries pulled directly from our client work. Industry, timeframe, and metrics verified against source platforms.
               </p>
             </div>
           </ScrollReveal>

@@ -11,7 +11,7 @@ ASP is a US-based marketing and operations agency headquartered in Austin, Texas
 ## About ASP
 - [About ASP](${BASE}/about): Company background, team, values, and how we work.
 - [Contact ASP](${BASE}/contact): Book a free growth audit or reach us directly.
-- [Case Studies](${BASE}/case-studies): Industry-anonymized revenue results across HVAC, home inspection, healthcare, commercial flooring, and legal.
+- [Case Studies](${BASE}/case-studies): Industry-anonymized revenue results across HVAC, home inspection, healthcare, and commercial flooring.
 - [Pricing](${BASE}/pricing): Tier structure (Foundation, Growth, Premier) plus productized entry points (Local SEO Pro, StormFront, Content Creation Package).
 - [Growth Diagnostic](${BASE}/diagnostic): 90-second, 7-question decision tool that recommends the right ASP tier.
 
