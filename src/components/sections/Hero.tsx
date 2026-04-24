@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { HeroContactForm } from "@/components/sections/HeroContactForm";
+import { HeroVideoBackground } from "@/components/sections/HeroVideoBackground";
 
 interface HeroProps {
   heading: string;
@@ -38,16 +39,7 @@ export function Hero({
     <section className="hero relative min-h-[60vh] lg:min-h-[65vh] 2xl:min-h-[85vh] flex items-center text-white overflow-hidden">
       {/* Background */}
       {bgType === "video" && youtubeId && (
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-asp-gradient-hero opacity-70 z-10" />
-          <iframe
-            src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1&loop=1&playlist=${youtubeId}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
-            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-            style={{ transform: "scale(1.5)" }}
-            allow="autoplay; encrypted-media"
-            title="Hero background video"
-          />
-        </div>
+        <HeroVideoBackground youtubeId={youtubeId} />
       )}
 
       {bgType === "image" && imageUrl && (

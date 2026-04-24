@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -49,6 +50,11 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Script
+          id="crazyegg"
+          src="//script.crazyegg.com/pages/scripts/0114/6671.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
