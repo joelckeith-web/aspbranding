@@ -23,7 +23,7 @@ export type ContentPillar =
   | "tech-stack-case-study";
 
 /** Blog post status */
-export type PostStatus = "draft" | "published";
+export type PostStatus = "draft" | "review" | "published";
 
 /** Author information */
 export interface BlogAuthor {
