@@ -13,7 +13,7 @@ category: "business-growth"
 tags: ["fractional-cfo", "finance", "home-service", "fractional-c-suite", "growth-strategy"]
 metaTitle: "Fractional CFO for Home Service Business: When to Hire"
 metaDescription: "When a home service operator actually needs a fractional CFO for their business — revenue thresholds, deliverables, pricing, and the bookkeeper gap explained."
-featuredImage: "/images/backgrounds/team-at-work.jpg"
+featuredImage: "/images/industries/roofing.png"
 schema:
   type: "Article"
   faqItems:
@@ -35,6 +35,8 @@ status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "9 min read"
 ---
+
+Most home service operators are ready for a fractional CFO between $3M and $5M in revenue, though the trigger is complexity, not the dollar number. Below $3M, a good bookkeeper plus a CPA review each quarter is usually enough. Past $3M — multiple trucks, multiple service lines, capital decisions worth six figures — the questions you're asking get bigger than what a bookkeeper can answer. A fractional CFO owns the forward-looking work: cash forecasts, monthly management reports, scenario models, and the strategy that sits on top of the books. Retainers typically run $2,500 to $8,000 a month.
 
 A few months ago I was on a call with an HVAC operator doing a little over $3M in revenue, and he asked me a question his bookkeeper couldn't answer. It was a simple one on the surface: "If I add a fourth install crew next quarter, how does that change my cash position six months out?" His bookkeeper sent back a spreadsheet with the current month's labor costs. That was it. No forecast, no scenario, no cash curve. The operator had the money to hire the crew. He just had no way to see around the corner, which meant he was going to either decide by gut or not decide at all.
 
