@@ -31,7 +31,7 @@ schema:
       answer: "Yes, in almost every case. A linked website with LocalBusiness schema, service-area pages, and consistent NAP info corroborates the signals on your Google Business Profile and gives you a place to rank organically below the map pack. You can technically rank in the pack without a website, but in any competitive metro you'll be capped. The two surfaces work better together than either does alone."
     - question: "What's the difference between local SEO and regular SEO?"
       answer: "Regular SEO competes for searches without a geographic component — 'how to install a thermostat,' for example. Local SEO competes for searches with location intent — 'thermostat installation Phoenix' or 'HVAC repair near me.' For home service businesses, almost every commercial search is local, which is why local SEO is the higher-leverage discipline. Regular SEO can support a content strategy, but the booked-revenue work happens locally."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "8 min read"
 ---
