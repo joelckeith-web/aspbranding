@@ -16,6 +16,25 @@ import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 export default function HomePage() {
   return (
     <main id="primary" className="site-main">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://www.aspbranding.com/#webpage",
+            url: "https://www.aspbranding.com/",
+            name: "ASP — Assess. Strategize. Perform.",
+            isPartOf: { "@id": "https://www.aspbranding.com/#website" },
+            about: { "@id": "https://www.aspbranding.com/#organization" },
+            inLanguage: "en-US",
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "h2", "[data-speakable]"],
+            },
+          }),
+        }}
+      />
       {/* 1. Hero — video bg restored */}
       <Hero
         eyebrow="AI integrators for home service businesses"

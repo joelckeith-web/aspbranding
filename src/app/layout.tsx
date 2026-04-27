@@ -130,10 +130,6 @@ export default function RootLayout({
                     "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
                   publisher: { "@id": "https://www.aspbranding.com/#organization" },
                   inLanguage: "en-US",
-                  speakable: {
-                    "@type": "SpeakableSpecification",
-                    cssSelector: ["h1", "h2", "[data-speakable]"],
-                  },
                 },
               ],
             }),
