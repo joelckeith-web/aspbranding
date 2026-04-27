@@ -26,6 +26,30 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Legacy WordPress top-level URLs (pre-v4) — 301 to v4 destinations
+      { source: "/contact-us", destination: "/contact", permanent: true },
+      { source: "/services", destination: "/growth-system", permanent: true },
+      {
+        source: "/advertising-campaigns",
+        destination: "/blog/ppc-advertising-for-home-service-businesses",
+        permanent: true,
+      },
+      {
+        source: "/search-engine-optimization",
+        destination: "/blog/local-seo-for-home-service-businesses",
+        permanent: true,
+      },
+      {
+        source: "/social-media-management",
+        destination: "/blog/social-media-for-home-service-businesses",
+        permanent: true,
+      },
+      {
+        source: "/web-development",
+        destination: "/blog/websites-that-convert-for-home-service-businesses",
+        permanent: true,
+      },
+
       // v4 IA — retire generic service pages; route to educational 101 blog posts
       { source: "/solutions", destination: "/growth-system", permanent: true },
       {
