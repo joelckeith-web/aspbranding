@@ -1,85 +1,6 @@
 import { NextResponse } from "next/server";
 import { sendMail } from "@/lib/mailer";
-
-const MIN_SCORE = 0.5;
-
-type EnterpriseAssessment = {
-  tokenProperties?: {
-    valid?: boolean;
-    action?: string;
-    invalidReason?: string;
-  };
-  riskAnalysis?: {
-    score?: number;
-    reasons?: string[];
-  };
-};
-
-async function verifyRecaptcha(
-  token: string | undefined,
-  expectedAction: string | undefined
-): Promise<{ ok: boolean; reason?: string }> {
-  const projectId = process.env.RECAPTCHA_PROJECT_ID;
-  const apiKey = process.env.RECAPTCHA_API_KEY;
-  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
-
-  // Not fully configured — skip silently (dev / unconfigured).
-  if (!projectId || !apiKey || !siteKey) {
-    return { ok: true };
-  }
-  if (!token) {
-    return { ok: false, reason: "Missing reCAPTCHA token." };
-  }
-
-  try {
-    const res = await fetch(
-      `https://recaptchaenterprise.googleapis.com/v1/projects/${projectId}/assessments?key=${apiKey}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          event: {
-            token,
-            expectedAction: expectedAction ?? "contact_submit",
-            siteKey,
-          },
-        }),
-      }
-    );
-
-    if (!res.ok) {
-      return { ok: false, reason: "reCAPTCHA verification error." };
-    }
-
-    const data = (await res.json()) as EnterpriseAssessment;
-
-    if (!data.tokenProperties?.valid) {
-      return {
-        ok: false,
-        reason: `reCAPTCHA token invalid: ${data.tokenProperties?.invalidReason ?? "unknown"}.`,
-      };
-    }
-
-    if (
-      expectedAction &&
-      data.tokenProperties.action &&
-      data.tokenProperties.action !== expectedAction
-    ) {
-      return { ok: false, reason: "reCAPTCHA action mismatch." };
-    }
-
-    if (
-      typeof data.riskAnalysis?.score === "number" &&
-      data.riskAnalysis.score < MIN_SCORE
-    ) {
-      return { ok: false, reason: "reCAPTCHA score too low." };
-    }
-
-    return { ok: true };
-  } catch {
-    return { ok: false, reason: "reCAPTCHA verification error." };
-  }
-}
+import { verifyRecaptcha } from "@/lib/recaptcha";
 
 export async function POST(request: Request) {
   try {
@@ -118,7 +39,10 @@ export async function POST(request: Request) {
       );
     }
 
-    const captcha = await verifyRecaptcha(recaptchaToken, recaptchaAction);
+    const captcha = await verifyRecaptcha(
+      recaptchaToken,
+      recaptchaAction || "contact_submit",
+    );
     if (!captcha.ok) {
       return NextResponse.json(
         { error: captcha.reason ?? "Verification failed." },
