@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { sendMail } from "@/lib/mailer";
+import { verifyRecaptcha } from "@/lib/recaptcha";
 
 // Temporary: Beehiiv integration is paused. Signups are emailed to Joel for
 // manual entry until the Beehiiv issue is resolved. Preserve the Beehiiv env
@@ -8,10 +9,22 @@ const NOTIFY_TO = "joel.keith@aspbranding.com";
 
 export async function POST(request: Request) {
   try {
-    const { email, source } = await request.json();
+    const { email, source, recaptchaToken, recaptchaAction } =
+      await request.json();
 
     if (!email || typeof email !== "string" || !/.+@.+\..+/.test(email)) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
+    }
+
+    const captcha = await verifyRecaptcha(
+      recaptchaToken,
+      recaptchaAction || "newsletter_submit",
+    );
+    if (!captcha.ok) {
+      return NextResponse.json(
+        { error: captcha.reason ?? "Verification failed." },
+        { status: 400 },
+      );
     }
 
     const result = await sendMail({

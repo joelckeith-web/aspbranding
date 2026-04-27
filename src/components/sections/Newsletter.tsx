@@ -1,13 +1,42 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+
+declare global {
+  interface Window {
+    grecaptcha?: {
+      enterprise?: {
+        ready: (cb: () => void) => void;
+        execute: (siteKey: string, opts: { action: string }) => Promise<string>;
+      };
+    };
+  }
+}
+
+const RECAPTCHA_ACTION = "newsletter_submit";
 
 export function Newsletter() {
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState<string>("");
+  const recaptchaLoaded = useRef(false);
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+
+  useEffect(() => {
+    if (!recaptchaSiteKey || recaptchaLoaded.current) return;
+    if (document.querySelector(`script[src*="recaptcha/enterprise.js"]`)) {
+      recaptchaLoaded.current = true;
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/enterprise.js?render=${recaptchaSiteKey}`;
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+    recaptchaLoaded.current = true;
+  }, [recaptchaSiteKey]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,11 +49,37 @@ export function Newsletter() {
     setStatus("loading");
     setMessage("");
 
+    let recaptchaToken: string | undefined;
+    if (
+      recaptchaSiteKey &&
+      typeof window !== "undefined" &&
+      window.grecaptcha?.enterprise
+    ) {
+      try {
+        await new Promise<void>((resolve) =>
+          window.grecaptcha!.enterprise!.ready(resolve),
+        );
+        recaptchaToken = await window.grecaptcha.enterprise.execute(
+          recaptchaSiteKey,
+          { action: RECAPTCHA_ACTION },
+        );
+      } catch {
+        setStatus("error");
+        setMessage("Security check failed. Please refresh and try again.");
+        return;
+      }
+    }
+
     try {
       const res = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, source: "homepage-newsletter" }),
+        body: JSON.stringify({
+          email,
+          source: "homepage-newsletter",
+          recaptchaToken,
+          recaptchaAction: RECAPTCHA_ACTION,
+        }),
       });
 
       if (res.ok) {
@@ -32,8 +87,9 @@ export function Newsletter() {
         setMessage("You're in. Check your inbox for confirmation.");
         setEmail("");
       } else {
+        const body = await res.json().catch(() => ({}));
         setStatus("error");
-        setMessage("Something went wrong. Try again in a moment.");
+        setMessage(body?.error || "Something went wrong. Try again in a moment.");
       }
     } catch {
       setStatus("error");
@@ -112,7 +168,7 @@ export function Newsletter() {
                 )}
 
                 <p className="text-white/40 text-xs mt-5">
-                  Growing by 4,000 readers a month. Unsubscribe anytime.
+                  Protected by reCAPTCHA. Growing by 4,000 readers a month. Unsubscribe anytime.
                 </p>
               </div>
             </ScrollReveal>
