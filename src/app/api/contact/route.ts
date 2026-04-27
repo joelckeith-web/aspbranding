@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { sendMail } from "@/lib/mailer";
 import { verifyRecaptcha } from "@/lib/recaptcha";
 
+const MIN_FORM_TIME_MS = 3000;
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -15,7 +17,24 @@ export async function POST(request: Request) {
       marketingConsent,
       recaptchaToken,
       recaptchaAction,
+      formTime,
+      website,
     } = body;
+
+    // Honeypot — silent 200 so bots don't learn the trap exists.
+    if (typeof website === "string" && website.length > 0) {
+      console.log("[contact] honeypot tripped:", { email, website });
+      return NextResponse.json({ success: true });
+    }
+
+    // Time-gate — anything filled out faster than 3s is bot behaviour.
+    if (typeof formTime === "number" && formTime < MIN_FORM_TIME_MS) {
+      console.log("[contact] too-fast submit:", { email, formTime });
+      return NextResponse.json(
+        { error: "Submission was too fast. Please try again." },
+        { status: 400 },
+      );
+    }
 
     if (!name || !email || !company || !service || !message) {
       return NextResponse.json(
