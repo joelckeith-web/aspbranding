@@ -50,7 +50,7 @@ High-intent, bottom-funnel. Someone types "water heater replacement Phoenix" or 
 
 ### 2. Local Services Ads
 
-Pay-per-lead instead of pay-per-click. Google Guaranteed strip above the map pack. You only pay when a homeowner calls or messages, and the placement is the most aggressive paid real estate on the SERP. When you qualify and rank, LSA almost always produces the lowest cost-per-booked-job of any paid channel. The catch is that ranking depends on review volume, response rate, and dispute rate — operators who haven't built those signals see weak LSA performance until they do. [Google's LSA help documentation](https://support.google.com/localservices/answer/7549047) covers the qualification specifics by category.
+Pay-per-lead instead of pay-per-click. Google Guaranteed strip above the map pack. You only pay when a homeowner calls or messages, and the placement is the most aggressive paid real estate on the SERP. When you qualify and rank, LSA almost always produces the lowest cost-per-booked-job of any paid channel. The catch is that ranking depends on review volume, response rate, and dispute rate — operators who haven't built those signals see weak LSA performance until they do. [Google's Local Services help center](https://support.google.com/localservices) covers the qualification specifics by category.
 
 ### 3. Meta (Facebook + Instagram)
 

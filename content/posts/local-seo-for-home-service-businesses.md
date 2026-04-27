@@ -80,7 +80,7 @@ Responding to every review matters, too — both positive and negative. A consis
 
 The mistake we see constantly is operators who pour all their effort into one pillar — usually GBP — and ignore the others. A great profile with thin citations and no service-area pages can rank in low-competition metros. In any competitive metro, it loses to operators whose four pillars are all in shape.
 
-The leverage is in the integration. Citations confirm what GBP claims. On-site service-area pages support both. Reviews on GBP corroborate on-site testimonials. Each pillar makes the others stronger. That's why a hybrid investment — modest budget across all four — outperforms a heavy investment in one pillar with the others left bare. [Search Engine Journal's coverage of local search ranking factors](https://www.searchenginejournal.com/seo/local-seo/) is a good ongoing read for the latest weighting Google uses.
+The leverage is in the integration. Citations confirm what GBP claims. On-site service-area pages support both. Reviews on GBP corroborate on-site testimonials. Each pillar makes the others stronger. That's why a hybrid investment — modest budget across all four — outperforms a heavy investment in one pillar with the others left bare. [Search Engine Journal's local SEO guide](https://www.searchenginejournal.com/local-seo/) is a good ongoing read for the latest weighting Google uses.
 
 ## Common mistakes home service operators make with local SEO
 
