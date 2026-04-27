@@ -23,6 +23,12 @@ export function Newsletter() {
   const [message, setMessage] = useState<string>("");
   const recaptchaLoaded = useRef(false);
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+  const mountedAt = useRef<number>(0);
+  const honeypotRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    mountedAt.current = Date.now();
+  }, []);
 
   useEffect(() => {
     if (!recaptchaSiteKey || recaptchaLoaded.current) return;
@@ -46,6 +52,23 @@ export function Newsletter() {
       setMessage("Please confirm you agree to receive marketing emails.");
       return;
     }
+    // Honeypot — bots fill hidden fields, real users never see them.
+    if (honeypotRef.current?.value) {
+      // Pretend everything's fine; do nothing. Don't tell the bot it lost.
+      setStatus("success");
+      setMessage("You're in. Check your inbox for confirmation.");
+      setEmail("");
+      return;
+    }
+
+    // Time-gate — bots submit instantly, humans take a beat.
+    const formTime = Date.now() - mountedAt.current;
+    if (formTime < 3000) {
+      setStatus("error");
+      setMessage("Please take a moment before submitting.");
+      return;
+    }
+
     setStatus("loading");
     setMessage("");
 
@@ -79,6 +102,7 @@ export function Newsletter() {
           source: "homepage-newsletter",
           recaptchaToken,
           recaptchaAction: RECAPTCHA_ACTION,
+          formTime,
         }),
       });
 
@@ -125,6 +149,31 @@ export function Newsletter() {
                 </p>
 
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                  {/* Honeypot — hidden from real users + assistive tech, bots fill it */}
+                  <div
+                    aria-hidden="true"
+                    style={{
+                      position: "absolute",
+                      left: "-10000px",
+                      top: "auto",
+                      width: "1px",
+                      height: "1px",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <label>
+                      Website (do not fill)
+                      <input
+                        ref={honeypotRef}
+                        type="text"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        defaultValue=""
+                      />
+                    </label>
+                  </div>
+
                   <div className="flex flex-col sm:flex-row gap-3">
                     <input
                       type="email"

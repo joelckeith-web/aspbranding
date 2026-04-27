@@ -7,10 +7,36 @@ import { verifyRecaptcha } from "@/lib/recaptcha";
 // vars (BEEHIIV_PUBLICATION_ID / BEEHIIV_API_KEY) for the cutover.
 const NOTIFY_TO = "joel.keith@aspbranding.com";
 
+const MIN_FORM_TIME_MS = 3000;
+
 export async function POST(request: Request) {
   try {
-    const { email, source, recaptchaToken, recaptchaAction } =
-      await request.json();
+    const body = await request.json();
+    const {
+      email,
+      source,
+      recaptchaToken,
+      recaptchaAction,
+      formTime,
+      website,
+    } = body;
+
+    // Honeypot — bots tend to fill any input they find. If the hidden
+    // "website" field has a value, silently 200 so we don't telegraph
+    // the trap, but never send the email.
+    if (typeof website === "string" && website.length > 0) {
+      console.log("[newsletter] honeypot tripped:", { email, website });
+      return NextResponse.json({ success: true });
+    }
+
+    // Time-gate — humans need a beat to type an email and click submit.
+    if (typeof formTime === "number" && formTime < MIN_FORM_TIME_MS) {
+      console.log("[newsletter] too-fast submit:", { email, formTime });
+      return NextResponse.json(
+        { error: "Submission was too fast. Please try again." },
+        { status: 400 },
+      );
+    }
 
     if (!email || typeof email !== "string" || !/.+@.+\..+/.test(email)) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });

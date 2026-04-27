@@ -40,10 +40,12 @@ export default function ContactPage() {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState<string>("");
   const recaptchaLoaded = useRef(false);
+  const mountedAt = useRef<number>(0);
 
   const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
   useEffect(() => {
+    mountedAt.current = Date.now();
     if (!recaptchaSiteKey || recaptchaLoaded.current) return;
     if (document.querySelector(`script[src*="recaptcha/enterprise.js"]`)) {
       recaptchaLoaded.current = true;
@@ -63,9 +65,25 @@ export default function ContactPage() {
     setErrorMsg("");
     const form = e.currentTarget;
     const data = new FormData(form);
-    const payload: Record<string, string> = Object.fromEntries(
+    const payload: Record<string, string | number> = Object.fromEntries(
       Array.from(data.entries()).map(([k, v]) => [k, String(v)])
     );
+
+    // Honeypot — silent success if filled.
+    if (payload.website) {
+      setFormState("success");
+      form.reset();
+      return;
+    }
+
+    // Time-gate — anything under 3 seconds is bot behaviour.
+    const formTime = Date.now() - mountedAt.current;
+    if (formTime < 3000) {
+      setFormState("error");
+      setErrorMsg("Please take a moment before submitting.");
+      return;
+    }
+    payload.formTime = formTime;
 
     // reCAPTCHA Enterprise token
     if (
@@ -229,6 +247,30 @@ export default function ContactPage() {
                     </div>
                   ) : (
                     <form className="space-y-6" onSubmit={handleSubmit}>
+                      {/* Honeypot — hidden from real users + assistive tech, bots fill it */}
+                      <div
+                        aria-hidden="true"
+                        style={{
+                          position: "absolute",
+                          left: "-10000px",
+                          top: "auto",
+                          width: "1px",
+                          height: "1px",
+                          overflow: "hidden",
+                        }}
+                      >
+                        <label>
+                          Website (do not fill)
+                          <input
+                            type="text"
+                            name="website"
+                            tabIndex={-1}
+                            autoComplete="off"
+                            defaultValue=""
+                          />
+                        </label>
+                      </div>
+
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                           <label
