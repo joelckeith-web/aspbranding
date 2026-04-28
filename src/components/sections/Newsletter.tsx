@@ -17,6 +17,7 @@ declare global {
 const RECAPTCHA_ACTION = "newsletter_submit";
 
 export function Newsletter() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -98,6 +99,7 @@ export function Newsletter() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          name,
           email,
           source: "homepage-newsletter",
           recaptchaToken,
@@ -109,6 +111,7 @@ export function Newsletter() {
       if (res.ok) {
         setStatus("success");
         setMessage("You're in. Check your inbox for confirmation.");
+        setName("");
         setEmail("");
       } else {
         const body = await res.json().catch(() => ({}));
@@ -174,6 +177,16 @@ export function Newsletter() {
                     </label>
                   </div>
 
+                  <input
+                    type="text"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Your name"
+                    autoComplete="name"
+                    disabled={status === "loading"}
+                    className="bg-white/10 border border-white/20 rounded-[var(--radius-asp-lg)] px-5 py-3.5 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-asp-blue-light focus:border-transparent disabled:opacity-50"
+                  />
                   <div className="flex flex-col sm:flex-row gap-3">
                     <input
                       type="email"
@@ -181,6 +194,7 @@ export function Newsletter() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="your@email.com"
+                      autoComplete="email"
                       disabled={status === "loading"}
                       className="flex-1 bg-white/10 border border-white/20 rounded-[var(--radius-asp-lg)] px-5 py-3.5 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-asp-blue-light focus:border-transparent disabled:opacity-50"
                     />

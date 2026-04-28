@@ -6,6 +6,7 @@ import { verifyRecaptcha } from "@/lib/recaptcha";
 // manual entry until the Beehiiv issue is resolved. Preserve the Beehiiv env
 // vars (BEEHIIV_PUBLICATION_ID / BEEHIIV_API_KEY) for the cutover.
 const NOTIFY_TO = "joel.keith@aspbranding.com";
+const NOTIFY_CC = "fernanda@ryanestes.info";
 
 const MIN_FORM_TIME_MS = 3000;
 
@@ -13,6 +14,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const {
+      name,
       email,
       source,
       recaptchaToken,
@@ -42,6 +44,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
 
+    if (!name || typeof name !== "string" || name.trim().length === 0) {
+      return NextResponse.json({ error: "Name is required" }, { status: 400 });
+    }
+
+    const cleanName = name.trim().slice(0, 100);
+
     const captcha = await verifyRecaptcha(
       recaptchaToken,
       recaptchaAction || "newsletter_submit",
@@ -55,10 +63,12 @@ export async function POST(request: Request) {
 
     const result = await sendMail({
       to: NOTIFY_TO,
-      subject: `New Newsletter Signup: ${email}`,
+      cc: NOTIFY_CC,
+      subject: `New Newsletter Signup: ${cleanName} <${email}>`,
       html: `
         <h2>New Newsletter Signup</h2>
         <p>Someone just subscribed from the ASP website.</p>
+        <p><strong>Name:</strong> ${cleanName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Source:</strong> ${source || "aspbranding.com"}</p>
         <hr />

@@ -13,6 +13,7 @@ interface SendMailInput {
   html: string;
   from?: string;
   replyTo?: string;
+  cc?: string | string[];
 }
 
 export async function sendMail({
@@ -21,6 +22,7 @@ export async function sendMail({
   html,
   from,
   replyTo,
+  cc,
 }: SendMailInput): Promise<
   { ok: true } | { ok: false; reason: string }
 > {
@@ -49,6 +51,7 @@ export async function sendMail({
       subject,
       html,
       ...(replyTo ? { replyTo } : {}),
+      ...(cc ? { cc } : {}),
     });
     return { ok: true };
   } catch (err) {
