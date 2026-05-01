@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { sendMail } from "@/lib/mailer";
 import { verifyRecaptcha } from "@/lib/recaptcha";
+import { checkSpam } from "@/lib/spam-filter";
+import { reviewSubmission } from "@/lib/ai-spam-review";
 
 const MIN_FORM_TIME_MS = 3000;
 
@@ -24,6 +26,19 @@ export async function POST(request: Request) {
     // Honeypot — silent 200 so bots don't learn the trap exists.
     if (typeof website === "string" && website.length > 0) {
       console.log("[contact] honeypot tripped:", { email, website });
+      return NextResponse.json({ success: true });
+    }
+
+    // Cold-pitch keyword filter — same silent-200 pattern as honeypot so
+    // pitch-spammers can't iterate against the blocklist. Logged for review.
+    const spam = checkSpam({ name, company, message });
+    if (spam.isSpam) {
+      console.log("[contact] spam filter matched:", {
+        email,
+        matched: spam.matched,
+        name,
+        company,
+      });
       return NextResponse.json({ success: true });
     }
 
@@ -67,6 +82,29 @@ export async function POST(request: Request) {
         { error: captcha.reason ?? "Verification failed." },
         { status: 400 }
       );
+    }
+
+    // AI second-pass — semantic vendor-vs-prospect classifier. Fails open on
+    // API error so we never lose a real lead. Silent 200 on "vendor" verdict
+    // (same as honeypot/keyword filter) so spammers can't probe the layer.
+    const review = await reviewSubmission({
+      name,
+      email,
+      phone,
+      company,
+      service,
+      message,
+    });
+    if (review.classification === "vendor") {
+      console.log("[contact] AI flagged as vendor:", {
+        email,
+        company,
+        reason: review.reason,
+      });
+      return NextResponse.json({ success: true });
+    }
+    if (review.errored) {
+      console.warn("[contact] AI review errored, failing open:", review.reason);
     }
 
     await sendMail({
