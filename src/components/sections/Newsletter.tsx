@@ -145,7 +145,7 @@ export function Newsletter() {
                   Free weekly read
                 </span>
                 <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
-                  9,000+ home service owners already get it.
+                  10,000+ home service owners already get it.
                 </h2>
                 <p className="text-white/75 text-lg mb-8 leading-relaxed">
                   Every week, our CEO Joel Keith sends one tight email on growth strategy for service businesses — marketing, AI, operations, margin. No fluff. Just the plays we&apos;re running on our own book.
