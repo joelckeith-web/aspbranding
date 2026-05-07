@@ -6,111 +6,133 @@ import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
-// NOTE: SCAFFOLD ONLY — copy is placeholder. Swap once ChatGPT Ads Manager
-// research dump lands. Structure mirrors /ai-integration so it slots into
-// the existing design system without component work.
-
 export const metadata: Metadata = {
   title: "ChatGPT Ads Management | ASP",
   description:
-    "Early-mover ChatGPT Ads Manager partner for home service operators. Campaign setup, audience structure, creative, and attribution — built into the same growth system that runs your Google and Meta spend.",
+    "Your customers stopped Googling. They started asking. ASP manages ChatGPT Ads end-to-end — account setup, creative, context targeting, conversion tracking, and reporting. First-mover pricing while CPCs are still cheap.",
   alternates: {
     canonical: "https://www.aspbranding.com/chatgpt-ads-management",
   },
   openGraph: {
     title: "ChatGPT Ads Management | ASP",
     description:
-      "Early-mover ChatGPT Ads Manager partner. Campaign setup, audience structure, creative, attribution.",
+      "ChatGPT now serves ads inside conversations. We run them. End-to-end management — setup, creative, targeting, tracking, reporting.",
     url: "https://www.aspbranding.com/chatgpt-ads-management",
     type: "website",
   },
 };
 
-const CAPABILITIES = [
+const WHAT_WE_DO = [
   {
-    title: "Campaign Architecture",
-    tagline: "Built for the ChatGPT surface, not retrofitted from Google.",
-    body: "[PLACEHOLDER] Campaign structure, ad group logic, and bidding aligned to how prompts and conversational responses actually convert. Pending OpenAI's published spec.",
-  },
-  {
-    title: "Audience & Targeting",
-    tagline: "First-party audience strategy from day one.",
-    body: "[PLACEHOLDER] Targeting setup, exclusion lists, and audience layering on the new ChatGPT Ads platform. Will be filled in once OpenAI publishes the targeting taxonomy.",
-  },
-  {
-    title: "Creative & Prompt-Native Copy",
-    tagline: "Copy that fits an answer, not an ad slot.",
-    body: "[PLACEHOLDER] Ad creative written for AI-conversation context — a different muscle than search or social. Built in voice, tested against real prompts.",
-  },
-  {
-    title: "Attribution & Reporting",
-    tagline: "Booked-revenue reporting, not just clicks.",
-    body: "[PLACEHOLDER] ChatGPT ad spend wired into the same attribution model that already runs your Google and Meta — reported against cost-per-booked-job inside Housecall Pro.",
-  },
-];
-
-const PROCESS = [
-  {
-    step: "01",
     title: "Account Setup & Verification",
-    body: "[PLACEHOLDER] We get your business verified inside ChatGPT Ads Manager and configure the account against your existing brand and conversion infrastructure.",
+    tagline: "You own the account. We join as a team member.",
+    body: "Every advertiser needs their own ChatGPT Ads account. We walk you through onboarding and verification, then join as a team member so ownership stays with you — not the agency.",
   },
   {
-    step: "02",
-    title: "Strategy & Creative",
-    body: "[PLACEHOLDER] Audience strategy, prompt-native creative, and offer architecture. Mapped to the same booked-revenue targets as the rest of the growth system.",
+    title: "Creative Development",
+    tagline: "16-character titles. 32-character descriptions.",
+    body: "ChatGPT's ad format is tight: 16-character titles, 32-character descriptions, no logos as the primary image. Performance lives or dies in those characters. We write for the constraint.",
   },
   {
-    step: "03",
-    title: "Launch & Learn",
-    body: "[PLACEHOLDER] Initial campaign launch with tight spend controls. Daily monitoring during the early-platform phase — this is brand-new ground and we treat it that way.",
+    title: "Context & Targeting Strategy",
+    tagline: "Match campaigns to actual conversations.",
+    body: "We identify the conversation topics your buyers are having — the questions, the comparisons, the late-stage research moments — and build campaigns that surface inside those exact prompts.",
   },
   {
-    step: "04",
-    title: "Scale & Integrate",
-    body: "[PLACEHOLDER] Once unit economics prove out, we scale spend and feed conversion data back into the broader paid stack. ChatGPT becomes a reportable channel alongside Google and Meta — not a side experiment.",
+    title: "Conversion Tracking",
+    tagline: "Pixel + server-side Conversions API.",
+    body: "Pixel and server-side Conversions API installation so you can see what's converting and what isn't. Events fire to your domain and live in your account, not ours.",
+  },
+  {
+    title: "Bid & Pacing Management",
+    tagline: "Keep budget aligned to goal.",
+    body: "CPC bids run between $2.50 and $8 in early auctions. We keep pacing aligned to your goal — daily monitoring during the early-platform phase, weekly tuning once accounts stabilize.",
+  },
+  {
+    title: "Monthly Performance Reporting",
+    tagline: "What spent. What converted. What changes.",
+    body: "Plain-language reporting tied to revenue, not vanity metrics. Every month: what was spent, what converted, what we're changing — and why.",
   },
 ];
 
-const EARLY_MOVER = [
+const ELIGIBILITY = [
   {
-    title: "Why ASP, why now",
+    title: "Eligible",
     bullets: [
-      "[PLACEHOLDER] We signed up for ChatGPT Ads Manager on launch day. Tip-of-the-spear access matters most while inventory is cheap and competition is thin.",
-      "[PLACEHOLDER] Same agency that runs your Google, Meta, and HCP integration — one team, one attribution model, one revenue number.",
-      "[PLACEHOLDER] Conservative spend strategy in Phase 1: we treat new ad platforms like science experiments, not blank checks.",
-      "[PLACEHOLDER] You own the ad account, the creative, and the data. No exit fees, no hostage situations.",
+      "Local services (home services, professional services, trades)",
+      "Education and training",
+      "Lifestyle and household products",
+      "Travel and experiences",
+      "Software and digital products",
     ],
     positive: true,
   },
   {
-    title: "Why not just wait",
+    title: "Not eligible during beta",
     bullets: [
-      "[PLACEHOLDER] CPCs are lowest before a platform is saturated. Late movers pay the premium that early movers established.",
-      "[PLACEHOLDER] Algorithmic learning periods compound. Accounts that start now will out-perform identical accounts started a year later.",
-      "[PLACEHOLDER] The brands that show up in ChatGPT answers next year are the ones training the system this year.",
-      "[PLACEHOLDER] Sitting it out is a decision — and not a free one.",
+      "Healthcare and pharmaceutical",
+      "Mental health services",
+      "Legal services (heavily restricted)",
+      "Financial services (approved advertisers only)",
+      "Gambling, alcohol, tobacco, adult",
     ],
     positive: false,
   },
 ];
 
+const WHY_MOVE_NOW = [
+  {
+    step: "01",
+    title: "First-mover pricing",
+    body: "CPCs run $2.50 to $8 today. That's higher than Google search, but it's also the cheapest these placements will ever be. Pricing climbs as more advertisers enter the auction.",
+  },
+  {
+    step: "02",
+    title: "Less competition for placements",
+    body: "Ads serve to hundreds of millions of free-tier and Go-tier users in the US, Canada, Australia, and New Zealand. The category is wide open in most verticals.",
+  },
+  {
+    step: "03",
+    title: "Compounding learning",
+    body: "Conversion patterns, creative formats, and context-hint strategies are still being mapped. The advertisers running campaigns now have the data the latecomers will be paying to figure out.",
+  },
+];
+
+const WHAT_YOU_KEEP = [
+  {
+    title: "The ad account",
+    body: "ASP joins as a team member. You keep the account if our engagement ever ends.",
+  },
+  {
+    title: "The conversion data",
+    body: "Pixel events fire to your domain and live in your account.",
+  },
+  {
+    title: "The creative",
+    body: "Everything we write and design transfers with you.",
+  },
+];
+
 const FAQ = [
   {
-    q: "Is ChatGPT Ads Manager actually live?",
-    a: "[PLACEHOLDER] Yes. OpenAI launched the self-service platform in [DATE]. Any business can sign up, pending verification. ASP is verified and onboarding the first cohort of clients now.",
+    q: "How is this different from Google Ads?",
+    a: "Different intent. Google catches buyers who already know what they're searching for. ChatGPT catches them earlier — mid-conversation, before they've narrowed to a brand or product.",
   },
   {
-    q: "What does this cost?",
-    a: "[PLACEHOLDER] Management is priced inside Growth Accelerator and Premier Partnership tiers. Ad spend is separate and is paid directly to OpenAI on your own card — you own the account.",
+    q: "Will it cannibalize my Google or Meta budget?",
+    a: "Generally no. Different audience moment, different decision stage. Most accounts run ChatGPT alongside existing channels rather than reallocating away from them.",
   },
   {
-    q: "Will this work for my industry?",
-    a: "[PLACEHOLDER] We're prioritizing home service operators (HVAC, plumbing, electrical, roofing, restoration, home inspection) who already have a working Google or Meta program. ChatGPT ads layer onto that — they don't replace it.",
+    q: "How fast do we see results?",
+    a: "Click and CTR data inside the first week. Conversion data inside 30 days, assuming the pixel and server-side tracking are installed correctly and budget is steady.",
   },
   {
-    q: "How does attribution work?",
-    a: "[PLACEHOLDER] Same model we run for every other paid channel: every lead tagged with source, tracked from first touch to booked revenue inside Housecall Pro. No separate dashboard.",
+    q: "Can my team run this in-house?",
+    a: "The platform is self-serve, so yes. The work is in writing creative that performs at 16 characters, choosing context hints that actually deliver impressions, and managing bids when auctions tighten. That's what you're paying us for.",
+  },
+  {
+    q: "Is the data shared with OpenAI's training?",
+    a: "No. Conversion events flow to your account. Conversation content is never shared with advertisers.",
   },
 ];
 
@@ -118,10 +140,10 @@ export default function ChatGPTAdsManagementPage() {
   return (
     <main id="primary" className="site-main">
       <Hero
-        eyebrow="Early-Mover Paid Media"
-        heading="ChatGPT Ads Management.<br><span class='hero-text-gradient'>From day one.</span>"
-        subheading="ASP is verified inside ChatGPT Ads Manager. We're standing up the first cohort of home service operators on the platform while inventory is cheap and competition is thin. [PLACEHOLDER COPY — finalize after OpenAI spec lands.]"
-        ctaText="Book a strategy call"
+        eyebrow="ChatGPT Ads Management"
+        heading="Your customers stopped Googling.<br><span class='hero-text-gradient'>They started asking.</span>"
+        subheading="ChatGPT now serves ads inside conversations. We run them."
+        ctaText="Get a quote"
         ctaUrl="/contact?topic=chatgpt-ads"
         cta2Text="See pricing"
         cta2Url="/pricing"
@@ -130,8 +152,8 @@ export default function ChatGPTAdsManagementPage() {
         imagePosition="center center"
       />
 
-      {/* Why early-mover matters */}
-      <section className="relative py-12 md:py-14 bg-asp-black text-white overflow-hidden">
+      {/* Section 1 — The shift */}
+      <section className="relative py-16 md:py-20 lg:py-24 bg-asp-black text-white overflow-hidden">
         <div aria-hidden className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
             className="absolute -top-1/2 -bottom-1/2 left-[35%] w-[18vw] max-w-[260px] bg-white/[0.05]"
@@ -149,28 +171,29 @@ export default function ChatGPTAdsManagementPage() {
             }}
           />
         </div>
-        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <ScrollReveal>
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">
-                Tip of the spear
-              </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
-                A new ad platform opens once a decade. We&apos;re already in.
-              </h2>
-              <p className="text-white/75 text-base lg:text-lg leading-relaxed mb-4">
-                [PLACEHOLDER] Google AdWords launched in 2000. Meta Ads in 2007. TikTok Ads in 2019. ChatGPT Ads Manager launched [DATE 2026]. Every one of those platforms made its early advertisers disproportionately wealthy — and made everyone who waited pay the saturation tax. We&apos;re not waiting.
-              </p>
-              <p className="text-asp-blue-light text-base lg:text-lg font-semibold leading-relaxed">
-                ASP signed up on launch day. Verification is in progress. The first client cohort is being scoped now.
-              </p>
-            </ScrollReveal>
-          </div>
+        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">
+              The shift
+            </span>
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5 leading-tight">
+              One answer instead of ten blue links.
+            </h2>
+            <p className="text-white/80 text-base lg:text-lg leading-relaxed mb-4">
+              Every week, more of your customers replace a Google search with a question to ChatGPT. They stop scrolling through ten blue links. They get one answer.
+            </p>
+            <p className="text-white/80 text-base lg:text-lg leading-relaxed mb-4">
+              In May 2026, OpenAI opened that surface to advertisers. Sponsored placements now appear inside conversations &mdash; clearly labeled, separated from organic answers, and matched to the topic of the question being asked. It&apos;s the most direct line to a high-intent buyer we&apos;ve seen since the early days of paid search.
+            </p>
+            <p className="text-asp-blue-light text-base lg:text-lg font-semibold leading-relaxed">
+              Most of your competitors aren&apos;t running ads on it yet. The ones who move first will compound that advantage every month they hold the placement.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
-      {/* Capabilities */}
-      <section className="relative py-16 md:py-20 lg:py-24 2xl:py-32 bg-asp-black text-white overflow-hidden">
+      {/* Section 2 — What we do */}
+      <section className="relative py-16 md:py-20 lg:py-24 2xl:py-32 bg-asp-black text-white overflow-hidden border-t border-white/5">
         <div
           aria-hidden
           className="absolute inset-0 opacity-40 pointer-events-none"
@@ -183,20 +206,20 @@ export default function ChatGPTAdsManagementPage() {
           <ScrollReveal>
             <div className="text-center mb-12 max-w-3xl mx-auto">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                What we manage
+                What we do
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
-                Four pieces. One reportable channel.
+                ChatGPT Ads, end-to-end.
               </h2>
               <p className="text-white/70 text-lg">
-                [PLACEHOLDER] Campaign architecture, audience strategy, creative, and attribution — wired into the same growth system that already runs your Google, Meta, and HCP stack.
+                You don&apos;t need a new internal hire or a new login. We handle every piece of the platform.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
-              {CAPABILITIES.map((c) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+              {WHAT_WE_DO.map((c) => (
                 <div
                   key={c.title}
                   className="rounded-[var(--radius-asp-xl)] bg-white/[0.03] border border-asp-blue-light/25 hover:border-asp-blue-light/60 transition-colors p-7 lg:p-8"
@@ -215,43 +238,43 @@ export default function ChatGPTAdsManagementPage() {
         </div>
       </section>
 
-      {/* Process */}
+      {/* Section 3 — Investment */}
       <section className="py-16 md:py-20 lg:py-24 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <div className="text-center mb-12 max-w-3xl mx-auto">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                How we deploy
+            <div className="text-center mb-10">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
+                Investment
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
-                Four steps. Conservative spend, real attribution.
+                Pricing scales with media spend.
               </h2>
-              <p className="text-gray-600 text-lg">
-                [PLACEHOLDER] We treat new ad platforms like science experiments — start small, validate, then scale. No blank checks against an unknown platform.
-              </p>
             </div>
           </ScrollReveal>
 
-          <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-              {PROCESS.map((p) => (
-                <div
-                  key={p.step}
-                  className="rounded-[var(--radius-asp-xl)] border border-gray-200 p-7 lg:p-8 bg-white shadow-asp-sm"
-                >
-                  <div className="font-black text-4xl text-asp-purple mb-3 leading-none">
-                    {p.step}
-                  </div>
-                  <h3 className="font-black text-xl text-asp-blue mb-2">{p.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{p.body}</p>
-                </div>
-              ))}
+          <ScrollReveal>
+            <div className="rounded-[var(--radius-asp-2xl)] border-2 border-asp-blue-light/40 bg-asp-blue/[0.02] p-8 lg:p-10 mb-8 text-center">
+              <div className="font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
+                Recommended starting media spend
+              </div>
+              <div className="font-black text-4xl md:text-5xl 2xl:text-6xl text-asp-blue mb-3">
+                $1,000 &ndash; $2,000<span className="text-2xl md:text-3xl font-bold text-gray-500"> /mo</span>
+              </div>
+              <p className="text-gray-600 text-base lg:text-lg leading-relaxed max-w-xl mx-auto">
+                Enough to gather meaningful data, run two to three creative variations, and avoid the under-funded campaigns that distort early performance reads.
+              </p>
             </div>
+            <p className="text-gray-600 text-base lg:text-lg leading-relaxed text-center mb-2">
+              Larger budgets unlock more aggressive testing and broader topic coverage.
+            </p>
+            <p className="text-gray-600 text-base lg:text-lg leading-relaxed text-center">
+              Management fees are quoted based on spend level, scope, and reporting cadence. We&apos;ll work that out on the intro call.
+            </p>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Why ASP / Why not wait */}
+      {/* Section 4 — Who this works for right now */}
       <section className="relative py-16 md:py-20 lg:py-24 bg-asp-black text-white overflow-hidden">
         <div
           aria-hidden
@@ -265,20 +288,20 @@ export default function ChatGPTAdsManagementPage() {
           <ScrollReveal>
             <div className="text-center mb-12 max-w-3xl mx-auto">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                The decision
+                Who this works for right now
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
-                Move now, or pay the saturation tax.
+                ChatGPT Ads is in beta.
               </h2>
               <p className="text-white/70 text-lg">
-                [PLACEHOLDER] Every major ad platform rewards the operators who showed up first. ChatGPT Ads Manager will be no different.
+                OpenAI restricts certain categories during this phase. If your business sits in a restricted category, we&apos;ll tell you up front rather than take a contract that won&apos;t clear policy review.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-              {EARLY_MOVER.map((col) => (
+              {ELIGIBILITY.map((col) => (
                 <div
                   key={col.title}
                   className={`rounded-[var(--radius-asp-2xl)] p-7 lg:p-9 border-2 ${
@@ -308,7 +331,7 @@ export default function ChatGPTAdsManagementPage() {
                             col.positive ? "text-asp-blue-light" : "text-white/30"
                           }`}
                         >
-                          {col.positive ? "✓" : "—"}
+                          {col.positive ? "✓" : "✕"}
                         </span>
                         <span>{b}</span>
                       </li>
@@ -321,20 +344,93 @@ export default function ChatGPTAdsManagementPage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Section 5 — Why move now */}
+      <section className="py-16 md:py-20 lg:py-24 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                Why move now
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
+                Three reasons.
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal animation="stagger">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+              {WHY_MOVE_NOW.map((p) => (
+                <div
+                  key={p.step}
+                  className="rounded-[var(--radius-asp-xl)] border border-gray-200 p-7 lg:p-8 bg-white shadow-asp-sm"
+                >
+                  <div className="font-black text-4xl text-asp-purple mb-3 leading-none">
+                    {p.step}
+                  </div>
+                  <h3 className="font-black text-xl text-asp-blue mb-2">{p.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{p.body}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Section 6 — What you keep */}
+      <section className="relative py-16 md:py-20 lg:py-24 bg-asp-black text-white overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-30 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 40% at 50% 100%, rgba(76, 201, 240, 0.15), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                What you keep
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
+                You own every asset we build.
+              </h2>
+              <p className="text-white/70 text-lg">
+                Same promise as everything else we do. No exit fees. No hostage situations.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal animation="stagger">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
+              {WHAT_YOU_KEEP.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-[var(--radius-asp-xl)] bg-white/[0.03] border border-asp-blue-light/25 p-7 lg:p-8"
+                >
+                  <h3 className="font-black text-xl 2xl:text-2xl text-asp-blue-light mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-white/75 leading-relaxed">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Section 7 — FAQ */}
       <section className="py-16 md:py-20 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-10">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
-                Common questions
+                FAQ
               </span>
               <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-3">
-                FAQ
+                Common questions.
               </h2>
-              <p className="text-gray-600 text-lg">
-                [PLACEHOLDER] Replace with finalized FAQ once OpenAI spec is published.
-              </p>
             </div>
           </ScrollReveal>
 
@@ -362,19 +458,19 @@ export default function ChatGPTAdsManagementPage() {
             label: "Pillar",
             href: "/growth-system",
             title: "The Growth System",
-            body: "ChatGPT ads are a layer inside the broader Growth System — paid media wired to operations and follow-up.",
+            body: "ChatGPT ads layer onto the broader growth system — paid media wired to operations, follow-up, and attribution.",
           },
           {
             label: "Adjacent",
             href: "/ai-integration",
             title: "AI Integration",
-            body: "Housecall Pro AI configuration: CSR AI, attribution, dispatch, follow-up. ChatGPT ads feed booked revenue back into this stack.",
+            body: "Housecall Pro AI configuration: CSR AI, attribution, dispatch, follow-up. ChatGPT ad spend feeds booked-revenue data back into this stack.",
           },
           {
             label: "Pricing",
             href: "/pricing",
             title: "Pricing & tiers",
-            body: "ChatGPT Ads Management is included in Growth Accelerator and Premier. See the full breakdown.",
+            body: "ChatGPT Ads management is quoted based on spend, scope, and reporting cadence. Tier breakdown here.",
           },
         ]}
       />
@@ -384,22 +480,22 @@ export default function ChatGPTAdsManagementPage() {
         eyebrow="What our clients say"
       />
 
-      {/* CTA */}
+      {/* Final CTA */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-5">
-              Get on the platform before your competitors do.
+              Ready to run ChatGPT Ads?
             </h2>
             <p className="text-gray-600 text-lg mb-8">
-              [PLACEHOLDER] First-cohort spots are limited while we calibrate the playbook. Book a strategy call to see if ChatGPT Ads is the right fit for your business right now.
+              Tell us what you sell and where you sell it. We&apos;ll send back a campaign plan within two business days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact?topic=chatgpt-ads"
                 className="inline-flex items-center justify-center gap-2 bg-asp-blue-light text-asp-black font-bold px-7 py-3.5 rounded-[var(--radius-asp-lg)] hover:bg-asp-blue hover:text-white transition-colors"
               >
-                Book a strategy call
+                Get a quote
                 <span aria-hidden>&rarr;</span>
               </Link>
               <Link
