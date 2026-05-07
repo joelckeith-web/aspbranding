@@ -148,7 +148,9 @@ export default function ChatGPTAdsManagementPage() {
         ctaUrl="/contact?topic=chatgpt-ads"
         cta2Text="See pricing"
         cta2Url="/pricing"
-        bgType="dark"
+        bgType="image"
+        imageUrl="/images/backgrounds/hero-chatgpt-laptop.jpg"
+        imagePosition="center right"
       />
 
       {/* Section 1 — The shift */}
