@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
+import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
@@ -115,24 +116,29 @@ const WHAT_YOU_KEEP = [
 
 const FAQ = [
   {
-    q: "How is this different from Google Ads?",
-    a: "Different intent. Google catches buyers who already know what they're searching for. ChatGPT catches them earlier — mid-conversation, before they've narrowed to a brand or product.",
+    question: "How is this different from Google Ads?",
+    answer:
+      "Different intent. Google catches buyers who already know what they're searching for. ChatGPT catches them earlier — mid-conversation, before they've narrowed to a brand or product.",
   },
   {
-    q: "Will it cannibalize my Google or Meta budget?",
-    a: "Generally no. Different audience moment, different decision stage. Most accounts run ChatGPT alongside existing channels rather than reallocating away from them.",
+    question: "Will it cannibalize my Google or Meta budget?",
+    answer:
+      "Generally no. Different audience moment, different decision stage. Most accounts run ChatGPT alongside existing channels rather than reallocating away from them.",
   },
   {
-    q: "How fast do we see results?",
-    a: "Click and CTR data inside the first week. Conversion data inside 30 days, assuming the pixel and server-side tracking are installed correctly and budget is steady.",
+    question: "How fast do we see results?",
+    answer:
+      "Click and CTR data inside the first week. Conversion data inside 30 days, assuming the pixel and server-side tracking are installed correctly and budget is steady.",
   },
   {
-    q: "Can my team run this in-house?",
-    a: "The platform is self-serve, so yes. The work is in writing creative that performs at 16 characters, choosing context hints that actually deliver impressions, and managing bids when auctions tighten. That's what you're paying us for.",
+    question: "Can my team run this in-house?",
+    answer:
+      "The platform is self-serve, so yes. The work is in writing creative that performs at 16 characters, choosing context hints that actually deliver impressions, and managing bids when auctions tighten. That's what you're paying us for.",
   },
   {
-    q: "Is the data shared with OpenAI's training?",
-    a: "No. Conversion events flow to your account. Conversation content is never shared with advertisers.",
+    question: "Is the data shared with OpenAI's training?",
+    answer:
+      "No. Conversion events flow to your account. Conversation content is never shared with advertisers.",
   },
 ];
 
@@ -404,37 +410,8 @@ export default function ChatGPTAdsManagementPage() {
         </div>
       </section>
 
-      {/* Section 7 — FAQ */}
-      <section className="py-16 md:py-20 lg:py-24 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center mb-10">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
-                FAQ
-              </span>
-              <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-3">
-                Common questions.
-              </h2>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal animation="stagger">
-            <div className="space-y-5">
-              {FAQ.map((item) => (
-                <div
-                  key={item.q}
-                  className="rounded-[var(--radius-asp-lg)] border border-gray-200 p-6 bg-white shadow-asp-sm"
-                >
-                  <h3 className="font-black text-lg text-asp-blue mb-2">
-                    {item.q}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">{item.a}</p>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      {/* Section 7 — FAQ (accordion + auto FAQPage schema) */}
+      <FAQAccordion faqs={FAQ} heading="Common questions." />
 
       <RelatedPages
         items={[
