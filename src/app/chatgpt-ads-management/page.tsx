@@ -142,50 +142,32 @@ export default function ChatGPTAdsManagementPage() {
       <Hero
         eyebrow="ChatGPT Ads Management"
         heading="Your customers stopped Googling.<br><span class='hero-text-gradient'>They started asking.</span>"
+        headingClassName="font-black text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-[1.1] mb-6"
         subheading="ChatGPT now serves ads inside conversations. We run them."
         ctaText="Get a quote"
         ctaUrl="/contact?topic=chatgpt-ads"
         cta2Text="See pricing"
         cta2Url="/pricing"
-        bgType="image"
-        imageUrl="/images/backgrounds/hero-trades-2.jpg"
-        imagePosition="center center"
+        bgType="dark"
       />
 
       {/* Section 1 — The shift */}
-      <section className="relative py-16 md:py-20 lg:py-24 bg-asp-black text-white overflow-hidden">
-        <div aria-hidden className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div
-            className="absolute -top-1/2 -bottom-1/2 left-[35%] w-[18vw] max-w-[260px] bg-white/[0.05]"
-            style={{ transform: "rotate(12deg)" }}
-          />
-          <div
-            className="absolute -top-1/2 -bottom-1/2 left-[58%] w-[12vw] max-w-[180px] bg-white/[0.03]"
-            style={{ transform: "rotate(12deg)" }}
-          />
-          <div
-            className="absolute inset-0 opacity-40"
-            style={{
-              background:
-                "radial-gradient(ellipse 50% 60% at 15% 50%, rgba(76, 201, 240, 0.2), transparent 70%), radial-gradient(ellipse 50% 60% at 90% 50%, rgba(76, 201, 240, 0.12), transparent 70%)",
-            }}
-          />
-        </div>
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 md:py-20 lg:py-24 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
               The shift
             </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5 leading-tight">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-5 leading-tight">
               One answer instead of ten blue links.
             </h2>
-            <p className="text-white/80 text-base lg:text-lg leading-relaxed mb-4">
+            <p className="text-gray-600 text-base lg:text-lg leading-relaxed mb-4">
               Every week, more of your customers replace a Google search with a question to ChatGPT. They stop scrolling through ten blue links. They get one answer.
             </p>
-            <p className="text-white/80 text-base lg:text-lg leading-relaxed mb-4">
+            <p className="text-gray-600 text-base lg:text-lg leading-relaxed mb-4">
               In May 2026, OpenAI opened that surface to advertisers. Sponsored placements now appear inside conversations &mdash; clearly labeled, separated from organic answers, and matched to the topic of the question being asked. It&apos;s the most direct line to a high-intent buyer we&apos;ve seen since the early days of paid search.
             </p>
-            <p className="text-asp-blue-light text-base lg:text-lg font-semibold leading-relaxed">
+            <p className="text-asp-purple text-base lg:text-lg font-semibold leading-relaxed">
               Most of your competitors aren&apos;t running ads on it yet. The ones who move first will compound that advantage every month they hold the placement.
             </p>
           </ScrollReveal>

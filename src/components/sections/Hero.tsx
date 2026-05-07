@@ -17,6 +17,7 @@ interface HeroProps {
   showTrustLogos?: boolean;
   showForm?: boolean;
   pillars?: string;
+  headingClassName?: string;
 }
 
 export function Hero({
@@ -34,6 +35,7 @@ export function Hero({
   showTrustLogos = false,
   showForm = false,
   pillars,
+  headingClassName,
 }: HeroProps) {
   return (
     <section className="hero relative min-h-[60vh] lg:min-h-[65vh] 2xl:min-h-[85vh] flex items-center text-white overflow-hidden">
@@ -67,7 +69,10 @@ export function Hero({
               </span>
             )}
             <h1
-              className="font-black text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-none mb-6"
+              className={
+                headingClassName ??
+                "font-black text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl leading-none mb-6"
+              }
               dangerouslySetInnerHTML={{ __html: heading }}
             />
             {pillars && (
