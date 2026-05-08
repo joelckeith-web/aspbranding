@@ -43,10 +43,25 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "ASP",
     url: "https://www.aspbranding.com",
+    title: "ASP — Assess. Strategize. Perform.",
+    description:
+      "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ASP — Assess. Strategize. Perform.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     creator: "@aspbranding",
+    title: "ASP — Assess. Strategize. Perform.",
+    description:
+      "AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
