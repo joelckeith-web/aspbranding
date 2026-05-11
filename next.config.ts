@@ -82,6 +82,12 @@ const nextConfig: NextConfig = {
         destination: "/blog/growth-consulting-for-home-service-businesses",
         permanent: true,
       },
+      {
+        source: "/solutions/search-engine-marketing",
+        destination: "/growth-system",
+        permanent: true,
+      },
+      { source: "/portfolio", destination: "/case-studies", permanent: true },
 
       // Legacy pre-v4 slugs — chain through to the new blog-based destinations
       {
