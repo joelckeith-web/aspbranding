@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import testimonialData from "@/data/testimonials.json";
 
 type Testimonial = { firstName?: string; quote: string; verified: boolean };
@@ -11,7 +11,31 @@ interface TestimonialsProps {
 
 export function Testimonials({ testimonials = testimonialData }: TestimonialsProps) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const quoteRefs = useRef<(HTMLQuoteElement | null)[]>([]);
+  const [expanded, setExpanded] = useState<Record<number, boolean>>({});
+  const [overflowing, setOverflowing] = useState<Record<number, boolean>>({});
+
   const verified = testimonials.filter((t) => t.verified);
+
+  // Detect which collapsed cards are clamped so only those show a toggle.
+  useEffect(() => {
+    const check = () => {
+      const next: Record<number, boolean> = {};
+      quoteRefs.current.forEach((el, i) => {
+        if (el && !expanded[i]) {
+          next[i] = el.scrollHeight > el.clientHeight + 2;
+        }
+      });
+      setOverflowing((prev) => ({ ...prev, ...next }));
+    };
+    check();
+    window.addEventListener("resize", check);
+    if (typeof document !== "undefined" && "fonts" in document) {
+      document.fonts.ready.then(check);
+    }
+    return () => window.removeEventListener("resize", check);
+  }, [expanded, verified.length]);
+
   if (verified.length === 0) return null;
 
   const cardStep = () => {
@@ -90,10 +114,13 @@ export function Testimonials({ testimonials = testimonialData }: TestimonialsPro
           ref={trackRef}
           className="flex items-start gap-5 overflow-x-auto pb-4 scrollbar-hide px-4 sm:px-6 lg:px-8"
         >
-          {verified.map((t, i) => (
+          {verified.map((t, i) => {
+            const isExpanded = !!expanded[i];
+            const showToggle = isExpanded || !!overflowing[i];
+            return (
             <div
               key={i}
-              className="flex-shrink-0 w-[300px] sm:w-[340px] lg:w-[380px] rounded-[var(--radius-asp-2xl)] border border-white/10 bg-white/[0.04] backdrop-blur-sm shadow-asp-lg p-6 lg:p-7 flex flex-col"
+              className="flex-shrink-0 w-[300px] sm:w-[340px] lg:w-[380px] min-h-[300px] rounded-[var(--radius-asp-2xl)] border border-white/10 bg-white/[0.04] backdrop-blur-sm shadow-asp-lg p-6 lg:p-7 flex flex-col"
             >
               <div
                 aria-hidden
@@ -102,11 +129,29 @@ export function Testimonials({ testimonials = testimonialData }: TestimonialsPro
                 &ldquo;
               </div>
 
-              <blockquote className="text-white/90 text-sm lg:text-base leading-relaxed font-semibold flex-1">
+              <blockquote
+                ref={(el) => {
+                  quoteRefs.current[i] = el;
+                }}
+                className={`text-white/90 text-sm lg:text-base leading-relaxed font-semibold ${
+                  isExpanded ? "" : "line-clamp-5"
+                }`}
+              >
                 {t.quote}
               </blockquote>
 
-              <div className="mt-5 pt-5 border-t border-white/10 flex items-center justify-between gap-3">
+              {showToggle && (
+                <button
+                  type="button"
+                  onClick={() => setExpanded((p) => ({ ...p, [i]: !p[i] }))}
+                  aria-expanded={isExpanded}
+                  className="mt-3 self-start text-xs font-bold uppercase tracking-wide text-asp-blue-light hover:text-white transition-colors"
+                >
+                  {isExpanded ? "Read less" : "Read more"}
+                </button>
+              )}
+
+              <div className="mt-auto pt-5 border-t border-white/10 flex items-center justify-between gap-3">
                 <div className="flex gap-1">
                   {[...Array(5)].map((_, j) => (
                     <svg
@@ -126,7 +171,8 @@ export function Testimonials({ testimonials = testimonialData }: TestimonialsPro
                 )}
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
