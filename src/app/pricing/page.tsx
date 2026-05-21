@@ -90,7 +90,11 @@ export default function PricingPage() {
         ]}
       />
 
-      <TestimonialAnchor quote="Willing to go the extra mile." />
+      <TestimonialAnchor
+        quote="Beyond the measurable results, their communication and customer service have been outstanding. Their team is proactive, creative, and genuinely invested in our success. We always feel like a priority."
+        author="Tray G."
+        size="sm"
+      />
 
       <FAQSection />
     </main>

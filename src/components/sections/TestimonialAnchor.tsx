@@ -5,12 +5,16 @@ interface TestimonialAnchorProps {
   quote?: string;
   eyebrow?: string;
   variant?: "dark" | "light";
+  author?: string;
+  size?: "lg" | "sm";
 }
 
 export function TestimonialAnchor({
   quote,
   eyebrow = "What operators say",
   variant = "dark",
+  author,
+  size = "lg",
 }: TestimonialAnchorProps) {
   const resolved =
     quote ??
@@ -55,9 +59,11 @@ export function TestimonialAnchor({
             &ldquo;
           </div>
           <blockquote
-            className={`font-black text-3xl md:text-4xl lg:text-5xl leading-tight mb-6 ${
-              isDark ? "text-white" : "text-asp-blue"
-            }`}
+            className={`font-black mb-6 ${
+              size === "sm"
+                ? "text-xl md:text-2xl lg:text-3xl leading-snug"
+                : "text-3xl md:text-4xl lg:text-5xl leading-tight"
+            } ${isDark ? "text-white" : "text-asp-blue"}`}
           >
             {resolved}
           </blockquote>
@@ -73,6 +79,15 @@ export function TestimonialAnchor({
               </svg>
             ))}
           </div>
+          {author && (
+            <cite
+              className={`mt-6 block text-base md:text-lg font-bold not-italic ${
+                isDark ? "text-white/80" : "text-asp-blue/80"
+              }`}
+            >
+              — {author}
+            </cite>
+          )}
         </ScrollReveal>
       </div>
     </section>
