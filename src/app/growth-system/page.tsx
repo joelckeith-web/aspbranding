@@ -421,7 +421,6 @@ export default function GrowthSystemPage() {
 
       <TestimonialAnchor
         quote="Their team handles our social media, Google Ads, Google My Business management, SEO, blogs, and website, and the level of professionalism, responsiveness, and strategic execution has consistently exceeded our expectations. In an industry as competitive as personal injury law, visibility and reputation matter, and ASP has played a major role in strengthening both for our firm."
-        author="Tray G."
         size="sm"
       />
 

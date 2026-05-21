@@ -313,7 +313,6 @@ export default function ContentCreationPage() {
 
       <TestimonialAnchor
         quote="What sets ASP apart is that they do not take a one-size-fits-all approach. They took the time to understand our firm's voice, values, and goals, then built a marketing strategy that truly reflects who we are. Their work has significantly improved our online presence, client engagement, and overall brand recognition."
-        author="Tray G."
         size="sm"
       />
 
