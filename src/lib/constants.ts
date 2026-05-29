@@ -33,6 +33,7 @@ export const FOOTER_SYSTEM = [
   { label: "AI Integration", href: "/ai-integration" },
   { label: "Pricing", href: "/pricing" },
   { label: "Growth Diagnostic", href: "/diagnostic" },
+  { label: "Marketing Budget Calculator", href: "/marketing-budget-calculator" },
 ] as const;
 
 export const FOOTER_PRODUCTS = [
