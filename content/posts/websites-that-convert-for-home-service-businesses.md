@@ -30,13 +30,13 @@ schema:
     - question: "How important is mobile-first design for home service websites?"
       answer: "Critical. Over 70% of home service traffic is mobile, and for emergency searches like 'plumber near me' or '24 hour HVAC' the share is higher. Mobile-first means designing the mobile experience first and the desktop second — sticky call buttons, click-to-call links, one-thumb form completion, large tap targets, and content stacked for vertical reading. A site designed desktop-first that's been 'made responsive' is not the same as a site designed for mobile. The conversion gap between the two on home service traffic is usually 2–3x."
     - question: "How long does it take to build a home service website that converts?"
-      answer: "Four to six weeks for a Growth-tier custom build from kickoff to launch, two to three weeks for a Foundation-tier refresh. The work breaks down into: discovery and brand alignment (week 1), copywriting and content (weeks 2–3), design and development (weeks 3–5), testing and launch prep (week 6). Faster than that usually means corners are being cut on copy, photography, or technical setup. Slower than that usually means scope creep or unclear decisions on the client side. The hard timeline isn't the build — it's getting the content and approvals through quickly."
+      answer: "Four to six weeks for a custom build from kickoff to launch, two to three weeks for a refresh of a site that's fundamentally sound. The work breaks down into: discovery and brand alignment (week 1), copywriting and content (weeks 2–3), design and development (weeks 3–5), testing and launch prep (week 6). Faster than that usually means corners are being cut on copy, photography, or technical setup. Slower than that usually means scope creep or unclear decisions on the client side. The hard timeline isn't the build — it's getting the content and approvals through quickly."
 status: "review"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
 
-A home service website has one job: turn a visitor into a booked appointment. Five things make that happen — page speed under 2 seconds on mobile, trust signals visible above the fold, call tracking on every CTA, dedicated service-area pages with schema markup, and mobile-first design with sticky call buttons. Sites that nail those five book at 8–15% of qualified visitors. Sites that miss two or three book at 1–3%, which means most marketing dollars driving traffic to those sites are wasted before the homeowner even decides whether to trust the business. This post walks through what actually drives conversion, what doesn't, and what to invest in by revenue tier.
+A home service website has one job: turn a visitor into a booked appointment. Five things make that happen — page speed under 2 seconds on mobile, trust signals visible above the fold, call tracking on every CTA, dedicated service-area pages with schema markup, and mobile-first design with sticky call buttons. Sites that nail those five book at 8–15% of qualified visitors. Sites that miss two or three book at 1–3%, which means most marketing dollars driving traffic to those sites are wasted before the homeowner even decides whether to trust the business. This post walks through what actually drives conversion, what doesn't, and what really sets the cost of a site that books jobs.
 
 The cost of a thin website isn't usually an obvious line item. It shows up as paid media that produces leads but not booked jobs, organic traffic that bounces, and a phone that rings less than the search volume in your service area says it should. Operators who fix the website usually see the rest of their marketing start working better, because the conversion floor stops eating every visitor sent to it. It's the [Web Development component of our Growth System](/growth-system), explained the way we'd run through it on a working call.
 
@@ -68,7 +68,7 @@ Over 70% of home service traffic is mobile, higher for emergency categories. Mob
 
 ## What we build at ASP
 
-ASP's websites run on **Next.js (App Router) plus Sanity.io plus Vercel**. Fast, crawlable, editable by non-developers, designed for Core Web Vitals from day one. The Foundation tier covers a WordPress refresh when a full rebuild isn't justified. The Growth tier ships a custom Next.js build with all five conversion fundamentals baked in. The Premier tier adds multi-site or multi-brand architecture for operators running multiple service lines or geographic markets.
+We build high-performing websites engineered around three things: conversion rate optimization (CRO) so visitors turn into booked jobs, search engine optimization (SEO) so the right homeowners find you, and answer engine optimization (AEO) so you show up in AI-powered results. The five fundamentals above are baked into every build — whether it's a focused refresh of a site that's fundamentally sound or a ground-up custom build, scoped to what your business actually needs rather than a fixed package.
 
 Every site we ship is owned by the client from day one. The [Ownership promise](/growth-system#ownership) applies here more than anywhere — domain, source code, design files, hosting credentials. All yours, written into the onboarding contract. No "we own the design files" gotchas, no platform lock-in, no surprise hostage situations if you ever leave.
 
@@ -86,21 +86,13 @@ The patterns we see in audits, in rough order of frequency.
 
 Any one of these alone will cap conversion. Two or three together explain why a site with decent traffic produces almost no booked work.
 
-## What a home service website costs by revenue tier
+## What a converting website costs
 
-Real numbers, by stage.
+Website cost comes down to scope, not your revenue. A focused refresh of a site that's fundamentally sound costs far less than a ground-up custom build, and the variables that actually move the number are what the build has to do: how many service and service-area pages, how much custom design and copywriting, what integrations and attribution wiring, and whether there's ongoing CRO and content after launch. A single-service operator in one market is a different scope than a multi-service, multi-market build — and that's a scoping question, not a function of what you bill.
 
-**$0–$300K.** A simple template-based site is fine. WordPress with a performance-focused theme like GeneratePress or a one-page site on Webflow handles this stage. Budget: $1,500–$5,000 for the build, $30–$100/month for hosting and maintenance. Don't custom-build at this stage.
+The honest way to get a real number is a short conversation about what the site needs to do. Pairs naturally with our piece on [GBP vs. website investment priority](/blog/gbp-vs-website-home-service-priority) when you're deciding where the next dollar goes.
 
-**$300K–$1M.** Time for a real site. Service pages, service-area pages, schema markup, basic call tracking. Either a high-quality WordPress build with performance optimization or a Foundation-tier custom build. Budget: $5,000–$15,000 for the build, $100–$300/month ongoing. The bottleneck on growth is usually the website at this tier.
-
-**$1M–$3M.** Custom build territory. Next.js or equivalent. Multiple service-area pages, full attribution wiring, dedicated landing pages for paid media. Budget: $15,000–$30,000 for the build, $200–$500/month ongoing plus content production. Pairs naturally with our piece on [GBP vs. website investment priority](/blog/gbp-vs-website-home-service-priority) — at this tier you're investing meaningfully in both.
-
-**$3M–$5M.** Multi-service-line architecture, content engine producing localized pages at pace, A/B testing on landing pages, full integration with the rest of the marketing stack. Budget: $30,000–$75,000 for the build, $500–$2,500/month ongoing including content and CRO work.
-
-**$5M+.** Multi-brand or multi-region architecture. Performance budgets enforced at the framework level. Dedicated CRO and analytics function. Budget scales with complexity, not template.
-
-**Key Takeaway:** Different tier, different scope. Under $300K, a template site is fine. $300K–$1M, real site with the five conversion fundamentals. $1M+, custom build with attribution wired in. Spending one tier above your stage usually produces overspend without lift.
+**Key Takeaway:** A website's cost is set by scope — the pages, design, integrations, and ongoing work the build requires — not by a revenue tier. Get a real number from a quick scoping conversation, not a price grid.
 
 ## How the website fits the Growth System
 
@@ -136,7 +128,7 @@ Critical. Over 70% of traffic is mobile. The conversion gap between mobile-first
 
 ### How long does it take to build a home service website that converts?
 
-Four to six weeks for a custom Growth-tier build, two to three weeks for a Foundation-tier refresh. Faster usually means cut corners.
+Four to six weeks for a custom build, two to three weeks for a refresh. Faster usually means cut corners.
 
 ## Conclusion
 
