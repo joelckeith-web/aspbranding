@@ -22,7 +22,7 @@ schema:
     - question: "Should I cut marketing when business is slow?"
       answer: "Usually no — and counterintuitively, a slowdown is often the moment to hold or increase it. When demand softens, the total pool of jobs shrinks, so every job becomes a share battle between you and competitors. The operators who cut marketing disappear from search exactly when buyers are comparing options, and they hand that visibility to the businesses still showing up. Cutting marketing in a downturn protects this month's cash flow at the cost of next quarter's pipeline."
     - question: "What marketing works best for HVAC in a down market?"
-      answer: "Focus on high-intent channels and speed. In a soft market you want to capture the homeowners who are ready to buy right now: a fully optimized Google Business Profile, search and Local Services Ads for 'AC repair near me' style queries, and fast lead response so you win the call before a competitor does. Then lean on the customers you already have — maintenance plans, repeat-and-referral campaigns, and review requests — because selling to an existing customer is far cheaper than winning a new one."
+      answer: "Focus on high-intent channels and speed. In a soft market you want to capture the homeowners who are ready to buy right now: a fully optimized Google Business Profile, search and Local Services Ads for \"AC repair near me\" style queries, and fast lead response so you win the call before a competitor does. Then lean on the customers you already have — maintenance plans, repeat-and-referral campaigns, and review requests — because selling to an existing customer is far cheaper than winning a new one."
 status: "review"
 contentPillar: "business-growth-strategy"
 readingTime: "6 min read"
