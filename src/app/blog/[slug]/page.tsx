@@ -74,10 +74,14 @@ export async function generateMetadata({
 
   const { frontmatter } = post;
   const postUrl = `${siteConfig.blogUrl}/${slug}`;
+  // Drafts (status !== "published") are reachable at their direct URL for
+  // review, but must never be indexed by search engines until approved.
+  const isPublished = frontmatter.status === "published";
 
   return {
     title: frontmatter.metaTitle || frontmatter.title,
     description: frontmatter.metaDescription,
+    robots: isPublished ? undefined : { index: false, follow: false },
     alternates: {
       canonical: postUrl,
     },
