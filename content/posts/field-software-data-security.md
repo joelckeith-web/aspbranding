@@ -1,7 +1,7 @@
 ---
 title: "Is Your Field Service Software Leaking Customer Data?"
 slug: "field-software-data-security"
-publishDate: "2026-06-09"
+publishDate: "2026-06-01"
 dateModified: "2026-06-01"
 author:
   name: "Joel Keith"
@@ -23,7 +23,7 @@ schema:
       answer: "More than most operators realize. A typical field service or inspection app stores customer names, home addresses, phone numbers, email addresses, photos of the inside of the home, job notes, and — if you take payment in the app — card or bank details. That's a rich target. The home address plus \"nobody's home Tuesday at 2\" plus interior photos is exactly the kind of data you don't want exposed, which is why where and how it's stored matters."
     - question: "What should I ask my software vendor about security?"
       answer: "Five questions: Is my data encrypted in transit and at rest? Do you have a current SOC 2 (or comparable) audit I can see? Can I control what each user and role can access? Do you support two-factor authentication on every login? And if there's a breach, what's your notification process and timeline? Get the answers in writing. A reputable vendor will provide them; one that dodges is telling you something."
-status: "review"
+status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "7 min read"
 ---
