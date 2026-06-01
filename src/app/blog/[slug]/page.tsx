@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BlogCard } from "@/components/blog/BlogCard";
 import {
   ArticleSchema,
@@ -223,7 +222,7 @@ export default async function BlogPostPage({
             {/* ── Main Content Column ── */}
             <article className="min-w-0">
               {/* Prose content */}
-              <ScrollReveal>
+              <div>
                 <div
                   className="prose prose-lg max-w-none
                     prose-headings:font-black prose-headings:text-asp-blue
@@ -239,11 +238,11 @@ export default async function BlogPostPage({
                     prose-code:text-asp-purple prose-code:bg-asp-purple/5 prose-code:rounded prose-code:px-1.5 prose-code:py-0.5 prose-code:before:content-[''] prose-code:after:content-['']"
                   dangerouslySetInnerHTML={{ __html: content }}
                 />
-              </ScrollReveal>
+              </div>
 
               {/* ── FAQ Accordion ── */}
               {faqItems.length > 0 && (
-                <ScrollReveal>
+                <div>
                   <div className="mt-16 pt-12 border-t border-gray-200">
                     <h2 className="font-black text-2xl text-asp-blue mb-8">
                       Frequently Asked Questions
@@ -277,11 +276,11 @@ export default async function BlogPostPage({
                       ))}
                     </div>
                   </div>
-                </ScrollReveal>
+                </div>
               )}
 
               {/* ── Author Bio ── */}
-              <ScrollReveal>
+              <div>
                 <div className="mt-16 pt-12 border-t border-gray-200">
                   <div className="flex flex-col sm:flex-row items-start gap-6 bg-asp-blue/[0.03] border border-gray-200 rounded-[var(--radius-asp-xl)] p-6 md:p-8">
                     {frontmatter.author.avatar && (
@@ -311,10 +310,10 @@ export default async function BlogPostPage({
                     </div>
                   </div>
                 </div>
-              </ScrollReveal>
+              </div>
 
               {/* ── CTA Block ── */}
-              <ScrollReveal>
+              <div>
                 <div className="mt-16 bg-asp-gradient-hero rounded-[var(--radius-asp-xl)] p-8 md:p-10 text-white">
                   <h3 className="font-black text-2xl mb-3">
                     Ready to Put This Into Action?
@@ -337,7 +336,7 @@ export default async function BlogPostPage({
                     </a>
                   </div>
                 </div>
-              </ScrollReveal>
+              </div>
 
               {/* ── Tags ── */}
               {frontmatter.tags && frontmatter.tags.length > 0 && (
@@ -458,7 +457,7 @@ export default async function BlogPostPage({
       {relatedPosts.length > 0 && (
         <section className="py-16 md:py-24 bg-gray-50">
           <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
+            <div>
               <div className="text-center mb-14">
                 <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                   Keep Reading
@@ -467,15 +466,15 @@ export default async function BlogPostPage({
                   Related Articles
                 </h2>
               </div>
-            </ScrollReveal>
+            </div>
 
-            <ScrollReveal animation="stagger">
+            <div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {relatedPosts.map((related) => (
                   <BlogCard key={related.slug} post={related} />
                 ))}
               </div>
-            </ScrollReveal>
+            </div>
           </div>
         </section>
       )}
@@ -483,7 +482,7 @@ export default async function BlogPostPage({
       {/* ── Bottom CTA ── */}
       <section className="py-16 md:py-20 bg-asp-black text-white">
         <div className="max-w-[var(--spacing-content)] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal>
+          <div>
             <h2 className="font-black text-3xl md:text-4xl text-white mb-4">
               Ready to Grow Your Business?
             </h2>
@@ -504,7 +503,7 @@ export default async function BlogPostPage({
                 {siteConfig.phone}
               </a>
             </div>
-          </ScrollReveal>
+          </div>
         </div>
       </section>
     </main>

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { CTABand } from "@/components/sections/CTABand";
-import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { BlogListSchema } from "@/components/blog/SchemaMarkup";
 import { getAllPosts } from "@/lib/blog/posts";
@@ -79,7 +78,7 @@ export default async function BlogPage() {
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           {posts.length > 0 ? (
             <>
-              <ScrollReveal>
+              <div>
                 <div className="text-center mb-14">
                   <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                     Latest Articles
@@ -88,19 +87,19 @@ export default async function BlogPage() {
                     Insights to Fuel Your Growth
                   </h2>
                 </div>
-              </ScrollReveal>
+              </div>
 
-              <ScrollReveal animation="stagger">
+              <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {posts.map((post) => (
                     <BlogCard key={post.slug} post={post} />
                   ))}
                 </div>
-              </ScrollReveal>
+              </div>
             </>
           ) : (
             /* Empty state — Blog Coming Soon */
-            <ScrollReveal>
+            <div>
               <div className="text-center py-20">
                 <div className="w-20 h-20 rounded-full bg-asp-blue/10 flex items-center justify-center mx-auto mb-6">
                   <svg
@@ -131,7 +130,7 @@ export default async function BlogPage() {
                   Get Notified When We Launch
                 </Link>
               </div>
-            </ScrollReveal>
+            </div>
           )}
         </div>
       </section>
