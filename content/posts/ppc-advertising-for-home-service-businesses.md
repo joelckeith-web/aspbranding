@@ -7,7 +7,7 @@ author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
   bio: "Joel Keith is the founder and CEO of ASP, a growth-systems marketing agency for home service operators. He built and sold his first marketing agency in under two years — a run that taught him the hard way about concentration risk, service fulfillment, and the systems most operators never build. He started ASP to fix what he saw breaking in home service marketing. ASP is an Official Housecall Pro Affiliate Partner."
-  avatar: "/images/logos/asp-mark.png"
+  avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "ppc"
 tags: ["ppc", "google-ads", "lsa", "meta-ads", "growth-system"]
@@ -20,7 +20,7 @@ schema:
     - question: "What is PPC for a home service business?"
       answer: "PPC stands for pay-per-click — paid advertising where you only pay when someone clicks your ad. For home service businesses, the three channels that matter are Google Search Ads (high-intent keyword targeting), Google Local Services Ads (pay-per-lead instead of pay-per-click), and Meta ads (Facebook and Instagram, primarily for retargeting and brand awareness). Run together with proper attribution, these three channels make up the paid demand-capture and retargeting layer of a home service marketing system."
     - question: "How much should a home service business budget for PPC?"
-      answer: "Minimum viable budget for Google Search Ads in most home service markets is $2,000 to $4,000 per month in spend, plus management. Local Services Ads add another $500 to $2,500 per month depending on category and metro. Meta retargeting runs $200 to $1,500 per month. Below those numbers, you're buying tickets, not running a campaign — there isn't enough volume for the algorithm to optimize. The honest math is to budget by cost-per-booked-job, not cost-per-click. If your average ticket is $400, paying $80 in ad spend for a booked job is fine. If your average ticket is $8,000, $400 in ad spend is a steal."
+      answer: "There's no universal number — the right PPC budget depends on your market, your industry, and what a booked job is worth to you. The honest way to set it is by cost-per-booked-job, not a flat figure: if your average ticket is a few hundred dollars, a small ad cost per booked job works; if it's several thousand, you can spend far more and still come out ahead. Rather than guess, run your revenue and goals through our free ASP Marketing Budget Calculator to get a spend range, then split it across Google Search, Local Services Ads, and Meta retargeting based on where you qualify and have traffic."
     - question: "Are Google Local Services Ads better than Google Search Ads?"
       answer: "When you qualify and rank well, Local Services Ads usually produce the lowest cost-per-booked-job of any paid channel because you only pay when a homeowner calls or messages, and the placement is the most aggressive real estate on the page. Google Search Ads are still essential because LSA only covers a limited set of categories, the inventory is capped per metro, and Search captures buyers searching outside the LSA category set. Most operators who run paid media seriously run both — LSA for the categories where they rank, Search for everything else and for capturing branded queries."
     - question: "How do I measure if my PPC ads are actually profitable?"
@@ -28,7 +28,7 @@ schema:
     - question: "What is offline conversion tracking and why does it matter?"
       answer: "Offline conversion tracking is the process of pushing job and revenue data from your CRM back into the ad platforms — Google Ads, Meta, and Local Services Ads — so the platforms can optimize bidding around booked jobs instead of just clicks or form fills. When a Google Ads click becomes a booked job in Housecall Pro, that outcome plus the revenue gets sent back to Google. Google then uses that data to bid smarter on similar searches. It's the single highest-leverage attribution move a home service operator can make, and almost nobody does it."
     - question: "Should I run PPC in-house or hire an agency?"
-      answer: "Under about $5,000 a month in total ad spend, you can run it in-house if you have someone who'll commit at least 5 to 10 hours a week to it. Past that spend level, the cost of mistakes — wrong match types, broken conversion tracking, runaway Performance Max campaigns — exceeds the agency fee. The real test is whether the person running it can read a search query report, manage negatives, and reconcile booked revenue back to campaigns weekly. If yes, in-house is fine. If not, an agency or a senior contractor is usually the better path."
+      answer: "While your ad spend is modest, you can run it in-house if you have someone who'll commit at least 5 to 10 hours a week to it. As spend grows, the cost of mistakes — wrong match types, broken conversion tracking, runaway Performance Max campaigns — starts to exceed an agency fee. The real test is whether the person running it can read a search query report, manage negatives, and reconcile booked revenue back to campaigns weekly. If yes, in-house is fine. If not, an agency or a senior contractor is usually the better path."
     - question: "How fast does PPC produce results for a home service business?"
       answer: "Leads typically start coming in week one. Performance reaches steady state by month two or three, after the algorithms have enough conversion data to optimize against. Expect a learning period of 30 to 45 days where cost-per-lead is higher than it will be once the campaign matures. The biggest mistake operators make is killing campaigns inside the first two weeks because the cost-per-lead 'looks high' — they're killing them right before the algorithm finishes calibrating."
 status: "review"
@@ -42,11 +42,11 @@ Paid media is the channel where the gap between operators who measure correctly 
 
 ## The three paid channels that actually move revenue
 
-Most "paid media" engagements involve five or six platforms, half of which are wasted on a typical home service business. The three that matter are these.
+Most "paid media" engagements involve five or six platforms, half of which are wasted on a typical home service business. The three that matter are these. (For ongoing, non-promotional advertising research and benchmarks, [Think with Google](https://www.thinkwithgoogle.com/) is a useful resource — it's Google's own insights hub, not an agency pitch.)
 
 ### 1. Google Search Ads
 
-High-intent, bottom-funnel. Someone types "water heater replacement Phoenix" or "emergency AC repair near me" — they're buying, not browsing. Google Search Ads win those clicks. Run correctly, with tight match types, negative keyword discipline, and ad copy that mirrors the search intent, Search produces predictable lead flow at a known cost-per-job. Most operators we audit are running Search Ads with broad match leaking 30–50% of budget on irrelevant clicks. Tightening that alone often improves cost-per-job by 25% inside a month.
+High-intent, bottom-funnel. Someone types "water heater replacement Phoenix" or "emergency AC repair near me" — they're buying, not browsing. Google Search Ads win those clicks. Run correctly, with tight match types, negative keyword discipline, and ad copy that mirrors the search intent, Search produces predictable lead flow at a known cost-per-job. Most operators we audit are running Search Ads with broad match leaking 30–50% of budget on irrelevant clicks. Tightening that alone often improves cost-per-job by 25% inside a month. [Google's Ads Help Center](https://support.google.com/google-ads/answer/6146252) is a solid, non-promotional primer on campaign types and match types if you're setting this up yourself.
 
 ### 2. Local Services Ads
 
@@ -54,7 +54,7 @@ Pay-per-lead instead of pay-per-click. Google Guaranteed strip above the map pac
 
 ### 3. Meta (Facebook + Instagram)
 
-Different use case than Search or LSA. Meta is where you stay top-of-mind in your service area, retarget website visitors who didn't book, and build the brand recall that compounds with the other channels. Cold-traffic Meta campaigns trying to drive service calls almost never work for trades. Retargeting site visitors with proof content does — usually at $200–$1,500 a month with strong returns when there's enough traffic to retarget against.
+Different use case than Search or LSA. Meta is where you stay top-of-mind in your service area, retarget website visitors who didn't book, and build the brand recall that compounds with the other channels. Cold-traffic Meta campaigns trying to drive service calls almost never work for trades. Retargeting site visitors with proof content does — usually at a modest monthly spend, with strong returns once there's enough traffic to retarget against. [Meta's Business Help Center](https://www.facebook.com/business/help) walks through the retargeting and audience setup.
 
 **Key Takeaway:** Search captures demand. LSA captures demand at the lowest cost-per-job when you qualify. Meta builds recall and recaptures abandoners. Three channels, three jobs. Run as one integrated system, not three separate campaigns.
 
@@ -80,21 +80,20 @@ Beyond budget and channel mix, the operator-level behavior that separates a work
 
 The operators who are great at PPC aren't running fancy tactics. They're running the basics with discipline that compounds quarter over quarter.
 
-**Key Takeaway:** Channel selection is 30% of PPC performance. Attribution and management discipline are the other 70%. An operator with a $3K budget and clean attribution will out-earn one with a $10K budget and broken tracking.
+**Key Takeaway:** Channel selection is 30% of PPC performance. Attribution and management discipline are the other 70%. An operator with a modest budget and clean attribution will out-earn one with a much bigger budget and broken tracking.
 
 ## What it costs to run paid media right
 
-Real numbers, by tier.
+What you should spend on paid media depends on your market, your industry, your average ticket, and how aggressively you want to grow — there's no universal dollar figure, and anyone who quotes one without knowing your numbers is guessing. The right way to set it is by what a booked job is worth to you, then matching spend to a target cost-per-booked-job and return by service line, not to a flat retainer.
 
-**Under $1M:** $2,000–$3,000/month in Google Search spend, plus $0–$500 in LSA if you qualify. Skip Meta retargeting until traffic justifies it — usually around $1M revenue. Total monthly paid investment with management: $3,000–$5,000.
+The build order is the same regardless of size:
 
-**$1M–$3M:** Search at $3,000–$6,000/month. LSA at $500–$2,500/month. Meta retargeting at $200–$500/month. Closed-loop attribution to the CRM is non-optional at this tier. Total paid investment: $5,000–$10,000/month.
+- **Start with Google Search.** It captures the highest-intent demand, so it's the foundation of almost every home service paid program.
+- **Add Local Services Ads** once you qualify and have the reviews and response rate to rank — it's usually your lowest cost-per-booked-job.
+- **Add Meta retargeting** once you have enough website traffic to retarget against — as you scale, not on day one.
+- **At the top end, paid becomes an operational discipline** — multiple campaigns or service-area splits, weekly reviews, and spend matched to ROI by service line.
 
-**$3M–$5M:** Multi-service-area campaigns, expanded ad copy testing, dedicated landing pages per service line. Search at $6,000–$15,000. LSA at $1,500–$4,000. Meta at $500–$1,500. Total: $10,000–$25,000/month.
-
-**$5M+:** Paid is now an operational discipline. Multiple campaign managers or an agency, weekly performance reviews, performance-based scopes. Spend is matched to a target cost-per-job and ROI by service line, not to a flat retainer.
-
-A useful sanity check: paid media spend should run between 5% and 12% of revenue for a healthy home service business. Below 5%, you're underinvesting in demand capture. Above 12%, either you're growing aggressively or your other channels are weak.
+To find out exactly how much you should be spending based on your market and your industry, use our free tool: [run the ASP Marketing Budget Calculator](/marketing-budget-calculator). It turns your revenue and growth goals into a spend range, so you're budgeting on purpose instead of guessing.
 
 ## Common mistakes home service operators make with PPC
 
@@ -123,7 +122,7 @@ PPC stands for pay-per-click — paid advertising where you only pay when someon
 
 ### How much should a home service business budget for PPC?
 
-$2,000–$4,000/month minimum for Google Search in most metros. LSA adds $500–$2,500. Meta retargeting $200–$1,500. Below those numbers there's not enough volume to optimize.
+There's no universal number — it depends on your market, your industry, and what a booked job is worth to you. Set it by cost-per-booked-job rather than a flat figure, and run your numbers through our free [Marketing Budget Calculator](/marketing-budget-calculator) to get a spend range, then split it across Search, LSA, and Meta based on where you qualify.
 
 ### Are Google Local Services Ads better than Google Search Ads?
 
@@ -139,7 +138,7 @@ It's pushing booked-job and revenue data from your CRM back into Google and Meta
 
 ### Should I run PPC in-house or hire an agency?
 
-In-house works under $5K/month if someone owns it 5–10 hours a week. Past that, the cost of mistakes usually exceeds the agency fee.
+In-house works while spend is modest and someone owns it 5–10 hours a week. As spend grows, the cost of mistakes usually exceeds the agency fee.
 
 ### How fast does PPC produce results for a home service business?
 
@@ -149,4 +148,4 @@ Leads in week one. Steady-state performance by month two or three. Don't kill ca
 
 PPC for home service businesses isn't a magic channel. It's a fast lever that produces predictable revenue when run with proper attribution and discipline, and a slow money pit when run without. Operators who measure cost-per-booked-job, run closed-loop tracking from the CRM, and stay on top of search query reports compound their advantage every quarter. Operators who chase cost-per-click and let campaigns run unaudited keep paying for the same lessons. The choice is which version you're committing to.
 
-If you want to see how your current paid spend stacks up against booked revenue, [run the Growth Diagnostic](/diagnostic) or [contact ASP](/contact) to walk through the Paid Media component of our Growth System. No decks, no pressure — just a working session on what's connected and what isn't.
+If you want to see how your current paid spend stacks up against booked revenue, [run the Growth Diagnostic](/diagnostic), size your number with the free [Marketing Budget Calculator](/marketing-budget-calculator), or [contact ASP](/contact) to walk through the Paid Media component of our Growth System. No decks, no pressure — just a working session on what's connected and what isn't.

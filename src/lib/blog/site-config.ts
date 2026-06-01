@@ -60,7 +60,7 @@ export const siteConfig = {
     name: "Joel Keith",
     title: "CEO & Growth Strategist",
     bio: "Joel Keith is the CEO of ASP, a digital marketing agency helping home service businesses scale past revenue barriers. With deep expertise in local SEO, paid advertising, and systematic growth strategies, Joel and the ASP team have helped hundreds of service businesses build sustainable digital marketing systems that drive measurable results.",
-    avatar: "/images/joel-keith-avatar.jpg",
+    avatar: "/images/team/joel-keith.avif",
     website: "https://joelkeith.me",
   },
 
