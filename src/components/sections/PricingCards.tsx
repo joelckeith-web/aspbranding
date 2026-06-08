@@ -113,25 +113,25 @@ export function PricingCards() {
                     : "relative rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-white/10 hover:bg-gradient-to-br hover:from-asp-blue-light/40 hover:via-asp-purple/30 hover:to-asp-blue-light/40 transition-all"
                 }
               >
+                {tier.featured && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
+                    <span className="bg-gradient-to-r from-asp-blue-light to-asp-purple text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                      Most Popular
+                    </span>
+                  </div>
+                )}
                 <div
                   className="h-full rounded-[calc(var(--radius-asp-2xl)-2px)] bg-asp-surface-navy text-white p-8 2xl:p-10 flex flex-col relative overflow-hidden"
                 >
                   {tier.featured && (
-                    <>
-                      <div
-                        aria-hidden
-                        className="absolute inset-0 opacity-30 pointer-events-none"
-                        style={{
-                          background:
-                            "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(76, 201, 240, 0.45), transparent 70%)",
-                        }}
-                      />
-                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-                        <span className="bg-gradient-to-r from-asp-blue-light to-asp-purple text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
-                          Most Popular
-                        </span>
-                      </div>
-                    </>
+                    <div
+                      aria-hidden
+                      className="absolute inset-0 opacity-30 pointer-events-none"
+                      style={{
+                        background:
+                          "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(76, 201, 240, 0.45), transparent 70%)",
+                      }}
+                    />
                   )}
 
                   <div className="relative z-10 flex flex-col h-full">
