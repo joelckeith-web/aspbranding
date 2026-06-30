@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "business-growth"
 tags: ["home-inspection", "marketing", "local-seo", "lead-generation", "ashi", "internachi"]
-metaTitle: "Home Inspector Marketing Guide | ASP"
+metaTitle: "Home Inspector Marketing Guide"
 metaDescription: "A complete marketing guide for home inspectors — website, Google Business Profile, real estate agent referrals, paid ads, and KPIs that matter."
 featuredImage: "/images/industries/home-inspection.jpg"
 schema:

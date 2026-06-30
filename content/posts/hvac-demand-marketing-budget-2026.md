@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "business-growth"
 tags: ["hvac", "marketing-budget", "home-services", "industry-trends", "ppc"]
-metaTitle: "Soft HVAC Demand & Your 2026 Marketing Budget | ASP"
+metaTitle: "Soft HVAC Demand & Your 2026 Marketing Budget"
 metaDescription: "Residential HVAC demand is softening into 2026. Here's why that means you should spend more on marketing, not less — and how to set the number."
 featuredImage: "/images/industries/hvac-viking.jpg"
 schema:

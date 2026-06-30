@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "aeo"
 tags: ["aeo", "ai-search", "seo", "home-services", "google-algorithm"]
-metaTitle: "AEO for Home Service Businesses | ASP"
+metaTitle: "AEO for Home Service Businesses"
 metaDescription: "Answer Engine Optimization for HVAC, plumbing, roofing, and home inspection operators. How AI-era search works and how to win in 2026."
 featuredImage: "/images/industries/roofing.png"
 schema:
@@ -38,7 +38,7 @@ This guide is published by ASP — a growth-systems marketing agency for home se
 
 The short version: Google is no longer the only surface that matters. When a homeowner asks ChatGPT, Claude, Perplexity, or Google's AI Overview "who should I call for a clogged drain in Chandler," an AI-generated answer shows up before any of the ten blue links. If your business is not cited in that answer, you are invisible to a growing share of your market — even if you still rank #1 organically.
 
-This is what Answer Engine Optimization (AEO) exists to solve.
+This is what Answer Engine Optimization (AEO) exists to solve. AEO is one piece of a broader shift — for the full picture on putting AI to work in your business, start with our guide to [adopting AI in a home service business](/blog/ai-for-home-service-businesses).
 
 ## What AEO actually is
 

@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "business-growth"
 tags: ["seo", "agency-selection", "business-growth", "home-services"]
-metaTitle: "How to Choose an SEO Agency | ASP"
+metaTitle: "How to Choose an SEO Agency"
 metaDescription: "A practical framework for home service operators evaluating SEO agencies in 2026. Red flags, right questions, realistic timelines."
 featuredImage: "/images/backgrounds/hero-trades-2.jpg"
 schema:

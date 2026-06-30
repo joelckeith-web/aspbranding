@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "tech-stack"
 tags: ["free-tools", "tech-stack", "home-services", "housecall-pro", "small-business"]
-metaTitle: "Free & Low-Cost Tools for Home Service Businesses | ASP"
+metaTitle: "Free & Low-Cost Tools for Home Service Businesses"
 metaDescription: "The free and low-cost tools we actually recommend to home service operators — for getting found, running the job, and tracking what works — plus the one platform to run your core on."
 featuredImage: "/images/industries/appliance-repair.jpg"
 schema:

@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "local-seo"
 tags: ["seo", "google-spam-policies", "backlinks", "home-services", "search-updates"]
-metaTitle: "Real SEO vs. Fake SEO: What Google's Spam Rules Mean | ASP"
+metaTitle: "Real SEO vs. Fake SEO: What Google's Spam Rules Mean"
 metaDescription: "Some agencies sell 'SEO' that Google now treats as spam. Here's how to tell if your rankings are built to last — or built to collapse at the next update."
 featuredImage: "/images/industries/roofing.png"
 schema:

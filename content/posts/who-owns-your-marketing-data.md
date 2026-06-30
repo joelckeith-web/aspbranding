@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "business-growth"
 tags: ["marketing-data", "data-ownership", "home-services", "agency-relationship", "growth-system"]
-metaTitle: "Who Really Owns Your Marketing Data? | ASP"
+metaTitle: "Who Really Owns Your Marketing Data?"
 metaDescription: "If you fired your marketing agency tomorrow, would you keep your website, ad accounts, and data? Here's how to find out — and the questions to ask before you sign."
 featuredImage: "/images/industries/remodel-outdoor.jpg"
 schema:

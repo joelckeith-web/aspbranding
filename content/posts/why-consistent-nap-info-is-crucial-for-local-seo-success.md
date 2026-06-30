@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "local-seo"
 tags: ["local-seo", "nap", "citations", "google-business-profile", "home-services"]
-metaTitle: "NAP Consistency and Local SEO | ASP"
+metaTitle: "NAP Consistency and Local SEO"
 metaDescription: "Why consistent Name, Address, and Phone data across the web is one of the highest-leverage local SEO fixes for home service operators."
 featuredImage: "/images/industries/hvac-viking.jpg"
 schema:

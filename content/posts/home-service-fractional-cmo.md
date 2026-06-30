@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "business-growth"
 tags: ["fractional-cmo", "marketing-leadership", "home-services", "business-growth", "strategy"]
-metaTitle: "Does Your Home Service Business Need a Fractional CMO? | ASP"
+metaTitle: "Does Your Home Service Business Need a Fractional CMO?"
 metaDescription: "A full-time marketing director costs $150K+. A fractional CMO gives home service businesses senior strategy without the salary. Here's when it makes sense."
 featuredImage: "/images/industries/landscape-outdoor.jpg"
 schema:

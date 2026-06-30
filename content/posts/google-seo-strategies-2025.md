@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "seo"
 tags: ["seo", "google", "local-seo", "home-services", "algorithm"]
-metaTitle: "Google SEO Strategies 2026 | ASP"
+metaTitle: "Google SEO Strategies 2026"
 metaDescription: "Updated Google SEO strategies for home service operators in 2026. Local SEO, content, technical signals, and how it all ties to revenue."
 featuredImage: "/images/industries/plumbing.jpg"
 schema:

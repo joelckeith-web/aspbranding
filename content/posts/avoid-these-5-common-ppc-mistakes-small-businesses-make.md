@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "ppc"
 tags: ["ppc", "google-ads", "paid-search", "home-services", "lead-generation"]
-metaTitle: "5 PPC Mistakes Home Service Operators Make | ASP"
+metaTitle: "5 PPC Mistakes Home Service Operators Make"
 metaDescription: "The five most common and costly PPC mistakes we see in home service businesses — and the fixes that actually improve lead quality and ROI."
 featuredImage: "/images/backgrounds/hero-trades-2.jpg"
 schema:

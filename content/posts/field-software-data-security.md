@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "tech-stack"
 tags: ["data-security", "field-service-software", "home-services", "tech-stack", "trust"]
-metaTitle: "Is Your Field Service Software Leaking Customer Data? | ASP"
+metaTitle: "Is Your Field Service Software Leaking Customer Data?"
 metaDescription: "Your field app holds customer addresses, photos, and payment info. Here's how to tell if it's exposing that data — and the five questions to ask your software vendor."
 featuredImage: "/images/industries/home-inspection.jpg"
 schema:
@@ -30,7 +30,7 @@ readingTime: "7 min read"
 
 Your field service or inspection app holds some of the most sensitive data your business touches — customer addresses, interior photos, job notes, and often payment details. If that data isn't properly secured by your software vendor, it can be exposed, and the fallout lands on your business's name, not the vendor's. This post explains the real risk in plain English, walks through how everyday data exposure actually happens, and gives you five questions to put to your software vendor today.
 
-Most home service operators never think about this. You picked your field app because it scheduled jobs and sent invoices, not because you audited its security. That's normal — you run a trade business, not an IT department. But the moment a customer's data leaks from a tool with your logo on it, it becomes your problem: your reputation, your phone ringing with angry calls, your reviews. This is the part of your tech stack worth ten minutes of attention.
+Most home service operators never think about this. You picked your field app because it scheduled jobs and sent invoices, not because you audited its security. That's normal — you run a trade business, not an IT department. But the moment a customer's data leaks from a tool with your logo on it, it becomes your problem: your reputation, your phone ringing with angry calls, your reviews. This is the part of your tech stack worth ten minutes of attention. It's also the safety side of a bigger topic — see our guide to [adopting AI in a home service business](/blog/ai-for-home-service-businesses).
 
 ## The risk nobody talks about
 
