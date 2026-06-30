@@ -2,7 +2,7 @@
 title: "Local SEO for Home Service Businesses: The Operator's Playbook"
 slug: "local-seo-for-home-service-businesses"
 publishDate: "2026-05-01"
-dateModified: "2026-04-27"
+dateModified: "2026-06-30"
 author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
@@ -42,7 +42,7 @@ Most home service businesses don't have a marketing problem. They have a *visibi
 
 ## What local SEO actually means for a home service business
 
-Local SEO is the system that wins you the local map pack, the call button on a phone, and the organic rankings below the pack — across every service area you operate in. It's a different discipline from general SEO because the buyer's intent is different. A homeowner searching "tankless water heater installation Austin" is not browsing. They are 24 to 72 hours from booking someone, and the only question is whether that someone is you.
+Local SEO is the system that wins you the local map pack, the call button on a phone, and the organic rankings below the pack — across every service area you operate in. It's a different discipline from [general SEO](/blog/google-seo-strategies-2025) because the buyer's intent is different. A homeowner searching "tankless water heater installation Austin" is not browsing. They are 24 to 72 hours from booking someone, and the only question is whether that someone is you.
 
 Google decides who shows up by weighing three big factors: relevance (does your business match what the searcher needs), distance (how close are you to the searcher's location), and prominence (how strong is the rest of your local presence — reviews, citations, web authority). Each of the four pillars below feeds at least one of those three factors. None of them alone is enough.
 
@@ -101,7 +101,7 @@ Local SEO investment scales with where the business is, not with how much you wi
 
 **$0–$300K.** GBP first, period. Claim the profile, verify the address, get to 25 genuine reviews, post weekly. Add a basic NAP listing on the top 10 directories. Don't spend on a custom site yet — a one-page site with a phone number and service list is enough. The map pack is doing the lifting.
 
-**$300K–$1M.** Now add the website. A real site with service pages, service-area pages, and LocalBusiness schema. Build out citations on industry-specific directories beyond the big aggregators. Set up a review request system tied to job completion in your CRM. This is the tier where investing in the full four pillars compounds the fastest. Our [Local SEO Pro](/local-seo-pro) productized service covers exactly this scope.
+**$300K–$1M.** Now add the website. A real site with service pages, service-area pages, and LocalBusiness schema. Build out citations on industry-specific directories beyond the big aggregators. Set up a review request system tied to job completion in your CRM. This is the tier where investing in the full four pillars compounds the fastest. Our [Local SEO Pro](/local-seo-pro) productized service covers exactly this scope. If you're weighing whether to hire an agency for it, our guide on [how to choose the right SEO agency](/blog/choosing-the-right-seo-agency-tips-for-small-business-success) covers the red flags to watch.
 
 **$1M–$3M.** Multiple service areas, multiple service lines. The on-site signals expand — one service-area page per real city, schema on every page, internal linking that maps your offerings to your geography. Review velocity needs to scale with job volume. Pair local SEO with a working [marketing attribution system](/blog/marketing-attribution-home-service-businesses) so you can see which pillars are producing booked revenue, not just rankings.
 

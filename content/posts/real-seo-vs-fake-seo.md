@@ -30,7 +30,7 @@ readingTime: "7 min read"
 
 There's "SEO" that builds your rankings to last, and "SEO" that Google now treats as spam — and from the outside, the monthly invoice can look identical. The difference shows up at the worst possible moment: a Google update rolls out, and the rankings you've been paying for vanish overnight. This post explains, in plain English, what Google's spam policies actually say, how real SEO differs from the fake kind, and how to audit what your agency is really doing.
 
-If your rankings have ever spiked and then collapsed after a "Google update," you've probably already paid for fake SEO without knowing it. The good news is that the tells are easy to spot once you know what to look for, and the real version — the kind that holds — isn't a secret. It's just harder work, which is exactly why some agencies sell the shortcut instead.
+If your rankings have ever spiked and then collapsed after a "Google update," you've probably already paid for fake SEO without knowing it. The good news is that the tells are easy to spot once you know what to look for, and the real version — the kind that holds — isn't a secret. It's just harder work, which is exactly why some agencies sell the shortcut instead. For the broader local SEO system the real version fits into, see our [Local SEO Operator's Playbook](/blog/local-seo-for-home-service-businesses).
 
 ## The bait: cheap SEO that ranks for a minute
 
