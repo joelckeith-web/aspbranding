@@ -18,6 +18,8 @@ interface HeroProps {
   showForm?: boolean;
   pillars?: string;
   headingClassName?: string;
+  /** "compact" roughly halves the hero height — used on interior pages like the blog. */
+  size?: "default" | "compact";
 }
 
 export function Hero({
@@ -36,9 +38,18 @@ export function Hero({
   showForm = false,
   pillars,
   headingClassName,
+  size = "default",
 }: HeroProps) {
+  const isCompact = size === "compact";
+  const minHeight = isCompact
+    ? "min-h-[38vh] lg:min-h-[42vh] 2xl:min-h-[46vh]"
+    : "min-h-[60vh] lg:min-h-[65vh] 2xl:min-h-[85vh]";
+  const contentPadding = isCompact
+    ? "py-12 md:py-16 lg:py-20"
+    : "py-16 md:py-24 lg:py-28 2xl:py-32 3xl:py-40";
+
   return (
-    <section className="hero relative min-h-[60vh] lg:min-h-[65vh] 2xl:min-h-[85vh] flex items-center text-white overflow-hidden">
+    <section className={`hero relative ${minHeight} flex items-center text-white overflow-hidden`}>
       {/* Background */}
       {bgType === "video" && youtubeId && (
         <HeroVideoBackground youtubeId={youtubeId} />
@@ -59,7 +70,7 @@ export function Hero({
       )}
 
       {/* Content */}
-      <div className="relative z-20 w-full max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-28 2xl:py-32 3xl:py-40">
+      <div className={`relative z-20 w-full max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 ${contentPadding}`}>
         <div className={showForm ? "grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 2xl:gap-16 items-start" : ""}>
           {/* Text side */}
           <div className={showForm ? "lg:pt-8" : "max-w-3xl"}>

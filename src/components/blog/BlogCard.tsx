@@ -61,15 +61,38 @@ export function BlogCard({ post }: BlogCardProps) {
       href={`/blog/${slug}`}
       className="group flex flex-col bg-white rounded-[var(--radius-asp-xl)] border border-gray-100 shadow-asp-sm hover:shadow-asp-xl hover:-translate-y-1 transition-all duration-250 no-underline overflow-hidden"
     >
-      {/* Gradient placeholder image area */}
+      {/* Preview image area: real featured image when set, branded title-card otherwise */}
       <div className="relative h-48 bg-asp-gradient-hero overflow-hidden">
-        {/* Decorative accent circles */}
-        <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-asp-blue-light/10" />
-        <div className="absolute bottom-4 left-4 w-16 h-16 rounded-full bg-asp-purple/10" />
+        {frontmatter.featuredImage ? (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={frontmatter.featuredImage}
+              alt={frontmatter.title}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+            {/* Legibility gradient so the badge stays readable */}
+            <div className="absolute inset-0 bg-gradient-to-t from-asp-blue/50 via-transparent to-transparent" />
+          </>
+        ) : (
+          <>
+            {/* Decorative accent circles */}
+            <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-asp-blue-light/10" />
+            <div className="absolute bottom-4 left-4 w-16 h-16 rounded-full bg-asp-purple/10" />
+
+            {/* Title-card text (stands in for a photo) */}
+            <div className="absolute inset-0 flex items-end p-5">
+              <h4 className="font-black text-white text-lg leading-snug line-clamp-3 drop-shadow-sm">
+                {frontmatter.title}
+              </h4>
+            </div>
+          </>
+        )}
 
         {/* Category badge */}
         <span
-          className={`absolute top-4 left-4 ${colors.bg} ${colors.text} text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-[var(--radius-asp-sm)]`}
+          className={`absolute top-4 left-4 ${colors.bg} ${colors.text} text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-[var(--radius-asp-sm)] z-10`}
         >
           {categoryLabel}
         </span>

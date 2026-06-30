@@ -50,7 +50,10 @@ export default async function BlogPage() {
         eyebrow="The Sauce"
         heading="Learn the Secret Sauce<br>of Marketing"
         subheading="Tips, strategies, and insights from the ASP team to help you grow your business past every revenue barrier."
-        bgType="dark"
+        bgType="image"
+        imageUrl="/images/backgrounds/team-behind-scenes.jpg"
+        imagePosition="center center"
+        size="compact"
       />
 
       {/* Category filter pills */}
