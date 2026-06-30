@@ -25,7 +25,7 @@ schema:
       answer: "No. The contractors seeing the best results use AI to take routine work off their team — like first-response texts and estimate follow-ups — so staff can focus on higher-value conversations. The goal is to support your team's workflow, not cut headcount."
     - question: "Is my customer data safe if I use AI tools?"
       answer: "Only if you check. AI tools and field software hold sensitive customer data like addresses, photos, and payment details. Before adopting any tool, ask the vendor where your data is stored, who can access it, and whether it's shared with third parties."
-status: "review"
+status: "published"
 contentPillar: "tech-stack-case-study"
 readingTime: "6 min read"
 ---

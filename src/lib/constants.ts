@@ -51,5 +51,10 @@ export const FOOTER_COMPANY = [
   { label: "Contact", href: "/contact" },
 ] as const;
 
+// Pillar/hub guides — the top of each blog content cluster. Append as hubs publish.
+export const FOOTER_GUIDES = [
+  { label: "AI for Home Service Businesses", href: "/blog/ai-for-home-service-businesses" },
+] as const;
+
 // Legacy export kept for any stragglers until the whole codebase is migrated.
 export const FOOTER_SOLUTIONS = FOOTER_SYSTEM;
