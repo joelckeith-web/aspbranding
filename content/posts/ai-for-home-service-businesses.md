@@ -11,7 +11,7 @@ author:
   website: "https://aspbranding.com"
 category: "tech-stack"
 tags: ["ai", "ai-adoption", "automation", "tech-stack", "home-services"]
-metaTitle: "AI for Home Service Businesses: 2026 Adoption Guide | ASP"
+metaTitle: "AI for Home Service Businesses: 2026 Adoption Guide"
 metaDescription: "AI can grow a home service business or quietly drain its budget. Here's how HVAC, plumbing, and roofing operators adopt AI in 2026 — and where to start."
 featuredImage: "/images/backgrounds/hero-chatgpt-laptop.jpg"
 schema:
