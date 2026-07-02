@@ -2,7 +2,7 @@
 title: "Growth Consulting for Home Service Businesses: What a Real Advisor Does"
 slug: "growth-consulting-for-home-service-businesses"
 publishDate: "2026-07-01"
-dateModified: "2026-04-27"
+dateModified: "2026-07-02"
 author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
@@ -40,7 +40,7 @@ Growth consulting for a home service business is senior strategic advisory focus
 
 The honest framing is that a lot of what's marketed as "growth consulting" in the trades space is repackaged tactical agency work. Real strategic advisory is rarer, more expensive, and harder to evaluate at intake — which is why operators who hire poorly here usually make the mistake twice before they find someone good. This post is the [Strategic Direction component of our Growth System](/growth-system), explained the way we'd run through it on a first call.
 
-## What a real growth advisor actually does
+## What a real growth advisor does
 
 Four traits separate the consultants worth paying from the ones who'll politely waste a year of your time.
 
@@ -56,7 +56,7 @@ The work that moves revenue doesn't live in one channel. A real advisor sees the
 
 Monthly reviews tied to booked jobs and attributed revenue inside Housecall Pro or whatever CRM you run. If the reporting lives in Google Analytics or the ad platform only, the advisor doesn't know what's actually happening in your business. The reporting layer is also the cleanest test of whether the engagement is producing results — if month four still doesn't have a defensible booked-revenue-by-channel number, something is wrong with either the advisor or the data plumbing they should have already fixed.
 
-### Says no
+### Says NO
 
 The best consultants kill more projects than they start. If everything you bring up gets a "yes, let's do that," the advisor is selling hours, not judgment. The signal of a good advisor is when they tell you the new website you want to build is a worse use of capital than the lead-routing automation you've been ignoring. Saying no, with reasoning, is what makes strategic direction worth paying for. Saying yes to everything is what fills calendars and produces nothing.
 
