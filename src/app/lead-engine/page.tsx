@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 // Proof first, labeled by trade — every visitor finds "someone like me."
 const PROOF = [
   {
-    label: "Mechanical / HVAC",
+    label: "HVAC",
     stat: "$81,000",
     detail:
       "closed sales in the first 90 days on this exact system. Not pipeline — closed, invoiced work.",
@@ -36,7 +36,7 @@ const PROOF = [
       "in pipeline inside the first 90 days. Today that same business closes $400K weeks and is pacing $2.5M+ this year.",
   },
   {
-    label: "HVAC",
+    label: "HVAC · Residential",
     stat: "$3M → $5M",
     detail:
       "broke through the $3M ceiling it had been stuck at, and set out to do $5M this year.",
@@ -200,11 +200,11 @@ export default function LeadEnginePage() {
               </span>
               <h1 className="font-black text-4xl md:text-5xl 2xl:text-6xl leading-[1.08] mb-5">
                 $10,000 of work in your pipeline in 90 days —{" "}
-                <span className="hero-text-gradient">or every ASP fee drops to $0.</span>
+                <span className="hero-text-gradient">or we work free until it&apos;s there.</span>
               </h1>
               <p className="text-white/75 text-lg leading-relaxed mb-6">
                 The same system that closed <strong className="text-white">$81,000 in 90 days</strong>{" "}
-                for a mechanical contractor — a complete lead engine for $997/month. We&apos;re
+                for an HVAC company — a complete lead engine for $997/month. We&apos;re
                 selecting a limited group of trades businesses to run it for. Apply to see if you
                 qualify.
               </p>
@@ -264,7 +264,7 @@ export default function LeadEnginePage() {
                   key={p.label}
                   className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-8 text-center shadow-[0_12px_32px_-8px_rgba(15,23,42,0.18)]"
                 >
-                  <p className="text-asp-purple text-xs font-bold uppercase tracking-widest mb-4">
+                  <p className="text-asp-blue text-xs font-bold uppercase tracking-widest mb-4">
                     {p.label}
                   </p>
                   <p className="font-black text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple mb-4">
@@ -280,7 +280,7 @@ export default function LeadEnginePage() {
                   key={p.label}
                   className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-8 text-center shadow-[0_12px_32px_-8px_rgba(15,23,42,0.18)]"
                 >
-                  <p className="text-asp-purple text-xs font-bold uppercase tracking-widest mb-4">
+                  <p className="text-asp-blue text-xs font-bold uppercase tracking-widest mb-4">
                     {p.label}
                   </p>
                   <p className="font-black text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple mb-4">
@@ -396,7 +396,7 @@ export default function LeadEnginePage() {
               The $10K Pipeline Guarantee
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              Hit $10,000 in qualified pipeline by day 90 — or every ASP fee drops to $0.
+              $10,000 in qualified pipeline by day 90 — or we work free until you get there.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
               Not store credit. Not a discount on more services. Our fees go to zero and we keep
