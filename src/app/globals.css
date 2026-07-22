@@ -292,3 +292,11 @@ body {
 .animate-fade-in {
   animation: fadeInUp 0.4s ease-out;
 }
+
+/* Standalone landing host (leadengine.aspbranding.com): hide the site header
+   and footer so the offer page runs distraction-free. The <html> attribute is
+   set by a blocking script in the root layout head before first paint. */
+html[data-standalone] body > header,
+html[data-standalone] body > footer {
+  display: none !important;
+}

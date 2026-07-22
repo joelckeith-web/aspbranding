@@ -84,6 +84,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <head>
+        {/* Standalone-host flag: leadengine.aspbranding.com hides site chrome
+            (see globals.css). Blocking inline script so it lands before paint. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'if(location.hostname==="leadengine.aspbranding.com")document.documentElement.setAttribute("data-standalone","");',
+          }}
+        />
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://script.crazyegg.com" />
