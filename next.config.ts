@@ -24,8 +24,25 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      // leadengine.aspbranding.com serves the 90-Day Lead Engine offer at its root.
+      {
+        source: "/",
+        has: [{ type: "host", value: "leadengine.aspbranding.com" }],
+        destination: "/lead-engine",
+      },
+    ];
+  },
   async redirects() {
     return [
+      // Any other path on the leadengine subdomain goes back to the offer.
+      {
+        source: "/:path((?!lead-engine|api|_next|favicon|.*\\..*).+)",
+        has: [{ type: "host", value: "leadengine.aspbranding.com" }],
+        destination: "https://leadengine.aspbranding.com/",
+        permanent: false,
+      },
       // Legacy WordPress top-level URLs (pre-v4) — 301 to v4 destinations
       { source: "/contact-us", destination: "/contact", permanent: true },
       { source: "/services", destination: "/growth-system", permanent: true },
