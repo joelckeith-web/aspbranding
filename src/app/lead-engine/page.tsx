@@ -122,12 +122,16 @@ const FAQS = [
     a: "It means our fees go to $0 — all of them — until the $10,000 mark is hit. There's no catch hiding in ad spend, because we never collect ad spend. If you choose to run Google Ads, that money goes straight from your card to Google in your own account. We never touch it.",
   },
   {
+    q: "What if day 90 comes, the number isn't there, and I want out?",
+    a: "You have two options, and the choice is yours. One: our fees stay at $0 and we keep working — for free — until the $10,000 is in your pipeline. Two: you cancel. Fees already paid aren't refunded; the free work is the remedy. But either way, you keep every asset we built for you: the website and its code, your business accounts, your content, and your data. We transfer all of it to you at no charge.",
+  },
+  {
     q: "Why do I need a CRM to qualify?",
     a: "Because the guarantee runs on proof. Your CRM is where we track every lead back to its source, so when we say the pipeline is there, the data shows it. If you don't have one, apply anyway — we'll get you set up on Housecall Pro at our partner discount as part of the build.",
   },
   {
     q: "Do I have to run ads?",
-    a: "No. The $997 sprint is built on organic — your website, search rankings, AI visibility, content, and reviews. If you want Google Ads managed on top, the sprint is $1,497/month, and your ad budget stays in your own account. Ads speed things up; they aren't required.",
+    a: "No. The $997 sprint is built on organic — your website, search rankings, AI visibility, content, and reviews. If you want Google Ads managed on top, the sprint is $1,497/month. Ad spend is separate and never part of ASP's fee — you pay it directly to Google from your own account, and we never collect or hold it. How much spend makes sense for your market is something we go through together on the discovery call. Ads speed things up; they aren't required.",
   },
   {
     q: "What happens after the 90 days?",
@@ -512,9 +516,11 @@ export default function LeadEnginePage() {
               $997 a month for 90 days. That&apos;s the whole sprint.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Want Google Ads managed on top? <strong className="text-white">$1,497/month</strong> —
-              and your ad budget stays in your own account, paid directly to Google. We never touch
-              it.
+              Want Google Ads managed on top to speed up the pipeline?{" "}
+              <strong className="text-white">$1,497/month</strong>. Ad spend itself is not included
+              in either price — you pay it directly to Google from your own account, and ASP never
+              collects a dollar of it. What makes sense to budget for your market is part of the
+              discovery call.
             </p>
             <p className="text-white/60 leading-relaxed mb-2">
               Why so low? Because it&apos;s an introductory sprint, capped at a handful of
@@ -553,6 +559,27 @@ export default function LeadEnginePage() {
           <ScrollReveal>
             <LeadEngineForm />
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Plain-English terms summary. The signed service agreement governs. */}
+      <section className="py-10 bg-asp-surface-light border-t border-gray-200">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gray-500 text-xs leading-relaxed">
+            <strong className="text-gray-600">The fine print, in plain English:</strong> The 90-Day
+            Lead Engine is billed monthly — $997/month, or $1,497/month with Google Ads management —
+            for the 90-day sprint. Fees already paid are non-refundable. Ad spend is not included in
+            any ASP fee: you pay it directly to the advertising platform from your own account, and
+            ASP never collects, holds, or marks it up. Ad-spend recommendations for your market are
+            covered on the discovery call. If your pipeline has not reached $10,000 in qualified
+            leads by day 90, your remedy is the guarantee itself: ASP&apos;s fees drop to $0 and the
+            work continues at no charge until the $10,000 mark is reached — or you may cancel
+            instead. In either case, every asset built for you during the sprint is yours to keep,
+            transferred to you at no charge: the website and its code, your business accounts, your
+            content, and your data. &quot;Qualified lead&quot; and all terms are defined in the
+            service agreement signed before work begins. This page is a summary; the service
+            agreement governs.
+          </p>
         </div>
       </section>
     </main>
