@@ -25,14 +25,19 @@ const nextConfig: NextConfig = {
     ];
   },
   async rewrites() {
-    return [
-      // leadengine.aspbranding.com serves the 90-Day Lead Engine offer at its root.
-      {
-        source: "/",
-        has: [{ type: "host", value: "leadengine.aspbranding.com" }],
-        destination: "/lead-engine",
-      },
-    ];
+    return {
+      // beforeFiles so the host match beats the real homepage at "/".
+      beforeFiles: [
+        // leadengine.aspbranding.com serves the 90-Day Lead Engine offer at its root.
+        {
+          source: "/",
+          has: [{ type: "host", value: "leadengine.aspbranding.com" }],
+          destination: "/lead-engine",
+        },
+      ],
+      afterFiles: [],
+      fallback: [],
+    };
   },
   async redirects() {
     return [
