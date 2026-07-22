@@ -15,7 +15,7 @@ import testimonials from "@/data/testimonials.json";
 // microlines, arrows between process steps.
 
 export const metadata: Metadata = {
-  title: "The 90-Day Lead Engine — $10,000 in Pipeline, Guaranteed | ASP",
+  title: "The 90-Day Lead Engine — $10,000 in Pipeline, Guaranteed",
   description:
     "A complete lead engine for your trades business — new website, SEO, content, and tracking — for $997/month for 90 days. $10,000 in qualified pipeline or every ASP fee drops to $0.",
   robots: { index: false, follow: false },
