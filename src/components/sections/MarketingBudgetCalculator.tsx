@@ -5,6 +5,9 @@ import {
   industries,
   tiers,
   calculateBudget,
+  clicksPerThousand,
+  ATTRIBUTION,
+  CPC_SOURCE_DATE,
   FAQ_ITEMS,
   type Industry,
 } from "@/lib/marketing-budget";
@@ -30,15 +33,14 @@ function parseRevenue(input: string): number {
 export function MarketingBudgetCalculator() {
   const [revenueInput, setRevenueInput] = useState("");
   const [selectedIndustry, setSelectedIndustry] = useState<Industry>(industries[0]);
-  const [isMetro, setIsMetro] = useState(false);
   const [showResults, setShowResults] = useState(false);
 
   const revenue = parseRevenue(revenueInput);
 
   const results = useMemo(() => {
     if (revenue <= 0) return null;
-    return calculateBudget(revenue, selectedIndustry, isMetro);
-  }, [revenue, selectedIndustry, isMetro]);
+    return calculateBudget(revenue);
+  }, [revenue]);
 
   const handleRevenueChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const raw = e.target.value.replace(/[^0-9]/g, "");
@@ -72,8 +74,8 @@ export function MarketingBudgetCalculator() {
             Marketing Budget <span className="hero-text-gradient">Calculator</span>
           </h1>
           <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
-            Know exactly how much to invest in marketing based on your revenue,
-            industry, and market. No guesswork. Just data-driven recommendations.
+            See what to invest in marketing based on your revenue and industry —
+            and what clicks actually cost in your trade, straight from Google.
           </p>
         </div>
       </section>
@@ -112,7 +114,7 @@ export function MarketingBudgetCalculator() {
           </div>
 
           {/* Industry */}
-          <div className="mb-6">
+          <div>
             <label className="block text-sm font-semibold text-gray-600 mb-2">
               Industry
             </label>
@@ -134,39 +136,6 @@ export function MarketingBudgetCalculator() {
               {selectedIndustry.description}
             </p>
           </div>
-
-          {/* Metro toggle */}
-          <div className="flex items-center justify-between p-4 rounded-xl bg-asp-surface-light border border-gray-200">
-            <div>
-              <p className="font-semibold text-asp-black">Major Metro Area</p>
-              <p className="text-sm text-gray-500 mt-0.5">
-                Are you in or near a major metropolitan city? This increases
-                recommended spend due to higher competition.
-              </p>
-            </div>
-            <button
-              type="button"
-              onClick={() => setIsMetro(!isMetro)}
-              className={`toggle-switch flex-shrink-0 ml-4 ${isMetro ? "active" : ""}`}
-              aria-label="Toggle metro area"
-            />
-          </div>
-
-          {isMetro && (
-            <div className="mt-3 flex items-center gap-2 text-sm text-asp-blue font-medium">
-              <svg className="w-4 h-4 text-asp-blue-light" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span>
-                +{selectedIndustry.metroBoost}% added to each tier for metro
-                competition
-              </span>
-            </div>
-          )}
         </div>
 
         {/* Results */}
@@ -181,9 +150,11 @@ export function MarketingBudgetCalculator() {
                 <span className="text-asp-blue font-semibold">
                   {selectedIndustry.name}
                 </span>
-                {isMetro && (
-                  <span className="text-asp-blue-light font-semibold"> (Metro Area)</span>
-                )}
+              </p>
+              <p className="text-sm text-gray-500 mt-3 max-w-xl mx-auto">
+                This is your <strong className="text-asp-black">total</strong> marketing
+                budget — ad spend, website, content, SEO, and any agency fees. Ad
+                spend is one piece of it.
               </p>
             </div>
 
@@ -231,7 +202,7 @@ export function MarketingBudgetCalculator() {
                       <div
                         className="h-full rounded-full transition-all duration-700"
                         style={{
-                          width: `${Math.min((result.highPct / 20) * 100, 100)}%`,
+                          width: `${Math.min((result.highPct / 15) * 100, 100)}%`,
                           background: `linear-gradient(90deg, ${tier.color}80, ${tier.color})`,
                         }}
                       />
@@ -239,6 +210,75 @@ export function MarketingBudgetCalculator() {
                   </div>
                 );
               })}
+            </div>
+
+            {/* Where the band comes from — ASP guidance, labeled as such */}
+            <p className="text-center text-sm text-gray-500 max-w-2xl mx-auto">
+              The 7–12% range is ASP&apos;s guidance from its own client base, not an
+              industry benchmark. Most ASP clients run 7–10%, and those tend to see
+              the best results.
+            </p>
+
+            {/* Google CPC — the sourced, industry-specific number */}
+            <div className="rounded-asp-2xl border border-gray-200 bg-white shadow-asp-md p-6 md:p-8">
+              <h3 className="text-lg font-bold text-asp-black mb-1">
+                What clicks cost in {selectedIndustry.name}
+              </h3>
+              <p className="text-sm text-gray-500 mb-5">
+                National average for United States search, {CPC_SOURCE_DATE}.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="rounded-xl bg-asp-surface-light border border-gray-200 p-5">
+                  <p className="text-sm text-gray-500 mb-1">Average cost per click</p>
+                  <p className="text-3xl font-black text-asp-blue">
+                    ${selectedIndustry.cpc.toFixed(2)}
+                  </p>
+                </div>
+                <div className="rounded-xl bg-asp-surface-light border border-gray-200 p-5">
+                  <p className="text-sm text-gray-500 mb-1">
+                    Clicks per $1,000 of ad spend
+                  </p>
+                  <p className="text-3xl font-black text-asp-blue">
+                    ~{clicksPerThousand(selectedIndustry.cpc).toLocaleString()}
+                  </p>
+                </div>
+              </div>
+
+              <p className="mt-5 text-sm text-gray-600 leading-relaxed">
+                Apply your own close rate to those clicks and you have your cost per
+                job. You know that number better than any calculator does — we would
+                rather you use yours than a figure we made up.
+              </p>
+
+              <p className="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500">
+                {ATTRIBUTION}
+              </p>
+            </div>
+
+            {/* Metro caveat → booking */}
+            <div className="rounded-asp-2xl border border-asp-blue-light/30 bg-asp-blue-light/5 p-6 md:p-8">
+              <h3 className="text-lg font-bold text-asp-black mb-2">
+                In a major metro? Expect to pay more.
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                The figures above are national averages. Competitive metros run well
+                above them — HVAC clicks in Phoenix cost more than three times the
+                national average, and plumbing clicks there cost more than four
+                times. Some markets run below average. The only way to know yours is
+                to look at it.
+              </p>
+              <a
+                href={CALENDLY}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-asp-blue font-bold hover:underline"
+              >
+                Get a free assessment of your market
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
             </div>
 
             {/* Tier meaning */}
@@ -250,30 +290,14 @@ export function MarketingBudgetCalculator() {
                 What Do These Tiers Mean?
               </h3>
               <div className="grid md:grid-cols-3 gap-6">
-                <div>
-                  <p className="font-bold text-asp-blue-light mb-1">Foundation (4–7%)</p>
-                  <p className="text-sm text-gray-500">
-                    You&apos;re establishing your digital presence. Focus on core SEO,
-                    Google Business Profile, and targeted local ads. Ideal for
-                    businesses with strong referral networks supplementing with digital.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-bold text-asp-purple mb-1">Growth (8–11%)</p>
-                  <p className="text-sm text-gray-500">
-                    You&apos;re ready to scale. This supports multi-channel campaigns —
-                    PPC, social ads, content, and reputation management. Best for
-                    businesses aiming to break through revenue plateaus.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-bold text-asp-blue mb-1">Domination (12–15%+)</p>
-                  <p className="text-sm text-gray-500">
-                    You&apos;re going all-in on market share. This level supports
-                    aggressive paid media, brand campaigns, video, advanced
-                    attribution, and competitive conquest strategies.
-                  </p>
-                </div>
+                {tiers.map((tier) => (
+                  <div key={tier.key}>
+                    <p className="font-bold mb-1" style={{ color: tier.color }}>
+                      {tier.label} ({tier.range[0]}–{tier.range[1]}%)
+                    </p>
+                    <p className="text-sm text-gray-500">{tier.meaning}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -293,6 +317,20 @@ export function MarketingBudgetCalculator() {
             ))}
           </div>
         </div>
+
+        {/* Sourcing / fine print */}
+        <p className="text-xs text-gray-500 leading-relaxed">
+          Cost-per-click ranges come from Google Ads Keyword Planner via the Google
+          Ads API, last updated {CPC_SOURCE_DATE}. They are Google&apos;s own
+          top-of-page bid estimates for United States search — not ASP estimates, and
+          not modeled from ASP client accounts. Top-of-page bid is Google&apos;s
+          estimate of what advertisers bid to appear at the top of page one; it is an
+          estimate, not a quoted or guaranteed cost. Your actual cost per click will
+          vary by market, competition, ad quality, and time of year. Keyword
+          selection and search-volume weighting are ASP&apos;s methodology. The
+          7–12% budget range is ASP&apos;s guidance from its own client base. This
+          tool produces an estimate, not a projection of results.
+        </p>
       </div>
 
       {/* Full-width black CTA — flows straight into the site footer */}

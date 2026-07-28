@@ -1,16 +1,32 @@
 // Data + math for the Marketing Budget Calculator (/marketing-budget-calculator).
+//
+// PROVENANCE — every number on this page traces to one of three places, and the
+// page says which. Do not blur these together.
+//
+//   Google      cpc — Google Ads Keyword Planner top-of-page bid estimates,
+//               pulled 2026-07-27 via the Google Ads API v23 under the ASP
+//               Branding MCC. United States, English, Google Search only.
+//               Refresh script: code/anvil/_tmp-trade-cpc-benchmarks.mjs
+//   ASP         The 7-12% budget band and the three tiers. This is ASP's own
+//               guidance drawn from its client base, NOT an industry benchmark
+//               and NOT a Google figure. Labeled as such wherever it renders.
+//   The visitor Their revenue and industry.
+//
+// Google publishes a low and a high top-of-page bid. The high runs 5-6x the low
+// in every trade because it reflects the most expensive markets and the most
+// aggressive bidders, so the low is used as the planning figure. Full data:
+// "ASP Calculator — Trade CPC Benchmarks" in Drive > Systems & Tools.
+
+export const CPC_SOURCE_DATE = "July 2026";
+
+export const ATTRIBUTION =
+  "Cost-per-click data: Google Ads Keyword Planner. These are Google's figures, not ASP estimates.";
 
 export interface Industry {
   id: string;
   name: string;
-  /** Base percentage adjustments per tier [startup, growth, aggressive] */
-  baseRanges: {
-    startup: [number, number];
-    growth: [number, number];
-    aggressive: [number, number];
-  };
-  /** Additional percentage added when in/near a metro area */
-  metroBoost: number;
+  /** Google Keyword Planner low top-of-page bid, US nationwide, USD. */
+  cpc: number;
   description: string;
 }
 
@@ -18,184 +34,208 @@ export const industries: Industry[] = [
   {
     id: "hvac",
     name: "HVAC",
-    baseRanges: { startup: [5, 7], growth: [8, 11], aggressive: [12, 15] },
-    metroBoost: 2,
+    cpc: 12.62,
     description:
       "Heating, ventilation, and air conditioning services. Highly seasonal with strong local competition.",
   },
   {
     id: "plumbing",
     name: "Plumbing",
-    baseRanges: { startup: [4, 7], growth: [8, 10], aggressive: [12, 15] },
-    metroBoost: 2,
+    cpc: 10.83,
     description:
       "Emergency and scheduled plumbing services. High urgency drives strong PPC returns.",
   },
   {
     id: "electrical",
     name: "Electrical",
-    baseRanges: { startup: [4, 6], growth: [8, 10], aggressive: [12, 14] },
-    metroBoost: 1.5,
+    cpc: 6.32,
     description:
       "Residential and commercial electrical services. Steady demand with moderate competition.",
   },
   {
     id: "roofing",
     name: "Roofing",
-    baseRanges: { startup: [5, 7], growth: [9, 11], aggressive: [13, 16] },
-    metroBoost: 2.5,
+    cpc: 13.5,
     description:
       "Roofing installation and repair. Higher ticket size with intense metro competition.",
   },
   {
     id: "landscaping",
     name: "Landscaping & Lawn Care",
-    baseRanges: { startup: [4, 6], growth: [8, 10], aggressive: [12, 14] },
-    metroBoost: 1.5,
+    cpc: 3.18,
     description:
       "Lawn maintenance, landscaping, and outdoor living services. Seasonal with recurring revenue opportunities.",
   },
   {
     id: "pest-control",
     name: "Pest Control",
-    baseRanges: { startup: [5, 7], growth: [8, 11], aggressive: [12, 15] },
-    metroBoost: 2,
+    cpc: 9.0,
     description:
       "Residential and commercial pest management. Recurring service model with strong digital acquisition.",
   },
   {
     id: "cleaning",
     name: "Cleaning Services",
-    baseRanges: { startup: [5, 7], growth: [9, 11], aggressive: [13, 16] },
-    metroBoost: 2.5,
+    cpc: 4.32,
     description:
       "Residential and commercial cleaning. Low barrier to entry means heavier ad spend needed to stand out.",
   },
   {
     id: "painting",
     name: "Painting",
-    baseRanges: { startup: [4, 6], growth: [8, 10], aggressive: [12, 14] },
-    metroBoost: 1.5,
+    cpc: 6.7,
     description:
       "Interior and exterior painting services. Project-based with strong referral potential.",
   },
   {
     id: "garage-door",
     name: "Garage Door Services",
-    baseRanges: { startup: [5, 7], growth: [8, 11], aggressive: [12, 15] },
-    metroBoost: 2,
+    cpc: 16.24,
     description:
       "Garage door repair, installation, and maintenance. Emergency-driven with high conversion rates.",
   },
   {
     id: "remodeling",
     name: "Remodeling & General Contracting",
-    baseRanges: { startup: [4, 7], growth: [8, 11], aggressive: [12, 15] },
-    metroBoost: 2,
+    cpc: 7.91,
     description:
       "Home renovation and general contracting. Higher ticket, longer sales cycle requiring brand investment.",
   },
   {
     id: "flooring",
     name: "Flooring",
-    baseRanges: { startup: [4, 6], growth: [8, 10], aggressive: [12, 14] },
-    metroBoost: 1.5,
+    cpc: 3.96,
     description:
       "Flooring installation and refinishing. Competitive market with strong visual marketing opportunities.",
   },
   {
     id: "fencing",
     name: "Fencing",
-    baseRanges: { startup: [4, 6], growth: [8, 10], aggressive: [12, 14] },
-    metroBoost: 1.5,
+    cpc: 3.65,
     description:
       "Residential and commercial fence installation. Seasonal demand with strong local SEO opportunity.",
   },
   {
     id: "pool",
     name: "Pool Services",
-    baseRanges: { startup: [5, 7], growth: [9, 11], aggressive: [13, 16] },
-    metroBoost: 2,
+    cpc: 2.04,
     description:
       "Pool construction, maintenance, and repair. Seasonal with high-value projects and recurring service.",
   },
   {
     id: "windows-doors",
     name: "Windows & Doors",
-    baseRanges: { startup: [5, 7], growth: [9, 11], aggressive: [12, 15] },
-    metroBoost: 2,
+    cpc: 12.2,
     description:
       "Window and door replacement. Higher ticket with longer consideration cycle.",
   },
   {
     id: "solar",
     name: "Solar Installation",
-    baseRanges: { startup: [6, 8], growth: [10, 13], aggressive: [14, 18] },
-    metroBoost: 2.5,
+    cpc: 3.61,
     description:
       "Solar panel installation and energy services. High CAC but strong lifetime value. Very competitive in metro areas.",
   },
 ];
 
-export type TierKey = "startup" | "growth" | "aggressive";
+export type TierKey = "maintain" | "compete" | "dominate";
 
 export interface TierInfo {
   key: TierKey;
   label: string;
   tagline: string;
+  /** Percent of gross revenue — total marketing budget, not ad spend alone. */
+  range: [number, number];
+  meaning: string;
   color: string;
   bgColor: string;
   borderColor: string;
 }
 
+// ASP guidance, uniform across trades. The 7-12% band is where ASP's own
+// clients run; 7-10% is where results have been best. Above 12% is a choice to
+// push hard in a competitive market. Deliberately NOT varied per industry —
+// ASP has no per-industry data to support that. The industry-specific number on
+// this page is the Google CPC, and it is labeled as Google's.
 export const tiers: TierInfo[] = [
   {
-    key: "startup",
-    label: "Foundation",
-    tagline: "Establish Your Presence",
+    key: "maintain",
+    label: "Maintain",
+    tagline: "Hold Your Position",
+    range: [7, 9],
+    meaning:
+      "Enough to defend the ground you have. Covers core SEO, your Google Business Profile, reviews, and steady local ads. A fit if referrals still carry most of your work and you want digital backing them up.",
     color: "#4CC9F0",
     bgColor: "rgba(76, 201, 240, 0.08)",
     borderColor: "rgba(76, 201, 240, 0.25)",
   },
   {
-    key: "growth",
-    label: "Growth",
-    tagline: "Scale Your Reach",
+    key: "compete",
+    label: "Compete",
+    tagline: "Push for Growth",
+    range: [9, 12],
+    meaning:
+      "Enough to take work from someone else. Supports paid search, content that ranks, and reputation work running at the same time. This is where most businesses need to be to break through a revenue ceiling.",
     color: "#9F4CFF",
     bgColor: "rgba(159, 76, 255, 0.08)",
     borderColor: "rgba(159, 76, 255, 0.25)",
   },
   {
-    key: "aggressive",
-    label: "Domination",
-    tagline: "Own Your Market",
+    key: "dominate",
+    label: "Dominate",
+    tagline: "Take Market Share",
+    range: [12, 15],
+    meaning:
+      "Going after the whole market. Aggressive paid media, brand campaigns, video, and real attribution behind it. Above 12% is a deliberate choice, not a default.",
     color: "#002366",
     bgColor: "rgba(0, 35, 102, 0.08)",
     borderColor: "rgba(0, 35, 102, 0.25)",
   },
 ];
 
-export function calculateBudget(
-  revenue: number,
-  industry: Industry,
-  isMetro: boolean
-): { tier: TierKey; label: string; low: number; high: number; lowPct: number; highPct: number }[] {
+export interface BudgetResult {
+  tier: TierKey;
+  label: string;
+  low: number;
+  high: number;
+  lowPct: number;
+  highPct: number;
+}
+
+export function calculateBudget(revenue: number): BudgetResult[] {
   return tiers.map((tier) => {
-    const range = industry.baseRanges[tier.key];
-    const boost = isMetro ? industry.metroBoost : 0;
-    const lowPct = range[0] + boost;
-    const highPct = range[1] + boost;
-    const low = Math.round((revenue * lowPct) / 100);
-    const high = Math.round((revenue * highPct) / 100);
-    return { tier: tier.key, label: tier.label, low, high, lowPct, highPct };
+    const [lowPct, highPct] = tier.range;
+    return {
+      tier: tier.key,
+      label: tier.label,
+      low: Math.round((revenue * lowPct) / 100),
+      high: Math.round((revenue * highPct) / 100),
+      lowPct,
+      highPct,
+    };
   });
+}
+
+/**
+ * Clicks bought per $1,000 of ad spend at this trade's national CPC.
+ * Expressed as a unit rate on purpose: the budget band above is TOTAL marketing,
+ * and there is no sourced figure for what share of it goes to paid ads. Dividing
+ * the full budget by CPC would overstate clicks.
+ */
+export function clicksPerThousand(cpc: number): number {
+  return Math.round(1000 / cpc);
 }
 
 export const FAQ_ITEMS: { question: string; answer: string }[] = [
   {
     question: "How much should a home service business spend on marketing?",
     answer:
-      "Most home service businesses should invest about 5–15% of gross revenue in marketing. The right number depends on your growth goals and how competitive your market is. Use the calculator to get a range based on your revenue and industry.",
+      "Most home service businesses should invest about 7–12% of gross revenue in marketing. Most of the businesses ASP works with run 7–10%, and those tend to see the best results. Go above 12% if you are pushing hard in a competitive market.",
+  },
+  {
+    question: "Does this budget cover everything, or just ads?",
+    answer:
+      "Everything. The percentage covers your whole marketing budget — ad spend, your website, content, SEO, and any agency or contractor fees. Ad spend is only one piece of it, so do not plan your paid budget off the full number.",
   },
   {
     question: "Should my marketing budget be based on revenue or profit?",
@@ -205,7 +245,12 @@ export const FAQ_ITEMS: { question: string; answer: string }[] = [
   {
     question: "What is a good marketing budget for a $1 million business?",
     answer:
-      "At $1M in revenue, a typical range is about $50,000–$150,000 per year (5–15%). Lean toward the higher end if you are in a competitive metro area or pushing for fast growth.",
+      "At $1M in revenue, plan on about $70,000–$120,000 per year (7–12%). Most ASP clients land between $70,000 and $100,000. Lean higher if you are in a competitive market or pushing for fast growth.",
+  },
+  {
+    question: "Where do the cost-per-click numbers come from?",
+    answer:
+      "Google. They are top-of-page bid estimates pulled from Google Ads Keyword Planner for United States search. They are Google's own figures, not ASP estimates and not modeled from client accounts. Your real cost per click will vary by market, competition, ad quality, and time of year.",
   },
   {
     question: "Is a bigger marketing budget actually worth it?",
