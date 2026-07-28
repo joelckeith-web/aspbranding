@@ -348,7 +348,8 @@ export function MarketingBudgetCalculator() {
             Take the Next Step
           </span>
           <h2 className="text-2xl md:text-3xl font-black mb-3">
-            Want a custom plan for your {selectedIndustry.name.toLowerCase()} business?
+            {/* Not lowercased — it turns HVAC into "hvac". */}
+            Want a custom plan for your {selectedIndustry.name} business?
           </h2>
           <p className="text-white/70 mb-7 max-w-xl mx-auto">
             Book a free strategy session and we&apos;ll map your budget to a plan
