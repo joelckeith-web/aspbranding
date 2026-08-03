@@ -7,21 +7,25 @@ import testimonials from "@/data/testimonials.json";
 // Ad landing page for the 90-Day Install offer. NOT in the sitemap or nav;
 // noindex until launch — traffic arrives from paid campaigns only.
 //
-// v5 rewrite (2026-08-03). The $997 sprint and the $10K pipeline guarantee are
-// GONE. The offer is now $2,997/mo (or $3,850 with paid ads managed), a 90-day
-// initial term, and a 30-Day Clarity Guarantee measured on attribution being
-// live — the one promise entirely inside ASP's control. Pipeline numbers are
-// proof, never promise.
+// v5 (2026-08-03). The $997 sprint and the $10K pipeline guarantee are GONE.
+// The offer is $2,997/mo (or $3,850 with paid ads managed), a 90-day initial
+// term, and a 30-Day Clarity Guarantee measured on attribution being live for
+// NEW leads. Revenue figures are proof, never promise.
 //
-// Layout still follows the verified application-funnel patterns (Hormozi
-// acquisition.com + Brunson/ClickFunnels research): promise-left/form-right
-// hero, results-first page order, problem-named pillar cards, arrows between
-// process steps, qualification-framed CTAs with risk-reversal microlines.
+// Copy rules enforced here, from docs/joel-voice-profile.md:
+//   - One statement per section header. Never two sentences stacked.
+//   - No "not X — Y" antithesis as a rhetorical tic.
+//   - No riddle sentences, no redundant qualifiers ("up front").
+//   - Competitor comparisons stay factual. Joel is direct, never harsh.
+//
+// Visual rhythm is dark-dominant: light sections appear only where cards,
+// quotes, or the form need the contrast, and no two adjacent sections share
+// a treatment.
 
 export const metadata: Metadata = {
   title: "The 90-Day Install — Your Marketing System, Built and Handed To You",
   description:
-    "We build your trades business a complete marketing system — website, SEO, CRM integration, lead tracking — then teach you to run it. $2,997/month. See where every new lead came from in 30 days or your first month is refunded.",
+    "We build your trades business a complete marketing system — website, SEO, CRM integration, lead tracking — then teach you to run it. $2,997/month. See where your new leads came from in 30 days or your first month is refunded.",
   robots: { index: false, follow: false },
 };
 
@@ -89,7 +93,7 @@ const STACK = [
   },
   {
     problem: "No idea what's working",
-    title: "Tracking that proves where every new lead came from",
+    title: "Tracking that proves where new leads came from",
     body: "Custom form fields and source tracking on every new lead, feeding one dashboard. This is the piece the guarantee runs on.",
   },
 ];
@@ -100,7 +104,7 @@ const VS_AGENCY = [
   { them: "You get leads and a monthly report.", us: "You get leads and the system making them." },
   { them: "The website lives on their platform.", us: "The website is yours. Code, domain, hosting." },
   { them: "Ad accounts sit in their name.", us: "Every account in your name from day one." },
-  { them: "Lead sources you have to take on faith.", us: "Every new lead traced to its source." },
+  { them: "Lead sources you have to take on faith.", us: "New leads traced to their source." },
   { them: "Leaving means starting over.", us: "Leaving means taking a running system with you." },
   { them: "Training isn't part of the service.", us: "A monthly review and a training library." },
   { them: "Six to twelve month term.", us: "Ninety days, then cancel any time." },
@@ -141,7 +145,7 @@ const STEPS = [
 const FAQS = [
   {
     q: "What does the guarantee cover, exactly?",
-    a: "Connect your CRM, give us access, answer the setup questions, and show up to the kickoff call. That's your part. Within 30 days, every new lead that comes in gets traced back to its source — which channel, which campaign, which page, and what it turned into. If you've done your part and you still can't see it, we refund your first month, release you from the rest of the 90 days, and you keep everything we built up to that point. The guarantee covers new leads generated after your system goes live, not contacts already sitting in your CRM.",
+    a: "Connect your CRM, give us access, answer the setup questions, and show up to the kickoff call. That's your part. Within 30 days, new leads get traced back to their source — which channel, which campaign, which page, and what they turned into. If you've done your part and you still can't see it, we refund your first month, release you from the rest of the 90 days, and you keep everything we built up to that point. The guarantee covers new leads generated after your system goes live, not contacts already sitting in your CRM.",
   },
   {
     q: "Why do you ask for 90 days?",
@@ -165,7 +169,7 @@ const FAQS = [
   },
   {
     q: "Why do I need a CRM?",
-    a: "Because the guarantee runs on proof. Your CRM is where we trace every new lead back to its source, so when we show you where your work came from, the data is standing behind it. If you don't have one, apply anyway — we'll get you set up on Housecall Pro at our partner discount as part of the install.",
+    a: "Because the guarantee runs on proof. Your CRM is where we trace new leads back to their source, so when we show you where your work came from, the data is standing behind it. If you don't have one, apply anyway — we'll get you set up on Housecall Pro at our partner discount as part of the install.",
   },
   {
     q: "What if I already have a website?",
@@ -181,7 +185,28 @@ const FAQS = [
   },
 ];
 
-// Shared CTA block — same action everywhere, risk-reversal line under it.
+// Faded approved photography behind dark sections, for depth. The image sits
+// low-opacity under a vertical black wash so section edges blend and body copy
+// keeps its contrast.
+function ImageWash({
+  src,
+  position = "center center",
+}: {
+  src: string;
+  position?: string;
+}) {
+  return (
+    <div aria-hidden className="absolute inset-0 pointer-events-none overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover opacity-[0.22]"
+        style={{ backgroundImage: `url(${src})`, backgroundPosition: position }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-asp-black via-asp-black/75 to-asp-black" />
+    </div>
+  );
+}
+
+// Shared CTA — solid, bold, drop-shadowed text. One statement per button.
 function ApplyCTA({ dark = false, label = "Apply now" }: { dark?: boolean; label?: string }) {
   return (
     <div className="text-center mt-10">
@@ -214,8 +239,38 @@ function StepArrow() {
   );
 }
 
-// Two-column "them vs us" table. Deliberately names no competitor — the
-// category is the comparison, not any individual company.
+function MarkX() {
+  return (
+    <svg
+      className="w-4 h-4 text-white/25 shrink-0 mt-0.5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2.5}
+      viewBox="0 0 24 24"
+      aria-hidden
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  );
+}
+
+function MarkCheck() {
+  return (
+    <svg
+      className="w-4 h-4 text-asp-blue-light shrink-0 mt-0.5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={3}
+      viewBox="0 0 24 24"
+      aria-hidden
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+  );
+}
+
+// Dark comparison card. The ASP column is lifted with an accent tint, a left
+// rule, and check marks; the other column is muted and marked with an x.
 function CompareTable({
   rows,
   themLabel,
@@ -224,20 +279,28 @@ function CompareTable({
   themLabel: string;
 }) {
   return (
-    <div className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white overflow-hidden shadow-[0_12px_32px_-8px_rgba(15,23,42,0.18)]">
-      <div className="grid grid-cols-2 bg-asp-black text-white">
-        <div className="px-5 py-4 text-xs font-bold uppercase tracking-widest text-white/60">
-          {themLabel}
+    <div className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-white/[0.03] overflow-hidden shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
+      <div className="grid grid-cols-2">
+        <div className="px-5 py-4 border-b border-white/10">
+          <span className="text-[11px] font-bold uppercase tracking-widest text-white/40">
+            {themLabel}
+          </span>
         </div>
-        <div className="px-5 py-4 text-xs font-bold uppercase tracking-widest text-asp-blue-light border-l border-white/10">
-          ASP
+        <div className="px-5 py-4 border-b border-white/10 border-l-2 border-l-asp-blue-light bg-asp-blue-light/[0.07]">
+          <span className="text-[11px] font-bold uppercase tracking-widest text-asp-blue-light">
+            ASP
+          </span>
         </div>
       </div>
       {rows.map((r) => (
-        <div key={r.us} className="grid grid-cols-2 border-t border-gray-200">
-          <div className="px-5 py-4 text-gray-500 text-sm leading-relaxed">{r.them}</div>
-          <div className="px-5 py-4 text-asp-blue text-sm leading-relaxed font-semibold border-l border-gray-200 bg-asp-surface-light/40">
-            {r.us}
+        <div key={r.us} className="grid grid-cols-2">
+          <div className="px-5 py-4 border-t border-white/[0.06] flex gap-2.5">
+            <MarkX />
+            <span className="text-white/45 text-sm leading-relaxed">{r.them}</span>
+          </div>
+          <div className="px-5 py-4 border-t border-white/[0.06] border-l-2 border-l-asp-blue-light bg-asp-blue-light/[0.07] flex gap-2.5">
+            <MarkCheck />
+            <span className="text-white text-sm leading-relaxed font-medium">{r.us}</span>
           </div>
         </div>
       ))}
@@ -250,7 +313,7 @@ export default function LeadEnginePage() {
 
   return (
     <main id="primary" className="site-main">
-      {/* Hero — compact, dark gradient, promise left / application right */}
+      {/* Hero — promise left / application right */}
       <section className="relative bg-asp-black text-white overflow-hidden">
         <div
           aria-hidden
@@ -275,9 +338,9 @@ export default function LeadEnginePage() {
                 name. The same system closed{" "}
                 <strong className="text-white">$81,000 in 90 days</strong> for an HVAC company.
               </p>
-              <ul className="space-y-2.5 mb-8">
+              <ul className="space-y-2.5">
                 {[
-                  "Every new lead traced to its source in 30 days, or month one is refunded",
+                  "New leads traced to their source in 30 days, or month one is refunded",
                   "Website, SEO, content, reviews, CRM, tracking — built and run for you",
                   "You own the site, the accounts, and the data",
                 ].map((b) => (
@@ -295,9 +358,6 @@ export default function LeadEnginePage() {
                   </li>
                 ))}
               </ul>
-              <p className="text-white/50 text-xs">
-                Ten businesses at a time. Setup normally runs $7,500, waived for all ten.
-              </p>
             </div>
             <div id="apply-hero">
               <LeadEngineForm />
@@ -307,19 +367,19 @@ export default function LeadEnginePage() {
       </section>
 
       {/* Proof — first and biggest. Labeled by trade. */}
-      <section className="py-14 md:py-16 lg:py-20 bg-white">
-        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden">
+        <ImageWash src="/images/backgrounds/hero-trades-1.jpg" position="center 30%" />
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12 max-w-4xl mx-auto">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 Real operators. Real results.
               </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
-                The system already works. Here&apos;s what it did.
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
+                What this system did for five trades businesses.
               </h2>
-              <p className="text-gray-600 text-lg">
-                Five trades businesses. Five different markets. One system — find the one that
-                looks like yours.
+              <p className="text-white/65 text-lg">
+                Five different markets, one system. Find the one that looks like yours.
               </p>
             </div>
           </ScrollReveal>
@@ -329,15 +389,15 @@ export default function LeadEnginePage() {
               {PROOF.slice(0, 3).map((p) => (
                 <div
                   key={p.label}
-                  className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-8 text-center shadow-[0_12px_32px_-8px_rgba(15,23,42,0.18)]"
+                  className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-white/[0.04] p-8 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
                 >
-                  <p className="text-asp-blue text-xs font-bold uppercase tracking-widest mb-4">
+                  <p className="text-asp-blue-light text-xs font-bold uppercase tracking-widest mb-4">
                     {p.label}
                   </p>
                   <p className="font-black text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple mb-4">
                     {p.stat}
                   </p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{p.detail}</p>
+                  <p className="text-white/65 text-sm leading-relaxed">{p.detail}</p>
                 </div>
               ))}
             </div>
@@ -345,42 +405,50 @@ export default function LeadEnginePage() {
               {PROOF.slice(3).map((p) => (
                 <div
                   key={p.label}
-                  className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-8 text-center shadow-[0_12px_32px_-8px_rgba(15,23,42,0.18)]"
+                  className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-white/[0.04] p-8 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
                 >
-                  <p className="text-asp-blue text-xs font-bold uppercase tracking-widest mb-4">
+                  <p className="text-asp-blue-light text-xs font-bold uppercase tracking-widest mb-4">
                     {p.label}
                   </p>
                   <p className="font-black text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple mb-4">
                     {p.stat}
                   </p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{p.detail}</p>
+                  <p className="text-white/65 text-sm leading-relaxed">{p.detail}</p>
                 </div>
               ))}
             </div>
           </ScrollReveal>
 
           <ScrollReveal>
-            <p className="text-center text-gray-500 text-sm mt-8 max-w-4xl mx-auto">
+            <p className="text-center text-white/45 text-sm mt-8 max-w-4xl mx-auto">
               These are results from businesses running this system. Our guarantee covers the 30
               days of clarity below. What comes after depends on your market and how you work it.
             </p>
-            <ApplyCTA label="See if you qualify" />
+            <ApplyCTA dark label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* The comparison — the category is the argument */}
-      <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
-        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* The comparison */}
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-40 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(76, 201, 240, 0.14), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12 max-w-4xl mx-auto">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
                 You&apos;ve probably tried both
               </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
-                Two ways to buy help. Both leave a gap.
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
+                Both ways of buying help leave a gap.
               </h2>
-              <p className="text-gray-600 text-lg">
+              <p className="text-white/65 text-lg">
                 Hire an agency and you never learn how it works. Join a coaching program and the
                 building still lands on you. We do the building and the teaching.
               </p>
@@ -392,12 +460,12 @@ export default function LeadEnginePage() {
               <CompareTable rows={VS_AGENCY} themLabel="A typical agency" />
               <CompareTable rows={VS_COACHING} themLabel="A coaching program" />
             </div>
-            <ApplyCTA label="Apply now" />
+            <ApplyCTA dark label="Apply now" />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* What gets installed — problem-named pillars */}
+      {/* What gets installed — light relief, cards need the contrast */}
       <section className="py-14 md:py-16 lg:py-20 bg-white">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
@@ -406,10 +474,10 @@ export default function LeadEnginePage() {
                 What gets installed
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
-                Six problems that cost you jobs. We kill all six.
+                Six problems that cost you jobs.
               </h2>
               <p className="text-gray-600 text-lg">
-                One system where every piece feeds the next — and every piece belongs to you from
+                One system where every piece feeds the next, and every piece belongs to you from
                 day one.
               </p>
             </div>
@@ -435,13 +503,12 @@ export default function LeadEnginePage() {
           <ScrollReveal>
             <div className="mt-10 max-w-4xl mx-auto rounded-[var(--radius-asp-xl)] border-2 border-asp-purple/50 bg-asp-purple/[0.04] p-6 lg:p-8 text-center shadow-[0_12px_32px_-8px_rgba(159,76,255,0.25)]">
               <p className="font-black text-lg text-asp-blue mb-2">
-                Included for all 10 founding businesses
+                Included for all ten founding businesses
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Setup and system installation — normally $7,500 — waived. A full brand kit built
-                for you: logo system, colors, type, and guidelines, yours to keep whatever you do
-                next. Plus early access to our internal procedures system, currently in
-                development.
+                Setup and system installation, normally $7,500, waived. A full brand kit built for
+                you: logo system, colors, type, and guidelines, yours to keep whatever you do next.
+                Plus early access to our internal procedures system, currently in development.
               </p>
             </div>
             <ApplyCTA label="Claim one of the ten" />
@@ -449,16 +516,9 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* The part nobody else does — the differentiator gets its own stage */}
+      {/* The numbers layer — the differentiator gets its own stage */}
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-40 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(76, 201, 240, 0.16), transparent 70%)",
-          }}
-        />
+        <ImageWash src="/images/backgrounds/team-at-work.jpg" position="center 40%" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
@@ -490,63 +550,62 @@ export default function LeadEnginePage() {
       {/* The guarantee */}
       <section
         id="guarantee"
-        className="py-14 md:py-16 lg:py-20 bg-white scroll-mt-24"
+        className="relative py-14 md:py-16 lg:py-20 bg-asp-blue text-white overflow-hidden scroll-mt-24"
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal>
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              The 30-Day Clarity Guarantee
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-6 leading-tight">
-              In 30 days you&apos;ll know where every new lead came from. Or your first month is
-              refunded.
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              Connect your CRM. Give us access. Answer the setup questions. Show up to the kickoff
-              call. That&apos;s your part.
-            </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              Within 30 days, every new lead that comes in gets traced back to its source — which
-              channel, which campaign, which page, and what it turned into. Do your part and still
-              can&apos;t see it? We refund your first month, release you from the rest of the 90
-              days, and you keep everything we built.
-            </p>
-            <p className="font-bold text-asp-blue text-lg">
-              We guarantee what we control. The revenue numbers above are proof from other
-              businesses, not a forecast for yours.
-            </p>
-            <ApplyCTA label="Apply now" />
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Why 90 days — answers the lock-in objection before pricing */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
         <div
           aria-hidden
-          className="absolute inset-0 opacity-35 pointer-events-none"
+          className="absolute inset-0 opacity-60 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(159, 76, 255, 0.2), transparent 70%)",
+              "radial-gradient(ellipse 60% 60% at 50% 40%, rgba(76, 201, 240, 0.18), transparent 70%)",
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+              The 30-Day Clarity Guarantee
+            </span>
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
+              Know where your new leads came from in 30 days, or your first month is refunded.
+            </h2>
+            <p className="text-white/75 text-lg leading-relaxed mb-5">
+              Connect your CRM. Give us access. Answer the setup questions. Show up to the kickoff
+              call. That&apos;s your part.
+            </p>
+            <p className="text-white/75 text-lg leading-relaxed mb-5">
+              Within 30 days, new leads get traced back to their source — which channel, which
+              campaign, which page, and what they turned into. Do your part and still can&apos;t
+              see it? We refund your first month, release you from the rest of the 90 days, and you
+              keep everything we built.
+            </p>
+            <p className="font-bold text-white text-lg">
+              We guarantee what we control. The revenue numbers above are proof from other
+              businesses, not a forecast for yours.
+            </p>
+            <ApplyCTA dark label="Apply now" />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Why 90 days — light relief */}
+      <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal>
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
               The term
             </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              We ask for 90 days. Here&apos;s why.
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-6 leading-tight">
+              Why we ask for 90 days.
             </h2>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              You can&apos;t build a website, rank it, connect a CRM, and prove where your leads
+            <p className="text-gray-600 text-lg leading-relaxed mb-5">
+              You can&apos;t build a website, rank it, connect a CRM, and prove where new leads
               come from in three weeks. Ninety days is the honest minimum.
             </p>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
+            <p className="text-gray-600 text-lg leading-relaxed mb-5">
               After that, cancel any time. You keep the site, the accounts, the data, and the
               tracking. We don&apos;t hold anything back, because none of it was ever ours.
             </p>
-            <p className="font-bold text-white text-lg">
+            <p className="font-bold text-asp-blue text-lg">
               And if we miss the 30-day guarantee, you can walk right then and still keep
               everything we built.
             </p>
@@ -554,20 +613,21 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* How it works — arrows between steps */}
-      <section className="py-14 md:py-16 lg:py-20 bg-white">
-        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* How it works */}
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
+        <ImageWash src="/images/backgrounds/hero-trades-2.jpg" position="center 35%" />
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12 max-w-4xl mx-auto">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 How it works
               </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
                 From application to launch in four steps.
               </h2>
-              <p className="text-gray-600 text-lg">
-                We don&apos;t sell this to everyone. We take businesses we know we can win for —
-                that&apos;s what makes the guarantee possible.
+              <p className="text-white/65 text-lg">
+                We don&apos;t sell this to everyone. We take businesses we know we can win for,
+                which is what makes the guarantee possible.
               </p>
             </div>
           </ScrollReveal>
@@ -577,23 +637,23 @@ export default function LeadEnginePage() {
               {STEPS.map((s, i) => (
                 <div key={s.step} className="contents">
                   {i > 0 && <StepArrow />}
-                  <div className="flex-1 rounded-[var(--radius-asp-xl)] border border-gray-200 p-7 bg-white shadow-[0_16px_40px_-10px_rgba(15,23,42,0.25)]">
+                  <div className="flex-1 rounded-[var(--radius-asp-xl)] border border-white/10 bg-white/[0.04] p-7 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
                     <div className="font-black text-3xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple mb-3">
                       {s.step}
                     </div>
-                    <h3 className="font-black text-lg text-asp-blue mb-2">{s.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{s.body}</p>
+                    <h3 className="font-black text-lg text-white mb-2">{s.title}</h3>
+                    <p className="text-white/65 text-sm leading-relaxed">{s.body}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <ApplyCTA label="Start step one" />
+            <ApplyCTA dark label="Start step one" />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Review wall (trades-relevant only) */}
-      <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
+      {/* Review wall — light, quotes read best on paper */}
+      <section className="py-14 md:py-16 lg:py-20 bg-white">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12 max-w-4xl mx-auto">
@@ -630,13 +690,13 @@ export default function LeadEnginePage() {
       </section>
 
       {/* What it costs */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-blue text-white overflow-hidden">
         <div
           aria-hidden
-          className="absolute inset-0 opacity-35 pointer-events-none"
+          className="absolute inset-0 opacity-60 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(76, 201, 240, 0.16), transparent 70%)",
+              "radial-gradient(ellipse 60% 55% at 50% 50%, rgba(159, 76, 255, 0.18), transparent 70%)",
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -645,13 +705,13 @@ export default function LeadEnginePage() {
               What it costs
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              $2,997 a month. That&apos;s the whole install.
+              $2,997 a month for the whole install.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
               Website, SEO and AEO, content and social, local SEO and reviews, CRM integration,
               lead tracking, your numbers, and the monthly sit-down. Setup and installation
-              normally runs <strong className="text-white">$7,500</strong> — waived for the 10
-              founding businesses.
+              normally runs <strong className="text-white">$7,500</strong> and is waived for the
+              ten founding businesses.
             </p>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
               Want paid ads managed on top?{" "}
@@ -667,21 +727,22 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* Why only 10 — capacity-real scarcity */}
-      <section className="py-14 md:py-16 lg:py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Why only ten — capacity-real scarcity */}
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden">
+        <ImageWash src="/images/backgrounds/team-behind-scenes.jpg" position="center 45%" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              Why only 10
+              Why only ten
             </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-6 leading-tight">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
               We take ten businesses at a time.
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-5">
+            <p className="text-white/75 text-lg leading-relaxed mb-5">
               We build every website ourselves. Ten is what we can install properly at once
               without cutting corners on any of them.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-white/75 text-lg leading-relaxed">
               When those ten are filled, the next group starts once we have room.
             </p>
           </ScrollReveal>
@@ -694,20 +755,30 @@ export default function LeadEnginePage() {
         heading="Straight answers to fair questions."
       />
 
-      {/* Application — tight gap after FAQ */}
-      <section id="apply" className="pt-4 pb-14 md:pb-16 lg:pb-20 bg-asp-surface-light scroll-mt-24">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Application */}
+      <section
+        id="apply"
+        className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden scroll-mt-24"
+      >
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-60 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 65% 55% at 50% 0%, rgba(76, 201, 240, 0.16), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-8">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 Apply now
               </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4 leading-tight">
-                Two minutes. Seven questions. Zero obligation.
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
+                Seven questions, two minutes, no obligation.
               </h2>
-              <p className="text-gray-600 text-lg">
+              <p className="text-white/65 text-lg">
                 We review every application by hand and only move forward where we see a real fit.
-                We take 10 businesses at a time.
               </p>
             </div>
           </ScrollReveal>
@@ -722,7 +793,7 @@ export default function LeadEnginePage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-3">
-              Not sure it&apos;s a fit? Find out for $99.
+              Find out if it&apos;s a fit for $99.
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               We&apos;ll audit your systems and walk you through it on a 45-minute call. You get a
@@ -742,30 +813,19 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* Plain-English terms summary. The signed service agreement governs. */}
-      <section className="py-10 bg-asp-surface-light border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-500 text-xs leading-relaxed">
-            <strong className="text-gray-600">The fine print:</strong> The 90-Day
-            Install is billed monthly — $2,997/month, or $3,850/month with Google Local Services
-            Ads, Google Ads, and Meta ads management included. The first 90 days are the initial
-            term; after day 90 you may cancel at any time. Fees already paid are non-refundable
-            except under the 30-Day Clarity Guarantee below. Ad spend is not included in any ASP
-            fee: you pay it directly to the advertising platform from your own account, and ASP
-            never collects, holds, or marks it up. Ad-spend recommendations for your market are
-            covered on the discovery call. The 30-Day Clarity Guarantee applies where you have
-            completed your onboarding obligations — onboarding checklist within 14 days, access
-            granted to your CRM, Google Business Profile, domain and analytics, kickoff call
-            attended, and setup questionnaire returned. It is measured on source attribution being
-            live and populated in your dashboard for every new lead generated after your system
-            goes live. It does not apply to contacts already in your CRM, and it is not measured on
-            lead volume or revenue. If it is not live by day 30, your first month is refunded and
-            you are released from the remainder of the initial 90-day term. In every case, every asset built for you is yours to keep and
-            is transferred at no charge: the website and its code, your business accounts, your
-            content, and your data. Continuing past day 90 locks your monthly rate for 12 months
-            with no increase, on a 12-month term. Setup and installation is normally $7,500 and is
-            waived for founding businesses. All terms are defined in the service agreement signed
-            before work begins. This page is a summary; the service agreement governs.
+      {/* Terms live on /terms. The signed service agreement governs. */}
+      <section className="py-8 bg-asp-surface-navy border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-white/40 text-xs leading-relaxed">
+            Pricing, the initial term, the 30-Day Clarity Guarantee, and what you own are set out
+            in full in our{" "}
+            <a
+              href="/terms#install"
+              className="text-asp-blue-light font-semibold underline underline-offset-2 hover:text-white transition-colors"
+            >
+              terms and conditions
+            </a>
+            . This page is a summary; the service agreement you sign governs.
           </p>
         </div>
       </section>
