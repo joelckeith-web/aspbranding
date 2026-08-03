@@ -95,7 +95,13 @@ export default function TermsPage() {
             ASP guarantees that lead-source attribution will be live and populated in the client&apos;s dashboard within thirty (30) days of engagement start, subject to the client having completed its onboarding obligations: returning the onboarding checklist within fourteen (14) days, granting ASP access to the client&apos;s CRM, Google Business Profile, domain or DNS, and analytics, attending the kickoff call, and returning the setup questionnaire.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
-            The guarantee is measured on <strong>source attribution being live and populated for new leads generated after the client&apos;s system goes live.</strong> It does not apply to contacts already present in the client&apos;s CRM at engagement start, and it is <strong>not</strong> measured on lead volume, pipeline value, or revenue.
+            The guarantee is measured on <strong>source attribution being live and populated for digital leads generated after the client&apos;s system goes live.</strong> For the purposes of this Section, a <em>&ldquo;digital lead&rdquo;</em> is an inquiry arriving through a channel capable of carrying source data: paid search, paid social, organic search, the client&apos;s Google Business Profile, referral traffic, and direct website traffic.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            The guarantee expressly <strong>excludes</strong> offline and word-of-mouth referrals, walk-ins, and any inquiry arriving through a channel that carries no attributable source data, as no tracking system can attribute these. It does not apply to contacts already present in the client&apos;s CRM at engagement start, and it is <strong>not</strong> measured on lead volume, pipeline value, or revenue.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-6">
+            An active CRM is a condition of this offer. Where a client does not operate one at engagement start, ASP will provision one before the install begins; attribution cannot be evidenced without it.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             Where the client has met its onboarding obligations and attribution is not live by day 30, the client&apos;s first month&apos;s fee is refunded and the client is released from the remainder of the initial 90-day term. The client retains all assets built to that point.

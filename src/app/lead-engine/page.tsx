@@ -25,7 +25,7 @@ import testimonials from "@/data/testimonials.json";
 export const metadata: Metadata = {
   title: "The 90-Day Install — Your Marketing System, Built and Handed To You",
   description:
-    "We build your trades business a complete marketing system — website, SEO, CRM integration, lead tracking — then teach you to run it. $2,997/month. See where your new leads came from in 30 days or your first month is refunded.",
+    "We build your trades business a complete marketing system — website, SEO, CRM integration, lead tracking — then teach you to run it. $2,997/month. Inside 30 days you'll have the system built and every digital lead tracked, or your first month is refunded.",
   robots: { index: false, follow: false },
 };
 
@@ -93,8 +93,8 @@ const STACK = [
   },
   {
     problem: "No idea what's working",
-    title: "Tracking that proves where new leads came from",
-    body: "Custom form fields and source tracking on every new lead, feeding one dashboard. This is the piece the guarantee runs on.",
+    title: "Tracking that proves where your digital leads came from",
+    body: "Custom form fields, UTM tagging, and source tracking across paid search, paid social, organic, your Business Profile, and direct traffic, all feeding one dashboard. This is the piece the guarantee runs on.",
   },
 ];
 
@@ -145,11 +145,11 @@ const STEPS = [
 const FAQS = [
   {
     q: "What does the guarantee cover, exactly?",
-    a: "Connect your CRM, give us access, answer the setup questions, and show up to the kickoff call. That's your part. Within 30 days, new leads get traced back to their source — which channel, which campaign, which page, and what they turned into. If you've done your part and you still can't see it, we refund your first month, release you from the rest of the 90 days, and you keep everything we built up to that point. The guarantee covers new leads generated after your system goes live, not contacts already sitting in your CRM.",
+    a: "Connect your CRM, give us access, answer the setup questions, and show up to the kickoff call. That's your part. Inside your first 30 days you get the marketing system built and every digital lead traced to its source — paid search, paid social, organic, your Google Business Profile, and direct traffic. If you've done your part and you still can't see it, we refund your first month, release you from the rest of the 90 days, and you keep everything we built. Two limits worth stating plainly: word-of-mouth referrals can't be traced by any system, and the guarantee covers leads generated after your system goes live, not contacts already sitting in your CRM.",
   },
   {
     q: "Why do you ask for 90 days?",
-    a: "Because you cannot build a website, rank it, connect a CRM, and prove where new leads come from in three weeks. Ninety days is the honest minimum to install a system and have it produce something worth reading. After that you can cancel any time. If we miss the 30-day guarantee, you're out of the term early and you still keep everything.",
+    a: "The build itself moves fast — most of the system is standing inside the first week or two. Ninety days is what it takes for the system to produce enough data to be worth acting on: rankings move, campaigns gather history, and your tracking fills with real jobs. After that you can cancel any time. If we miss the 30-day guarantee, you're out of the term early and you still keep everything.",
   },
   {
     q: "What happens after the 90 days?",
@@ -169,7 +169,7 @@ const FAQS = [
   },
   {
     q: "Why do I need a CRM?",
-    a: "Because the guarantee runs on proof. Your CRM is where we trace new leads back to their source, so when we show you where your work came from, the data is standing behind it. If you don't have one, apply anyway — we'll get you set up on Housecall Pro at our partner discount as part of the install.",
+    a: "Because the guarantee runs on proof. Your CRM is where we trace digital leads back to their source, so when we show you where your work came from, the data is standing behind it. A CRM is required for this program — if you don't have one, we'll get you set up on Housecall Pro at our partner discount before the install starts.",
   },
   {
     q: "What if I already have a website?",
@@ -340,7 +340,7 @@ export default function LeadEnginePage() {
               </p>
               <ul className="space-y-2.5">
                 {[
-                  "New leads traced to their source in 30 days, or month one is refunded",
+                  "Digital leads traced to their source in 30 days, or month one is refunded",
                   "Website, SEO, content, reviews, CRM, tracking — built and run for you",
                   "You own the site, the accounts, and the data",
                 ].map((b) => (
@@ -566,17 +566,23 @@ export default function LeadEnginePage() {
               The 30-Day Clarity Guarantee
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              Know where your new leads came from in 30 days, or your first month is refunded.
+              Inside 30 days you&apos;ll have the system built and every digital lead tracked.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
               Connect your CRM. Give us access. Answer the setup questions. Show up to the kickoff
               call. That&apos;s your part.
             </p>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Within 30 days, new leads get traced back to their source — which channel, which
-              campaign, which page, and what they turned into. Do your part and still can&apos;t
-              see it? We refund your first month, release you from the rest of the 90 days, and you
-              keep everything we built.
+              Inside your first 30 days you get the marketing system built and every digital lead
+              traced to its source — paid search, paid social, organic, your Google Business
+              Profile, and direct. Which channel, which campaign, which page, and what it turned
+              into. Enough to make real decisions with instead of guesses.
+            </p>
+            <p className="text-white/75 text-lg leading-relaxed mb-5">
+              Word-of-mouth referrals are the one thing no system can trace, and we won&apos;t
+              pretend otherwise. Everything that arrives through a digital channel gets tracked. Do
+              your part and still can&apos;t see it? We refund your first month, release you from
+              the rest of the 90 days, and you keep everything we built.
             </p>
             <p className="font-bold text-white text-lg">
               We guarantee what we control. The revenue numbers above are proof from other
@@ -598,8 +604,8 @@ export default function LeadEnginePage() {
               Why we ask for 90 days.
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              You can&apos;t build a website, rank it, connect a CRM, and prove where new leads
-              come from in three weeks. Ninety days is the honest minimum.
+              The build moves fast. Most of the system is standing inside the first week or two.
+              Ninety days is what it takes for that system to produce enough data to act on.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
               After that, cancel any time. You keep the site, the accounts, the data, and the
