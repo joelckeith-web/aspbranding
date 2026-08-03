@@ -1,6 +1,6 @@
 "use client";
 
-// Application form for the 90-Day Lead Engine offer. Every field is
+// Application form for the 90-Day Install offer. Every field is
 // required — the form IS the qualification filter. UTM params are captured
 // into hidden fields so every application carries its source (the same
 // attribution treatment the offer sells).
@@ -35,6 +35,17 @@ const REVENUE_OPTIONS = [
   { value: "1m-3m", label: "$1M – $3M" },
   { value: "3m-5m", label: "$3M – $5M" },
   { value: "5m-plus", label: "$5M+" },
+];
+
+// Average job value is the filter that keeps low-ticket trades out — the
+// pipeline math in the offer only works above roughly $1,500 a job.
+const JOB_VALUE_OPTIONS = [
+  { value: "", label: "Average job value *" },
+  { value: "under-500", label: "Under $500" },
+  { value: "500-1500", label: "$500 – $1,500" },
+  { value: "1500-5000", label: "$1,500 – $5,000" },
+  { value: "5000-15000", label: "$5,000 – $15,000" },
+  { value: "15000-plus", label: "$15,000+" },
 ];
 
 const UTM_KEYS = [
@@ -172,7 +183,7 @@ export function LeadEngineForm() {
   return (
     <div className="relative rounded-[var(--radius-asp-xl)] p-[2px] bg-asp-gradient-cta shadow-asp-xl">
       <div className="bg-white rounded-[calc(var(--radius-asp-xl)-2px)] p-6 md:p-8">
-        <h3 className="font-bold text-xl text-asp-blue mb-1">Apply for the 90-Day Lead Engine</h3>
+        <h3 className="font-bold text-xl text-asp-blue mb-1">Apply for the 90-Day Install</h3>
         <p className="text-gray-500 text-sm mb-6">
           Every application gets a discovery call first. We only take businesses we know we can win
           for.
@@ -221,6 +232,14 @@ export function LeadEngineForm() {
               ))}
             </select>
           </div>
+
+          <select name="jobValue" required defaultValue="" className={`${inputClass} text-gray-500`}>
+            {JOB_VALUE_OPTIONS.map((o) => (
+              <option key={o.value} value={o.value} disabled={o.value === ""}>
+                {o.label}
+              </option>
+            ))}
+          </select>
 
           {/* Honeypot — hidden from humans, tempting to bots. */}
           <input

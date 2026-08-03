@@ -4,24 +4,29 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { LeadEngineForm } from "@/components/sections/LeadEngineForm";
 import testimonials from "@/data/testimonials.json";
 
-// Ad landing page for the 90-Day Lead Engine offer. NOT in the sitemap or
-// nav; noindex until launch — traffic arrives from paid campaigns only.
+// Ad landing page for the 90-Day Install offer. NOT in the sitemap or nav;
+// noindex until launch — traffic arrives from paid campaigns only.
 //
-// Layout follows verified application-funnel patterns (Hormozi acquisition.com
-// + Brunson/ClickFunnels research, 2026-07-21): promise-left/form-right hero,
-// results-first page order, problem-named pillar cards, price-of-THIS-offer
-// disclosed in a "what does it cost" frame with the ascension ladder held for
-// the day-90 call, qualification-framed CTAs repeated with risk-reversal
-// microlines, arrows between process steps.
+// v5 rewrite (2026-08-03). The $997 sprint and the $10K pipeline guarantee are
+// GONE. The offer is now $2,997/mo (or $3,850 with paid ads managed), a 90-day
+// initial term, and a 30-Day Clarity Guarantee measured on attribution being
+// live — the one promise entirely inside ASP's control. Pipeline numbers are
+// proof, never promise.
+//
+// Layout still follows the verified application-funnel patterns (Hormozi
+// acquisition.com + Brunson/ClickFunnels research): promise-left/form-right
+// hero, results-first page order, problem-named pillar cards, arrows between
+// process steps, qualification-framed CTAs with risk-reversal microlines.
 
 export const metadata: Metadata = {
-  title: "The 90-Day Lead Engine — $10,000 in Pipeline, Guaranteed",
+  title: "The 90-Day Install — Your Marketing System, Built and Handed To You",
   description:
-    "A complete lead engine for your trades business — new website, SEO, content, and tracking — for $997/month for 90 days. $10,000 in qualified pipeline or every ASP fee drops to $0.",
+    "We build your trades business a complete marketing system — website, SEO, CRM integration, lead tracking — then teach you to run it. $2,997/month. See where every lead comes from in 30 days or your first month is refunded.",
   robots: { index: false, follow: false },
 };
 
 // Proof first, labeled by trade — every visitor finds "someone like me."
+// Industry only, never client names. Standing rule, applies to ads too.
 const PROOF = [
   {
     label: "HVAC",
@@ -65,7 +70,7 @@ const STACK = [
   {
     problem: "Invisible on Google and AI",
     title: "SEO + AEO that puts you where homeowners look",
-    body: "Rank when they search Google. Get recommended when they ask AI who to call. Both matter now, and we build for both.",
+    body: "Rank when they search Google. Get recommended when they ask an AI tool who to call. Both matter now, and we build for both.",
   },
   {
     problem: "Ghost-town social pages",
@@ -80,20 +85,39 @@ const STACK = [
   {
     problem: "Leads fall through the cracks",
     title: "Wired into the CRM you already run",
-    body: "Jobber, Housecall Pro, Service Fusion — whatever you use, we connect it. Need one? We set you up on Housecall Pro at our partner discount.",
+    body: "Jobber, Housecall Pro, Service Fusion — whatever you use, we connect it, then build the speed-to-lead workflow so no call sits waiting.",
   },
   {
     problem: "No idea what's working",
     title: "Tracking that proves where every lead came from",
-    body: "Custom form fields and source tracking on every lead. You'll know which channel sent every job — because our guarantee runs on proof.",
+    body: "Custom form fields and source tracking on every lead, feeding one dashboard. This is the piece the guarantee runs on.",
   },
+];
+
+const VS_AGENCY = [
+  { them: "Leads, and nothing you can inspect.", us: "Leads, and the system that makes them." },
+  { them: "They own the website — or their platform does.", us: "You own it. Code, domain, hosting." },
+  { them: "Ad accounts and data in their name.", us: "Every account in your name, from day one." },
+  { them: "Trust the monthly report.", us: "You see it live, lead by lead, source by source." },
+  { them: "Leave and you start over.", us: "Leave and you keep all of it, still running." },
+  { them: "You never learn how any of it works.", us: "A monthly sit-down and a training library." },
+  { them: "Six to twelve month lock.", us: "90 days, then cancel any time." },
+];
+
+const VS_COACHING = [
+  { them: "$1,000–$3,000 a month, plus travel to the event.", us: "$2,997 a month. Nowhere to fly." },
+  { them: "A playbook, a dashboard, and a conference.", us: "A built website, SEO, CRM, and tracking." },
+  { them: "You do the work, after hours.", us: "We install it. You run it." },
+  { them: "Marketing execution not included.", us: "Marketing execution is the whole thing." },
+  { them: "Results depend entirely on your implementation.", us: "30-day clarity guarantee, in writing." },
+  { them: "You finish with binders.", us: "You finish with a working system." },
 ];
 
 const STEPS = [
   {
     step: "1",
     title: "Apply",
-    body: "Six questions, two minutes. It's how we know if we can win for you before anyone gets on a call.",
+    body: "Seven questions, two minutes. It's how we know if we can win for you before anyone gets on a call.",
   },
   {
     step: "2",
@@ -103,47 +127,55 @@ const STEPS = [
   {
     step: "3",
     title: "Qualify",
-    body: "We only take businesses we're confident we can deliver the guarantee for. If it's not a fit, we say so plainly.",
+    body: "We only take businesses we're confident we can deliver for. If it's not a fit, we say so plainly.",
   },
   {
     step: "4",
     title: "Build + launch",
-    body: "Site, SEO, content, tracking — live and generating inside your first 90 days.",
+    body: "Site, SEO, content, CRM, tracking — installed and running inside your first 90 days.",
   },
 ];
 
 const FAQS = [
   {
     q: "What does the guarantee cover, exactly?",
-    a: "If our system hasn't put $10,000 of qualified work into your pipeline by day 90, every ASP fee drops to $0 until it has. A qualified lead is a tracked, source-verified inquiry where the prospect stated a budget or asked about a service with pricing listed on your site. It's measured on pipeline generated — the leads and the dollar value behind them — not on which jobs you close. Your sales process stays yours.",
+    a: "Connect your CRM, give us access, answer the setup questions, and show up to the kickoff call. That's your side. Within 30 days you'll see every lead traced back to where it came from — which channel, which campaign, which page, and what it turned into. If you've done your part and you still can't see it, we refund your first month, you're released from the rest of the 90 days, and you keep everything we built up to that point.",
   },
   {
-    q: "What does 'we work for free' mean? What's the catch?",
-    a: "It means our fees go to $0 — all of them — until the $10,000 mark is hit. There's no catch hiding in ad spend, because we never collect ad spend. If you choose to run Google Ads, that money goes straight from your card to Google in your own account. We never touch it.",
-  },
-  {
-    q: "What if day 90 comes, the number isn't there, and I want out?",
-    a: "You have two options, and the choice is yours. One: our fees stay at $0 and we keep working — for free — until the $10,000 is in your pipeline. Two: you cancel. Fees already paid aren't refunded; the free work is the remedy. But either way, you keep every asset we built for you: the website and its code, your business accounts, your content, and your data. We transfer all of it to you at no charge.",
-  },
-  {
-    q: "Why do I need a CRM to qualify?",
-    a: "Because the guarantee runs on proof. Your CRM is where we track every lead back to its source, so when we say the pipeline is there, the data shows it. If you don't have one, apply anyway — we'll get you set up on Housecall Pro at our partner discount as part of the build.",
-  },
-  {
-    q: "Do I have to run ads?",
-    a: "No. The $997 sprint is built on organic — your website, search rankings, AI visibility, content, and reviews. If you want Google Ads managed on top, the sprint is $1,497/month. Ad spend is separate and never part of ASP's fee — you pay it directly to Google from your own account, and we never collect or hold it. How much spend makes sense for your market is something we go through together on the discovery call. Ads speed things up; they aren't required.",
+    q: "Why do you ask for 90 days?",
+    a: "Because you cannot build a website, rank it, connect a CRM, and prove where leads come from in three weeks. Ninety days is the honest minimum to install a system and have it produce something worth reading. After that you can cancel any time. We ask for the 90 days to do the work properly — not to trap you, which is why the guarantee lets you out early if we don't deliver.",
   },
   {
     q: "What happens after the 90 days?",
-    a: "By day 90 you'll have three months of your own pipeline data — every lead, every source, every dollar. At your day-90 review we walk through what the system produced and what continuing looks like. Nothing renews without that conversation, and whatever you decide, the website, accounts, and data stay yours.",
+    a: "Your call, entirely. Cancel and you keep every asset — the website and its code, your accounts, your content, your data, transferred at no charge. Or stay, and we lock your rate for the next 12 months with no increases. Nothing renews by surprise; we walk through it together at your day-90 review.",
+  },
+  {
+    q: "Do I own the website?",
+    a: "Yes. The code, the domain, and the hosting account are in your name from day one. If you leave, it comes with you and it keeps working. There are no exit fees and nothing is held back. None of it was ever ours.",
+  },
+  {
+    q: "Is ad spend included?",
+    a: "No, and we never touch it. If you run ads, that money goes directly from your card to Google or Meta inside your own accounts. We never collect, hold, or mark up ad spend, so there is nothing hidden inside what we charge you. What makes sense to budget for your market is part of the discovery call.",
+  },
+  {
+    q: "Do I have to run ads?",
+    a: "No. The $2,997 install is built on what you own — your website, search rankings, AI visibility, content, reviews, and the tracking underneath all of it. If you want paid ads managed on top, that tier is $3,850 a month and covers Google Local Services Ads, Google Ads, and Meta. Ads speed things up. They are not required.",
+  },
+  {
+    q: "Why do I need a CRM?",
+    a: "Because the guarantee runs on proof. Your CRM is where we trace every lead back to its source, so when we show you where your work came from, the data is standing behind it. If you don't have one, apply anyway — we'll get you set up on Housecall Pro at our partner discount as part of the install.",
   },
   {
     q: "What if I already have a website?",
-    a: "We'll rebuild it on a structure that converts better — and you keep full ownership of the new one. If your current site performs, we'll tell you that too. The point is booked jobs, not busywork.",
+    a: "We'll rebuild it on a structure that converts better, and you keep full ownership of the new one. If your current site is performing, we'll tell you that too. The point is booked jobs, not busywork.",
   },
   {
-    q: "Why is it only $997 a month?",
-    a: "Because it's an introductory sprint, capped at a handful of businesses at a time. We're betting that after 90 days of watching your pipeline fill, you'll want to keep going. Most do. We win when you win — and we're willing to prove it first.",
+    q: "How is this different from a coaching program?",
+    a: "Coaching hands you a playbook and wishes you luck. The work still lands on you, after hours, on top of running your business. We build the system first — the site, the tracking, the CRM connection, all of it — and then teach you how it runs. You get the same understanding a coaching program promises, except the thing already exists when the teaching starts.",
+  },
+  {
+    q: "What do you actually need from me?",
+    a: "Access to your accounts, honest answers to the setup questions, and one hour a month for the review call. That's the whole ask. The install is our job.",
   },
 ];
 
@@ -181,6 +213,37 @@ function StepArrow() {
   );
 }
 
+// Two-column "them vs us" table. Deliberately names no competitor — the
+// category is the comparison, not any individual company.
+function CompareTable({
+  rows,
+  themLabel,
+}: {
+  rows: { them: string; us: string }[];
+  themLabel: string;
+}) {
+  return (
+    <div className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white overflow-hidden shadow-[0_12px_32px_-8px_rgba(15,23,42,0.18)]">
+      <div className="grid grid-cols-2 bg-asp-black text-white">
+        <div className="px-5 py-4 text-xs font-bold uppercase tracking-widest text-white/60">
+          {themLabel}
+        </div>
+        <div className="px-5 py-4 text-xs font-bold uppercase tracking-widest text-asp-blue-light border-l border-white/10">
+          ASP
+        </div>
+      </div>
+      {rows.map((r) => (
+        <div key={r.us} className="grid grid-cols-2 border-t border-gray-200">
+          <div className="px-5 py-4 text-gray-500 text-sm leading-relaxed">{r.them}</div>
+          <div className="px-5 py-4 text-asp-blue text-sm leading-relaxed font-semibold border-l border-gray-200 bg-asp-surface-light/40">
+            {r.us}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function LeadEnginePage() {
   const reviews = testimonials.filter((t) => t.firstName !== "Tray G.");
 
@@ -200,22 +263,22 @@ export default function LeadEnginePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                The 90-Day Lead Engine · For trades businesses
+                The 90-Day Install · For trades businesses
               </span>
               <h1 className="font-black text-4xl md:text-5xl 2xl:text-6xl leading-[1.08] mb-5">
-                $10,000 of work in your pipeline in 90 days —{" "}
-                <span className="hero-text-gradient">or we work free until it&apos;s there.</span>
+                We build your marketing system.{" "}
+                <span className="hero-text-gradient">Then we teach you to run it.</span>
               </h1>
               <p className="text-white/75 text-lg leading-relaxed mb-6">
-                The same system that closed <strong className="text-white">$81,000 in 90 days</strong>{" "}
-                for an HVAC company — a complete lead engine for $997/month. We&apos;re
-                selecting a limited group of trades businesses to run it for. Apply to see if you
-                qualify.
+                Agencies keep you in the dark. Coaching programs hand you a binder and wish you
+                luck. We install the whole thing — website, tracking, CRM, lead flow — then show
+                you exactly how it works. The same system closed{" "}
+                <strong className="text-white">$81,000 in 90 days</strong> for an HVAC company.
               </p>
               <ul className="space-y-2.5 mb-8">
                 {[
-                  "New website, SEO/AEO, content, reviews — built and run for you",
-                  "Every lead tracked to its source. The guarantee runs on proof.",
+                  "See where every lead comes from in 30 days — or your first month is refunded",
+                  "Website, SEO/AEO, content, reviews, CRM and tracking, built and run for you",
                   "You own the website, the accounts, and the data. Always.",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3 text-white/80 text-sm">
@@ -233,7 +296,7 @@ export default function LeadEnginePage() {
                 ))}
               </ul>
               <p className="text-white/50 text-xs">
-                First 5 businesses accepted get a full brand kit — free, theirs to keep.
+                We take 10 businesses at a time. Setup normally runs $7,500 — waived for all 10.
               </p>
             </div>
             <div id="apply-hero">
@@ -297,50 +360,50 @@ export default function LeadEnginePage() {
           </ScrollReveal>
 
           <ScrollReveal>
+            <p className="text-center text-gray-500 text-sm mt-8 max-w-2xl mx-auto">
+              These are results, not promises. What we guarantee is the 30 days of clarity below.
+              The rest is what happens when the system is built right and you work it.
+            </p>
             <ApplyCTA />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* The math */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-40 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(76, 201, 240, 0.16), transparent 70%)",
-          }}
-        />
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* The comparison — the category is the argument */}
+      <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Do the math
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              $2,991 in. $10,000 guaranteed in your pipeline.
-            </h2>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Three months at $997 is $2,991. We guarantee $10,000 of qualified work lands in your
-              pipeline in that window — a 3.3x return on the fee before you close a single job. At a
-              typical 30% margin, closing just a third of that pipeline covers your entire cost.
-            </p>
-            <p className="text-white/60 leading-relaxed">
-              Most agencies sell you ads and report impressions. We build the growth system around
-              your business and put a number on it. If it doesn&apos;t move a number, we don&apos;t
-              ship it.
-            </p>
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                You&apos;ve probably tried both
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
+                One takes the wheel. The other hands you a manual.
+              </h2>
+              <p className="text-gray-600 text-lg">
+                Hire an agency and you never learn how it works. Join a coaching program and the
+                work still lands on you. We do the building and the teaching.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <CompareTable rows={VS_AGENCY} themLabel="A typical agency" />
+              <CompareTable rows={VS_COACHING} themLabel="A coaching program" />
+            </div>
+            <ApplyCTA />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* What the sprint builds — problem-named pillars */}
+      {/* What gets installed — problem-named pillars */}
       <section className="py-14 md:py-16 lg:py-20 bg-white">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12 max-w-3xl mx-auto">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                What the sprint builds
+                What gets installed
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
                 Six problems that cost you jobs. We kill all six.
@@ -372,11 +435,13 @@ export default function LeadEnginePage() {
           <ScrollReveal>
             <div className="mt-10 max-w-3xl mx-auto rounded-[var(--radius-asp-xl)] border-2 border-asp-purple/50 bg-asp-purple/[0.04] p-6 lg:p-8 text-center shadow-[0_12px_32px_-8px_rgba(159,76,255,0.25)]">
               <p className="font-black text-lg text-asp-blue mb-2">
-                Founding bonus — first 5 businesses only
+                Included for all 10 founding businesses
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                The first 5 businesses accepted get a full brand kit built for them — logo system,
-                colors, type, and brand guidelines. Yours to keep, whatever you do next.
+                Setup and system installation — normally $7,500 — waived. A full brand kit built
+                for you: logo system, colors, type, and guidelines, yours to keep whatever you do
+                next. Plus early access to our internal procedures system, currently in
+                development.
               </p>
             </div>
             <ApplyCTA />
@@ -384,8 +449,80 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
+      {/* The part nobody else does — the differentiator gets its own stage */}
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-40 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(76, 201, 240, 0.16), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal>
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+              And the part no marketing company does
+            </span>
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
+              We sit down with you every month and go through your numbers.
+            </h2>
+            <p className="text-white/75 text-lg leading-relaxed mb-5">
+              Your margin, broken out by job type. Your breakeven. A look at your pricing. And a
+              straight answer on what your business can afford to spend on marketing — based on
+              your real numbers, not a percentage someone made up.
+            </p>
+            <p className="text-white/75 text-lg leading-relaxed mb-5">
+              One hour a month, going through your own dashboard together. Not a report you
+              can&apos;t read — a conversation about what&apos;s working, what isn&apos;t, and what
+              to do next. You also get a training library, so you learn the system instead of
+              depending on us to explain it.
+            </p>
+            <p className="text-white/60 leading-relaxed">
+              That is the whole difference. Most agencies won&apos;t look at your books. Most
+              coaches won&apos;t build your website. We do both, because one without the other
+              doesn&apos;t move anything.
+            </p>
+            <ApplyCTA dark />
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* The guarantee */}
-      <section id="guarantee" className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden scroll-mt-24">
+      <section
+        id="guarantee"
+        className="py-14 md:py-16 lg:py-20 bg-white scroll-mt-24"
+      >
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal>
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+              The 30-Day Clarity Guarantee
+            </span>
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-6 leading-tight">
+              In 30 days you&apos;ll know where every lead comes from. Or your first month is
+              refunded.
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-5">
+              Connect your CRM. Give us access. Answer the setup questions. Show up to the kickoff
+              call. That is your part, and it is the whole of your part.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-5">
+              Within 30 days you&apos;ll see every lead traced back to where it came from — which
+              channel, which campaign, which page, and what it turned into. Do your part and still
+              can&apos;t see it? We refund your first month, you&apos;re released from the rest of
+              the 90 days, and you keep everything we built.
+            </p>
+            <p className="font-bold text-asp-blue text-lg">
+              We guarantee the thing we control. Everything else on this page is proof, not a
+              promise.
+            </p>
+            <ApplyCTA />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Why 90 days — answers the lock-in objection before pricing */}
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 opacity-35 pointer-events-none"
@@ -397,27 +534,23 @@ export default function LeadEnginePage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              The $10K Pipeline Guarantee
+              Straight about the term
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              $10,000 in qualified pipeline by day 90 — or we work free until you get there.
+              We ask for 90 days. Here&apos;s why, up front.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Not store credit. Not a discount on more services. Our fees go to zero and we keep
-              working until your pipeline gets there. Your only remaining cost is any ad spend you
-              choose to run — and that goes straight to Google from your own account. We never
-              collect it, so there&apos;s nothing hidden in &quot;free.&quot;
+              You can&apos;t build a website, rank it, connect a CRM, and prove where your leads
+              come from in three weeks. Ninety days is the honest minimum.
             </p>
-            <p className="text-white/75 text-lg leading-relaxed mb-6">
-              Every lead is tracked to its source with the attribution system we build into your
-              site. When we say the pipeline is there, you&apos;ll see the receipts — lead by lead,
-              dollar by dollar.
+            <p className="text-white/75 text-lg leading-relaxed mb-5">
+              After that, cancel any time. You keep all of it — the site, the accounts, the data,
+              the tracking. We don&apos;t hold anything hostage, because none of it was ever ours.
             </p>
-            <p className="font-bold text-white text-lg mb-2">
-              And either way: you own the website. You own the accounts. You own the data.
+            <p className="font-bold text-white text-lg">
+              And if we miss the 30-day guarantee, you can walk right then — and still keep
+              everything we built.
             </p>
-            <p className="text-white/60">Walk away any time with all of it.</p>
-            <ApplyCTA dark />
           </ScrollReveal>
         </div>
       </section>
@@ -497,7 +630,7 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* What it costs — price of THIS offer, straight answer */}
+      {/* What it costs */}
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
         <div
           aria-hidden
@@ -513,22 +646,45 @@ export default function LeadEnginePage() {
               What it costs
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              $997 a month for 90 days. That&apos;s the whole sprint.
+              $2,997 a month. That&apos;s the whole install.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Want Google Ads managed on top to speed up the pipeline?{" "}
-              <strong className="text-white">$1,497/month</strong>. Ad spend itself is not included
-              in either price — you pay it directly to Google from your own account, and ASP never
-              collects a dollar of it. What makes sense to budget for your market is part of the
-              discovery call.
+              Website, SEO and AEO, content and social, local SEO and reviews, CRM integration,
+              lead tracking, your numbers, and the monthly sit-down. Setup and installation
+              normally runs <strong className="text-white">$7,500</strong> — waived for the 10
+              founding businesses.
             </p>
-            <p className="text-white/60 leading-relaxed mb-2">
-              Why so low? Because it&apos;s an introductory sprint, capped at a handful of
-              businesses. After 90 days you&apos;ll have three months of your own pipeline data —
-              and we&apos;ll walk through what continuing looks like at your day-90 review. Nothing
-              renews without that conversation.
+            <p className="text-white/75 text-lg leading-relaxed mb-5">
+              Want paid ads managed on top?{" "}
+              <strong className="text-white">$3,850/month</strong> covers Google Local Services
+              Ads, Google Ads, and Meta. Ad spend is separate in both cases — you pay it directly
+              to the platforms from your own accounts, and ASP never collects a dollar of it.
+            </p>
+            <p className="text-white/75 text-lg leading-relaxed mb-2">
+              Stay past 90 days and we lock your rate for 12 months. No increases.
             </p>
             <ApplyCTA dark />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Why only 10 — capacity-real scarcity */}
+      <section className="py-14 md:py-16 lg:py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal>
+            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+              Why only 10
+            </span>
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-6 leading-tight">
+              We take 10 businesses at a time.
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-5">
+              That isn&apos;t a marketing line. We build every website ourselves, and 10 is what we
+              can install properly at once without cutting corners on any of them.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              When those 10 are filled, the next group starts when we have room.
+            </p>
           </ScrollReveal>
         </div>
       </section>
@@ -548,11 +704,11 @@ export default function LeadEnginePage() {
                 Apply now
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4 leading-tight">
-                Two minutes. Six questions. Zero obligation.
+                Two minutes. Seven questions. Zero obligation.
               </h2>
               <p className="text-gray-600 text-lg">
                 We review every application by hand and only move forward where we see a real fit.
-                Spots are limited — the first 5 accepted get the founding brand-kit bonus.
+                We take 10 businesses at a time.
               </p>
             </div>
           </ScrollReveal>
@@ -562,23 +718,54 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
+      {/* Secondary path — the $99 audit. Deliberately not a co-equal CTA. */}
+      <section className="py-12 bg-white border-t border-gray-200">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <ScrollReveal>
+            <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-3">
+              Not sure it&apos;s a fit? Find out for $99.
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              We&apos;ll audit your systems and walk you through it on a 45-minute call. You get a
+              competitor teardown, a check on whether AI tools recommend you, a technical read on
+              your website, and a straight answer on where your lead tracking is broken.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              If you decide to move forward, the $99 comes off your first month.
+            </p>
+            <a
+              href="/contact?ref=systems-audit"
+              className="inline-block border-2 border-asp-blue text-asp-blue font-bold py-3 px-8 rounded-[var(--radius-asp-lg)] hover:bg-asp-blue hover:text-white transition-colors no-underline"
+            >
+              Book the $99 Systems Audit
+            </a>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Plain-English terms summary. The signed service agreement governs. */}
       <section className="py-10 bg-asp-surface-light border-t border-gray-200">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-gray-500 text-xs leading-relaxed">
             <strong className="text-gray-600">The fine print, in plain English:</strong> The 90-Day
-            Lead Engine is billed monthly — $997/month, or $1,497/month with Google Ads management —
-            for the 90-day sprint. Fees already paid are non-refundable. Ad spend is not included in
-            any ASP fee: you pay it directly to the advertising platform from your own account, and
-            ASP never collects, holds, or marks it up. Ad-spend recommendations for your market are
-            covered on the discovery call. If your pipeline has not reached $10,000 in qualified
-            leads by day 90, your remedy is the guarantee itself: ASP&apos;s fees drop to $0 and the
-            work continues at no charge until the $10,000 mark is reached — or you may cancel
-            instead. In either case, every asset built for you during the sprint is yours to keep,
-            transferred to you at no charge: the website and its code, your business accounts, your
-            content, and your data. &quot;Qualified lead&quot; and all terms are defined in the
-            service agreement signed before work begins. This page is a summary; the service
-            agreement governs.
+            Install is billed monthly — $2,997/month, or $3,850/month with Google Local Services
+            Ads, Google Ads, and Meta ads management included. The first 90 days are the initial
+            term; after day 90 you may cancel at any time. Fees already paid are non-refundable
+            except under the 30-Day Clarity Guarantee below. Ad spend is not included in any ASP
+            fee: you pay it directly to the advertising platform from your own account, and ASP
+            never collects, holds, or marks it up. Ad-spend recommendations for your market are
+            covered on the discovery call. The 30-Day Clarity Guarantee applies where you have
+            completed your onboarding obligations — onboarding checklist within 14 days, access
+            granted to your CRM, Google Business Profile, domain and analytics, kickoff call
+            attended, and setup questionnaire returned. It is measured on lead-source attribution
+            being live and populated in your dashboard, not on lead volume or revenue. If it is not
+            live by day 30, your first month is refunded and you are released from the remainder of
+            the initial 90-day term. In every case, every asset built for you is yours to keep and
+            is transferred at no charge: the website and its code, your business accounts, your
+            content, and your data. Continuing past day 90 locks your monthly rate for 12 months
+            with no increase, on a 12-month term. Setup and installation is normally $7,500 and is
+            waived for founding businesses. All terms are defined in the service agreement signed
+            before work begins. This page is a summary; the service agreement governs.
           </p>
         </div>
       </section>

@@ -4,7 +4,7 @@ import { verifyRecaptcha } from "@/lib/recaptcha";
 import { checkSpam } from "@/lib/spam-filter";
 import { reviewSubmission } from "@/lib/ai-spam-review";
 
-// Application handler for the 90-Day Lead Engine offer. Mirrors the
+// Application handler for the 90-Day Install offer. Mirrors the
 // /api/contact defense stack (honeypot → keyword filter → time-gate →
 // reCAPTCHA → AI review) with this form's own field set. The honeypot is
 // "fax" here because this form has a REAL website field.
@@ -31,6 +31,7 @@ export async function POST(request: Request) {
       websiteUrl,
       crm,
       revenue,
+      jobValue,
       recaptchaToken,
       recaptchaAction,
       formTime,
@@ -65,11 +66,11 @@ export async function POST(request: Request) {
     }
 
     // Every field is required — the form is the qualification filter.
-    if (!name || !email || !company || !websiteUrl || !crm || !revenue) {
+    if (!name || !email || !company || !websiteUrl || !crm || !revenue || !jobValue) {
       return NextResponse.json(
         {
           error:
-            "Name, email, company, website (or 'I don't have one'), CRM, and annual revenue are all required.",
+            "Name, email, company, website (or 'I don't have one'), CRM, annual revenue, and average job value are all required.",
         },
         { status: 400 },
       );
@@ -92,7 +93,7 @@ export async function POST(request: Request) {
       email,
       company,
       service: "90-day-lead-engine",
-      message: `Website: ${websiteUrl} · CRM: ${crm} · Revenue: ${revenue}`,
+      message: `Website: ${websiteUrl} · CRM: ${crm} · Revenue: ${revenue} · Avg job: ${jobValue}`,
     });
     if (review.classification === "vendor") {
       console.log("[lead-engine] AI flagged as vendor:", {
@@ -116,13 +117,14 @@ export async function POST(request: Request) {
       subject: `Lead Engine Application: ${name} — ${company} (${revenue})`,
       replyTo: email,
       html: `
-        <h2>New 90-Day Lead Engine Application</h2>
+        <h2>New 90-Day Install Application</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Company:</strong> ${company}</p>
         <p><strong>Website:</strong> ${websiteUrl}</p>
         <p><strong>CRM:</strong> ${crm}</p>
         <p><strong>Annual revenue:</strong> ${revenue}</p>
+        <p><strong>Average job value:</strong> ${jobValue}</p>
         <hr />
         <h3>Source attribution</h3>
         ${utmRows || "<p><em>No UTM parameters captured (direct visit).</em></p>"}
