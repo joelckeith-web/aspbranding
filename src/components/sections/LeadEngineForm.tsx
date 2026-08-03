@@ -14,6 +14,8 @@ declare global {
         execute: (siteKey: string, opts: { action: string }) => Promise<string>;
       };
     };
+    fbq?: (...args: unknown[]) => void;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -148,6 +150,19 @@ export function LeadEngineForm() {
         body: JSON.stringify(payload),
       });
       if (res.ok) {
+        // Conversion signal for paid campaigns. Meta optimizes ad delivery
+        // against this event, so it must fire only on a verified submit —
+        // never on page load, and never on the honeypot path above.
+        if (typeof window !== "undefined") {
+          window.fbq?.("track", "Lead", {
+            content_name: "90-Day Install Application",
+            content_category: String(payload.revenue || "unspecified"),
+          });
+          window.gtag?.("event", "generate_lead", {
+            event_category: "lead_engine",
+            event_label: "90-Day Install Application",
+          });
+        }
         setFormState("success");
         form.reset();
       } else {
