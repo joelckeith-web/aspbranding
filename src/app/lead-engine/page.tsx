@@ -206,6 +206,32 @@ function ImageWash({
   );
 }
 
+// ASP-blue sections read flat beside the black ones: a single cyan glow over
+// #002366 has almost nothing to fall off against, so the gradient disappears.
+// Same composition as the hero — offset cyan and purple ellipses — carried at
+// the higher opacity the lighter base needs, over a corner wash that gives the
+// glows an edge to resolve into. Grain is the shared texture utility.
+function BlueWash() {
+  return (
+    <div aria-hidden className="absolute inset-0 pointer-events-none bg-asp-grain">
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 55% 60% at 18% 12%, rgba(76, 201, 240, 0.30), transparent 62%), radial-gradient(ellipse 60% 55% at 84% 88%, rgba(159, 76, 255, 0.28), transparent 62%)",
+        }}
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 95% 85% at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.38) 100%)",
+        }}
+      />
+    </div>
+  );
+}
+
 // Shared CTA — solid, bold, drop-shadowed text. One statement per button.
 function ApplyCTA({ label = "Apply now" }: { label?: string }) {
   return (
@@ -548,14 +574,7 @@ export default function LeadEnginePage() {
         id="guarantee"
         className="relative py-14 md:py-16 lg:py-20 bg-asp-blue text-white overflow-hidden scroll-mt-24"
       >
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-60 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 60% 60% at 50% 40%, rgba(76, 201, 240, 0.18), transparent 70%)",
-          }}
-        />
+        <BlueWash />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
@@ -693,14 +712,7 @@ export default function LeadEnginePage() {
 
       {/* What it costs */}
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-blue text-white overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-60 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 60% 55% at 50% 50%, rgba(159, 76, 255, 0.18), transparent 70%)",
-          }}
-        />
+        <BlueWash />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">

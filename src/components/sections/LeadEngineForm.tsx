@@ -278,12 +278,8 @@ export function LeadEngineForm() {
             disabled={formState === "sending"}
             className="w-full bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold py-3.5 px-6 rounded-[var(--radius-asp-md)] hover:opacity-90 transition-all duration-150 text-sm disabled:opacity-50"
           >
-            {formState === "sending" ? "Submitting..." : "Submit My Application"}
+            {formState === "sending" ? "Submitting..." : "Submit My Free Application"}
           </button>
-          <p className="text-gray-400 text-xs text-center">
-            Applying costs nothing and commits you to nothing. Discovery call first — contract only
-            if we both see the fit.
-          </p>
         </form>
       </div>
     </div>
