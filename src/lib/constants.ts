@@ -55,6 +55,7 @@ export const FOOTER_COMPANY = [
 export const FOOTER_GUIDES = [
   { label: "AI for Home Service Businesses", href: "/blog/ai-for-home-service-businesses" },
   { label: "Local SEO for Home Service Businesses", href: "/blog/local-seo-for-home-service-businesses" },
+  { label: "Speed to Lead for Home Service Businesses", href: "/blog/speed-to-lead-home-service-businesses" },
 ] as const;
 
 // Legacy export kept for any stragglers until the whole codebase is migrated.
