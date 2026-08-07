@@ -240,7 +240,7 @@ function ApplyCTA({ label = "Apply now" }: { label?: string }) {
         href="#apply"
         className="inline-block bg-asp-purple text-white font-black tracking-tight py-4 px-12 rounded-[var(--radius-asp-lg)] no-underline text-lg [text-shadow:0_2px_4px_rgba(0,0,0,0.45)] shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] hover:bg-[#8A34F0] transition-colors"
       >
-        {label} &rarr;
+        {label}
       </a>
     </div>
   );
@@ -411,7 +411,7 @@ export default function LeadEnginePage() {
               {PROOF.slice(0, 3).map((p) => (
                 <div
                   key={p.label}
-                  className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-white/[0.04] p-8 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
+                  className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-asp-surface-navy/80 p-8 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
                 >
                   <p className="text-asp-blue-light text-xs font-bold uppercase tracking-widest mb-4">
                     {p.label}
@@ -427,7 +427,7 @@ export default function LeadEnginePage() {
               {PROOF.slice(3).map((p) => (
                 <div
                   key={p.label}
-                  className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-white/[0.04] p-8 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
+                  className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-asp-surface-navy/80 p-8 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
                 >
                   <p className="text-asp-blue-light text-xs font-bold uppercase tracking-widest mb-4">
                     {p.label}
@@ -658,7 +658,7 @@ export default function LeadEnginePage() {
               {STEPS.map((s, i) => (
                 <div key={s.step} className="contents">
                   {i > 0 && <StepArrow />}
-                  <div className="flex-1 rounded-[var(--radius-asp-xl)] border border-white/10 bg-white/[0.04] p-7 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
+                  <div className="flex-1 rounded-[var(--radius-asp-xl)] border border-white/10 bg-asp-surface-navy/80 p-7 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
                     <div className="font-black text-3xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple mb-3">
                       {s.step}
                     </div>

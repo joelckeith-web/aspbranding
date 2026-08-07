@@ -32,6 +32,9 @@ export async function POST(request: Request) {
       crm,
       revenue,
       jobValue,
+      marketingConsent,
+      consentText,
+      consentAt,
       recaptchaToken,
       recaptchaAction,
       formTime,
@@ -125,6 +128,11 @@ export async function POST(request: Request) {
         <p><strong>CRM:</strong> ${crm}</p>
         <p><strong>Annual revenue:</strong> ${revenue}</p>
         <p><strong>Average job value:</strong> ${jobValue}</p>
+        <hr />
+        <h3>Marketing consent</h3>
+        <p><strong>Consented:</strong> ${marketingConsent || "Not recorded"}</p>
+        <p><strong>Wording shown:</strong> ${consentText || "Not recorded"}</p>
+        <p><strong>Timestamp:</strong> ${consentAt || "Not recorded"}</p>
         <hr />
         <h3>Source attribution</h3>
         ${utmRows || "<p><em>No UTM parameters captured (direct visit).</em></p>"}

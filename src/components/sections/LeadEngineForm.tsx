@@ -63,10 +63,16 @@ const UTM_KEYS = [
 const inputClass =
   "w-full px-4 py-3 rounded-[var(--radius-asp-md)] bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-asp-blue focus:ring-2 focus:ring-asp-blue/20 transition-all outline-none text-sm";
 
+// Kept as a constant so the wording submitted with the consent record is
+// always byte-identical to the wording rendered above the button.
+const CONSENT_TEXT =
+  "Yes, ASP can email me about this application and send marketing updates. I can unsubscribe any time.";
+
 export function LeadEngineForm() {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [noWebsite, setNoWebsite] = useState(false);
+  const [consent, setConsent] = useState(true);
   const [utm, setUtm] = useState<Record<string, string>>({});
   const recaptchaLoaded = useRef(false);
   const mountedAt = useRef<number>(0);
@@ -126,6 +132,12 @@ export function LeadEngineForm() {
     payload.formTime = formTime;
 
     if (noWebsite) payload.websiteUrl = "I don't have one";
+
+    // Consent record: the answer, the exact wording shown, and when. Storing
+    // only "Yes" proves nothing later — what they agreed to is the record.
+    payload.marketingConsent = consent ? "Yes" : "No";
+    payload.consentText = CONSENT_TEXT;
+    payload.consentAt = new Date().toISOString();
 
     // reCAPTCHA Enterprise token
     if (recaptchaSiteKey && typeof window !== "undefined" && window.grecaptcha?.enterprise) {
@@ -272,6 +284,26 @@ export function LeadEngineForm() {
           ))}
 
           {formState === "error" && <p className="text-error text-xs">{errorMsg}</p>}
+
+          <label className="flex items-start gap-2 text-gray-500 text-xs cursor-pointer">
+            <input
+              type="checkbox"
+              checked={consent}
+              onChange={(e) => setConsent(e.target.checked)}
+              className="w-4 h-4 mt-0.5 shrink-0 rounded border-gray-300 accent-asp-blue"
+            />
+            <span>
+              {CONSENT_TEXT} See our{" "}
+              <a href="/privacy-policy" className="underline hover:text-asp-blue">
+                Privacy Policy
+              </a>{" "}
+              and{" "}
+              <a href="/terms#install" className="underline hover:text-asp-blue">
+                Terms
+              </a>
+              .
+            </span>
+          </label>
 
           <button
             type="submit"
