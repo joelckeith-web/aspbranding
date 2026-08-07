@@ -207,7 +207,7 @@ function ImageWash({
 }
 
 // Shared CTA — solid, bold, drop-shadowed text. One statement per button.
-function ApplyCTA({ dark = false, label = "Apply now" }: { dark?: boolean; label?: string }) {
+function ApplyCTA({ label = "Apply now" }: { label?: string }) {
   return (
     <div className="text-center mt-10">
       <a
@@ -216,9 +216,6 @@ function ApplyCTA({ dark = false, label = "Apply now" }: { dark?: boolean; label
       >
         {label} &rarr;
       </a>
-      <p className={`text-sm mt-3 ${dark ? "text-white/50" : "text-gray-500"}`}>
-        Free to apply. Discovery call before any contract.
-      </p>
     </div>
   );
 }
@@ -327,21 +324,20 @@ export default function LeadEnginePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                For trades businesses
+                The 90-Day Install · For trades businesses
               </span>
               <h1 className="font-black text-4xl md:text-5xl 2xl:text-6xl leading-[1.08] mb-5">
-                We build your marketing system.{" "}
-                <span className="hero-text-gradient">Then we teach you to run it.</span>
+                You already spend the money.{" "}
+                <span className="hero-text-gradient">You just can&apos;t see what it&apos;s doing.</span>
               </h1>
               <p className="text-white/75 text-lg leading-relaxed mb-6">
-                Website, SEO, CRM, and lead tracking — installed for your business and put in your
-                name. The same system closed{" "}
-                <strong className="text-white">$81,000 in 90 days</strong> for an HVAC company.
+                In 30 days, you&apos;ll know where every lead came from — which channel, which
+                campaign, and what it turned into. Or we refund your first month.
               </p>
               <ul className="space-y-2.5">
                 {[
-                  "Digital leads traced to their source in 30 days, or month one is refunded",
-                  "Website, SEO, content, reviews, CRM, tracking — built and run for you",
+                  "Website, SEO, ads, and tracking — installed for you",
+                  "Every lead traced to its source, automatically",
                   "You own the site, the accounts, and the data",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3 text-white/80 text-sm">
@@ -424,7 +420,7 @@ export default function LeadEnginePage() {
               These are results from businesses running this system. Our guarantee covers the 30
               days of clarity below. What comes after depends on your market and how you work it.
             </p>
-            <ApplyCTA dark label="See if you qualify" />
+            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
@@ -460,7 +456,7 @@ export default function LeadEnginePage() {
               <CompareTable rows={VS_AGENCY} themLabel="A typical agency" />
               <CompareTable rows={VS_COACHING} themLabel="A coaching program" />
             </div>
-            <ApplyCTA dark label="Apply now" />
+            <ApplyCTA label="Apply now" />
           </ScrollReveal>
         </div>
       </section>
@@ -542,7 +538,7 @@ export default function LeadEnginePage() {
               build your website. We do both, because you can&apos;t set a marketing budget
               without knowing your margins.
             </p>
-            <ApplyCTA dark label="Start your application" />
+            <ApplyCTA label="Start your application" />
           </ScrollReveal>
         </div>
       </section>
@@ -588,7 +584,7 @@ export default function LeadEnginePage() {
               We guarantee what we control. The revenue numbers above are proof from other
               businesses, not a forecast for yours.
             </p>
-            <ApplyCTA dark label="Apply now" />
+            <ApplyCTA label="Apply now" />
           </ScrollReveal>
         </div>
       </section>
@@ -653,7 +649,7 @@ export default function LeadEnginePage() {
                 </div>
               ))}
             </div>
-            <ApplyCTA dark label="Start step one" />
+            <ApplyCTA label="Start step one" />
           </ScrollReveal>
         </div>
       </section>
@@ -728,7 +724,7 @@ export default function LeadEnginePage() {
             <p className="text-white/75 text-lg leading-relaxed mb-2">
               Stay past 90 days and we lock your rate for 12 months. No increases.
             </p>
-            <ApplyCTA dark label="See if you qualify" />
+            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
