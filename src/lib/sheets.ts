@@ -23,16 +23,38 @@ function b64url(input: Buffer | string): string {
     .replace(/=+$/, "");
 }
 
-function loadServiceAccount(): ServiceAccount | null {
+type LoadResult =
+  | { sa: ServiceAccount }
+  | { sa: null; reason: string };
+
+// Accepts the service-account JSON either base64-encoded OR pasted raw.
+// Both are easy to end up with when setting the var by hand, and the
+// difference is not worth a silent failure — so take whichever arrives.
+function loadServiceAccount(): LoadResult {
   const raw = process.env.GOOGLE_SA_KEY_B64;
-  if (!raw) return null;
-  try {
-    const json = JSON.parse(Buffer.from(raw, "base64").toString("utf8"));
-    if (!json.client_email || !json.private_key) return null;
-    return json as ServiceAccount;
-  } catch {
-    return null;
+  if (!raw) return { sa: null, reason: "GOOGLE_SA_KEY_B64 is not set" };
+
+  const trimmed = raw.trim();
+  const candidates = trimmed.startsWith("{")
+    ? [trimmed]
+    : [Buffer.from(trimmed, "base64").toString("utf8"), trimmed];
+
+  for (const candidate of candidates) {
+    try {
+      const json = JSON.parse(candidate);
+      if (json.client_email && json.private_key) return { sa: json as ServiceAccount };
+      return {
+        sa: null,
+        reason: "parsed, but client_email/private_key missing — wrong JSON file?",
+      };
+    } catch {
+      // try the next interpretation
+    }
   }
+  return {
+    sa: null,
+    reason: `set (${trimmed.length} chars) but is neither valid JSON nor base64-encoded JSON`,
+  };
 }
 
 let cached: { token: string; expires: number } | null = null;
@@ -87,11 +109,12 @@ export async function appendRow(
   range: string,
   row: (string | number)[],
 ): Promise<{ ok: true } | { ok: false; reason: string }> {
-  const sa = loadServiceAccount();
-  if (!sa) {
-    console.log("[sheets] GOOGLE_SA_KEY_B64 not configured — would have appended:", row[1]);
-    return { ok: false, reason: "service account not configured" };
+  const loaded = loadServiceAccount();
+  if (!loaded.sa) {
+    console.error("[sheets] credentials unusable:", loaded.reason, "— row not appended:", row[1]);
+    return { ok: false, reason: loaded.reason };
   }
+  const sa = loaded.sa;
   try {
     const token = await getAccessToken(sa);
     if (!token) return { ok: false, reason: "could not mint access token" };
