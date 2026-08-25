@@ -74,7 +74,7 @@ export default function FrameworksPage() {
                 The 5 marketing frameworks we install for trades businesses.
               </h1>
               <p className="text-lg text-white/70 leading-relaxed mb-6">
-                Same frameworks we build for our clients. Yours free, sent straight to your inbox.
+                Same frameworks we build for our clients. Free, and we email it straight to you.
               </p>
               <p className="text-white/60 leading-relaxed">
                 You can act on all five without us. That is what makes them worth reading.
