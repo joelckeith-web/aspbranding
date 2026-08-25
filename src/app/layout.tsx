@@ -84,12 +84,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <head>
-        {/* Standalone-host flag: leadengine.aspbranding.com hides site chrome
-            (see globals.css). Blocking inline script so it lands before paint. */}
+        {/* Standalone flag: hides site chrome (see globals.css) on the paid
+            landing pages. Matches the leadengine host OR the paid paths, so
+            the pages behave the same served from www — site nav on a paid
+            landing page is just an exit. Blocking inline script so it lands
+            before paint. */}
         <script
           dangerouslySetInnerHTML={{
             __html:
-              'if(location.hostname==="leadengine.aspbranding.com")document.documentElement.setAttribute("data-standalone","");',
+              'if(location.hostname==="leadengine.aspbranding.com"||' +
+              '/^\\/(lead-engine|frameworks)(\\/|$)/.test(location.pathname))' +
+              'document.documentElement.setAttribute("data-standalone","");',
           }}
         />
         <link rel="preconnect" href="https://www.youtube-nocookie.com" />

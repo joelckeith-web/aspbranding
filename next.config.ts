@@ -42,8 +42,10 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Any other path on the leadengine subdomain goes back to the offer.
+      // "frameworks" is excepted: it is the gated lead magnet the paid ads
+      // point at, and it has to be reachable on this host.
       {
-        source: "/:path((?!lead-engine|api|_next|favicon|.*\\..*).+)",
+        source: "/:path((?!lead-engine|frameworks|api|_next|favicon|.*\\..*).+)",
         has: [{ type: "host", value: "leadengine.aspbranding.com" }],
         destination: "https://leadengine.aspbranding.com/",
         permanent: false,

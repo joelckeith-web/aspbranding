@@ -1,9 +1,14 @@
 "use client";
 
-// Application form for the 90-Day Install offer. Every field is
-// required — the form IS the qualification filter. UTM params are captured
-// into hidden fields so every application carries its source (the same
-// attribution treatment the offer sells).
+// Gate form for "The 5 Marketing Frameworks for Trades Businesses".
+//
+// This is the TOP of the paid funnel — the ads point here, not at the
+// application. The trade is that we ask for less and get far more people
+// through: the application converts at 1–3%, a gated asset at 20–30%, which
+// is the difference between readable creative data and noise at $33/day.
+//
+// The guide is DELIVERED BY EMAIL, never as a direct link on the success
+// screen. A real address is the whole point of the gate.
 import { useEffect, useRef, useState } from "react";
 
 declare global {
@@ -19,21 +24,24 @@ declare global {
   }
 }
 
-const RECAPTCHA_ACTION = "lead_engine_apply";
+const RECAPTCHA_ACTION = "frameworks_download";
 
-// NOTE: this is the "onboarding strategy session" event type, the only live
-// one on the account. It was built for clients who have already signed, so
-// the name and any intake questions on it want a look before cold paid
-// traffic starts landing on it.
-const CALENDLY_URL = "https://calendly.com/joel-keith-asp/onboarding-strategy-session";
-
-const CRM_OPTIONS = [
-  { value: "", label: "What CRM do you run? *" },
-  { value: "jobber", label: "Jobber" },
-  { value: "housecall-pro", label: "Housecall Pro" },
-  { value: "service-fusion", label: "Service Fusion" },
-  { value: "other", label: "Other CRM" },
-  { value: "none", label: "I don't have one" },
+// Self-identification, not ad targeting. The ad-side ban on naming HVAC /
+// plumbing / electrical / roofing is about callouts and interest targeting —
+// it has never applied to what a prospect tells us about themselves.
+const TRADE_OPTIONS = [
+  { value: "", label: "What trade are you in? *" },
+  { value: "home-inspection", label: "Home inspection" },
+  { value: "landscaping", label: "Landscaping / lawn" },
+  { value: "remodel", label: "Kitchen & bath remodel" },
+  { value: "outdoor-living", label: "Outdoor living / hardscape" },
+  { value: "flooring", label: "Flooring" },
+  { value: "appliance-repair", label: "Appliance repair" },
+  { value: "hvac", label: "HVAC" },
+  { value: "plumbing", label: "Plumbing" },
+  { value: "electrical", label: "Electrical" },
+  { value: "roofing", label: "Roofing" },
+  { value: "other", label: "Other home service" },
 ];
 
 const REVENUE_OPTIONS = [
@@ -43,17 +51,6 @@ const REVENUE_OPTIONS = [
   { value: "1m-3m", label: "$1M – $3M" },
   { value: "3m-5m", label: "$3M – $5M" },
   { value: "5m-plus", label: "$5M+" },
-];
-
-// Average job value is the filter that keeps low-ticket trades out — the
-// pipeline math in the offer only works above roughly $1,500 a job.
-const JOB_VALUE_OPTIONS = [
-  { value: "", label: "Average job value *" },
-  { value: "under-500", label: "Under $500" },
-  { value: "500-1500", label: "$500 – $1,500" },
-  { value: "1500-5000", label: "$1,500 – $5,000" },
-  { value: "5000-15000", label: "$5,000 – $15,000" },
-  { value: "15000-plus", label: "$15,000+" },
 ];
 
 const UTM_KEYS = [
@@ -69,15 +66,14 @@ const UTM_KEYS = [
 const inputClass =
   "w-full px-4 py-3 rounded-[var(--radius-asp-md)] bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:border-asp-blue focus:ring-2 focus:ring-asp-blue/20 transition-all outline-none text-sm";
 
-// Kept as a constant so the wording submitted with the consent record is
-// always byte-identical to the wording rendered above the button.
+// Byte-identical to the wording rendered above the button — storing only
+// "Yes" proves nothing later; what they agreed to is the record.
 const CONSENT_TEXT =
-  "Yes, ASP can email me about this application and send marketing updates. I can unsubscribe any time.";
+  "Yes, ASP can email me the guide and send marketing updates. I can unsubscribe any time.";
 
-export function LeadEngineForm() {
+export function FrameworksForm() {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
-  const [noWebsite, setNoWebsite] = useState(false);
   const [consent, setConsent] = useState(true);
   const [utm, setUtm] = useState<Record<string, string>>({});
   const recaptchaLoaded = useRef(false);
@@ -88,7 +84,8 @@ export function LeadEngineForm() {
   useEffect(() => {
     mountedAt.current = Date.now();
 
-    // Capture UTM/click-id params from the landing URL.
+    // Source attribution. utm_content carries the creative ID (C1–C4), which
+    // is how we learn which graphic produced each lead.
     const params = new URLSearchParams(window.location.search);
     const captured: Record<string, string> = {};
     for (const key of UTM_KEYS) {
@@ -120,15 +117,13 @@ export function LeadEngineForm() {
       Array.from(data.entries()).map(([k, v]) => [k, String(v)])
     );
 
-    // Honeypot — silent success if filled. (Named "fax" here because this
-    // form has a real website field, unlike /contact.)
+    // Honeypot — silent success so bots don't learn the trap exists.
     if (payload.fax) {
       setFormState("success");
       form.reset();
       return;
     }
 
-    // Time-gate — anything under 3 seconds is bot behaviour.
     const formTime = Date.now() - mountedAt.current;
     if (formTime < 3000) {
       setFormState("error");
@@ -137,15 +132,10 @@ export function LeadEngineForm() {
     }
     payload.formTime = formTime;
 
-    if (noWebsite) payload.websiteUrl = "I don't have one";
-
-    // Consent record: the answer, the exact wording shown, and when. Storing
-    // only "Yes" proves nothing later — what they agreed to is the record.
     payload.marketingConsent = consent ? "Yes" : "No";
     payload.consentText = CONSENT_TEXT;
     payload.consentAt = new Date().toISOString();
 
-    // reCAPTCHA Enterprise token
     if (recaptchaSiteKey && typeof window !== "undefined" && window.grecaptcha?.enterprise) {
       try {
         await new Promise<void>((resolve) => window.grecaptcha!.enterprise!.ready(resolve));
@@ -162,23 +152,22 @@ export function LeadEngineForm() {
     }
 
     try {
-      const res = await fetch("/api/lead-engine", {
+      const res = await fetch("/api/frameworks", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
       if (res.ok) {
-        // Conversion signal for paid campaigns. Meta optimizes ad delivery
-        // against this event, so it must fire only on a verified submit —
-        // never on page load, and never on the honeypot path above.
+        // Meta optimizes delivery against this event, so it fires only on a
+        // verified submit — never on page load, never on the honeypot path.
         if (typeof window !== "undefined") {
           window.fbq?.("track", "Lead", {
-            content_name: "90-Day Install Application",
-            content_category: String(payload.revenue || "unspecified"),
+            content_name: "5 Marketing Frameworks",
+            content_category: String(payload.trade || "unspecified"),
           });
           window.gtag?.("event", "generate_lead", {
-            event_category: "lead_engine",
-            event_label: "90-Day Install Application",
+            event_category: "frameworks",
+            event_label: "5 Marketing Frameworks",
           });
         }
         setFormState("success");
@@ -203,23 +192,15 @@ export function LeadEngineForm() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <h3 className="font-bold text-xl text-asp-blue mb-2">Application received.</h3>
-          <p className="text-gray-500 text-sm mb-5">
-            We review every application by hand. If it looks like a fit, you&apos;ll hear from us
-            within one business day to set up your discovery call.
+          <h3 className="font-bold text-xl text-asp-blue mb-2">Check your email.</h3>
+          <p className="text-gray-500 text-sm">
+            The 5 Marketing Frameworks are on their way now. If it hasn&apos;t landed in a couple of
+            minutes, check your spam folder — then email{" "}
+            <a href="mailto:info@aspbranding.com" className="underline hover:text-asp-blue">
+              info@aspbranding.com
+            </a>{" "}
+            and we&apos;ll send it straight over.
           </p>
-          {/* Book-now path. The application already emails ASP, but waiting a
-              business day to book is a day of speed-to-lead thrown away — the
-              same thing the offer sells. Anyone ready to talk books here. */}
-          <p className="text-gray-500 text-sm mb-3">Or pick a time right now:</p>
-          <a
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-asp-gradient-cta text-white font-semibold px-6 py-3 rounded-[var(--radius-asp-md)] shadow-asp-md hover:shadow-asp-lg transition-all"
-          >
-            Book the discovery call
-          </a>
         </div>
       </div>
     );
@@ -228,10 +209,9 @@ export function LeadEngineForm() {
   return (
     <div className="relative rounded-[var(--radius-asp-xl)] p-[2px] bg-asp-gradient-cta shadow-asp-xl">
       <div className="bg-white rounded-[calc(var(--radius-asp-xl)-2px)] p-6 md:p-8">
-        <h3 className="font-bold text-xl text-asp-blue mb-1">Apply for the 90-Day Install</h3>
+        <h3 className="font-bold text-xl text-asp-blue mb-1">Send me the 5 frameworks</h3>
         <p className="text-gray-500 text-sm mb-6">
-          Every application gets a discovery call first. We only take businesses we know we can win
-          for.
+          Free, no call required. We email it over so you have it to keep.
         </p>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
@@ -239,31 +219,14 @@ export function LeadEngineForm() {
             <input type="text" name="name" placeholder="Full Name *" required className={inputClass} />
             <input type="email" name="email" placeholder="Email Address *" required className={inputClass} />
           </div>
-          <input type="text" name="company" placeholder="Company Name *" required className={inputClass} />
-
-          <div>
-            <input
-              type="url"
-              name="websiteUrl"
-              placeholder="Website URL *"
-              required={!noWebsite}
-              disabled={noWebsite}
-              className={`${inputClass} disabled:opacity-50 disabled:bg-gray-100`}
-            />
-            <label className="flex items-center gap-2 text-gray-600 text-xs cursor-pointer mt-2">
-              <input
-                type="checkbox"
-                checked={noWebsite}
-                onChange={(e) => setNoWebsite(e.target.checked)}
-                className="w-4 h-4 rounded border-gray-300 accent-asp-blue"
-              />
-              <span>I don&apos;t have a website (that&apos;s fine — we build you one)</span>
-            </label>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="tel" name="phone" placeholder="Phone *" required className={inputClass} />
+            <input type="text" name="company" placeholder="Company Name *" required className={inputClass} />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <select name="crm" required defaultValue="" className={`${inputClass} text-gray-500`}>
-              {CRM_OPTIONS.map((o) => (
+            <select name="trade" required defaultValue="" className={`${inputClass} text-gray-500`}>
+              {TRADE_OPTIONS.map((o) => (
                 <option key={o.value} value={o.value} disabled={o.value === ""}>
                   {o.label}
                 </option>
@@ -277,14 +240,6 @@ export function LeadEngineForm() {
               ))}
             </select>
           </div>
-
-          <select name="jobValue" required defaultValue="" className={`${inputClass} text-gray-500`}>
-            {JOB_VALUE_OPTIONS.map((o) => (
-              <option key={o.value} value={o.value} disabled={o.value === ""}>
-                {o.label}
-              </option>
-            ))}
-          </select>
 
           {/* Honeypot — hidden from humans, tempting to bots. */}
           <input
@@ -314,10 +269,6 @@ export function LeadEngineForm() {
               {CONSENT_TEXT} See our{" "}
               <a href="/privacy-policy" className="underline hover:text-asp-blue">
                 Privacy Policy
-              </a>{" "}
-              and{" "}
-              <a href="/terms#install" className="underline hover:text-asp-blue">
-                Terms
               </a>
               .
             </span>
@@ -326,9 +277,9 @@ export function LeadEngineForm() {
           <button
             type="submit"
             disabled={formState === "sending"}
-            className="w-full bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold py-3.5 px-6 rounded-[var(--radius-asp-md)] hover:opacity-90 transition-all duration-150 text-sm disabled:opacity-50"
+            className="w-full bg-asp-gradient-cta text-white font-semibold py-3.5 rounded-[var(--radius-asp-md)] shadow-asp-md hover:shadow-asp-lg transition-all disabled:opacity-60"
           >
-            {formState === "sending" ? "Submitting..." : "Submit My Free Application"}
+            {formState === "sending" ? "Sending…" : "Send me the 5 frameworks"}
           </button>
         </form>
       </div>
