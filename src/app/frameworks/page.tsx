@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const FRAMEWORKS = [
+const FRAMEWORKS: { n: string; title: string; body: string; note?: string }[] = [
   {
     n: "01",
     title: "The Lead Source Map",
@@ -38,6 +38,11 @@ const FRAMEWORKS = [
     title: "The Speed-to-Lead System",
     body:
       "The response-time rules that decide who books the job. What to measure, what to automate, and what has to stay human.",
+    // Google's own LSA policy change, effective 2026-10-01. Dated and
+    // verifiable, and it makes the case better than any statistic we could
+    // quote: the platform is now charging for calls you do not answer.
+    note:
+      "From October 1, 2026, Google Local Services Ads charges you for missed calls during business hours once the caller holds for 20 seconds — and for the follow-up call if the first one didn't qualify. Not answering the phone stops being free.",
   },
   {
     n: "03",
@@ -117,6 +122,12 @@ export default function FrameworksPage() {
                       {f.title}
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed">{f.body}</p>
+                    {f.note && (
+                      <p className="mt-3 border-l-2 border-asp-blue/40 bg-white pl-4 py-2 text-gray-500 text-[13px] leading-relaxed">
+                        <span className="font-bold text-asp-blue">What changed: </span>
+                        {f.note}
+                      </p>
+                    )}
                   </div>
                 </div>
               </ScrollReveal>
