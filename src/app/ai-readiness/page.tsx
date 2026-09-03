@@ -5,7 +5,8 @@ import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 export const metadata: Metadata = {
   title: "AI Readiness Check for Home Service Businesses",
   description:
-    "Seven questions, two minutes. Find out whether your home service business is ready for AI — crawl, walk, or run — and the first move to make. Free, no email required.",
+    "Seven questions, two minutes. See whether your home service business is ready for AI — crawl, walk, or run — and the first move to make. Free, no email required.",
+  alternates: { canonical: "/ai-readiness" },
 };
 
 export default function AIReadinessPage() {

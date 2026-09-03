@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "AI Consulting for Home Service Businesses",
   description:
     "AI consulting for home service businesses. Configured on the CRM you already run, built when the tool doesn't exist, measured against booked jobs.",
+  alternates: { canonical: "/ai-consulting" },
 };
 
 // Three entry points. Platform integration hands off to /ai-integration (the HCP deep-dive)
