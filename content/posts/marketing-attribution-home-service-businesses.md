@@ -2,7 +2,7 @@
 title: "Marketing Attribution for Home Service Businesses"
 slug: "marketing-attribution-home-service-businesses"
 publishDate: "2026-04-23"
-dateModified: "2026-04-23"
+dateModified: "2026-09-03"
 author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
@@ -91,7 +91,7 @@ The mechanics are straightforward. When a lead comes in from Google Ads, Google 
 
 I had a conversation with an HVAC operator recently that went basically, "hey, we're spending $12K a month on Google Ads and our cost per lead is $60, which feels okay." And I said, "okay, but what's your cost per booked job? And what's your cost per booked job for LSA versus Search versus Performance Max?" Crickets. Because none of that was being tracked. Three weeks later, with closed-loop in place, we found out LSA was producing leads at $85 that booked at 45%, and Performance Max was producing leads at $38 that booked at 8%. The cheap leads were the expensive ones. You can only see that with closed-loop attribution.
 
-As a Housecall Pro Affiliate Partner we build this loop as part of our [AI Integration hub engagements](/ai-integration) — it's one of the four capabilities we deploy. It's not magic. It's plumbing. But it's plumbing almost nobody else installs.
+As a Housecall Pro Affiliate Partner we build this loop as part of our [AI Integration hub engagements](/ai-integration) — it's one of the four capabilities we deploy. It's not magic. It's plumbing. But it's plumbing almost nobody else installs. Attribution is one play in a bigger picture — for how it fits with everything else, start with our guide to [adopting AI in a home service business](/blog/ai-for-home-service-businesses).
 
 **Key Takeaway:** Closed-loop attribution from Housecall Pro back to the ad platforms is the single highest-leverage attribution move a home service operator can make. It converts Google from an impression-and-lead buyer into a booked-revenue buyer.
 

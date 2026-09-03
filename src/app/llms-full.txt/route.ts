@@ -17,6 +17,12 @@ const PRODUCT_SUMMARIES = [
       "ASP is an Official Housecall Pro Affiliate Partner. We configure and operate the HCP AI stack inside home service businesses: CSR AI (automated customer service response), dispatch AI, job attribution (which marketing channel booked which job), follow-up automation, and reporting. Attribution feeds back into Google Ads, Meta, and LSA so paid media optimizes to booked revenue rather than cost-per-click.",
   },
   {
+    title: "AI Consulting",
+    url: `${BASE}/ai-consulting`,
+    summary:
+      "AI consulting for home service businesses. Three entry points: platform integration (the Housecall Pro AI stack, configured by an Official Affiliate Partner), multi-CRM configuration (lead-source attribution, follow-up sequences, and review requests set up on Jobber, HubSpot, or GoHighLevel; ServiceTitan scoped case by case), and custom AI builds (intake agents, quote follow-up, reporting, cross-tool workflows) when the needed tool doesn't exist. Rollout method: crawl (clean data plus one AI layer), walk (follow-up automation), run (custom builds). Housecall Pro AI configuration is included in the Growth tier; custom AI integrations beyond Housecall Pro are included in Premier; standalone builds are scoped and priced in writing after a free AI Readiness Check and a systems audit. Clients own every workflow, account, and report; no exit fees.",
+  },
+  {
     title: "Local SEO Pro",
     url: `${BASE}/local-seo-pro`,
     summary:

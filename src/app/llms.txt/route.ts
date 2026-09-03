@@ -14,10 +14,12 @@ ASP is a US-based marketing and operations agency headquartered in Austin, Texas
 - [Case Studies](${BASE}/case-studies): Industry-anonymized revenue results across HVAC, home inspection, healthcare, and commercial flooring.
 - [Pricing](${BASE}/pricing): Tier structure (Foundation, Growth, Premier) plus productized entry points (Local SEO Pro, StormFront, Content Creation Package).
 - [Growth Diagnostic](${BASE}/diagnostic): 90-second, 7-question decision tool that recommends the right ASP tier.
+- [AI Readiness Check](${BASE}/ai-readiness): 7-question, 2-minute check that tells a home service business whether its systems are ready for AI (crawl / walk / run) and the first move to make. Free, no email required.
 
 ## Core Products
 - [The Growth System](${BASE}/growth-system): Marketing + operations + follow-up integrated into one stack. The pillar offer.
 - [AI Integration](${BASE}/ai-integration): Housecall Pro AI stack — CSR AI, dispatch, attribution, reporting — configured and operated for home service businesses.
+- [AI Consulting](${BASE}/ai-consulting): AI consulting for home service businesses — AI configured on the CRM the business already runs (Housecall Pro, Jobber, HubSpot, GoHighLevel; ServiceTitan scoped case by case), plus custom AI builds when the needed tool doesn't exist. Crawl / walk / run rollout. Routes into the Growth and Premier tiers; standalone builds priced in writing after a free AI Readiness Check.
 - [ChatGPT Ads Management](${BASE}/chatgpt-ads-management): Early-mover paid media management on the ChatGPT Ads Manager platform. Campaign setup, audience strategy, prompt-native creative, and booked-revenue attribution — wired into the same stack that runs Google and Meta. ASP is a verified advertiser.
 - [Local SEO Pro](${BASE}/local-seo-pro): Full-service Google Business Profile management, citation cleanup, local ranking heatmap, $1,200/month.
 - [StormFront](${BASE}/stormfront): Proprietary weather-triggered content system for roofing, HVAC, plumbing, and restoration operators. $549/month.
@@ -33,6 +35,7 @@ ASP is a US-based marketing and operations agency headquartered in Austin, Texas
 
 ## Blog & Research
 - [Blog index](${BASE}/blog): Strategy, AI integration, local SEO, PPC, AEO, and operations playbooks written for home service owner-operators.
+- [AI for Home Service Businesses: 2026 Adoption Guide](${BASE}/blog/ai-for-home-service-businesses): Hub for the AI cluster — what AI can do for a trades business, where it fails, and the crawl / walk / run adoption path.
 - [AI Optimization / AEO for Home Service Businesses (2025)](${BASE}/blog/ai-optimization-aeo-home-service-businesses-2025)
 - [Best AI Tools for Home Service Businesses (2025)](${BASE}/blog/best-ai-tools-home-service-businesses-2025)
 - [CSR AI for Home Service Businesses](${BASE}/blog/csr-ai-home-service-businesses)

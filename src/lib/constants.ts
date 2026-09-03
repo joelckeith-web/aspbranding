@@ -33,6 +33,7 @@ export const FOOTER_SYSTEM = [
   { label: "AI Integration", href: "/ai-integration" },
   { label: "Pricing", href: "/pricing" },
   { label: "Growth Diagnostic", href: "/diagnostic" },
+  { label: "AI Readiness Check", href: "/ai-readiness" },
   { label: "Marketing Budget Calculator", href: "/marketing-budget-calculator" },
 ] as const;
 
@@ -41,6 +42,7 @@ export const FOOTER_PRODUCTS = [
   { label: "StormFront", href: "/stormfront" },
   { label: "Content Creation Package", href: "/content-creation" },
   { label: "Podcast Studio", href: "/podcast" },
+  { label: "AI Consulting", href: "/ai-consulting" },
   { label: "Fractional C-Suite", href: "/fractional" },
 ] as const;
 
