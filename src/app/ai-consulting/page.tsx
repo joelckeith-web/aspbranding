@@ -11,59 +11,57 @@ import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredD
 export const metadata: Metadata = {
   title: "AI Consulting for Home Service Businesses",
   description:
-    "AI consulting for home service businesses. Configured on the CRM you already run, built when the tool doesn't exist, measured against booked jobs.",
+    "AI consulting for home service businesses: automations for data entry, follow-up, and operations, SOP search, and custom AI builds — measured against booked jobs.",
   alternates: { canonical: "/ai-consulting" },
 };
 
-// Three entry points. Platform integration hands off to /ai-integration (the HCP deep-dive)
-// so that page stays the authority on the Housecall Pro stack.
-const ENTRY_POINTS = [
+// Where the hours go. The CRM is one surface here, not the axis — Joel's direction 2026-09-03.
+const AREAS = [
   {
-    label: "Platform integration",
-    headline: "Already on Housecall Pro? Start there.",
-    body: "We're an Official Housecall Pro Affiliate Partner. We configure the HCP AI stack — CSR AI, dispatch, attribution, follow-up — so it runs in your business from day one.",
-    linkText: "See AI Integration",
-    href: "/ai-integration",
+    label: "Office & data entry",
+    headline: "If someone retypes it, we automate it.",
+    body: "Pulling job info from the CRM into a spreadsheet. Updating records after a job closes. Copying invoice details into accounting. The office work that eats hours and adds typos — moved between systems without anyone touching it.",
   },
   {
-    label: "Multi-CRM configuration",
-    headline: "AI on the CRM you already run.",
-    body: "Lead-source attribution, follow-up sequences, and review requests — set up on Jobber, HubSpot, or GoHighLevel, not on a tool you'd have to switch to. On ServiceTitan, we scope the work first.",
-    linkText: "Check your AI readiness",
-    href: "/ai-readiness",
+    label: "Follow-up that runs itself",
+    headline: "Tag a client. The rest happens.",
+    body: "Review requests after the job. Follow-ups on estimates and quotes. Reminders on unpaid invoices. Maintenance reminders. One tag in your CRM starts the sequence, and it stops the moment the customer replies.",
   },
   {
-    label: "Custom AI builds",
-    headline: "When the tool you need doesn't exist.",
-    body: "Intake agents, quote follow-up that reads your CRM, review drafting, reporting that lands in your inbox. Scoped after the readiness check, built in your accounts, measured against a booked job.",
-    linkText: "Book a call",
-    href: "/contact?topic=ai-consulting",
+    label: "Operations & logistics",
+    headline: "The handoffs that get dropped when it's busy.",
+    body: "Scheduling confirmations, dispatch updates, job-status texts to the customer, parts and material tracking. The office-to-field handoffs that fall through on a busy Tuesday — running on a trigger instead of a memory.",
+  },
+  {
+    label: "SOP search & custom tools",
+    headline: "Your procedures, answered.",
+    body: "An AI search over your own SOPs, so a new hire or a tech in the field asks a question and gets your answer. Plus the builds that don't exist off the shelf: intake agents, reporting built for how you run, two systems that finally talk to each other.",
   },
 ];
 
 const METHOD = [
   {
     stage: "Crawl",
-    title: "Fix the data. Answer the phone.",
-    body: "CRM hygiene, call tracking, lead-source attribution. Then one AI layer on the biggest leak — usually after-hours calls or slow follow-up.",
+    title: "Map the manual work.",
+    body: "Find where the hours go: data entry, missed follow-ups, hunting for information. Clean up the data first. Then automate the one thing costing the most.",
   },
   {
     stage: "Walk",
-    title: "Automate the follow-up.",
-    body: "Quote-to-close sequences, review requests, maintenance reminders, dispatch AI. Each one tied to a number in your CRM before the next one starts.",
+    title: "Automate the follow-up and the office.",
+    body: "Tag-triggered sequences for reviews, quotes, and invoices. Data flowing between systems without anyone retyping it. Each one measured before the next one starts.",
   },
   {
     stage: "Run",
     title: "Build what's missing.",
-    body: "Custom agents, workflows across tools, reporting built for how you run the business. Only after crawl and walk have proven out.",
+    body: "Custom AI tools: an SOP search, an intake agent, reporting built for how you run. Only after crawl and walk have proven out.",
   },
 ];
 
 // Keep this list to what exists today. Add a card when an engagement ships — never ahead of it.
 const PROOF = [
   {
-    title: "Four CRMs, one attribution playbook",
-    body: "Lead source to booked job, wired and documented on Housecall Pro, Jobber, HubSpot, and GoHighLevel. The same install, adapted to each platform.",
+    title: "Data that moves itself between systems",
+    body: "Lead source to booked job, wired across four platforms — Housecall Pro, Jobber, HubSpot, GoHighLevel — so nobody retypes a record. The same pattern behind every automation we build: a trigger, a handoff, a number to check.",
   },
   {
     title: "A monthly numbers letter, built by AI, read by an owner",
@@ -71,25 +69,25 @@ const PROOF = [
   },
   {
     title: "Our own agency runs on it",
-    body: "Research, content drafts, QC checks, and monthly reports at ASP come off an AI system we built and run ourselves. Every piece still gets a human approval before it ships.",
+    body: "Research, content drafts, QC checks, monthly reports, and finding the right SOP at ASP run on an AI system we built ourselves. Every piece still gets a human approval before it ships.",
   },
 ];
 
-const VS_VENDOR_LOCKED = [
+const VS_OFF_THE_SHELF = [
   {
-    them: "The AI lives in a tool you'd have to switch to.",
-    us: "The AI is configured on the CRM you already run.",
+    them: "A chatbot on the website, and nothing behind it.",
+    us: "Automations wired into the office, the follow-up, and the field — where the hours go.",
   },
   {
-    them: "A phone bot with no idea what happened after the call.",
-    us: "Every call, text, and quote lands in the CRM with its source attached.",
+    them: "Another login your team has to remember to use.",
+    us: "Runs from a tag, a form, or a job status. Nobody has to remember.",
   },
   {
     them: "A strategy deck and a list of tools to buy.",
-    us: "A working install, measured against booked jobs, before the next one starts.",
+    us: "A working automation, measured against booked jobs, before the next one starts.",
   },
   {
-    them: "Automation that breaks when the vendor changes a menu.",
+    them: "Automation that breaks when a vendor changes a menu.",
     us: "Documented workflows you own, in your accounts, with no exit fee.",
   },
 ];
@@ -105,17 +103,17 @@ const PROCESS = [
   {
     step: "02",
     title: "Systems audit",
-    body: "A 30-minute call, then we map the stack: CRM, call tracking, ad accounts, follow-up, reporting. We find where leads leak and what an install would move.",
+    body: "A 30-minute call, then we map where the manual work lives: office, field, follow-up, paperwork, reporting. We find the hours and what an automation would give back.",
   },
   {
     step: "03",
-    title: "First install",
-    body: "One AI layer, on your CRM, in your accounts. It goes live and gets measured against booked jobs before we start the next.",
+    title: "First automation",
+    body: "One automation, in your tools, in your accounts. It goes live and gets measured — hours back, jobs booked — before we start the next.",
   },
   {
     step: "04",
     title: "Walk, then run",
-    body: "Follow-up automation next. Custom builds after that, scoped from what the first two proved. Monthly review against the same revenue number.",
+    body: "Follow-up and office automation next. Custom builds after that, scoped from what the first two proved. Monthly review against the same revenue number.",
   },
 ];
 
@@ -123,37 +121,42 @@ const FAQS = [
   {
     question: "What's the difference between AI Integration and AI Consulting at ASP?",
     answer:
-      "AI Integration is the Housecall Pro AI stack — CSR AI, dispatch, attribution, follow-up — configured by an Official Affiliate Partner. AI Consulting is broader: the same work on other CRMs, plus custom builds when the tool you need doesn't exist. If you're on Housecall Pro and want the built-in AI running right, start with AI Integration. If you're on another platform, or you need something built, start here.",
+      "AI Integration is one platform: the Housecall Pro AI stack, configured by an Official Affiliate Partner. AI Consulting covers the whole business — automations for data entry, follow-up, scheduling, and paperwork, custom AI tools like an SOP search, and builds that don't exist off the shelf. If you're on Housecall Pro and want its built-in AI running right, start with AI Integration. For everything else, start here.",
+  },
+  {
+    question: "What kinds of work can you automate?",
+    answer:
+      "Anything that runs on copy-and-paste or memory. Pulling job info from the CRM into a spreadsheet. Updating records after a job closes. Sending review requests, quote follow-ups, and invoice reminders when a client gets tagged. Scheduling confirmations and job-status texts. Reports that build themselves. If a person moves data from one screen to another by hand, that's a candidate.",
+  },
+  {
+    question: "What is an AI search for SOPs?",
+    answer:
+      "A search over your own procedures, training docs, and process notes. A new hire or a tech in the field asks a question — how do we handle a callback, what's the checklist for this job — and gets your answer, from your documents, not a guess. It only knows what you give it, so it also shows you which SOPs are missing.",
   },
   {
     question: "Do I have to be on Housecall Pro?",
     answer:
-      "No. Housecall Pro is where we go deepest, and partner discounts apply on new accounts if you switch. But we also work inside Jobber, HubSpot, and GoHighLevel. If you're on ServiceTitan, we scope the work first so you know what's possible before anything is billed.",
+      "No. Housecall Pro is where we go deepest, and partner discounts apply on new accounts if you switch. Automations run on whatever you use for scheduling, invoicing, and customer records — we build to the tools you have.",
   },
   {
     question: "Do you build custom AI, or set up tools we already have?",
     answer:
-      "Both, in that order. Most businesses get the biggest return from configuring what their CRM already offers — missed-call text back, follow-up sequences, attribution. Custom builds come after that, when there's a gap the off-the-shelf tools can't fill: an intake agent, a quote follow-up that reads your CRM, reporting built for how you run the business.",
+      "Both, in that order. Most businesses get the biggest return from switching on what their current tools already do — tagged follow-up sequences, reminders, missed-call text back. Custom builds come after that, for the gaps: an SOP search, an intake agent, data moving between two systems that don't talk, reporting built for how you run.",
   },
   {
     question: "What does AI consulting cost?",
     answer:
-      "It depends on where the work lives. Housecall Pro AI configuration is inside the Growth tier. Custom AI integrations beyond Housecall Pro are inside Premier. A standalone build is scoped after the readiness check and systems audit, and you get the price in writing before work starts. The AI tools themselves are a separate line, paid to the vendor.",
+      "It depends on where the work lives. Housecall Pro's built-in AI is configured inside the Growth tier. Custom AI and automation builds are part of Premier. A standalone build is scoped after the readiness check and systems audit, and you get the price in writing before work starts. The AI tools themselves are a separate line, paid to the vendor.",
   },
   {
     question: "How is this different from hiring a developer?",
     answer:
-      "A developer builds what you spec. We start earlier: which problem is costing you jobs, whether your CRM can already solve it, and what to measure. Then we build only the piece that's missing, inside your accounts, and tie it to booked jobs. You own the result either way — we make sure it's the right thing to build.",
+      "A developer builds what you spec. We start earlier: where the hours go, whether the tools you have can already do it, and what to measure. Then we build only the piece that's missing, inside your accounts, and tie it to hours saved and jobs booked. You own the result either way — we make sure it's the right thing to build.",
   },
   {
     question: "What does the AI readiness check look at?",
     answer:
       "Seven questions: your CRM, what happens to missed calls, how quotes get followed up, whether you can see which marketing booked which job, how reviews get requested, who would own AI inside the business, and what you want it to do first. It takes about two minutes and gives you a crawl, walk, or run result with a first move.",
-  },
-  {
-    question: "Which CRMs and platforms do you work with?",
-    answer:
-      "Housecall Pro (Official Affiliate Partner), Jobber, HubSpot, and GoHighLevel today. ServiceTitan is scoped case by case. On the marketing side, the same attribution feeds Google Ads, Local Services Ads, and Meta so those platforms optimize toward booked jobs.",
   },
   {
     question: "Who owns the automations when the engagement ends?",
@@ -163,7 +166,7 @@ const FAQS = [
   {
     question: "Is AI consulting a fit for a business under $1M?",
     answer:
-      "Usually the first move is smaller than consulting. Under $1M, the highest-return step is one configured tool — missed-call text back or after-hours answering — plus clean lead tracking. The readiness check will tell you that honestly. The Growth System is built for operators already running $1M+.",
+      "Usually the first move is smaller than consulting. Under $1M, the highest-return step is one automation — missed-call text back, or review requests that send themselves — plus clean lead tracking. The readiness check will tell you that honestly. The Growth System is built for operators already running $1M+.",
   },
 ];
 
@@ -178,14 +181,14 @@ export default function AIConsultingPage() {
       />
       <ServiceSchema
         name="AI Consulting for Home Service Businesses"
-        description="AI consulting for home service businesses. AI configured on the CRM the business already runs — Housecall Pro, Jobber, HubSpot, GoHighLevel — plus custom AI builds when the tool doesn't exist. Measured against booked jobs."
+        description="AI consulting for home service businesses: automations for office data entry, customer follow-up, and operations, AI search over internal SOPs, and custom AI builds. Measured against booked jobs."
         url="https://www.aspbranding.com/ai-consulting"
         serviceType="AI Consulting Services"
       />
       <Hero
         eyebrow="AI Consulting"
         heading="AI Consulting for<br><span class='hero-text-gradient'>Home Service Businesses</span>"
-        subheading="Housecall Pro is where we go deepest. We also work inside Jobber, HubSpot, and GoHighLevel, and we build what's missing. Every install is measured against booked jobs, not a demo."
+        subheading="Anywhere your business runs on manual work — data entry, follow-ups, scheduling, paperwork, finding the right procedure — AI and automation can do the work. We find those spots, build it, and measure it against booked jobs."
         ctaText="Book a call"
         ctaUrl="/contact?topic=ai-consulting"
         cta2Text="Check your AI readiness"
@@ -195,7 +198,7 @@ export default function AIConsultingPage() {
         imagePosition="center center"
       />
 
-      {/* Three entry points */}
+      {/* Where the hours go */}
       <section className="relative py-16 md:py-20 lg:py-24 2xl:py-32 text-white overflow-hidden bg-asp-black">
         <div
           aria-hidden
@@ -209,43 +212,46 @@ export default function AIConsultingPage() {
           <ScrollReveal>
             <div className="text-center mb-14 max-w-3xl mx-auto">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                Three ways in
+                Where the hours go
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5">
-                How ASP brings AI into a home service business
+                Where AI and automation fit in a home service business
               </h2>
               <p className="text-white/70 text-lg">
-                Which door you use depends on the CRM you run and what needs to be built. All three end at the same place: a booked job you can trace.
+                Start with where the hours go. Most of them aren&apos;t in the field. They&apos;re in the office, in the follow-up, and in the handoffs between the two.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-              {ENTRY_POINTS.map((e) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+              {AREAS.map((a) => (
                 <div
-                  key={e.label}
+                  key={a.label}
                   className="relative rounded-[var(--radius-asp-2xl)] p-[1.5px] bg-gradient-to-br from-asp-blue-light/40 via-asp-purple/30 to-asp-blue-light/40"
                 >
                   <div className="relative h-full rounded-[calc(var(--radius-asp-2xl)-1px)] bg-asp-black p-8 2xl:p-10 flex flex-col">
                     <div className="inline-block self-start font-bold text-[11px] uppercase tracking-widest mb-5 px-3 py-1 rounded-full bg-gradient-to-r from-asp-blue-light to-asp-purple text-white">
-                      {e.label}
+                      {a.label}
                     </div>
                     <h3 className="font-black text-2xl 2xl:text-3xl mb-4 leading-tight">
-                      {e.headline}
+                      {a.headline}
                     </h3>
-                    <p className="text-white/70 leading-relaxed flex-1">{e.body}</p>
-                    <Link
-                      href={e.href}
-                      className="mt-6 inline-flex items-center gap-2 font-bold text-sm text-asp-blue-light hover:text-white transition-colors"
-                    >
-                      {e.linkText}
-                      <span aria-hidden>&rarr;</span>
-                    </Link>
+                    <p className="text-white/70 leading-relaxed">{a.body}</p>
                   </div>
                 </div>
               ))}
             </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <p className="text-center text-white/60 text-sm mt-10">
+              Not sure where your hours go?{" "}
+              <Link href="/ai-readiness" className="text-asp-blue-light hover:text-white font-semibold">
+                Take the two-minute readiness check
+              </Link>
+              .
+            </p>
           </ScrollReveal>
         </div>
       </section>
@@ -350,7 +356,7 @@ export default function AIConsultingPage() {
         </div>
       </section>
 
-      {/* Comparison — platform breadth, not "real AI vs slop" (that axis lives on /ai-integration) */}
+      {/* Comparison — product-you-buy vs built-into-how-you-run (the "real AI vs slop" axis lives on /ai-integration) */}
       <section className="py-16 md:py-20 lg:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
@@ -359,24 +365,24 @@ export default function AIConsultingPage() {
                 The difference
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
-                AI locked to one vendor vs. AI configured on your CRM
+                AI you buy off the shelf vs. AI built into how you run
               </h2>
               <p className="text-gray-600 text-lg">
-                Most AI offers for the trades come with a platform to switch to. Ours starts with the one you already pay for.
+                Most AI offers for the trades are a product with a login. Ours starts with the work your team already does by hand.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
             <div className="space-y-4">
-              {VS_VENDOR_LOCKED.map((row, i) => (
+              {VS_OFF_THE_SHELF.map((row, i) => (
                 <div
                   key={i}
                   className="grid grid-cols-1 md:grid-cols-2 rounded-[var(--radius-asp-xl)] overflow-hidden"
                 >
                   <div className="p-6 lg:p-7 bg-white text-asp-blue text-sm lg:text-base border border-gray-200 rounded-[var(--radius-asp-xl)] md:rounded-r-none md:border-r-0">
                     <div className="font-bold text-xs uppercase tracking-widest text-gray-400 mb-2">
-                      Vendor-locked AI
+                      Off-the-shelf AI
                     </div>
                     {row.them}
                   </div>
@@ -447,7 +453,7 @@ export default function AIConsultingPage() {
               What does AI consulting cost?
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              AI consulting isn&apos;t a separate retainer. Housecall Pro AI configuration is part of the Growth tier. Custom AI integrations beyond Housecall Pro are part of Premier. A standalone build gets scoped after the readiness check and the systems audit, with the price in writing before work starts.
+              AI consulting isn&apos;t a separate retainer. Housecall Pro&apos;s built-in AI is configured inside the Growth tier. Custom AI and automation builds are part of Premier. A standalone build gets scoped after the readiness check and the systems audit, with the price in writing before work starts.
             </p>
             <Link
               href="/pricing"
@@ -482,7 +488,7 @@ export default function AIConsultingPage() {
             label: "Platform",
             href: "/ai-integration",
             title: "AI Integration",
-            body: "The Housecall Pro AI stack — CSR AI, attribution, follow-up — configured by an Official Affiliate Partner. The deep-dive for HCP operators.",
+            body: "Already on Housecall Pro? Its built-in AI stack — CSR AI, attribution, follow-up — configured by an Official Affiliate Partner.",
           },
           {
             label: "Pillar",
@@ -508,7 +514,7 @@ export default function AIConsultingPage() {
               Ready to see where AI fits in your business?
             </h2>
             <p className="text-gray-600 text-lg mb-8">
-              Start with the two-minute readiness check, or book a call and we&apos;ll map it together. Either way you leave with the first move, not a pitch.
+              Start with the two-minute readiness check, or book a call and we&apos;ll map where the hours go. Either way you leave with the first move, not a pitch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
