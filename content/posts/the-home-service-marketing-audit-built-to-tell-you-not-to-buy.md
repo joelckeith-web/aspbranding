@@ -1,8 +1,8 @@
 ---
 title: "The Home Service Marketing Audit Built to Tell You Not to Buy"
 slug: "the-home-service-marketing-audit-built-to-tell-you-not-to-buy"
-publishDate: "2026-09-07"
-dateModified: "2026-09-07"
+publishDate: "2026-09-04"
+dateModified: "2026-09-04"
 author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Then that goes in the deck. The goal of the audit is an honest read on your marketing, not a reason to sell more services. If the right move is to leave things alone, that is what gets recommended."
     - question: "Does this audit work for any type of home service business?"
       answer: "Yes. It is built for roofers, remodelers, HVAC companies, plumbers, and electricians, businesses where the phone has to ring and crews have to stay busy every week."
-status: "review"
+status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "7 min read"
 ---
