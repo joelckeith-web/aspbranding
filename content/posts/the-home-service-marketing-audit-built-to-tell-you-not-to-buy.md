@@ -36,7 +36,7 @@ contentPillar: "business-growth-strategy"
 readingTime: "7 min read"
 ---
 
-Most marketing audits are sales pitches with a spreadsheet attached. You book a call, sit through sixty minutes of flattery, and land on a slide that says "buy more of what we sell." A real home service marketing audit is supposed to work the other way. It should be built to sometimes tell you not to buy anything at all. That's the posture behind the $99 audit ASP runs for roofers, HVAC companies, plumbers, electricians, and remodelers. Last week it meant telling a company to walk away from the exact service they called us about. Here's why that's the whole point, and what an honest audit digs into.
+Most marketing audits are sales pitches with a spreadsheet attached. You book a call, sit through sixty minutes of flattery, and land on a slide that says "buy more of what we sell." A real home service marketing audit is supposed to work the other way. It should be built to sometimes tell you not to buy anything at all. That's the posture behind the [$99 audit](/blog/home-service-marketing-audit-asp-s-99-launch-offer) ASP runs for roofers, HVAC companies, plumbers, electricians, and remodelers. Last week it meant telling a company to walk away from the exact service they called us about. Here's why that's the whole point, and what an honest audit digs into.
 
 ## What Makes a Home Service Marketing Audit Honest
 
