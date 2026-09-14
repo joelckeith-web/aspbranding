@@ -21,12 +21,34 @@ export const BUSINESS = {
   },
 } as const;
 
-export const NAV_LINKS = [
+export type NavLink = { label: string; href: string };
+export type NavGroup = { label: string; children: readonly NavLink[] };
+export type NavItem = NavLink | NavGroup;
+
+// Growth System stays the lead item; Services and AI Integration are dropdowns.
+export const NAV_LINKS: readonly NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Growth System", href: "/growth-system" },
-  { label: "AI Integration", href: "/ai-integration" },
+  {
+    label: "Services",
+    children: [
+      { label: "Local SEO Pro", href: "/local-seo-pro" },
+      { label: "StormFront", href: "/stormfront" },
+      { label: "Content Creation Package", href: "/content-creation" },
+      { label: "Podcast Studio", href: "/podcast" },
+      { label: "ChatGPT Ads Management", href: "/chatgpt-ads-management" },
+      { label: "Fractional C-Suite", href: "/fractional" },
+    ],
+  },
+  {
+    label: "AI Integration",
+    children: [
+      { label: "AI Integration", href: "/ai-integration" },
+      { label: "AI Consulting", href: "/ai-consulting" },
+    ],
+  },
   { label: "Pricing", href: "/pricing" },
-] as const;
+];
 
 export const FOOTER_SYSTEM = [
   { label: "The Growth System", href: "/growth-system" },
