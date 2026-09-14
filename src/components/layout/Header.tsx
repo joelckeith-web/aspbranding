@@ -24,6 +24,7 @@ function Chevron({ open }: { open: boolean }) {
 function DesktopDropdown({ group }: { group: NavGroup }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const lastPointer = useRef<string>("");
   const menuId = `nav-menu-${group.label.toLowerCase().replace(/\s+/g, "-")}`;
 
   useEffect(() => {
@@ -46,8 +47,12 @@ function DesktopDropdown({ group }: { group: NavGroup }) {
     <div
       ref={ref}
       className="relative"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onPointerEnter={(e) => {
+        if (e.pointerType === "mouse") setOpen(true);
+      }}
+      onPointerLeave={(e) => {
+        if (e.pointerType === "mouse") setOpen(false);
+      }}
       onBlur={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget as Node)) setOpen(false);
       }}
@@ -57,7 +62,15 @@ function DesktopDropdown({ group }: { group: NavGroup }) {
         className="nav-link inline-flex items-center gap-1.5 bg-transparent border-0 p-0 cursor-pointer"
         aria-expanded={open}
         aria-controls={menuId}
-        onClick={() => setOpen((v) => !v)}
+        onPointerDown={(e) => {
+          lastPointer.current = e.pointerType;
+        }}
+        onClick={(e) => {
+          // A mouse has already opened the menu on hover — a click must not close it again.
+          // Touch, pen and keyboard (detail 0) toggle.
+          const mouseClick = e.detail > 0 && lastPointer.current === "mouse";
+          setOpen((v) => (mouseClick ? true : !v));
+        }}
       >
         {group.label}
         <Chevron open={open} />
