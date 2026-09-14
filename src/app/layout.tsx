@@ -118,9 +118,9 @@ export default function RootLayout({
                   url: "https://www.aspbranding.com",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://www.aspbranding.com/images/asp-logo.png",
+                    url: "https://www.aspbranding.com/images/logos/asp-logo.png",
                   },
-                  image: "https://www.aspbranding.com/images/asp-logo.png",
+                  image: "https://www.aspbranding.com/images/logos/asp-logo.png",
                   email: "info@aspbranding.com",
                   telephone: "+1-512-200-3190",
                   priceRange: "$$",
