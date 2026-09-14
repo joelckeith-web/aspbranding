@@ -55,7 +55,7 @@ const AREAS = [
   },
   {
     label: "SOP search & custom tools",
-    headline: "Ask it, and it answers from your SOPs.",
+    headline: "Ask a question and get the answer from your own SOPs.",
     body: "An AI search over your own SOPs, so a new hire or a tech in the field asks a question and gets your answer. Plus the builds that don't exist off the shelf: intake agents, reporting built for how you run, two systems that finally talk to each other.",
   },
 ];
