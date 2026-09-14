@@ -72,6 +72,7 @@ export function ServiceSchema({
   serviceType,
   price,
   priceCurrency = "USD",
+  audienceType,
 }: {
   name: string;
   description: string;
@@ -79,6 +80,7 @@ export function ServiceSchema({
   serviceType?: string;
   price?: string;
   priceCurrency?: string;
+  audienceType?: string;
 }) {
   const offers = price
     ? {
@@ -103,6 +105,7 @@ export function ServiceSchema({
           serviceType: serviceType ?? "Marketing",
           provider: { "@id": "https://www.aspbranding.com/#organization" },
           areaServed: { "@type": "Country", name: "United States" },
+          ...(audienceType && { audience: { "@type": "BusinessAudience", audienceType } }),
           ...(offers && { offers }),
         }),
       }}

@@ -2,7 +2,7 @@
 title: "AI for Home Service Businesses: How to Adopt It Without Wasting Money"
 slug: "ai-for-home-service-businesses"
 publishDate: "2026-06-30"
-dateModified: "2026-06-30"
+dateModified: "2026-09-03"
 author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
@@ -91,7 +91,7 @@ Two more things to watch:
 - **Skip the fly-by-night vendors.** Plenty of tools are cheap to sign up for and gone in a year, with no real onboarding or support. Look for a company that helps you set it up, tests it with you, and sticks around.
 - **Check your current tech first.** Most operators either have no real tech stack or a bloated one they don't use. Fix that before you add more.
 
-For a vetted starting point, see our list of the [best AI tools for home service businesses](/blog/best-ai-tools-home-service-businesses-2025). If you'd rather have help wiring AI into the systems you already run, that's what our [AI Integration](/ai-integration) work is built for.
+For a vetted starting point, see our list of the [best AI tools for home service businesses](/blog/best-ai-tools-home-service-businesses-2025). If you'd rather have help wiring AI into the systems you already run, that's what our [AI Integration](/ai-integration) work is built for. If you run a different CRM, or you need something built rather than configured, start with [AI consulting for home service businesses](/ai-consulting).
 
 **Key takeaway:** If a tool can't show you a return in 90 days, it's a cost, not an investment.
 

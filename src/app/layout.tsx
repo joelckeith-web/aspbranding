@@ -118,9 +118,9 @@ export default function RootLayout({
                   url: "https://www.aspbranding.com",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://www.aspbranding.com/images/asp-logo.png",
+                    url: "https://www.aspbranding.com/images/logos/asp-logo.png",
                   },
-                  image: "https://www.aspbranding.com/images/asp-logo.png",
+                  image: "https://www.aspbranding.com/images/logos/asp-logo.png",
                   email: "info@aspbranding.com",
                   telephone: "+1-512-200-3190",
                   priceRange: "$$",
@@ -144,9 +144,9 @@ export default function RootLayout({
                     ],
                   },
                   sameAs: [
-                    "https://www.facebook.com/aspbranding",
+                    "https://www.facebook.com/ASPBranding/",
                     "https://www.instagram.com/aspbranding",
-                    "https://www.linkedin.com/company/asp-branding",
+                    "https://www.linkedin.com/company/atomicsoulsproductions/",
                   ],
                 },
                 {
