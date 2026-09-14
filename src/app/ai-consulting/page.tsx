@@ -45,17 +45,17 @@ const AREAS = [
   },
   {
     label: "Follow-up that runs itself",
-    headline: "Tag a client. The rest happens.",
+    headline: "Tag a client, and the sequence runs itself.",
     body: "Review requests after the job. Follow-ups on estimates and quotes. Reminders on unpaid invoices. Maintenance reminders. One tag in your CRM starts the sequence, and it stops the moment the customer replies.",
   },
   {
     label: "Operations & logistics",
-    headline: "The handoffs that get dropped when it's busy.",
+    headline: "The handoffs drop when it's busy.",
     body: "Scheduling confirmations, dispatch updates, job-status texts to the customer, parts and material tracking. The office-to-field handoffs that fall through on a busy Tuesday — running on a trigger instead of a memory.",
   },
   {
     label: "SOP search & custom tools",
-    headline: "Your procedures, answered.",
+    headline: "Ask it, and it answers from your SOPs.",
     body: "An AI search over your own SOPs, so a new hire or a tech in the field asks a question and gets your answer. Plus the builds that don't exist off the shelf: intake agents, reporting built for how you run, two systems that finally talk to each other.",
   },
 ];
@@ -162,12 +162,12 @@ const FAQS = [
   {
     question: "Do I need to replace my CRM to use AI automation?",
     answer:
-      "No. Automation runs inside the tools you already use for scheduling, invoicing, and customer records. See the question above for how that works if you're on Housecall Pro — for any other CRM, we build to what you have.",
+      "No. Automation runs inside the tools you already use for scheduling, invoicing, and customer records. On Housecall Pro, we configure its built-in AI directly. On any other CRM, we build the automation to fit what you already have.",
   },
   {
     question: "Do you build custom AI, or set up tools we already have?",
     answer:
-      "Both, in that order — and it's a different starting point than most off-the-shelf AI tools. Most businesses get the biggest return from switching on what their current tools already do — tagged follow-up sequences, reminders, missed-call text back. Custom builds come after that, for the gaps: an SOP search, an intake agent, data moving between two systems that don't talk, reporting built for how you run.",
+      "Both, in that order — and we start with what you already own, not a new login to buy. Most businesses get the biggest return from switching on what their current tools already do — tagged follow-up sequences, reminders, missed-call text back. Custom builds come after that, for the gaps: an SOP search, an intake agent, data moving between two systems that don't talk, reporting built for how you run.",
   },
   {
     question: "What does AI consulting cost?",
@@ -182,7 +182,7 @@ const FAQS = [
   {
     question: "How long does it take to implement AI automation?",
     answer:
-      "There's no fixed timeline, and we won't invent one. It follows crawl, walk, run: map the manual work first, automate the follow-up and office next, then build custom tools once those are proven. Each step gets measured — hours back, jobs booked — before the next one starts. The readiness check gives you the first move for your business specifically.",
+      "There's no fixed timeline — it depends on how much manual work you're starting with. It follows crawl, walk, run: map the manual work first, automate the follow-up and office next, then build custom tools once those are proven. Each step gets measured — hours back, jobs booked — before the next one starts. The readiness check gives you the first move for your business specifically.",
   },
   {
     question: "What does the AI readiness check look at?",
@@ -250,7 +250,7 @@ export default function AIConsultingPage() {
                 Where AI and automation fit in a home service business
               </h2>
               <p className="text-white/70 text-lg">
-                AI consulting for home service businesses means finding the manual work in your office, your follow-up, and your field operations — then building the automation to run it, measured against booked jobs. Start with where the hours go. Most of them aren&apos;t in the field. They&apos;re in the office, in the follow-up, and in the handoffs between the two.
+                AI consulting for home service businesses means finding the manual work in your office, your follow-up, and your field operations, then building the automation to run it. Every automation is measured against booked jobs. Start with where the hours go. Most of them aren&apos;t in the field. They&apos;re in the office, in the follow-up, and in the handoffs between the two.
               </p>
             </div>
           </ScrollReveal>

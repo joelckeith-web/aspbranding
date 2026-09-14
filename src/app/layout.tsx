@@ -144,7 +144,7 @@ export default function RootLayout({
                     ],
                   },
                   sameAs: [
-                    "https://www.facebook.com/aspbranding",
+                    "https://www.facebook.com/ASPBranding/",
                     "https://www.instagram.com/aspbranding",
                     "https://www.linkedin.com/company/asp-branding",
                   ],
