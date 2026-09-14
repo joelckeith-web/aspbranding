@@ -533,6 +533,7 @@ export default function AIConsultingPage() {
 
       <TestimonialAnchor
         quote="Not only do we rank better than ever before, our efficiency in budget, ad spend, and processes has been dramatically changed."
+        attribution="David"
         size="sm"
       />
 

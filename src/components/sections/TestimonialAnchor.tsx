@@ -6,6 +6,8 @@ interface TestimonialAnchorProps {
   eyebrow?: string;
   variant?: "dark" | "light";
   size?: "lg" | "sm";
+  /** Reviewer name as recorded in testimonials.json — shown under the quote when set. */
+  attribution?: string;
 }
 
 export function TestimonialAnchor({
@@ -13,6 +15,7 @@ export function TestimonialAnchor({
   eyebrow = "What operators say",
   variant = "dark",
   size = "lg",
+  attribution,
 }: TestimonialAnchorProps) {
   const resolved =
     quote ??
@@ -65,6 +68,15 @@ export function TestimonialAnchor({
           >
             {resolved}
           </blockquote>
+          {attribution && (
+            <p
+              className={`font-bold text-sm uppercase tracking-widest mb-4 ${
+                isDark ? "text-white/70" : "text-asp-blue/70"
+              }`}
+            >
+              &mdash; {attribution}
+            </p>
+          )}
           <div className="flex justify-center gap-1">
             {[...Array(5)].map((_, j) => (
               <svg
