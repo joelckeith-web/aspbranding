@@ -8,11 +8,32 @@ import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
+const PAGE_TITLE = "AI Consulting & Automation for Home Service Businesses";
+const PAGE_DESCRIPTION =
+  "AI consulting for home service businesses — automate office data entry, follow-up, and ops, add SOP search and custom AI. Take a free readiness check.";
+const PAGE_URL = "https://www.aspbranding.com/ai-consulting";
+
 export const metadata: Metadata = {
-  title: "AI Consulting for Home Service Businesses",
-  description:
-    "AI consulting for home service businesses: automations for data entry, follow-up, and operations, SOP search, and custom AI builds — measured against booked jobs.",
-  alternates: { canonical: "/ai-consulting" },
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
+  // Page-level openGraph/twitter replace the root objects wholesale, so the site defaults are restated here.
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "ASP",
+    url: PAGE_URL,
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ASP — Assess. Strategize. Perform." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@aspbranding",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    images: ["/og-image.png"],
+  },
 };
 
 // Where the hours go. The CRM is one surface here, not the axis — Joel's direction 2026-09-03.
@@ -139,9 +160,14 @@ const FAQS = [
       "No. Housecall Pro is where we go deepest, and partner discounts apply on new accounts if you switch. Automations run on whatever you use for scheduling, invoicing, and customer records — we build to the tools you have.",
   },
   {
+    question: "Do I need to replace my CRM to use AI automation?",
+    answer:
+      "No. Automation runs inside the tools you already use for scheduling, invoicing, and customer records. See the question above for how that works if you're on Housecall Pro — for any other CRM, we build to what you have.",
+  },
+  {
     question: "Do you build custom AI, or set up tools we already have?",
     answer:
-      "Both, in that order. Most businesses get the biggest return from switching on what their current tools already do — tagged follow-up sequences, reminders, missed-call text back. Custom builds come after that, for the gaps: an SOP search, an intake agent, data moving between two systems that don't talk, reporting built for how you run.",
+      "Both, in that order — and it's a different starting point than most off-the-shelf AI tools. Most businesses get the biggest return from switching on what their current tools already do — tagged follow-up sequences, reminders, missed-call text back. Custom builds come after that, for the gaps: an SOP search, an intake agent, data moving between two systems that don't talk, reporting built for how you run.",
   },
   {
     question: "What does AI consulting cost?",
@@ -152,6 +178,11 @@ const FAQS = [
     question: "How is this different from hiring a developer?",
     answer:
       "A developer builds what you spec. We start earlier: where the hours go, whether the tools you have can already do it, and what to measure. Then we build only the piece that's missing, inside your accounts, and tie it to hours saved and jobs booked. You own the result either way — we make sure it's the right thing to build.",
+  },
+  {
+    question: "How long does it take to implement AI automation?",
+    answer:
+      "There's no fixed timeline, and we won't invent one. It follows crawl, walk, run: map the manual work first, automate the follow-up and office next, then build custom tools once those are proven. Each step gets measured — hours back, jobs booked — before the next one starts. The readiness check gives you the first move for your business specifically.",
   },
   {
     question: "What does the AI readiness check look at?",
@@ -182,12 +213,13 @@ export default function AIConsultingPage() {
       <ServiceSchema
         name="AI Consulting for Home Service Businesses"
         description="AI consulting for home service businesses: automations for office data entry, customer follow-up, and operations, AI search over internal SOPs, and custom AI builds. Measured against booked jobs."
-        url="https://www.aspbranding.com/ai-consulting"
+        url={PAGE_URL}
         serviceType="AI Consulting Services"
+        audienceType="Home service businesses"
       />
       <Hero
         eyebrow="AI Consulting"
-        heading="AI Consulting for<br><span class='hero-text-gradient'>Home Service Businesses</span>"
+        heading="AI Consulting for <br><span class='hero-text-gradient'>Home Service Businesses</span>"
         subheading="Anywhere your business runs on manual work — data entry, follow-ups, scheduling, paperwork, finding the right procedure — AI and automation can do the work. We find those spots, build it, and measure it against booked jobs."
         ctaText="Book a call"
         ctaUrl="/contact?topic=ai-consulting"
@@ -218,7 +250,7 @@ export default function AIConsultingPage() {
                 Where AI and automation fit in a home service business
               </h2>
               <p className="text-white/70 text-lg">
-                Start with where the hours go. Most of them aren&apos;t in the field. They&apos;re in the office, in the follow-up, and in the handoffs between the two.
+                AI consulting for home service businesses means finding the manual work in your office, your follow-up, and your field operations — then building the automation to run it, measured against booked jobs. Start with where the hours go. Most of them aren&apos;t in the field. They&apos;re in the office, in the follow-up, and in the handoffs between the two.
               </p>
             </div>
           </ScrollReveal>
