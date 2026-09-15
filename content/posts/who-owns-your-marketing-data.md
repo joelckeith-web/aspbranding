@@ -23,7 +23,7 @@ schema:
       answer: "You should — but many operators don't. If the agency created the Google Ads account under their own manager account rather than setting up an account in your business's name and granting themselves access, they own it, and your entire ad history, conversion data, and audience lists can walk out the door with them. The fix is simple: the ad account should be created in your name, with the agency added as a manager you can remove."
     - question: "What happens to my data if I leave my marketing agency?"
       answer: "With a good agency, nothing — you keep your website, domain, Google Business Profile, ad accounts, CRM, analytics, and every asset, because they were always yours. With the wrong one, leaving means losing your site, your leads, your ad history, and your rankings overnight, because everything was built on accounts the agency controls. The difference is entirely in how the relationship was set up on day one, which is why you ask before you sign, not after."
-status: "review"
+status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "7 min read"
 ---

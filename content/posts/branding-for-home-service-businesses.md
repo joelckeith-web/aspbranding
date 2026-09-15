@@ -31,7 +31,7 @@ schema:
       answer: "Conditionally, yes — but at a smaller scope. A clean logo, a real identity system, consistent vehicle wraps, and a usable website are worth doing well at any revenue level because they compound for years. Spending $25K on full brand strategy work under $1M is usually premature. Spending $5K on a clean identity package under $1M almost always pays off. The real question isn't 'should I invest in branding' but 'what's the right scope for my stage?' Most operators under $1M need execution-grade branding that looks professional and is internally consistent, not premium-positioning strategy work."
     - question: "Should I rebrand my home service business?"
       answer: "Usually no. Rebranding without a business reason is expensive churn that sacrifices the brand equity you've already built. Rebrand only when there's a clear trigger: new ownership, new positioning, market shift, M&A, or your current brand is actively limiting growth. The most common bad reason to rebrand is 'it feels dated' — operators see fresher-looking competitors and assume the answer is a new logo. Almost always the better answer is to apply the existing brand more consistently across more touchpoints. Real rebrands are infrequent and event-driven, not aesthetic refreshes."
-status: "review"
+status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "8 min read"
 ---

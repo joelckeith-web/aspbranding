@@ -31,7 +31,7 @@ schema:
       answer: "Retainer, almost always. Hourly consulting creates the wrong incentive — the consultant is paid for time, not for impact, which means more meetings, longer reports, and a quiet inflation of scope. Retainers force a clean conversation about what the consultant owns and what success looks like. Project work (a discrete piece of analysis, a one-time strategic plan) can be priced as a fixed fee, but ongoing strategic direction belongs on a retainer with defined deliverables, not on an hourly clock."
     - question: "How long does growth consulting take to produce results?"
       answer: "Strategic work shows up in the numbers in 60 to 120 days, not weeks. The first 30 days are diagnosis — what's working, what's broken, where the leverage is. The next 30 are decisions and reallocation — killing what isn't working, doubling down on what is, fixing attribution. Real revenue impact starts showing up around day 90 and compounds from there. If a consultant promises results in week one, they're either selling you tactical execution that's already inside your reach without their help, or they're managing your expectations dishonestly."
-status: "review"
+status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "9 min read"
 ---
