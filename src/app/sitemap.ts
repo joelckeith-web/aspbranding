@@ -13,6 +13,8 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/case-studies", priority: 0.8, changeFrequency: "monthly" },
   { path: "/seo", priority: 0.9, changeFrequency: "monthly" },
   { path: "/ppc", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/meta-ads", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/custom-ai-solutions", priority: 0.8, changeFrequency: "monthly" },
   { path: "/aeo", priority: 0.8, changeFrequency: "monthly" },
   { path: "/geo", priority: 0.7, changeFrequency: "monthly" },
   { path: "/local-seo-pro", priority: 0.8, changeFrequency: "monthly" },

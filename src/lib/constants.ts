@@ -34,12 +34,14 @@ export const NAV_LINKS: readonly NavItem[] = [
     children: [
       { label: "Search Engine Optimization (SEO)", href: "/seo" },
       { label: "Pay Per Click (PPC)", href: "/ppc" },
+      { label: "Meta Ads Management", href: "/meta-ads" },
       { label: "Answer Engine Optimization (AEO)", href: "/aeo" },
       { label: "Generative Engine Optimization (GEO)", href: "/geo" },
       { label: "Local SEO Pro", href: "/local-seo-pro" },
       { label: "StormFront", href: "/stormfront" },
       { label: "Content Creation Package", href: "/content-creation" },
       { label: "ChatGPT Ads Management", href: "/chatgpt-ads-management" },
+      { label: "Custom AI Solutions", href: "/custom-ai-solutions" },
       { label: "Fractional C-Suite", href: "/fractional" },
     ],
   },
@@ -65,6 +67,8 @@ export const FOOTER_SYSTEM = [
 export const FOOTER_PRODUCTS = [
   { label: "Search Engine Optimization (SEO)", href: "/seo" },
   { label: "Pay Per Click (PPC)", href: "/ppc" },
+  { label: "Meta Ads Management", href: "/meta-ads" },
+  { label: "Custom AI Solutions", href: "/custom-ai-solutions" },
   { label: "Answer Engine Optimization (AEO)", href: "/aeo" },
   { label: "Generative Engine Optimization (GEO)", href: "/geo" },
   { label: "Local SEO Pro", href: "/local-seo-pro" },
