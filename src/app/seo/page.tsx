@@ -8,7 +8,7 @@ import { ExpandableDetails } from "@/components/sections/ExpandableDetails";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
-const PAGE_TITLE = "Home Service SEO";
+const PAGE_TITLE = "Home Service SEO for Contractors";
 const PAGE_DESCRIPTION =
   "Home service SEO: organic rankings, real content, and technical fixes that hold up over time. No backlink buying, no DA promises. See how ASP builds it.";
 const PAGE_URL = "https://www.aspbranding.com/seo";
@@ -197,6 +197,11 @@ const FAQS = [
       "Against booked revenue, with rankings and impressions as the leading indicators. Rankings and organic impressions tell you whether visibility is moving; clicks and leads tell you whether it's landing; booked jobs tell you whether it was worth doing. Where your CRM supports attribution, we wire lead source through to the job. You won't see Domain Authority in the report — DA and DR are third-party scores Google doesn't use.",
   },
   {
+    question: "How is SEO priced?",
+    answer:
+      "SEO isn't sold here as a standalone retainer with a rate card. The scope depends on what the audit finds — how much technical debt is in the way, how many service pages need building, and how deep the content has to go to compete in your market. That scope is what sets the number, and you see it before you commit to anything. Current options are on the pricing page.",
+  },
+  {
     question: "Do you do SEO for a specific trade — roofing, HVAC, electrical, or plumbing?",
     answer:
       "Yes. Roofing, HVAC, electrician and plumbing SEO run on the same method with different calendars and cluster plans — roofing moves in storm-driven bursts, HVAC and electrical follow seasonal and emergency demand, and plumbing splits between instant-decision emergencies and planned work like repipes. We also work with flooring, inspection, restoration, remodel and specialty contractors. If your trade isn't listed, the method still applies; the research tells us how your buyers search.",
@@ -263,7 +268,7 @@ export default function SeoPage() {
               Contractor SEO
             </p>
             <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight text-asp-black">
-              Rank where the job gets booked
+              What home service SEO covers
             </h2>
             <p className="mt-5 text-black/70 leading-relaxed">
               Home service SEO is the work of showing up for every search that ends in a booked job:
@@ -298,7 +303,7 @@ export default function SeoPage() {
                 Built for the trades
               </p>
               <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">
-                SEO for every home service trade
+                SEO for roofing, HVAC, plumbing and electrical contractors
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-white/70 leading-relaxed">
                 Same method, different calendars and cluster plans. Roofing moves in storm-driven
@@ -334,7 +339,7 @@ export default function SeoPage() {
       </section>
 
       {/* Depth lives here, collapsed by default. Content stays in the HTML for crawlers. */}
-      <ExpandableDetails heading="More details about our SEO services">
+      <ExpandableDetails heading="How ASP does SEO">
         <h3 className="font-black text-2xl text-asp-black">What moves rankings in 2026</h3>
         <p className="mt-4 text-black/70 leading-relaxed">
           AI Overviews now sit above the results on a chunk of queries, and the old playbook of thin
@@ -380,7 +385,7 @@ export default function SeoPage() {
 
         <hr className="my-10 border-black/10" />
 
-        <h3 className="font-black text-2xl text-asp-black">How the work gets done</h3>
+        <h3 className="font-black text-2xl text-asp-black">How an SEO engagement runs</h3>
         <p className="mt-4 text-black/70 leading-relaxed">
           There&rsquo;s no single starting point. A three-year-old site with forty pages needs
           different work than a rebuild that launched in March. What stays consistent is the order of
@@ -484,7 +489,7 @@ export default function SeoPage() {
         <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black text-center">
-              How it works
+              How to start with ASP
             </h2>
           </ScrollReveal>
           <ScrollReveal animation="stagger">
@@ -519,7 +524,7 @@ export default function SeoPage() {
 
       <FAQAccordion faqs={FAQS} heading="Frequently Asked Questions" />
 
-      <RelatedPages items={RELATED} />
+      <RelatedPages items={RELATED} heading="Related across the Growth System" />
 
       {/* Closing CTA band */}
       <section className="py-14 md:py-16 bg-white">

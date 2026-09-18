@@ -39,6 +39,11 @@ export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: F
               key={i}
               className="border border-gray-200 rounded-[var(--radius-asp-lg)] overflow-hidden shadow-asp-md hover:shadow-asp-lg transition-shadow bg-white"
             >
+              {/* h3 wrapper: the disclosure label is a document heading, so extractors
+                  that read the DOM outline (rather than the FAQPage schema) can see the
+                  questions. Same pattern as ExpandableDetails. Purely structural — no
+                  visual change, since the h3 carries no styling of its own. */}
+              <h3>
               <button
                 className="w-full flex items-center justify-between p-5 font-bold text-asp-blue hover:bg-gray-50 transition-colors text-left"
                 aria-expanded={openIndex === i}
@@ -61,6 +66,7 @@ export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: F
                   />
                 </svg>
               </button>
+              </h3>
               <div
                 className={`faq-content ${openIndex === i ? "open" : ""}`}
               >
