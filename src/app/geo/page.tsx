@@ -457,7 +457,9 @@ export default function GeoPage() {
                 <p className="mt-3 text-base leading-relaxed text-black/70">
                   Your Business Profile data and its insights. Your review count and how recent the
                   reviews are. Your citation accuracy across 60+ directories. Your organic rankings
-                  and impressions in Search Console.
+                  and impressions in Search Console. We also run internal tooling that tracks
+                  Google AI Overview appearances, which covers Google&rsquo;s answer surfaces rather
+                  than the chat assistants this page is about.
                 </p>
               </div>
               <div className="rounded-[var(--radius-asp-2xl)] border border-gray-200 bg-white p-7 shadow-asp-md">
