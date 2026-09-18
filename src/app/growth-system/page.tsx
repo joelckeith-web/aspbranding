@@ -30,7 +30,11 @@ const COMPONENTS = [
   },
   {
     title: "Answer Engine Optimization",
-    body: "The content strategy that gets your business cited by ChatGPT, Perplexity, Gemini, and Google AI Overviews when buyers ask 'who should I hire?'",
+    body: "The content strategy that puts your business in Google's AI answers — AI Overviews and AI Mode — when buyers ask who they should hire.",
+  },
+  {
+    title: "Generative Engine Optimization",
+    body: "The same discipline aimed at the assistants people ask outside Google: ChatGPT, Perplexity, and Claude. An emerging surface, measured honestly.",
   },
   {
     title: "Content Creation",
