@@ -250,18 +250,20 @@ export default function SeoPage() {
         ctaUrl="/contact"
         cta2Text="Run the Growth Diagnostic"
         cta2Url="/diagnostic"
-        bgType="dark"
+        bgType="image"
+        imageUrl="/images/backgrounds/growth-system-bg.png"
+        imagePosition="center center"
       />
 
       {/* Value prop — short. */}
-      <section className="py-14 md:py-16 bg-white">
+      <section className="py-16 md:py-20 bg-asp-surface-light">
         <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
           <ScrollReveal>
             <p className="font-black uppercase tracking-wide text-sm text-asp-blue">
               Contractor SEO
             </p>
             <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight text-asp-black">
-              Rank where the job actually gets booked
+              Rank where the job gets booked
             </h2>
             <p className="mt-5 text-black/70 leading-relaxed">
               Home service SEO is the work of showing up for every search that ends in a booked job:
@@ -292,7 +294,7 @@ export default function SeoPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center">
-              <p className="font-black uppercase tracking-wide text-sm text-asp-light-blue">
+              <p className="font-black uppercase tracking-wide text-sm text-asp-blue-light">
                 Built for the trades
               </p>
               <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">
@@ -311,10 +313,10 @@ export default function SeoPage() {
               {TRADES.map((t) => (
                 <div
                   key={t.slug}
-                  className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-6 text-center"
+                  className="flex flex-col items-center gap-3 rounded-[var(--radius-asp-xl)] border border-asp-blue-light/25 bg-white/[0.03] px-4 py-6 text-center transition-colors hover:border-asp-blue-light/60"
                 >
                   <svg
-                    className="h-8 w-8 text-asp-light-blue"
+                    className="h-8 w-8 text-asp-blue-light"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth={1.8}
@@ -387,7 +389,7 @@ export default function SeoPage() {
 
         <div className="mt-7 grid gap-5 md:grid-cols-2">
           {WORK.map((w) => (
-            <div key={w.label} className="rounded-xl border border-black/10 bg-white p-5">
+            <div key={w.label} className="rounded-[var(--radius-asp-lg)] border border-gray-200 bg-white p-5 shadow-asp-sm">
               <p className="font-black text-asp-black">{w.label}</p>
               <p className="mt-1 text-sm leading-relaxed text-black/70">{w.body}</p>
             </div>
@@ -416,7 +418,7 @@ export default function SeoPage() {
       </ExpandableDetails>
 
       {/* Proof */}
-      <section className="py-14 md:py-16 bg-white">
+      <section className="py-16 md:py-20 bg-asp-surface-light">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
@@ -433,7 +435,7 @@ export default function SeoPage() {
               {PROOF.map((p) => (
                 <div
                   key={p.industry}
-                  className="rounded-2xl border border-black/10 bg-white p-7 shadow-sm"
+                  className="rounded-[var(--radius-asp-2xl)] border border-gray-200 bg-white p-7 shadow-asp-md"
                 >
                   <h3 className="font-black text-xl text-asp-black">{p.industry}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-black/70">{p.body}</p>
@@ -470,7 +472,12 @@ export default function SeoPage() {
         </div>
       </section>
 
-      <TestimonialAnchor attribution="Kevin" variant="dark" />
+      <TestimonialAnchor
+        quote="It's a night-and-day difference from our last company."
+        attribution="Sarah"
+        variant="dark"
+        size="sm"
+      />
 
       {/* How it works */}
       <section className="py-14 md:py-16 bg-white">
@@ -483,8 +490,8 @@ export default function SeoPage() {
           <ScrollReveal animation="stagger">
             <div className="mt-10 grid gap-6 md:grid-cols-3">
               {STEPS.map((s) => (
-                <div key={s.n} className="rounded-2xl border border-black/10 bg-white p-6">
-                  <span className="font-black text-3xl text-asp-light-blue">{s.n}</span>
+                <div key={s.n} className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-6 shadow-asp-sm">
+                  <span className="font-black text-3xl text-asp-blue-light">{s.n}</span>
                   <h3 className="mt-3 font-black text-lg text-asp-black">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-black/70">{s.body}</p>
                 </div>
