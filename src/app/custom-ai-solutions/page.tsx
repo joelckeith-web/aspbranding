@@ -471,7 +471,7 @@ export default function CustomAiSolutionsPage() {
         </div>
       </ExpandableDetails>
 
-      {/* Proof — systems ASP has actually built and runs */}
+      {/* Proof — systems ASP has genuinely built and runs */}
       <section className="py-16 md:py-20 bg-asp-surface-light">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
