@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
+import { ExpandableDetails } from "@/components/sections/ExpandableDetails";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
@@ -35,31 +36,38 @@ export const metadata: Metadata = {
   },
 };
 
-// Hero card grid — the four things the page covers, one line each.
-const PILLARS = [
-  {
-    label: "Service pages",
-    body: "The pages buyers read before they call, built to beat whoever is ranking today.",
-  },
-  {
-    label: "Content depth",
-    body: "Clusters around your highest-value services, not one thin page per trade.",
-  },
-  {
-    label: "Technical health",
-    body: "Crawling, indexing, redirects, schema, and speed on a phone with two bars.",
-  },
-  {
-    label: "Local signals",
-    body: "Business Profile, reviews, and citations, reported alongside the organic work.",
-  },
+/**
+ * Trade grid. Phase 1 renders these as non-linking cards — the per-trade SEO
+ * pages don't exist yet, and the site's rule is that we never ship a link to a
+ * 404. Phase 2 turns `href` on and points each card at /seo/<slug>.
+ */
+const TRADES = [
+  { name: "HVAC", slug: "hvac", icon: "thermometer" },
+  { name: "Plumbing", slug: "plumbing", icon: "wrench" },
+  { name: "Roofing", slug: "roofing", icon: "home" },
+  { name: "Electrical", slug: "electrical", icon: "zap" },
+  { name: "Restoration", slug: "restoration", icon: "shield" },
+  { name: "Home Inspection", slug: "home-inspection", icon: "search" },
+  { name: "Flooring", slug: "flooring", icon: "grid" },
+  { name: "Remodeling", slug: "remodeling", icon: "hammer" },
 ];
 
-// What moves rankings. First card carries the interview detail — the real differentiator.
+const ICONS: Record<string, string> = {
+  thermometer: "M12 3a2 2 0 00-2 2v9.1a4 4 0 104 0V5a2 2 0 00-2-2z",
+  wrench: "M14.7 6.3a4 4 0 01-5 5L4 17v3h3l5.7-5.7a4 4 0 015-5l2-2-3-3-2 2z",
+  home: "M3 10l9-7 9 7v10a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V10z",
+  zap: "M13 2L4 14h6l-1 8 9-12h-6l1-8z",
+  shield: "M12 3l8 3v6c0 4.5-3.2 8.3-8 9-4.8-.7-8-4.5-8-9V6l8-3z",
+  search: "M11 4a7 7 0 100 14 7 7 0 000-14zM20 20l-4-4",
+  grid: "M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z",
+  hammer: "M14 4l6 6-3 3-6-6 3-3zM10 8l-7 7v5h5l7-7",
+};
+
+// Lives inside the expandable panel — depth without page length.
 const LEVERS = [
   {
-    label: "First-hand experience — the biggest lever",
-    body: "Content that ranks and gets cited says what the rest of the internet can't: what a job cost last month, why the cheap repair fails in year three, what you tell a homeowner before they ask. This is the part we can't do without you. It's an interview — we sit with you or a senior tech, record it, and pull out the numbers and the failure modes. You talk; we do the rest.",
+    label: "First-hand experience",
+    body: "Content that ranks and gets cited says what the rest of the internet can't: what a job cost last month, why the cheap repair fails in year three, what you tell a homeowner before they ask. This is the part we can't do without you, so we interview for it — we sit with you or a senior tech, record it, and pull out the numbers and the failure modes.",
   },
   {
     label: "Depth over breadth",
@@ -67,19 +75,18 @@ const LEVERS = [
   },
   {
     label: "Named, credentialed authorship",
-    body: "E-E-A-T comes down to real authors, real credentials, accurate dates, and citations that hold up — and you have licenses, years in the trade, and thousands of completed jobs behind you. Putting a named human on the content costs nothing and separates you from agency-written pages.",
+    body: "Real authors, real credentials, accurate dates, and citations that hold up. You have licenses, years in the trade, and thousands of completed jobs behind you — most sites bury all of it behind a stock photo.",
   },
   {
     label: "Technical health",
     body: "Correct status codes, redirects that don't chain, canonicals pointing where they should, valid schema, a current sitemap, and pages that load fast on a phone. We fix in order of what the problem costs you — an indexation issue blocking forty pages outranks a slow hero image.",
   },
   {
-    label: "Local signals, where they count",
+    label: "Local signals",
     body: "For “near me” and map-pack queries, Business Profile data, review volume and recency, and citation consistency carry real weight. Both sides land in one report so they aren't pulling against each other.",
   },
 ];
 
-// How the work runs — capability grid.
 const WORK = [
   {
     label: "Research first",
@@ -91,19 +98,11 @@ const WORK = [
   },
   {
     label: "On-page work where the money is",
-    body: "Titles, headings, structure and body copy written to answer the search rather than hit a keyword target.",
-  },
-  {
-    label: "Pages that don't exist yet",
-    body: "Where a service has real demand and no page, we build the page.",
+    body: "Titles, headings, structure and body copy written to answer the search rather than hit a keyword target. Where a service has real demand and no page, we build the page.",
   },
   {
     label: "Content depth on a schedule",
     body: "Clusters around your highest-value services, built out over months rather than dumped at once.",
-  },
-  {
-    label: "Local surfaces stay active",
-    body: "The Content Creation Package keeps social and Business Profile content moving while site-side content compounds.",
   },
   {
     label: "Reporting against booked revenue",
@@ -115,27 +114,44 @@ const WORK = [
   },
 ];
 
-// Proof. Both blocks are trades. Neither is clean SEO-only attribution and the page says so.
+const STEPS = [
+  {
+    n: "01",
+    title: "Run the Growth Diagnostic",
+    body: "About 90 seconds online. You get a read on where your marketing stands before anyone tries to sell you anything.",
+  },
+  {
+    n: "02",
+    title: "Audit and gap analysis",
+    body: "A 30-minute call, then we go through the site: what's indexed, what's ranking, what's broken, and which searches your competitors own. You get the findings whether or not you hire us.",
+  },
+  {
+    n: "03",
+    title: "Your first ninety days",
+    body: "We clear whatever is blocking, then build against the highest-value gaps the audit found. You see what changed and what it moved.",
+  },
+];
+
 const PROOF = [
   {
     industry: "Commercial flooring and concrete coatings",
-    body: "This company was invisible on the terms their buyers searched, with flat traffic and ad spend covering the gap. We ran keyword research and a competitive gap analysis, rebuilt on-page optimization against the target terms, and layered local SEO plus a content plan aimed at high-value commercial keywords.",
+    body: "Invisible on the terms their buyers searched, with flat traffic and ad spend covering the gap. We ran keyword research and a competitive gap analysis, rebuilt on-page optimization against the target terms, and layered local SEO plus a content plan aimed at high-value commercial keywords.",
     stats: [
       { label: "Search visibility", value: "45.22%" },
       { label: "“Concrete Flooring Company”", value: "#1" },
       { label: "“Epoxy Coatings”", value: "#3 from #7" },
     ],
-    note: "90-day tracking period. The business is on track to break $5M inside twelve months.",
+    note: "90-day tracking period. On track to break $5M inside twelve months.",
   },
   {
     industry: "HVAC services",
-    body: "A regional HVAC operator had plateaued at a $3M revenue ceiling for two years and needed stronger local search visibility in a crowded market. The organic side of that program was Business Profile optimization for map-pack visibility, running alongside paid search and Local Services Ads.",
+    body: "A regional operator plateaued at a $3M revenue ceiling for two years, needing stronger local search visibility in a crowded market. The organic side was Business Profile optimization for map-pack visibility, running alongside paid search and Local Services Ads.",
     stats: [
-      { label: "Business Profile impressions", value: "13K+" },
-      { label: "Call clicks from the profile", value: "244" },
+      { label: "Profile impressions", value: "13K+" },
+      { label: "Call clicks from profile", value: "244" },
       { label: "Google reviews", value: "130" },
     ],
-    note: "Twelve-month program. The revenue ceiling broke, with paid media carrying a large share of that result.",
+    note: "Twelve-month program. The ceiling broke, with paid media carrying a large share of that result.",
   },
 ];
 
@@ -227,7 +243,7 @@ export default function SeoPage() {
       />
 
       <Hero
-        eyebrow="SEO"
+        eyebrow="Services"
         heading="Home Service SEO"
         subheading="Organic rankings, service pages that answer the search, and the technical work that lets Google read all of it — measured against booked jobs."
         ctaText="Book a call"
@@ -237,183 +253,183 @@ export default function SeoPage() {
         bgType="dark"
       />
 
-      {/* Hero card grid — visual break before any prose. */}
-      <section className="py-16 md:py-20 lg:py-24 bg-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <ScrollReveal animation="stagger">
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {PILLARS.map((p) => (
-                <div
-                  key={p.label}
-                  className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm"
-                >
-                  <h2 className="font-black text-lg text-asp-black">{p.label}</h2>
-                  <p className="mt-2 text-sm leading-relaxed text-black/70">{p.body}</p>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Scope */}
-      <section className="py-16 md:py-20 lg:py-24 bg-asp-black text-white">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+      {/* Value prop — short. */}
+      <section className="py-14 md:py-16 bg-white">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
           <ScrollReveal>
-            <h2 className="font-black text-3xl md:text-4xl leading-tight">
-              What home service SEO covers
-            </h2>
-            <div className="mt-6 space-y-5 text-white/80 leading-relaxed">
-              <p>
-                Home service SEO is the work of showing up for every search that ends in a booked
-                job: the map pack, the service page a homeowner reads before calling, the cost
-                question searched at 11 p.m., and the comparison between you and the company two
-                towns over. A good share of those searches never touch a map.
-              </p>
-              <p>
-                We split the work into two areas on purpose, because blurring them is how the same
-                job gets done twice and the harder half gets skipped. The local side is{" "}
-                <Link href="/local-seo-pro" className="text-asp-light-blue underline underline-offset-4">
-                  Local SEO Pro
-                </Link>
-                : Business Profile management, citation audits across 60+ directories on a 90-day
-                cycle, a ranking heatmap built from 50+ grid points a month, competitor
-                intelligence, and local schema. Those signals decide map-pack placement.
-              </p>
-              <p>
-                This page covers the broader side: which services deserve a page at all, what has to
-                be on that page to beat the agencies already ranking, and whether Google can crawl,
-                render and index the site without tripping over a redirect chain or a six-second
-                load. The two areas feed each other, so we run them as one program against one set
-                of numbers.
-              </p>
-              <p>
-                If your lead flow is thin and nobody owns marketing inside the business, the
-                highest-return move is smaller than a full SEO program — clean lead tracking, a
-                Business Profile filled out properly, and one service page better than what's
-                ranking. The Growth System is built for operators past that point.
-              </p>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Method */}
-      <section className="py-16 md:py-20 lg:py-24 bg-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <ScrollReveal>
-            <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black max-w-3xl">
-              What moves rankings in 2026
-            </h2>
-            <p className="mt-5 max-w-3xl text-black/70 leading-relaxed">
-              AI Overviews now sit above the results on a chunk of queries, and the old playbook of
-              thin pages and bought links stopped paying long before that. What a winning page looks
-              like has not changed: the most useful answer on the topic, from somebody who has done
-              the work. Our work runs off one internal standard, the ASP SEO &amp; AEO Content
-              Guidelines v2.1, grounded in Google&rsquo;s published guidance for its AI features.
+            <p className="font-black uppercase tracking-wide text-sm text-asp-blue">
+              Contractor SEO
             </p>
-          </ScrollReveal>
-
-          <ScrollReveal animation="stagger">
-            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {LEVERS.map((l) => (
-                <div
-                  key={l.label}
-                  className="rounded-2xl border border-black/10 bg-white p-6 shadow-sm"
-                >
-                  <h3 className="font-black text-lg text-asp-black">{l.label}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-black/70">{l.body}</p>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal>
-            <p className="mt-10 max-w-3xl text-black/70 leading-relaxed">
-              We don&rsquo;t buy links and we don&rsquo;t report Domain Authority as a KPI; both are
-              covered in the FAQ below. There&rsquo;s no separate &ldquo;AI layer&rdquo; to buy
-              either — showing up in AI Overviews comes from these same levers done well, which we
-              cover in our{" "}
+            <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight text-asp-black">
+              Rank where the job actually gets booked
+            </h2>
+            <p className="mt-5 text-black/70 leading-relaxed">
+              Home service SEO is the work of showing up for every search that ends in a booked job:
+              the map pack, the service page a homeowner reads before calling, and the comparison
+              they run between you and the company two towns over. We build that, then measure it
+              against booked revenue.
+            </p>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/blog/ai-optimization-aeo-home-service-businesses-2025"
-                className="text-asp-blue underline underline-offset-4"
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-full bg-asp-blue px-8 py-4 font-bold text-white transition hover:bg-asp-blue/90"
               >
-                guide to AI optimization and answer engine optimization
+                Book a call
               </Link>
-              .
-            </p>
+              <Link
+                href="/local-seo-pro"
+                className="inline-flex items-center justify-center rounded-full border-2 border-asp-black px-8 py-4 font-bold text-asp-black transition hover:bg-asp-black hover:text-white"
+              >
+                See Local SEO Pro
+              </Link>
+            </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* How the work runs */}
-      <section className="py-16 md:py-20 lg:py-24 bg-asp-black text-white">
+      {/* Trade grid. Cards are not links in phase 1 — the per-trade pages don't exist yet. */}
+      <section className="py-14 md:py-16 bg-asp-black text-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="font-black text-3xl md:text-4xl leading-tight">How the work gets done</h2>
-            <p className="mt-5 max-w-3xl text-white/70 leading-relaxed">
-              There&rsquo;s no single starting point. A three-year-old site with forty pages needs
-              different work than a rebuild that launched in March. What stays consistent is the
-              order of operations.
-            </p>
+            <div className="text-center">
+              <p className="font-black uppercase tracking-wide text-sm text-asp-light-blue">
+                Built for the trades
+              </p>
+              <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">
+                SEO for every home service trade
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-white/70 leading-relaxed">
+                Same method, different calendars and cluster plans. Roofing moves in storm-driven
+                bursts; HVAC and electrical follow season and emergency; plumbing splits between
+                instant-decision emergencies and planned work.
+              </p>
+            </div>
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              {WORK.map((w) => (
-                <div key={w.label} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                  <h3 className="font-black text-lg">{w.label}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/70">
-                    {w.label === "Local surfaces stay active" ? (
-                      <>
-                        The{" "}
-                        <Link
-                          href="/content-creation"
-                          className="text-asp-light-blue underline underline-offset-4"
-                        >
-                          Content Creation Package
-                        </Link>{" "}
-                        keeps social and Business Profile content moving while site-side content
-                        compounds.
-                      </>
-                    ) : (
-                      w.body
-                    )}
-                  </p>
+            <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
+              {TRADES.map((t) => (
+                <div
+                  key={t.slug}
+                  className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-6 text-center"
+                >
+                  <svg
+                    className="h-8 w-8 text-asp-light-blue"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={1.8}
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d={ICONS[t.icon]} />
+                  </svg>
+                  <span className="font-bold text-sm">{t.name}</span>
                 </div>
               ))}
             </div>
           </ScrollReveal>
-
-          <ScrollReveal>
-            <p className="mt-10 max-w-3xl text-white/70 leading-relaxed">
-              What we need from you is time for the interviews, access to your own accounts, and an
-              honest answer on which services you want more of. You own every account, asset and
-              report from day one, and there&rsquo;s no exit fee.
-            </p>
-          </ScrollReveal>
         </div>
       </section>
+
+      {/* Depth lives here, collapsed by default. Content stays in the HTML for crawlers. */}
+      <ExpandableDetails heading="More details about our SEO services">
+        <h3 className="font-black text-2xl text-asp-black">What moves rankings in 2026</h3>
+        <p className="mt-4 text-black/70 leading-relaxed">
+          AI Overviews now sit above the results on a chunk of queries, and the old playbook of thin
+          pages and bought links stopped paying long before that. What a winning page looks like has
+          not changed: the most useful answer on the topic, from somebody who has done the work. Our
+          work runs off one internal standard, the ASP SEO &amp; AEO Content Guidelines v2.1,
+          grounded in Google&rsquo;s published guidance for its AI features.
+        </p>
+
+        <ul className="mt-7 space-y-5">
+          {LEVERS.map((l) => (
+            <li key={l.label} className="flex gap-4">
+              <svg
+                className="mt-1 h-5 w-5 shrink-0 text-asp-blue"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2.5}
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <div>
+                <p className="font-black text-asp-black">{l.label}</p>
+                <p className="mt-1 text-sm leading-relaxed text-black/70">{l.body}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+
+        <p className="mt-7 text-sm leading-relaxed text-black/70">
+          We don&rsquo;t buy links and we don&rsquo;t report Domain Authority as a KPI. There&rsquo;s
+          no separate &ldquo;AI layer&rdquo; to buy either — showing up in AI Overviews comes from
+          these same levers done well, which we cover in our{" "}
+          <Link
+            href="/blog/ai-optimization-aeo-home-service-businesses-2025"
+            className="text-asp-blue underline underline-offset-4"
+          >
+            guide to AI optimization and answer engine optimization
+          </Link>
+          .
+        </p>
+
+        <hr className="my-10 border-black/10" />
+
+        <h3 className="font-black text-2xl text-asp-black">How the work gets done</h3>
+        <p className="mt-4 text-black/70 leading-relaxed">
+          There&rsquo;s no single starting point. A three-year-old site with forty pages needs
+          different work than a rebuild that launched in March. What stays consistent is the order of
+          operations.
+        </p>
+
+        <div className="mt-7 grid gap-5 md:grid-cols-2">
+          {WORK.map((w) => (
+            <div key={w.label} className="rounded-xl border border-black/10 bg-white p-5">
+              <p className="font-black text-asp-black">{w.label}</p>
+              <p className="mt-1 text-sm leading-relaxed text-black/70">{w.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-7 text-sm leading-relaxed text-black/70">
+          What we need from you is time for the interviews, access to your own accounts, and an
+          honest answer on which services you want more of. You own every account, asset and report
+          from day one, and there&rsquo;s no exit fee. SEO isn&rsquo;t run as an isolated retainer
+          here — organic sits inside{" "}
+          <Link href="/growth-system" className="text-asp-blue underline underline-offset-4">
+            the Growth System
+          </Link>{" "}
+          alongside the local, content and paid components, reporting into one monthly review.
+        </p>
+
+        <div className="mt-8">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-full bg-asp-blue px-8 py-4 font-bold text-white transition hover:bg-asp-blue/90"
+          >
+            Book a call
+          </Link>
+        </div>
+      </ExpandableDetails>
 
       {/* Proof */}
-      <section className="py-16 md:py-20 lg:py-24 bg-white">
+      <section className="py-14 md:py-16 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
-              Proof: what SEO work looks like at ASP
+              What SEO work looks like at ASP
             </h2>
             <p className="mt-4 font-black text-asp-blue">
               45.22% search visibility · #1 on two head terms in 90 days · 13K+ Business Profile
               impressions
             </p>
-            <p className="mt-5 max-w-3xl text-black/70 leading-relaxed">
-              Every case study on the site comes from an active client, reported by trade and never
-              by name.
-            </p>
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
-            <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
               {PROOF.map((p) => (
                 <div
                   key={p.industry}
@@ -438,17 +454,13 @@ export default function SeoPage() {
           </ScrollReveal>
 
           <ScrollReveal>
-            <p className="mt-10 max-w-3xl text-black/70 leading-relaxed">
+            <p className="mt-8 max-w-3xl text-sm text-black/55 leading-relaxed">
               Across the whole book of business — all services, not SEO alone — 4&ndash;5&times;
               average ROAS, +25% average yearly attributed revenue, and 3&times; average lead volume
-              in the first six months.
-            </p>
-            <p className="mt-4 max-w-3xl text-sm text-black/55 leading-relaxed">
-              Two caveats, plainly. Neither case study is a clean SEO-only attribution claim — the
-              flooring engagement ran alongside ad spend, and the HVAC program was paid-led with
-              local SEO as one component. And a result somebody else got is not a forecast of yours
-              — different market, different competition, different starting point. There&rsquo;s
-              more detail, including the paid and local results, on the{" "}
+              in the first six months. Neither case study above is a clean SEO-only attribution
+              claim: the flooring engagement ran alongside ad spend, and the HVAC program was
+              paid-led with local SEO as one component. A result somebody else got is not a forecast
+              of yours. More detail on the{" "}
               <Link href="/case-studies" className="text-asp-blue underline underline-offset-4">
                 full case studies page
               </Link>
@@ -460,75 +472,39 @@ export default function SeoPage() {
 
       <TestimonialAnchor attribution="Kevin" variant="dark" />
 
-      {/* SEO vs PPC */}
-      <section className="py-16 md:py-20 lg:py-24 bg-white">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+      {/* How it works */}
+      <section className="py-14 md:py-16 bg-white">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
-              SEO and PPC, and how they work together
+            <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black text-center">
+              How it works
             </h2>
-            <div className="mt-6 space-y-5 text-black/70 leading-relaxed">
-              <p>Which one to start with depends on how fast you need the phone to ring.</p>
-              <p>
-                Paid search buys presence today: you&rsquo;re in the auction this afternoon and can
-                measure cost per booked job inside a month. It stops the day you stop paying. SEO
-                compounds — the work you do in Q1 keeps returning a year later, and cost per lead
-                falls as it matures instead of climbing with the auction. It also takes months to
-                move, which is a real problem if you need jobs booked in three weeks.
-              </p>
-              <p>
-                Most established operators run both, weighted to where they are. If you&rsquo;re
-                cash-constrained and short on volume, start with paid and build organic underneath
-                it. If lead flow is steady and cost per lead climbs every year, organic is where the
-                margin is. Running both also gives you something neither gives alone: the terms that
-                convert in your ad account tell you which pages to build organically.
-              </p>
-              <p>
-                We run paid search as its own discipline alongside this one. There&rsquo;s a longer
-                treatment of combining them in our{" "}
-                <Link
-                  href="/blog/google-seo-strategies-2025"
-                  className="text-asp-blue underline underline-offset-4"
-                >
-                  guide to Google SEO strategies for home service businesses
-                </Link>
-                .
-              </p>
+          </ScrollReveal>
+          <ScrollReveal animation="stagger">
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {STEPS.map((s) => (
+                <div key={s.n} className="rounded-2xl border border-black/10 bg-white p-6">
+                  <span className="font-black text-3xl text-asp-light-blue">{s.n}</span>
+                  <h3 className="mt-3 font-black text-lg text-asp-black">{s.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-black/70">{s.body}</p>
+                </div>
+              ))}
             </div>
           </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Where it fits */}
-      <section className="py-16 md:py-20 lg:py-24 bg-asp-black text-white">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="font-black text-3xl md:text-4xl leading-tight">
-              Where SEO fits in the ASP Growth System
-            </h2>
-            <div className="mt-6 space-y-5 text-white/80 leading-relaxed">
-              <p>
-                We don&rsquo;t run SEO as an isolated retainer, because rankings that don&rsquo;t
-                turn into booked jobs are a hobby.{" "}
-                <Link href="/growth-system" className="text-asp-light-blue underline underline-offset-4">
-                  The Growth System
-                </Link>{" "}
-                is how the pieces run together — marketing, operations and follow-up on one stack,
-                measured against one revenue number. Organic work sits inside it alongside the
-                local, content and paid components, and all of it reports into the same monthly
-                review.
-              </p>
-              <p>
-                If you want the commercial conversation, it&rsquo;s on the{" "}
-                <Link href="/pricing" className="text-asp-light-blue underline underline-offset-4">
-                  pricing page
-                </Link>
-                . If you&rsquo;d rather start with where your marketing stands today, the{" "}
-                <Link href="/diagnostic" className="text-asp-light-blue underline underline-offset-4">
-                  Growth Diagnostic
-                </Link>{" "}
-                takes about 90 seconds.
-              </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center justify-center rounded-full bg-asp-blue px-8 py-4 font-bold text-white transition hover:bg-asp-blue/90"
+              >
+                Run the Growth Diagnostic
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-full border-2 border-asp-black px-8 py-4 font-bold text-asp-black transition hover:bg-asp-black hover:text-white"
+              >
+                Book a call
+              </Link>
             </div>
           </ScrollReveal>
         </div>
@@ -539,7 +515,7 @@ export default function SeoPage() {
       <RelatedPages items={RELATED} />
 
       {/* Closing CTA band */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-14 md:py-16 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
