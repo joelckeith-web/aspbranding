@@ -82,12 +82,18 @@ function DesktopDropdown({ group }: { group: NavGroup }) {
           open ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <ul className="min-w-[15rem] list-none m-0 p-2 bg-asp-blue/95 backdrop-blur-lg border border-white/15 rounded-[var(--radius-asp-md)] shadow-xl">
+        <ul
+          className={`list-none m-0 p-2 bg-white border border-gray-200 rounded-[var(--radius-asp-lg)] shadow-asp-xl ${
+            group.children.length > 5
+              ? "grid grid-cols-2 gap-x-1 min-w-[34rem]"
+              : "min-w-[15rem]"
+          }`}
+        >
           {group.children.map((child) => (
             <li key={child.href}>
               <Link
                 href={child.href}
-                className="block px-4 py-2.5 rounded-[var(--radius-asp-sm)] text-sm font-semibold text-white/85 hover:text-asp-blue-light hover:bg-white/10 no-underline transition-colors whitespace-nowrap"
+                className="block px-4 py-2.5 rounded-[var(--radius-asp-sm)] text-sm font-semibold text-asp-black/80 hover:text-asp-blue hover:bg-asp-surface-light no-underline transition-colors whitespace-nowrap"
                 onClick={() => setOpen(false)}
               >
                 {child.label}
