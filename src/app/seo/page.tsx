@@ -257,7 +257,8 @@ export default function SeoPage() {
         cta2Url="/diagnostic"
         bgType="image"
         imageUrl="/images/backgrounds/growth-system-bg.png"
-        imagePosition="center center"
+        imagePosition="72% 62%"
+        size="compact"
       />
 
       {/* Value prop — short. */}
@@ -339,7 +340,7 @@ export default function SeoPage() {
       </section>
 
       {/* Depth lives here, collapsed by default. Content stays in the HTML for crawlers. */}
-      <ExpandableDetails heading="How ASP does SEO">
+      <ExpandableDetails heading="More details about our SEO services">
         <h3 className="font-black text-2xl text-asp-black">What moves rankings in 2026</h3>
         <p className="mt-4 text-black/70 leading-relaxed">
           AI Overviews now sit above the results on a chunk of queries, and the old playbook of thin
@@ -427,7 +428,7 @@ export default function SeoPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
-              What SEO work looks like at ASP
+              SEO results from real client work
             </h2>
             <p className="mt-4 font-black text-asp-blue">
               45.22% search visibility · #1 on two head terms in 90 days · 13K+ Business Profile

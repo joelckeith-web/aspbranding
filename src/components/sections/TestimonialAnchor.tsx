@@ -27,7 +27,9 @@ export function TestimonialAnchor({
 
   return (
     <section
-      className={`relative py-16 md:py-20 lg:py-24 overflow-hidden ${
+      className={`relative overflow-hidden ${
+        size === "sm" ? "py-10 md:py-12" : "py-16 md:py-20 lg:py-24"
+      } ${
         isDark ? "bg-asp-black text-white" : "bg-white text-asp-blue"
       }`}
     >
