@@ -46,6 +46,10 @@ const TRADES = [
   { name: "Home Inspection", slug: "home-inspection", icon: "search" },
   { name: "Flooring", slug: "flooring", icon: "grid" },
   { name: "Remodeling", slug: "remodeling", icon: "hammer" },
+  { name: "Landscaping", slug: "landscaping", icon: "leaf" },
+  { name: "Pressure Washing", slug: "pressure-washing", icon: "droplet" },
+  { name: "Pest Control", slug: "pest-control", icon: "bug" },
+  { name: "Appliance Repair", slug: "appliance-repair", icon: "plug" },
 ];
 
 const ICONS: Record<string, string> = {
@@ -57,6 +61,10 @@ const ICONS: Record<string, string> = {
   search: "M11 4a7 7 0 100 14 7 7 0 000-14zM20 20l-4-4",
   grid: "M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z",
   hammer: "M14 4l6 6-3 3-6-6 3-3zM10 8l-7 7v5h5l7-7",
+  leaf: "M4 20c0-8 5-13 16-13 0 9-5 14-13 14H4v-1zM7 17c3-4 6-6 9-7",
+  droplet: "M12 3s6 6.4 6 10.5A6 6 0 016 13.5C6 9.4 12 3 12 3z",
+  bug: "M9 8a3 3 0 016 0v5a3 3 0 11-6 0V8zM5 10h4m6 0h4M5 15h4m6 0h4M9 5L7 3m8 2l2-2",
+  plug: "M9 3v5m6-5v5M6 8h12v3a6 6 0 01-12 0V8zM12 17v4",
 };
 
 const PILLARS = [
@@ -348,16 +356,17 @@ export default function PpcPage() {
           <ScrollReveal>
             <div className="text-center">
               <p className="font-black uppercase tracking-wide text-sm text-asp-blue-light">
-                Built for the trades
+                Every trade, every home service
               </p>
               <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">
-                PPC for roofing, HVAC, plumbing and electrical contractors
+                PPC for roofing, HVAC, plumbing, electrical and every other home service trade
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-lg text-white/70 leading-relaxed">
-                Same method, different demand curves. Roofing spikes with storms, HVAC and electrical
-                follow heat, cold and emergencies, and plumbing splits between instant-decision
-                emergencies and planned work like repipes. The budget and the ad schedule follow the
-                curve.
+                One method, different demand curves. Roofing spikes with storms, HVAC and
+                electrical follow heat, cold and emergencies, plumbing splits between
+                instant-decision emergencies and planned work like repipes, and recurring services
+                like cleaning and lawn care buy on a steadier curve. The budget and the ad schedule
+                follow whichever curve is yours.
               </p>
             </div>
           </ScrollReveal>
@@ -383,6 +392,14 @@ export default function PpcPage() {
                 </div>
               ))}
             </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <p className="mx-auto mt-8 max-w-3xl text-center text-base text-white/60 leading-relaxed">
+              Not on the list? We work with specialty contractors and home service
+              businesses of every kind. The method is the same — the research is what tells
+              us how your buyers search.
+            </p>
           </ScrollReveal>
         </div>
       </section>

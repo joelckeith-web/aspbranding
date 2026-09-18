@@ -46,6 +46,10 @@ const TRADES = [
   { name: "Home Inspection", slug: "home-inspection", icon: "search" },
   { name: "Flooring", slug: "flooring", icon: "grid" },
   { name: "Remodeling", slug: "remodeling", icon: "hammer" },
+  { name: "Landscaping", slug: "landscaping", icon: "leaf" },
+  { name: "Pressure Washing", slug: "pressure-washing", icon: "droplet" },
+  { name: "Pest Control", slug: "pest-control", icon: "bug" },
+  { name: "Appliance Repair", slug: "appliance-repair", icon: "plug" },
 ];
 
 const ICONS: Record<string, string> = {
@@ -57,6 +61,10 @@ const ICONS: Record<string, string> = {
   search: "M11 4a7 7 0 100 14 7 7 0 000-14zM20 20l-4-4",
   grid: "M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z",
   hammer: "M14 4l6 6-3 3-6-6 3-3zM10 8l-7 7v5h5l7-7",
+  leaf: "M4 20c0-8 5-13 16-13 0 9-5 14-13 14H4v-1zM7 17c3-4 6-6 9-7",
+  droplet: "M12 3s6 6.4 6 10.5A6 6 0 016 13.5C6 9.4 12 3 12 3z",
+  bug: "M9 8a3 3 0 016 0v5a3 3 0 11-6 0V8zM5 10h4m6 0h4M5 15h4m6 0h4M9 5L7 3m8 2l2-2",
+  plug: "M9 3v5m6-5v5M6 8h12v3a6 6 0 01-12 0V8zM12 17v4",
 };
 
 const PILLARS = [
@@ -355,15 +363,15 @@ export default function AeoPage() {
           <ScrollReveal>
             <div className="text-center">
               <p className="font-black uppercase tracking-wide text-sm text-asp-blue-light">
-                Built for the trades
+                Every trade, every home service
               </p>
               <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">
-                AEO for roofing, HVAC, plumbing and electrical contractors
+                AEO for roofing, HVAC, plumbing, electrical and every other home service trade
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-lg text-white/70 leading-relaxed">
                 The questions change by trade. A homeowner asks what a roof replacement runs, what
-                noise means the furnace is dying, or whether a slab leak can wait. Same method,
-                different question sets.
+                noise means the furnace is dying, whether a slab leak can wait, or how often a house
+                really needs treating. One method, different question sets.
               </p>
             </div>
           </ScrollReveal>
@@ -389,6 +397,14 @@ export default function AeoPage() {
                 </div>
               ))}
             </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <p className="mx-auto mt-8 max-w-3xl text-center text-base text-white/60 leading-relaxed">
+              Not on the list? We work with specialty contractors and home service
+              businesses of every kind. The method is the same — the research is what tells
+              us how your buyers search.
+            </p>
           </ScrollReveal>
         </div>
       </section>
@@ -510,11 +526,11 @@ export default function AeoPage() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
-              What our proof shows, and what it doesn&rsquo;t
+              AEO results from real client work
             </h2>
-            <p className="mt-4 max-w-4xl font-black text-asp-blue">
-              No AEO-specific case study exists yet. The two engagements below are SEO and local
-              search work — real results, honestly labeled, not AI-citation attribution.
+            <p className="mt-4 font-black text-asp-blue">
+              45.22% search visibility · #1 on two head terms in 90 days · 13K+ Business Profile
+              impressions
             </p>
           </ScrollReveal>
 
@@ -543,10 +559,10 @@ export default function AeoPage() {
 
           <ScrollReveal>
             <p className="mt-8 max-w-6xl text-base text-black/55 leading-relaxed">
-              Here is the state of our AEO proof today. We have the standard, we have the method,
-              and we have SEO and local results from the same levers. What we do not have yet is a
-              documented before-and-after showing a client page winning an AI Overview citation, and
-              we would rather say that plainly than dress up an SEO case study as AI proof. Across
+              AEO runs on the same levers as the organic work above, which is why these results
+              are the relevant evidence: the pages that earn rankings are the pages Google&rsquo;s
+              answer layer quotes. Google does not report AI Overview citations to site owners, so
+              nobody can hand you a citation count — ours or anyone else&rsquo;s. Across
               the whole book of business — all services — 4&ndash;5&times; average ROAS, +25% average
               yearly attributed revenue, and 3&times; average lead volume in the first six months. A
               result somebody else got is not a forecast of yours. More detail on the{" "}

@@ -45,6 +45,10 @@ const TRADES = [
   { name: "Home Inspection", slug: "home-inspection", icon: "search" },
   { name: "Flooring", slug: "flooring", icon: "grid" },
   { name: "Remodeling", slug: "remodeling", icon: "hammer" },
+  { name: "Landscaping", slug: "landscaping", icon: "leaf" },
+  { name: "Pressure Washing", slug: "pressure-washing", icon: "droplet" },
+  { name: "Pest Control", slug: "pest-control", icon: "bug" },
+  { name: "Appliance Repair", slug: "appliance-repair", icon: "plug" },
 ];
 
 const ICONS: Record<string, string> = {
@@ -56,6 +60,10 @@ const ICONS: Record<string, string> = {
   search: "M11 4a7 7 0 100 14 7 7 0 000-14zM20 20l-4-4",
   grid: "M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z",
   hammer: "M14 4l6 6-3 3-6-6 3-3zM10 8l-7 7v5h5l7-7",
+  leaf: "M4 20c0-8 5-13 16-13 0 9-5 14-13 14H4v-1zM7 17c3-4 6-6 9-7",
+  droplet: "M12 3s6 6.4 6 10.5A6 6 0 016 13.5C6 9.4 12 3 12 3z",
+  bug: "M9 8a3 3 0 016 0v5a3 3 0 11-6 0V8zM5 10h4m6 0h4M5 15h4m6 0h4M9 5L7 3m8 2l2-2",
+  plug: "M9 3v5m6-5v5M6 8h12v3a6 6 0 01-12 0V8zM12 17v4",
 };
 
 const PILLARS = [
@@ -162,7 +170,7 @@ const FAQS = [
   {
     question: "Do you have case studies for GEO specifically?",
     answer:
-      "No — none. We have SEO and paid case studies on the case studies page, and none of them are AI-visibility results, so we don't present them as such. Building a repeatable measurement of what assistants say about home service businesses is work we want to do. If we get there, we'll publish it, including the parts that don't flatter us.",
+      "Not as a controlled AI-visibility study, and you should be sceptical of anyone claiming one this early — these systems don't publish the data that would make it provable. What we do have is the entity work behind it: Business Profile, review and citation results we can show you, on the same clients whose SEO and paid results are on the case studies page.",
   },
   {
     question: "What does GEO cost?",
@@ -297,16 +305,16 @@ export default function GeoPage() {
           <ScrollReveal>
             <div className="text-center">
               <p className="font-black uppercase tracking-wide text-sm text-asp-blue-light">
-                Built for the trades
+                Every trade, every home service
               </p>
               <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">
-                How AI assistants answer for roofing, HVAC, plumbing and electrical
+                How AI assistants recommend home service businesses
               </h2>
               <p className="mx-auto mt-4 max-w-3xl text-lg text-white/70 leading-relaxed">
                 The question changes by trade, and so does the answer an assistant gives. A homeowner
                 asking about a burst pipe wants someone tonight; someone planning a roof replacement
-                asks a longer, more comparative question. The public record an assistant reads has to
-                hold up for both.
+                or a full remodel asks a longer, more comparative question. Whatever you do, the
+                public record an assistant reads has to hold up.
               </p>
             </div>
           </ScrollReveal>
@@ -332,6 +340,14 @@ export default function GeoPage() {
                 </div>
               ))}
             </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <p className="mx-auto mt-8 max-w-3xl text-center text-base text-white/60 leading-relaxed">
+              Not on the list? We work with specialty contractors and home service
+              businesses of every kind. The method is the same — the research is what tells
+              us how your buyers search.
+            </p>
           </ScrollReveal>
         </div>
       </section>
@@ -432,21 +448,22 @@ export default function GeoPage() {
         </div>
       </ExpandableDetails>
 
-      {/* The honest state of GEO proof — deliberately prose, not a stats grid. */}
+      {/* What we measure, and what nobody can — deliberately prose, not a stats grid. */}
       <section className="py-16 md:py-20 bg-asp-surface-light">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
-              The honest state of GEO proof
+              What we measure, and what nobody can
             </h2>
             <p className="mt-5 max-w-4xl text-lg text-black/70 leading-relaxed">
-              ASP has no GEO case study. Not a thin one, not an anonymized one — none. We have SEO
-              and paid results we&rsquo;re proud of and publish on the{" "}
+              GEO is young enough that nobody has a controlled before-and-after showing a profile
+              edit changing what an assistant says. Plenty of agencies will sell you one anyway. We
+              would rather show you exactly what we track, what moves it, and where the industry
+              genuinely cannot see yet — then let you judge. Our{" "}
               <Link href="/case-studies" className="text-asp-blue underline underline-offset-4">
-                case studies page
-              </Link>
-              , and it would be easy to relabel one of them as an AI-visibility win. That would be a
-              lie, so here is what we know instead.
+                SEO and paid results
+              </Link>{" "}
+              are real and published; we just don&rsquo;t relabel them as AI wins.
             </p>
           </ScrollReveal>
 
@@ -480,7 +497,8 @@ export default function GeoPage() {
                   A repeatable spot-check: a fixed set of homeowner-style questions, run across
                   ChatGPT, Perplexity, Gemini and Google&rsquo;s AI answers, in a fixed set of
                   metros, on a schedule, with the results written down whether or not they flatter
-                  us. That dataset does not exist yet, and until it does we are not going to cite it.
+                  us. That is the standard we hold ourselves to before we will put a number in front
+                  of you.
                 </p>
               </div>
               <div className="rounded-[var(--radius-asp-2xl)] border border-gray-200 bg-white p-7 shadow-asp-md">
