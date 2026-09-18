@@ -31,7 +31,7 @@ schema:
       answer: "While your ad spend is modest, you can run it in-house if you have someone who'll commit at least 5 to 10 hours a week to it. As spend grows, the cost of mistakes — wrong match types, broken conversion tracking, runaway Performance Max campaigns — starts to exceed an agency fee. The real test is whether the person running it can read a search query report, manage negatives, and reconcile booked revenue back to campaigns weekly. If yes, in-house is fine. If not, an agency or a senior contractor is usually the better path."
     - question: "How fast does PPC produce results for a home service business?"
       answer: "Leads typically start coming in week one. Performance reaches steady state by month two or three, after the algorithms have enough conversion data to optimize against. Expect a learning period of 30 to 45 days where cost-per-lead is higher than it will be once the campaign matures. The biggest mistake operators make is killing campaigns inside the first two weeks because the cost-per-lead 'looks high' — they're killing them right before the algorithm finishes calibrating."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

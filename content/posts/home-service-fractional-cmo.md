@@ -23,7 +23,7 @@ schema:
       answer: "An agency executes the work — running your ads, building your site, producing content. A fractional CMO sets the strategy, owns the number, and holds everyone (including your agencies) accountable to results. The cleanest setup is often both working together: a strategic leader who decides what to do and why, and an execution team that does it well. The problem to avoid is having execution with no one owning the overall strategy — that's how operators end up with five vendors and no clear plan."
     - question: "When should a home service business hire a fractional CMO?"
       answer: "When you've outgrown doing marketing yourself but can't justify a six-figure full-time CMO — usually somewhere in the $1 million to $10 million revenue range. The clearest signals are that you (the owner) have become the de facto marketing leader and it's capping your time, you're juggling multiple vendors with no one owning the results, or growth has plateaued and you can't see why. If marketing decisions are being made reactively instead of strategically, that's the gap a fractional CMO fills."
-status: "review"
+status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "7 min read"
 ---

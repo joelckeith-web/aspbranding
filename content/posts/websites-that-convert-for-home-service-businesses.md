@@ -31,7 +31,7 @@ schema:
       answer: "Critical. Over 70% of home service traffic is mobile, and for emergency searches like 'plumber near me' or '24 hour HVAC' the share is higher. Mobile-first means designing the mobile experience first and the desktop second — sticky call buttons, click-to-call links, one-thumb form completion, large tap targets, and content stacked for vertical reading. A site designed desktop-first that's been 'made responsive' is not the same as a site designed for mobile. The conversion gap between the two on home service traffic is usually 2–3x."
     - question: "How long does it take to build a home service website that converts?"
       answer: "Four to six weeks for a custom build from kickoff to launch, two to three weeks for a refresh of a site that's fundamentally sound. The work breaks down into: discovery and brand alignment (week 1), copywriting and content (weeks 2–3), design and development (weeks 3–5), testing and launch prep (week 6). Faster than that usually means corners are being cut on copy, photography, or technical setup. Slower than that usually means scope creep or unclear decisions on the client side. The hard timeline isn't the build — it's getting the content and approvals through quickly."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

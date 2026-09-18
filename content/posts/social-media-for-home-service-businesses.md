@@ -31,7 +31,7 @@ schema:
       answer: "Organic is what shows up to people who already follow you or stumble onto your profile. Paid is content you pay to put in front of a defined audience. For home service businesses, organic builds the trust layer — proof of work, review amplification, team content. Paid is the targeting tool — retargeting site visitors, audience-building in your service area, customer-list lookalikes. The two work together; an organic-only strategy is slow, and a paid-only strategy lacks the proof content that makes the ads land."
     - question: "Are vanity metrics like likes and followers worth tracking?"
       answer: "Mostly no. Likes, follower counts, and engagement rates are weak proxies for the only metric that pays payroll: booked revenue. The metrics worth tracking are reach in your service area, click-through to your website, calls generated from social-traffic landing pages, and the size of your retargeting audiences. An operator with 800 engaged local followers who book jobs is winning. An operator with 8,000 followers from outside their service area is collecting an audience that can't book them anyway."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "8 min read"
 ---

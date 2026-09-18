@@ -23,7 +23,7 @@ schema:
       answer: "Yes. Buying or exchanging links to manipulate rankings is a violation of Google's link spam policies. Since the 2022 link spam update, Google's systems largely neutralize manipulative links — they pass close to zero value — rather than always penalizing the site. So bought links have become mostly a waste of money rather than an instant penalty, but they're still against the rules and still a risk. The links that count are editorial ones earned because your content is worth referencing."
     - question: "Why did my rankings disappear after a Google update?"
       answer: "Usually because they were built on tactics Google's updates are designed to discount — bought links, thin or mass-produced content, doorway pages, or keyword-stuffed copy. When an update rolls out, that artificial lift gets removed and rankings snap back to what your real content and authority justify. Rankings built on genuinely useful content and a sound site don't collapse like that; they tend to hold or improve through updates. A sudden drop is a sign the foundation was rented, not owned."
-status: "review"
+status: "published"
 contentPillar: "google-algorithm-updates"
 readingTime: "7 min read"
 ---
