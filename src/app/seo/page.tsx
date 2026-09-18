@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ExpandableDetails } from "@/components/sections/ExpandableDetails";
+import { SectionBreak } from "@/components/sections/SectionBreak";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
@@ -263,7 +265,8 @@ export default function SeoPage() {
 
       {/* Value prop — short. */}
       <section className="py-16 md:py-20 bg-asp-surface-light">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
           <ScrollReveal>
             <p className="font-black uppercase tracking-wide text-sm text-asp-blue">
               Contractor SEO
@@ -271,13 +274,13 @@ export default function SeoPage() {
             <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight text-asp-black">
               What home service SEO covers
             </h2>
-            <p className="mt-5 text-black/70 leading-relaxed">
+            <p className="mt-5 text-lg text-black/70 leading-relaxed">
               Home service SEO is the work of showing up for every search that ends in a booked job:
               the map pack, the service page a homeowner reads before calling, and the comparison
               they run between you and the company two towns over. We build that, then measure it
               against booked revenue.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-asp-blue px-8 py-4 font-bold text-white transition hover:bg-asp-blue/90"
@@ -292,12 +295,25 @@ export default function SeoPage() {
               </Link>
             </div>
           </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="relative overflow-hidden rounded-[var(--radius-asp-2xl)] shadow-asp-lg">
+              <Image
+                src="/images/portfolio/portfolio-mockup.avif"
+                alt="A home service website built by ASP, shown on desktop and mobile"
+                width={880}
+                height={660}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </ScrollReveal>
+          </div>
         </div>
       </section>
 
       {/* Trade grid. Cards are not links in phase 1 — the per-trade pages don't exist yet. */}
       <section className="py-14 md:py-16 bg-asp-black text-white">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center">
               <p className="font-black uppercase tracking-wide text-sm text-asp-blue-light">
@@ -306,7 +322,7 @@ export default function SeoPage() {
               <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">
                 SEO for roofing, HVAC, plumbing and electrical contractors
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-white/70 leading-relaxed">
+              <p className="mx-auto mt-4 max-w-3xl text-lg text-white/70 leading-relaxed">
                 Same method, different calendars and cluster plans. Roofing moves in storm-driven
                 bursts; HVAC and electrical follow season and emergency; plumbing splits between
                 instant-decision emergencies and planned work.
@@ -331,7 +347,7 @@ export default function SeoPage() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d={ICONS[t.icon]} />
                   </svg>
-                  <span className="font-bold text-sm">{t.name}</span>
+                  <span className="font-bold text-base">{t.name}</span>
                 </div>
               ))}
             </div>
@@ -342,7 +358,7 @@ export default function SeoPage() {
       {/* Depth lives here, collapsed by default. Content stays in the HTML for crawlers. */}
       <ExpandableDetails heading="More details about our SEO services">
         <h3 className="font-black text-2xl text-asp-black">What moves rankings in 2026</h3>
-        <p className="mt-4 text-black/70 leading-relaxed">
+        <p className="mt-4 text-lg text-black/70 leading-relaxed">
           AI Overviews now sit above the results on a chunk of queries, and the old playbook of thin
           pages and bought links stopped paying long before that. What a winning page looks like has
           not changed: the most useful answer on the topic, from somebody who has done the work. Our
@@ -365,13 +381,13 @@ export default function SeoPage() {
               </svg>
               <div>
                 <p className="font-black text-asp-black">{l.label}</p>
-                <p className="mt-1 text-sm leading-relaxed text-black/70">{l.body}</p>
+                <p className="mt-1 text-base leading-relaxed text-black/70">{l.body}</p>
               </div>
             </li>
           ))}
         </ul>
 
-        <p className="mt-7 text-sm leading-relaxed text-black/70">
+        <p className="mt-7 text-base leading-relaxed text-black/70">
           We don&rsquo;t buy links and we don&rsquo;t report Domain Authority as a KPI. There&rsquo;s
           no separate &ldquo;AI layer&rdquo; to buy either — showing up in AI Overviews comes from
           these same levers done well, which we cover in our{" "}
@@ -387,7 +403,7 @@ export default function SeoPage() {
         <hr className="my-10 border-black/10" />
 
         <h3 className="font-black text-2xl text-asp-black">How an SEO engagement runs</h3>
-        <p className="mt-4 text-black/70 leading-relaxed">
+        <p className="mt-4 text-lg text-black/70 leading-relaxed">
           There&rsquo;s no single starting point. A three-year-old site with forty pages needs
           different work than a rebuild that launched in March. What stays consistent is the order of
           operations.
@@ -397,12 +413,12 @@ export default function SeoPage() {
           {WORK.map((w) => (
             <div key={w.label} className="rounded-[var(--radius-asp-lg)] border border-gray-200 bg-white p-5 shadow-asp-sm">
               <p className="font-black text-asp-black">{w.label}</p>
-              <p className="mt-1 text-sm leading-relaxed text-black/70">{w.body}</p>
+              <p className="mt-1 text-base leading-relaxed text-black/70">{w.body}</p>
             </div>
           ))}
         </div>
 
-        <p className="mt-7 text-sm leading-relaxed text-black/70">
+        <p className="mt-7 text-base leading-relaxed text-black/70">
           What we need from you is time for the interviews, access to your own accounts, and an
           honest answer on which services you want more of. You own every account, asset and report
           from day one, and there&rsquo;s no exit fee. SEO isn&rsquo;t run as an isolated retainer
@@ -425,7 +441,7 @@ export default function SeoPage() {
 
       {/* Proof */}
       <section className="py-16 md:py-20 bg-asp-surface-light">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
               SEO results from real client work
@@ -444,25 +460,25 @@ export default function SeoPage() {
                   className="rounded-[var(--radius-asp-2xl)] border border-gray-200 bg-white p-7 shadow-asp-md"
                 >
                   <h3 className="font-black text-xl text-asp-black">{p.industry}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-black/70">{p.body}</p>
+                  <p className="mt-3 text-base leading-relaxed text-black/70">{p.body}</p>
                   <dl className="mt-6 grid grid-cols-3 gap-4 border-t border-black/10 pt-5">
                     {p.stats.map((s) => (
                       <div key={s.label}>
-                        <dt className="text-[11px] uppercase tracking-wide text-black/50">
+                        <dt className="text-xs uppercase tracking-wide text-black/50">
                           {s.label}
                         </dt>
                         <dd className="mt-1 font-black text-lg text-asp-blue">{s.value}</dd>
                       </div>
                     ))}
                   </dl>
-                  <p className="mt-4 text-xs text-black/50">{p.note}</p>
+                  <p className="mt-4 text-sm text-black/50">{p.note}</p>
                 </div>
               ))}
             </div>
           </ScrollReveal>
 
           <ScrollReveal>
-            <p className="mt-8 max-w-3xl text-sm text-black/55 leading-relaxed">
+            <p className="mt-8 max-w-6xl text-base text-black/55 leading-relaxed">
               Across the whole book of business — all services, not SEO alone — 4&ndash;5&times;
               average ROAS, +25% average yearly attributed revenue, and 3&times; average lead volume
               in the first six months. Neither case study above is a clean SEO-only attribution
@@ -483,11 +499,12 @@ export default function SeoPage() {
         attribution="Sarah"
         variant="dark"
         size="sm"
+        widthClassName="max-w-6xl"
       />
 
       {/* How it works */}
       <section className="py-14 md:py-16 bg-white">
-        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black text-center">
               How to start with ASP
@@ -499,7 +516,7 @@ export default function SeoPage() {
                 <div key={s.n} className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-6 shadow-asp-sm">
                   <span className="font-black text-3xl text-asp-blue-light">{s.n}</span>
                   <h3 className="mt-3 font-black text-lg text-asp-black">{s.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-black/70">{s.body}</p>
+                  <p className="mt-2 text-base leading-relaxed text-black/70">{s.body}</p>
                 </div>
               ))}
             </div>
@@ -523,18 +540,27 @@ export default function SeoPage() {
         </div>
       </section>
 
-      <FAQAccordion faqs={FAQS} heading="Frequently Asked Questions" />
+      <SectionBreak />
+
+      <FAQAccordion
+        faqs={FAQS}
+        heading="Frequently Asked Questions"
+        columns={2}
+        widthClassName="max-w-6xl"
+      />
 
       <RelatedPages items={RELATED} heading="Related across the Growth System" />
 
+      <SectionBreak variant="surface" />
+
       {/* Closing CTA band */}
       <section className="py-14 md:py-16 bg-white">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
               Want to know what&rsquo;s holding your rankings back?
             </h2>
-            <p className="mt-5 text-black/70 leading-relaxed">
+            <p className="mt-5 text-lg text-black/70 leading-relaxed">
               Start with the 90-second Growth Diagnostic, or book a call and we&rsquo;ll walk your
               site and show you the gaps. Either way you leave with findings, not a pitch.
             </p>
@@ -552,7 +578,7 @@ export default function SeoPage() {
                 Run the Growth Diagnostic
               </Link>
             </div>
-            <p className="mt-8 text-xs text-black/50">
+            <p className="mt-8 text-sm text-black/50">
               Every account, asset, and report built in your name · No exit fees · We report
               rankings, traffic, and booked revenue — not Domain Authority.
             </p>

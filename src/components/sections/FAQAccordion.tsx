@@ -12,16 +12,25 @@ interface FAQ {
 interface FAQAccordionProps {
   faqs: FAQ[];
   heading?: string;
+  /** 2 lays the questions out in two columns on desktop. Defaults to a single column. */
+  columns?: 1 | 2;
+  /** Container width override, e.g. "max-w-6xl". Defaults to the narrow single-column measure. */
+  widthClassName?: string;
 }
 
-export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: FAQAccordionProps) {
+export function FAQAccordion({
+  faqs,
+  heading = "Frequently Asked Questions",
+  columns = 1,
+  widthClassName = "max-w-3xl",
+}: FAQAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <>
       <FaqPageSchema items={faqs} />
     <section className="py-10 md:py-12 lg:py-14 2xl:py-24 bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className={`${widthClassName} mx-auto px-4 sm:px-6 lg:px-8`}>
         <ScrollReveal>
           <div className="text-center mb-8 lg:mb-10 2xl:mb-12">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
@@ -33,7 +42,7 @@ export function FAQAccordion({ faqs, heading = "Frequently Asked Questions" }: F
           </div>
         </ScrollReveal>
 
-        <div className="space-y-3">
+        <div className={columns === 2 ? "grid gap-3 md:grid-cols-2 md:items-start" : "space-y-3"}>
           {faqs.map((faq, i) => (
             <div
               key={i}
