@@ -25,7 +25,7 @@ export function ExpandableDetails({
 
   return (
     <section className="py-10 md:py-14 bg-asp-surface-light">
-      <div className="mx-auto max-w-5xl px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="overflow-hidden rounded-[var(--radius-asp-2xl)] border border-gray-200 shadow-asp-md">
           <h2>
             <button
