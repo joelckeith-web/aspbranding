@@ -119,7 +119,7 @@ const WORK = [
     body: "The cheapest Meta audience you have is the people who already visited your site or called once. That gets built and running before any budget goes to cold delivery.",
   },
   {
-    label: "A creative plan you can actually shoot",
+    label: "A creative plan you can shoot",
     body: "We direct what to capture and when — job-site footage, before-and-afters, a technician answering one common question — so there is a steady supply rather than one batch. Creative fatigue is the limiting factor in a service-area account.",
   },
   {
