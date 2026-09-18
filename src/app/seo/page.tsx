@@ -551,8 +551,6 @@ export default function SeoPage() {
 
       <RelatedPages items={RELATED} heading="Related across the Growth System" />
 
-      <SectionBreak variant="surface" />
-
       {/* Closing CTA band */}
       <section className="py-14 md:py-16 bg-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 text-center">

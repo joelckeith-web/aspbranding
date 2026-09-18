@@ -25,9 +25,9 @@ export function SectionBreak({ variant = "light" }: SectionBreakProps) {
         <Image
           src={variant === "dark" ? "/images/logos/asp-white.png" : "/images/logos/asp-black.png"}
           alt=""
-          width={44}
-          height={44}
-          className="h-10 w-auto shrink-0 opacity-90"
+          width={776}
+          height={400}
+          className="h-12 w-auto shrink-0 md:h-14"
           aria-hidden="true"
         />
         <span className={`h-px flex-1 ${rule}`} aria-hidden="true" />
