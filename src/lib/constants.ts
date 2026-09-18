@@ -32,10 +32,13 @@ export const NAV_LINKS: readonly NavItem[] = [
   {
     label: "Services",
     children: [
+      { label: "SEO", href: "/seo" },
+      { label: "PPC", href: "/ppc" },
+      { label: "AEO", href: "/aeo" },
+      { label: "GEO", href: "/geo" },
       { label: "Local SEO Pro", href: "/local-seo-pro" },
       { label: "StormFront", href: "/stormfront" },
       { label: "Content Creation Package", href: "/content-creation" },
-      { label: "Podcast Studio", href: "/podcast" },
       { label: "ChatGPT Ads Management", href: "/chatgpt-ads-management" },
       { label: "Fractional C-Suite", href: "/fractional" },
     ],
@@ -60,6 +63,10 @@ export const FOOTER_SYSTEM = [
 ] as const;
 
 export const FOOTER_PRODUCTS = [
+  { label: "SEO", href: "/seo" },
+  { label: "PPC", href: "/ppc" },
+  { label: "AEO", href: "/aeo" },
+  { label: "GEO", href: "/geo" },
   { label: "Local SEO Pro", href: "/local-seo-pro" },
   { label: "StormFront", href: "/stormfront" },
   { label: "Content Creation Package", href: "/content-creation" },
