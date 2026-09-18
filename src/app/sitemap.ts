@@ -11,6 +11,7 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/chatgpt-ads-management", priority: 0.9, changeFrequency: "weekly" },
   { path: "/pricing", priority: 0.9, changeFrequency: "monthly" },
   { path: "/case-studies", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/seo", priority: 0.9, changeFrequency: "monthly" },
   { path: "/local-seo-pro", priority: 0.8, changeFrequency: "monthly" },
   { path: "/stormfront", priority: 0.8, changeFrequency: "monthly" },
   { path: "/content-creation", priority: 0.8, changeFrequency: "monthly" },
