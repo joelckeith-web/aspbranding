@@ -32,10 +32,10 @@ export const NAV_LINKS: readonly NavItem[] = [
   {
     label: "Services",
     children: [
-      { label: "SEO", href: "/seo" },
-      { label: "PPC", href: "/ppc" },
-      { label: "AEO", href: "/aeo" },
-      { label: "GEO", href: "/geo" },
+      { label: "Search Engine Optimization (SEO)", href: "/seo" },
+      { label: "Pay Per Click (PPC)", href: "/ppc" },
+      { label: "Answer Engine Optimization (AEO)", href: "/aeo" },
+      { label: "Generative Engine Optimization (GEO)", href: "/geo" },
       { label: "Local SEO Pro", href: "/local-seo-pro" },
       { label: "StormFront", href: "/stormfront" },
       { label: "Content Creation Package", href: "/content-creation" },
@@ -63,10 +63,10 @@ export const FOOTER_SYSTEM = [
 ] as const;
 
 export const FOOTER_PRODUCTS = [
-  { label: "SEO", href: "/seo" },
-  { label: "PPC", href: "/ppc" },
-  { label: "AEO", href: "/aeo" },
-  { label: "GEO", href: "/geo" },
+  { label: "Search Engine Optimization (SEO)", href: "/seo" },
+  { label: "Pay Per Click (PPC)", href: "/ppc" },
+  { label: "Answer Engine Optimization (AEO)", href: "/aeo" },
+  { label: "Generative Engine Optimization (GEO)", href: "/geo" },
   { label: "Local SEO Pro", href: "/local-seo-pro" },
   { label: "StormFront", href: "/stormfront" },
   { label: "Content Creation Package", href: "/content-creation" },
