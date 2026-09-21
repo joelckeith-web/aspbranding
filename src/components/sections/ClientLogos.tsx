@@ -1,16 +1,21 @@
+// Home service businesses only. Removed 2026-09-21 per Joel: Premier Creative
+// Group, Continuum Outpatient Center, LGR (the file is named crest-gold.png but
+// the mark is the LGR Law Firm crest), Awkward Recovery, and MichiganLawsuit
+// (ml-monogram.jpg). Heights are tuned per aspect ratio so each mark carries
+// similar visual weight in the marquee.
 const CLIENTS = [
-  { name: "Outdoor Renovations", file: "outdoor-renovations.jpg", height: "88px" },
   { name: "Titan Inspection Services", file: "titan-inspection.jpg", height: "127px" },
   { name: "Viking Heating & Air Conditioning", file: "viking-hvac.jpg", height: "127px" },
+  { name: "Good Faith Inspections", file: "good-faith-inspections.png", height: "92px" },
+  { name: "Mr. Wright Flooring", file: "mrwright-flooring.png", height: "92px" },
+  { name: "Outdoor Renovations", file: "outdoor-renovations.jpg", height: "88px" },
   { name: "Airstrike HVAC", file: "airstrike-hvac.jpg", height: "88px" },
-  { name: "Crest Gold", file: "crest-gold.png", height: "79px" },
-  { name: "Awkward Recovery", file: "awkward-recovery.jpg", height: "105px" },
-  { name: "ML Monogram", file: "ml-monogram.jpg", height: "88px" },
-  { name: "Window World", file: "brand-logo.svg", height: "79px" },
-  { name: "Mr. Rooter", file: "mrr-color-logo.svg", height: "79px" },
-  { name: "PCG", file: "pcg-logo-color.svg", height: "57px" },
-  { name: "Client", file: "logo-square-color.webp", height: "79px" },
+  { name: "1874 Design Studio", file: "1874-design-studio.svg", height: "88px" },
   { name: "Extraordinary Flooring", file: "extraordinary-flooring-logo.svg", height: "79px" },
+  { name: "Mr. Rooter", file: "mrr-color-logo.svg", height: "79px" },
+  { name: "Window World", file: "brand-logo.svg", height: "79px" },
+  { name: "Alpha Solutions", file: "alpha-solutions.webp", height: "72px" },
+  { name: "QC Mechanical", file: "qc-mechanical.png", height: "58px" },
 ];
 
 export function ClientLogos() {
