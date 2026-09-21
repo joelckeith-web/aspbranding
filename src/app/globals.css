@@ -100,12 +100,15 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.333%);
+    /* Track renders the list exactly twice; -50% is one full copy, so the
+       second copy lands where the first started and the loop is seamless.
+       Spacing is inside each item, not a flex gap, or this drifts. */
+    transform: translateX(-50%);
   }
 }
 
 .logo-marquee {
-  animation: marquee 30s linear infinite;
+  animation: marquee 45s linear infinite;
 }
 
 .logo-marquee:hover {
