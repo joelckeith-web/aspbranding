@@ -21,7 +21,7 @@ export const BUSINESS = {
   },
 } as const;
 
-export type NavLink = { label: string; href: string };
+export type NavLink = { label: string; href: string; icon?: string };
 export type NavGroup = {
   label: string;
   children: readonly NavLink[];
@@ -37,25 +37,25 @@ export const NAV_LINKS: readonly NavItem[] = [
   {
     label: "Services",
     children: [
-      { label: "Search Engine Optimization (SEO)", href: "/seo" },
-      { label: "Pay Per Click (PPC)", href: "/ppc" },
-      { label: "Meta Ads Management", href: "/meta-ads" },
-      { label: "Answer Engine Optimization (AEO)", href: "/aeo" },
-      { label: "Generative Engine Optimization (GEO)", href: "/geo" },
-      { label: "Local SEO Pro", href: "/local-seo-pro" },
-      { label: "StormFront System", href: "/stormfront" },
-      { label: "Content Creation Package", href: "/content-creation" },
-      { label: "ChatGPT Ads Management", href: "/chatgpt-ads-management" },
-      { label: "Custom AI Solutions", href: "/custom-ai-solutions" },
-      { label: "Fractional C-Suite", href: "/fractional" },
+      { label: "Search Engine Optimization (SEO)", href: "/seo", icon: "search" },
+      { label: "Pay Per Click (PPC)", href: "/ppc", icon: "cursor" },
+      { label: "Meta Ads Management", href: "/meta-ads", icon: "megaphone" },
+      { label: "Answer Engine Optimization (AEO)", href: "/aeo", icon: "chat" },
+      { label: "Generative Engine Optimization (GEO)", href: "/geo", icon: "sparkle" },
+      { label: "Local SEO Pro", href: "/local-seo-pro", icon: "pin" },
+      { label: "StormFront System", href: "/stormfront", icon: "storm" },
+      { label: "Content Creation Package", href: "/content-creation", icon: "doc" },
+      { label: "ChatGPT Ads Management", href: "/chatgpt-ads-management", icon: "bubble" },
+      { label: "Custom AI Solutions", href: "/custom-ai-solutions", icon: "chip" },
+      { label: "Fractional C-Suite", href: "/fractional", icon: "briefcase" },
     ],
     viewAll: { label: "View all services", href: "/solutions" },
   },
   {
     label: "AI Integration",
     children: [
-      { label: "AI Integration", href: "/ai-integration" },
-      { label: "AI Consulting", href: "/ai-consulting" },
+      { label: "AI Integration", href: "/ai-integration", icon: "plug" },
+      { label: "AI Consulting", href: "/ai-consulting", icon: "bulb" },
     ],
   },
   { label: "Pricing", href: "/pricing" },
@@ -63,7 +63,7 @@ export const NAV_LINKS: readonly NavItem[] = [
 
 export const FOOTER_SYSTEM = [
   { label: "The Growth System", href: "/growth-system" },
-  { label: "AI Integration", href: "/ai-integration" },
+  { label: "AI Integration", href: "/ai-integration", icon: "plug" },
   { label: "Pricing", href: "/pricing" },
   { label: "Growth Diagnostic", href: "/diagnostic" },
   { label: "AI Readiness Check", href: "/ai-readiness" },
@@ -71,23 +71,23 @@ export const FOOTER_SYSTEM = [
 ] as const;
 
 export const FOOTER_PRODUCTS = [
-  { label: "Search Engine Optimization (SEO)", href: "/seo" },
-  { label: "Pay Per Click (PPC)", href: "/ppc" },
-  { label: "Meta Ads Management", href: "/meta-ads" },
-  { label: "Custom AI Solutions", href: "/custom-ai-solutions" },
-  { label: "Answer Engine Optimization (AEO)", href: "/aeo" },
-  { label: "Generative Engine Optimization (GEO)", href: "/geo" },
-  { label: "Local SEO Pro", href: "/local-seo-pro" },
-  { label: "StormFront System", href: "/stormfront" },
-  { label: "Content Creation Package", href: "/content-creation" },
+  { label: "Search Engine Optimization (SEO)", href: "/seo", icon: "search" },
+  { label: "Pay Per Click (PPC)", href: "/ppc", icon: "cursor" },
+  { label: "Meta Ads Management", href: "/meta-ads", icon: "megaphone" },
+  { label: "Custom AI Solutions", href: "/custom-ai-solutions", icon: "chip" },
+  { label: "Answer Engine Optimization (AEO)", href: "/aeo", icon: "chat" },
+  { label: "Generative Engine Optimization (GEO)", href: "/geo", icon: "sparkle" },
+  { label: "Local SEO Pro", href: "/local-seo-pro", icon: "pin" },
+  { label: "StormFront System", href: "/stormfront", icon: "storm" },
+  { label: "Content Creation Package", href: "/content-creation", icon: "doc" },
   { label: "Podcast Studio", href: "/podcast" },
-  { label: "AI Consulting", href: "/ai-consulting" },
-  { label: "Fractional C-Suite", href: "/fractional" },
+  { label: "AI Consulting", href: "/ai-consulting", icon: "bulb" },
+  { label: "Fractional C-Suite", href: "/fractional", icon: "briefcase" },
 ] as const;
 
 export const FOOTER_COMPANY = [
   { label: "About", href: "/about" },
-  { label: "Fractional C-Suite", href: "/fractional" },
+  { label: "Fractional C-Suite", href: "/fractional", icon: "briefcase" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ] as const;

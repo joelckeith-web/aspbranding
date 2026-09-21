@@ -5,6 +5,23 @@ import Link from "next/link";
 import Image from "next/image";
 import { NAV_LINKS, type NavItem, type NavGroup } from "@/lib/constants";
 
+/** Line icons for the dropdown tiles. Stroke-only, inherit currentColor. */
+const NAV_ICONS: Record<string, string> = {
+  search: "M11 4a7 7 0 100 14 7 7 0 000-14zM20 20l-4-4",
+  cursor: "M5 3l6 16 2.2-6.8L20 10 5 3z",
+  megaphone: "M3 10v4h3l7 4V6l-7 4H3zM17 9a4 4 0 010 6",
+  chat: "M4 5h16v10H9l-5 4V5zM8 9h8M8 12h5",
+  sparkle: "M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z",
+  pin: "M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11zM12 12a2.5 2.5 0 100-5 2.5 2.5 0 000 5z",
+  storm: "M7 15a4 4 0 010-8 5.5 5.5 0 0110.6 1.5A3.5 3.5 0 0117 15M13 13l-3 4h4l-3 4",
+  doc: "M6 3h8l4 4v14H6V3zM14 3v4h4M9 12h6M9 16h4",
+  bubble: "M4 5h16v11H12l-5 4v-4H4V5z",
+  chip: "M7 7h10v10H7V7zM10 2v3m4-3v3m-4 14v3m4-3v3M2 10h3m-3 4h3m14-4h3m-3 4h3",
+  briefcase: "M3 8h18v12H3V8zM9 8V5h6v3M3 13h18",
+  plug: "M9 3v5m6-5v5M6 8h12v3a6 6 0 01-12 0V8zM12 17v4",
+  bulb: "M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9V16h7v-2.1A6 6 0 0012 3z",
+};
+
 function isGroup(item: NavItem): item is NavGroup {
   return "children" in item;
 }
@@ -83,28 +100,47 @@ function DesktopDropdown({ group }: { group: NavGroup }) {
         }`}
       >
         <ul
-          className={`list-none m-0 p-2.5 bg-white border border-gray-200 rounded-[var(--radius-asp-lg)] shadow-asp-xl ${
+          className={`list-none m-0 p-4 bg-white border border-gray-200 rounded-[var(--radius-asp-2xl)] shadow-asp-xl ${
             group.children.length > 5
-              ? "grid grid-cols-2 gap-x-6 w-[46rem]"
-              : "min-w-[16rem]"
+              ? "grid grid-cols-2 gap-x-8 w-[50rem]"
+              : "min-w-[17rem]"
           }`}
         >
-          {group.children.map((child) => (
-            <li key={child.href}>
-              <Link
-                href={child.href}
-                className="block px-4 py-2.5 rounded-[var(--radius-asp-sm)] text-sm font-semibold text-asp-black/80 hover:text-asp-blue hover:bg-asp-surface-light no-underline transition-colors whitespace-nowrap"
-                onClick={() => setOpen(false)}
-              >
-                {child.label}
-              </Link>
-            </li>
-          ))}
+          {group.children.map((child, i) => {
+            const multi = group.children.length > 5;
+            // On a two-column grid the final row should not carry a divider.
+            const lastRow = multi ? i >= group.children.length - (group.children.length % 2 || 2) : i === group.children.length - 1;
+            return (
+              <li key={child.href} className={lastRow ? "" : "border-b border-gray-100"}>
+                <Link
+                  href={child.href}
+                  className="group/item flex items-center gap-3 px-2 py-3 rounded-[var(--radius-asp-md)] text-sm font-bold text-asp-black hover:text-asp-blue hover:bg-asp-surface-light no-underline transition-colors whitespace-nowrap"
+                  onClick={() => setOpen(false)}
+                >
+                  {child.icon && NAV_ICONS[child.icon] && (
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[var(--radius-asp-md)] bg-asp-blue/[0.07] text-asp-blue transition-colors group-hover/item:bg-asp-blue/15">
+                      <svg
+                        className="h-[18px] w-[18px]"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={1.7}
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d={NAV_ICONS[child.icon]} />
+                      </svg>
+                    </span>
+                  )}
+                  {child.label}
+                </Link>
+              </li>
+            );
+          })}
           {group.viewAll && (
-            <li className="col-span-full mt-1 border-t border-gray-200 pt-1">
+            <li className="col-span-full mt-3">
               <Link
                 href={group.viewAll.href}
-                className="flex items-center gap-1.5 px-4 py-2.5 rounded-[var(--radius-asp-sm)] text-sm font-bold text-asp-blue hover:bg-asp-surface-light no-underline transition-colors"
+                className="inline-flex items-center justify-center gap-2 rounded-[var(--radius-asp-md)] border border-gray-300 px-6 py-3 text-sm font-bold text-asp-blue hover:border-asp-blue hover:bg-asp-surface-light no-underline transition-colors"
                 onClick={() => setOpen(false)}
               >
                 {group.viewAll.label}
