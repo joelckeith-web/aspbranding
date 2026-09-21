@@ -25,7 +25,7 @@ const CLIENTS = [
   { name: "Mr. Rooter", file: "mrr-color-logo.svg", ratio: 1.71 },
   { name: "Window World", file: "brand-logo.svg", ratio: 2.87 },
   { name: "Alpha Solutions", file: "alpha-solutions.webp", ratio: 2.87 },
-  { name: "QC Mechanical", file: "qc-mechanical.png", ratio: 3.75 },
+  { name: "QC Mechanical", file: "qc-mechanical.png", ratio: 3.74 },
 ];
 
 /** Equal-area sizing: every mark gets the same visual weight. */
