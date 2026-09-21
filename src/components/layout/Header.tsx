@@ -83,10 +83,10 @@ function DesktopDropdown({ group }: { group: NavGroup }) {
         }`}
       >
         <ul
-          className={`list-none m-0 p-2 bg-white border border-gray-200 rounded-[var(--radius-asp-lg)] shadow-asp-xl ${
+          className={`list-none m-0 p-2.5 bg-white border border-gray-200 rounded-[var(--radius-asp-lg)] shadow-asp-xl ${
             group.children.length > 5
-              ? "grid grid-cols-2 gap-x-1 min-w-[34rem]"
-              : "min-w-[15rem]"
+              ? "grid grid-cols-2 gap-x-6 w-[46rem]"
+              : "min-w-[16rem]"
           }`}
         >
           {group.children.map((child) => (
@@ -100,6 +100,18 @@ function DesktopDropdown({ group }: { group: NavGroup }) {
               </Link>
             </li>
           ))}
+          {group.viewAll && (
+            <li className="col-span-full mt-1 border-t border-gray-200 pt-1">
+              <Link
+                href={group.viewAll.href}
+                className="flex items-center gap-1.5 px-4 py-2.5 rounded-[var(--radius-asp-sm)] text-sm font-bold text-asp-blue hover:bg-asp-surface-light no-underline transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                {group.viewAll.label}
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
     </div>

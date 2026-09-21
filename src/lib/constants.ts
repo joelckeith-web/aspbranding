@@ -22,7 +22,12 @@ export const BUSINESS = {
 } as const;
 
 export type NavLink = { label: string; href: string };
-export type NavGroup = { label: string; children: readonly NavLink[] };
+export type NavGroup = {
+  label: string;
+  children: readonly NavLink[];
+  /** Optional footer link inside the dropdown, e.g. "View all services". */
+  viewAll?: NavLink;
+};
 export type NavItem = NavLink | NavGroup;
 
 // Growth System stays the lead item; Services and AI Integration are dropdowns.
@@ -44,6 +49,7 @@ export const NAV_LINKS: readonly NavItem[] = [
       { label: "Custom AI Solutions", href: "/custom-ai-solutions" },
       { label: "Fractional C-Suite", href: "/fractional" },
     ],
+    viewAll: { label: "View all services", href: "/solutions" },
   },
   {
     label: "AI Integration",
