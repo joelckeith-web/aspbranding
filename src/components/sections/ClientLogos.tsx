@@ -3,55 +3,70 @@
 // the mark is the LGR Law Firm crest), Awkward Recovery, and MichiganLawsuit
 // (ml-monogram.jpg).
 //
-// No per-logo heights any more. Every mark sits in an identical fixed box and
-// scales with object-contain, so a 3.74:1 wordmark and a 1:1 badge carry the
-// same visual weight. That uniform item width is also what makes the marquee
-// loop exactly — see the note on the track below.
+// `ratio` is each mark's true width/height AFTER the source files were trimmed
+// of their built-in padding. The files arrived with wildly different dead space
+// — Viking filled 35% of its canvas, Outdoor Renovations 45%, Alpha 91% — which
+// is why a single box size made some read tiny and others huge.
+//
+// Sizing is by equal AREA, not equal height or equal box: h = sqrt(AREA / ratio).
+// A 3.75:1 wordmark and a 1:1 badge then occupy the same amount of ink, which is
+// what the eye actually reads as "the same size".
+const LOGO_AREA = 5200; // px², tuned so the tallest mark lands near 72px
+
 const CLIENTS = [
-  { name: "Titan Inspection Services", file: "titan-inspection.jpg" },
-  { name: "Viking Heating & Air Conditioning", file: "viking-hvac.jpg" },
-  { name: "Good Faith Inspections", file: "good-faith-inspections.png" },
-  { name: "Mr. Wright Flooring", file: "mrwright-flooring.png" },
-  { name: "Outdoor Renovations", file: "outdoor-renovations.jpg" },
-  { name: "Airstrike HVAC", file: "airstrike-hvac.jpg" },
-  { name: "1874 Design Studio", file: "1874-design-studio.svg" },
-  { name: "Extraordinary Flooring", file: "extraordinary-flooring-logo.svg" },
-  { name: "Mr. Rooter", file: "mrr-color-logo.svg" },
-  { name: "Window World", file: "brand-logo.svg" },
-  { name: "Alpha Solutions", file: "alpha-solutions.webp" },
-  { name: "QC Mechanical", file: "qc-mechanical.png" },
+  { name: "Titan Inspection Services", file: "titan-inspection.jpg", ratio: 1.49 },
+  { name: "Viking Heating & Air Conditioning", file: "viking-hvac.jpg", ratio: 2.46 },
+  { name: "Good Faith Inspections", file: "good-faith-inspections.png", ratio: 1.03 },
+  { name: "Mr. Wright Flooring", file: "mrwright-flooring.png", ratio: 1.15 },
+  { name: "Outdoor Renovations", file: "outdoor-renovations.jpg", ratio: 1.04 },
+  { name: "Airstrike HVAC", file: "airstrike-hvac.jpg", ratio: 1.87 },
+  { name: "1874 Design Studio", file: "1874-design-studio.svg", ratio: 1.0 },
+  { name: "Extraordinary Flooring", file: "extraordinary-flooring-logo.svg", ratio: 1.21 },
+  { name: "Mr. Rooter", file: "mrr-color-logo.svg", ratio: 1.71 },
+  { name: "Window World", file: "brand-logo.svg", ratio: 2.87 },
+  { name: "Alpha Solutions", file: "alpha-solutions.webp", ratio: 2.87 },
+  { name: "QC Mechanical", file: "qc-mechanical.png", ratio: 3.75 },
 ];
+
+/** Equal-area sizing: every mark gets the same visual weight. */
+function sizeFor(ratio: number) {
+  const height = Math.sqrt(LOGO_AREA / ratio);
+  return { height: `${Math.round(height)}px`, width: `${Math.round(height * ratio)}px` };
+}
 
 export function ClientLogos() {
   return (
     <section className="py-8 md:py-10 bg-white relative overflow-hidden">
       <div className="relative z-10">
-        <p className="text-center text-xs uppercase tracking-widest text-gray-400 font-bold mb-8 px-4">
+        <p className="text-center text-xs uppercase tracking-widest text-asp-black/55 font-bold mb-8 px-4">
           Trusted by Growing Businesses
         </p>
 
         <div className="overflow-hidden">
           {/*
             Seamless loop: the track holds the list exactly twice and animates to
-            translateX(-50%), which lands the second copy precisely where the
-            first began. Spacing lives inside each item (pr-*) rather than as a
-            flex gap, because a gap sits *between* items — N copies give N-1 gaps,
-            so the wrap point drifts by one gap width. That drift is what made the
-            old 3-copy / -33.333% version snap back before it finished.
+            translateX(-50%), landing the second copy where the first began.
+            Spacing lives inside each item (pr-*) rather than as a flex gap — a
+            gap sits *between* items, so N copies give N-1 gaps and the wrap
+            point drifts by one gap width. That drift is what made the old
+            3-copy / -33.333% version snap back before it finished.
           */}
-          <div className="logo-marquee flex w-max">
+          <div className="logo-marquee flex w-max items-center">
             {[...CLIENTS, ...CLIENTS].map((client, i) => {
               const isClone = i >= CLIENTS.length;
+              const { height, width } = sizeFor(client.ratio);
               return (
                 <div
                   key={`${client.name}-${i}`}
-                  className="flex h-10 w-36 shrink-0 items-center justify-center pr-12 md:h-12 md:w-44 md:pr-16"
+                  className="flex shrink-0 items-center justify-center pr-14 md:pr-20"
+                  style={{ height: "80px" }}
                   aria-hidden={isClone ? "true" : undefined}
                 >
                   <img
                     src={`/images/clients/${client.file}`}
                     alt={isClone ? "" : client.name}
-                    className="max-h-full max-w-full object-contain opacity-70 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                    style={{ height, width }}
+                    className="object-contain"
                     loading="lazy"
                   />
                 </div>
