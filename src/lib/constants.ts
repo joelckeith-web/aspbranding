@@ -87,6 +87,7 @@ export const FOOTER_PRODUCTS = [
 
 export const FOOTER_COMPANY = [
   { label: "About", href: "/about" },
+  { label: "What You Own", href: "/what-you-own" },
   { label: "Fractional C-Suite", href: "/fractional", icon: "briefcase" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
