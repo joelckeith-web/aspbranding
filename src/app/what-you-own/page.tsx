@@ -6,6 +6,7 @@ import { Hero } from "@/components/sections/Hero";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema } from "@/components/schema/StructuredData";
+import { BrandIcon, BrandGlyph, type BrandIconName } from "@/components/ui/BrandIcon";
 
 const PAGE_TITLE = "Who Owns Your Website, Ad Accounts and Data?";
 const PAGE_DESCRIPTION =
@@ -46,24 +47,6 @@ const OWN_LIST = [
   "Reporting dashboards",
 ];
 
-const ICONS: Record<string, string> = {
-  globe: "M12 3a9 9 0 100 18 9 9 0 000-18zM3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z",
-  search: "M11 4a7 7 0 100 14 7 7 0 000-14zM20 20l-4-4",
-  pin: "M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21zM12 12a2.5 2.5 0 100-5 2.5 2.5 0 000 5z",
-  megaphone: "M3 10v4a1 1 0 001 1h2l5 4V5L6 9H4a1 1 0 00-1 1zM15 8.5a4 4 0 010 7M18 6a7.5 7.5 0 010 12",
-  sparkle: "M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16z",
-  database: "M12 3c4.4 0 8 1.3 8 3s-3.6 3-8 3-8-1.3-8-3 3.6-3 8-3zM4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6",
-  image: "M4 5h16v14H4V5zm0 10l4-4 4 4 3-3 5 5M15 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z",
-  door: "M6 3h9v18H6V3zm9 2h3v16h-3M12 12h.01",
-};
-
-function Icon({ name, className = "w-6 h-6" }: { name: string; className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" d={ICONS[name]} />
-    </svg>
-  );
-}
 
 /** Faint ASP logo used as a background watermark. Purely decorative. */
 function LogoMark({ variant = "black", className }: { variant?: "black" | "white"; className: string }) {
@@ -87,12 +70,12 @@ function A({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
-type Asset = { id: string; icon: string; title: string; body: ReactNode; links: { href: string; label: string }[] };
+type Asset = { id: string; icon: BrandIconName; title: string; body: ReactNode; links: { href: string; label: string }[] };
 
 const ASSETS: Asset[] = [
   {
     id: "website",
-    icon: "globe",
+    icon: "website",
     title: "Your website and its code",
     body: (
       <>
@@ -130,7 +113,7 @@ const ASSETS: Asset[] = [
   },
   {
     id: "gbp",
-    icon: "pin",
+    icon: "gbp",
     title: "Your Google Business Profile",
     body: (
       <>
@@ -150,7 +133,7 @@ const ASSETS: Asset[] = [
   },
   {
     id: "ads",
-    icon: "megaphone",
+    icon: "ads",
     title: "Your ad accounts and their history",
     body: (
       <>
@@ -169,7 +152,7 @@ const ASSETS: Asset[] = [
   },
   {
     id: "ai",
-    icon: "sparkle",
+    icon: "ai",
     title: "How AI describes your business",
     body: (
       <>
@@ -189,7 +172,7 @@ const ASSETS: Asset[] = [
   },
   {
     id: "data",
-    icon: "database",
+    icon: "data",
     title: "Your customer and lead data",
     body: (
       <>
@@ -209,7 +192,7 @@ const ASSETS: Asset[] = [
   },
   {
     id: "content",
-    icon: "image",
+    icon: "content",
     title: "Your content",
     body: (
       <>
@@ -224,7 +207,7 @@ const ASSETS: Asset[] = [
   },
   {
     id: "leaving",
-    icon: "door",
+    icon: "key",
     title: "If you ever leave",
     body: (
       <>
@@ -244,26 +227,31 @@ const ASSETS: Asset[] = [
 const REASONS = [
   {
     n: "01",
+    icon: "monthly" as BrandIconName,
     title: "The quality of the work",
     body: "Campaigns get adjusted against booked jobs, pages get improved, your Business Profile stays current and content ships in your voice.",
   },
   {
     n: "02",
+    icon: "respond" as BrandIconName,
     title: "How we respond",
     body: "When something breaks or a question comes up, we pick it up and handle it. That includes the small jobs, like helping you back into a locked Google account or taking someone off an email list on request.",
   },
   {
     n: "03",
+    icon: "results" as BrandIconName,
     title: "Results earned over time",
     body: "Each month's pages, fixes and campaign changes build on the last, and we report what they produced against booked jobs.",
   },
   {
     n: "04",
+    icon: "search" as BrandIconName,
     title: "No chasing trends or core updates",
     body: "You stop chasing every marketing trend and Google core update. We watch for those updates and adjust the work when Google changes, so your time goes into running the business.",
   },
   {
     n: "05",
+    icon: "home" as BrandIconName,
     title: "Home-service know-how",
     body: "ASP was built by an operator and is run by operators, and our leadership team owns trades-based businesses. We work across HVAC, plumbing, roofing, electrical and the other home service trades, so the work fits how your jobs get sold, booked and done.",
   },
@@ -380,7 +368,7 @@ export default function WhatYouOwnPage() {
                   href={`#${a.id}`}
                   className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-asp-surface-light px-4 py-2 text-sm font-semibold text-asp-black no-underline transition hover:border-asp-blue-light hover:text-asp-blue"
                 >
-                  <Icon name={a.icon} className="w-4 h-4 text-asp-blue" />
+                  <BrandGlyph name={a.icon} className="w-4 h-4 text-asp-blue" />
                   {a.title}
                 </a>
               ))}
@@ -408,9 +396,7 @@ export default function WhatYouOwnPage() {
                   className="relative overflow-hidden scroll-mt-28 grid gap-6 rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 shadow-asp-sm md:grid-cols-[14rem_1fr] lg:p-9"
                 >
                   <div className="relative">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-[var(--radius-asp-md)] bg-asp-blue text-white">
-                      <Icon name={a.icon} />
-                    </div>
+                    <BrandIcon name={a.icon} size="md" />
                     <p className="mt-4 font-black text-sm tracking-widest text-asp-blue-light">
                       {String(i + 1).padStart(2, "0")}
                     </p>
@@ -467,8 +453,11 @@ export default function WhatYouOwnPage() {
                     i === REASONS.length - 1 ? "lg:col-span-1 md:col-span-2" : ""
                   }`}
                 >
-                  <p className="font-black text-3xl text-asp-blue-light">{r.n}</p>
-                  <h3 className="mt-3 font-black text-xl">{r.title}</h3>
+                  <div className="flex items-center justify-between">
+                    <BrandIcon name={r.icon} size="md" onDark />
+                    <p className="font-black text-2xl text-asp-blue-light/60">{r.n}</p>
+                  </div>
+                  <h3 className="mt-5 font-black text-xl">{r.title}</h3>
                   <p className="mt-3 text-white/75 leading-relaxed">{r.body}</p>
                 </div>
               </ScrollReveal>
