@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import type { ReactNode } from "react";
 import { Hero } from "@/components/sections/Hero";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
@@ -61,6 +62,20 @@ function Icon({ name, className = "w-6 h-6" }: { name: string; className?: strin
     <svg className={className} fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" d={ICONS[name]} />
     </svg>
+  );
+}
+
+/** Faint ASP logo used as a background watermark. Purely decorative. */
+function LogoMark({ variant = "black", className }: { variant?: "black" | "white"; className: string }) {
+  return (
+    <Image
+      src={variant === "white" ? "/images/logos/asp-white.png" : "/images/logos/asp-black.png"}
+      alt=""
+      aria-hidden="true"
+      width={776}
+      height={400}
+      className={`pointer-events-none select-none absolute h-auto ${className}`}
+    />
   );
 }
 
@@ -315,8 +330,14 @@ export default function WhatYouOwnPage() {
       />
 
       {/* Intro + the ownership checklist */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <section className="relative overflow-hidden py-16 md:py-20 bg-white">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{ background: "radial-gradient(ellipse 45% 55% at 85% 20%, rgba(76, 201, 240, 0.10), transparent 70%)" }}
+        />
+        <LogoMark className="-right-24 -bottom-16 w-[30rem] opacity-[0.035] md:w-[40rem]" />
+        <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
             <ScrollReveal>
               <p className="font-black uppercase tracking-wide text-sm text-asp-blue">How it works</p>
@@ -369,16 +390,37 @@ export default function WhatYouOwnPage() {
       </section>
 
       {/* The hub: one row per owned asset */}
-      <section className="py-16 md:py-20 bg-asp-surface-light border-y border-gray-200">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <section className="relative overflow-hidden py-16 md:py-20 bg-asp-surface-light border-y border-gray-200">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 40% 30% at 0% 25%, rgba(76, 201, 240, 0.12), transparent 70%), radial-gradient(ellipse 40% 30% at 100% 70%, rgba(159, 76, 255, 0.08), transparent 70%)",
+          }}
+        />
+        {/* Oversized asset icons drifting in the side gutters, wide screens only. */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 hidden xl:block text-asp-blue">
+          <Icon name="globe" className="absolute left-[3%] top-[6%] w-40 h-40 opacity-[0.06] -rotate-12" />
+          <Icon name="pin" className="absolute right-[4%] top-[22%] w-36 h-36 opacity-[0.06] rotate-6" />
+          <Icon name="sparkle" className="absolute left-[4%] top-[48%] w-32 h-32 opacity-[0.07] rotate-12" />
+          <Icon name="database" className="absolute right-[3%] top-[64%] w-40 h-40 opacity-[0.06] -rotate-6" />
+          <Icon name="door" className="absolute left-[5%] bottom-[5%] w-32 h-32 opacity-[0.06] rotate-3" />
+        </div>
+        <LogoMark className="left-1/2 top-1/2 w-[46rem] -translate-x-1/2 -translate-y-1/2 opacity-[0.025]" />
+        <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <div className="space-y-6">
             {ASSETS.map((a, i) => (
               <ScrollReveal key={a.id}>
                 <article
                   id={a.id}
-                  className="scroll-mt-28 grid gap-6 rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 shadow-asp-sm md:grid-cols-[14rem_1fr] lg:p-9"
+                  className="relative overflow-hidden scroll-mt-28 grid gap-6 rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 shadow-asp-sm md:grid-cols-[14rem_1fr] lg:p-9"
                 >
-                  <div>
+                  <Icon
+                    name={a.icon}
+                    className={`pointer-events-none absolute -top-6 -right-6 w-40 h-40 text-asp-blue opacity-[0.045] ${i % 2 ? "rotate-12" : "-rotate-12"}`}
+                  />
+                  <div className="relative">
                     <div className="flex h-12 w-12 items-center justify-center rounded-[var(--radius-asp-md)] bg-asp-blue text-white">
                       <Icon name={a.icon} />
                     </div>
@@ -387,7 +429,7 @@ export default function WhatYouOwnPage() {
                     </p>
                     <h2 className="mt-1 font-black text-2xl leading-tight text-asp-black">{a.title}</h2>
                   </div>
-                  <div>
+                  <div className="relative">
                     <p className="text-lg text-black/70 leading-relaxed">{a.body}</p>
                     <div className="mt-5 flex flex-wrap gap-2">
                       {a.links.map((l) => (
@@ -410,8 +452,17 @@ export default function WhatYouOwnPage() {
       </section>
 
       {/* Centerpiece: why clients keep ASP */}
-      <section className="py-16 md:py-24 bg-asp-black text-white">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <section className="relative overflow-hidden py-16 md:py-24 bg-asp-black text-white">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 45% at 50% 0%, rgba(76, 201, 240, 0.16), transparent 70%), radial-gradient(ellipse 55% 40% at 85% 100%, rgba(159, 76, 255, 0.14), transparent 70%)",
+          }}
+        />
+        <LogoMark variant="white" className="-right-20 top-6 w-[26rem] opacity-[0.05] md:w-[34rem]" />
+        <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <div className="max-w-3xl">
               <p className="font-black uppercase tracking-wide text-sm text-asp-blue-light">The monthly work</p>
@@ -454,8 +505,16 @@ export default function WhatYouOwnPage() {
       </section>
 
       {/* Yours vs. what ASP keeps */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <section className="relative overflow-hidden py-16 md:py-20 bg-white">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{ background: "radial-gradient(ellipse 50% 45% at 25% 60%, rgba(76, 201, 240, 0.09), transparent 70%)" }}
+        />
+        <svg aria-hidden="true" className="pointer-events-none absolute -left-10 top-10 hidden h-56 w-56 -rotate-12 text-asp-blue opacity-[0.05] lg:block" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+        <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center">
               <p className="font-black uppercase tracking-wide text-sm text-asp-blue">Where the line sits</p>
@@ -492,8 +551,14 @@ export default function WhatYouOwnPage() {
       <FAQAccordion faqs={FAQS} heading="Frequently Asked Questions" columns={2} widthClassName="max-w-6xl" />
 
       {/* Closing CTA */}
-      <section className="py-16 md:py-20 bg-asp-surface-light border-t border-gray-200">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+      <section className="relative overflow-hidden py-16 md:py-20 bg-asp-surface-light border-t border-gray-200">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{ background: "radial-gradient(ellipse 50% 70% at 50% 100%, rgba(159, 76, 255, 0.09), transparent 70%)" }}
+        />
+        <LogoMark className="-left-16 -top-10 w-[22rem] opacity-[0.035] md:w-[28rem]" />
+        <div className="relative mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
               Ready to hand off the work and keep what you own?
