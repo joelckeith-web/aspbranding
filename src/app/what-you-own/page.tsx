@@ -10,7 +10,7 @@ import { BrandIcon, BrandGlyph, type BrandIconName } from "@/components/ui/Brand
 
 const PAGE_TITLE = "Who Owns Your Website, Ad Accounts and Data?";
 const PAGE_DESCRIPTION =
-  "We run your marketing every month, and every asset we build and all of your data sit in your name, with no handover or exit fees. See what you own.";
+  "Finally, a marketing agency that doesn't hold your data hostage. We run your marketing every month, and everything we build stays yours. See what you own.";
 const PAGE_URL = "https://www.aspbranding.com/what-you-own";
 
 export const metadata: Metadata = {
@@ -351,7 +351,7 @@ export default function WhatYouOwnPage() {
       <Hero
         eyebrow="Ownership"
         heading="What You Own When ASP Runs Your Marketing"
-        subheading="We run your marketing for you every month. Every asset we build and all of your data stay in your name."
+        subheading="Finally, a marketing agency that doesn’t hold your data hostage. We run your marketing every month, and every asset we build stays in your name."
         ctaText="Get Started"
         ctaUrl="/contact"
         bgType="image"
@@ -374,7 +374,7 @@ export default function WhatYouOwnPage() {
             <ScrollReveal>
               <p className="font-black uppercase tracking-wide text-sm text-asp-blue">How it works</p>
               <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight text-asp-black">
-                Run for you every month, built in your name
+                Tired of asking your agency for your own logins?
               </h2>
               <p className="mt-5 text-lg text-black/70 leading-relaxed">
                 ASP runs your marketing for you on a monthly service. That covers the website, search, your Google
