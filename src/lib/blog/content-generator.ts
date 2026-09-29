@@ -32,8 +32,11 @@ export async function generateBlogPost(
   const userPrompt = buildUserPrompt(topic, internalLinks, externalSources);
 
   const response = await anthropic.messages.create({
-    model: "claude-sonnet-4-20250514",
+    model: "claude-sonnet-5",
     max_tokens: 8000,
+    // Sonnet 5 defaults to adaptive thinking, which would put a thinking block
+    // at content[0] where this function reads the text.
+    thinking: { type: "disabled" },
     system: systemPrompt,
     messages: [{ role: "user", content: userPrompt }],
   });
