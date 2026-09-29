@@ -62,6 +62,49 @@ function LogoMark({ variant = "black", className }: { variant?: "black" | "white
   );
 }
 
+/** Background textures (Joel 2026-09-29: dot grid, diagonal hairlines, grain). All decorative. */
+function DotGrid({ color = "rgba(0, 35, 102, 0.16)", mask = "radial-gradient(ellipse 75% 80% at 60% 40%, #000 30%, transparent 85%)" }: { color?: string; mask?: string }) {
+  return (
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0"
+      style={{
+        backgroundImage: `radial-gradient(${color} 1.2px, transparent 1.3px)`,
+        backgroundSize: "22px 22px",
+        WebkitMaskImage: mask,
+        maskImage: mask,
+      }}
+    />
+  );
+}
+
+function Hairlines({ mask = "linear-gradient(90deg, transparent 35%, #000 90%)" }: { mask?: string }) {
+  return (
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0"
+      style={{
+        backgroundImage:
+          "repeating-linear-gradient(135deg, rgba(0, 35, 102, 0.06) 0px, rgba(0, 35, 102, 0.06) 1px, transparent 1px, transparent 14px)",
+        WebkitMaskImage: mask,
+        maskImage: mask,
+      }}
+    />
+  );
+}
+
+function Grain({ id, opacity = 0.12 }: { id: string; opacity?: number }) {
+  return (
+    <svg aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full" style={{ opacity }}>
+      <filter id={id}>
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={3} stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+      </filter>
+      <rect width="100%" height="100%" filter={`url(#${id})`} />
+    </svg>
+  );
+}
+
 function A({ href, children }: { href: string; children: ReactNode }) {
   return (
     <Link href={href} className="font-semibold text-asp-blue underline decoration-asp-blue-light/60 underline-offset-4 hover:decoration-asp-blue">
@@ -324,6 +367,7 @@ export default function WhatYouOwnPage() {
           className="pointer-events-none absolute inset-0"
           style={{ background: "radial-gradient(ellipse 45% 55% at 85% 20%, rgba(76, 201, 240, 0.10), transparent 70%)" }}
         />
+        <DotGrid mask="radial-gradient(ellipse 45% 70% at 85% 30%, #000 20%, transparent 80%)" />
         <LogoMark className="-right-24 -bottom-16 w-[30rem] opacity-[0.035] md:w-[40rem]" />
         <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
@@ -387,6 +431,7 @@ export default function WhatYouOwnPage() {
               "radial-gradient(ellipse 40% 30% at 0% 25%, rgba(76, 201, 240, 0.12), transparent 70%), radial-gradient(ellipse 40% 30% at 100% 70%, rgba(159, 76, 255, 0.08), transparent 70%)",
           }}
         />
+        <Hairlines />
         <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <div className="space-y-6">
             {ASSETS.map((a, i) => (
@@ -434,6 +479,7 @@ export default function WhatYouOwnPage() {
               "radial-gradient(ellipse 60% 45% at 50% 0%, rgba(76, 201, 240, 0.16), transparent 70%), radial-gradient(ellipse 55% 40% at 85% 100%, rgba(159, 76, 255, 0.14), transparent 70%)",
           }}
         />
+        <DotGrid color="rgba(76, 201, 240, 0.22)" mask="radial-gradient(ellipse 70% 60% at 50% 10%, #000 20%, transparent 80%)" />
         <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <div className="max-w-3xl">
@@ -484,8 +530,9 @@ export default function WhatYouOwnPage() {
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0"
-          style={{ background: "radial-gradient(ellipse 50% 45% at 25% 60%, rgba(76, 201, 240, 0.09), transparent 70%)" }}
+          style={{ background: "radial-gradient(ellipse 50% 45% at 25% 60%, rgba(76, 201, 240, 0.12), transparent 70%)" }}
         />
+        <Grain id="grain-keeps" opacity={0.1} />
         <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center">
@@ -527,8 +574,9 @@ export default function WhatYouOwnPage() {
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0"
-          style={{ background: "radial-gradient(ellipse 50% 70% at 50% 100%, rgba(159, 76, 255, 0.09), transparent 70%)" }}
+          style={{ background: "radial-gradient(ellipse 50% 70% at 50% 100%, rgba(159, 76, 255, 0.12), transparent 70%)" }}
         />
+        <Grain id="grain-cta" opacity={0.12} />
         <div className="relative mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">
