@@ -131,13 +131,14 @@ export function Hero({
               { file: "google-partner-light.png", alt: "Google Partner — ASP" },
               { file: "meta-business-partner.webp", alt: "Meta Business Partner — ASP" },
               { file: "nahb-light.png", alt: "NAHB Member — ASP" },
+              { file: "nefba-light.png", alt: "Northeast Florida Builders Association Member — ASP", className: "h-7 md:h-8 lg:h-10" },
               { file: "superior-service-color.png", alt: "Superior Service Award" },
-            ].map((badge) => (
+            ].map((badge: { file: string; alt: string; className?: string }) => (
               <img
                 key={badge.file}
                 src={`/images/badges/${badge.file}`}
                 alt={badge.alt}
-                className="h-14 md:h-16 lg:h-20 w-auto object-contain"
+                className={`${badge.className ?? "h-14 md:h-16 lg:h-20"} w-auto object-contain`}
                 loading="lazy"
               />
             ))}
