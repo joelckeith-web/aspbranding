@@ -56,7 +56,7 @@ const AREAS = [
   {
     label: "SOP search & custom tools",
     headline: "Ask a question and get the answer from your own SOPs.",
-    body: "An AI search over your own SOPs, so a new hire or a tech in the field asks a question and gets your answer. Plus the builds that don't exist off the shelf: intake agents, reporting built for how you run, two systems that finally talk to each other.",
+    body: "An AI search over your own SOPs, so a new hire or a tech in the field asks a question and gets your answer. Where the answer is something nobody sells, that becomes a custom build — a separate conversation, on its own page.",
   },
 ];
 
@@ -74,7 +74,7 @@ const METHOD = [
   {
     stage: "Run",
     title: "Build what's missing.",
-    body: "Custom AI tools: an SOP search, an intake agent, reporting built for how you run. Only after crawl and walk have proven out.",
+    body: "Where the gap needs software that does not exist yet, it becomes a custom build, scoped separately. Only after crawl and walk have proven out.",
   },
 ];
 
@@ -167,7 +167,7 @@ const FAQS = [
   {
     question: "Do you build custom AI, or set up tools we already have?",
     answer:
-      "Both, in that order — and we start with what you already own, not a new login to buy. Most businesses get the biggest return from switching on what their current tools already do — tagged follow-up sequences, reminders, missed-call text back. Custom builds come after that, for the gaps: an SOP search, an intake agent, data moving between two systems that don't talk, reporting built for how you run.",
+      "Both, in that order — and we start with what you already own, not a new login to buy. Most businesses get the biggest return from switching on what their current tools already do: tagged follow-up sequences, reminders, missed-call text back. Where a real gap is left after that, it becomes a custom build, which is scoped on its own terms. Our custom AI solutions page covers that side.",
   },
   {
     question: "What does AI consulting cost?",

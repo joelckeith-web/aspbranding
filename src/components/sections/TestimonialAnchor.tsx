@@ -8,6 +8,8 @@ interface TestimonialAnchorProps {
   size?: "lg" | "sm";
   /** Reviewer name as recorded in testimonials.json — shown under the quote when set. */
   attribution?: string;
+  /** Container width override, e.g. "max-w-6xl". */
+  widthClassName?: string;
 }
 
 export function TestimonialAnchor({
@@ -16,6 +18,7 @@ export function TestimonialAnchor({
   variant = "dark",
   size = "lg",
   attribution,
+  widthClassName = "max-w-4xl",
 }: TestimonialAnchorProps) {
   const resolved =
     quote ??
@@ -27,7 +30,9 @@ export function TestimonialAnchor({
 
   return (
     <section
-      className={`relative py-16 md:py-20 lg:py-24 overflow-hidden ${
+      className={`relative overflow-hidden ${
+        size === "sm" ? "py-10 md:py-12" : "py-16 md:py-20 lg:py-24"
+      } ${
         isDark ? "bg-asp-black text-white" : "bg-white text-asp-blue"
       }`}
     >
@@ -42,7 +47,7 @@ export function TestimonialAnchor({
         />
       )}
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className={`relative z-10 ${widthClassName} mx-auto px-4 sm:px-6 lg:px-8 text-center`}>
         <ScrollReveal>
           <span
             className={`inline-block font-bold text-xs uppercase tracking-widest mb-6 ${
