@@ -12,13 +12,24 @@ export function TeamMemberCard({ name, title, specialty, headshot, linkedin }: T
   return (
     <div className="text-center">
       <div className="mb-6 mx-auto w-48 h-48 overflow-hidden rounded-full shadow-asp-lg">
-        <Image
-          src={headshot}
-          alt={name}
-          width={400}
-          height={500}
-          className="w-full h-full object-cover"
-        />
+        {headshot ? (
+          <Image
+            src={headshot}
+            alt={name}
+            width={400}
+            height={500}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          // No photo yet: initials on the brand gradient instead of a broken image.
+          <div
+            className="w-full h-full flex items-center justify-center bg-gradient-to-br from-asp-blue to-asp-blue-light text-white font-black text-5xl"
+            aria-label={name}
+            role="img"
+          >
+            {name.split(" ").map((part) => part[0]).join("")}
+          </div>
+        )}
       </div>
       <h3 className="font-bold text-lg text-asp-blue">{name}</h3>
       <p className="text-gray-500 text-sm mt-1">{title}</p>

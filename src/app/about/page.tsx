@@ -240,7 +240,7 @@ export default function AboutPage() {
             </div>
           </ScrollReveal>
           <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-3xl mx-auto">
               {teamData
                 .sort((a, b) => a.order - b.order)
                 .map((member) => (
