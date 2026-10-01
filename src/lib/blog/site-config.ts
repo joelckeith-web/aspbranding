@@ -58,8 +58,8 @@ export const siteConfig = {
   // ── Author — Joel Keith (CEO) ──
   author: {
     name: "Joel Keith",
-    title: "CEO & Growth Strategist",
-    bio: "Joel Keith is the CEO of ASP, a digital marketing agency helping home service businesses scale past revenue barriers. With deep expertise in local SEO, paid advertising, and systematic growth strategies, Joel and the ASP team have helped hundreds of service businesses build sustainable digital marketing systems that drive measurable results.",
+    title: "Founder & CEO",
+    bio: "Joel Keith is the founder and CEO of ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner.",
     avatar: "/images/team/joel-keith.avif",
     website: "https://joelkeith.me",
   },
