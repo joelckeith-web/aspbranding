@@ -6,7 +6,7 @@ dateModified: "2026-09-04"
 author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
-  bio: "Joel Keith is the founder and CEO of ASP, a growth-systems marketing agency for home service operators. He started ASP to fix what he saw breaking in home service marketing. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is the founder and CEO of ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
