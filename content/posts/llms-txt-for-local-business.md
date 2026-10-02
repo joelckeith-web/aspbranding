@@ -64,7 +64,7 @@ The proposal site says that after two years of adoption, thousands of sites publ
 
 ![Table of what Google, OpenAI and Perplexity document about llms.txt. Google Search ignores it; OpenAI and Perplexity point to robots.txt.](/images/blog/llms-txt-for-local-business-platforms.svg)
 
-*All three platforms have published how sites get found, and none of those pages names a business's llms.txt as part of it.*
+*Read the right-hand column: neither OpenAI nor Perplexity says it uses a business's llms.txt to pick which businesses to show.*
 
 **Key Takeaway:** Google states that its Search ignores llms.txt, and OpenAI's and Perplexity's crawler documentation points site owners to robots.txt, so none of these pages describes the file as a way to earn a mention.
 

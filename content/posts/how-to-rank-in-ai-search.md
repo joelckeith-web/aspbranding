@@ -80,10 +80,6 @@ Local recommendations are even harder to study. As our [GEO page](/geo) explains
 
 Keep that gap in mind when someone promises your business a spot inside ChatGPT or a set number of AI citations. A promise tied to a system that nobody outside the company controls cannot be kept by the person making it. Ask the seller which published source supports each step of the plan, and see how many steps survive the question.
 
-![Three columns: AI search moves the platforms document, tactics Google says you don't need, and claims no one has shown for local businesses.](/images/blog/how-to-rank-in-ai-search-evidence.svg)
-
-*Check where a pitched tactic falls before you pay for it. Only the left column has platform documentation behind it.*
-
 **Key Takeaway:** Research shows content changes can shift AI visibility on a research benchmark, but no one has shown a reliable method for getting a local business recommended.
 
 ## Evidence-Backed Ways to Rank in AI Search
@@ -99,6 +95,10 @@ Everything below traces back to guidance the platforms themselves have published
 
 For an HVAC or plumbing company, "write from the job" means the details a competitor cannot copy from another website. That includes what a repair costs in your market, which failures show up each season, and what you tell a homeowner before they ask. Our [local SEO playbook for home service businesses](/blog/local-seo-for-home-service-businesses) covers the profile and listings side in more depth.
 
+![Three columns: AI search moves the platforms document, tactics Google says you don't need, and claims no one has shown for local businesses.](/images/blog/how-to-rank-in-ai-search-evidence.svg)
+
+*Check where a pitched tactic falls before you pay for it. Only the left column has platform documentation supporting it.*
+
 **Key Takeaway:** The documented moves for AI search are crawl access, indexing, an accurate Business Profile and first-hand content, and each one also helps your regular rankings.
 
 ## How Do You Measure AI Search Visibility?
@@ -109,7 +109,7 @@ Google's [optimization guide](https://developers.google.com/search/docs/fundamen
 
 ![Table of AI visibility reports by platform: Search Console for Google AI features, Bing Webmaster Tools for Copilot, and no comparable report for ChatGPT or Perplexity.](/images/blog/how-to-rank-in-ai-search-measurement.svg)
 
-*Only Google and Microsoft offer a first-party report today. For the other assistants, a written spot-check log is the record.*
+*Google and Microsoft offer first-party reports. ChatGPT and Perplexity have no comparable report for a local business, so a written spot-check log is the record.*
 
 **Key Takeaway:** Use Google's own report for AI Overviews and AI Mode, and treat any AI visibility number without a named source with caution.
 

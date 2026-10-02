@@ -44,16 +44,17 @@
 <rect x="530" y="148" width="230" height="94" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="6 5"/>
 <text x="544" y="170.0" font-size="12.5" fill="#111827" font-weight="600">Research gains for local</text>
 <text x="544" y="186.5" font-size="12.5" fill="#111827" font-weight="600">businesses</text>
-<text x="544" y="204.0" font-size="11" fill="#6b7280">2023 GEO paper reported no local</text>
+<text x="544" y="204.0" font-size="11" fill="#6b7280">2023 GEO paper did not report local</text>
 <text x="544" y="219.0" font-size="11" fill="#6b7280">results</text>
-<rect x="530" y="250" width="230" height="79" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="6 5"/>
+<rect x="530" y="250" width="230" height="94" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="6 5"/>
 <text x="544" y="272.0" font-size="12.5" fill="#111827" font-weight="600">A reliable way to get</text>
 <text x="544" y="288.5" font-size="12.5" fill="#111827" font-weight="600">recommended</text>
-<text x="544" y="306.0" font-size="11" fill="#6b7280">No controlled test of a profile edit</text>
-<rect x="530" y="337" width="230" height="77" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="6 5"/>
-<text x="544" y="359.0" font-size="12.5" fill="#111827" font-weight="600">Guaranteed AI citations</text>
-<text x="544" y="376.5" font-size="11" fill="#6b7280">No platform publishes its</text>
-<text x="544" y="391.5" font-size="11" fill="#6b7280">recommendation factors</text>
-<text x="40" y="626" font-size="12" fill="#6b7280">Copilot, so the middle column reflects Google only.</text>
-<text x="40" y="610" font-size="12" fill="#6b7280">Summary of the platform guidance cited in this post. Microsoft describes schema and smaller content pieces as useful for</text>
+<text x="544" y="306.0" font-size="11" fill="#6b7280">No outside controlled test of a</text>
+<text x="544" y="321.0" font-size="11" fill="#6b7280">profile edit</text>
+<rect x="530" y="352" width="230" height="77" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="6 5"/>
+<text x="544" y="374.0" font-size="12.5" fill="#111827" font-weight="600">Guaranteed AI citations</text>
+<text x="544" y="391.5" font-size="11" fill="#6b7280">No platform publishes its</text>
+<text x="544" y="406.5" font-size="11" fill="#6b7280">recommendation factors</text>
+<text x="40" y="626" font-size="12" fill="#6b7280">describes schema as helping AI systems understand content, so the middle column reflects Google only.</text>
+<text x="40" y="610" font-size="12" fill="#6b7280">Summary of the platform guidance cited in this post. Microsoft says Copilot breaks content into smaller pieces and</text>
 </svg>

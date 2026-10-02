@@ -88,9 +88,9 @@ Google's page on [Google updates to your Business Profile](https://support.googl
 
 Google also says it may apply some suggested user edits without prior review. This is where your website becomes part of profile upkeep. If your site still lists an old phone number or a town you stopped serving, that page can become the public information that supports a wrong edit. Keeping your name, address and phone details identical everywhere is covered in our guide to [why NAP consistency makes or breaks local SEO](/blog/why-consistent-nap-info-is-crucial-for-local-seo-success).
 
-![Flow chart: Google gathers profile information, applies some edits without review, and gives owners 4 days on others before it may publish them.](/images/blog/google-business-profile-ai-data-source-google-edits.svg)
+![Flow chart: Google gathers profile information, may apply some suggested edits without review, and gives owners 4 days on others before it may publish them.](/images/blog/google-business-profile-ai-data-source-google-edits.svg)
 
-*Edits can reach Maps and Search without your review, or after 4 days with no response from you.*
+*Edits can reach Maps and Search without your review, or after 4 days with no response from you when other public info supports them.*
 
 **Key Takeaway:** Google and the public help write your Business Profile, so an unchecked profile can drift away from the facts and carry that drift into AI answers.
 
