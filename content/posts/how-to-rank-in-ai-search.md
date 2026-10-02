@@ -107,7 +107,7 @@ Measurement is where many AI search services get vague, so start with the tools 
 
 Google's [optimization guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) also warns: "Be wary of third-party tools that promise ranking success or claim to use 'internal' Google metrics." Microsoft's Bing Webmaster Tools has an [AI Performance report](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview), announced as a public preview in February 2026, that shows how often your content is cited in generative answers across Microsoft Copilot and AI-generated summaries in Bing. For ChatGPT and Perplexity, there is no comparable report for a local business. The most reliable option there is a repeatable spot-check: a fixed set of homeowner-style questions, asked in the same places on a schedule, with the results written down. After that, tie any change back to calls, leads and booked jobs.
 
-![Table of AI visibility reports by platform: Search Console for Google AI features, Bing Webmaster Tools for Copilot, and no comparable report for ChatGPT or Perplexity.](/images/blog/how-to-rank-in-ai-search-measurement.svg)
+![Table of AI visibility reports by platform: Search Console for Google AI features, Bing Webmaster Tools for Copilot, and no comparable report for ChatGPT or Perplexity for a local business.](/images/blog/how-to-rank-in-ai-search-measurement.svg)
 
 *Google and Microsoft offer first-party reports. ChatGPT and Perplexity have no comparable report for a local business, so a written spot-check log is the record.*
 
