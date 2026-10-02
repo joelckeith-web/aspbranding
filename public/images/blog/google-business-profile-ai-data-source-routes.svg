@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">How profile data reaches AI answers</title><desc id="d">Flow diagram: a Google Business Profile feeds Google Search AI features, Gemini in Google Maps and apps grounded in Maps data. ChatGPT sits apart, undocumented.</desc>
+<rect width="800" height="540" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" fill="#002366" font-weight="700">How profile data reaches AI answers</text>
+<text x="40" y="70" font-size="14" fill="#4b5563">Three routes Google has documented, and what is known about ChatGPT</text>
+<rect x="40" y="170" width="220" height="110" rx="10" fill="#002366" fill-opacity="1" stroke="#002366" stroke-width="0"/>
+<text x="150" y="210" font-size="15" fill="#ffffff" font-weight="700" text-anchor="middle">Your Google</text>
+<text x="150" y="230" font-size="15" fill="#ffffff" font-weight="700" text-anchor="middle">Business Profile</text>
+<text x="150" y="254" font-size="11" fill="#dbe4ff" text-anchor="middle">Name, hours, services,</text>
+<text x="150" y="269" font-size="11" fill="#dbe4ff" text-anchor="middle">photos, reviews</text>
+<line x1="262" y1="225" x2="418" y2="138" stroke="#1E5BD8" stroke-width="2"/><path d="M418 138 L412.8 145.4 L409.0 138.5 z" fill="#1E5BD8"/>
+<rect x="420" y="100" width="340" height="76" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="440" y="130" font-size="14" fill="#111827" font-weight="700">Google Search AI features</text>
+<text x="440" y="152" font-size="12" fill="#4b5563">AI Overviews and AI Mode</text>
+<line x1="262" y1="225" x2="418" y2="233" stroke="#1E5BD8" stroke-width="2"/><path d="M418 233 L409.7 236.5 L410.1 228.7 z" fill="#1E5BD8"/>
+<rect x="420" y="195" width="340" height="76" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="440" y="225" font-size="14" fill="#111827" font-weight="700">Gemini in Google Maps</text>
+<text x="440" y="247" font-size="12" fill="#4b5563">Review summaries, place questions, Ask Maps</text>
+<line x1="262" y1="225" x2="418" y2="328" stroke="#1E5BD8" stroke-width="2"/><path d="M418 328 L409.1 326.8 L413.4 320.3 z" fill="#1E5BD8"/>
+<rect x="420" y="290" width="340" height="76" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="440" y="320" font-size="14" fill="#111827" font-weight="700">Apps grounded in Maps data</text>
+<text x="440" y="342" font-size="12" fill="#4b5563">Developer apps built on Grounding with Google</text>
+<text x="440" y="358" font-size="12" fill="#4b5563">Maps</text>
+<rect x="420" y="400" width="340" height="70" rx="10" fill="#f3f4f6" fill-opacity="1" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="440" y="428" font-size="14" fill="#111827" font-weight="700">ChatGPT</text>
+<text x="440" y="450" font-size="12" fill="#4b5563">We know of no OpenAI documentation on this</text>
+<text x="40" y="516" font-size="12" fill="#6b7280">over another.</text>
+<text x="40" y="500" font-size="12" fill="#6b7280">Illustrative diagram. Google has not published how often these tools show contractors or how they choose one business</text>
+</svg>

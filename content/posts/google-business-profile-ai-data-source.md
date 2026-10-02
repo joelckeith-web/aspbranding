@@ -48,6 +48,10 @@ Google Maps is the second route. In October 2024, Google [added Gemini features 
 
 The third route is harder to see. Google's [Grounding with Google Maps](https://ai.google.dev/gemini-api/docs/maps-grounding) service lets developers connect Gemini to Maps data inside their own apps, and Google says it queries Maps for places, reviews, photos, addresses and opening hours. An app built on it can pass those details to its users without anyone opening Google Maps. Google has not published how often any of these tools surface contractors or how they choose one business over another.
 
+![Flow diagram: a Google Business Profile feeds Google Search AI features, Gemini in Google Maps and apps grounded in Maps data. ChatGPT sits apart, undocumented.](/images/blog/google-business-profile-ai-data-source-routes.svg)
+
+*ChatGPT has no arrow because OpenAI has not documented a link to Business Profiles.*
+
 **Key Takeaway:** Google documents three routes from your profile into AI answers: its search AI features, Gemini inside Google Maps, and developer apps grounded in Maps data.
 
 ## What About ChatGPT and Other AI Assistants?
@@ -83,6 +87,10 @@ Many owners assume their profile says only what they typed into it. Google's hel
 Google's page on [Google updates to your Business Profile](https://support.google.com/business/answer/3480441?hl=en) explains how. Google gathers information from sources like user reports and licensed content, and those updates show on Maps, Search and other Google services. For some suggested edits, you get a notice and 4 days to accept or reject the change. If you do not respond, Google may publish the update automatically when other public information, such as your website, supports it.
 
 Google also says it may apply some suggested user edits without prior review. This is where your website becomes part of profile upkeep. If your site still lists an old phone number or a town you stopped serving, that page can become the public information that supports a wrong edit. Keeping your name, address and phone details identical everywhere is covered in our guide to [why NAP consistency makes or breaks local SEO](/blog/why-consistent-nap-info-is-crucial-for-local-seo-success).
+
+![Flow chart: Google gathers profile information, applies some edits without review, and gives owners 4 days on others before it may publish them.](/images/blog/google-business-profile-ai-data-source-google-edits.svg)
+
+*Edits can reach Maps and Search without your review, or after 4 days with no response from you.*
 
 **Key Takeaway:** Google and the public help write your Business Profile, so an unchecked profile can drift away from the facts and carry that drift into AI answers.
 

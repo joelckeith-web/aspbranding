@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Publish a season early</title><desc id="d">Timeline showing cooling pages built in winter before spring check-ups and the busy summer, and heating pages built in summer before fall check-ups and the busy winter.</desc>
+<rect width="800" height="440" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" fill="#002366" font-weight="700">Publish a season early</text>
+<text x="40" y="70" font-size="14" fill="#4b5563">When HVAC content should be ready compared with when homeowners need it</text>
+<rect x="152" y="100" width="120" height="30" rx="6" fill="#f3f4f6"/>
+<text x="212.0" y="120" font-size="13" fill="#111827" font-weight="700" text-anchor="middle">Winter</text>
+<rect x="276" y="100" width="120" height="30" rx="6" fill="#f3f4f6"/>
+<text x="336.0" y="120" font-size="13" fill="#111827" font-weight="700" text-anchor="middle">Spring</text>
+<rect x="400" y="100" width="120" height="30" rx="6" fill="#f3f4f6"/>
+<text x="460.0" y="120" font-size="13" fill="#111827" font-weight="700" text-anchor="middle">Summer</text>
+<rect x="524" y="100" width="120" height="30" rx="6" fill="#f3f4f6"/>
+<text x="584.0" y="120" font-size="13" fill="#111827" font-weight="700" text-anchor="middle">Fall</text>
+<rect x="648" y="100" width="120" height="30" rx="6" fill="#f3f4f6"/>
+<text x="708.0" y="120" font-size="13" fill="#111827" font-weight="700" text-anchor="middle">Winter</text>
+<text x="40" y="198" font-size="14" fill="#111827" font-weight="700">Cooling</text>
+<rect x="156" y="150" width="112" height="90" rx="8" fill="#1E5BD8" fill-opacity="1" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="212.0" y="184" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">Build and</text>
+<text x="212.0" y="200" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">refresh cooling</text>
+<text x="212.0" y="216" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">pages</text>
+<rect x="280" y="150" width="112" height="90" rx="8" fill="#1E5BD8" fill-opacity="0.1" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="336.0" y="184" font-size="12" fill="#111827" text-anchor="middle">Homeowners</text>
+<text x="336.0" y="200" font-size="12" fill="#111827" text-anchor="middle">check cooling</text>
+<text x="336.0" y="216" font-size="12" fill="#111827" text-anchor="middle">systems</text>
+<line x1="270" y1="195" x2="278" y2="195" stroke="#4b5563" stroke-width="2"/><path d="M278 195 L269.9 198.9 L269.9 191.1 z" fill="#4b5563"/>
+<rect x="404" y="150" width="112" height="90" rx="8" fill="#1E5BD8" fill-opacity="0.1" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="460.0" y="184" font-size="12" fill="#111827" text-anchor="middle">Contractors get</text>
+<text x="460.0" y="200" font-size="12" fill="#111827" text-anchor="middle">busy</text>
+<line x1="394" y1="195" x2="402" y2="195" stroke="#4b5563" stroke-width="2"/><path d="M402 195 L393.9 198.9 L393.9 191.1 z" fill="#4b5563"/>
+<text x="40" y="318" font-size="14" fill="#111827" font-weight="700">Heating</text>
+<rect x="404" y="270" width="112" height="90" rx="8" fill="#9F4CFF" fill-opacity="1" stroke="#9F4CFF" stroke-width="1.5"/>
+<text x="460.0" y="304" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">Build and</text>
+<text x="460.0" y="320" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">refresh heating</text>
+<text x="460.0" y="336" font-size="12" fill="#ffffff" font-weight="600" text-anchor="middle">pages</text>
+<rect x="528" y="270" width="112" height="90" rx="8" fill="#9F4CFF" fill-opacity="0.1" stroke="#9F4CFF" stroke-width="1.5"/>
+<text x="584.0" y="304" font-size="12" fill="#111827" text-anchor="middle">Homeowners</text>
+<text x="584.0" y="320" font-size="12" fill="#111827" text-anchor="middle">check heating</text>
+<text x="584.0" y="336" font-size="12" fill="#111827" text-anchor="middle">systems</text>
+<line x1="518" y1="315" x2="526" y2="315" stroke="#4b5563" stroke-width="2"/><path d="M526 315 L517.9 318.9 L517.9 311.1 z" fill="#4b5563"/>
+<rect x="652" y="270" width="112" height="90" rx="8" fill="#9F4CFF" fill-opacity="0.1" stroke="#9F4CFF" stroke-width="1.5"/>
+<text x="708.0" y="304" font-size="12" fill="#111827" text-anchor="middle">Contractors get</text>
+<text x="708.0" y="320" font-size="12" fill="#111827" text-anchor="middle">busy</text>
+<line x1="642" y1="315" x2="650" y2="315" stroke="#4b5563" stroke-width="2"/><path d="M650 315 L641.9 318.9 L641.9 311.1 z" fill="#4b5563"/>
+<text x="40" y="416" font-size="12" fill="#6b7280">comes from ENERGY STAR's maintenance checklist.</text>
+<text x="40" y="400" font-size="12" fill="#6b7280">Illustrative. Seasons only, with no fixed dates, because SEO results have no reliable fixed timeline. Check-up timing</text>
+</svg>

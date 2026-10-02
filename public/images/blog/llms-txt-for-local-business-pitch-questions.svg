@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 434" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Questions for an AI visibility pitch</title><desc id="d">Checklist of three questions to ask an AI visibility vendor, with a credible answer and a warning sign for each.</desc>
+<rect width="800" height="434" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" fill="#002366" font-weight="700">Questions for an AI visibility pitch</text>
+<text x="40" y="70" font-size="14" fill="#4b5563">What a credible vendor says and what should make you pause</text>
+<rect x="40" y="96" width="720" height="36" rx="8" fill="#002366" fill-opacity="1" stroke="#002366" stroke-width="0"/>
+<text x="54" y="119" font-size="13" fill="#ffffff" font-weight="700">Ask</text>
+<text x="284" y="119" font-size="13" fill="#ffffff" font-weight="700">A credible answer</text>
+<text x="544" y="119" font-size="13" fill="#ffffff" font-weight="700">A warning sign</text>
+<rect x="40" y="140" width="720" height="70" rx="8" fill="#1E5BD8" fill-opacity="0.06" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="54" y="164" font-size="13" fill="#111827" font-weight="700">1. Which platform documented</text>
+<text x="54" y="181" font-size="13" fill="#111827" font-weight="700">this?</text>
+<text x="284" y="164.0" font-size="12.5" fill="#111827">A link to the platform's own docs</text>
+<text x="544" y="164.0" font-size="12.5" fill="#111827">No platform documentation to</text>
+<text x="544" y="180.5" font-size="12.5" fill="#111827">show</text>
+<rect x="40" y="218" width="720" height="70" rx="8" fill="#1E5BD8" fill-opacity="0.06" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="54" y="242" font-size="13" fill="#111827" font-weight="700">2. How will you measure it?</text>
+<text x="284" y="242.0" font-size="12.5" fill="#111827">Profile insights, review counts,</text>
+<text x="284" y="258.5" font-size="12.5" fill="#111827">citation accuracy, Search Console</text>
+<text x="544" y="242.0" font-size="12.5" fill="#111827">An AI mention number with no</text>
+<text x="544" y="258.5" font-size="12.5" fill="#111827">source</text>
+<rect x="40" y="296" width="720" height="70" rx="8" fill="#1E5BD8" fill-opacity="0.06" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="54" y="320" font-size="13" fill="#111827" font-weight="700">3. Will you guarantee an AI</text>
+<text x="54" y="337" font-size="13" fill="#111827" font-weight="700">mention?</text>
+<text x="284" y="320.0" font-size="12.5" fill="#111827">No</text>
+<text x="544" y="320.0" font-size="12.5" fill="#111827">A promised mention</text>
+<text x="40" y="410" font-size="12" fill="#6b7280">Illustrative checklist based on the questions in this post.</text>
+</svg>

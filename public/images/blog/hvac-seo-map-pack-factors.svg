@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Map pack ranking factors</title><desc id="d">Three cards: relevance and prominence, which an HVAC company can work on, and distance, which it cannot change. A complete, accurate profile helps both of the first two.</desc>
+<rect width="800" height="470" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" fill="#002366" font-weight="700">Map pack ranking factors</text>
+<text x="40" y="70" font-size="14" fill="#4b5563">The three factors on Google's local ranking page</text>
+<path d="M40 118 v-10 h480 v10" fill="none" stroke="#4b5563" stroke-width="1.5"/>
+<text x="280" y="100" font-size="13" fill="#111827" font-weight="700" text-anchor="middle">You can work on these</text>
+<rect x="40" y="130" width="230" height="220" rx="10" fill="#ffffff" fill-opacity="1" stroke="#1E5BD8" stroke-width="2"/>
+<rect x="40" y="130" width="230" height="8" rx="4" fill="#1E5BD8"/>
+<text x="58" y="168" font-size="18" fill="#111827" font-weight="700">Relevance</text>
+<text x="58" y="192.0" font-size="12.5" fill="#4b5563">How well your profile matches</text>
+<text x="58" y="208.5" font-size="12.5" fill="#4b5563">the search</text>
+<circle cx="64" cy="239.0" r="4" fill="#1E5BD8"/>
+<text x="76" y="243.0" font-size="12.5" fill="#111827">Service pages on your</text>
+<text x="76" y="259.5" font-size="12.5" fill="#111827">website</text>
+<rect x="290" y="130" width="230" height="220" rx="10" fill="#ffffff" fill-opacity="1" stroke="#9F4CFF" stroke-width="2"/>
+<rect x="290" y="130" width="230" height="8" rx="4" fill="#9F4CFF"/>
+<text x="308" y="168" font-size="18" fill="#111827" font-weight="700">Prominence</text>
+<text x="308" y="192.0" font-size="12.5" fill="#4b5563">How well-known your business</text>
+<text x="308" y="208.5" font-size="12.5" fill="#4b5563">is</text>
+<circle cx="314" cy="239.0" r="4" fill="#9F4CFF"/>
+<text x="326" y="243.0" font-size="12.5" fill="#111827">Reviews and positive</text>
+<text x="326" y="259.5" font-size="12.5" fill="#111827">ratings</text>
+<circle cx="314" cy="280.0" r="4" fill="#9F4CFF"/>
+<text x="326" y="284.0" font-size="12.5" fill="#111827">Based partly on links to</text>
+<text x="326" y="300.5" font-size="12.5" fill="#111827">your site</text>
+<rect x="540" y="130" width="230" height="220" rx="10" fill="#f3f4f6" fill-opacity="1" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 5"/>
+
+<text x="558" y="168" font-size="18" fill="#111827" font-weight="700">Distance</text>
+<text x="558" y="192.0" font-size="12.5" fill="#4b5563">How far you are from the</text>
+<text x="558" y="208.5" font-size="12.5" fill="#4b5563">searcher</text>
+<circle cx="564" cy="239.0" r="4" fill="#9ca3af"/>
+<text x="576" y="243.0" font-size="12.5" fill="#111827">You cannot change this</text>
+<rect x="40" y="366" width="480" height="40" rx="20" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="280" y="391" font-size="13" fill="#111827" font-weight="600" text-anchor="middle">A complete, accurate profile helps both</text>
+<text x="40" y="446" font-size="12" fill="#6b7280">Factors as described on Google's help page on local ranking. The chart does not show how Google weighs them.</text>
+</svg>

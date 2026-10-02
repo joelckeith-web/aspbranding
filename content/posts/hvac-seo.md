@@ -48,6 +48,10 @@ When someone searches "furnace repair near me," Google often shows a map and a s
 
 Distance is the one factor you cannot change, so the work goes into relevance and prominence. Google says businesses with complete and accurate info are more likely to show up in local search results, and it states that there is no way to request or pay for a better local ranking. For an HVAC company, complete means the right primary category, every service you want calls for, accurate hours, a real service area and photos of your own trucks and crews. Google also asks businesses to use as few categories as possible to describe the core business, so skip the long list of loosely related categories.
 
+![Three cards for Google's local ranking factors: relevance and prominence, which an HVAC company can work on, and distance, which it cannot change.](/images/blog/hvac-seo-map-pack-factors.svg)
+
+*Two of the three factors respond to work on your profile, your website and your reviews.*
+
 Three profile rules are worth checking before anything else. Google's [Business Profile guidelines](https://support.google.com/business/answer/3038177?hl=en) say that including unnecessary information in your business name isn't permitted and could get the profile suspended, which rules out names like "Smith Heating & Cooling Best AC Repair Dallas." Service-area businesses should hide their address from customers, and the service area shouldn't reach farther than about two hours of driving from where the business is based. Our [local SEO playbook for home service businesses](/blog/local-seo-for-home-service-businesses) goes deeper on the profile, and our comparison of [Google Business Profile vs. your website](/blog/gbp-vs-website-home-service-priority) covers which one to fix first.
 
 **Key Takeaway:** You cannot move your shop closer to every customer, but you can make your profile complete, accurate and inside Google's rules, which covers the two ranking factors you control.
@@ -79,6 +83,10 @@ The rules on incentives are strict. Google says offering free or discounted good
 HVAC demand follows the weather, and so do the questions homeowners bring to Google. ENERGY STAR's [heating and cooling maintenance checklist](https://www.energystar.gov/saveathome/heating-cooling/maintenance-checklist) tells homeowners that contractors get busy once summer and winter come, so it's best to check the cooling system in the spring and the heating system in the fall. The same calendar tells you when your content has to be ready.
 
 SEO work takes months to show results, and there is no reliable fixed timeline for it. A cooling page published during the first heat wave is late for that summer. Plan cooling pages and AC maintenance content through the winter and heating content through the summer, so the pages are indexed before demand arrives. When a season comes back around, update last year's seasonal pages with fresh details and dates instead of starting new pages that compete with the old ones.
+
+![Timeline showing cooling pages built in winter before spring check-ups, and heating pages built in summer before fall check-ups.](/images/blog/hvac-seo-seasonal-calendar.svg)
+
+*Each content block sits one season ahead of the check-ups and busy months it serves.*
 
 Your profile should follow the season too. Google's guidelines let a business use its current seasonal hours as its regular hours where that applies, so update them when your schedule changes. If a soft year has you rethinking spend, our piece on [what soft HVAC demand means for your marketing budget](/blog/hvac-demand-marketing-budget-2026) covers the budget side of that decision.
 

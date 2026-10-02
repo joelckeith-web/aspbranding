@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 508" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Where to measure AI visibility</title><desc id="d">Table of AI visibility reports by platform: Search Console for Google AI features, Bing Webmaster Tools for Copilot, and no comparable report for ChatGPT or Perplexity.</desc>
+<rect width="800" height="508" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" fill="#002366" font-weight="700">Where to measure AI visibility</text>
+<text x="40" y="70" font-size="14" fill="#4b5563">What each platform reports, as of this post</text>
+<rect x="40" y="96" width="720" height="36" rx="8" fill="#002366" fill-opacity="1" stroke="#002366" stroke-width="0"/>
+<text x="54" y="119" font-size="13" fill="#ffffff" font-weight="700">Platform</text>
+<text x="264" y="119" font-size="13" fill="#ffffff" font-weight="700">Report</text>
+<text x="524" y="119" font-size="13" fill="#ffffff" font-weight="700">What it shows</text>
+<rect x="40" y="140" width="720" height="78" rx="8" fill="#1E5BD8" fill-opacity="0.06" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="54" y="164" font-size="13" fill="#111827" font-weight="700">Google AI Overviews and AI</text>
+<text x="54" y="181" font-size="13" fill="#111827" font-weight="700">Mode</text>
+<text x="264" y="164.0" font-size="12.5" fill="#111827">Search Console Generative AI</text>
+<text x="264" y="180.5" font-size="12.5" fill="#111827">performance report</text>
+<text x="524" y="164.0" font-size="12.5" fill="#111827">Times links to your site were</text>
+<text x="524" y="180.5" font-size="12.5" fill="#111827">shown</text>
+<rect x="40" y="226" width="720" height="78" rx="8" fill="#1E5BD8" fill-opacity="0.06" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="54" y="250" font-size="13" fill="#111827" font-weight="700">Microsoft Copilot and Bing</text>
+<text x="54" y="267" font-size="13" fill="#111827" font-weight="700">AI summaries</text>
+<text x="264" y="250.0" font-size="12.5" fill="#111827">Bing Webmaster Tools AI</text>
+<text x="264" y="266.5" font-size="12.5" fill="#111827">Performance report</text>
+<text x="264" y="285.0" font-size="11" fill="#6b7280">Public preview announced February 2026</text>
+<text x="524" y="250.0" font-size="12.5" fill="#111827">How often your content is cited</text>
+<rect x="40" y="312" width="720" height="78" rx="8" fill="#f3f4f6" fill-opacity="1" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="54" y="336" font-size="13" fill="#111827" font-weight="700">ChatGPT and Perplexity</text>
+<text x="264" y="336.0" font-size="12.5" fill="#111827">No comparable report for a local</text>
+<text x="264" y="352.5" font-size="12.5" fill="#111827">business</text>
+<text x="524" y="336.0" font-size="12.5" fill="#111827">Use a repeatable spot-check of</text>
+<text x="524" y="352.5" font-size="12.5" fill="#111827">set questions</text>
+<rect x="40" y="402" width="720" height="42" rx="21" fill="#002366" fill-opacity="0.08" stroke="#002366" stroke-width="1.5"/>
+<text x="400" y="428" font-size="13" fill="#111827" font-weight="700" text-anchor="middle">Then tie changes to calls, leads and booked jobs</text>
+<text x="40" y="484" font-size="12" fill="#6b7280">Sources: Google Search Console Help and the Bing Webmaster Blog (February 2026), as cited in this post.</text>
+</svg>

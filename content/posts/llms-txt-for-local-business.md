@@ -62,6 +62,10 @@ OpenAI and Perplexity describe their crawlers in their own help docs. [OpenAI's 
 
 The proposal site says that after two years of adoption, thousands of sites publish the file and "Chrome's Lighthouse audits sites for one as part of its agentic browsing checks." A site audit tool checking for a file is a separate question from whether a search product uses it. On that question, Google's Search guidance says Search ignores the file.
 
+![Table of what Google, OpenAI and Perplexity document about llms.txt. Google Search ignores it; OpenAI and Perplexity point to robots.txt.](/images/blog/llms-txt-for-local-business-platforms.svg)
+
+*All three platforms have published how sites get found, and none of those pages names a business's llms.txt as part of it.*
+
 **Key Takeaway:** Google states that its Search ignores llms.txt, and OpenAI's and Perplexity's crawler documentation points site owners to robots.txt, so none of these pages describes the file as a way to earn a mention.
 
 ## Why ASP Doesn't Sell llms.txt as a GEO Strategy
@@ -96,6 +100,10 @@ None of these moves is new, and none is specific to AI. They are the same signal
 ## How Should You Judge an AI Visibility Pitch?
 
 If an agency pitches you an llms.txt file, an "AI-ready" markup package or a special AI layer, ask three direct questions before you sign anything. Each one is easy for a trustworthy vendor to answer.
+
+![Checklist of three questions to ask an AI visibility vendor, with a credible answer and a warning sign for each.](/images/blog/llms-txt-for-local-business-pitch-questions.svg)
+
+*Keep this checklist next to any proposal that bills for an AI file, AI markup or an AI layer.*
 
 Start by asking which platform has documented the tactic, and ask for the link. Google's guidance is public, and it names AI text files and Markdown files as things its Search does not use. A vendor who can't point to a platform's own documentation is selling a guess.
 

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 434" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">What platforms say about llms.txt</title><desc id="d">Table of what Google, OpenAI and Perplexity document about llms.txt. Google Search ignores it; OpenAI and Perplexity point to robots.txt.</desc>
+<rect width="800" height="434" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" fill="#002366" font-weight="700">What platforms say about llms.txt</text>
+<text x="40" y="70" font-size="14" fill="#4b5563">Documented positions from Google, OpenAI and Perplexity</text>
+<rect x="40" y="96" width="720" height="36" rx="8" fill="#002366" fill-opacity="1" stroke="#002366" stroke-width="0"/>
+<text x="54" y="119" font-size="13" fill="#ffffff" font-weight="700">Platform</text>
+<text x="244" y="119" font-size="13" fill="#ffffff" font-weight="700">How a site gets found</text>
+<text x="514" y="119" font-size="13" fill="#ffffff" font-weight="700">A business's llms.txt</text>
+<rect x="40" y="140" width="720" height="70" rx="8" fill="#1E5BD8" fill-opacity="0.06" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="54" y="164" font-size="13" fill="#111827" font-weight="700">Google Search</text>
+<text x="244" y="164.0" font-size="12.5" fill="#111827">Indexed pages eligible for a</text>
+<text x="244" y="180.5" font-size="12.5" fill="#111827">snippet</text>
+<text x="514" y="164.0" font-size="12.5" fill="#111827">Search ignores it</text>
+<text x="514" y="182.5" font-size="11" fill="#6b7280">Won't help or hurt Search rankings</text>
+<rect x="40" y="218" width="720" height="70" rx="8" fill="#9F4CFF" fill-opacity="0.06" stroke="#9F4CFF" stroke-width="1.5"/>
+<text x="54" y="242" font-size="13" fill="#111827" font-weight="700">OpenAI (ChatGPT</text>
+<text x="54" y="259" font-size="13" fill="#111827" font-weight="700">search)</text>
+<text x="244" y="242.0" font-size="12.5" fill="#111827">Control OAI-SearchBot through</text>
+<text x="244" y="258.5" font-size="12.5" fill="#111827">robots.txt</text>
+<text x="514" y="242.0" font-size="12.5" fill="#111827">Docs don't say it is read</text>
+<text x="514" y="260.5" font-size="11" fill="#6b7280">Links its own llms.txt as a docs index</text>
+<rect x="40" y="296" width="720" height="70" rx="8" fill="#9F4CFF" fill-opacity="0.06" stroke="#9F4CFF" stroke-width="1.5"/>
+<text x="54" y="320" font-size="13" fill="#111827" font-weight="700">Perplexity</text>
+<text x="244" y="320.0" font-size="12.5" fill="#111827">Allow PerplexityBot in robots.txt</text>
+<text x="514" y="320.0" font-size="12.5" fill="#111827">Docs don't say it is read</text>
+<text x="514" y="338.5" font-size="11" fill="#6b7280">Links its own llms.txt as a docs index</text>
+<text x="40" y="410" font-size="12" fill="#6b7280">is fine.</text>
+<text x="40" y="394" font-size="12" fill="#6b7280">Summary of each platform's documentation as cited in this post. Google also says publishing the file for other services</text>
+</svg>

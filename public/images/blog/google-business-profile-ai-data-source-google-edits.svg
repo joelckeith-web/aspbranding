@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">How Google updates your profile</title><desc id="d">Flow chart: Google gathers profile information, applies some edits without review, and gives owners 4 days on others before it may publish them.</desc>
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" fill="#002366" font-weight="700">How Google updates your profile</text>
+<text x="40" y="70" font-size="14" fill="#4b5563">Some changes reach your profile without you</text>
+<rect x="40" y="188" width="150" height="116" rx="10" fill="#002366" fill-opacity="0.07" stroke="#002366" stroke-width="1.5"/>
+<text x="115.0" y="214.0" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">Google gathers</text>
+<text x="115.0" y="230.5" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">information</text>
+<text x="115.0" y="249.0" font-size="11" fill="#6b7280" text-anchor="middle">User reports, licensed</text>
+<text x="115.0" y="264.0" font-size="11" fill="#6b7280" text-anchor="middle">data, crawled web</text>
+<text x="115.0" y="279.0" font-size="11" fill="#6b7280" text-anchor="middle">content</text>
+<rect x="250" y="110" width="170" height="64" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="335.0" y="136.0" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">Some edits applied</text>
+<text x="335.0" y="152.5" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">without prior review</text>
+<rect x="250" y="290" width="170" height="64" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="335.0" y="316.0" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">Some edits: notice</text>
+<text x="335.0" y="332.5" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">sent to you</text>
+<rect x="450" y="290" width="120" height="64" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="510.0" y="316.0" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">4 days to accept</text>
+<text x="510.0" y="332.5" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">or reject</text>
+<rect x="600" y="240" width="160" height="56" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="680.0" y="266.0" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">You accept or reject</text>
+<text x="680.0" y="282.5" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">the change</text>
+<rect x="600" y="320" width="160" height="84" rx="10" fill="#9F4CFF" fill-opacity="0.12" stroke="#9F4CFF" stroke-width="1.5"/>
+<text x="680.0" y="346.0" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">No response: Google</text>
+<text x="680.0" y="362.5" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">may publish it</text>
+<text x="680.0" y="381.0" font-size="11" fill="#6b7280" text-anchor="middle">When public info, like</text>
+<text x="680.0" y="396.0" font-size="11" fill="#6b7280" text-anchor="middle">your website, supports it</text>
+<rect x="600" y="108" width="160" height="70" rx="10" fill="#002366" fill-opacity="0.07" stroke="#002366" stroke-width="1.5"/>
+<text x="680.0" y="134.0" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">Shows on Maps, Search</text>
+<text x="680.0" y="150.5" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">and other Google</text>
+<text x="680.0" y="167.0" font-size="12.5" fill="#111827" font-weight="700" text-anchor="middle">services</text>
+<line x1="192" y1="235" x2="248" y2="145" stroke="#4b5563" stroke-width="2"/><path d="M248 145 L247.0 153.9 L240.4 149.8 z" fill="#4b5563"/>
+<line x1="192" y1="258" x2="248" y2="320" stroke="#4b5563" stroke-width="2"/><path d="M248 320 L239.7 316.6 L245.5 311.4 z" fill="#4b5563"/>
+<line x1="422" y1="142" x2="598" y2="142" stroke="#4b5563" stroke-width="2"/><path d="M598 142 L589.9 145.9 L589.9 138.1 z" fill="#4b5563"/>
+<line x1="422" y1="322" x2="448" y2="322" stroke="#4b5563" stroke-width="2"/><path d="M448 322 L439.9 325.9 L439.9 318.1 z" fill="#4b5563"/>
+<line x1="572" y1="312" x2="598" y2="270" stroke="#4b5563" stroke-width="2"/><path d="M598 270 L597.1 279.0 L590.4 274.8 z" fill="#4b5563"/>
+<line x1="572" y1="334" x2="598" y2="358" stroke="#4b5563" stroke-width="2"/><path d="M598 358 L589.4 355.4 L594.7 349.6 z" fill="#4b5563"/>
+<path d="M762 362 h18 V143 h-12" fill="none" stroke="#4b5563" stroke-width="2"/>
+<path d="M760 143 l9 -5 v10 z" fill="#4b5563" transform="rotate(180 764 143)"/>
+<text x="40" y="456" font-size="12" fill="#6b7280">Illustrative. Based on the Google Business Profile Help pages cited in this post.</text>
+</svg>

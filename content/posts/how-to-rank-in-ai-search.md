@@ -80,6 +80,10 @@ Local recommendations are even harder to study. As our [GEO page](/geo) explains
 
 Keep that gap in mind when someone promises your business a spot inside ChatGPT or a set number of AI citations. A promise tied to a system that nobody outside the company controls cannot be kept by the person making it. Ask the seller which published source supports each step of the plan, and see how many steps survive the question.
 
+![Three columns: AI search moves the platforms document, tactics Google says you don't need, and claims no one has shown for local businesses.](/images/blog/how-to-rank-in-ai-search-evidence.svg)
+
+*Check where a pitched tactic falls before you pay for it. Only the left column has platform documentation behind it.*
+
 **Key Takeaway:** Research shows content changes can shift AI visibility on a research benchmark, but no one has shown a reliable method for getting a local business recommended.
 
 ## Evidence-Backed Ways to Rank in AI Search
@@ -102,6 +106,10 @@ For an HVAC or plumbing company, "write from the job" means the details a compet
 Measurement is where many AI search services get vague, so start with the tools the platforms provide. Google Search Console now has a [Generative AI performance report](https://support.google.com/webmasters/answer/16984139) covering AI Overviews and AI Mode. Google defines its impressions as "how many times links to your site were shown to a user in a generative AI feature on Google Search." Google says it rolled the report out to all websites worldwide as of August 31, 2026.
 
 Google's [optimization guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) also warns: "Be wary of third-party tools that promise ranking success or claim to use 'internal' Google metrics." Microsoft's Bing Webmaster Tools has an [AI Performance report](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview), announced as a public preview in February 2026, that shows how often your content is cited in generative answers across Microsoft Copilot and AI-generated summaries in Bing. For ChatGPT and Perplexity, there is no comparable report for a local business. The most reliable option there is a repeatable spot-check: a fixed set of homeowner-style questions, asked in the same places on a schedule, with the results written down. After that, tie any change back to calls, leads and booked jobs.
+
+![Table of AI visibility reports by platform: Search Console for Google AI features, Bing Webmaster Tools for Copilot, and no comparable report for ChatGPT or Perplexity.](/images/blog/how-to-rank-in-ai-search-measurement.svg)
+
+*Only Google and Microsoft offer a first-party report today. For the other assistants, a written spot-check log is the record.*
 
 **Key Takeaway:** Use Google's own report for AI Overviews and AI Mode, and treat any AI visibility number without a named source with caution.
 
