@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
   <title id="t">Leads over time</title>
-  <desc id="d">Line chart. PPC lead flow rises quickly, holds while the budget runs, then drops when the budget stops. Organic lead flow from SEO and AEO starts slowly and keeps building.</desc>
+  <desc id="d">Line chart. PPC lead flow rises quickly, holds while the budget runs, then drops when the budget stops. Organic lead flow from SEO and AEO starts slowly, then levels off and keeps returning with upkeep.</desc>
   <rect width="800" height="520" fill="#ffffff"/>
   <text x="40" y="44" font-size="22" font-weight="700" fill="#002366">Leads over time</text>
   <text x="40" y="70" font-size="14" fill="#4b5563">How lead flow behaves before and after the ad budget stops</text>
@@ -22,10 +22,10 @@
   <text x="300" y="146" font-size="15" font-weight="700" fill="#111827">PPC</text>
   <text x="300" y="164" font-size="12" fill="#4b5563">Fast, while you keep paying</text>
   <!-- Organic line -->
-  <path d="M90 398 C 200 396, 280 380, 360 345 C 440 310, 520 262, 600 228 C 660 204, 710 192, 760 186" fill="none" stroke="#9F4CFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="0" stroke-linejoin="round"/>
-  <circle cx="760" cy="186" r="5" fill="#9F4CFF" stroke="#ffffff" stroke-width="2"/>
-  <text x="604" y="262" font-size="15" font-weight="700" fill="#111827">Organic: SEO and AEO</text>
-  <text x="604" y="280" font-size="12" fill="#4b5563">Slow start, keeps building</text>
+  <path d="M90 398 C 200 396, 280 380, 360 345 C 440 310, 520 262, 600 236 C 660 220, 710 216, 760 215" fill="none" stroke="#9F4CFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="0" stroke-linejoin="round"/>
+  <circle cx="760" cy="215" r="5" fill="#9F4CFF" stroke="#ffffff" stroke-width="2"/>
+  <text x="752" y="160" text-anchor="end" font-size="15" font-weight="700" fill="#111827">Organic: SEO and AEO</text>
+  <text x="752" y="178" text-anchor="end" font-size="12" fill="#4b5563">Slow start,</text><text x="752" y="194" text-anchor="end" font-size="12" fill="#4b5563">keeps returning with upkeep</text>
   <!-- legend -->
   <line x1="470" y1="462" x2="498" y2="462" stroke="#1E5BD8" stroke-width="3" stroke-linecap="round"/>
   <text x="506" y="466" font-size="12" fill="#374151">PPC</text>

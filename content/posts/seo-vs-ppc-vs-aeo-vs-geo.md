@@ -38,25 +38,25 @@ readingTime: "8 min read"
 
 The difference between SEO, AEO and GEO is where your business shows up when someone looks for help. SEO earns a place in Google's regular results and the map pack. AEO earns a place inside Google's own answers, such as AI Overviews, AI Mode and featured snippets. GEO works on how standalone AI assistants like ChatGPT and Perplexity describe your business when someone asks who to call.
 
-PPC is the fourth option, and it is the only one where you pay for each click or lead. The other three are earned, and they share most of the same groundwork. This guide covers what each discipline is, what it costs in time and money, how fast it works, and how to decide where to start. The examples lean toward home service businesses.
+PPC is the fourth option, and it is the only one where you pay for each click or lead. The other three are earned, and they share most of the same groundwork. This guide opens with the tradeoff between speed and ad spend, then covers what each discipline is, what it costs in time and money, how fast it works, and how to decide where to start. Two charts show that tradeoff along the way. The examples lean toward home service businesses.
 
-## How Fast Do You Need More Leads?
+## Do You Need Leads Now or Lower Lead Costs Later?
 
-For most owners, the choice between these four comes down to how fast you need more leads. PPC is the fastest lever, because it is the only one of the four that buys placement directly. Paid search can put you in front of buyers this week, and your ads stop showing when the budget runs out. SEO, AEO and GEO have no ad spend, but they cost labor and patience. SEO and AEO build over months, and GEO has no timeline anyone can verify. Once organic pages, answers and listings are working, they keep working after you stop adding to them, although they need upkeep to stay accurate.
+One of the biggest factors in where to start is how fast you need more leads. Paid ads are the quickest way to reach buyers, because you are buying the placement directly, and the leads stop when the spending does. SEO, AEO and GEO need no ad spend, but they take labor and time. SEO and AEO take months to build, nobody can verify a timeline for GEO, and organic results keep working after they start, provided someone keeps them accurate.
 
 The chart below shows where each one sits on speed and ad spend. A second chart, at the start of the section on how fast each one works, shows what happens to lead flow from paid and organic work when the ad budget stops.
 
-![Chart of time to results against ad spend required. PPC sits at fast results with high ad spend. SEO and AEO sit slower with no ad spend. GEO sits slowest in a dashed, uncertain zone.](/images/blog/seo-vs-ppc-speed-vs-spend.svg)
+![Chart of time to results against ad spend required, with the top of the ad spend axis marked "Every month." PPC sits at fast results with ad spend every month. SEO and AEO share one point at a slower speed with no ad spend, labeled as building over months on the same clock. GEO is a dashed band that runs across the whole speed axis at the no-ad-spend level, labeled as having no verifiable timeline.](/images/blog/seo-vs-ppc-speed-vs-spend.svg)
 
-*PPC buys speed with ad spend, SEO and AEO build over months without it, and GEO has no timeline anyone can verify.*
+*PPC needs ad spend every month to deliver fast results. SEO and AEO build over months without ad spend, and no one can give GEO a verifiable timeline.*
 
 **Key takeaways for choosing where to start:**
 
-- If you need booked jobs this month, start with paid search and build organic work underneath it so you are not renting every lead forever.
-- If your lead flow is steady but cost per lead climbs every year, put more weight on SEO, because organic work keeps returning after it moves.
-- PPC costs cash every month and goes quiet when spending stops, while SEO costs labor and patience instead of ad spend.
-- AEO and GEO should mostly ride on the SEO and local listing work you already pay for, so be cautious with anyone selling them as a separate package built around special files or markup.
-- Whichever channel you pick, measure it against booked jobs rather than clicks or rankings alone.
+- Needing booked jobs this month points to paid search first, with organic work growing underneath it so you are not paying for every lead indefinitely.
+- A steady lead flow with a rising cost per lead is the signal to shift more weight toward SEO, since organic results keep paying back once they start.
+- Treat a separately priced AI package built on special files or markup with caution, since AEO and GEO mostly run on the same pages, reviews and listings as SEO.
+- If your Business Profile, reviews or listings are messy, cleaning them up first helps your map-pack rankings and the facts AI assistants read.
+- Judge every channel by the booked jobs it produces, not by clicks or rankings alone.
 
 ## What Is the Difference Between SEO, AEO and GEO?
 
@@ -91,11 +91,13 @@ We are not going to print price ranges here, because the real number depends on 
 
 Be cautious with anyone selling AEO or GEO as a separate package built around special files or markup. Google's guide to its generative AI features says [you don't need to create new machine readable files, AI text files, markup, or Markdown](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) to appear in Google Search. For ChatGPT, one real technical check costs almost nothing. OpenAI says [sites that are opted out of OAI-SearchBot will not be shown in ChatGPT search answers](https://developers.openai.com/api/docs/bots), though they can still appear as navigational links, so your robots.txt file should allow that crawler.
 
+**Key Takeaway:** PPC costs cash every month, SEO costs labor and patience, and AEO and GEO should mostly ride on work you are already paying for.
+
 ## How Fast Each One Works
 
-![Line chart of lead flow over months. The PPC line rises fast, holds while the budget runs, then drops near zero when the budget stops. The organic line builds slowly and keeps going.](/images/blog/seo-vs-ppc-leads-over-time.svg)
+![Line chart of lead flow over months for paid and organic work. The PPC line rises fast, holds while the budget runs, then drops near zero when the budget stops. The organic line, which stands for SEO and AEO, starts slowly, climbs, then levels off and keeps producing leads, labeled "Slow start, keeps returning with upkeep." GEO is not plotted.](/images/blog/seo-vs-ppc-leads-over-time.svg)
 
-*Paid leads stop when the budget stops, while organic work builds slowly and keeps returning as long as it gets upkeep.*
+*Paid leads stop when the budget stops. Organic work from SEO and AEO starts slowly, then levels off and keeps returning leads as long as it gets upkeep. GEO is left off because no one can verify its timeline.*
 
 PPC is the fastest of the four. Paid search can put you in front of buyers this week, and it stops when the budget stops. An account still needs real lead data before it learns which searches pay. Local Services Ads also depend on your reviews and how quickly you respond to leads.
 
@@ -104,6 +106,8 @@ SEO takes longer, and Google says so. Its starter guide notes that [some changes
 AEO moves on the same clock as SEO, because Google's answers draw from the same index. Google says a page [must be indexed and eligible to be shown in Google Search with a snippet](https://developers.google.com/search/docs/appearance/ai-features) to appear as a supporting link in AI Overviews or AI Mode. Nobody can quote a reliable fixed timeline for it. Low-competition local questions tend to move before broad category questions do.
 
 GEO is the hardest to time. No AI assistant publishes an impressions report for a local business, and the same question can return different businesses to different people on different days. Anyone who promises a date for a ChatGPT mention is promising something no one controls. The work behind GEO also improves your local search presence, so the effort still pays off in search while you wait.
+
+**Key Takeaway:** If you need jobs this month, only PPC moves that fast, while SEO and AEO build over months and GEO has no timeline anyone can verify.
 
 ## How AI Search Changed the Decision
 
