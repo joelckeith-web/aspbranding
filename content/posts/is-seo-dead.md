@@ -1,8 +1,8 @@
 ---
 title: "Is SEO Dead? What AI Search Changed"
 slug: "is-seo-dead"
-publishDate: "2026-10-12"
-dateModified: "2026-10-12"
+publishDate: "2026-10-02"
+dateModified: "2026-10-02"
 author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Yes. Google says local results are mainly based on relevance, distance and popularity, and that more reviews and positive ratings can help a business's local ranking. Google's AI guide also says a Business Profile can help your services be visible in both AI responses and regular search results."
     - question: "How should I measure SEO now that fewer people click?"
       answer: "Look at impressions as well as clicks. Search Console includes AI Overviews and AI Mode appearances in overall search traffic, and Google's generative AI performance report shows impressions for both features. Google says the report rolled out to all websites worldwide as of August 31, 2026. Judge the work by the calls and booked jobs it produces."
-status: "review"
+status: "published"
 contentPillar: "google-algorithm-updates"
 readingTime: "7 min read"
 ---

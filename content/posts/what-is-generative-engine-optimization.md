@@ -1,8 +1,8 @@
 ---
 title: "What Is GEO (Generative Engine Optimization)? A Guide for Business Owners"
 slug: "what-is-generative-engine-optimization"
-publishDate: "2026-10-05"
-dateModified: "2026-10-05"
+publishDate: "2026-10-02"
+dateModified: "2026-10-02"
 author:
   name: "Joel Keith"
   title: "Founder & CEO, ASP"
@@ -33,7 +33,7 @@ schema:
       answer: "Keep your Google Business Profile complete and current, keep reviews coming in, and use one name, address and phone number everywhere. Write pages that answer the questions customers ask, and make sure your website is not blocking OAI-SearchBot, the crawler OpenAI uses for ChatGPT search."
     - question: "How can I check what AI assistants say about my business?"
       answer: "Ask two or three assistants the questions your customers ask, such as who handles furnace repair in your town, and write down whether your business appears and whether the details are right. Repeat the same questions on a schedule, since answers can change from day to day and person to person."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "7 min read"
 ---
