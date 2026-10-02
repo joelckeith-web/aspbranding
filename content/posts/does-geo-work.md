@@ -84,14 +84,14 @@ Some platforms now report AI data back to site owners. In February 2026, Microso
 
 We work with Lackawanna College, a Scranton college serving the people of Northeastern Pennsylvania, on AEO, GEO and SEO. Our work focuses heavily on the college's trades programs, which help people get into the trades through education, including its trades centers in Bethlehem, Chambersburg and Greensburg. The numbers below come from Semrush AI Visibility, a third-party tool that tracks how AI engines describe a brand. They measure the college as a whole, not the trades programs alone, and the trades centers opened in June and July 2026, after our baseline.
 
-A college is not an HVAC or plumbing company, but the public-record and answer work behind these numbers applies to any local business. The results moved in four steps, from the May 1 baseline to the September 29 data.
+A college is not an HVAC or plumbing company, so read these numbers as one example of how AI answers about a business can be tracked over time. Here are the four snapshots, from the May 1 baseline to the September 29 data.
 
 - **May 1, 2026 baseline, Google AI Mode:** AI answers that mentioned Lackawanna were 75% favorable and 25% general, and the favorable share had dropped 7 points while all four tracked competitors moved up. Cost and financial support was the weakest topic at 53% favorable, campus experience sat at 67%, and the college's own website was cited only twice across the tracked questions.
 - **May 31, 2026, same tool and settings:** Favorable sentiment had reached 100%, and cost and campus experience were each 100% favorable where they came up.
 - **June 28, 2026, Google AI Mode:** Favorable sentiment held at 100%.
 - **September 29, 2026, Google AI Mode:** Favorable sentiment was still 100%, though that period had only 2 AI mentions.
 
-Reach has not moved the same way. The 100% figure describes the tone of answers that mention Lackawanna, and those answers are still few. In this report we track share of voice in Google AI Mode only, so the figures here do not cover other AI engines. In Google AI Mode, share of voice in broad, unbranded answers sat near 0% in the May 31 and June 28 data, and in the September 29 data, measured against a different set of competing colleges, it was 0.18%.
+Reach has not moved the same way. The 100% figure describes the tone of answers that mention Lackawanna, and those answers are still few. The share-of-voice figures in this post are for Google AI Mode only and do not cover other AI engines. In Google AI Mode, share of voice in broad, unbranded answers sat near 0% in the May 31 and June 28 data, and in the September 29 data, measured against a different set of competing colleges, it was 0.18%.
 
 This is one client, one tracking tool and no control group, so it does not prove GEO work caused the change. It shows how AI answers about the college moved over the period of our work. The next phase is growing the reach and impressions of the college's programs. Our [GEO page](/geo) explains what we can and cannot measure.
 

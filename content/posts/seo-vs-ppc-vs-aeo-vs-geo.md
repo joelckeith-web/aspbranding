@@ -48,14 +48,14 @@ The chart below shows where each one sits on speed and ad spend. A second chart,
 
 ![Chart of time to results against ad spend required, with the top of the ad spend axis marked "Every month." PPC sits at fast results with ad spend every month. SEO and AEO share one point at a slower speed with no ad spend, labeled as building over months on the same clock. GEO is a dashed band that runs across the whole speed axis at the no-ad-spend level, labeled as having no verifiable timeline.](/images/blog/seo-vs-ppc-speed-vs-spend.svg)
 
-*PPC needs ad spend every month to deliver fast results. SEO and AEO build over months without ad spend, and no one can give GEO a verifiable timeline.*
+*PPC needs ad spend every month to deliver fast results; the organic channels need none.*
 
 **Key takeaways for choosing where to start:**
 
 - Needing booked jobs this month points to paid search first, with organic work growing underneath it so you are not paying for every lead indefinitely.
 - A steady lead flow with a rising cost per lead is the signal to shift more weight toward SEO, since organic results keep paying back once they start.
 - Treat a separately priced AI package built on special files or markup with caution, since AEO and GEO mostly run on the same pages, reviews and listings as SEO.
-- If your Business Profile, reviews or listings are messy, cleaning them up first helps your map-pack rankings and the facts AI assistants read.
+- If your Business Profile, reviews or listings are messy, cleaning them up first helps your map-pack rankings and corrects the facts AI assistants read.
 - Judge every channel by the booked jobs it produces, not by clicks or rankings alone.
 
 ## What Is the Difference Between SEO, AEO and GEO?
