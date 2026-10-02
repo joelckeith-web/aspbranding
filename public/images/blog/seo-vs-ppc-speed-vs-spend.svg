@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+  <title id="t">Speed vs. ad spend</title>
+  <desc id="d">Positioning chart. PPC sits at fast results and high ad spend. SEO and AEO sit at slower results with no ad spend. GEO sits slowest, in a dashed zone with no verifiable timeline.</desc>
+  <rect width="800" height="520" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#002366">Speed vs. ad spend</text>
+  <text x="40" y="70" font-size="14" fill="#4b5563">Where each channel sits when you weigh how fast it works against what it costs in ads</text>
+  <!-- quadrant guides -->
+  <line x1="435" y1="100" x2="435" y2="420" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="110" y1="260" x2="760" y2="260" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 4"/>
+  <!-- axes -->
+  <line x1="110" y1="420" x2="760" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="110" y1="100" x2="110" y2="420" stroke="#9ca3af" stroke-width="1.5"/>
+  <path d="M760 420 l-8 -5 v10 z" fill="#9ca3af"/>
+  <path d="M110 100 l-5 8 h10 z" fill="#9ca3af"/>
+  <text x="435" y="452" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">Time to results</text>
+  <text x="114" y="440" font-size="12" fill="#6b7280">Slower</text>
+  <text x="760" y="440" font-size="12" fill="#6b7280" text-anchor="end">Faster</text>
+  <text transform="translate(66 260) rotate(-90)" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">Ad spend required</text>
+  <text transform="translate(90 412) rotate(-90)" font-size="12" fill="#6b7280">None</text>
+  <text transform="translate(90 108) rotate(-90)" font-size="12" fill="#6b7280" text-anchor="end">High</text>
+  <!-- PPC -->
+  <circle cx="660" cy="150" r="11" fill="#1E5BD8" stroke="#ffffff" stroke-width="2"/>
+  <text x="640" y="140" font-size="16" font-weight="700" fill="#111827" text-anchor="end">PPC</text>
+  <text x="640" y="160" font-size="13" fill="#4b5563" text-anchor="end">Fast. You pay for each click or lead,</text>
+  <text x="640" y="177" font-size="13" fill="#4b5563" text-anchor="end">and it stops when the budget stops.</text>
+  <!-- GEO zone -->
+  <rect x="128" y="352" width="150" height="54" rx="27" fill="#9F4CFF" fill-opacity="0.08" stroke="#9F4CFF" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="203" y="376" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">GEO</text>
+  <text x="203" y="395" font-size="12" fill="#4b5563" text-anchor="middle">No verifiable timeline</text>
+  <!-- SEO -->
+  <circle cx="330" cy="395" r="11" fill="#9F4CFF" stroke="#ffffff" stroke-width="2"/>
+  <text x="330" y="352" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">SEO</text>
+  <text x="330" y="370" font-size="12" fill="#4b5563" text-anchor="middle">Builds over months</text>
+  <!-- AEO -->
+  <circle cx="452" cy="395" r="11" fill="#9F4CFF" stroke="#ffffff" stroke-width="2"/>
+  <text x="452" y="352" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">AEO</text>
+  <text x="452" y="370" font-size="12" fill="#4b5563" text-anchor="middle">Same clock as SEO</text>
+  <text x="40" y="496" font-size="12" fill="#6b7280">Illustrative. SEO, AEO and GEO have no ad spend, but they still cost labor and time.</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+  <title id="t">Leads over time</title>
+  <desc id="d">Line chart. PPC lead flow rises quickly, holds while the budget runs, then drops when the budget stops. Organic lead flow from SEO and AEO starts slowly and keeps building.</desc>
+  <rect width="800" height="520" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#002366">Leads over time</text>
+  <text x="40" y="70" font-size="14" fill="#4b5563">How lead flow behaves before and after the ad budget stops</text>
+  <!-- grid -->
+  <line x1="90" y1="180" x2="760" y2="180" stroke="#f0f1f3" stroke-width="1"/>
+  <line x1="90" y1="290" x2="760" y2="290" stroke="#f0f1f3" stroke-width="1"/>
+  <!-- axes -->
+  <line x1="90" y1="400" x2="760" y2="400" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="90" y1="100" x2="90" y2="400" stroke="#9ca3af" stroke-width="1.5"/>
+  <path d="M760 400 l-8 -5 v10 z" fill="#9ca3af"/>
+  <path d="M90 100 l-5 8 h10 z" fill="#9ca3af"/>
+  <text x="425" y="432" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">Months</text>
+  <text transform="translate(60 250) rotate(-90)" font-size="14" font-weight="600" fill="#374151" text-anchor="middle">Lead flow</text>
+  <!-- budget stops marker -->
+  <line x1="530" y1="110" x2="530" y2="400" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="536" y="124" font-size="12" font-weight="600" fill="#374151">Ad budget stops</text>
+  <!-- PPC line -->
+  <path d="M90 398 C 120 398, 130 200, 175 185 C 230 170, 300 192, 360 180 C 420 168, 470 190, 530 182 C 545 182, 548 392, 575 396 L 760 397" fill="none" stroke="#1E5BD8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="300" y="146" font-size="15" font-weight="700" fill="#111827">PPC</text>
+  <text x="300" y="164" font-size="12" fill="#4b5563">Fast, while you keep paying</text>
+  <!-- Organic line -->
+  <path d="M90 398 C 200 396, 280 380, 360 345 C 440 310, 520 262, 600 228 C 660 204, 710 192, 760 186" fill="none" stroke="#9F4CFF" stroke-width="3" stroke-linecap="round" stroke-dasharray="0" stroke-linejoin="round"/>
+  <circle cx="760" cy="186" r="5" fill="#9F4CFF" stroke="#ffffff" stroke-width="2"/>
+  <text x="604" y="262" font-size="15" font-weight="700" fill="#111827">Organic: SEO and AEO</text>
+  <text x="604" y="280" font-size="12" fill="#4b5563">Slow start, keeps building</text>
+  <!-- legend -->
+  <line x1="470" y1="462" x2="498" y2="462" stroke="#1E5BD8" stroke-width="3" stroke-linecap="round"/>
+  <text x="506" y="466" font-size="12" fill="#374151">PPC</text>
+  <line x1="560" y1="462" x2="588" y2="462" stroke="#9F4CFF" stroke-width="3" stroke-linecap="round"/>
+  <text x="596" y="466" font-size="12" fill="#374151">Organic (SEO and AEO)</text>
+  <text x="40" y="496" font-size="12" fill="#6b7280">Illustrative shape, not client data. GEO is not plotted because it has no verifiable timeline.</text>
+</svg>

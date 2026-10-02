@@ -12,7 +12,7 @@ author:
 category: "aeo"
 tags: ["generative engine optimization", "GEO", "AI search", "ChatGPT", "answer engine optimization", "home service marketing"]
 metaTitle: "Does Generative Engine Optimization Work? The Evidence"
-metaDescription: "Does generative engine optimization work? What published research, Google, OpenAI and Perplexity say, what is still unproven, and how to judge a GEO pitch."
+metaDescription: "Does generative engine optimization work? What research, Google, OpenAI and Perplexity say, what one client's data shows, and how to judge a GEO pitch."
 featuredImage: ""
 schema:
   type: "Article"
@@ -38,7 +38,7 @@ readingTime: "7 min read"
 
 Does generative engine optimization work? It does in a narrow, measurable sense, and most of the bigger promises made in its name are still unproven. Published research shows that rewriting a page can change how much an AI-generated answer draws from it. The companies that run AI search tell site owners to allow their crawlers and publish useful content, and their published guidance describes no special trick. As far as we can find, no one has yet published a controlled test showing that GEO work made an AI assistant recommend a local business more often.
 
-If you want the basics first, our [guide to generative engine optimization](/blog/what-is-generative-engine-optimization) explains the term. In one sentence, GEO is the work of being named and described correctly when someone asks an AI assistant like ChatGPT or Perplexity a question. This post covers what the research found, what the platforms say, where the evidence runs out, and how to judge a GEO pitch before you pay for one.
+If you want the basics first, our [guide to generative engine optimization](/blog/what-is-generative-engine-optimization) explains the term. In one sentence, GEO is the work of being named and described correctly when someone asks an AI assistant like ChatGPT or Perplexity a question. This post covers what the research found, what the platforms say, what we have tracked for one of our own clients, and how to judge a GEO pitch before you pay for one.
 
 ## What Did the Original GEO Research Find?
 
@@ -80,15 +80,19 @@ Some platforms now report AI data back to site owners. In February 2026, Microso
 
 **Key Takeaway:** The platform documents describe no GEO trick; they ask for crawler access and useful content, and only some tools report AI data back to site owners.
 
-## What Is Still Unproven
+## Our GEO and AEO Work With Lackawanna College
 
-Side by side, the research and the platform guidance leave a gap. As far as we can find, no one has published a controlled before-and-after test showing that a specific change, such as editing a Business Profile, changed what ChatGPT or Perplexity says about a local business. The lab studies measure words in answers or which sites get cited, and the platform documents cover access and reporting.
+We work with Lackawanna College, a Scranton college serving the people of Northeastern Pennsylvania, on AEO, GEO and SEO. Our work focuses heavily on the college's trades programs, which help people get into the trades through education, including its trades centers in Bethlehem, Chambersburg and Greensburg. The numbers below come from Semrush AI Visibility, a third-party tool that tracks how AI engines describe a brand. They measure the college as a whole, not the trades programs alone, and the trades centers opened in June and July 2026, after our baseline.
 
-For ChatGPT and Perplexity, the practical way to check visibility is to type questions and read the answers. Because repeated responses to the same question can differ, one run proves little in either direction. A fair check runs a fixed list of homeowner-style questions across several assistants on a schedule and records every result, including the misses.
+On May 1, 2026, we recorded that baseline in Google AI Mode. AI answers that mentioned Lackawanna were 75% favorable and 25% general, and the favorable share had dropped 7 points while all four tracked competitors moved up. Cost and financial support was the weakest topic at 53% favorable, campus experience sat at 67%, and the college's own website was cited only twice across the tracked questions.
 
-None of this makes the underlying work pointless. Assistants read much of the same public record homeowners and Google read, including your website, Google Business Profile, reviews and listings. [Google says](https://support.google.com/business/answer/7091) businesses with complete and accurate info are more likely to show up in local search results, and that more reviews and positive ratings can help local ranking. Keeping that record accurate is worth doing for that reason alone, whether or not an assistant ever names you. Our [GEO page](/geo) lays out which parts of that record we maintain and what we can and cannot measure.
+By May 31, using the same tool and settings, favorable sentiment had reached 100%, and cost and campus experience were each 100% favorable where they came up. In the June 28 data, the college held 100% and led its tracked peers on all four AI engines in the report: Google AI Mode, ChatGPT, Perplexity and Gemini. The September 29 Google AI Mode data still showed 100% favorable, though that period had only 2 AI mentions.
 
-**Key Takeaway:** The link between GEO work and more calls for a local business is unproven today, while Google says complete, accurate profiles are more likely to show up in local search and more reviews can help local ranking.
+Reach has not moved the same way. The 100% figure describes the tone of answers that mention Lackawanna, and those answers are still few. Share of voice in broad, unbranded AI answers sat near 0% in the May 31 and June 28 data. In the September 29 data, measured against a different set of competing colleges, it was 0.18% in Google AI Mode. The one early sign came on June 28, when the college first appeared in a non-branded answer, about petroleum and natural gas programs with good job placement, at position 11.
+
+This is one client, one tracking tool and no control group, so it does not prove GEO work caused the change. It shows how AI answers about the college moved over the period of our work. The next phase is growing the reach and impressions of the college's programs. Our [GEO page](/geo) explains what we can and cannot measure.
+
+**Key Takeaway:** At Lackawanna College, favorable AI sentiment rose from 75% to 100% between May 1 and May 31, 2026, and held in Google AI Mode through the September 29 data, while share of voice in broad AI answers is still near zero, which is the reach work ahead.
 
 ## How to Judge a GEO Pitch
 
@@ -107,6 +111,6 @@ A pitch worth hearing starts with the basics. It covers a complete Business Prof
 
 ## What GEO Means for a Home Service Owner
 
-GEO has research behind a narrow claim: specific, well-sourced pages can earn more space in AI answers once an engine has found them. The platforms point owners back to crawler access and useful content, and Google's guide calls optimizing for its generative AI features SEO. What remains unproven is that a GEO project sold on its own will get your company recommended by ChatGPT or Perplexity more often.
+GEO has research behind a narrow claim: specific, well-sourced pages can earn more space in AI answers once an engine has found them. The platforms point owners back to crawler access and useful content, and Google's guide calls optimizing for its generative AI features SEO. No published controlled test yet shows that a GEO project sold on its own will get your company recommended by ChatGPT or Perplexity more often.
 
-For an HVAC, plumbing or roofing company, it makes sense to fund work that pays off in search and also feeds the public record AI tools read. That means accurate listings, recent reviews and pages written from real job experience, kept current every month. Our [SEO work](/seo) and GEO work run on that same foundation, so nobody should charge you twice for the same tasks under two names.
+For an HVAC, plumbing or roofing company, it makes sense to fund work that pays off in search and also feeds the public record AI tools read. That means accurate listings, recent reviews and pages written from real job experience, kept current every month. [Google says](https://support.google.com/business/answer/7091) businesses with complete and accurate info are more likely to show up in local search results, and that more reviews and positive ratings can help local ranking. Our [SEO work](/seo) and GEO work run on that same foundation, so nobody should charge you twice for the same tasks under two names.
