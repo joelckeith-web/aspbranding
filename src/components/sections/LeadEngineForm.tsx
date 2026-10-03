@@ -74,7 +74,13 @@ const inputClass =
 const CONSENT_TEXT =
   "Yes, ASP can email me about this application and send marketing updates. I can unsubscribe any time.";
 
-export function LeadEngineForm() {
+// variant/submitLabel exist for the CTA A/B test (/lead-engine vs
+// /lead-engine/explore). The variant rides along with the application so the
+// notification email shows which page converted.
+export function LeadEngineForm({
+  variant = "A",
+  submitLabel = "Submit My Free Application",
+}: { variant?: string; submitLabel?: string } = {}) {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [noWebsite, setNoWebsite] = useState(false);
@@ -119,6 +125,8 @@ export function LeadEngineForm() {
     const payload: Record<string, string | number> = Object.fromEntries(
       Array.from(data.entries()).map(([k, v]) => [k, String(v)])
     );
+
+    payload.lp_variant = variant;
 
     // Honeypot — silent success if filled. (Named "fax" here because this
     // form has a real website field, unlike /contact.)
@@ -175,10 +183,12 @@ export function LeadEngineForm() {
           window.fbq?.("track", "Lead", {
             content_name: "90-Day Install Application",
             content_category: String(payload.revenue || "unspecified"),
+            lp_variant: variant,
           });
           window.gtag?.("event", "generate_lead", {
             event_category: "lead_engine",
             event_label: "90-Day Install Application",
+            lp_variant: variant,
           });
         }
         setFormState("success");
@@ -328,7 +338,7 @@ export function LeadEngineForm() {
             disabled={formState === "sending"}
             className="w-full bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold py-3.5 px-6 rounded-[var(--radius-asp-md)] hover:opacity-90 transition-all duration-150 text-sm disabled:opacity-50"
           >
-            {formState === "sending" ? "Submitting..." : "Submit My Free Application"}
+            {formState === "sending" ? "Submitting..." : submitLabel}
           </button>
         </form>
       </div>

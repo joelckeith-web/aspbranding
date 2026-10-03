@@ -166,6 +166,10 @@ export async function POST(request: Request) {
     const utmRows = UTM_KEYS.filter((k) => typeof body[k] === "string" && body[k])
       .map((k) => `<p><strong>${k}:</strong> ${body[k]}</p>`)
       .join("");
+    const variantRow =
+      typeof body.lp_variant === "string" && /^[A-Z]$/.test(body.lp_variant)
+        ? `<p><strong>Landing page variant:</strong> ${body.lp_variant}</p>`
+        : "";
 
     const notify = await sendMail({
       to: "info@aspbranding.com",
@@ -186,6 +190,7 @@ export async function POST(request: Request) {
         <p><strong>Timestamp:</strong> ${consentAt || "Not recorded"}</p>
         <hr />
         <h3>Source attribution</h3>
+        ${variantRow}
         ${utmRows || "<p><em>No UTM parameters captured (direct visit).</em></p>"}
       `,
     });

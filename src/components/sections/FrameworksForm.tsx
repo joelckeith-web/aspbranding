@@ -71,7 +71,13 @@ const inputClass =
 const CONSENT_TEXT =
   "Yes, ASP can email me the guide and send marketing updates. I can unsubscribe any time.";
 
-export function FrameworksForm() {
+// variant/submitLabel exist for the CTA A/B test (/frameworks vs
+// /frameworks/explore). The variant rides along with the request so the
+// notification email shows which page converted.
+export function FrameworksForm({
+  variant = "A",
+  submitLabel = "Send me the 5 frameworks",
+}: { variant?: string; submitLabel?: string } = {}) {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [consent, setConsent] = useState(true);
@@ -116,6 +122,8 @@ export function FrameworksForm() {
     const payload: Record<string, string | number> = Object.fromEntries(
       Array.from(data.entries()).map(([k, v]) => [k, String(v)])
     );
+
+    payload.lp_variant = variant;
 
     // Honeypot — silent success so bots don't learn the trap exists.
     if (payload.fax) {
@@ -164,10 +172,12 @@ export function FrameworksForm() {
           window.fbq?.("track", "Lead", {
             content_name: "5 Marketing Frameworks",
             content_category: String(payload.trade || "unspecified"),
+            lp_variant: variant,
           });
           window.gtag?.("event", "generate_lead", {
             event_category: "frameworks",
             event_label: "5 Marketing Frameworks",
+            lp_variant: variant,
           });
         }
         setFormState("success");
@@ -279,7 +289,7 @@ export function FrameworksForm() {
             disabled={formState === "sending"}
             className="w-full bg-asp-gradient-cta text-white font-semibold py-3.5 rounded-[var(--radius-asp-md)] shadow-asp-md hover:shadow-asp-lg transition-all disabled:opacity-60"
           >
-            {formState === "sending" ? "Sending…" : "Send me the 5 frameworks"}
+            {formState === "sending" ? "Sending…" : submitLabel}
           </button>
         </form>
       </div>
