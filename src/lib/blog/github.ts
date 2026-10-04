@@ -14,6 +14,11 @@ export const PUBLISH_QUEUE: string[] = [
   "real-seo-vs-fake-seo",
   "hvac-demand-marketing-budget-2026",
   "home-service-fractional-cmo",
+  // Approved by Joel 2026-10-04; each goes live on its own frontmatter publishDate.
+  "seo-vs-ppc-vs-aeo-vs-geo",
+  "does-geo-work",
+  "hvac-seo",
+  "how-to-rank-in-ai-search",
 ];
 
 // ═══════════════════════════════════════════════════════════
@@ -119,8 +124,9 @@ export async function pushBlogToMain(blog: GeneratedBlog): Promise<{
 
 /**
  * Publish the next queued draft: walks PUBLISH_QUEUE in order, finds the first
- * slug still at status "review", flips it to "published" (and stamps publishDate
- * to today), then commits to main. Only touches slugs in PUBLISH_QUEUE.
+ * slug still at status "review" whose publishDate has arrived, flips it to
+ * "published" (keeping its scheduled publishDate), then commits to main. Only
+ * touches slugs in PUBLISH_QUEUE; a queued post dated in the future waits.
  */
 export async function publishNextDraft(): Promise<{
   published: boolean;
@@ -137,6 +143,7 @@ export async function publishNextDraft(): Promise<{
   let remainingReview = 0;
   let target: { path: string; raw: string; title: string; slug: string } | null =
     null;
+  const today = new Date().toISOString().slice(0, 10);
 
   for (const slug of PUBLISH_QUEUE) {
     const path = `content/posts/${slug}.md`;
@@ -156,7 +163,10 @@ export async function publishNextDraft(): Promise<{
     const { data: fm } = matter(raw);
     if (fm.status !== "review") continue; // already published — skip
     remainingReview++;
-    if (!target) {
+    const due = fm.publishDate instanceof Date
+      ? fm.publishDate.toISOString().slice(0, 10)
+      : String(fm.publishDate ?? "").slice(0, 10);
+    if (!target && (!due || due <= today)) {
       target = { path, raw, title: fm.title as string, slug };
     }
   }
@@ -165,15 +175,18 @@ export async function publishNextDraft(): Promise<{
     return {
       published: false,
       remaining: 0,
-      reason: "Queue empty — all curated drafts are published",
+      reason: remainingReview
+        ? "Nothing due — queued drafts are scheduled for later dates"
+        : "Queue empty — all curated drafts are published",
     };
   }
 
-  // Flip status review → published and stamp publishDate to today (UTC).
-  const today = new Date().toISOString().slice(0, 10);
-  const updated = target.raw
-    .replace(/^status:\s*["']?review["']?\s*$/m, 'status: "published"')
-    .replace(/^publishDate:\s*["'][^"']*["'].*$/m, `publishDate: "${today}"`);
+  // Flip status review → published. A post with no publishDate gets today's.
+  let updated = target.raw.replace(/^status:\s*["']?review["']?\s*$/m, 'status: "published"');
+  if (!/^publishDate:/m.test(updated)) {
+    updated = updated.replace(/^status: "published"$/m, `status: "published"
+publishDate: "${today}"`);
+  }
 
   // Commit the single updated file (same flow as pushBlogToMain).
   const { data: refData } = await octokit.git.getRef({

@@ -9,8 +9,9 @@ import { siteConfig } from "@/lib/blog/site-config";
  * after the auto-generator so the two don't collide.
  *
  * Flow:
- * 1. Walk the curated PUBLISH_QUEUE; find the first slug still at status "review".
- * 2. Flip it to "published" (stamp publishDate = today) and commit to main —
+ * 1. Walk the curated PUBLISH_QUEUE; find the first slug still at status "review"
+ *    whose publishDate has arrived (future-dated posts wait their turn).
+ * 2. Flip it to "published" (keeping its scheduled publishDate) and commit to main —
  *    Vercel auto-deploys, which makes the post live (status === "published").
  * 3. Ping Google Indexing for the newly live URL.
  * Only touches slugs in PUBLISH_QUEUE; other review-status drafts are left alone.
