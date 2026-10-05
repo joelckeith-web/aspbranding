@@ -1,6 +1,10 @@
 "use client";
 
-// Gate form for "The 5 Marketing Frameworks for Trades Businesses".
+// Gate form for "The 5 Marketing Frameworks for Home Service Businesses".
+//
+// Fields (Joel, 2026-10-05): name, email and business website, plus phone if
+// they will give it. Trade, company and revenue are gone — the website tells
+// us who they are, and every extra field costs downloads.
 //
 // This is the TOP of the paid funnel — the ads point here, not at the
 // application. The trade is that we ask for less and get far more people
@@ -25,33 +29,6 @@ declare global {
 }
 
 const RECAPTCHA_ACTION = "frameworks_download";
-
-// Self-identification, not ad targeting. The ad-side ban on naming HVAC /
-// plumbing / electrical / roofing is about callouts and interest targeting —
-// it has never applied to what a prospect tells us about themselves.
-const TRADE_OPTIONS = [
-  { value: "", label: "What trade are you in? *" },
-  { value: "home-inspection", label: "Home inspection" },
-  { value: "landscaping", label: "Landscaping / lawn" },
-  { value: "remodel", label: "Kitchen & bath remodel" },
-  { value: "outdoor-living", label: "Outdoor living / hardscape" },
-  { value: "flooring", label: "Flooring" },
-  { value: "appliance-repair", label: "Appliance repair" },
-  { value: "hvac", label: "HVAC" },
-  { value: "plumbing", label: "Plumbing" },
-  { value: "electrical", label: "Electrical" },
-  { value: "roofing", label: "Roofing" },
-  { value: "other", label: "Other home service" },
-];
-
-const REVENUE_OPTIONS = [
-  { value: "", label: "Annual revenue *" },
-  { value: "under-500k", label: "Under $500K" },
-  { value: "500k-1m", label: "$500K – $1M" },
-  { value: "1m-3m", label: "$1M – $3M" },
-  { value: "3m-5m", label: "$3M – $5M" },
-  { value: "5m-plus", label: "$5M+" },
-];
 
 const UTM_KEYS = [
   "utm_source",
@@ -80,7 +57,7 @@ export function FrameworksForm({
 }: { variant?: string; submitLabel?: string } = {}) {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
-  const [consent, setConsent] = useState(true);
+  const [consent, setConsent] = useState(false);
   const [utm, setUtm] = useState<Record<string, string>>({});
   const recaptchaLoaded = useRef(false);
   const mountedAt = useRef<number>(0);
@@ -171,7 +148,6 @@ export function FrameworksForm({
         if (typeof window !== "undefined") {
           window.fbq?.("track", "Lead", {
             content_name: "5 Marketing Frameworks",
-            content_category: String(payload.trade || "unspecified"),
             lp_variant: variant,
           });
           window.gtag?.("event", "generate_lead", {
@@ -221,7 +197,7 @@ export function FrameworksForm({
       <div className="bg-white rounded-[calc(var(--radius-asp-xl)-2px)] p-6 md:p-8">
         <h3 className="font-bold text-xl text-asp-blue mb-1">Send me the 5 frameworks</h3>
         <p className="text-gray-500 text-sm mb-6">
-          Free, no call required. We email it over so you have it to keep.
+          Free. We email it to you so you have it to keep.
         </p>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
@@ -230,25 +206,15 @@ export function FrameworksForm({
             <input type="email" name="email" placeholder="Email Address *" required className={inputClass} />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input type="tel" name="phone" placeholder="Phone *" required className={inputClass} />
-            <input type="text" name="company" placeholder="Company Name *" required className={inputClass} />
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <select name="trade" required defaultValue="" className={`${inputClass} text-gray-500`}>
-              {TRADE_OPTIONS.map((o) => (
-                <option key={o.value} value={o.value} disabled={o.value === ""}>
-                  {o.label}
-                </option>
-              ))}
-            </select>
-            <select name="revenue" required defaultValue="" className={`${inputClass} text-gray-500`}>
-              {REVENUE_OPTIONS.map((o) => (
-                <option key={o.value} value={o.value} disabled={o.value === ""}>
-                  {o.label}
-                </option>
-              ))}
-            </select>
+            <input
+              type="text"
+              name="websiteUrl"
+              inputMode="url"
+              placeholder="Business Website *"
+              required
+              className={inputClass}
+            />
+            <input type="tel" name="phone" placeholder="Phone (optional)" className={inputClass} />
           </div>
 
           {/* Honeypot — hidden from humans, tempting to bots. */}

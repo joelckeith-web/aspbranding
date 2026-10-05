@@ -1,6 +1,6 @@
 "use client";
 
-// Application form for the 90-Day Install offer. Every field is
+// Application form for the 90-Day Install offer. Every field but phone is
 // required — the form IS the qualification filter. UTM params are captured
 // into hidden fields so every application carries its source (the same
 // attribution treatment the offer sells).
@@ -84,7 +84,7 @@ export function LeadEngineForm({
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [noWebsite, setNoWebsite] = useState(false);
-  const [consent, setConsent] = useState(true);
+  const [consent, setConsent] = useState(false);
   const [utm, setUtm] = useState<Record<string, string>>({});
   const recaptchaLoaded = useRef(false);
   const mountedAt = useRef<number>(0);
@@ -180,7 +180,9 @@ export function LeadEngineForm({
         // against this event, so it must fire only on a verified submit —
         // never on page load, and never on the honeypot path above.
         if (typeof window !== "undefined") {
-          window.fbq?.("track", "Lead", {
+          // SubmitApplication, not Lead: the guide fires Lead, and Meta has to
+          // tell a free download from a $36K-a-year application apart.
+          window.fbq?.("track", "SubmitApplication", {
             content_name: "90-Day Install Application",
             content_category: String(payload.revenue || "unspecified"),
             lp_variant: variant,
@@ -215,8 +217,8 @@ export function LeadEngineForm({
           </div>
           <h3 className="font-bold text-xl text-asp-blue mb-2">Application received.</h3>
           <p className="text-gray-500 text-sm mb-5">
-            We review every application by hand. If it looks like a fit, you&apos;ll hear from us
-            within one business day to set up your discovery call.
+            We review every application by hand. If it looks like a fit, we&apos;ll reach out to set
+            up your discovery call.
           </p>
           {/* Book-now path. The application already emails ASP, but waiting a
               business day to book is a day of speed-to-lead thrown away — the
@@ -249,7 +251,10 @@ export function LeadEngineForm({
             <input type="text" name="name" placeholder="Full Name *" required className={inputClass} />
             <input type="email" name="email" placeholder="Email Address *" required className={inputClass} />
           </div>
-          <input type="text" name="company" placeholder="Company Name *" required className={inputClass} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" name="company" placeholder="Company Name *" required className={inputClass} />
+            <input type="tel" name="phone" placeholder="Phone (optional)" className={inputClass} />
+          </div>
 
           <div>
             <input

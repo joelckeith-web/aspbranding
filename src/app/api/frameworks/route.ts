@@ -45,9 +45,7 @@ export async function POST(request: Request) {
       name,
       email,
       phone,
-      company,
-      trade,
-      revenue,
+      websiteUrl,
       marketingConsent,
       consentText,
       consentAt,
@@ -63,13 +61,13 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: true });
     }
 
-    const spam = checkSpam({ name, company, message: trade });
+    const spam = checkSpam({ name, company: websiteUrl, message: websiteUrl });
     if (spam.isSpam) {
       console.log("[frameworks] spam filter matched:", {
         email,
         matched: spam.matched,
         name,
-        company,
+        websiteUrl,
       });
       return NextResponse.json({ success: true });
     }
@@ -82,9 +80,9 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!name || !email || !phone || !company || !trade || !revenue) {
+    if (!name || !email || !websiteUrl) {
       return NextResponse.json(
-        { error: "Name, email, phone, company, trade, and annual revenue are all required." },
+        { error: "Name, email and business website are required." },
         { status: 400 },
       );
     }
@@ -104,14 +102,14 @@ export async function POST(request: Request) {
     const review = await reviewSubmission({
       name,
       email,
-      company,
+      company: websiteUrl,
       service: "5-marketing-frameworks",
-      message: `Trade: ${trade} · Revenue: ${revenue} · Phone: ${phone}`,
+      message: `Website: ${websiteUrl} · Phone: ${phone || "not given"}`,
     });
     if (review.classification === "vendor") {
       console.log("[frameworks] AI flagged as vendor:", {
         email,
-        company,
+        websiteUrl,
         reason: review.reason,
       });
       return NextResponse.json({ success: true });
@@ -124,11 +122,11 @@ export async function POST(request: Request) {
     const url = guideUrl(request);
     const delivery = await sendMail({
       to: email,
-      subject: "The 5 Marketing Frameworks for Trades Businesses",
+      subject: "The 5 Marketing Frameworks for Home Service Businesses",
       replyTo: "info@aspbranding.com",
       html: `
         <p>${name},</p>
-        <p>Here it is — the five frameworks we install for trades businesses:</p>
+        <p>Here it is — the five frameworks we install for home service businesses:</p>
         <p><a href="${url}"
               style="display:inline-block;padding:12px 22px;border-radius:999px;
                      background:#2E7DFF;color:#ffffff;font-weight:600;
@@ -173,16 +171,14 @@ export async function POST(request: Request) {
 
     const notify = await sendMail({
       to: "info@aspbranding.com",
-      subject: `Frameworks download: ${name} — ${company} (${trade}, ${revenue})`,
+      subject: `Frameworks download: ${name} — ${websiteUrl}`,
       replyTo: email,
       html: `
         <h2>New 5 Frameworks download</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Company:</strong> ${company}</p>
-        <p><strong>Trade:</strong> ${trade}</p>
-        <p><strong>Annual revenue:</strong> ${revenue}</p>
+        <p><strong>Phone:</strong> ${phone || "Not given"}</p>
+        <p><strong>Website:</strong> ${websiteUrl}</p>
         <hr />
         <h3>Marketing consent</h3>
         <p><strong>Consented:</strong> ${marketingConsent || "Not recorded"}</p>
@@ -206,11 +202,11 @@ export async function POST(request: Request) {
       const queued = await appendRow(sheetId, "Leads!A:O", [
         new Date().toISOString().replace("T", " ").slice(0, 16),
         name,
-        company,
-        phone,
+        websiteUrl,
+        phone || "",
         email,
-        trade,
-        revenue,
+        "",
+        "",
         typeof body.utm_content === "string" ? body.utm_content : "",
         typeof body.utm_campaign === "string" ? body.utm_campaign : "",
         typeof body.utm_source === "string" ? body.utm_source : "",

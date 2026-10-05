@@ -27,6 +27,7 @@ export async function POST(request: Request) {
     const {
       name,
       email,
+      phone,
       company,
       websiteUrl,
       crm,
@@ -68,7 +69,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Every field is required — the form is the qualification filter.
+    // Every field but phone is required — the form is the qualification filter.
     if (!name || !email || !company || !websiteUrl || !crm || !revenue || !jobValue) {
       return NextResponse.json(
         {
@@ -127,6 +128,7 @@ export async function POST(request: Request) {
         <h2>New 90-Day Install Application</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "Not given"}</p>
         <p><strong>Company:</strong> ${company}</p>
         <p><strong>Website:</strong> ${websiteUrl}</p>
         <p><strong>CRM:</strong> ${crm}</p>

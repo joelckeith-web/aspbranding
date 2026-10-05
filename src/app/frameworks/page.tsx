@@ -20,9 +20,9 @@ import { FrameworksForm } from "@/components/sections/FrameworksForm";
 // vocabulary only. ASP is not licensed for financial planning or advice.
 
 export const metadata: Metadata = {
-  title: "The 5 Marketing Frameworks for Trades Businesses — Free Guide",
+  title: "The 5 Marketing Frameworks for Home Service Businesses — Free Guide",
   description:
-    "The five marketing frameworks ASP installs for trades businesses: the lead source map, speed to lead, the Google Business Profile engine, the money math, and the site that books work. Free, sent straight to your inbox.",
+    "The five marketing frameworks ASP installs for home service businesses: the lead source map, speed to lead, the Google Business Profile engine, the money math, and the site that books work. Free, sent straight to your inbox.",
   robots: { index: false, follow: false },
 };
 
@@ -48,7 +48,7 @@ const FRAMEWORKS: { n: string; title: string; body: string; note?: string }[] = 
     n: "03",
     title: "The Google Business Profile Engine",
     body:
-      "Reviews, posts and UTM tagging that turn a Profile from a listing into a channel you can actually measure.",
+      "Reviews, posts and UTM tagging that turn a Profile from a listing into a channel you can measure.",
   },
   {
     n: "04",
@@ -60,23 +60,25 @@ const FRAMEWORKS: { n: string; title: string; body: string; note?: string }[] = 
     n: "05",
     title: "The Site That Books Work",
     body:
-      "The page structure that turns a trades visitor into a booked job, and the four things that cost most trades sites their conversions.",
+      "The page structure that turns a visitor into a booked job, and the four things that cost most home service sites their conversions.",
   },
 ];
 
 export default function FrameworksPage() {
   return (
     <main className="bg-asp-black">
-      {/* HERO — the ask sits beside the promise, above the fold. */}
+      {/* HERO — the ask sits beside the promise, above the fold. No ScrollReveal
+          here: it hides content until JavaScript runs, which delayed the
+          headline by 4+ seconds on mobile. */}
       <section className="relative bg-asp-black text-white overflow-hidden">
         <div className="container mx-auto px-4 py-14 md:py-20 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-7xl mx-auto">
-            <ScrollReveal animation="slide-right">
+            <div>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                Free guide for trades businesses
+                Free guide for home service businesses
               </span>
               <h1 className="font-black text-4xl md:text-5xl 2xl:text-6xl leading-[1.05] mb-6">
-                The 5 marketing frameworks we install for trades businesses.
+                The 5 marketing frameworks we install for home service businesses.
               </h1>
               <p className="text-lg text-white/70 leading-relaxed mb-6">
                 Same frameworks we build for our clients. Free, and we email it straight to you.
@@ -84,13 +86,11 @@ export default function FrameworksPage() {
               <p className="text-white/60 leading-relaxed">
                 You can act on all five without us. That is what makes them worth reading.
               </p>
-            </ScrollReveal>
+            </div>
 
-            <ScrollReveal animation="slide-left" delay={100}>
-              <div id="get">
-                <FrameworksForm />
-              </div>
-            </ScrollReveal>
+            <div id="get">
+              <FrameworksForm />
+            </div>
           </div>
         </div>
       </section>
@@ -147,9 +147,8 @@ export default function FrameworksPage() {
               Home service businesses with customers, revenue and a crew.
             </h2>
             <p className="text-white/70 leading-relaxed mb-10">
-              Home inspection, landscaping, kitchen and bath remodel, outdoor living, flooring,
-              appliance repair — the frameworks are the same. The guide assumes you already have
-              work coming in and want to know where it comes from.
+              Any home service business with customers, revenue and a crew. The guide assumes you
+              already have work coming in and want to know where it comes from.
             </p>
             <a
               href="#get"

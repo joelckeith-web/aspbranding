@@ -7,6 +7,11 @@ import testimonials from "@/data/testimonials.json";
 // Ad landing page for the 90-Day Install offer. NOT in the sitemap or nav;
 // noindex until launch — traffic arrives from paid campaigns only.
 //
+// v6 (2026-10-05). One page for three ad angles: "Tired of marketing
+// agencies?" (eyebrow), "We build it. Then we show you how to run it." (H1),
+// and the 30-day lead-source guarantee (subhead). The founding-ten offer and
+// the $7,500 setup anchor are GONE, and the Systems Audit is free.
+//
 // v5 (2026-08-03). The $997 sprint and the $10K pipeline guarantee are GONE.
 // The offer is $2,997/mo (or $3,850 with paid ads managed), a 90-day initial
 // term, and a 30-Day Clarity Guarantee measured on attribution being live for
@@ -25,39 +30,39 @@ import testimonials from "@/data/testimonials.json";
 export const metadata: Metadata = {
   title: "The 90-Day Install — Your Marketing System, Built and Handed To You",
   description:
-    "We build your trades business a complete marketing system — website, SEO, CRM integration, lead tracking — then teach you to run it. $2,997/month. Inside 30 days you'll have the system built and every digital lead tracked, or your first month is refunded.",
+    "We build your home service business a complete marketing system — website, SEO, CRM integration, lead tracking — then teach you to run it. $2,997/month. Inside 30 days you'll have the system built and every digital lead tracked, or your first month is refunded.",
   robots: { index: false, follow: false },
 };
 
-// Proof first, labeled by trade — every visitor finds "someone like me."
-// Industry only, never client names. Standing rule, applies to ads too.
+// Proof first. Labeled by what the number measures, never by trade or client
+// name — the no-trade-callout rule applies here as well as in the ads.
 const PROOF = [
   {
-    label: "HVAC",
+    label: "First 90 days",
     stat: "$81,000",
     detail:
       "closed sales in the first 90 days on this exact system. Not pipeline — closed, invoiced work.",
   },
   {
-    label: "Outdoor Living",
+    label: "Pipeline",
     stat: "$1M+",
     detail:
       "in pipeline inside the first 90 days. Today that same business closes $400K weeks and is pacing $2.5M+ this year.",
   },
   {
-    label: "HVAC · Residential",
+    label: "Revenue ceiling",
     stat: "$3M → $5M",
     detail:
       "broke through the $3M ceiling it had been stuck at, and set out to do $5M this year.",
   },
   {
-    label: "Home Inspection",
+    label: "Three-year growth",
     stat: "$3M → $5.3M",
     detail:
       "$3M in year one. $4.2M in year two. Tracking near $5.3M this year — three straight years of growth.",
   },
   {
-    label: "Flooring",
+    label: "Search rankings",
     stat: "+$1M",
     detail:
       "on pace to add nearly $1M in new revenue this year off the back of search rankings.",
@@ -111,7 +116,6 @@ const VS_AGENCY = [
 ];
 
 const VS_COACHING = [
-  { them: "$1,000–$3,000 a month, plus travel.", us: "$2,997 a month. No travel." },
   { them: "You get a playbook and a dashboard.", us: "You get a website, SEO, CRM, and tracking." },
   { them: "The building happens after hours.", us: "We do the building. You run it after." },
   { them: "Marketing execution is on you.", us: "Marketing execution is the service." },
@@ -123,7 +127,7 @@ const STEPS = [
   {
     step: "1",
     title: "Apply",
-    body: "Seven questions, two minutes. It's how we know if we can win for you before anyone gets on a call.",
+    body: "A short application, about two minutes. It's how we know if we can win for you before anyone gets on a call.",
   },
   {
     step: "2",
@@ -149,7 +153,7 @@ const FAQS = [
   },
   {
     q: "Why do you ask for 90 days?",
-    a: "The build itself moves fast — most of the system is standing inside the first week or two. Ninety days is what it takes for the system to produce enough data to be worth acting on: rankings move, campaigns gather history, and your tracking fills with real jobs. After that you can cancel any time. If we miss the 30-day guarantee, you're out of the term early and you still keep everything.",
+    a: "The build itself moves fast. Ninety days is what it takes for the system to produce enough data to be worth acting on: rankings move, campaigns gather history, and your tracking fills with real jobs. After that you can cancel any time. If we miss the 30-day guarantee, you're out of the term early and you still keep everything.",
   },
   {
     q: "What happens after the 90 days?",
@@ -177,10 +181,10 @@ const FAQS = [
   },
   {
     q: "How is this different from a coaching program?",
-    a: "Coaching hands you a playbook and wishes you luck. The work still lands on you, after hours, on top of running your business. We build the system first — the site, the tracking, the CRM connection, all of it — and then teach you how it runs. You get the same understanding a coaching program promises, except the thing already exists when the teaching starts.",
+    a: "Coaching gives you a playbook. The work still lands on you, after hours, on top of running your business. We build the system first — the site, the tracking, the CRM connection, all of it — and then teach you how it runs. You get the same understanding a coaching program promises, except the thing already exists when the teaching starts.",
   },
   {
-    q: "What do you actually need from me?",
+    q: "What do you need from me?",
     a: "Access to your accounts, honest answers to the setup questions, and one hour a month for the review call. That's the whole ask. The install is our job.",
   },
 ];
@@ -233,7 +237,7 @@ function BlueWash() {
 }
 
 // Shared CTA — solid, bold, drop-shadowed text. One statement per button.
-function ApplyCTA({ label = "Apply now" }: { label?: string }) {
+function ApplyCTA({ label = "See if you qualify" }: { label?: string }) {
   return (
     <div className="text-center mt-10">
       <a
@@ -346,25 +350,25 @@ export default function LeadEnginePage() {
               "radial-gradient(ellipse 60% 55% at 25% 20%, rgba(76, 201, 240, 0.18), transparent 65%), radial-gradient(ellipse 55% 50% at 80% 80%, rgba(159, 76, 255, 0.16), transparent 65%)",
           }}
         />
-        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-14 lg:pt-32 lg:pb-20">
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14 lg:pt-32 lg:pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                The 90-Day Install · For trades businesses
+                Tired of marketing agencies?
               </span>
               <h1 className="font-black text-4xl md:text-5xl 2xl:text-6xl leading-[1.08] mb-5">
-                You already spend the money.{" "}
-                <span className="hero-text-gradient">You just can&apos;t see what it&apos;s doing.</span>
+                We build it.{" "}
+                <span className="hero-text-gradient">Then we show you how to run it.</span>
               </h1>
               <p className="text-white/75 text-lg leading-relaxed mb-6">
-                In 30 days, you&apos;ll know where every lead came from — which channel, which
-                campaign, and what it turned into. Or we refund your first month.
+                Your website, SEO, CRM and lead tracking, built in your name. Inside 30 days
+                you&apos;ll see where every digital lead came from, or we refund your first month.
               </p>
               <ul className="space-y-2.5">
                 {[
-                  "Website, SEO, ads, and tracking — installed for you",
-                  "Every lead traced to its source, automatically",
-                  "You own the site, the accounts, and the data",
+                  "Website, SEO, CRM and lead tracking, built for you",
+                  "Every digital lead traced to its source",
+                  "You own the site, the accounts and the data",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3 text-white/80 text-sm">
                     <svg
@@ -388,7 +392,7 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* Proof — first and biggest. Labeled by trade. */}
+      {/* Proof — first and biggest. */}
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden">
         <ImageWash src="/images/backgrounds/hero-trades-1.jpg" position="center 30%" />
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
@@ -398,10 +402,10 @@ export default function LeadEnginePage() {
                 Real operators. Real results.
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
-                What this system did for five trades businesses.
+                What this system did for five home service businesses.
               </h2>
               <p className="text-white/65 text-lg">
-                Five different markets, one system. Find the one that looks like yours.
+                Five different markets, one system.
               </p>
             </div>
           </ScrollReveal>
@@ -410,7 +414,7 @@ export default function LeadEnginePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {PROOF.slice(0, 3).map((p) => (
                 <div
-                  key={p.label}
+                  key={p.stat}
                   className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-asp-surface-navy/80 p-8 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
                 >
                   <p className="text-asp-blue-light text-xs font-bold uppercase tracking-widest mb-4">
@@ -426,7 +430,7 @@ export default function LeadEnginePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 lg:max-w-[calc(66.666%+0.75rem)] lg:mx-auto">
               {PROOF.slice(3).map((p) => (
                 <div
-                  key={p.label}
+                  key={p.stat}
                   className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-asp-surface-navy/80 p-8 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
                 >
                   <p className="text-asp-blue-light text-xs font-bold uppercase tracking-widest mb-4">
@@ -482,7 +486,7 @@ export default function LeadEnginePage() {
               <CompareTable rows={VS_AGENCY} themLabel="A typical agency" />
               <CompareTable rows={VS_COACHING} themLabel="A coaching program" />
             </div>
-            <ApplyCTA label="Apply now" />
+            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
@@ -525,15 +529,15 @@ export default function LeadEnginePage() {
           <ScrollReveal>
             <div className="mt-10 max-w-4xl mx-auto rounded-[var(--radius-asp-xl)] border-2 border-asp-purple/50 bg-asp-purple/[0.04] p-6 lg:p-8 text-center shadow-[0_12px_32px_-8px_rgba(159,76,255,0.25)]">
               <p className="font-black text-lg text-asp-blue mb-2">
-                Included for all ten founding businesses
+                Also included
               </p>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Setup and system installation, normally $7,500, waived. A full brand kit built for
-                you: logo system, colors, type, and guidelines, yours to keep whatever you do next.
+                A full brand kit built for you: logo system, colors, type, and guidelines, yours to
+                keep whatever you do next.
                 Plus early access to our internal procedures system, currently in development.
               </p>
             </div>
-            <ApplyCTA label="Claim one of the ten" />
+            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
@@ -564,7 +568,7 @@ export default function LeadEnginePage() {
               build your website. We do both, because you can&apos;t set a marketing budget
               without knowing your margins.
             </p>
-            <ApplyCTA label="Start your application" />
+            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
@@ -603,7 +607,7 @@ export default function LeadEnginePage() {
               We guarantee what we control. The revenue numbers above are proof from other
               businesses, not a forecast for yours.
             </p>
-            <ApplyCTA label="Apply now" />
+            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
@@ -619,8 +623,7 @@ export default function LeadEnginePage() {
               Why we ask for 90 days.
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              The build moves fast. Most of the system is standing inside the first week or two.
-              Ninety days is what it takes for that system to produce enough data to act on.
+              The build moves fast. Ninety days is what it takes for that system to produce enough data to act on.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
               After that, cancel any time. You keep the site, the accounts, the data, and the
@@ -668,7 +671,7 @@ export default function LeadEnginePage() {
                 </div>
               ))}
             </div>
-            <ApplyCTA label="Start step one" />
+            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
@@ -723,9 +726,7 @@ export default function LeadEnginePage() {
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
               Website, SEO and AEO, content and social, local SEO and reviews, CRM integration,
-              lead tracking, your numbers, and the monthly sit-down. Setup and installation
-              normally runs <strong className="text-white">$7,500</strong> and is waived for the
-              ten founding businesses.
+              lead tracking, your numbers, and the monthly sit-down.
             </p>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
               Want paid ads managed on top?{" "}
@@ -737,28 +738,6 @@ export default function LeadEnginePage() {
               Stay past 90 days and we lock your rate for 12 months. No increases.
             </p>
             <ApplyCTA label="See if you qualify" />
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Why only ten — capacity-real scarcity */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden">
-        <ImageWash src="/images/backgrounds/team-behind-scenes.jpg" position="center 45%" />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal>
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              Why only ten
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              We take ten businesses at a time.
-            </h2>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              We build every website ourselves. Ten is what we can install properly at once
-              without cutting corners on any of them.
-            </p>
-            <p className="text-white/75 text-lg leading-relaxed">
-              When those ten are filled, the next group starts once we have room.
-            </p>
           </ScrollReveal>
         </div>
       </section>
@@ -789,7 +768,7 @@ export default function LeadEnginePage() {
                 Apply now
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
-                Seven questions, two minutes, no obligation.
+                A short application, two minutes, no obligation.
               </h2>
               <p className="text-white/65 text-lg">
                 We review every application by hand and only move forward where we see a real fit.
@@ -802,26 +781,23 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* Secondary path — the $99 audit. Deliberately not a co-equal CTA. */}
+      {/* Secondary path — the free Systems Audit. Deliberately not a co-equal CTA. */}
       <section className="py-12 bg-white border-t border-gray-200">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-3">
-              Find out if it&apos;s a fit for $99.
+              Find out if it&apos;s a fit with a free Systems Audit.
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-6">
               We&apos;ll audit your systems and walk you through it on a 45-minute call. You get a
               competitor teardown, a check on whether AI tools recommend you, a technical read on
               your website, and a straight answer on where your lead tracking is broken.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              If you decide to move forward, the $99 comes off your first month.
             </p>
             <a
               href="/contact?ref=systems-audit"
               className="inline-block border-2 border-asp-blue text-asp-blue font-bold py-3 px-8 rounded-[var(--radius-asp-lg)] hover:bg-asp-blue hover:text-white transition-colors no-underline"
             >
-              Book the $99 Systems Audit
+              Book your free Systems Audit
             </a>
           </ScrollReveal>
         </div>
