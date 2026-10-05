@@ -4,6 +4,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { LeadEngineForm } from "@/components/sections/LeadEngineForm";
 import testimonials from "@/data/testimonials.json";
 import { BrandIcon, type BrandIconName } from "@/components/ui/BrandIcon";
+import { DashboardMock, TracedLeadsMock } from "@/components/sections/LeadEngineVisuals";
 
 // Ad landing page for ASP's core offer. NOT in the sitemap or nav; noindex —
 // traffic arrives from paid campaigns only.
@@ -393,7 +394,7 @@ export default function LeadEnginePage() {
             </div>
           </ScrollReveal>
         </div>
-        {/* Left-to-right marquee. The list renders twice so the loop is
+        {/* Right-to-left marquee. The list renders twice so the loop is
             seamless; spacing lives inside each item (pr-5), not a flex gap. */}
         <div className="review-marquee-wrap overflow-hidden">
           <div className="review-marquee flex w-max items-start">
@@ -516,58 +517,70 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* The dashboard + monthly review */}
+      {/* The dashboard + monthly review — copy left, dashboard right */}
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
         <ImageWash src="/images/backgrounds/team-at-work.jpg" position="center 40%" />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal>
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              See it for yourself
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              Every month we sit down and go through your numbers.
-            </h2>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Which channels brought in leads, what those leads turned into, and where your next
-              dollar should go. Your dashboard shows it any time. The monthly review is where we
-              decide what to do next.
-            </p>
-            <p className="text-white/60 leading-relaxed">
-              We also look at your margin by job type and your breakeven, so your marketing budget
-              is set by your own numbers.
-            </p>
-          </ScrollReveal>
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <ScrollReveal>
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                See it for yourself
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
+                Every month we sit down and go through your numbers.
+              </h2>
+              <p className="text-white/75 text-lg leading-relaxed mb-5">
+                Which channels brought in leads, what those leads turned into, and where your next
+                dollar should go. Your dashboard shows it any time. The monthly review is where we
+                decide what to do next.
+              </p>
+              <p className="text-white/60 leading-relaxed">
+                We also look at your margin by job type and your breakeven, so your marketing
+                budget is set by your own numbers.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal>
+              <DashboardMock />
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
-      {/* The guarantee */}
+      {/* The guarantee — lead log left, copy right */}
       <section
         id="guarantee"
         className="relative py-14 md:py-16 lg:py-20 bg-asp-blue text-white overflow-hidden scroll-mt-24"
       >
         <BlueWash />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal>
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              The 30-Day Clarity Guarantee
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              Inside 30 days you&apos;ll see where every digital lead came from.
-            </h2>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Paid search, paid social, organic, your Google Business Profile and direct. Each lead
-              traced to the channel, campaign and page it came from, and what it turned into.
-              Word-of-mouth referrals are the one thing no system can trace.
-            </p>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Connect your CRM, give us access, answer the setup questions and show up to the
-              kickoff call. That&apos;s your part.
-            </p>
-            <p className="font-bold text-white text-lg">
-              Do your part and still can&apos;t see it? We refund your first month.
-            </p>
-            <ApplyCTA />
-          </ScrollReveal>
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <ScrollReveal className="order-2 lg:order-1">
+              <TracedLeadsMock />
+            </ScrollReveal>
+            <ScrollReveal className="order-1 lg:order-2">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                The 30-Day Clarity Guarantee
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
+                Inside 30 days you&apos;ll see where every digital lead came from.
+              </h2>
+              <p className="text-white/75 text-lg leading-relaxed mb-5">
+                Paid search, paid social, organic, your Google Business Profile and direct. Each
+                lead traced to the channel, campaign and page it came from, and what it turned
+                into. Word-of-mouth referrals are the one thing no system can trace.
+              </p>
+              <p className="text-white/75 text-lg leading-relaxed mb-5">
+                Connect your CRM, give us access, answer the setup questions and show up to the
+                kickoff call. That&apos;s your part.
+              </p>
+              <p className="font-bold text-white text-lg">
+                Do your part and still can&apos;t see it? We refund your first month.
+              </p>
+              <div className="[&>div]:text-left">
+                <ApplyCTA />
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
@@ -629,36 +642,59 @@ export default function LeadEnginePage() {
         compact
       />
 
-      {/* Application */}
+      {/* Application — copy left, form right, crew photo + brand glows behind */}
       <section
         id="apply"
-        className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden scroll-mt-24"
+        className="relative py-14 md:py-16 lg:py-24 bg-asp-surface-navy text-white overflow-hidden scroll-mt-24"
       >
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-60 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 65% 55% at 50% 0%, rgba(76, 201, 240, 0.16), transparent 70%)",
-          }}
-        />
-        <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center mb-8">
+        <div aria-hidden className="absolute inset-0 pointer-events-none">
+          <div
+            className="absolute inset-0 bg-cover opacity-30"
+            style={{
+              backgroundImage: "url(/images/backgrounds/viking-attic-tech.jpg)",
+              backgroundPosition: "center 35%",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-asp-surface-navy/70 via-asp-surface-navy/90 to-asp-surface-navy lg:bg-gradient-to-r lg:from-asp-surface-navy lg:via-asp-surface-navy/85 lg:to-asp-surface-navy/60" />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "radial-gradient(ellipse 55% 60% at 15% 20%, rgba(76, 201, 240, 0.22), transparent 62%), radial-gradient(ellipse 55% 55% at 88% 85%, rgba(159, 76, 255, 0.24), transparent 62%)",
+            }}
+          />
+        </div>
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <ScrollReveal>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 Get started
               </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5 leading-tight">
                 A short application, two minutes, no obligation.
               </h2>
-              <p className="text-white/65 text-lg">
+              <p className="text-white/70 text-lg leading-relaxed mb-8">
                 We review every application by hand and only move forward where we see a real fit.
               </p>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal>
-            <LeadEngineForm />
-          </ScrollReveal>
+              <ol className="space-y-4 list-none p-0 m-0">
+                {[
+                  "We read your application and look at your market.",
+                  "If it looks like a fit, we set up a discovery call.",
+                  "You get a straight answer on what we'd do and what it should return.",
+                ].map((t, i) => (
+                  <li key={t} className="flex items-start gap-4">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-asp-blue-light to-asp-purple font-black text-sm">
+                      {i + 1}
+                    </span>
+                    <span className="text-white/80 leading-relaxed pt-1">{t}</span>
+                  </li>
+                ))}
+              </ol>
+            </ScrollReveal>
+            <ScrollReveal>
+              <LeadEngineForm />
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 

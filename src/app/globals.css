@@ -304,10 +304,10 @@ html[data-standalone] body > footer {
   display: none !important;
 }
 
-/* ── Review marquee (/lead-engine) ── left to right, pauses on hover/touch so
-   the visitor can read. Reuses the seamless -50% marquee keyframes, reversed. */
+/* ── Review marquee (/lead-engine) ── right to left, pauses on hover/touch so
+   the visitor can read. Reuses the seamless -50% marquee keyframes. */
 .review-marquee {
-  animation: marquee 45s linear infinite reverse;
+  animation: marquee 45s linear infinite;
 }
 .review-marquee-wrap:hover .review-marquee,
 .review-marquee-wrap:focus-within .review-marquee,
