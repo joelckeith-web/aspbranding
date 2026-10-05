@@ -3,6 +3,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { LeadEngineForm } from "@/components/sections/LeadEngineForm";
 import testimonials from "@/data/testimonials.json";
+import { BrandIcon, type BrandIconName } from "@/components/ui/BrandIcon";
 
 // Ad landing page for ASP's core offer. NOT in the sitemap or nav; noindex —
 // traffic arrives from paid campaigns only.
@@ -14,7 +15,10 @@ import testimonials from "@/data/testimonials.json";
 //     goal is a client who signs and stays.
 //   - No price on the page. Qualification happens in the form; price is
 //     justified on the discovery call against what it should return.
-//   - Reviews sit directly under the hero. Shorter page overall.
+//   - Reviews sit directly under the hero as a left-to-right marquee of every
+//     home service review; it pauses on hover so a visitor can read.
+//   - Hero carries a real Viking crew photo (trades in action, not stock).
+//   - Shorter page overall.
 //   - Ad angles carried in the hero: "Tired of agencies…" (C1), lead-source
 //     guarantee (S3). The 30-day guarantee terms are unchanged (see /terms).
 //
@@ -28,17 +32,17 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-// Reviews shown under the hero — the three that speak to results and to
-// switching from another agency. First names only, quotes verbatim.
-const TOP_REVIEWS = ["Jason", "Kevin", "Brian"];
+// Every home service review, quotes verbatim, first names only. Tray G. is a
+// law firm, so he stays off a page sold to home service owners.
+const REVIEWS = testimonials.filter((t) => t.firstName !== "Tray G.");
 
 // Proof, labeled by what the number measures — never by trade or client name.
 const PROOF = [
   {
-    label: "First 90 days",
-    stat: "$81,000",
+    label: "Three-year growth",
+    stat: "$3M → $5.3M",
     detail:
-      "closed sales in the first 90 days on this exact system. Not pipeline — closed, invoiced work.",
+      "$3M in year one. $4.2M in year two. Tracking near $5.3M this year — three straight years of growth.",
   },
   {
     label: "Pipeline",
@@ -53,41 +57,47 @@ const PROOF = [
       "broke through the $3M ceiling it had been stuck at, and set out to do $5M this year.",
   },
   {
-    label: "Three-year growth",
-    stat: "$3M → $5.3M",
-    detail:
-      "$3M in year one. $4.2M in year two. Tracking near $5.3M this year — three straight years of growth.",
-  },
-  {
     label: "Search rankings",
     stat: "+$1M",
     detail:
       "on pace to add nearly $1M in new revenue this year off the back of search rankings.",
   },
+  {
+    label: "First 90 days",
+    stat: "$81,000",
+    detail:
+      "closed sales in the first 90 days on this exact system. Not pipeline — closed, invoiced work.",
+  },
 ];
 
-const SERVICES = [
+const SERVICES: { icon: BrandIconName; title: string; body: string }[] = [
   {
+    icon: "website",
     title: "A website built to book jobs",
     body: "Built on the same structure our highest-performing client sites run on. Fast, made to convert, and in your name.",
   },
   {
+    icon: "search",
     title: "SEO and AI search",
     body: "Show up when homeowners search Google, and get recommended when they ask an AI tool who to call.",
   },
   {
+    icon: "gbp",
     title: "Local SEO and reviews",
     body: "Your Google Business Profile tuned for urgent searches, plus a steady flow of new reviews from happy customers.",
   },
   {
+    icon: "content",
     title: "Content and social, handled",
     body: "Your social channels planned, written and designed to your brand, every month.",
   },
   {
+    icon: "data",
     title: "Connected to your CRM",
     body: "Jobber, Housecall Pro, Service Fusion — we connect it and set up the follow-up so no lead sits waiting.",
   },
   {
+    icon: "results",
     title: "Your marketing dashboard",
     body: "Every digital lead traced to its source — paid search, paid social, organic, your Business Profile and direct — in one dashboard you can check any time.",
   },
@@ -306,22 +316,27 @@ function CompareTable({
 }
 
 export default function LeadEnginePage() {
-  const reviews = TOP_REVIEWS.map((n) => testimonials.find((t) => t.firstName === n)).filter(
-    (t): t is (typeof testimonials)[number] => Boolean(t),
-  );
-
   return (
     <main id="primary" className="site-main">
       {/* Hero — promise left / application right */}
       <section className="relative bg-asp-black text-white overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 60% 55% at 25% 20%, rgba(76, 201, 240, 0.18), transparent 65%), radial-gradient(ellipse 55% 50% at 80% 80%, rgba(159, 76, 255, 0.16), transparent 65%)",
-          }}
-        />
+        {/* Real Viking crew on a rooftop install. Dark wash keeps the copy and
+            form readable; the crew stays visible on the right on desktop and
+            through the top of the hero on mobile. */}
+        <div aria-hidden className="absolute inset-0 pointer-events-none">
+          <div
+            className="absolute inset-0 bg-cover bg-[position:70%_center] lg:bg-center opacity-60"
+            style={{ backgroundImage: "url(/images/backgrounds/viking-rooftop-crew.jpg)" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-asp-black/25 via-asp-black/80 to-asp-black lg:bg-gradient-to-r lg:from-asp-black lg:via-asp-black/80 lg:to-asp-black/30" />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "radial-gradient(ellipse 60% 55% at 25% 20%, rgba(76, 201, 240, 0.14), transparent 65%), radial-gradient(ellipse 55% 50% at 80% 80%, rgba(159, 76, 255, 0.12), transparent 65%)",
+            }}
+          />
+        </div>
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14 lg:pt-32 lg:pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
@@ -377,16 +392,17 @@ export default function LeadEnginePage() {
               </h2>
             </div>
           </ScrollReveal>
-          <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-              {reviews.map((t) => (
-                <blockquote
-                  key={t.firstName}
-                  className="rounded-[var(--radius-asp-xl)] bg-white border border-gray-200 shadow-[0_12px_32px_-8px_rgba(15,23,42,0.15)] p-6"
-                >
+        </div>
+        {/* Left-to-right marquee. The list renders twice so the loop is
+            seamless; spacing lives inside each item (pr-5), not a flex gap. */}
+        <div className="review-marquee-wrap overflow-hidden">
+          <div className="review-marquee flex w-max items-start">
+            {[...REVIEWS, ...REVIEWS].map((t, i) => (
+              <div key={i} className="pr-5" aria-hidden={i >= REVIEWS.length ? true : undefined}>
+                <blockquote className="w-[300px] md:w-[360px] rounded-[var(--radius-asp-xl)] bg-white border border-gray-200 shadow-[0_12px_32px_-8px_rgba(15,23,42,0.15)] p-6">
                   <div className="flex gap-0.5 mb-3" aria-label="5 star rating">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                    {[...Array(5)].map((_, j) => (
+                      <svg key={j} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
                     ))}
@@ -394,8 +410,12 @@ export default function LeadEnginePage() {
                   <p className="text-gray-700 text-sm leading-relaxed mb-3">{t.quote}</p>
                   <footer className="text-asp-blue font-bold text-sm">— {t.firstName}</footer>
                 </blockquote>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
             <ApplyCTA />
           </ScrollReveal>
         </div>
@@ -485,6 +505,7 @@ export default function LeadEnginePage() {
                   key={c.title}
                   className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 shadow-[0_12px_32px_-8px_rgba(15,23,42,0.18)]"
                 >
+                  <BrandIcon name={c.icon} size="md" className="mb-4" />
                   <h3 className="font-black text-lg text-asp-blue mb-2 leading-snug">{c.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{c.body}</p>
                 </div>
@@ -605,6 +626,7 @@ export default function LeadEnginePage() {
         items={FAQS}
         eyebrow="Before you apply"
         heading="Straight answers to fair questions."
+        compact
       />
 
       {/* Application */}

@@ -38,18 +38,23 @@ export function FAQSection({
   items = DEFAULT_FAQS,
   eyebrow = "Questions, answered",
   heading = "Common questions from home service operators.",
+  compact = false,
 }: {
   items?: FAQItem[];
   eyebrow?: string;
   heading?: string;
+  /** Wider column, tighter rows, all collapsed on load. Used on paid landing pages. */
+  compact?: boolean;
 }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(compact ? null : 0);
 
   return (
     <>
       <FaqPageSchema items={items} />
-    <section className="py-16 md:py-20 lg:py-24 2xl:py-28 bg-asp-surface-light">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className={`${compact ? "py-12 md:py-16" : "py-16 md:py-20 lg:py-24 2xl:py-28"} bg-asp-surface-light`}
+    >
+      <div className={`${compact ? "max-w-5xl" : "max-w-3xl"} mx-auto px-4 sm:px-6 lg:px-8`}>
         <ScrollReveal>
           <div className="text-center mb-10 2xl:mb-14">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
@@ -62,7 +67,7 @@ export function FAQSection({
         </ScrollReveal>
 
         <ScrollReveal>
-          <div className="space-y-3">
+          <div className={compact ? "space-y-2" : "space-y-3"}>
             {items.map((item, i) => {
               const isOpen = openIndex === i;
               return (
@@ -77,7 +82,9 @@ export function FAQSection({
                   <button
                     type="button"
                     onClick={() => setOpenIndex(isOpen ? null : i)}
-                    className="w-full flex items-center justify-between gap-4 text-left p-5 md:p-6"
+                    className={`w-full flex items-center justify-between gap-4 text-left ${
+                      compact ? "px-4 py-3.5 md:px-6 md:py-4" : "p-5 md:p-6"
+                    }`}
                     aria-expanded={isOpen}
                   >
                     <span className="font-bold text-base md:text-lg text-asp-blue">
@@ -100,7 +107,7 @@ export function FAQSection({
                     </svg>
                   </button>
                   {isOpen && (
-                    <div className="px-5 md:px-6 pb-5 md:pb-6 -mt-1">
+                    <div className={`${compact ? "px-4 md:px-6 pb-4" : "px-5 md:px-6 pb-5 md:pb-6"} -mt-1`}>
                       <p className="text-asp-blue/75 leading-relaxed">{item.a}</p>
                     </div>
                   )}

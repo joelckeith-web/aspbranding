@@ -303,3 +303,22 @@ html[data-standalone] body > header,
 html[data-standalone] body > footer {
   display: none !important;
 }
+
+/* ── Review marquee (/lead-engine) ── left to right, pauses on hover/touch so
+   the visitor can read. Reuses the seamless -50% marquee keyframes, reversed. */
+.review-marquee {
+  animation: marquee 45s linear infinite reverse;
+}
+.review-marquee-wrap:hover .review-marquee,
+.review-marquee-wrap:focus-within .review-marquee,
+.review-marquee-wrap:active .review-marquee {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .review-marquee {
+    animation: none;
+  }
+  .review-marquee-wrap {
+    overflow-x: auto;
+  }
+}
