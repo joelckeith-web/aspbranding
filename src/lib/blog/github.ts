@@ -19,6 +19,8 @@ export const PUBLISH_QUEUE: string[] = [
   "does-geo-work",
   "hvac-seo",
   "how-to-rank-in-ai-search",
+  "google-business-profile-ai-data-source",
+  "llms-txt-for-local-business",
 ];
 
 // ═══════════════════════════════════════════════════════════
