@@ -4,38 +4,35 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { LeadEngineForm } from "@/components/sections/LeadEngineForm";
 import testimonials from "@/data/testimonials.json";
 
-// Ad landing page for the 90-Day Install offer. NOT in the sitemap or nav;
-// noindex until launch — traffic arrives from paid campaigns only.
+// Ad landing page for ASP's core offer. NOT in the sitemap or nav; noindex —
+// traffic arrives from paid campaigns only.
 //
-// v6 (2026-10-05). One page for three ad angles: "Tired of marketing
-// agencies?" (eyebrow), "We build it. Then we show you how to run it." (H1),
-// and the 30-day lead-source guarantee (subhead). The founding-ten offer and
-// the $7,500 setup anchor are GONE, and the Systems Audit is free.
+// v7 (2026-10-05, Joel's revision):
+//   - Positioned as an agency whose results the owner can check: we run the
+//     marketing AND build the dashboard that traces every digital lead. The
+//     "we build it, then you run it yourself" hand-off framing is GONE — the
+//     goal is a client who signs and stays.
+//   - No price on the page. Qualification happens in the form; price is
+//     justified on the discovery call against what it should return.
+//   - Reviews sit directly under the hero. Shorter page overall.
+//   - Ad angles carried in the hero: "Tired of agencies…" (C1), lead-source
+//     guarantee (S3). The 30-day guarantee terms are unchanged (see /terms).
 //
-// v5 (2026-08-03). The $997 sprint and the $10K pipeline guarantee are GONE.
-// The offer is $2,997/mo (or $3,850 with paid ads managed), a 90-day initial
-// term, and a 30-Day Clarity Guarantee measured on attribution being live for
-// NEW leads. Revenue figures are proof, never promise.
-//
-// Copy rules enforced here, from docs/joel-voice-profile.md:
-//   - One statement per section header. Never two sentences stacked.
-//   - No "not X — Y" antithesis as a rhetorical tic.
-//   - No riddle sentences, no redundant qualifiers ("up front").
-//   - Competitor comparisons stay factual. Joel is direct, never harsh.
-//
-// Visual rhythm is dark-dominant: light sections appear only where cards,
-// quotes, or the form need the contrast, and no two adjacent sections share
-// a treatment.
+// Copy rules: one statement per section header; no trade names; no turnaround
+// claims; no riddle sentences; "actually" only inside verbatim client quotes.
 
 export const metadata: Metadata = {
-  title: "The 90-Day Install — Your Marketing System, Built and Handed To You",
+  title: "See Exactly What Your Marketing Brings In",
   description:
-    "We build your home service business a complete marketing system — website, SEO, CRM integration, lead tracking — then teach you to run it. $2,997/month. Inside 30 days you'll have the system built and every digital lead tracked, or your first month is refunded.",
+    "ASP runs your website, SEO, local search and CRM connection, and builds you a dashboard that traces every digital lead to its source. See it for yourself inside 30 days, or your first month is refunded.",
   robots: { index: false, follow: false },
 };
 
-// Proof first. Labeled by what the number measures, never by trade or client
-// name — the no-trade-callout rule applies here as well as in the ads.
+// Reviews shown under the hero — the three that speak to results and to
+// switching from another agency. First names only, quotes verbatim.
+const TOP_REVIEWS = ["Jason", "Kevin", "Brian"];
+
+// Proof, labeled by what the number measures — never by trade or client name.
 const PROOF = [
   {
     label: "First 90 days",
@@ -69,58 +66,39 @@ const PROOF = [
   },
 ];
 
-// Pillar cards named for the problem each build kills — not deliverable types.
-const STACK = [
+const SERVICES = [
   {
-    problem: "Nobody finds you",
-    title: "A website built to book jobs, not win design awards",
-    body: "Built on the same structure our highest-performing client sites run on. Fast, conversion-first, and yours — you own the site and the code from day one.",
+    title: "A website built to book jobs",
+    body: "Built on the same structure our highest-performing client sites run on. Fast, made to convert, and in your name.",
   },
   {
-    problem: "Invisible on Google and AI",
-    title: "SEO + AEO that puts you where homeowners look",
-    body: "Rank when they search Google. Get recommended when they ask an AI tool who to call. Both matter now, and we build for both.",
+    title: "SEO and AI search",
+    body: "Show up when homeowners search Google, and get recommended when they ask an AI tool who to call.",
   },
   {
-    problem: "Ghost-town social pages",
-    title: "A content system that runs without you",
-    body: "A month-by-month engine for your social channels — planned, written, and designed to your brand. You never think about it.",
+    title: "Local SEO and reviews",
+    body: "Your Google Business Profile tuned for urgent searches, plus a steady flow of new reviews from happy customers.",
   },
   {
-    problem: "Competitors own the map pack",
-    title: "Local SEO + a review engine that compounds",
-    body: "Your Google Business Profile tuned to show up when the job is urgent, plus a system that turns happy customers into reviews on repeat.",
+    title: "Content and social, handled",
+    body: "Your social channels planned, written and designed to your brand, every month.",
   },
   {
-    problem: "Leads fall through the cracks",
-    title: "Wired into the CRM you already run",
-    body: "Jobber, Housecall Pro, Service Fusion — whatever you use, we connect it, then build the speed-to-lead workflow so no call sits waiting.",
+    title: "Connected to your CRM",
+    body: "Jobber, Housecall Pro, Service Fusion — we connect it and set up the follow-up so no lead sits waiting.",
   },
   {
-    problem: "No idea what's working",
-    title: "Tracking that proves where your digital leads came from",
-    body: "Custom form fields, UTM tagging, and source tracking across paid search, paid social, organic, your Business Profile, and direct traffic, all feeding one dashboard. This is the piece the guarantee runs on.",
+    title: "Your marketing dashboard",
+    body: "Every digital lead traced to its source — paid search, paid social, organic, your Business Profile and direct — in one dashboard you can check any time.",
   },
 ];
 
-// Comparisons stay factual and name no competitor. The category is the
-// argument; heat toward other agencies is off-voice.
 const VS_AGENCY = [
-  { them: "You get leads and a monthly report.", us: "You get leads and the system making them." },
+  { them: "You get a monthly report.", us: "You get a live dashboard and a monthly sit-down." },
+  { them: "Lead sources you take on faith.", us: "Every digital lead traced to its source." },
   { them: "The website lives on their platform.", us: "The website is yours. Code, domain, hosting." },
   { them: "Ad accounts sit in their name.", us: "Every account in your name from day one." },
-  { them: "Lead sources you have to take on faith.", us: "New leads traced to their source." },
-  { them: "Leaving means starting over.", us: "Leaving means taking a running system with you." },
-  { them: "Training isn't part of the service.", us: "A monthly review and a training library." },
-  { them: "Six to twelve month term.", us: "Ninety days, then cancel any time." },
-];
-
-const VS_COACHING = [
-  { them: "You get a playbook and a dashboard.", us: "You get a website, SEO, CRM, and tracking." },
-  { them: "The building happens after hours.", us: "We do the building. You run it after." },
-  { them: "Marketing execution is on you.", us: "Marketing execution is the service." },
-  { them: "Results ride on your implementation.", us: "A 30-day guarantee in writing." },
-  { them: "You implement the playbook yourself.", us: "The system runs before we teach it." },
+  { them: "Nobody looks at your margins.", us: "We go through your numbers every month." },
 ];
 
 const STEPS = [
@@ -142,7 +120,7 @@ const STEPS = [
   {
     step: "4",
     title: "Build + launch",
-    body: "Site, SEO, content, CRM, tracking — installed and running inside your first 90 days.",
+    body: "Site, SEO, content, CRM and your dashboard, live and running inside your first 90 days.",
   },
 ];
 
@@ -152,16 +130,8 @@ const FAQS = [
     a: "Connect your CRM, give us access, answer the setup questions, and show up to the kickoff call. That's your part. Inside your first 30 days you get the marketing system built and every digital lead traced to its source — paid search, paid social, organic, your Google Business Profile, and direct traffic. If you've done your part and you still can't see it, we refund your first month, release you from the rest of the 90 days, and you keep everything we built. Two limits worth stating plainly: word-of-mouth referrals can't be traced by any system, and the guarantee covers leads generated after your system goes live, not contacts already sitting in your CRM.",
   },
   {
-    q: "Why do you ask for 90 days?",
-    a: "The build itself moves fast. Ninety days is what it takes for the system to produce enough data to be worth acting on: rankings move, campaigns gather history, and your tracking fills with real jobs. After that you can cancel any time. If we miss the 30-day guarantee, you're out of the term early and you still keep everything.",
-  },
-  {
-    q: "What happens after the 90 days?",
-    a: "Your call, entirely. Cancel and you keep every asset — the website and its code, your accounts, your content, your data, transferred at no charge. Or stay, and we lock your rate for the next 12 months with no increases. Nothing renews by surprise; we walk through it together at your day-90 review.",
-  },
-  {
-    q: "Do I own the website?",
-    a: "Yes. The code, the domain, and the hosting account are in your name from day one. If you leave, it comes with you and it keeps working. There are no exit fees and nothing is held back. None of it was ever ours.",
+    q: "What does it cost?",
+    a: "It depends on what your market needs and whether you want paid ads managed. We walk through it on the discovery call, along with what it should return for your business, so you can judge it against real numbers.",
   },
   {
     q: "Is ad spend included?",
@@ -169,23 +139,23 @@ const FAQS = [
   },
   {
     q: "Do I have to run ads?",
-    a: "No. The $2,997 install is built on what you own — your website, search rankings, AI visibility, content, reviews, and the tracking underneath all of it. If you want paid ads managed on top, that tier is $3,850 a month and covers Google Local Services Ads, Google Ads, and Meta. Ads speed things up. They are not required.",
+    a: "No. The core service is built on what you own — your website, search rankings, AI visibility, content, reviews, and the tracking underneath all of it. If you want paid ads managed on top, we cover Google Local Services Ads, Google Ads, and Meta. Ads speed things up. They are not required.",
+  },
+  {
+    q: "Do I own the website?",
+    a: "Yes. The code, the domain, and the hosting account are in your name from day one, along with every ad and analytics account. Nothing is held back.",
   },
   {
     q: "Why do I need a CRM?",
-    a: "Because the guarantee runs on proof. Your CRM is where we trace digital leads back to their source, so when we show you where your work came from, the data is standing behind it. A CRM is required for this program — if you don't have one, we'll get you set up on Housecall Pro at our partner discount before the install starts.",
+    a: "Because the guarantee runs on proof. Your CRM is where we trace digital leads back to their source, so when we show you where your work came from, the data is standing behind it. A CRM is required for this program — if you don't have one, we'll get you set up on Housecall Pro at our partner discount before we start.",
   },
   {
     q: "What if I already have a website?",
     a: "We'll rebuild it on a structure that converts better, and you keep full ownership of the new one. If your current site is performing, we'll tell you that too. The point is booked jobs, not busywork.",
   },
   {
-    q: "How is this different from a coaching program?",
-    a: "Coaching gives you a playbook. The work still lands on you, after hours, on top of running your business. We build the system first — the site, the tracking, the CRM connection, all of it — and then teach you how it runs. You get the same understanding a coaching program promises, except the thing already exists when the teaching starts.",
-  },
-  {
     q: "What do you need from me?",
-    a: "Access to your accounts, honest answers to the setup questions, and one hour a month for the review call. That's the whole ask. The install is our job.",
+    a: "Access to your accounts, honest answers to the setup questions, and one hour a month for the review call. That's the whole ask.",
   },
 ];
 
@@ -237,7 +207,7 @@ function BlueWash() {
 }
 
 // Shared CTA — solid, bold, drop-shadowed text. One statement per button.
-function ApplyCTA({ label = "See if you qualify" }: { label?: string }) {
+function ApplyCTA({ label = "See what's in it for me" }: { label?: string }) {
   return (
     <div className="text-center mt-10">
       <a
@@ -336,7 +306,9 @@ function CompareTable({
 }
 
 export default function LeadEnginePage() {
-  const reviews = testimonials.filter((t) => t.firstName !== "Tray G.");
+  const reviews = TOP_REVIEWS.map((n) => testimonials.find((t) => t.firstName === n)).filter(
+    (t): t is (typeof testimonials)[number] => Boolean(t),
+  );
 
   return (
     <main id="primary" className="site-main">
@@ -354,21 +326,21 @@ export default function LeadEnginePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                Tired of marketing agencies?
+                Tired of agencies that can&apos;t show you results?
               </span>
               <h1 className="font-black text-4xl md:text-5xl 2xl:text-6xl leading-[1.08] mb-5">
-                We build it.{" "}
-                <span className="hero-text-gradient">Then we show you how to run it.</span>
+                See exactly what your{" "}
+                <span className="hero-text-gradient">marketing brings in.</span>
               </h1>
               <p className="text-white/75 text-lg leading-relaxed mb-6">
-                Your website, SEO, CRM and lead tracking, built in your name. Inside 30 days
-                you&apos;ll see where every digital lead came from, or we refund your first month.
+                We run your marketing and build you a dashboard that shows where every digital lead
+                came from. See it for yourself inside 30 days, or we refund your first month.
               </p>
               <ul className="space-y-2.5">
                 {[
-                  "Website, SEO, CRM and lead tracking, built for you",
+                  "Website, SEO and local search, run for you",
                   "Every digital lead traced to its source",
-                  "You own the site, the accounts and the data",
+                  "Every account in your name",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3 text-white/80 text-sm">
                     <svg
@@ -392,21 +364,55 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* Proof — first and biggest. */}
+      {/* Reviews — directly under the hero */}
+      <section className="py-14 md:py-16 lg:py-20 bg-white">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-10 max-w-4xl mx-auto">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                In their words
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
+                What owners say about working with ASP.
+              </h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal animation="stagger">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+              {reviews.map((t) => (
+                <blockquote
+                  key={t.firstName}
+                  className="rounded-[var(--radius-asp-xl)] bg-white border border-gray-200 shadow-[0_12px_32px_-8px_rgba(15,23,42,0.15)] p-6"
+                >
+                  <div className="flex gap-0.5 mb-3" aria-label="5 star rating">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3">{t.quote}</p>
+                  <footer className="text-asp-blue font-bold text-sm">— {t.firstName}</footer>
+                </blockquote>
+              ))}
+            </div>
+            <ApplyCTA />
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Proof */}
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden">
         <ImageWash src="/images/backgrounds/hero-trades-1.jpg" position="center 30%" />
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12 max-w-4xl mx-auto">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                Real operators. Real results.
+                Real results
               </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl">
                 What this system did for five home service businesses.
               </h2>
-              <p className="text-white/65 text-lg">
-                Five different markets, one system.
-              </p>
             </div>
           </ScrollReveal>
 
@@ -447,128 +453,68 @@ export default function LeadEnginePage() {
 
           <ScrollReveal>
             <p className="text-center text-white/45 text-sm mt-8 max-w-4xl mx-auto">
-              These are results from businesses running this system. Our guarantee covers the 30
-              days of clarity below. What comes after depends on your market and how you work it.
+              Results from businesses running this system. Our guarantee covers the 30 days of
+              clarity below. What comes after depends on your market.
             </p>
-            <ApplyCTA label="See if you qualify" />
+            <ApplyCTA label="See what we could do for you" />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* The comparison */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-40 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(76, 201, 240, 0.14), transparent 70%)",
-          }}
-        />
-        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center mb-12 max-w-4xl mx-auto">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                You&apos;ve probably tried both
-              </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
-                Both ways of buying help leave a gap.
-              </h2>
-              <p className="text-white/65 text-lg">
-                Hire an agency and you never learn how it works. Join a coaching program and the
-                building still lands on you. We do the building and the teaching.
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <CompareTable rows={VS_AGENCY} themLabel="A typical agency" />
-              <CompareTable rows={VS_COACHING} themLabel="A coaching program" />
-            </div>
-            <ApplyCTA label="See if you qualify" />
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* What gets installed — light relief, cards need the contrast */}
+      {/* What we run */}
       <section className="py-14 md:py-16 lg:py-20 bg-white">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-12 max-w-4xl mx-auto">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                What gets installed
+                What we run for you
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
-                Six problems that cost you jobs.
+                Everything that brings in work, in one place.
               </h2>
               <p className="text-gray-600 text-lg">
-                One system where every piece feeds the next, and every piece belongs to you from
-                day one.
+                Each piece feeds the next, and every account is in your name.
               </p>
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {STACK.map((c) => (
+              {SERVICES.map((c) => (
                 <div
                   key={c.title}
                   className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 shadow-[0_12px_32px_-8px_rgba(15,23,42,0.18)]"
                 >
-                  <span className="inline-block text-[11px] font-bold uppercase tracking-widest text-white bg-gradient-to-r from-asp-blue-light to-asp-purple rounded-full px-3 py-1 mb-4">
-                    {c.problem}
-                  </span>
                   <h3 className="font-black text-lg text-asp-blue mb-2 leading-snug">{c.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{c.body}</p>
                 </div>
               ))}
             </div>
-          </ScrollReveal>
-
-          <ScrollReveal>
-            <div className="mt-10 max-w-4xl mx-auto rounded-[var(--radius-asp-xl)] border-2 border-asp-purple/50 bg-asp-purple/[0.04] p-6 lg:p-8 text-center shadow-[0_12px_32px_-8px_rgba(159,76,255,0.25)]">
-              <p className="font-black text-lg text-asp-blue mb-2">
-                Also included
-              </p>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                A full brand kit built for you: logo system, colors, type, and guidelines, yours to
-                keep whatever you do next.
-                Plus early access to our internal procedures system, currently in development.
-              </p>
-            </div>
-            <ApplyCTA label="See if you qualify" />
+            <ApplyCTA />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* The numbers layer — the differentiator gets its own stage */}
+      {/* The dashboard + monthly review */}
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
         <ImageWash src="/images/backgrounds/team-at-work.jpg" position="center 40%" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              The part most marketing companies skip
+              See it for yourself
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
               Every month we sit down and go through your numbers.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Your margin by job type. Your breakeven. A look at your pricing. And a straight
-              answer on what your business can afford to spend on marketing, based on your own
-              numbers.
-            </p>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              One hour a month in your own dashboard, covering what&apos;s working, what
-              isn&apos;t, and what to do next. The training library covers the rest, so you learn
-              the system instead of depending on us to explain it.
+              Which channels brought in leads, what those leads turned into, and where your next
+              dollar should go. Your dashboard shows it any time. The monthly review is where we
+              decide what to do next.
             </p>
             <p className="text-white/60 leading-relaxed">
-              Most agencies won&apos;t look at your numbers. Most coaching programs won&apos;t
-              build your website. We do both, because you can&apos;t set a marketing budget
-              without knowing your margins.
+              We also look at your margin by job type and your breakeven, so your marketing budget
+              is set by your own numbers.
             </p>
-            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
@@ -585,60 +531,44 @@ export default function LeadEnginePage() {
               The 30-Day Clarity Guarantee
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              Inside 30 days you&apos;ll have the system built and every digital lead tracked.
+              Inside 30 days you&apos;ll see where every digital lead came from.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Connect your CRM. Give us access. Answer the setup questions. Show up to the kickoff
-              call. That&apos;s your part.
+              Paid search, paid social, organic, your Google Business Profile and direct. Each lead
+              traced to the channel, campaign and page it came from, and what it turned into.
+              Word-of-mouth referrals are the one thing no system can trace.
             </p>
             <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Inside your first 30 days you get the marketing system built and every digital lead
-              traced to its source — paid search, paid social, organic, your Google Business
-              Profile, and direct. Which channel, which campaign, which page, and what it turned
-              into. Enough to make real decisions with instead of guesses.
-            </p>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Word-of-mouth referrals are the one thing no system can trace, and we won&apos;t
-              pretend otherwise. Everything that arrives through a digital channel gets tracked. Do
-              your part and still can&apos;t see it? We refund your first month, release you from
-              the rest of the 90 days, and you keep everything we built.
+              Connect your CRM, give us access, answer the setup questions and show up to the
+              kickoff call. That&apos;s your part.
             </p>
             <p className="font-bold text-white text-lg">
-              We guarantee what we control. The revenue numbers above are proof from other
-              businesses, not a forecast for yours.
+              Do your part and still can&apos;t see it? We refund your first month.
             </p>
-            <ApplyCTA label="See if you qualify" />
+            <ApplyCTA />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Why 90 days — light relief */}
-      <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Why owners switch */}
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
+        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              The term
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-6 leading-tight">
-              Why we ask for 90 days.
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              The build moves fast. Ninety days is what it takes for that system to produce enough data to act on.
-            </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              After that, cancel any time. You keep the site, the accounts, the data, and the
-              tracking. We don&apos;t hold anything back, because none of it was ever ours.
-            </p>
-            <p className="font-bold text-asp-blue text-lg">
-              And if we miss the 30-day guarantee, you can walk right then and still keep
-              everything we built.
-            </p>
+            <div className="text-center mb-10">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                Why owners switch to ASP
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl">
+                You should be able to see what you&apos;re paying for.
+              </h2>
+            </div>
+            <CompareTable rows={VS_AGENCY} themLabel="A typical agency" />
           </ScrollReveal>
         </div>
       </section>
 
       {/* How it works */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
+      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden">
         <ImageWash src="/images/backgrounds/hero-trades-2.jpg" position="center 35%" />
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
@@ -646,13 +576,9 @@ export default function LeadEnginePage() {
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 How it works
               </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl">
                 From application to launch in four steps.
               </h2>
-              <p className="text-white/65 text-lg">
-                We don&apos;t sell this to everyone. We take businesses we know we can win for,
-                which is what makes the guarantee possible.
-              </p>
             </div>
           </ScrollReveal>
 
@@ -671,73 +597,6 @@ export default function LeadEnginePage() {
                 </div>
               ))}
             </div>
-            <ApplyCTA label="See if you qualify" />
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Review wall — light, quotes read best on paper */}
-      <section className="py-14 md:py-16 lg:py-20 bg-white">
-        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center mb-12 max-w-4xl mx-auto">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                In their words
-              </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue mb-4">
-                What operators say about working with ASP.
-              </h2>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal animation="stagger">
-            <div className="columns-1 md:columns-2 lg:columns-3 gap-5 [&>*]:mb-5">
-              {reviews.map((t) => (
-                <blockquote
-                  key={t.firstName}
-                  className="break-inside-avoid rounded-[var(--radius-asp-xl)] bg-white border border-gray-200 shadow-[0_12px_32px_-8px_rgba(15,23,42,0.15)] p-6"
-                >
-                  <div className="flex gap-0.5 mb-3" aria-label="5 star rating">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">{t.quote}</p>
-                  <footer className="text-asp-blue font-bold text-sm">— {t.firstName}</footer>
-                </blockquote>
-              ))}
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* What it costs */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-blue text-white overflow-hidden">
-        <BlueWash />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <ScrollReveal>
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              What it costs
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">
-              $2,997 a month for the whole install.
-            </h2>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Website, SEO and AEO, content and social, local SEO and reviews, CRM integration,
-              lead tracking, your numbers, and the monthly sit-down.
-            </p>
-            <p className="text-white/75 text-lg leading-relaxed mb-5">
-              Want paid ads managed on top?{" "}
-              <strong className="text-white">$3,850/month</strong> covers Google Local Services
-              Ads, Google Ads, and Meta. Ad spend is separate in both cases — you pay it directly
-              to the platforms from your own accounts, and ASP never collects a dollar of it.
-            </p>
-            <p className="text-white/75 text-lg leading-relaxed mb-2">
-              Stay past 90 days and we lock your rate for 12 months. No increases.
-            </p>
-            <ApplyCTA label="See if you qualify" />
           </ScrollReveal>
         </div>
       </section>
@@ -765,7 +624,7 @@ export default function LeadEnginePage() {
           <ScrollReveal>
             <div className="text-center mb-8">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                Apply now
+                Get started
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
                 A short application, two minutes, no obligation.
@@ -786,7 +645,7 @@ export default function LeadEnginePage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-3">
-              Find out if it&apos;s a fit with a free Systems Audit.
+              Not ready to apply? Start with a free Systems Audit.
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
               We&apos;ll audit your systems and walk you through it on a 45-minute call. You get a

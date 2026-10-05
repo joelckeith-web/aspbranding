@@ -79,7 +79,7 @@ const CONSENT_TEXT =
 // notification email shows which page converted.
 export function LeadEngineForm({
   variant = "A",
-  submitLabel = "Submit My Free Application",
+  submitLabel = "Show me what's possible",
 }: { variant?: string; submitLabel?: string } = {}) {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -240,7 +240,7 @@ export function LeadEngineForm({
   return (
     <div className="relative rounded-[var(--radius-asp-xl)] p-[2px] bg-asp-gradient-cta shadow-asp-xl">
       <div className="bg-white rounded-[calc(var(--radius-asp-xl)-2px)] p-6 md:p-8">
-        <h3 className="font-bold text-xl text-asp-blue mb-1">Apply for the 90-Day Install</h3>
+        <h3 className="font-bold text-xl text-asp-blue mb-1">See what we could do for your business</h3>
         <p className="text-gray-500 text-sm mb-6">
           Every application gets a discovery call first. We only take businesses we know we can win
           for.
