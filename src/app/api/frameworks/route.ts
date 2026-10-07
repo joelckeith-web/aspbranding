@@ -4,6 +4,7 @@ import { verifyRecaptcha } from "@/lib/recaptcha";
 import { checkSpam } from "@/lib/spam-filter";
 import { reviewSubmission } from "@/lib/ai-spam-review";
 import { appendRow } from "@/lib/sheets";
+import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 
 // Delivery handler for the gated lead magnet. Mirrors the /api/lead-engine
 // defense stack (honeypot → keyword filter → time-gate → reCAPTCHA → AI
@@ -159,6 +160,30 @@ export async function POST(request: Request) {
         { status: 502 },
       );
     }
+
+
+    // Server-side twin of the browser pixel event (Meta Conversions API).
+    // Reaches Meta even when the browser blocks the pixel; dedupes on event_id.
+    // Never throws, so tracking can never cost the lead.
+    const [firstName, ...rest] = String(name).trim().split(/\s+/);
+    const metaStatus = await sendMetaEvent({
+      eventName: "Lead",
+      eventId:
+        typeof body.metaEventId === "string" && /^[\w-]{8,80}$/.test(body.metaEventId)
+          ? body.metaEventId
+          : `lead-${Date.now()}`,
+      eventSourceUrl: request.headers.get("referer") || undefined,
+      ip: clientIp(request.headers),
+      userAgent: request.headers.get("user-agent") || undefined,
+      fbp: typeof body.fbp === "string" ? body.fbp : undefined,
+      fbc: resolveFbc(
+        typeof body.fbc === "string" ? body.fbc : undefined,
+        typeof body.fbclid === "string" ? body.fbclid : undefined,
+      ),
+      user: { email, phone, firstName, lastName: rest.join(" ") || undefined },
+      customData: { content_name: "5 Marketing Frameworks" },
+    });
+    console.log("[frameworks] meta capi:", metaStatus);
 
     // --- Notify ASP. Best-effort: a failure here must not cost us the lead. ---
     const utmRows = UTM_KEYS.filter((k) => typeof body[k] === "string" && body[k])

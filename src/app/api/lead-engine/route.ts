@@ -3,6 +3,7 @@ import { sendMail } from "@/lib/mailer";
 import { verifyRecaptcha } from "@/lib/recaptcha";
 import { checkSpam } from "@/lib/spam-filter";
 import { reviewSubmission } from "@/lib/ai-spam-review";
+import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 
 // Application handler for the 90-Day Install offer. Mirrors the
 // /api/contact defense stack (honeypot → keyword filter → time-gate →
@@ -110,6 +111,30 @@ export async function POST(request: Request) {
     if (review.errored) {
       console.warn("[lead-engine] AI review errored, failing open:", review.reason);
     }
+
+
+    // Server-side twin of the browser pixel event (Meta Conversions API).
+    // Reaches Meta even when the browser blocks the pixel; dedupes on event_id.
+    // Never throws, so tracking can never cost the lead.
+    const [firstName, ...rest] = String(name).trim().split(/\s+/);
+    const metaStatus = await sendMetaEvent({
+      eventName: "SubmitApplication",
+      eventId:
+        typeof body.metaEventId === "string" && /^[\w-]{8,80}$/.test(body.metaEventId)
+          ? body.metaEventId
+          : `apply-${Date.now()}`,
+      eventSourceUrl: request.headers.get("referer") || undefined,
+      ip: clientIp(request.headers),
+      userAgent: request.headers.get("user-agent") || undefined,
+      fbp: typeof body.fbp === "string" ? body.fbp : undefined,
+      fbc: resolveFbc(
+        typeof body.fbc === "string" ? body.fbc : undefined,
+        typeof body.fbclid === "string" ? body.fbclid : undefined,
+      ),
+      user: { email, phone, firstName, lastName: rest.join(" ") || undefined },
+      customData: { content_name: "90-Day Install Application" },
+    });
+    console.log("[lead-engine] meta capi:", metaStatus);
 
     // Source attribution block — whatever UTM/click-id params rode in.
     const utmRows = UTM_KEYS.filter((k) => typeof body[k] === "string" && body[k])

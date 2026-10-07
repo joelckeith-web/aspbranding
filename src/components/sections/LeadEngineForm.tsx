@@ -5,6 +5,7 @@
 // into hidden fields so every application carries its source (the same
 // attribution treatment the offer sells).
 import { useEffect, useRef, useState } from "react";
+import { metaCookies, newEventId } from "@/lib/meta-browser";
 
 declare global {
   interface Window {
@@ -147,6 +148,13 @@ export function LeadEngineForm({
 
     if (noWebsite) payload.websiteUrl = "I don't have one";
 
+    // Shared with the server-side (CAPI) event so Meta counts the application once.
+    const metaEventId = newEventId("apply");
+    payload.metaEventId = metaEventId;
+    const { fbp, fbc } = metaCookies();
+    if (fbp) payload.fbp = fbp;
+    if (fbc) payload.fbc = fbc;
+
     // Consent record: the answer, the exact wording shown, and when. Storing
     // only "Yes" proves nothing later — what they agreed to is the record.
     payload.marketingConsent = consent ? "Yes" : "No";
@@ -182,11 +190,16 @@ export function LeadEngineForm({
         if (typeof window !== "undefined") {
           // SubmitApplication, not Lead: the guide fires Lead, and Meta has to
           // tell a free download from a $36K-a-year application apart.
-          window.fbq?.("track", "SubmitApplication", {
-            content_name: "90-Day Install Application",
-            content_category: String(payload.revenue || "unspecified"),
-            lp_variant: variant,
-          });
+          window.fbq?.(
+            "track",
+            "SubmitApplication",
+            {
+              content_name: "90-Day Install Application",
+              content_category: String(payload.revenue || "unspecified"),
+              lp_variant: variant,
+            },
+            { eventID: metaEventId },
+          );
           window.gtag?.("event", "generate_lead", {
             event_category: "lead_engine",
             event_label: "90-Day Install Application",

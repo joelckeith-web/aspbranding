@@ -14,6 +14,7 @@
 // The guide is DELIVERED BY EMAIL, never as a direct link on the success
 // screen. A real address is the whole point of the gate.
 import { useEffect, useRef, useState } from "react";
+import { metaCookies, newEventId } from "@/lib/meta-browser";
 
 declare global {
   interface Window {
@@ -102,6 +103,13 @@ export function FrameworksForm({
 
     payload.lp_variant = variant;
 
+    // Shared with the server-side (CAPI) event so Meta counts the lead once.
+    const metaEventId = newEventId("lead");
+    payload.metaEventId = metaEventId;
+    const { fbp, fbc } = metaCookies();
+    if (fbp) payload.fbp = fbp;
+    if (fbc) payload.fbc = fbc;
+
     // Honeypot — silent success so bots don't learn the trap exists.
     if (payload.fax) {
       setFormState("success");
@@ -146,10 +154,12 @@ export function FrameworksForm({
         // Meta optimizes delivery against this event, so it fires only on a
         // verified submit — never on page load, never on the honeypot path.
         if (typeof window !== "undefined") {
-          window.fbq?.("track", "Lead", {
-            content_name: "5 Marketing Frameworks",
-            lp_variant: variant,
-          });
+          window.fbq?.(
+            "track",
+            "Lead",
+            { content_name: "5 Marketing Frameworks", lp_variant: variant },
+            { eventID: metaEventId },
+          );
           window.gtag?.("event", "generate_lead", {
             event_category: "frameworks",
             event_label: "5 Marketing Frameworks",
