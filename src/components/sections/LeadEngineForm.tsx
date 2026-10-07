@@ -6,6 +6,7 @@
 // attribution treatment the offer sells).
 import { useEffect, useRef, useState } from "react";
 import { metaCookies, newEventId } from "@/lib/meta-browser";
+import { isTestLead } from "@/lib/test-lead";
 
 declare global {
   interface Window {
@@ -187,7 +188,7 @@ export function LeadEngineForm({
         // Conversion signal for paid campaigns. Meta optimizes ad delivery
         // against this event, so it must fire only on a verified submit —
         // never on page load, and never on the honeypot path above.
-        if (typeof window !== "undefined") {
+        if (typeof window !== "undefined" && !isTestLead(payload.email)) {
           // SubmitApplication, not Lead: the guide fires Lead, and Meta has to
           // tell a free download from a $36K-a-year application apart.
           window.fbq?.(

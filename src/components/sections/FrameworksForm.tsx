@@ -15,6 +15,7 @@
 // screen. A real address is the whole point of the gate.
 import { useEffect, useRef, useState } from "react";
 import { metaCookies, newEventId } from "@/lib/meta-browser";
+import { isTestLead } from "@/lib/test-lead";
 
 declare global {
   interface Window {
@@ -153,7 +154,7 @@ export function FrameworksForm({
       if (res.ok) {
         // Meta optimizes delivery against this event, so it fires only on a
         // verified submit — never on page load, never on the honeypot path.
-        if (typeof window !== "undefined") {
+        if (typeof window !== "undefined" && !isTestLead(payload.email)) {
           window.fbq?.(
             "track",
             "Lead",

@@ -5,6 +5,7 @@ import { checkSpam } from "@/lib/spam-filter";
 import { reviewSubmission } from "@/lib/ai-spam-review";
 import { appendRow } from "@/lib/sheets";
 import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
+import { isTestLead } from "@/lib/test-lead";
 
 // Delivery handler for the gated lead magnet. Mirrors the /api/lead-engine
 // defense stack (honeypot → keyword filter → time-gate → reCAPTCHA → AI
@@ -100,13 +101,17 @@ export async function POST(request: Request) {
     }
 
     // AI second-pass — semantic vendor-vs-prospect classifier. Fails open.
-    const review = await reviewSubmission({
-      name,
-      email,
-      company: websiteUrl,
-      service: "5-marketing-frameworks",
-      message: `Website: ${websiteUrl} · Phone: ${phone || "not given"}`,
-    });
+    // Test-lane submissions skip it: it would drop an internal address.
+    const testLead = isTestLead(email);
+    const review = testLead
+      ? { classification: "prospect", errored: false, reason: "test lead" }
+      : await reviewSubmission({
+        name,
+        email,
+        company: websiteUrl,
+        service: "5-marketing-frameworks",
+        message: `Website: ${websiteUrl} · Phone: ${phone || "not given"}`,
+      });
     if (review.classification === "vendor") {
       console.log("[frameworks] AI flagged as vendor:", {
         email,
@@ -181,6 +186,7 @@ export async function POST(request: Request) {
         typeof body.fbclid === "string" ? body.fbclid : undefined,
       ),
       user: { email, phone, firstName, lastName: rest.join(" ") || undefined },
+      test: testLead,
       customData: { content_name: "5 Marketing Frameworks" },
     });
     console.log("[frameworks] meta capi:", metaStatus);
@@ -196,7 +202,7 @@ export async function POST(request: Request) {
 
     const notify = await sendMail({
       to: "info@aspbranding.com",
-      subject: `Frameworks download: ${name} — ${websiteUrl}`,
+      subject: `${testLead ? "[TEST] " : ""}Frameworks download: ${name} — ${websiteUrl}`,
       replyTo: email,
       html: `
         <h2>New 5 Frameworks download</h2>
@@ -236,7 +242,7 @@ export async function POST(request: Request) {
         typeof body.utm_campaign === "string" ? body.utm_campaign : "",
         typeof body.utm_source === "string" ? body.utm_source : "",
         marketingConsent || "",
-        "New",
+        testLead ? "TEST" : "New",
         "",
         "",
         "",

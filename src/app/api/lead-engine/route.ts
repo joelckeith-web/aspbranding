@@ -4,6 +4,7 @@ import { verifyRecaptcha } from "@/lib/recaptcha";
 import { checkSpam } from "@/lib/spam-filter";
 import { reviewSubmission } from "@/lib/ai-spam-review";
 import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
+import { isTestLead } from "@/lib/test-lead";
 
 // Application handler for the 90-Day Install offer. Mirrors the
 // /api/contact defense stack (honeypot → keyword filter → time-gate →
@@ -93,13 +94,17 @@ export async function POST(request: Request) {
     }
 
     // AI second-pass — semantic vendor-vs-prospect classifier. Fails open.
-    const review = await reviewSubmission({
-      name,
-      email,
-      company,
-      service: "90-day-lead-engine",
-      message: `Website: ${websiteUrl} · CRM: ${crm} · Revenue: ${revenue} · Avg job: ${jobValue}`,
-    });
+    // Test-lane submissions skip it: it would drop an internal address.
+    const testLead = isTestLead(email);
+    const review = testLead
+      ? { classification: "prospect", errored: false, reason: "test lead" }
+      : await reviewSubmission({
+        name,
+        email,
+        company,
+        service: "90-day-lead-engine",
+        message: `Website: ${websiteUrl} · CRM: ${crm} · Revenue: ${revenue} · Avg job: ${jobValue}`,
+      });
     if (review.classification === "vendor") {
       console.log("[lead-engine] AI flagged as vendor:", {
         email,
@@ -132,6 +137,7 @@ export async function POST(request: Request) {
         typeof body.fbclid === "string" ? body.fbclid : undefined,
       ),
       user: { email, phone, firstName, lastName: rest.join(" ") || undefined },
+      test: testLead,
       customData: { content_name: "90-Day Install Application" },
     });
     console.log("[lead-engine] meta capi:", metaStatus);
@@ -147,7 +153,7 @@ export async function POST(request: Request) {
 
     await sendMail({
       to: "info@aspbranding.com",
-      subject: `Lead Engine Application: ${name} — ${company} (${revenue})`,
+      subject: `${testLead ? "[TEST] " : ""}Lead Engine Application: ${name} — ${company} (${revenue})`,
       replyTo: email,
       html: `
         <h2>New 90-Day Install Application</h2>

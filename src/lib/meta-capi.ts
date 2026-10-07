@@ -32,6 +32,8 @@ export type MetaServerEvent = {
   fbc?: string;
   user?: MetaUserInput;
   customData?: Record<string, string | number>;
+  /** Test-lane submission: send only as a Test Events event, never as a real conversion. */
+  test?: boolean;
 };
 
 const sha256 = (value: string) => createHash("sha256").update(value).digest("hex");
@@ -79,6 +81,8 @@ export async function sendMetaEvent(event: MetaServerEvent): Promise<string> {
   const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
   const token = process.env.META_CAPI_ACCESS_TOKEN?.trim();
   if (!pixelId || !token) return "skipped: pixel id or access token not set";
+  const testCode = process.env.META_CAPI_TEST_CODE?.trim();
+  if (event.test && !testCode) return "skipped: test lead and META_CAPI_TEST_CODE not set";
 
   const u = event.user ?? {};
   const userData: Record<string, unknown> = {
@@ -110,7 +114,6 @@ export async function sendMetaEvent(event: MetaServerEvent): Promise<string> {
       },
     ],
   };
-  const testCode = process.env.META_CAPI_TEST_CODE?.trim();
   if (testCode) payload.test_event_code = testCode;
 
   try {
