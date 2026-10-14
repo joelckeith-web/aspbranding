@@ -23,7 +23,7 @@ export type MetaUserInput = {
 };
 
 export type MetaServerEvent = {
-  eventName: "Lead" | "SubmitApplication" | "Contact";
+  eventName: "Lead" | "SubmitApplication" | "Contact" | "CompleteRegistration";
   eventId: string;
   eventSourceUrl?: string;
   ip?: string;
