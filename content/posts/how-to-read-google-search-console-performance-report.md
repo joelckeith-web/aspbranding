@@ -6,7 +6,7 @@ dateModified: "2026-10-27"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and Partner at ASP."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "seo"
@@ -48,6 +48,10 @@ Here is the setup we use before reading anything:
 2. Click the CTR and Average position headings above the chart so all four metrics show.
 3. Widen the date range past the default three months. Google's traffic-drops guide suggests looking at the last 16 months to check whether a drop happens every year.
 4. Treat the newest data with care. Google notes that "the newest data can be preliminary, meaning it's still being collected and might change in the next few hours."
+
+![Google Search Console Performance report with total clicks, total impressions, average CTR and average position all turned on, shown by month from June 2025 to March 2026](/images/blog/search-console/gsc-performance-all-four-metrics.png)
+
+*A home inspection company we work with, Search Console Performance report, June 2025 to March 2026, by month, with all four metrics turned on. Client anonymized.*
 
 The table below sums up each metric in the order we read it. The definitions are Google's. The right-hand column is our own reading of each one.
 
