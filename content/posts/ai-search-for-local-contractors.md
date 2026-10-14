@@ -72,7 +72,7 @@ Perplexity is a separate AI search tool. Its [help center article on how Perplex
 
 AI Mode named four HVAC companies for this search. Their ratings ran from 4.6 to 4.9 stars, and their review counts ran from 1.0K to 4.9K. Every business it named had at least 1,000 Google reviews and a rating of 4.6 or higher.
 
-[Screenshot: AI Mode answer for "best HVAC company in Seattle", Oct 8, 2026]
+<!-- Screenshot: AI Mode answer for "best HVAC company in Seattle", Oct 8, 2026 -->
 
 The sources panel showed three sources before the "Show all" button. One was a contractor website, and two were Google Business Profiles for companies named in the answer. We did not record the sources behind "Show all," so we can't say what else the answer drew on.
 
@@ -84,7 +84,7 @@ Google's guide to AI features lists "Checking that your Merchant Center and Busi
 
 Perplexity, used while logged out, named two HVAC companies for "best HVAC company in Seattle." One of them also appeared in the AI Mode answer. The two tools showed different review counts for that company. AI Mode showed 4.9K reviews, while Perplexity cited a 2026 ranking that listed 4.9 stars and 4,306 reviews. We report both numbers as they appeared.
 
-[Screenshot: Perplexity answer for "best HVAC company in Seattle", Oct 8, 2026]
+<!-- Screenshot: Perplexity answer for "best HVAC company in Seattle", Oct 8, 2026 -->
 
 Perplexity listed 10 sources, and all 10 were lists or directories. One was a top-10 list on a website's blog, and we have not established who owns that site. The visible AI Mode sources for the same question were a contractor website and two business profiles. On this one day, the two tools answered the same question from very different kinds of pages.
 
@@ -96,7 +96,7 @@ We would not read this as a reason to buy placements on ranking sites or to chas
 
 This cost question brought up a different kind of source. For "how much does an outdoor kitchen cost in Austin," the AI Overview said a custom outdoor kitchen in Austin typically ranges from $20,000 to $60,000. It then split the price into tiers, from a basic grill island up to a complete outdoor living suite. Those are the AI Overview's figures, not ours, and they are not a quote for any project.
 
-[Screenshot: AI Overview for "how much does an outdoor kitchen cost in Austin", Oct 8, 2026]
+<!-- Screenshot: AI Overview for "how much does an outdoor kitchen cost in Austin", Oct 8, 2026 -->
 
 We recorded the first seven entries in the sources panel. Five were pages from Texas contractors, and four of those five were cost pages. The other two entries were videos, and more sources may have followed the first seven. The answer tied its price ranges to the contractor pages through citation chips, the small source links that sit beside a line of the answer.
 
@@ -110,7 +110,7 @@ We asked both Google features "how often should a furnace be serviced." This que
 
 The two answers agreed, but their sources did not. The AI Overview showed six sources: an online forum, an HVAC manufacturer, one HVAC contractor's website and three other websites we did not classify. AI Mode showed no cited sources for this answer, and a sponsored HVAC ad appeared below it. The two features shared no sources.
 
-[Screenshot: AI Overview and AI Mode answers for "how often should a furnace be serviced", Oct 8, 2026]
+<!-- Screenshot: AI Overview and AI Mode answers for "how often should a furnace be serviced", Oct 8, 2026 -->
 
 This does not mean AI Mode leaves out sources as a rule. Google's guide says AI Mode gives a response "with links to supporting websites." Google's help page adds a related point. It says that "in some cases, AI Mode will provide a set of web links if there's not high enough confidence in the quality or helpfulness of an AI response." The result is consistent with Google's note that the two features "may use different models and techniques, so the set of responses and links they show will vary."
 
@@ -120,13 +120,13 @@ This does not mean AI Mode leaves out sources as a rule. Google's guide says AI 
 
 For "best home inspector in Seattle," AI Mode listed a home inspection company we work with in the Seattle area first under "The Top Picks." The company had a 5.0 rating with 938 reviews. AI Mode described it as a "Highly popular, local favorite known for honest, meticulous evaluations and excellent customer care." The answer named them a second time later on, in a line about inspectors who "can adapt quickly to short timelines."
 
-[Screenshot: AI Mode answer for "best home inspector in Seattle", Oct 8, 2026]
+<!-- Screenshot: AI Mode answer for "best home inspector in Seattle", Oct 8, 2026 -->
 
 AI Mode also listed four other inspection companies. Their ratings ran from 4.9 to 5.0, and their review counts ran from 214 to 1.8K. That contrasts with the Seattle HVAC search, where every named company had at least 1,000 reviews. Here, a company with 938 reviews came first, ahead of one with 1.8K. These are two queries on one day, so they don't support a rule about how many reviews a business needs. For more on marketing basics for home inspectors, see our post on [home inspector marketing](/blog/home-inspector-marketing-the-foundation-for-success).
 
 For "best epoxy flooring company New Orleans," AI Mode named an epoxy flooring company we work with in New Orleans in the answer's first sentence. It was one of three "highly-rated local specialists," and the answer also listed it among the area's top picks. The company had a 5.0 rating.
 
-[Screenshot: AI Mode answer for "best epoxy flooring company New Orleans", Oct 8, 2026]
+<!-- Screenshot: AI Mode answer for "best epoxy flooring company New Orleans", Oct 8, 2026 -->
 
 **Key Takeaway:** Both clients were named near the top of AI Mode answers on October 8, 2026, and in the Seattle inspection search, a company with fewer reviews was listed ahead of one with more.
 
