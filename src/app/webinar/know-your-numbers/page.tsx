@@ -13,5 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default function KnowYourNumbersWebinar() {
-  return <WebinarPage topic="numbers" copy={copy} />;
+  return (
+    <WebinarPage topic="numbers" copy={copy}
+      hero={{ src: "/images/backgrounds/hero-trades-1.jpg", alt: "Home service technician working on an electrical panel", position: "center" }}
+    />
+  );
 }
