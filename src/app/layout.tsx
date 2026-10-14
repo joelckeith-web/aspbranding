@@ -93,7 +93,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html:
               'if(location.hostname==="leadengine.aspbranding.com"||' +
-              '/^\\/(lead-engine|frameworks)(\\/|$)/.test(location.pathname))' +
+              '/^\\/(lead-engine|frameworks|webinar)(\\/|$)/.test(location.pathname))' +
               'document.documentElement.setAttribute("data-standalone","");',
           }}
         />
