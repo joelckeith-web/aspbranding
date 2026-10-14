@@ -13,5 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default function AiSearchWebinar() {
-  return <WebinarPage topic="ai-search" copy={copy} />;
+  return (
+    <WebinarPage topic="ai-search" copy={copy}
+      hero={{ src: "/images/backgrounds/hero-chatgpt-laptop.jpg", alt: "Business owner typing a question into ChatGPT on a laptop", position: "center" }}
+    />
+  );
 }
