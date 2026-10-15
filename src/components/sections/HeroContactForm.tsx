@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { isTestLead } from "@/lib/test-lead";
 
 export function HeroContactForm() {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -18,6 +19,9 @@ export function HeroContactForm() {
         body: JSON.stringify(Object.fromEntries(data)),
       });
       if (res.ok) {
+        if (!isTestLead(String(data.get("email") ?? ""))) {
+          window.gtag?.("event", "generate_lead", { event_category: "contact", event_label: "Hero contact form" });
+        }
         setFormState("success");
         form.reset();
       } else {

@@ -10,6 +10,7 @@ import { CTABand } from "@/components/sections/CTABand";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema } from "@/components/schema/StructuredData";
 import { BUSINESS } from "@/lib/constants";
+import { isTestLead } from "@/lib/test-lead";
 import faqData from "@/data/faq.json";
 
 declare global {
@@ -114,6 +115,10 @@ export default function ContactPage() {
         body: JSON.stringify(payload),
       });
       if (res.ok) {
+        // Verified submit only — never on the honeypot path above.
+        if (!isTestLead(String(payload.email ?? ""))) {
+          window.gtag?.("event", "generate_lead", { event_category: "contact", event_label: "Contact page" });
+        }
         setFormState("success");
         form.reset();
       } else {
