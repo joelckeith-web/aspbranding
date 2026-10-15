@@ -6,7 +6,7 @@ dateModified: "2026-07-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -36,7 +36,7 @@ contentPillar: "business-growth-strategy"
 readingTime: "10 min read"
 ---
 
-Most home service businesses cross their first million dollars in revenue on word of mouth alone, with no marketing spend at all. That's proof the work is good. It isn't proof the business has a system that can carry it past that number. Referrals have a ceiling, and once an operator hits it, the phone stops ringing enough to keep growing no matter how strong last month's jobs were. This guide covers why that ceiling exists, how to tell if you've reached it, and what a home service business needs to build instead. ASP is a growth-systems marketing agency for home service operators based in Austin, Texas, and an Official Housecall Pro Affiliate Partner. We've watched this exact stall play out with contractors across HVAC, plumbing, roofing, and remodeling.
+Most home service businesses cross their first million dollars in revenue on word of mouth alone, with no marketing spend at all. That's proof the work is good. It isn't proof the business has a system that can carry it past that number. Referrals have a ceiling, and once an operator hits it, the phone stops ringing enough to keep growing no matter how strong last month's jobs were. This guide covers why that ceiling exists, how to tell if you've reached it, and what a home service business needs to build instead. ASP is a growth-systems marketing agency for home service operators based in Austin, Texas, and a Housecall Pro Affiliate. We've watched this exact stall play out with contractors across HVAC, plumbing, roofing, and remodeling.
 
 ## Why word of mouth has a ceiling
 

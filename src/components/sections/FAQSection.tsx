@@ -14,7 +14,7 @@ const DEFAULT_FAQS: FAQItem[] = [
   },
   {
     q: "What makes ASP different from other home service marketing agencies?",
-    a: "Three things. First, you own every asset we build — website, data, content, automations — no handover fees. Second, we're an Official Housecall Pro Affiliate Partner and we integrate the HCP AI stack, not just run ads on top of it. Third, every system we ship has been tested on our own book of business or our existing clients before it touches yours.",
+    a: "Three things. First, you own every asset we build — website, data, content, automations — no handover fees. Second, we're a Housecall Pro Affiliate and we integrate the HCP AI stack, not just run ads on top of it. Third, every system we ship has been tested on our own book of business or our existing clients before it touches yours.",
   },
   {
     q: "How quickly will I see results?",

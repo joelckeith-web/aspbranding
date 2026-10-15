@@ -6,7 +6,7 @@ dateModified: "2026-07-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -36,7 +36,7 @@ contentPillar: "business-growth-strategy"
 readingTime: "8 min read"
 ---
 
-Cross $1.5 million in annual revenue as a home service operator, and the instinct kicks in fast: hire. Another tech, another dispatcher, another set of hands to handle the work coming in. It feels like the obvious way to keep scaling a home service business, and for a while it might even work. Then payroll keeps climbing whether the phones are ringing that week or not, and the owner ends up managing more people instead of running the business. I'm Joel Keith, CEO of ASP, a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner. I've watched contractors hit this exact wall, and the ones who break through it aren't the ones who hired the most people. They're the ones who fixed the systems underneath the work first.
+Cross $1.5 million in annual revenue as a home service operator, and the instinct kicks in fast: hire. Another tech, another dispatcher, another set of hands to handle the work coming in. It feels like the obvious way to keep scaling a home service business, and for a while it might even work. Then payroll keeps climbing whether the phones are ringing that week or not, and the owner ends up managing more people instead of running the business. I'm Joel Keith, CEO of ASP, a growth-systems marketing agency for home service operators and a Housecall Pro Affiliate. I've watched contractors hit this exact wall, and the ones who break through it aren't the ones who hired the most people. They're the ones who fixed the systems underneath the work first.
 
 ## The $1.5 million wall
 

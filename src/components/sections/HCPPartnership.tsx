@@ -30,13 +30,13 @@ export function HCPPartnership() {
           <ScrollReveal>
             <div>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">
-                Official Affiliate Partner
+                Housecall Pro Affiliate
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
                 Your bridge between the trades and the AI that runs them.
               </h2>
               <p className="text-white/70 text-base lg:text-lg mb-4 leading-relaxed">
-                Housecall Pro is rolling out a serious AI stack &mdash; CSR AI, job attribution, automated dispatching, reporting. As an Official Affiliate Partner, we onboard, configure, and integrate it so it works in your business from day one.
+                Housecall Pro is rolling out a serious AI stack &mdash; CSR AI, job attribution, automated dispatching, reporting. As a Housecall Pro Affiliate, we onboard, configure, and integrate it so it works in your business from day one.
               </p>
               <p className="text-asp-blue-light text-base lg:text-lg mb-6 leading-relaxed font-semibold">
                 Switching to HCP or setting up for the first time? We&apos;ll get you onboarded the right way &mdash; and, where it applies, secure partner discounts available only on new HCP accounts.
@@ -49,7 +49,7 @@ export function HCPPartnership() {
                 <span aria-hidden>&rarr;</span>
               </Link>
               <p className="text-white/30 text-xs mt-4">
-                Official Housecall Pro Affiliate Partner &middot; Discounts for new HCP accounts only &middot; Full terms shared during your growth audit.
+                Housecall Pro Affiliate &middot; Discounts for new HCP accounts only &middot; Full terms shared during your growth audit.
               </p>
             </div>
           </ScrollReveal>

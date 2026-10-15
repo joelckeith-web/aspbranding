@@ -11,7 +11,7 @@ const OUTCOMES = [
   {
     label: "Better Operations",
     headline: "AI that works the job, not the dashboard.",
-    body: "We're an Official Housecall Pro Affiliate Partner. We set up the HCP AI tools — CSR AI, dispatch, attribution, reporting — so every lead is answered, tracked, and attributed to the channel that delivered it.",
+    body: "We're a Housecall Pro Affiliate. We set up the HCP AI tools — CSR AI, dispatch, attribution, reporting — so every lead is answered, tracked, and attributed to the channel that delivered it.",
     accent: "from-asp-purple to-asp-blue-light",
   },
   {

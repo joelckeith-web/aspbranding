@@ -127,7 +127,7 @@ export function Hero({
         {showTrustLogos && (
           <div className="mt-10 2xl:mt-16 flex flex-wrap items-center gap-10 md:gap-12">
             {[
-              { file: "hcp-affiliate.png", alt: "Housecall Pro Affiliate Partner" },
+              { file: "hcp-affiliate.png", alt: "Housecall Pro Affiliate" },
               { file: "google-partner-light.png", alt: "Google Partner — ASP" },
               { file: "meta-business-partner.webp", alt: "Meta Business Partner — ASP" },
               { file: "nahb-light.png", alt: "NAHB Member — ASP" },

@@ -2,19 +2,26 @@ import fs from "node:fs";
 import path from "node:path";
 
 /**
- * Trade pages: one industry hub per trade (/industries/<trade>), plus trade x
- * service pages (/seo/<trade>, /ppc/<trade>) and the Housecall Pro partner page.
+ * Trade landing pages: one industry hub per trade (/industries/<trade>), trade x
+ * service pages (/seo/<trade>, /ppc/<trade>) and the Housecall Pro page.
  * Copy lives in content/trade-pages/<kind>/<slug>.json, drafted from a sourced
- * fact pack and checked before it ships. status "review" = reachable for review
- * but noindexed and kept out of the sitemap and every link grid (same mechanism
- * as blog posts).
+ * fact pack and checked before it ships. Pages are landing pages (Joel 10/15):
+ * short blocks, cards and a package rate card, not long prose.
+ * status "review" = reachable for review but noindexed and kept out of the
+ * sitemap and every link grid (same mechanism as blog posts).
  */
 export type TradePageKind = "industry" | "seo" | "ppc" | "partner";
 
-export interface TradeSection {
-  heading: string;
-  paragraphs: string[];
-  bullets?: string[];
+export interface TradeCard {
+  title: string;
+  body: string;
+  href?: string;
+}
+
+export interface TradeStat {
+  value: string;
+  label: string;
+  source: string;
 }
 
 export interface TradePage {
@@ -24,13 +31,17 @@ export interface TradePage {
   status: "review" | "published";
   metaTitle: string;
   metaDescription: string;
-  h1: string;
-  intro: string;
-  sections: TradeSection[];
-  caseStudySlug?: string;
-  faqs: { question: string; answer: string }[];
-  related?: { label: string; href: string; title: string; body: string }[];
   dateModified: string;
+  hero: { eyebrow: string; h1: string; subhead: string; points: string[] };
+  why: { heading: string; intro: string; cards: TradeCard[] };
+  services: { heading: string; intro?: string; cards: TradeCard[] };
+  stats?: TradeStat[];
+  process: { heading: string; steps: TradeCard[] };
+  caseStudySlug?: string;
+  pricing: { heading: string; subhead: string };
+  faqs: { question: string; answer: string }[];
+  cta: { heading: string; body: string };
+  related?: { label: string; href: string; title: string; body: string }[];
 }
 
 const ROOT = path.join(process.cwd(), "content", "trade-pages");

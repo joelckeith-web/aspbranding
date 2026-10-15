@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "aeo"
@@ -34,7 +34,7 @@ contentPillar: "google-algorithm-updates"
 readingTime: "8 min read"
 ---
 
-This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, pressure washing, and other home service businesses across the US. Search is shifting faster than it has in a decade, and the home service operators who understand the shift first will own their local markets through 2026 and beyond.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and a Housecall Pro Affiliate. We work with HVAC, plumbing, roofing, home inspection, pressure washing, and other home service businesses across the US. Search is shifting faster than it has in a decade, and the home service operators who understand the shift first will own their local markets through 2026 and beyond.
 
 The short version: Google is no longer the only surface that matters. When a homeowner asks ChatGPT, Claude, Perplexity, or Google's AI Overview "who should I call for a clogged drain in Chandler," an AI-generated answer shows up before any of the ten blue links. If your business is not cited in that answer, you are invisible to a growing share of your market — even if you still rank #1 organically.
 

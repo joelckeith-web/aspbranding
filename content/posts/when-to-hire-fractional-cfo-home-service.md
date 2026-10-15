@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -40,7 +40,7 @@ Most home service operators are ready for a fractional CFO between $3M and $5M i
 
 A few months ago I was on a call with an HVAC operator doing a little over $3M in revenue, and he asked me a question his bookkeeper couldn't answer. It was a simple one on the surface: "If I add a fourth install crew next quarter, how does that change my cash position six months out?" His bookkeeper sent back a spreadsheet with the current month's labor costs. That was it. No forecast, no scenario, no cash curve. The operator had the money to hire the crew. He just had no way to see around the corner, which meant he was going to either decide by gut or not decide at all.
 
-That's the moment a home service business needs a fractional CFO. ASP is a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner, and our [Fractional C-Suite practice](/fractional) exists because this exact gap — bookkeeper on one side, real financial decisions on the other, nothing in between — shows up in almost every operator we talk to above the $3M mark. This post walks through the five symptoms that say it's time, what a fractional CFO for a home service business actually does, how the role differs from a bookkeeper or controller, what it costs, and what to expect in the first 90 days.
+That's the moment a home service business needs a fractional CFO. ASP is a growth-systems marketing agency for home service operators and a Housecall Pro Affiliate, and our [Fractional C-Suite practice](/fractional) exists because this exact gap — bookkeeper on one side, real financial decisions on the other, nothing in between — shows up in almost every operator we talk to above the $3M mark. This post walks through the five symptoms that say it's time, what a fractional CFO for a home service business actually does, how the role differs from a bookkeeper or controller, what it costs, and what to expect in the first 90 days.
 
 ## Five symptoms your bookkeeper cannot solve
 

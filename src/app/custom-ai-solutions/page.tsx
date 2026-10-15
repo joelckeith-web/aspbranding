@@ -229,7 +229,7 @@ const RELATED = [
     label: "Platform",
     href: "/ai-integration",
     title: "AI Integration",
-    body: "On Housecall Pro? Its built-in AI stack, configured by an Official Affiliate Partner.",
+    body: "On Housecall Pro? Its built-in AI stack, configured by a Housecall Pro Affiliate.",
   },
   {
     label: "Pillar",

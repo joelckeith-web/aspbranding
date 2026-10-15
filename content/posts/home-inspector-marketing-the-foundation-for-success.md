@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -34,7 +34,7 @@ contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
 
-This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with home inspectors as well as HVAC, plumbing, roofing, and other trade businesses across the US. Home inspection is one of the most referral-driven service categories in the home services space — and also one where the winners have quietly moved on from referral-only marketing.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and a Housecall Pro Affiliate. We work with home inspectors as well as HVAC, plumbing, roofing, and other trade businesses across the US. Home inspection is one of the most referral-driven service categories in the home services space — and also one where the winners have quietly moved on from referral-only marketing.
 
 The old model was simple. Build a relationship with a handful of real estate agents, deliver clean reports on time, and your calendar fills. That model still works, partially. But agents now vet inspectors online before referring, homebuyers Google their agent's recommendations before booking, and the inspectors dominating metro markets all have a serious digital presence backing up their word-of-mouth reputation.
 

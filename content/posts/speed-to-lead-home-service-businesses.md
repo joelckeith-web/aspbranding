@@ -6,7 +6,7 @@ dateModified: "2026-07-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -38,7 +38,7 @@ contentPillar: "business-growth-strategy"
 readingTime: "10 min read"
 ---
 
-Speed to lead is the single most overlooked number in home service marketing — the time between a homeowner trying to reach you and a real person answering. ASP is a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. Slow speed to lead is one of the most common revenue leaks we find, and it has nothing to do with how good the marketing is. This is the pillar guide for how we think about it as part of [our Growth System](/growth-system): what speed to lead means, the real math behind a single missed call, why weekends decide more revenue than weekdays, and what it takes to fix the problem for good.
+Speed to lead is the single most overlooked number in home service marketing — the time between a homeowner trying to reach you and a real person answering. ASP is a growth-systems marketing agency for home service operators based in Austin, TX, and a Housecall Pro Affiliate. Slow speed to lead is one of the most common revenue leaks we find, and it has nothing to do with how good the marketing is. This is the pillar guide for how we think about it as part of [our Growth System](/growth-system): what speed to lead means, the real math behind a single missed call, why weekends decide more revenue than weekdays, and what it takes to fix the problem for good.
 
 ## What Speed to Lead Means for a Home Service Business
 

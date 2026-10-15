@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "local-seo"
@@ -40,7 +40,7 @@ For a home service business under about $300K in revenue, invest in your Google 
 
 An HVAC operator I met with a few months back asked me, almost apologetically, "do I even need a website? My Google Business Profile is bringing in pretty much all my work." He was doing around $280K, running two trucks, and his GBP had 60-something reviews averaging 4.9. His instinct wasn't wrong — it just had an expiration date he didn't see coming. Six months later, a competitor across town with a real site and schema markup started eating his non-emergency searches, and his lead volume flattened even as his ad spend stayed the same.
 
-That conversation is the cleanest version of a question we get almost weekly at ASP — a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner. Google Business Profile vs website for home service operators isn't really a debate for mature businesses; it's a sequencing problem. And the answer shifts, meaningfully, at each revenue tier. This post walks through what each surface actually does, where they overlap, where they don't, and how we'd sequence the investment depending on where you are. It's part of [our Growth System](/growth-system), specifically the Local SEO component we build out through [Local SEO Pro](/local-seo-pro). For the full local SEO picture this sequencing fits into, see our [Local SEO Operator's Playbook](/blog/local-seo-for-home-service-businesses).
+That conversation is the cleanest version of a question we get almost weekly at ASP — a growth-systems marketing agency for home service operators and a Housecall Pro Affiliate. Google Business Profile vs website for home service operators isn't really a debate for mature businesses; it's a sequencing problem. And the answer shifts, meaningfully, at each revenue tier. This post walks through what each surface actually does, where they overlap, where they don't, and how we'd sequence the investment depending on where you are. It's part of [our Growth System](/growth-system), specifically the Local SEO component we build out through [Local SEO Pro](/local-seo-pro). For the full local SEO picture this sequencing fits into, see our [Local SEO Operator's Playbook](/blog/local-seo-for-home-service-businesses).
 
 ## Why this isn't really either-or (for mature operators)
 

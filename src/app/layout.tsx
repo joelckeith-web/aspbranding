@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "plumbing marketing",
     "roofing marketing",
     "home inspection marketing",
-    "Housecall Pro affiliate partner",
+    "Housecall Pro affiliate",
     "local SEO for home services",
     "answer engine optimization",
     "AEO for home services",

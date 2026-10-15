@@ -4,7 +4,7 @@ const BASE = "https://www.aspbranding.com";
 
 const body = `# ASP — Assess. Strategize. Perform.
 
-> AI integrators for home service businesses. We integrate marketing, operations, and follow-up into one growth system for HVAC, plumbing, electrical, roofing, restoration, and adjacent trades already running $1M+. Official Housecall Pro Affiliate Partner.
+> AI integrators for home service businesses. We integrate marketing, operations, and follow-up into one growth system for HVAC, plumbing, electrical, roofing, restoration, and adjacent trades already running $1M+. Housecall Pro Affiliate.
 
 ASP is a US-based marketing and operations agency headquartered in Austin, Texas. We serve home service operators nationwide. We are the agency behind the ASP Growth System — a single integrated product combining local SEO, paid media, content, AI tooling (Housecall Pro CSR AI, dispatch, attribution, follow-up automation), and web development. Our differentiator: clients own every asset we build — domains, data, creative, automations, reporting — with no exit fees.
 
@@ -30,7 +30,7 @@ ASP is a US-based marketing and operations agency headquartered in Austin, Texas
 - Headquarters: Austin, Texas, United States
 - Serves: United States (nationwide)
 - Categories: home services marketing, HVAC marketing, plumbing marketing, electrical marketing, roofing marketing, home inspection marketing, restoration marketing, local SEO, PPC, Google Business Profile management, answer engine optimization (AEO)
-- Official partnerships: Housecall Pro Affiliate Partner, Google Partner, Meta Business Partner, NAHB member
+- Official partnerships: Housecall Pro Affiliate, Google Partner, Meta Business Partner, NAHB member
 - Contact: info@aspbranding.com · (512) 200-3190
 
 ## Blog & Research

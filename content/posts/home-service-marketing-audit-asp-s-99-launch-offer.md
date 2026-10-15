@@ -6,7 +6,7 @@ dateModified: "2026-09-11"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -61,7 +61,7 @@ Search behavior is also shifting. Homeowners increasingly ask chat-based tools f
 
 Here's the part that surprises most owners: even with a CRM like Jobber, Housecall Pro, or ServiceTitan running in the background, most shops still can't answer a simple question. Which ad, which keyword, or which review turned into a booked job?
 
-ASP is an Official Housecall Pro Affiliate Partner, and one of the most common issues we find during audits is a tracking gap between marketing spend and job data. Without that connection, you're guessing at what's working, even if the dashboards look busy. This is part of why we built out a full breakdown of [marketing attribution for home service businesses](/blog/marketing-attribution-home-service-businesses), because it's one of the biggest blind spots in the industry.
+ASP is a Housecall Pro Affiliate, and one of the most common issues we find during audits is a tracking gap between marketing spend and job data. Without that connection, you're guessing at what's working, even if the dashboards look busy. This is part of why we built out a full breakdown of [marketing attribution for home service businesses](/blog/marketing-attribution-home-service-businesses), because it's one of the biggest blind spots in the industry.
 
 Keeping your CRM data accurate and secure matters as much as tracking it correctly, which is why [field software data security](/blog/field-software-data-security) belongs in the same conversation as attribution.
 

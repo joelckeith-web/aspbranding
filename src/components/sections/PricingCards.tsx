@@ -9,6 +9,7 @@ const TIERS = [
     tagline: "For businesses building their first real growth engine.",
     features: [
       "Monthly performance report",
+      "Organic SEO (service pages, content, technical fixes)",
       "Local SEO Pro (GBP, citations, heatmap, rankings)",
       "StormFront weather-triggered content",
       "Content Creation Package (social + GBP content)",
@@ -84,20 +85,35 @@ const ENTRY_PRODUCTS = [
   },
 ];
 
-export function PricingCards() {
+/**
+ * packagesOnly: the trade landing pages show whole packages only (Joel 10/15:
+ * no line-item rate cards), so the Fractional sidecar and the standalone
+ * product row are hidden there.
+ */
+export function PricingCards({
+  packagesOnly = false,
+  eyebrow = "Pricing",
+  heading = "The full Growth System.",
+  subheading = "Marketing, operations, and AI integration run as one system. Pick the tier that matches where your business is today — every tier scales into the next as you grow.",
+}: {
+  packagesOnly?: boolean;
+  eyebrow?: string;
+  heading?: string;
+  subheading?: string;
+} = {}) {
   return (
     <section id="pricing" className="py-16 md:py-20 lg:py-24 2xl:py-32 text-white">
       <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="text-center mb-12 2xl:mb-16 max-w-3xl mx-auto">
             <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Pricing
+              {eyebrow}
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4">
-              The full Growth System.
+              {heading}
             </h2>
             <p className="text-white/70 text-lg">
-              Marketing, operations, and AI integration run as one system. Pick the tier that matches where your business is today — every tier scales into the next as you grow.
+              {subheading}
             </p>
           </div>
         </ScrollReveal>
@@ -197,6 +213,8 @@ export function PricingCards() {
           </div>
         </ScrollReveal>
 
+        {!packagesOnly && (
+        <>
         {/* Fractional C-Suite sidecar */}
         <ScrollReveal>
           <div className="mt-10 max-w-3xl mx-auto">
@@ -263,6 +281,8 @@ export function PricingCards() {
             </div>
           </ScrollReveal>
         </div>
+        </>
+        )}
       </div>
     </section>
   );

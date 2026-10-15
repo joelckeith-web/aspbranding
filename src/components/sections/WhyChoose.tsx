@@ -7,7 +7,7 @@ const PROOFS = [
   },
   {
     title: "Housecall Pro native.",
-    body: "Official Affiliate Partner. We know the HCP AI stack cold and we train your team on it.",
+    body: "Housecall Pro Affiliate. We know the HCP AI stack cold and we train your team on it.",
   },
   {
     title: "Real AI, not AI slop.",

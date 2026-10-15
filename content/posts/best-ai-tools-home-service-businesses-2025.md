@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "tech-stack"
@@ -34,7 +34,7 @@ contentPillar: "tech-stack-case-study"
 readingTime: "9 min read"
 ---
 
-This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. Home service businesses across HVAC, plumbing, roofing, home inspection, pressure washing, and electrical have been testing AI tools aggressively through 2025 and into 2026. We've seen what works, what wastes money, and what creates more problems than it solves.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and a Housecall Pro Affiliate. Home service businesses across HVAC, plumbing, roofing, home inspection, pressure washing, and electrical have been testing AI tools aggressively through 2025 and into 2026. We've seen what works, what wastes money, and what creates more problems than it solves.
 
 The AI market for service businesses has matured fast. A year ago, most tools were novelty. Today, a focused AI stack can measurably move booked-appointment rates, lead quality, and operational efficiency. But the noise-to-signal ratio is still high — which is why this guide is organized around the specific tools we recommend to clients, the ones we tell them to skip, and how to sequence a rollout. If you want the strategy behind the stack — where to start and how to avoid overspending — read our guide to [adopting AI in a home service business](/blog/ai-for-home-service-businesses) first.
 
@@ -52,7 +52,7 @@ What to use it for:
 
 ### 2. Housecall Pro AI features for CSR and job attribution
 
-ASP is an Official Housecall Pro Affiliate Partner, and the HCP AI suite is the core integration we deploy for clients. The CSR AI handles after-hours inbound, first-touch qualification, and booking — with full handoff to a human when the conversation needs judgment. Job attribution closes the loop between marketing spend and actual revenue in a way generic analytics tools can't. Both are built into the platform, which eliminates the integration tax that kills most bolted-on solutions. Details on how we wire this in: [AI integration for home service businesses](/ai-integration).
+ASP is a Housecall Pro Affiliate, and the HCP AI suite is the core integration we deploy for clients. The CSR AI handles after-hours inbound, first-touch qualification, and booking — with full handoff to a human when the conversation needs judgment. Job attribution closes the loop between marketing spend and actual revenue in a way generic analytics tools can't. Both are built into the platform, which eliminates the integration tax that kills most bolted-on solutions. Details on how we wire this in: [AI integration for home service businesses](/ai-integration).
 
 ### 3. A scheduling layer with AI-assisted routing
 

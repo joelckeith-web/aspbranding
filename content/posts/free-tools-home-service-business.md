@@ -6,7 +6,7 @@ dateModified: "2026-06-01"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "tech-stack"
@@ -26,7 +26,7 @@ schema:
     - question: "What is the best free tool to get more home service customers?"
       answer: "Your Google Business Profile, with no close second. It's free, it puts you in the local map pack where homeowners search, and it includes the call and directions buttons right on a phone. An optimized, actively managed profile out-earns almost any paid tool a new operator could buy. We walk through how to optimize it in our local SEO playbook."
     - question: "Why run scheduling, CRM, and invoicing on Housecall Pro instead of separate free apps?"
-      answer: "Because the four jobs are really one workflow: a lead becomes a scheduled job, becomes an invoice, becomes a payment. Run them on separate free apps and that workflow breaks at every handoff — data gets re-keyed, jobs slip, and you can't tell which marketing produced the revenue. Housecall Pro runs all four in one place, on your phone, in the field. As an Official Housecall Pro Affiliate Partner, it's the platform we set our clients up on."
+      answer: "Because the four jobs are really one workflow: a lead becomes a scheduled job, becomes an invoice, becomes a payment. Run them on separate free apps and that workflow breaks at every handoff — data gets re-keyed, jobs slip, and you can't tell which marketing produced the revenue. Housecall Pro runs all four in one place, on your phone, in the field. As a Housecall Pro Affiliate, it's the platform we set our clients up on."
     - question: "What free tool helps me track my marketing budget?"
       answer: "We built one for exactly this. The free ASP Marketing Budget Calculator shows you how much to spend on marketing based on your revenue and growth goals, then breaks it down by channel. It takes the guesswork out of the single number most operators get wrong. Pair it with Google Analytics, which is also free, to see what that spend is actually producing."
 status: "published"
@@ -44,7 +44,7 @@ A quick warning before the list. The real trap isn't spending too little on soft
 
 Three rules. First, the tool has to be free or genuinely low-cost — no "free trial that bills you in 14 days" bait. Second, it has to be something home service pros actually use, not generic small-business advice that ignores how a trade business really runs. Third, no fluff and no pay-to-play placements.
 
-One disclosure up front: ASP is an Official Housecall Pro Affiliate Partner. It's the platform we recommend for the operational core of a home service business, and the link to it below is our affiliate link — if you sign up through it, we may earn a referral, at no extra cost to you. We recommend it because it's what we set our own clients up on, not the other way around.
+One disclosure up front: ASP is a Housecall Pro Affiliate. It's the platform we recommend for the operational core of a home service business, and the link to it below is our affiliate link — if you sign up through it, we may earn a referral, at no extra cost to you. We recommend it because it's what we set our own clients up on, not the other way around.
 
 **Key Takeaway:** Keep the free tools where free genuinely works. Consolidate the core of the business — scheduling, CRM, invoicing, payments — onto one low-cost platform instead of duct-taping five apps together.
 
@@ -83,7 +83,7 @@ The better move — and the one we set up for clients — is to run that entire 
 - **Invoicing and estimates** — build and send professional estimates and invoices from your phone, on the job site.
 - **Getting paid** — card payments and consumer financing built in, so you collect on the spot instead of chasing checks.
 
-The reason one platform beats five free apps is the data: the lead, the job, the invoice, and the payment all live in one system, so nothing gets re-entered and every job is attributable back to the marketing that produced it. As an Official Housecall Pro Affiliate Partner, this is the platform we put our clients on. [Start with Housecall Pro here](https://housecallpro.partnerlinks.io/xcqb094jxkp3).
+The reason one platform beats five free apps is the data: the lead, the job, the invoice, and the payment all live in one system, so nothing gets re-entered and every job is attributable back to the marketing that produced it. As a Housecall Pro Affiliate, this is the platform we put our clients on. [Start with Housecall Pro here](https://housecallpro.partnerlinks.io/xcqb094jxkp3).
 
 **On your business phone number:** you've got two paths. The simple, cheap option is **Google Voice** for a dedicated business line that rings your cell and keeps work and personal calls separate. The better option, once you're spending on marketing, is real call tracking with **CallRail** — and it [integrates directly with Housecall Pro](https://www.housecallpro.com/features/callrail/), so every call ties to the customer record and you can finally see which ads, GBP, or campaigns are actually making the phone ring.
 
@@ -141,7 +141,7 @@ Your Google Business Profile, with no close second. It's free, it puts you in th
 
 ### Why run scheduling, CRM, and invoicing on Housecall Pro instead of separate free apps?
 
-Because the four jobs are really one workflow: a lead becomes a scheduled job, becomes an invoice, becomes a payment. Run them on separate free apps and that workflow breaks at every handoff — data gets re-keyed, jobs slip, and you can't tell which marketing produced the revenue. Housecall Pro runs all four in one place, on your phone, in the field. As an Official Housecall Pro Affiliate Partner, it's the platform we set our clients up on.
+Because the four jobs are really one workflow: a lead becomes a scheduled job, becomes an invoice, becomes a payment. Run them on separate free apps and that workflow breaks at every handoff — data gets re-keyed, jobs slip, and you can't tell which marketing produced the revenue. Housecall Pro runs all four in one place, on your phone, in the field. As a Housecall Pro Affiliate, it's the platform we set our clients up on.
 
 ### What free tool helps me track my marketing budget?
 

@@ -14,7 +14,7 @@ const PRODUCT_SUMMARIES = [
     title: "AI Integration",
     url: `${BASE}/ai-integration`,
     summary:
-      "ASP is an Official Housecall Pro Affiliate Partner. We configure and operate the HCP AI stack inside home service businesses: CSR AI (automated customer service response), dispatch AI, job attribution (which marketing channel booked which job), follow-up automation, and reporting. Attribution feeds back into Google Ads, Meta, and LSA so paid media optimizes to booked revenue rather than cost-per-click.",
+      "ASP is a Housecall Pro Affiliate. We configure and operate the HCP AI stack inside home service businesses: CSR AI (automated customer service response), dispatch AI, job attribution (which marketing channel booked which job), follow-up automation, and reporting. Attribution feeds back into Google Ads, Meta, and LSA so paid media optimizes to booked revenue rather than cost-per-click.",
   },
   {
     title: "AI Consulting",
@@ -64,7 +64,7 @@ export async function GET() {
 
   const header = `# ASP — Full Content Index
 
-> AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system. Official Housecall Pro Affiliate Partner. Headquartered in Austin, Texas; serves the United States nationwide.
+> AI integrators for home service businesses. Marketing, operations, and follow-up integrated into one growth system. Housecall Pro Affiliate. Headquartered in Austin, Texas; serves the United States nationwide.
 
 Source of truth: ${BASE}
 Sitemap: ${BASE}/sitemap.xml
@@ -78,7 +78,7 @@ Concise index (llms.txt): ${BASE}/llms.txt
 - Founded: operating as ASP Branding
 - Headquarters: Austin, Texas, United States
 - Contact: info@aspbranding.com · (512) 200-3190
-- Official partnerships: Housecall Pro Affiliate Partner, Google Partner, Meta Business Partner, NAHB
+- Official partnerships: Housecall Pro Affiliate, Google Partner, Meta Business Partner, NAHB
 - Market: home service businesses (HVAC, plumbing, electrical, roofing, home inspection, restoration, pest control, landscaping, flooring, remodeling)
 - Revenue band of target client: $1M–$20M
 - Differentiator: clients own every asset — domains, data, creative, automations — with no exit fees.

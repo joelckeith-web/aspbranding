@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -34,7 +34,7 @@ contentPillar: "business-growth-strategy"
 readingTime: "9 min read"
 ---
 
-This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses across the US. We also compete with a lot of SEO agencies. This guide is written to help a home service operator choose the right partner — which may or may not be us.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and a Housecall Pro Affiliate. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses across the US. We also compete with a lot of SEO agencies. This guide is written to help a home service operator choose the right partner — which may or may not be us.
 
 Choosing the wrong SEO agency is one of the more expensive mistakes a home service business can make. Bad agencies don't just fail to deliver; they can trigger Google penalties, lock up your own assets, and burn six to twelve months you can't get back. The good news is that the red flags are consistent and easy to spot once you know what to look for.
 

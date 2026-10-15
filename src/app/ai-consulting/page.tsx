@@ -142,7 +142,7 @@ const FAQS = [
   {
     question: "What's the difference between AI Integration and AI Consulting at ASP?",
     answer:
-      "AI Integration is one platform: the Housecall Pro AI stack, configured by an Official Affiliate Partner. AI Consulting covers the whole business — automations for data entry, follow-up, scheduling, and paperwork, custom AI tools like an SOP search, and builds that don't exist off the shelf. If you're on Housecall Pro and want its built-in AI running right, start with AI Integration. For everything else, start here.",
+      "AI Integration is one platform: the Housecall Pro AI stack, configured by a Housecall Pro Affiliate. AI Consulting covers the whole business — automations for data entry, follow-up, scheduling, and paperwork, custom AI tools like an SOP search, and builds that don't exist off the shelf. If you're on Housecall Pro and want its built-in AI running right, start with AI Integration. For everything else, start here.",
   },
   {
     question: "What kinds of work can you automate?",
@@ -381,7 +381,7 @@ export default function AIConsultingPage() {
                 className="w-auto h-8 md:h-10"
               />
               <span className="font-bold text-xs uppercase tracking-widest text-asp-blue-light">
-                Official Housecall Pro Affiliate Partner
+                Housecall Pro Affiliate
               </span>
             </div>
           </ScrollReveal>
@@ -520,7 +520,7 @@ export default function AIConsultingPage() {
             label: "Platform",
             href: "/ai-integration",
             title: "AI Integration",
-            body: "Already on Housecall Pro? Its built-in AI stack — CSR AI, attribution, follow-up — configured by an Official Affiliate Partner.",
+            body: "Already on Housecall Pro? Its built-in AI stack — CSR AI, attribution, follow-up — configured by a Housecall Pro Affiliate.",
           },
           {
             label: "Pillar",
@@ -565,7 +565,7 @@ export default function AIConsultingPage() {
               </Link>
             </div>
             <p className="text-gray-400 text-xs mt-6">
-              Official Housecall Pro Affiliate Partner · Every workflow, account, and report built in your name · No exit fees.
+              Housecall Pro Affiliate · Every workflow, account, and report built in your name · No exit fees.
             </p>
           </ScrollReveal>
         </div>

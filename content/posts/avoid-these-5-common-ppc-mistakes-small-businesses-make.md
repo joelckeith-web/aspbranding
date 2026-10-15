@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "ppc"
@@ -34,7 +34,7 @@ contentPillar: "service-deep-dive"
 readingTime: "7 min read"
 ---
 
-This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses across the US. PPC is one of the fastest ways for a home service business to generate leads — and one of the fastest ways to waste money if run without discipline. The mistakes we see are remarkably consistent across operators and trades. Fix these five and your paid search performance will improve measurably.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and a Housecall Pro Affiliate. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses across the US. PPC is one of the fastest ways for a home service business to generate leads — and one of the fastest ways to waste money if run without discipline. The mistakes we see are remarkably consistent across operators and trades. Fix these five and your paid search performance will improve measurably.
 
 For the full context on how paid search integrates with the rest of your channel mix, see our [PPC advertising guide for home service businesses](/blog/ppc-advertising-for-home-service-businesses). What follows is the focused diagnostic on where campaigns go wrong.
 

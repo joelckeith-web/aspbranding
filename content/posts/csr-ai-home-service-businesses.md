@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "tech-stack"
@@ -22,7 +22,7 @@ schema:
     - question: "How is CSR AI different from a regular chatbot?"
       answer: "A regular chatbot sits on your website and answers text questions. CSR AI answers the phone. It's a voice agent — it picks up on the second ring, talks in natural cadence, handles interruptions, and writes a structured job record into your CRM when it's done. Chatbots handle web leads. CSR AI handles the channel where 50 to 70% of home service leads actually come in. Very different problem."
     - question: "Can CSR AI actually book jobs into Housecall Pro?"
-      answer: "Yes. A properly integrated CSR AI reads the Housecall Pro calendar in real time, matches the caller's availability to open slots, creates the customer record, writes the job type and notes, and sends the confirmation text. As a Housecall Pro Affiliate Partner, this is one of the four capabilities we deploy in our AI Integration hub. The booking isn't a CSV upload at the end of the day — it's a live write to HCP while the caller is still on the line."
+      answer: "Yes. A properly integrated CSR AI reads the Housecall Pro calendar in real time, matches the caller's availability to open slots, creates the customer record, writes the job type and notes, and sends the confirmation text. As a Housecall Pro Affiliate, this is one of the four capabilities we deploy in our AI Integration hub. The booking isn't a CSV upload at the end of the day — it's a live write to HCP while the caller is still on the line."
     - question: "What happens when the AI cannot answer a caller's question?"
       answer: "It warm-transfers to a human — either your on-call CSR or an after-hours voicemail with a captured transcript. The key design principle is the AI knows what it doesn't know. A well-built CSR AI will confidently handle the 70% of calls that are routine booking, FAQ, or dispatch questions, and escalate the 30% that need judgment. The handoff is logged so the human has context, not a cold pickup."
     - question: "Is CSR AI better than a live answering service?"
@@ -40,7 +40,7 @@ CSR AI is a voice agent that answers your business phone the way a trained custo
 
 It's 7:42 on a Tuesday night in August. A homeowner's AC just quit, the house is 86 degrees, she's got two kids and a dog, and she's calling the third HVAC company on the Google results page because the first two went to voicemail. The operator running the business she's calling is at his daughter's softball game. He'll see the missed call at 9:30, call back at 9:45, and by then she's already on the schedule with a competitor who picked up. That missed call was probably a $1,200 job. Multiply it by a busy week and you're looking at real money walking out the door — not because the operator is bad at ops, but because he never built the [answer layer underneath the phone](/blog/speed-to-lead-home-service-businesses).
 
-That's the story behind CSR AI for home service businesses. ASP is a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner, and the phone gap — calls coming in, nobody picking up, revenue quietly leaking — is one of the most common failures we diagnose. This post walks through what CSR AI actually is, how it plugs into Housecall Pro, the four things it handles well, where it still needs a human, and what the real numbers look like. It's the CSR AI capability in our [AI Integration service](/ai-integration), explained the way we'd explain it in a working session. CSR AI is one play in a bigger picture — for how it fits with everything else, start with our guide to [adopting AI in a home service business](/blog/ai-for-home-service-businesses).
+That's the story behind CSR AI for home service businesses. ASP is a growth-systems marketing agency for home service operators and a Housecall Pro Affiliate, and the phone gap — calls coming in, nobody picking up, revenue quietly leaking — is one of the most common failures we diagnose. This post walks through what CSR AI actually is, how it plugs into Housecall Pro, the four things it handles well, where it still needs a human, and what the real numbers look like. It's the CSR AI capability in our [AI Integration service](/ai-integration), explained the way we'd explain it in a working session. CSR AI is one play in a bigger picture — for how it fits with everything else, start with our guide to [adopting AI in a home service business](/blog/ai-for-home-service-businesses).
 
 ## Why the phone is still the #1 home service conversion point
 
@@ -130,7 +130,7 @@ Different channel, different job. Chatbots sit on your website and answer text q
 
 ### Can CSR AI actually book jobs into Housecall Pro?
 
-Yes, when it's integrated properly. A real integration reads the live dispatch board, matches openings to the caller's availability, creates the customer and job records, and triggers the confirmation text — all during the call. As an Official Housecall Pro Affiliate Partner, this is how we build it for clients. It's one of the four capabilities in our AI Integration hub alongside job attribution, follow-up automation, and attribution into ad platforms.
+Yes, when it's integrated properly. A real integration reads the live dispatch board, matches openings to the caller's availability, creates the customer and job records, and triggers the confirmation text — all during the call. As a Housecall Pro Affiliate, this is how we build it for clients. It's one of the four capabilities in our AI Integration hub alongside job attribution, follow-up automation, and attribution into ad platforms.
 
 ### Is CSR AI better than a live answering service?
 

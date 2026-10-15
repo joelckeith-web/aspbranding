@@ -6,7 +6,7 @@ dateModified: "2026-09-03"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "tech-stack"
@@ -30,7 +30,7 @@ contentPillar: "tech-stack-case-study"
 readingTime: "6 min read"
 ---
 
-This guide is published by ASP — a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner.
+This guide is published by ASP — a growth-systems marketing agency for home service operators and a Housecall Pro Affiliate.
 
 Every week brings a new AI tool that promises to book more jobs, answer your phones, and run your office while you sleep. Some of it is real. A lot of it is noise. For a busy home service owner, the hard part isn't believing AI matters — it's knowing where to start without lighting money on fire.
 

@@ -6,7 +6,7 @@ dateModified: "2026-09-03"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "business-growth"
@@ -28,7 +28,7 @@ schema:
     - question: "How accurate is Google Ads attribution for home service leads?"
       answer: "Google Ads' own reporting is accurate about clicks and form submissions inside its platform, but it doesn't know whether the lead became a booked job. It will tell you 100 leads came in at $45 each — it won't tell you 18 of those booked and the average ticket was $620. To get from lead volume to booked revenue, you have to feed conversion data back into Google Ads from your CRM. Google's own documentation on conversion tracking covers the mechanics."
     - question: "Can Housecall Pro feed attribution data back into Google Ads?"
-      answer: "Yes, this is the closed-loop piece most operators never build. When a job is booked and completed in Housecall Pro, that outcome — including revenue — can be pushed back to Google Ads as an offline conversion. Google then optimizes bidding around booked revenue instead of raw leads. As a Housecall Pro Affiliate Partner, we build this loop as part of our growth system engagements. It's one of the highest-leverage changes an operator can make, and almost nobody does it."
+      answer: "Yes, this is the closed-loop piece most operators never build. When a job is booked and completed in Housecall Pro, that outcome — including revenue — can be pushed back to Google Ads as an offline conversion. Google then optimizes bidding around booked revenue instead of raw leads. As a Housecall Pro Affiliate, we build this loop as part of our growth system engagements. It's one of the highest-leverage changes an operator can make, and almost nobody does it."
     - question: "How long does it take to build a working attribution system?"
       answer: "For a $1M–$3M operator, a minimum-viable attribution system takes about 30 days — call tracking deployed, UTM discipline on every campaign, CRM source fields populated. Getting to full closed-loop, where booked revenue is flowing back into the ad platforms, typically takes 60 to 90 days because it depends on the CRM being clean and the team being trained to log source data consistently. Anyone promising same-week attribution is selling you dashboards, not a system."
 status: "published"
@@ -40,7 +40,7 @@ Marketing attribution is how a home service business proves which marketing chan
 
 A few months ago I sat across from an operator running about $1.2M in revenue who told me he'd spent $47K on Google Ads the previous year and had no idea how many of those dollars turned into booked jobs. Not a rough estimate — no idea. The ads manager showed leads. Housecall Pro showed revenue. Nothing connected the two. He signed the renewal check every quarter because stopping felt riskier than continuing, which is maybe the worst reason to spend $47K on anything.
 
-That's the story behind marketing attribution for home service businesses. ASP is a growth-systems marketing agency for home service operators and an Official Housecall Pro Affiliate Partner, and this specific gap — spend on one side, revenue on the other, a black box in the middle — is the single most common problem we diagnose. It's not a skill problem. It's a system problem. And it's fixable. This post walks through what attribution actually means, the four data sources you need, which model to use when, and how to close the loop between Housecall Pro and your ad platforms. It's the Attribution component of [our Growth System](/growth-system), explained the way we'd explain it in a working session.
+That's the story behind marketing attribution for home service businesses. ASP is a growth-systems marketing agency for home service operators and a Housecall Pro Affiliate, and this specific gap — spend on one side, revenue on the other, a black box in the middle — is the single most common problem we diagnose. It's not a skill problem. It's a system problem. And it's fixable. This post walks through what attribution actually means, the four data sources you need, which model to use when, and how to close the loop between Housecall Pro and your ad platforms. It's the Attribution component of [our Growth System](/growth-system), explained the way we'd explain it in a working session.
 
 ## The real cost of guessing which marketing works
 
@@ -91,7 +91,7 @@ The mechanics are straightforward. When a lead comes in from Google Ads, Google 
 
 I had a conversation with an HVAC operator recently that went basically, "hey, we're spending $12K a month on Google Ads and our cost per lead is $60, which feels okay." And I said, "okay, but what's your cost per booked job? And what's your cost per booked job for LSA versus Search versus Performance Max?" Crickets. Because none of that was being tracked. Three weeks later, with closed-loop in place, we found out LSA was producing leads at $85 that booked at 45%, and Performance Max was producing leads at $38 that booked at 8%. The cheap leads were the expensive ones. You can only see that with closed-loop attribution.
 
-As a Housecall Pro Affiliate Partner we build this loop as part of our [AI Integration hub engagements](/ai-integration) — it's one of the four capabilities we deploy. It's not magic. It's plumbing. But it's plumbing almost nobody else installs. Attribution is one play in a bigger picture — for how it fits with everything else, start with our guide to [adopting AI in a home service business](/blog/ai-for-home-service-businesses).
+As a Housecall Pro Affiliate we build this loop as part of our [AI Integration hub engagements](/ai-integration) — it's one of the four capabilities we deploy. It's not magic. It's plumbing. But it's plumbing almost nobody else installs. Attribution is one play in a bigger picture — for how it fits with everything else, start with our guide to [adopting AI in a home service business](/blog/ai-for-home-service-businesses).
 
 **Key Takeaway:** Closed-loop attribution from Housecall Pro back to the ad platforms is the single highest-leverage attribution move a home service operator can make. It converts Google from an impression-and-lead buyer into a booked-revenue buyer.
 

@@ -6,7 +6,7 @@ dateModified: "2026-04-23"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "seo"
@@ -34,7 +34,7 @@ contentPillar: "google-algorithm-updates"
 readingTime: "8 min read"
 ---
 
-This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and an Official Housecall Pro Affiliate Partner. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses nationwide. Search looks different in 2026 than it did even twelve months ago, and the strategies that worked on a 2023 checklist are now half the picture.
+This guide is published by ASP — a growth-systems marketing agency for home service operators based in Austin, TX, and a Housecall Pro Affiliate. We work with HVAC, plumbing, roofing, home inspection, and other home service businesses nationwide. Search looks different in 2026 than it did even twelve months ago, and the strategies that worked on a 2023 checklist are now half the picture.
 
 This is a working playbook for home service operators who want to rank on Google in 2026 — and increasingly, in the AI-generated answers that now sit above the organic results. It assumes you're running a real business, not a content farm. Every recommendation below is something we deploy for paying clients.
 

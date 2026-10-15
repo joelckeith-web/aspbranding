@@ -46,7 +46,7 @@ const COMPONENTS = [
   },
   {
     title: "Housecall Pro Integration",
-    body: "Official HCP Affiliate Partner. Every AI feature HCP ships — CSR AI, dispatch, attribution, reporting — configured for your business from day one.",
+    body: "Housecall Pro Affiliate. Every AI feature HCP ships — CSR AI, dispatch, attribution, reporting — configured for your business from day one.",
   },
   {
     title: "Attribution Stack",
@@ -381,7 +381,7 @@ export default function GrowthSystemPage() {
                 Built by an operator. Run by operators.
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">
-                ASP is led by Joel Keith &mdash; founder, CEO, and a marketing operator who has spent years inside home service companies, building and refining the systems we now ship to clients. Every tactic in the Growth System has been deployed, measured, broken, and rebuilt against real client revenue. Every play we run has a number on the other side of it.
+                ASP is led by Joel Keith &mdash; CEO, partner, and a marketing operator who has spent years inside home service companies, building and refining the systems we now ship to clients. Every tactic in the Growth System has been deployed, measured, broken, and rebuilt against real client revenue. Every play we run has a number on the other side of it.
               </p>
               <p className="text-gray-600 text-base lg:text-lg leading-relaxed mt-5">
                 That&apos;s why the answer is specific. It&apos;s why the reporting ties to booked revenue. And it&apos;s why every recommendation we make is grounded in what we&apos;ve already seen work.
@@ -406,7 +406,7 @@ export default function GrowthSystemPage() {
             label: "Pillar",
             href: "/ai-integration",
             title: "AI Integration",
-            body: "The Housecall Pro AI stack — CSR AI, attribution, follow-up — integrated into your business by an Official Affiliate Partner.",
+            body: "The Housecall Pro AI stack — CSR AI, attribution, follow-up — integrated into your business by a Housecall Pro Affiliate.",
           },
           {
             label: "Pricing",

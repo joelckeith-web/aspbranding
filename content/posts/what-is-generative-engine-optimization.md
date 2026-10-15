@@ -6,7 +6,7 @@ dateModified: "2026-10-02"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
-  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is an Official Housecall Pro Affiliate Partner."
+  bio: "Joel Keith is CEO and a partner at ASP, a growth-systems marketing agency for home service operators. He is a marketing operator who has spent years inside home service companies, building and refining the systems ASP now runs for clients. ASP is a Housecall Pro Affiliate."
   avatar: "/images/team/joel-keith.avif"
   website: "https://aspbranding.com"
 category: "aeo"
@@ -40,7 +40,7 @@ readingTime: "7 min read"
 
 Generative engine optimization, or GEO, is the work of getting your business found, described correctly and recommended when someone asks an AI assistant a question. The assistants people mean are tools like ChatGPT, Perplexity, Claude and Gemini. When a homeowner asks one of them who to call about a leaking water heater, the reply comes back as a written answer that may name a few businesses. GEO is about whether your business appears in that answer and whether what it says about you is true.
 
-This guide comes from ASP, a marketing agency for home service businesses and an Official Housecall Pro Affiliate Partner. It covers what GEO means, what the AI companies say about how their tools find information, how GEO fits next to SEO and AEO, and what an owner can realistically do. The audience for these tools has grown quickly. A [Pew Research Center survey from February 2026](https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/) found that about half of U.S. adults now report using AI chatbots, and about four in ten say they use them to search for information. Our [generative engine optimization service page](/geo) explains how we approach this work for clients.
+This guide comes from ASP, a marketing agency for home service businesses and a Housecall Pro Affiliate. It covers what GEO means, what the AI companies say about how their tools find information, how GEO fits next to SEO and AEO, and what an owner can realistically do. The audience for these tools has grown quickly. A [Pew Research Center survey from February 2026](https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/) found that about half of U.S. adults now report using AI chatbots, and about four in ten say they use them to search for information. Our [generative engine optimization service page](/geo) explains how we approach this work for clients.
 
 ## What Is Generative Engine Optimization?
 

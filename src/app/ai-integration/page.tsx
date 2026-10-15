@@ -11,7 +11,7 @@ import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredD
 export const metadata: Metadata = {
   title: "AI Integration for Home Service Businesses",
   description:
-    "Official Housecall Pro Affiliate Partner. We integrate the HCP AI stack — CSR AI, dispatch, attribution, reporting — into your home service business, from day one.",
+    "Housecall Pro Affiliate. We integrate the HCP AI stack — CSR AI, dispatch, attribution, reporting — into your home service business, from day one.",
 };
 
 const CAPABILITIES = [
@@ -46,7 +46,7 @@ const PROCESS = [
   {
     step: "02",
     title: "HCP Configuration",
-    body: "If you&apos;re new to HCP, we set you up under the Affiliate Partner program (where new-account discounts apply). If you&apos;re already on HCP, we audit the config and fix what&apos;s misaligned.",
+    body: "If you&apos;re new to HCP, we set you up under the Housecall Pro affiliate program (where new-account discounts apply). If you&apos;re already on HCP, we audit the config and fix what&apos;s misaligned.",
   },
   {
     step: "03",
@@ -89,14 +89,14 @@ export default function AIIntegrationPage() {
       <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "AI Integration", url: "https://www.aspbranding.com/ai-integration" }]} />
       <ServiceSchema
         name="AI Integration for Home Service Businesses"
-        description="Official Housecall Pro Affiliate Partner. We integrate the HCP AI stack — CSR AI, dispatch, attribution, reporting — into your home service business."
+        description="Housecall Pro Affiliate. We integrate the HCP AI stack — CSR AI, dispatch, attribution, reporting — into your home service business."
         url="https://www.aspbranding.com/ai-integration"
         serviceType="AI Integration Services"
       />
       <Hero
         eyebrow="AI + Housecall Pro"
         heading="AI that works the job.<br><span class='hero-text-gradient'>Not the dashboard.</span>"
-        subheading="We're an Official Housecall Pro Affiliate Partner. We onboard, configure, and integrate the HCP AI stack — CSR AI, attribution, dispatch, reporting — so it runs in your business from day one."
+        subheading="We're a Housecall Pro Affiliate. We onboard, configure, and integrate the HCP AI stack — CSR AI, attribution, dispatch, reporting — so it runs in your business from day one."
         ctaText="Book a growth audit"
         ctaUrl="/contact?topic=hcp"
         cta2Text="Run the Growth Diagnostic"
@@ -130,7 +130,7 @@ export default function AIIntegrationPage() {
             <ScrollReveal>
               <div>
                 <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">
-                  Official Affiliate Partner
+                  Housecall Pro Affiliate
                 </span>
                 <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-4 leading-tight">
                   Your bridge between the trades and the AI that runs them.
@@ -372,7 +372,7 @@ export default function AIIntegrationPage() {
               </Link>
             </div>
             <p className="text-gray-400 text-xs mt-6">
-              Official Housecall Pro Affiliate Partner · Partner discounts available on new HCP accounts only · Full terms shared during your growth audit.
+              Housecall Pro Affiliate · Partner discounts available on new HCP accounts only · Full terms shared during your growth audit.
             </p>
           </ScrollReveal>
         </div>
