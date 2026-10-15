@@ -1,0 +1,108 @@
+{
+  "kind": "ppc",
+  "slug": "pest-control",
+  "trade": "Pest Control",
+  "status": "review",
+  "metaTitle": "Pest Control Advertising: Google Ads, LSA and Meta",
+  "metaDescription": "Pest control advertising run against booked jobs: Google Search Ads, Local Services Ads and Meta, in ad accounts you own. Ad spend is paid to the platforms.",
+  "h1": "Pest Control Advertising",
+  "intro": "Pest control advertising works best when each dollar can be traced to a booked job. ASP runs Google Search Ads, Local Services Ads and Meta for pest control companies, with tracking wired back to your CRM and every ad account in your name.",
+  "sections": [
+    {
+      "heading": "Local Services Ads for pest control",
+      "paragraphs": [
+        "Google lists pest control services among its eligible US Local Services Ads categories. You pay per lead instead of per click, and the placement sits above the map results.",
+        "Google screens businesses before they can run. For pest control, its list includes business and owner background checks for select users, general and professional liability insurance, and state-level business and owner licenses where local law applies.",
+        "These ads are ranked by an auction that weighs your bid and your profile quality. Rating, number of reviews, average response time, photos and completed verification checks all feed profile quality, and Google says missed calls can hurt your responsiveness. We manage LSA against those signals, not against a keyword list."
+      ]
+    },
+    {
+      "heading": "Google Search Ads built by service",
+      "paragraphs": [
+        "Search Ads catch the homeowner typing a specific problem into Google. We build one ad group per service or service area, use phrase match, and add to the negative keyword list every week so the budget stays on searches that can book.",
+        "Our account defaults are search partners off, display off on search campaigns, location targeting set to presence, and Max Conversions bidding until the account has the volume to support a target cost per acquisition. Branded searches always run in their own campaign."
+      ]
+    },
+    {
+      "heading": "Budgeting around the warm season",
+      "paragraphs": [
+        "BLS figures show about 12% more people on pest control payrolls in July 2024 than in January 2024, and the CDC lists April through September as peak tick months. Neither number measures ad demand directly, so we read your own account and job data before moving budget.",
+        "We set budget by working back from what a booked job is worth to you. The budget and the ad schedule follow whichever demand curve is yours. Your ad spend is paid directly to Google or Meta and is separate from what you pay us."
+      ]
+    },
+    {
+      "heading": "Ad copy that answers what buyers ask",
+      "paragraphs": [
+        "A 2005 EPA fact sheet gives homeowners questions to ask when choosing a company, including licensing, appropriate insurance and a guarantee on the work. For termite jobs, EPA's advice is to ask to see the state license and to call the state pesticide agency with any concerns.",
+        "Ads and landing pages that answer those points up front give a careful buyer fewer reasons to keep shopping."
+      ]
+    },
+    {
+      "heading": "Meta for retargeting, seasonal offers and hiring",
+      "paragraphs": [
+        "Meta works for pest control in a few specific ways. It brings back people who read a service page and did not call, and recurring services can carry a seasonal offer directly. Cold ads asking a stranger to book a service call rarely perform for the trades, so we don't lead with them.",
+        "Meta also helps with hiring. BLS counts about 108,700 pest control worker jobs in 2025 and projects employment to grow 6 percent from 2025 to 2035. Recruiting runs as its own campaign with its own budget, so hiring spend never gets read as lead-generation performance."
+      ]
+    },
+    {
+      "heading": "Tracking every ad dollar to a booked job",
+      "paragraphs": [
+        "The conversion action is set to the lead you sell, and it stays there even if the account takes longer to learn. Calls get tracked by source, forms carry campaign tags, and lead source flows into your CRM so we can report cost per booked job by channel.",
+        "Local Services Ads leads get tagged as LSA in your CRM and checked each month against Google's LSA billing. If you use Housecall Pro, booked revenue can go back to Google Ads as offline conversions."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is pest control eligible for Local Services Ads?",
+      "answer": "Yes, in the US. Google screens for background checks on select users, general and professional liability insurance, and state-level licenses where local law requires them. Google sets these rules and can change them."
+    },
+    {
+      "question": "Should I start with Local Services Ads or Google Search Ads?",
+      "answer": "Local Services Ads first, if you pass screening and your reviews can support it. Search Ads still matter, because LSA inventory is capped per metro and Search lets you target the specific problems people type. Most companies running paid seriously run both."
+    },
+    {
+      "question": "How much should a pest control company spend on ads?",
+      "answer": "Start from what a booked job is worth to you, not from a flat monthly number. Ad spend goes straight to the platforms and is separate from our management fee. Management pricing is on our pricing page."
+    },
+    {
+      "question": "Do Facebook ads work for pest control?",
+      "answer": "For retargeting and seasonal offers on recurring services, they can. Cold ads asking someone to book a service call rarely work for the trades. We run Meta alongside search rather than in place of it."
+    },
+    {
+      "question": "Will you change my conversion action to exit the learning phase faster?",
+      "answer": "No. Switching to a softer event like a page view makes the dashboard look better and changes nothing on your schedule. We use geography, budget weighting, ad count and creative instead."
+    },
+    {
+      "question": "Who owns the ad accounts?",
+      "answer": "You do. Google Ads, Local Services Ads and Meta accounts are set up in your name, and you pay the platforms directly. See our What You Own page for the full list."
+    }
+  ],
+  "related": [
+    {
+      "label": "Industry",
+      "href": "/industries/pest-control",
+      "title": "Pest Control Marketing",
+      "body": "How ads fit with local search, follow-up and measurement."
+    },
+    {
+      "label": "SEO",
+      "href": "/seo/pest-control",
+      "title": "Pest Control SEO",
+      "body": "The organic and map side that keeps working when ad spend pauses."
+    },
+    {
+      "label": "Meta",
+      "href": "/meta-ads",
+      "title": "Meta Ads Management",
+      "body": "Facebook and Instagram creative, audiences, retargeting and recruiting."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/marketing-attribution-home-service-businesses",
+      "title": "Marketing Attribution for Home Service Businesses",
+      "body": "How call tracking, forms, your CRM and the ad platforms connect."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

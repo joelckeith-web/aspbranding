@@ -1,0 +1,101 @@
+{
+  "kind": "ppc",
+  "slug": "electrical",
+  "trade": "Electrical",
+  "status": "review",
+  "metaTitle": "Electrician Advertising: Google Ads, LSA and Meta",
+  "metaDescription": "Electrician advertising run against booked jobs: Google Search Ads, Local Services Ads, Meta retargeting and recruiting, and tracking from call to paid job.",
+  "h1": "Electrician Advertising",
+  "intro": "Electrician advertising puts your company in front of people who need an electrician now, then tracks which ads turned into paid jobs. ASP runs Google Search Ads, Local Services Ads and Meta for electrical contractors, with your ad accounts in your name and spend paid straight to the platforms.",
+  "sections": [
+    {
+      "heading": "Why Google treats electrical work as urgent",
+      "paragraphs": [
+        "Google treats electricians as an urgent Local Services Ads category, because people often call an electrician for time-sensitive needs like exposed wiring and critical electronic failures. That is the buyer paid search is built for: someone with a problem who wants a phone number, not a long read.",
+        "BLS says electricians' schedules can include evenings and weekends. We set the ad schedule and budget around the hours your team can pick up, because an ad that rings an unanswered phone is spend with nothing to show for it."
+      ]
+    },
+    {
+      "heading": "Local Services Ads for electricians",
+      "paragraphs": [
+        "Electricians are one of the categories Google allows in Local Services Ads in the U.S. You pay for leads related to your business rather than for clicks, and those leads arrive as calls, messages and bookings made through the ad. Google now calls its badge Google Verified, and it is discontinuing the money-back guarantee that came with its older badge.",
+        "Getting approved takes paperwork. Google's electrician requirements include general and professional liability insurance, plus state-level business and owner licenses where local law requires them. Most states license electricians and the rules vary by state, so what you submit depends on where you work. You also need a public, verified Google Business Profile, and Google says screening and verification takes 3 to 4 weeks on average after your documents are in.",
+        "Once you're live, Google ranks your ad on your bid and how likely it is to produce a lead, which includes your profile quality and how responsive you are. Profile quality covers your rating, number of reviews, response time, images and completed verification checks, and Google says missed calls can hurt your responsiveness. We manage LSA as its own channel against those signals, not against a keyword list."
+      ]
+    },
+    {
+      "heading": "Google Search Ads for electrical services",
+      "paragraphs": [
+        "Search Ads let you choose exactly which services and areas you want to grow. We build one ad group per service or service area, use phrase match, and add to the negative keyword list every week. Tight structure is what lets you see which service is paying.",
+        "Planned work gets its own ad groups. The Department of Energy says EV owners may install Level 2 (240-volt) chargers at home, and that some homes may need an electrician to add circuits first. A charger ad group that sends people to a page about capacity and permits keeps that work apart from emergency calls, so each is judged on its own cost per job."
+      ]
+    },
+    {
+      "heading": "Meta ads for electricians: retargeting and recruiting",
+      "paragraphs": [
+        "Meta doesn't reliably bring in emergency calls, and we won't sell it that way. Emergency work gets searched for at the moment it happens. We use Meta to bring back people who read your service pages and didn't call, and to keep your name familiar in your service area before they need you.",
+        "Meta also works well for hiring. BLS projects about 72,700 electrician openings a year on average from 2025 to 2035. The electricians you want to hire usually have jobs and aren't browsing job boards, and Meta reaches them anyway. Recruiting runs on its own budget, so hiring spend never gets counted as lead cost."
+      ]
+    },
+    {
+      "heading": "Tracking every ad back to a booked job",
+      "paragraphs": [
+        "We fix tracking before we touch bids. The conversion action is set to the lead you sell, and it stays there even if the account spends longer in Google's learning phase. Where your CRM supports it, lead source carries through to the booked job. If you use Housecall Pro, booked revenue can be sent back to Google Ads so bidding learns from real jobs.",
+        "Your Google Ads, Local Services Ads and Meta accounts are set up in your name. Ad spend is paid directly to the platforms and isn't part of any ASP fee. Paid media management for Google Ads, Meta and LSA is included in our Growth tier at $3,850 a month."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are Local Services Ads worth it for electricians?",
+      "answer": "If you qualify and your reviews support it, LSA is usually where we start. Electricians are an eligible category, and you pay per lead rather than per click. We still run Search Ads alongside LSA, because LSA inventory is capped per metro and Search Ads let you target each service directly."
+    },
+    {
+      "question": "What is the Google Verified badge?",
+      "answer": "Google Verified is the name of the badge Google now uses on Local Services Ads. Google is discontinuing the money-back guarantee that came with its older badge. To advertise, you still go through Google's screening and verification, which Google says takes 3 to 4 weeks on average once your documents are submitted."
+    },
+    {
+      "question": "How much should an electrician spend on ads?",
+      "answer": "Work back from what a booked job is worth to you, not from a flat monthly number. A service call and a commercial project can support very different costs per job, so they get separate budgets. Ad spend goes straight to Google and Meta and is separate from what you pay ASP. Management options are on the pricing page."
+    },
+    {
+      "question": "Should I start with Google Ads or SEO?",
+      "answer": "If you need jobs booked this month, start with paid and build organic underneath it. Paid stops when the budget stops, and SEO takes months to move but keeps returning after it does. Most established operators run both."
+    },
+    {
+      "question": "Will Facebook ads bring in emergency electrical calls?",
+      "answer": "Not reliably. Emergency work is searched for when it happens, which is a job for Google. Meta helps by making your name familiar before that moment and by bringing back site visitors who didn't call."
+    },
+    {
+      "question": "Do I own my ad accounts?",
+      "answer": "Yes. Your Google Ads, Local Services Ads and Meta accounts are set up in your name, and ASP never collects or marks up your spend. Our what-you-own page has the full list."
+    }
+  ],
+  "related": [
+    {
+      "label": "Hub",
+      "href": "/industries/electrical",
+      "title": "Electrician Marketing",
+      "body": "The full plan for electrical contractors, residential and commercial."
+    },
+    {
+      "label": "Organic",
+      "href": "/seo/electrical",
+      "title": "Electrician SEO",
+      "body": "Service pages, map-pack work and content that win the planned jobs."
+    },
+    {
+      "label": "Social",
+      "href": "/meta-ads",
+      "title": "Meta Ads Management",
+      "body": "Facebook and Instagram retargeting, service-area recall and recruiting."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/speed-to-lead-home-service-businesses",
+      "title": "Speed to Lead",
+      "body": "Why answering fast matters once the ads start ringing."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

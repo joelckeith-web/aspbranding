@@ -1,0 +1,114 @@
+{
+  "kind": "industry",
+  "slug": "hvac",
+  "trade": "HVAC",
+  "status": "review",
+  "metaTitle": "HVAC Marketing Agency for Heating and Cooling Companies",
+  "metaDescription": "HVAC marketing built around heating and cooling seasons: local SEO, Google Ads, LSA and Housecall Pro attribution, measured against booked jobs, not clicks.",
+  "h1": "HVAC Marketing Agency",
+  "intro": "An HVAC marketing agency runs the channels that bring in heating and cooling calls and proves which of those calls turn into booked jobs. ASP plans HVAC marketing around the season, using local search, Google Ads, Local Services Ads and Housecall Pro attribution, and reports it against revenue.",
+  "sections": [
+    {
+      "heading": "How HVAC demand moves through the year",
+      "paragraphs": [
+        "Heating and cooling work follows the weather. The U.S. Energy Information Administration (EIA) reports that space heating and air conditioning made up 52 percent of the average household's energy use in 2020, and it calls both uses mostly seasonal. BLS notes that HVAC technicians may be on call for emergencies and sometimes work overtime or irregular schedules during peak heating and cooling seasons.",
+        "EIA found that 88 percent of U.S. households used air conditioning in 2020, two-thirds of all households relied on central AC or a central heat pump as their main cooling equipment, and about 13 percent heated with a heat pump as their main system. Much of the year's work is on systems already in place, and BLS describes repair and replacement as a large part of an HVAC technician's duties.",
+        "That leaves an HVAC company with two kinds of demand to market to: urgent repair calls during the peaks, and tune-ups and replacements that homeowners can plan. ENERGY STAR tells homeowners to have the cooling system checked in spring and the heating system in fall, because contractors get busy once summer and winter arrive."
+      ]
+    },
+    {
+      "heading": "Marketing for the peaks and the shoulder seasons",
+      "paragraphs": [
+        "A plan that only works in July leaves spring and fall to chance. Budget and content move with your demand curve: emergency repair searches and Local Services Ads get more weight during heat waves and cold snaps, and tune-up and replacement campaigns take the lead in the shoulder months.",
+        "For weather spikes, StormFront watches your service area and publishes content when qualifying events such as extreme heat or a cold snap hit. It is sold on its own at $549 a month and is included in every Growth System tier."
+      ]
+    },
+    {
+      "heading": "The channels ASP runs for HVAC companies",
+      "paragraphs": [
+        "Each channel reaches a homeowner at a different moment, so an HVAC program is built from several of them working together.",
+        "Which channel leads depends on your market, your reviews and what a booked job is worth to you. The organic side and the paid side each have their own HVAC page with the full detail."
+      ],
+      "bullets": [
+        "Local SEO and your Google Business Profile, for the map and organic results homeowners check before they call.",
+        "Local Services Ads, which Google offers in the US HVAC category, where available in your area, and charges for by the lead instead of the click.",
+        "Google Search Ads, split by service so repair, replacement and maintenance spend can be judged on their own.",
+        "Meta retargeting, to stay in front of homeowners who read a replacement page and left without calling.",
+        "A website built to turn the traffic from every other channel into calls and booked appointments."
+      ]
+    },
+    {
+      "heading": "How results are measured: calls, booked jobs, revenue",
+      "paragraphs": [
+        "A call count says little by itself. Each lead is tagged with its source and carried through to the booked job and its revenue, where your CRM supports it, so the report shows cost per booked job for each channel instead of cost per click.",
+        "For HVAC companies on Housecall Pro, attribution setup is part of every Growth System tier. ASP is an Official Housecall Pro Affiliate Partner, and discounts apply to new HCP accounts only.",
+        "Once jobs close in Housecall Pro, booked revenue can be sent back to Google Ads as an offline conversion. Google can then bid toward the leads that become jobs, not only the ones that call."
+      ]
+    },
+    {
+      "heading": "What you own",
+      "paragraphs": [
+        "Your website, domain and hosting, your Google Business Profile and its reviews, and your Google Ads, Meta and Local Services Ads accounts are all set up in your name. Ad spend is paid straight to the platforms from your own accounts and is not part of any ASP fee.",
+        "Your call tracking data and the lead source records in your CRM stay with you as well. ASP doesn't charge handover or exit fees to transfer what was built for you if the engagement ends."
+      ]
+    }
+  ],
+  "caseStudySlug": "hvac-services",
+  "faqs": [
+    {
+      "question": "What does an HVAC marketing agency do?",
+      "answer": "It runs the marketing that brings in heating and cooling calls, such as local search, paid ads and your Business Profile. It also shows which of those calls became booked jobs. At ASP, the work is measured against revenue in your CRM rather than clicks or rankings alone."
+    },
+    {
+      "question": "How do you handle the slow months between heating and cooling seasons?",
+      "answer": "Effort shifts toward work homeowners can plan, like tune-ups and system replacements. ENERGY STAR advises spring cooling checks and fall heating checks, which gives maintenance campaigns a natural window. Budget moves back toward emergency repair searches when the weather turns."
+    },
+    {
+      "question": "Do you work with Housecall Pro?",
+      "answer": "Yes. ASP is an Official Housecall Pro Affiliate Partner, and Housecall Pro attribution setup is included in every Growth System tier. If you are opening a new account, discounts apply to new HCP accounts only."
+    },
+    {
+      "question": "What if we use a different CRM?",
+      "answer": "The method stays the same. Call tracking ties each phone lead to the channel that produced it, and lead source is carried through to the job wherever your CRM supports attribution."
+    },
+    {
+      "question": "How much does HVAC marketing cost with ASP?",
+      "answer": "Growth System tiers start with Foundation at $2,500 a month. Growth, at $3,850 a month, adds paid media management, and Premier is custom. Ad spend is separate and paid to the platforms directly; the full breakdown is on our pricing page."
+    },
+    {
+      "question": "Do I keep my accounts if I leave?",
+      "answer": "Yes. Everything is set up in your name from day one, and there are no exit fees. Our What You Own page lists each asset."
+    },
+    {
+      "question": "Can you guarantee a certain number of calls?",
+      "answer": "No. ASP doesn't guarantee rankings, lead volumes or revenue. You get a monthly review of what was spent, what it booked and what changes next."
+    }
+  ],
+  "related": [
+    {
+      "label": "Service",
+      "href": "/seo/hvac",
+      "title": "HVAC SEO",
+      "body": "Map pack, service pages and technical work for heating and cooling companies."
+    },
+    {
+      "label": "Service",
+      "href": "/ppc/hvac",
+      "title": "HVAC Advertising",
+      "body": "Google Ads, Local Services Ads and Meta, with budgets that follow the season."
+    },
+    {
+      "label": "Industry",
+      "href": "/industries/plumbing",
+      "title": "Plumbing Marketing",
+      "body": "For companies that run plumbing alongside heating and cooling."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/marketing-attribution-home-service-businesses",
+      "title": "Marketing Attribution for Home Service Businesses",
+      "body": "How call tracking, forms, Housecall Pro and the ad platforms connect."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

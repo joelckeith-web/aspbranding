@@ -1,0 +1,117 @@
+{
+  "kind": "partner",
+  "slug": "housecall-pro",
+  "trade": "Housecall Pro",
+  "status": "review",
+  "metaTitle": "Housecall Pro Marketing Agency: What We Add to HCP",
+  "metaDescription": "What a Housecall Pro marketing agency adds on top of HCP: attribution to booked jobs, Google and Meta ads, SEO, and follow-up built around your HCP data.",
+  "h1": "Housecall Pro Marketing Agency",
+  "intro": "Housecall Pro already handles reminders, review requests, postcards and lead-source reporting. A Housecall Pro marketing agency adds what happens before the job lands in HCP: the ads, SEO and tracking that bring the lead in, and the attribution that ties each booked job back to what you spent.",
+  "sections": [
+    {
+      "heading": "What Housecall Pro's own marketing tools cover",
+      "paragraphs": [
+        "Housecall Pro calls its built-in outreach automated marketing. According to HCP's own feature pages, here is what the software does by itself:"
+      ],
+      "bullets": [
+        "Automated marketing: postcards, one-time or recurring email campaigns to customer segments, reminder emails before each job and thank-you emails after.",
+        "AI follow-up: texts up to 10 customers a day who are due for follow-up, with messages you can review, edit, skip or turn off.",
+        "Review management: automated review requests after each job or payment, and one dashboard to view and respond to Google and Facebook reviews.",
+        "Lead Source field: records where a customer found you, on customers, jobs and estimates.",
+        "Reporting: custom reports filtered by job status, customer and lead source, plus Analyst AI, which builds reports from a typed question.",
+        "Online Booking: bookable time slots on your website, social media and Google, based on your team's schedule, service area and job duration.",
+        "CSR AI: answers calls and website chats and books jobs from your account's services and availability, with text answering in alpha."
+      ]
+    },
+    {
+      "heading": "Where HCP stops and a marketing agency starts",
+      "paragraphs": [
+        "Housecall Pro's tools mostly work once a customer is in your system. A marketing agency works on both sides of that line. Here is the split, tool by tool."
+      ],
+      "bullets": [
+        "Finding new customers. Housecall Pro: its automated marketing is aimed at repeat business and referrals. ASP: SEO, Google Business Profile, Google Ads and Meta ads that bring new homeowners to you.",
+        "Lead source. Housecall Pro: a field on each customer, job or estimate. ASP: call tracking numbers and form fields that capture the source and pass it into HCP, so the field is filled from data.",
+        "Google Ads. Housecall Pro: as of October 2026, its integrations page lists no native Google Ads or Google Analytics integration. ASP: runs the Google Ads account and sends booked revenue back to it as offline conversions.",
+        "Local Services Ads. Housecall Pro: connects Local Services Ads and Reserve with Google bookings to Job Inbox, and sends 'Book Online' clicks to HCP's booking flow. ASP: manages the LSA account itself, including the reviews and response time it ranks on.",
+        "Reviews. Housecall Pro: sends the request and gathers Google and Facebook replies in one place. ASP: times requests, routes them to the right platform and folds reviews into Business Profile management.",
+        "Follow-up. Housecall Pro: postcards, email campaigns and AI follow-up texts. ASP: maps quote-to-close sequences, maintenance reminders and win-back campaigns to your sales process, built on HCP's job events.",
+        "Reporting. Housecall Pro: job, estimate and lead-source reports inside the software. ASP: a monthly review that puts ad spend next to booked revenue, reported as cost per booked job."
+      ]
+    },
+    {
+      "heading": "How ASP connects attribution in Housecall Pro",
+      "paragraphs": [
+        "Attribution runs on four connected pieces: call tracking for phone leads, website forms that capture campaign tags, HCP holding the job and the revenue, and the ad platforms that need results sent back. Most operators have three of the four in some form. What's missing is the connection between them.",
+        "When a lead comes from Google Ads, its click ID is captured on the form or tracked call and stored on the HCP customer record. After the job closes, the click ID and the revenue go back to Google as an offline conversion, so bidding follows booked jobs instead of raw leads. HCP attribution setup is included in ASP's Foundation tier.",
+        "For call tracking, ASP uses CallRail or WhatConverts with most clients. HCP's integrations page lists CallRail for call and web-form tracking, along with Mailchimp, Zapier, Angi and Yelp."
+      ]
+    },
+    {
+      "heading": "Setting up Housecall Pro's AI tools",
+      "paragraphs": [
+        "HCP's CSR AI uses your account's services, hours and availability to book jobs, and it logs call summaries and booking details to your call log and calendar. ASP configures the voice, the script, the escalation rules and the booking calendar so it sounds like your business. HCP AI onboarding, covering CSR AI, dispatch and reporting, is part of the Growth tier.",
+        "We set these tools up one at a time and confirm each one works before moving to the next. If you are already on HCP, we audit the configuration and fix what's misaligned."
+      ]
+    },
+    {
+      "heading": "ASP and Housecall Pro",
+      "paragraphs": [
+        "ASP is an Official Housecall Pro Affiliate Partner. Discounts for new HCP accounts only. Full terms are shared during your growth audit.",
+        "Housecall Pro makes the software. ASP is a separate marketing agency, and the setup and marketing work described on this page is ASP's, not Housecall Pro's."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does Housecall Pro do marketing for you?",
+      "answer": "It automates part of it. HCP's automated marketing sends postcards, email campaigns, job reminders and follow-ups, and its review tools request reviews after each job or payment. Its feature pages describe outreach to customers already in your system, not running Google Ads, Meta ads or SEO, and that is the work an agency adds."
+    },
+    {
+      "question": "Can Housecall Pro track which ad produced a job?",
+      "answer": "HCP's Lead Source field records where a customer found you, and its reports filter by lead source. Getting the right source into that field automatically, and sending booked revenue back to Google Ads, takes call tracking, form tracking and offline conversion setup. That is the attribution work ASP does."
+    },
+    {
+      "question": "Does Housecall Pro work with Local Services Ads?",
+      "answer": "Yes. HCP integrates with Google Local Services Ads and Reserve with Google, and Google bookings land in one Google channel in Job Inbox. You need your own Local Services Ads account to connect it, and ASP can manage that account."
+    },
+    {
+      "question": "Do I get a discount on Housecall Pro through ASP?",
+      "answer": "Discounts for new HCP accounts only. If you already use HCP, we audit your setup and fix what's misaligned instead. Full terms are shared during your growth audit."
+    },
+    {
+      "question": "Is ASP part of Housecall Pro?",
+      "answer": "No. ASP is a separate marketing agency and an Official Housecall Pro Affiliate Partner. Housecall Pro makes the software, and ASP sets up and runs the marketing around it."
+    },
+    {
+      "question": "What does ASP's Housecall Pro setup cost?",
+      "answer": "HCP attribution setup is included in Foundation at $2,500 a month. HCP AI onboarding comes with Growth at $3,850 a month, along with paid media management. Our pricing page lists everything in each tier."
+    }
+  ],
+  "related": [
+    {
+      "label": "Industry",
+      "href": "/industries/hvac",
+      "title": "HVAC Marketing",
+      "body": "Marketing for HVAC companies, including HCP attribution."
+    },
+    {
+      "label": "Industry",
+      "href": "/industries/plumbing",
+      "title": "Plumbing Marketing",
+      "body": "Marketing for plumbing companies, including HCP attribution."
+    },
+    {
+      "label": "Integration",
+      "href": "/ai-integration",
+      "title": "AI Integration",
+      "body": "CSR AI, job attribution, follow-up automation and offline conversion import, set up in HCP."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/marketing-attribution-home-service-businesses",
+      "title": "Marketing Attribution Guide",
+      "body": "The four data sources and how to close the loop with Housecall Pro."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

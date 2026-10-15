@@ -52,6 +52,27 @@ export function tradePageMetadata(page: TradePage): Metadata {
   };
 }
 
+/** Renders [text](/internal-path) inside copy as a Link; everything else stays plain text. */
+function InlineLinks({ text }: { text: string }) {
+  const parts = text.split(/(\[[^\]]+\]\(\/[^)\s]*\))/g);
+  return (
+    <>
+      {parts.map((part, i) => {
+        const m = part.match(/^\[([^\]]+)\]\((\/[^)\s]*)\)$/);
+        return m ? (
+          <Link key={i} href={m[2]} className="text-asp-blue underline underline-offset-4">
+            {m[1]}
+          </Link>
+        ) : (
+          part
+        );
+      })}
+    </>
+  );
+}
+
+const stripLinks = (text: string) => text.replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, "$1");
+
 export function TradePageView({ page }: { page: TradePage }) {
   const url = `${SITE}${tradePageUrl(page)}`;
   const crumbs = [{ name: "Home", url: `${SITE}/` }];
@@ -76,12 +97,12 @@ export function TradePageView({ page }: { page: TradePage }) {
         serviceType={SERVICE_TYPE[page.kind]}
         audienceType={`${page.trade} businesses`}
       />
-      <FaqPageSchema items={page.faqs} />
+      <FaqPageSchema items={page.faqs.map((f) => ({ ...f, answer: stripLinks(f.answer) }))} />
 
       <Hero
         eyebrow={KIND_LABEL[page.kind]}
         heading={page.h1}
-        subheading={page.intro}
+        subheading={stripLinks(page.intro)}
         ctaText="Book a call"
         ctaUrl="/contact"
         cta2Text="Run the Growth Diagnostic"
@@ -99,7 +120,7 @@ export function TradePageView({ page }: { page: TradePage }) {
               <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-black">{s.heading}</h2>
               {s.paragraphs.map((p) => (
                 <p key={p.slice(0, 40)} className="mt-5 text-lg text-black/70 leading-relaxed">
-                  {p}
+                  <InlineLinks text={p} />
                 </p>
               ))}
               {s.bullets && s.bullets.length > 0 && (
@@ -107,7 +128,9 @@ export function TradePageView({ page }: { page: TradePage }) {
                   {s.bullets.map((b) => (
                     <li key={b.slice(0, 40)} className="flex gap-3 text-lg text-black/70 leading-relaxed">
                       <span className="mt-2.5 h-2 w-2 flex-none rounded-full bg-asp-blue" aria-hidden />
-                      <span>{b}</span>
+                      <span>
+                        <InlineLinks text={b} />
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -144,7 +167,7 @@ export function TradePageView({ page }: { page: TradePage }) {
 
       <SectionBreak />
 
-      <FAQAccordion faqs={page.faqs} heading="Frequently Asked Questions" columns={2} widthClassName="max-w-6xl" />
+      <FAQAccordion faqs={page.faqs.map((f) => ({ ...f, answer: stripLinks(f.answer) }))} heading="Frequently Asked Questions" columns={2} widthClassName="max-w-6xl" />
 
       {page.related && page.related.length > 0 && (
         <RelatedPages items={page.related} heading={`More for ${page.trade.toLowerCase()} businesses`} />

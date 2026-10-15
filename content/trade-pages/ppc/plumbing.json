@@ -1,0 +1,98 @@
+{
+  "kind": "ppc",
+  "slug": "plumbing",
+  "trade": "Plumbing",
+  "status": "review",
+  "metaTitle": "Plumbing Advertising: Google Ads, LSA and Meta",
+  "metaDescription": "Plumbing advertising run against booked jobs: Google Search Ads for urgent calls, Local Services Ads, and Meta retargeting. You own every ad account.",
+  "h1": "Plumbing Advertising",
+  "intro": "Plumbing advertising works best when the urgent calls and the planned jobs get different budgets. ASP runs Google Search Ads, Local Services Ads and Meta for plumbing companies, and judges every channel on cost per booked job rather than cost per click.",
+  "sections": [
+    {
+      "heading": "Local Services Ads for plumbers",
+      "paragraphs": [
+        "Plumbing is a Local Services Ads category in the US, listed by Google as \"Plumbers.\" In California and Florida only, \"Drain expert\" is listed as its own category. Google treats plumbing as an urgent category because people often call a plumber for something time-sensitive, such as a hot water outage.",
+        "With LSA you pay for leads related to your business, not for clicks, and those leads arrive as phone calls, messages and bookings made through the ad. Google's ranking weighs your bid, how likely your ad is to produce a lead, and profile quality, which includes your rating, number of reviews, response time, photos and completed verification checks. Missed calls can hurt your responsiveness, so phone coverage is part of the ad strategy.",
+        "Google now calls the Local Services badge \"Google Verified,\" and it is discontinuing the money-back guarantee tied to its older badge. Your ads and site copy should use the current name."
+      ]
+    },
+    {
+      "heading": "Getting approved for Local Services Ads",
+      "paragraphs": [
+        "Google screens plumbing businesses before ads run. Its plumber requirements include general and professional liability insurance, along with state-level business and owner licenses where local law calls for them. Most states and some localities require plumbers to be licensed, so have license details ready alongside proof of insurance.",
+        "You also need a public, verified Google Business Profile. Google says screening and verification takes 3 to 4 weeks on average after documents are submitted, so it pays to start that paperwork early. Google's list of home-service types supported for LSA booking integrations in the US also includes Plumber."
+      ]
+    },
+    {
+      "heading": "Google Search Ads for urgent and planned plumbing work",
+      "paragraphs": [
+        "LSA doesn't catch every search, so Search Ads still carry a lot of plumbing demand. We build one ad group per service or service area, use phrase match, and grow the negative keyword list every week. That structure is what lets you see whether drain cleaning, water heaters or sewer work is paying.",
+        "BLS notes that evening and weekend work is common for plumbers because they are often on call for emergencies. If your crew takes after-hours calls, the ad schedule should run then and someone needs to answer; if nobody picks up at 10 p.m., those clicks are wasted.",
+        "Planned jobs get their own campaigns and budget, because the search terms, the ticket size and the time to decide all differ from an emergency. Leak detection is a good example: EPA estimates household leaks can waste nearly 1 trillion gallons of water a year nationwide, and the homeowner who notices a high water bill is a planned-work lead, not a midnight call."
+      ]
+    },
+    {
+      "heading": "Meta ads for plumbing companies",
+      "paragraphs": [
+        "Burst-pipe calls don't reliably come from Facebook, and we won't promise they will. Emergencies get searched at the moment they happen. Meta earns its budget in plumbing by retargeting homeowners who read your water heater or repipe page and didn't call, and by keeping your name familiar before the next emergency.",
+        "Meta is also a strong hiring channel. BLS projects about 42,000 openings a year for plumbers, pipefitters and steamfitters, on average, over the 2025 to 2035 decade, and the techs you want are usually employed, not browsing job boards. Recruiting runs as its own campaign with its own budget, so hiring spend never gets mixed into your cost per job."
+      ]
+    },
+    {
+      "heading": "Tracking ad spend to booked plumbing jobs",
+      "paragraphs": [
+        "Tracking gets fixed before bids change. The conversion action is set to the lead you sell and stays there, even if the account takes longer to learn. Where your CRM supports it, lead source carries through to the job, so the monthly review shows what was spent, what it booked and what changes next.",
+        "Your Google Ads, Local Services Ads and Meta accounts are set up in your name. Ad spend is paid straight to the platforms from your own accounts and is never part of our fee."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are Local Services Ads worth it for a plumbing company?",
+      "answer": "Usually, if you qualify and your reviews can support a strong profile. You pay per lead rather than per click, and your rank depends on your bid, your reviews and how quickly you respond, among other factors. We run LSA alongside Search Ads rather than instead of them."
+    },
+    {
+      "question": "What does the Google Verified badge mean?",
+      "answer": "It's the name Google now uses for its Local Services verification badge. Google is discontinuing the money-back guarantee that came with the older badge, so the badge now speaks to verification, not a refund."
+    },
+    {
+      "question": "How much should a plumbing company spend on ads?",
+      "answer": "Start from what a booked job is worth to you, not from a flat monthly number. A drain call and a full repipe pay very different amounts, so they can support very different costs per job. Ad spend is paid directly to Google or Meta and is separate from management, which is priced on our pricing page."
+    },
+    {
+      "question": "Do you use Performance Max for plumbing ads?",
+      "answer": "Not as a starting point. Performance Max spends across several Google networks with limited visibility into where the money went. We'd rather prove Search and Local Services Ads first, then test it with clean conversion data and branded search excluded."
+    },
+    {
+      "question": "Who owns the ad accounts?",
+      "answer": "You do. Every ad account is set up in your name from day one, and there's no exit fee if you leave. Our what-you-own page covers the full list."
+    }
+  ],
+  "related": [
+    {
+      "label": "Industry",
+      "href": "/industries/plumbing",
+      "title": "Plumbing Marketing",
+      "body": "The whole plumbing program: demand, channels, Housecall Pro attribution and ownership."
+    },
+    {
+      "label": "Service",
+      "href": "/seo/plumbing",
+      "title": "Plumbing SEO",
+      "body": "The organic side: map pack, service pages, content and what drives the cost."
+    },
+    {
+      "label": "Service",
+      "href": "/meta-ads",
+      "title": "Meta Ads Management",
+      "body": "Facebook and Instagram creative, retargeting and recruiting campaigns."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/speed-to-lead-home-service-businesses",
+      "title": "Speed to Lead",
+      "body": "Why answering fast matters once the ads make the phone ring."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

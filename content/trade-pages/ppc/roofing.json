@@ -1,0 +1,103 @@
+{
+  "kind": "ppc",
+  "slug": "roofing",
+  "trade": "Roofing",
+  "status": "review",
+  "metaTitle": "Roofing Advertising: Google Ads, LSA and Facebook Ads",
+  "metaDescription": "Roofing advertising and PPC from ASP: Google Search Ads, Local Services Ads and Facebook ads for roofers, tracked from the click to the booked job.",
+  "h1": "Roofing Advertising and PPC Management",
+  "intro": "Roofing advertising works best when each channel has one job. Google Search Ads reach homeowners looking for a roofer now, Local Services Ads give you pay-per-lead placement, and Facebook ads reach replacement buyers who take weeks to decide. ASP manages all three and judges them on cost per booked job.",
+  "sections": [
+    {
+      "heading": "Google Search Ads for roofing contractors",
+      "paragraphs": [
+        "Search Ads catch the homeowner who types a problem into Google, such as a leak, missing shingles or a replacement quote. We build one ad group per service or service area, use phrase match, and grow the negative keyword list every week, so you can see whether repairs or replacements are paying.",
+        "Account defaults stay tight: search partners off, display off on search campaigns, location targeting set to presence, and branded search in its own campaign. Roofing accounts also need their own negatives, such as searches from people looking for roofing jobs, pricing shingles to buy, or planning a do-it-yourself repair.",
+        "Budget follows the work you want. BLS lists replacement, repair and new installation as the work that will drive demand for roofers. Those jobs carry different values, so spend gets weighted toward the services you most want to sell."
+      ]
+    },
+    {
+      "heading": "Local Services Ads for roofers",
+      "paragraphs": [
+        "Google lists roofers as a Local Services Ads category in the US. You pay for leads tied to your business rather than for clicks, and those leads arrive as phone calls, messages or bookings made through the ad.",
+        "To qualify, you need a public, verified Google Business Profile and screening documents. For roofing, Google's list includes general and professional liability insurance, state-level business and owner licenses where local law applies, and business and owner checks for some advertisers. Google says screening takes 3 to 4 weeks on average after documents are submitted.",
+        "Ranking weighs your bid, how likely your ad is to produce a lead, the context of the search, and your profile quality, which includes rating, number of reviews, response time, photos and completed verification checks. Google also notes that missed calls may hurt your responsiveness, so call handling is part of the ad and not a separate problem."
+      ]
+    },
+    {
+      "heading": "Facebook ads for roofing companies",
+      "paragraphs": [
+        "Facebook and Instagram fit roof replacement because the decision takes weeks, which gives finished-roof photos and video time to work. Cold ads asking a stranger to book a leak repair rarely pay off for the trades.",
+        "We start with retargeting homeowners who read your replacement page and left without calling. Creative comes from your own jobs: before-and-after shots, a finished roof walked on camera, or a short answer to a question you hear every week. Meta runs alongside search, not in place of it.",
+        "Meta also helps with hiring. BLS counted about 166,900 roofer jobs in 2025 and projects about 12,000 openings a year on average through 2035. Recruiting campaigns run on their own budget, so hiring spend is never read as lead performance."
+      ]
+    },
+    {
+      "heading": "Planning ad spend around storms and seasons",
+      "paragraphs": [
+        "BLS notes that roofing work may be limited in winter in northern states, that roofers may work overtime in the busy summer months, and that crews usually do not work in bad weather. Ad budgets should follow the months when your crews can take the work, and ease off when the schedule is already full.",
+        "Because missed calls may count against you on Local Services Ads, call coverage and message handling need to be in place before a storm budget goes up."
+      ]
+    },
+    {
+      "heading": "Tracking roofing ads to booked jobs",
+      "paragraphs": [
+        "The conversion action is set to the lead you sell, and it stays there. We don't swap it to a page view or a phone-number click to get an account out of the learning phase faster. Duplicate conversions and short calls counted as jobs get cleaned up, so a bad month doesn't look like a good one.",
+        "Where your CRM supports it, lead source runs through to the job. For roofers on Housecall Pro, booked revenue can be sent back into Google Ads as an offline conversion, so bidding learns which searches turn into booked jobs. Your ad accounts are in your name, and ad spend is paid directly to Google and Meta, separate from what you pay ASP."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are Local Services Ads worth it for a roofing company?",
+      "answer": "For roofers who qualify, they are worth testing because you pay per lead instead of per click. Where they rank depends on your rating, review count and how fast you respond, since Google weighs those alongside your bid. We manage them against those signals, not against a keyword list."
+    },
+    {
+      "question": "What is the Google Verified badge?",
+      "answer": "It is the name Google now uses for its Local Services verification badge. Google ended the money-back guarantee tied to the older badge, and only services booked before December 7, 2025 were eligible. Ad copy shouldn't be built around it."
+    },
+    {
+      "question": "How long does it take to get approved for Local Services Ads?",
+      "answer": "Google says screening and verification take 3 to 4 weeks on average after you submit your documents. You also need a public, verified Google Business Profile before you can advertise. Having your insurance documents ready, along with any state licenses your local law requires, keeps the process moving."
+    },
+    {
+      "question": "How much should a roofer spend on Google Ads?",
+      "answer": "Work back from what a booked job is worth to you, not from a flat monthly figure. A replacement can carry a much higher cost per lead than a small repair and still pay. Ad spend goes directly to Google, separate from management, and current options are on our pricing page."
+    },
+    {
+      "question": "Do Facebook ads work for roofing?",
+      "answer": "For replacements, often yes, because homeowners take weeks to decide and finished-work photos help. For emergency leaks, rarely, since those buyers search on Google at the moment it happens. Retargeting people who already visited your site is the place to start."
+    },
+    {
+      "question": "Who owns the ad accounts?",
+      "answer": "You do. Your Google Ads, Meta and Local Services Ads accounts are set up in your name and stay with you. The details are on our What You Own page."
+    }
+  ],
+  "related": [
+    {
+      "label": "Industry",
+      "href": "/industries/roofing",
+      "title": "Roofing Marketing Agency",
+      "body": "How the whole roofing system fits together, including StormFront."
+    },
+    {
+      "label": "Organic",
+      "href": "/seo/roofing",
+      "title": "Roofing SEO",
+      "body": "Service pages, map-pack work and technical fixes, with what drives the cost."
+    },
+    {
+      "label": "Meta",
+      "href": "/meta-ads",
+      "title": "Meta Ads Management",
+      "body": "How ASP runs Facebook and Instagram creative, audiences and retargeting."
+    },
+    {
+      "label": "Local",
+      "href": "/local-seo-pro",
+      "title": "Local SEO Pro",
+      "body": "The Business Profile and review work that Local Services Ads ranking leans on."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

@@ -1,0 +1,109 @@
+{
+  "kind": "ppc",
+  "slug": "pressure-washing",
+  "trade": "Pressure Washing",
+  "status": "review",
+  "metaTitle": "Pressure Washing Advertising: Google Ads and Facebook",
+  "metaDescription": "Pressure washing advertising from ASP: Google Search Ads, Facebook ads and a Business Profile that works alongside them, all tracked to booked jobs.",
+  "h1": "Pressure Washing Advertising",
+  "intro": "Pressure washing advertising runs on Google Search Ads and Facebook ads, backed by a strong Business Profile. Google's Local Services Ads list had no pressure washing category when it was checked in October 2026, so ASP builds paid search to do that job and tracks leads to booked jobs where your CRM supports it.",
+  "sections": [
+    {
+      "heading": "Pressure washing and Local Services Ads",
+      "paragraphs": [
+        "Google's Local Services Ads only run in certain service categories. When the full US list was checked on October 15, 2026, it had no pressure washing or power washing category. Nearby categories include Window cleaning services and House cleaning services.",
+        "Google describes the window cleaning category as cleaning windows, mirrors, skylights and gutters. Whether a pressure washing company qualifies there is Google's call, and we don't assume it does. Google describes the list as what's available \"at this time,\" so we recheck it. Until it changes, Google Search Ads do the paid work of catching people who are already looking."
+      ]
+    },
+    {
+      "heading": "Google Search Ads built around each service",
+      "paragraphs": [
+        "Each service gets its own ad group: house washing, roof cleaning, driveways and concrete, decks and fences. Phrase match and a negative keyword list that grows every week keep the budget away from searches you don't want, such as equipment rentals and how-to questions.",
+        "Our account defaults: no search partners, no display network on search campaigns, Presence location targeting, Max Conversions bidding until volume supports a target cost per acquisition, and brand terms split into their own campaign.",
+        "The search terms report shows what people typed to trigger your ads. It's the cheapest win in most accounts and the one most often skipped, so we read it on a schedule."
+      ]
+    },
+    {
+      "heading": "Your Business Profile works alongside the ads",
+      "paragraphs": [
+        "Paid search covers the ads, but your ranking in the map results can't be bought. Google bases that ranking mainly on relevance, distance and prominence, and it offers no way to pay for a better one. That's why we run your profile next to the ads instead of treating them as separate jobs.",
+        "Google allows a service-area business with no storefront one Business Profile, with a service area that shouldn't reach past about 2 hours' drive from its base. Separate locations with their own staff and service areas can each have a profile, and Google says a larger area may suit some businesses. Ads can reach farther than that, but we set ad geography to the area your crews will drive to."
+      ]
+    },
+    {
+      "heading": "Pressure washing Facebook ads",
+      "paragraphs": [
+        "Pressure washing is a visual job, and your own work supplies the creative. Before-and-after sequences are one of the formats we lean on for the trades, and vertical video built as vertical video outperforms cropped landscape footage in feeds and Reels.",
+        "Lower-ticket recurring work, like a yearly house wash, can carry a seasonal offer directly. Retargeting site visitors goes live before any cold prospecting, and the ad radius stays inside your service area so spend doesn't drift across a metro.",
+        "If your techs hold PWNA's House Wash Certification, which covers low-pressure methods, chemical handling and surface protection, it belongs in the ad copy and on the landing page."
+      ]
+    },
+    {
+      "heading": "Timing spend to the season",
+      "paragraphs": [
+        "No federal data series covers pressure washing by itself, because the trade has no NAICS code of its own. The closest category, which also includes pool, chimney and duct cleaning, had US private employment of 103,283 in January 2024 and 131,517 in July 2024. That shows a seasonal swing in the broader group, but it isn't a demand forecast for your market.",
+        "So budgets start from your own history: past invoices, call logs and booked jobs. Once tracking has run for a season, the ad schedule comes from tracked jobs by month."
+      ]
+    },
+    {
+      "heading": "Tracking ads to booked jobs",
+      "paragraphs": [
+        "The conversion action counts the lead you sell and doesn't get swapped for a softer event to speed up the learning phase. Calls carry tracking numbers by source, and forms pass their source into your CRM. With Housecall Pro, a completed job and its revenue can go back to Google Ads as an offline conversion, so bidding learns which searches produce paid work.",
+        "Ad spend is paid from your own accounts directly to Google and Meta, and ASP never collects or marks it up. Management pricing is on our pricing page."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I run Local Services Ads for my pressure washing business?",
+      "answer": "Not with a category of its own. Google's US list had none when it was checked on October 15, 2026. Google presents the list as what's available \"at this time,\" so we keep checking, and in the meantime Search Ads and your Business Profile carry the work."
+    },
+    {
+      "question": "Do Facebook ads work for pressure washing?",
+      "answer": "They work best for seasonal offers, before-and-after video and bringing back people who visited your site. Cold ads asking a stranger to book today rarely work for the trades. We run Facebook once search is catching the demand that already exists."
+    },
+    {
+      "question": "Can you advertise roof cleaning and house washing separately?",
+      "answer": "Yes. Each service gets its own ad group and ads, so you can see which one is booking jobs and move budget toward it. That separation is what makes the monthly numbers readable."
+    },
+    {
+      "question": "How much should I spend on pressure washing ads?",
+      "answer": "Start from what a booked job is worth to you, including repeat visits, and work back to what you can pay per job. Spend is paid straight to Google and Meta and is separate from our management fee, which is on our pricing page."
+    },
+    {
+      "question": "Will you change my conversion action to get results faster?",
+      "answer": "No. Swapping to a page view or a phone-number click makes the dashboard look better and adds nothing to your schedule. We use geography, budget weighting, ad count and creative instead."
+    },
+    {
+      "question": "Do I keep my ad accounts if I leave ASP?",
+      "answer": "Yes. They're in your name from the start, with all campaign and conversion history, and there's no exit fee. The full list is on our what-you-own page."
+    }
+  ],
+  "related": [
+    {
+      "label": "Hub",
+      "href": "/industries/pressure-washing",
+      "title": "Pressure Washing Marketing",
+      "body": "The whole plan for house wash, roof cleaning and flatwork companies."
+    },
+    {
+      "label": "Meta",
+      "href": "/meta-ads",
+      "title": "Meta Ads Management",
+      "body": "Facebook and Instagram creative, audiences and retargeting."
+    },
+    {
+      "label": "Method",
+      "href": "/ppc",
+      "title": "PPC Management Services",
+      "body": "How ASP audits and structures a paid search account."
+    },
+    {
+      "label": "Local",
+      "href": "/local-seo-pro",
+      "title": "Local SEO Pro",
+      "body": "The Business Profile and map side that works next to your ads."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

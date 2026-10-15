@@ -1,0 +1,98 @@
+{
+  "kind": "industry",
+  "slug": "remodeling",
+  "trade": "Remodeling & Exteriors",
+  "status": "review",
+  "metaTitle": "Remodeling Marketing for Contractors and Exterior Firms",
+  "metaDescription": "Remodeling contractor marketing from ASP: SEO, Google and Meta ads, and attribution that ties each signed project back to the channel that produced it.",
+  "h1": "Remodeling Marketing for Contractors",
+  "intro": "Remodeling marketing has to carry a homeowner from first search to a signed contract, often across several visits and channels. ASP runs remodeling contractor marketing for kitchen, bath and exterior firms: SEO, Google and Local Services Ads, Facebook ads, and the attribution that shows which channel produced each project.",
+  "sections": [
+    {
+      "heading": "Where remodeling demand comes from",
+      "paragraphs": [
+        "Home improvement is a large market. In March 2025, JCHS reported that US home improvement and repair spending rose from $404 billion in 2019 to $611 billion in 2022 and was expected to stay above $600 billion through 2025. Homeowners spent an average of almost $4,700 on improvements in 2023.",
+        "Replacement work carries much of that spending. Projects such as roofing, windows and HVAC made up 49 percent of homeowner improvement spending in 2023. That same year, owners spent $46 billion replacing roofs, $22 billion on windows and doors, and $9 billion replacing siding.",
+        "How a job gets paid for shapes the sale. In 2023, 10 percent of homeowner spending on exterior replacements was paid with home equity and 18 percent with insurance settlements. If you offer financing or handle insurance work, your pages should explain how it works in plain terms."
+      ]
+    },
+    {
+      "heading": "Channels ASP runs for remodelers",
+      "paragraphs": [
+        "Remodeling buyers research before they call, so the website carries much of the sale. We build a page for each project type you want more of, such as kitchens, baths, siding or windows, and add the cost breakdowns and side-by-side comparisons homeowners look for while they decide.",
+        "Google's Local Services Ads categories in the US include bathroom remodeling, kitchen remodeling, general contractor, roofers, siding services and window repair services, though Google doesn't offer them in every area. For bathroom remodelers, Google's screening lists general and professional liability insurance, plus state-level business and owner licenses where local law applies.",
+        "Google Search Ads reach the homeowner searching for a specific project right now. Facebook and Instagram ads fit remodeling because the decision takes weeks, which gives photos and video of finished projects time to work, and the offer is a design consultation or a real estimate."
+      ]
+    },
+    {
+      "heading": "Marketing for larger remodeling firms",
+      "paragraphs": [
+        "Remodeling is still a fragmented business. In the 2017 Economic Census, the 50 largest firms held under 8 percent of general remodeler receipts, and the number of general remodelers with payrolls passed 125,000 by 2023. Even so, remodelers with revenues of at least $2.5 million grew their share of industry receipts from 45 percent in 2007 to 57 percent in 2017.",
+        "JCHS says specialty replacement firms are driving that concentration. Companies focused on roofing, siding, windows and quick-turn bath remodels made up 57 percent of the Top 500 remodelers in 2023, up from 43 percent in 2013. For a firm like that, marketing runs as a volume system by product line, with each line tracked to signed jobs.",
+        "Crews set the ceiling. In 2023, 64 percent of residential remodelers reported some or serious shortages of skilled trade subcontractors, so we weight the budget toward the project types your crews and subcontractors can deliver."
+      ]
+    },
+    {
+      "heading": "How we measure remodeling marketing",
+      "paragraphs": [
+        "A remodeling buyer may find you through a search, click an ad a week later, and call after a neighbor mentions your name. We capture each lead's source with call tracking and form fields, carry it into your CRM, and report signed projects and revenue by channel instead of lead counts.",
+        "For firms between $1 million and $3 million in revenue, we compare first-touch and last-touch credit, because the gap shows which channels introduce buyers and which close them. Above $3 million, a simple multi-touch model becomes worth the effort. Where your CRM supports it, signed revenue is sent back to Google Ads as an offline conversion, and Housecall Pro users get attribution setup as part of Foundation."
+      ]
+    },
+    {
+      "heading": "What you own",
+      "paragraphs": [
+        "The project galleries, videos and written content we produce for you are yours, along with your website, domain, Google Business Profile, ad accounts and CRM records. You pay Google and Meta from your own accounts, ASP never marks up that spend, and there is no exit fee to take everything with you."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is remodeling contractor marketing?",
+      "answer": "It is the search, ads, content and follow-up that bring homeowners to you for kitchen, bath and exterior projects, plus the tracking that shows which of those efforts produced signed work. For most remodelers that means SEO, Google Ads, Local Services Ads where your category is offered, and Facebook ads for longer decisions."
+    },
+    {
+      "question": "Do Facebook ads work for remodeling companies?",
+      "answer": "Remodeling is one of the jobs Meta suits well, because the decision takes weeks and finished-project photos and video have time to do their job. We start by retargeting people who already visited your project pages before spending on cold audiences."
+    },
+    {
+      "question": "Can I advertise renovation work on homes built before 1978?",
+      "answer": "Only with EPA firm certification for work the Renovation, Repair and Painting Rule covers. EPA says firms cannot advertise or perform covered renovation work in homes or child-occupied facilities built before 1978 without it, and the rule has exclusions. Confirm your certification before older-home work goes into ads or service pages."
+    },
+    {
+      "question": "How much should a remodeler spend on marketing?",
+      "answer": "Work back from what a signed project is worth to you rather than starting from a flat monthly number. A high-ticket job can carry a higher cost per lead and still pay. Our marketing budget calculator helps with the math, our pricing page lists ASP's tiers, and ad spend is paid directly to the platforms."
+    },
+    {
+      "question": "Do you work with roofing, siding and window companies?",
+      "answer": "Yes. Exterior replacement firms run on the same method, with their own product lines and calendars. Roofing companies with storm-driven demand can also use StormFront, our weather-triggered content product."
+    }
+  ],
+  "related": [
+    {
+      "label": "Service",
+      "href": "/meta-ads",
+      "title": "Meta Ads Management",
+      "body": "Facebook and Instagram campaigns built for projects homeowners decide over weeks."
+    },
+    {
+      "label": "Tool",
+      "href": "/marketing-budget-calculator",
+      "title": "Marketing Budget Calculator",
+      "body": "Work out a budget from what a signed project is worth."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/marketing-attribution-home-service-businesses",
+      "title": "Marketing Attribution Guide",
+      "body": "How call tracking, forms, your CRM and the ad platforms connect."
+    },
+    {
+      "label": "Industry",
+      "href": "/industries/flooring",
+      "title": "Flooring Marketing",
+      "body": "Marketing for flooring installers and showrooms."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

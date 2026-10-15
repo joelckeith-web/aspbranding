@@ -1,0 +1,113 @@
+{
+  "kind": "ppc",
+  "slug": "hvac",
+  "trade": "HVAC",
+  "status": "review",
+  "metaTitle": "HVAC Advertising and PPC: Google Ads, LSA and Meta",
+  "metaDescription": "HVAC advertising run against booked jobs: Google Search Ads by repair and replacement, Local Services Ads, Meta retargeting and budgets that follow the season.",
+  "h1": "HVAC Advertising and PPC Management",
+  "intro": "HVAC advertising puts your company in front of homeowners who are searching for heating and cooling help right now. ASP manages Google Search Ads, Local Services Ads and Meta retargeting for HVAC companies. Budgets move with the season, and tracking is built to follow leads to booked jobs.",
+  "sections": [
+    {
+      "heading": "What HVAC advertising covers",
+      "paragraphs": [
+        "Three paid channels carry most home service ad spend: Google Search Ads for people typing a problem right now, Local Services Ads for pay-per-lead placement, and Meta for retargeting. We run all three for HVAC companies and judge each one on cost per booked job.",
+        "Every account starts with an audit of settings, search terms, geography and conversion tracking. You see the findings and the priority order before any budget moves."
+      ]
+    },
+    {
+      "heading": "Local Services Ads for HVAC companies",
+      "paragraphs": [
+        "HVAC is one of the categories where Google offers Local Services Ads in the US, listed as 'HVAC (heating or air conditioning).' Google treats it as an urgent category, because people call about time-sensitive problems like a broken heater in freezing weather. For that reason, HVAC advertisers go through an extra level of screening that includes background checks on service professionals.",
+        "Google's HVAC requirements list business, owner and service professional checks, general and professional liability insurance, and state-level business and owner licenses where local law applies. You also need a public, verified Google Business Profile, and Google says screening takes 3–4 weeks on average after your documents are in.",
+        "Once you're live, you pay for leads instead of clicks. Those leads arrive as phone calls, message requests or bookings made straight from the ad, and Google lists AC contractors among the home-service types its booking integrations support in the US."
+      ]
+    },
+    {
+      "heading": "How Local Services Ads rank, and why missed calls can cost you",
+      "paragraphs": [
+        "Google ranks these ads on your bid, how likely your ad is to bring a lead, and profile quality: your rating, how many reviews you have, how quickly you respond, the quality of your photos and the verification checks you've completed. Google also states that missed calls may hurt your responsiveness.",
+        "That turns peak season into an operations problem as much as an ad problem. BLS notes HVAC technicians sometimes work overtime or irregular schedules during peak heating and cooling seasons, so someone has to own the phone while the techs are out. Google's own help page says message and booking leads can help on nights and weekends when you can't answer, and we manage LSA against these review and response signals, not a keyword list."
+      ]
+    },
+    {
+      "heading": "Google Search Ads split by repair, replacement and maintenance",
+      "paragraphs": [
+        "A repair search and a replacement search come from different buyers, so they get their own ad groups. That structure is what lets you see whether replacement clicks or repair clicks are paying for themselves.",
+        "Our defaults are phrase match, location targeting set to Presence, search partners off, display off on search campaigns, and a negative keyword list that grows every week. Branded search always sits in its own campaign."
+      ]
+    },
+    {
+      "heading": "Budgets that follow heating and cooling seasons",
+      "paragraphs": [
+        "EIA describes home heating and cooling as mostly seasonal energy uses, and HVAC call volume moves with them. Ad spend should rise and fall with that curve instead of running flat all year.",
+        "In spring and fall, the account leans toward tune-up and maintenance campaigns, timed to the windows ENERGY STAR recommends for pre-season check-ups. During heat waves and cold snaps, emergency repair terms and Local Services Ads take the bigger share.",
+        "The right spend starts from what a booked job is worth to you. Your ad spend is paid directly to Google or Meta and is separate from what you pay ASP."
+      ]
+    },
+    {
+      "heading": "Meta ads for HVAC: retargeting and hiring",
+      "paragraphs": [
+        "Meta won't reliably catch a homeowner mid-emergency; that is a search job. For HVAC, it keeps your name in front of people who read your replacement or heat pump page and didn't call, so you're the familiar company when they're ready.",
+        "Meta also works for recruiting, because the technicians you want are usually employed and not browsing job boards. BLS projects about 40,600 openings a year, on average, for HVAC mechanics and installers over the 2025 to 2035 decade. Recruiting campaigns run with their own budget, kept apart from lead generation so hiring spend isn't read as lead-generation performance."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are Local Services Ads worth it for an HVAC company?",
+      "answer": "If you qualify and your reviews support it, LSA is usually the first paid channel we'd set up, because you pay per lead and the placement sits above the map. Search Ads still matter, since LSA inventory is capped in each metro. Most operators running paid seriously run both."
+    },
+    {
+      "question": "What badge do HVAC Local Services Ads carry now?",
+      "answer": "Google now issues one badge, called Google Verified. Google is also discontinuing the Money Back Guarantee that was tied to the old guarantee badge, so your ads and website shouldn't promise one."
+    },
+    {
+      "question": "Will you change my conversion action to get out of the learning phase faster?",
+      "answer": "No. The conversion action stays set to the lead you sell, even if the account learns more slowly. The levers we use instead are geography, budget weighting, ad count and creative."
+    },
+    {
+      "question": "How do you know which HVAC ads booked jobs?",
+      "answer": "Calls are tracked by source, forms carry campaign tags, and lead source is carried to the job in your CRM where it supports that. On Housecall Pro, booked revenue can be sent back to Google Ads as an offline conversion, so bidding favors the leads that become jobs."
+    },
+    {
+      "question": "Does Performance Max work for HVAC?",
+      "answer": "Sometimes, and it needs watching. It spends across Search, Display, YouTube and Gmail with limited visibility into where the money went. We prove Search and Local Services Ads first, then test Performance Max with clean conversion data and branded search excluded."
+    },
+    {
+      "question": "How much does HVAC PPC management cost?",
+      "answer": "Paid media management for Google Ads, Meta and LSA is part of the Growth tier at $3,850 a month, and Premier is custom. Ad spend is separate and goes straight to the platforms. Current options are on our pricing page."
+    },
+    {
+      "question": "Who owns the HVAC ad accounts?",
+      "answer": "You do. Your Google Ads, Meta and Local Services Ads accounts are set up in your name and paid from your own billing. Our What You Own page covers the rest."
+    }
+  ],
+  "related": [
+    {
+      "label": "Industry",
+      "href": "/industries/hvac",
+      "title": "HVAC Marketing",
+      "body": "How paid fits with local search, seasonality and Housecall Pro attribution."
+    },
+    {
+      "label": "Service",
+      "href": "/seo/hvac",
+      "title": "HVAC SEO",
+      "body": "The organic side: map pack, service pages and technical health."
+    },
+    {
+      "label": "Service",
+      "href": "/meta-ads",
+      "title": "Meta Ads",
+      "body": "Facebook and Instagram retargeting, service-area recall and recruiting."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/speed-to-lead-home-service-businesses",
+      "title": "Speed to Lead",
+      "body": "Why answering fast decides whether a call becomes a booked job."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

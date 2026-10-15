@@ -1,0 +1,108 @@
+{
+  "kind": "industry",
+  "slug": "electrical",
+  "trade": "Electrical",
+  "status": "review",
+  "metaTitle": "Electrician Marketing Agency for Electrical Contractors",
+  "metaDescription": "Electrician marketing for residential and commercial contractors: search, maps, Local Services Ads and call tracking measured against booked jobs, not clicks.",
+  "h1": "Electrician Marketing Agency",
+  "intro": "Electrician marketing is the work of getting your company found by homeowners and businesses who need electrical work, then proving which calls became paid jobs. ASP runs search, maps, Local Services Ads and tracking for electrical contractors, and we report against booked revenue instead of clicks.",
+  "sections": [
+    {
+      "heading": "How demand for electrical work shows up",
+      "paragraphs": [
+        "Electrical work does not run on one calendar. Some calls are urgent, and the homeowner wants someone at the house today. Other jobs are planned over weeks, like adding capacity for a car charger or wiring a remodel. Your marketing has to reach both kinds of buyer, and they look for help in different ways.",
+        "Some of the planned work comes from newer equipment. The Department of Energy says most electric vehicle drivers charge overnight at home, and owners may install Level 2 (240-volt) equipment for a faster charge. It also says some homes may not have enough electrical capacity for Level 2 charging, and a qualified electrician can add circuits to cover it. BLS expects electricians to keep being needed to connect solar and wind generation to homes and businesses.",
+        "The U.S. Fire Administration estimated that about 24,000 residential building electrical fires were reported to U.S. fire departments each year from 2014 to 2016. Those figures are several years old, but they show electrical fires are a real hazard in homes."
+      ]
+    },
+    {
+      "heading": "Residential and commercial electrical work need different marketing",
+      "paragraphs": [
+        "Electricians held about 821,000 jobs in the U.S. in 2025, and BLS puts 66 percent of them with electrical and wiring contractors, while 7 percent are self-employed. Most of the trade works inside contracting companies with crews to keep busy. That is who we build for.",
+        "The contractors themselves split between two markets. BLS counted 61,028 private residential electrical contractor establishments in 2025, out of 100,285 private electrical and wiring contractor establishments. A homeowner with a problem wants a fast answer and an easy way to call. A commercial buyer often wants to see your licensing, insurance and the kind of projects you take on before asking for a bid.",
+        "We keep the two sides apart. Residential and commercial services get their own pages and ad groups, so the report shows which service is paying."
+      ]
+    },
+    {
+      "heading": "The channels ASP runs for electrical contractors",
+      "paragraphs": [
+        "Each channel has one job. Search ads and the map pack catch the person who needs an electrician now. Local Services Ads put a pay-per-lead listing above the map, and electricians are an eligible category. Service pages and content win the planned jobs, where the buyer reads before calling.",
+        "Hiring is part of the picture in this trade. BLS projects electrician employment to grow 9 percent from 2025 to 2035, much faster than average, with about 72,700 openings a year. When you need crew, recruiting runs on Meta as its own campaign, kept separate from lead generation."
+      ],
+      "bullets": [
+        "Google Search Ads for urgent, high-intent searches",
+        "Local Services Ads, managed against reviews and response time",
+        "Google Business Profile and map-pack work through Local SEO Pro",
+        "Service pages and content for planned and commercial work",
+        "Meta for retargeting site visitors and for recruiting"
+      ]
+    },
+    {
+      "heading": "How we measure results: calls, booked jobs and revenue",
+      "paragraphs": [
+        "We judge electrician marketing in three steps: the call or form, the booked job, and the revenue from that job. Rankings, clicks and impressions are early signs, not the result. Where your CRM supports it, we carry the lead source through to the job record so you can see which channel earned its keep.",
+        "ASP is an Official Housecall Pro Affiliate Partner, and Housecall Pro attribution setup is part of our Foundation tier. When a job is booked and completed in Housecall Pro, that outcome can be sent back to Google Ads (paid media runs in our Growth tier), so bidding learns from real jobs instead of raw leads. Our attribution guide explains how the pieces connect."
+      ]
+    },
+    {
+      "heading": "What you own",
+      "paragraphs": [
+        "Your website, domain, Google Business Profile, ad accounts and CRM data are set up in your name from day one. Your ad spend is paid straight to the ad platforms from your own accounts, and ASP never collects, holds or marks it up. ASP doesn't charge exit fees to transfer what we built for you. The full list is on our what-you-own page."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What does an electrician marketing agency do?",
+      "answer": "It gets your company in front of people who need electrical work and turns those searches into booked jobs. For electrical contractors that usually means service pages, a Google Business Profile, Google Ads and Local Services Ads, with tracking back to the job. ASP runs those pieces together and reports them against revenue."
+    },
+    {
+      "question": "Should I market residential and commercial electrical work separately?",
+      "answer": "In most cases, yes. A homeowner and a facility buyer search differently and need different proof before they call. Separate pages and ad groups let you see which service is paying."
+    },
+    {
+      "question": "Is it worth marketing EV charger installation?",
+      "answer": "If you do the work, it deserves its own page. The Department of Energy says most EV drivers charge at home overnight, and some homes may need added circuits for Level 2 charging. A page that explains capacity, circuits and permits answers the questions a buyer brings to the call."
+    },
+    {
+      "question": "How do you know which marketing is working?",
+      "answer": "We follow each lead from the first call or form to the booked job and its revenue. Where your CRM supports it, the lead source carries through to the job record. If you run Housecall Pro, attribution setup is included in our Foundation tier."
+    },
+    {
+      "question": "What does electrician marketing cost?",
+      "answer": "It depends on your market, your service area and which channels you need. Foundation is $2,500 a month and Growth is $3,850 a month. Every current option is on the pricing page."
+    },
+    {
+      "question": "Who owns my website and ad accounts?",
+      "answer": "You do. Your accounts are set up in your name, what we build for you is yours unless your Scope of Work says otherwise, and ASP does not charge exit fees to transfer it. The full breakdown is on our what-you-own page."
+    }
+  ],
+  "related": [
+    {
+      "label": "Organic",
+      "href": "/seo/electrical",
+      "title": "Electrician SEO",
+      "body": "Service pages, Business Profile work and technical fixes for electrical contractors."
+    },
+    {
+      "label": "Paid",
+      "href": "/ppc/electrical",
+      "title": "Electrician Advertising",
+      "body": "Google Search Ads, Local Services Ads and Meta, tracked to booked jobs."
+    },
+    {
+      "label": "Ownership",
+      "href": "/what-you-own",
+      "title": "What You Own",
+      "body": "Every account, asset and report built in your name, with no exit fees."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/marketing-attribution-home-service-businesses",
+      "title": "Marketing Attribution for Home Service Businesses",
+      "body": "How a booked job gets traced back to the channel that produced it."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}

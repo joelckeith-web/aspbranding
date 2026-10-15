@@ -1,0 +1,110 @@
+{
+  "kind": "industry",
+  "slug": "plumbing",
+  "trade": "Plumbing",
+  "status": "review",
+  "metaTitle": "Plumbing Marketing Agency for Plumbing Companies",
+  "metaDescription": "Plumbing marketing for emergency calls and planned work: search, ads, and Housecall Pro attribution that ties calls to booked jobs. See how ASP runs it.",
+  "h1": "Plumbing Marketing Agency",
+  "intro": "ASP is a plumbing marketing agency for companies that want more booked jobs, not just more calls. We run search, maps, paid ads and follow-up for both the burst-pipe emergency and the planned water heater or repipe job, then, where your CRM supports it, trace leads through to the jobs and revenue they produced.",
+  "sections": [
+    {
+      "heading": "How plumbing demand works: emergencies, planned jobs and weather",
+      "paragraphs": [
+        "Plumbing calls come in two very different kinds. BLS notes that plumbers are often on call for emergencies, so evening and weekend work is common. The homeowner with water spreading across the kitchen floor is on a phone, in a hurry, and calling whichever company looks credible and picks up.",
+        "Planned work runs on a slower clock. BLS expects demand for plumbers to come from new construction and from maintaining and repairing plumbing in existing homes and other buildings. A water heater replacement, a repipe or a bathroom rough-in gets researched, compared and quoted before anyone books.",
+        "Weather stacks spikes on top of both. The National Weather Service's cold-weather guidance tells people to take precautions so their water pipes don't freeze, and a hard freeze in your area is the kind of week that tests whether your marketing and your phones are ready."
+      ]
+    },
+    {
+      "heading": "The size of the plumbing market",
+      "paragraphs": [
+        "BLS counts about 510,600 jobs for plumbers, pipefitters and steamfitters in the US in 2025. That figure folds pipefitters and steamfitters in with plumbers, so it is not a plumbers-only count. BLS projects the occupation to grow 7 percent from 2025 to 2035.",
+        "About 65 percent of those jobs are with plumbing, heating and air-conditioning contractors, and another 8 percent are self-employed. Federal employment data also shows 94,274 private residential plumbing and HVAC contractor establishments in 2025. Plumbing and HVAC share one industry code in that data, so the number covers both trades together, not plumbing alone.",
+        "With that many companies in the field, marketing has a lot to do with who gets the call."
+      ]
+    },
+    {
+      "heading": "Which channels ASP runs for plumbing companies, and why",
+      "paragraphs": [
+        "We start where urgent calls are decided. Plumbing is one of Google's Local Services Ads categories, so a plumbing program usually starts with Local Services Ads, Google Search Ads and an active Business Profile for the map pack.",
+        "Planned work needs pages and patience. Service pages that explain repipes and water heater options carry the buyer who is still researching, and Meta retargeting keeps your name in front of homeowners who read those pages and left without calling. We don't pitch Meta as a source of emergency calls, because those happen in search.",
+        "When a qualifying freeze, flood or heavy-rain event hits your service area, StormFront publishes content tied to that event, so you have a relevant page up while people are searching."
+      ],
+      "bullets": [
+        "Local Services Ads, managed on reviews, response time and dispute rate",
+        "Google Search Ads split by service, so you can see which work is paying",
+        "Google Business Profile and local SEO for map pack visibility",
+        "Service pages and content for water heaters, repipes and other planned jobs",
+        "Meta retargeting and recruiting campaigns"
+      ]
+    },
+    {
+      "heading": "How results are measured: calls, booked jobs, revenue",
+      "paragraphs": [
+        "A ringing phone is not the finish line. Where your CRM supports it, we tag each phone call and web form by source, carry that source onto the customer and job record, and report revenue by channel.",
+        "For plumbing companies on Housecall Pro, this is part of the setup. ASP is an Official Housecall Pro Affiliate Partner, and Housecall Pro attribution setup is included in the Foundation tier. Booked revenue from Housecall Pro can be sent back to Google Ads as an offline conversion, so Google learns which calls became paid jobs.",
+        "This matters for plumbing because a drain call and a full repipe can come from the same campaign and pay very different amounts. One blended cost per lead hides which one is carrying the business."
+      ]
+    },
+    {
+      "heading": "What you own",
+      "paragraphs": [
+        "Your Google Ads, Local Services Ads and Meta accounts, your Google Business Profile, your website and its code, and your CRM and call tracking data are all set up in your name. Ad spend goes straight from your accounts to the platforms and is never part of an ASP fee. There's no exit fee if you leave, and the full list is on our what-you-own page."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you only work with plumbing companies?",
+      "answer": "No. ASP works across HVAC, plumbing, roofing, electrical and the other home service trades. Our leadership team owns trades-based businesses, so the work is built around how jobs get sold, booked and done."
+    },
+    {
+      "question": "Should a plumbing company market emergency calls or planned work?",
+      "answer": "Most companies need both, but they are marketed differently. Emergency work is won on visibility and speed in search, Local Services Ads and the map pack. Planned work is won on trust: clear service pages, reviews and follow-up. The budget split comes from what each kind of job is worth to you."
+    },
+    {
+      "question": "Do you work with Housecall Pro?",
+      "answer": "Yes. ASP is an Official Housecall Pro Affiliate Partner, and Housecall Pro attribution setup is part of our Foundation tier. If you are switching or starting fresh, discounts are for new Housecall Pro accounts only."
+    },
+    {
+      "question": "What if my business doesn't run Housecall Pro?",
+      "answer": "The method stays the same: tag each call and form by source, carry that source onto the job, and report revenue by channel. We connect lead source through to the job wherever your CRM supports it."
+    },
+    {
+      "question": "How much does plumbing marketing cost?",
+      "answer": "It depends on how many channels you run and how much of your current setup needs rebuilding. The full Growth System starts with Foundation at $2,500 a month, and standalone products like Local SEO Pro at $1,200 a month cost less. Ad spend is paid to the platforms separately, and current tiers are on our pricing page."
+    },
+    {
+      "question": "Who owns the accounts if I leave?",
+      "answer": "You do. Everything we build is set up in your name from day one, and there's no exit fee. Our what-you-own page lists each asset."
+    }
+  ],
+  "related": [
+    {
+      "label": "Service",
+      "href": "/seo/plumbing",
+      "title": "Plumbing SEO",
+      "body": "Map pack, service pages and content for plumbing companies, with what drives the cost."
+    },
+    {
+      "label": "Service",
+      "href": "/ppc/plumbing",
+      "title": "Plumbing Advertising",
+      "body": "Google Search Ads, Local Services Ads and Meta, judged on cost per booked job."
+    },
+    {
+      "label": "Guide",
+      "href": "/blog/marketing-attribution-home-service-businesses",
+      "title": "Marketing Attribution for Home Service Businesses",
+      "body": "How call tracking, forms, your CRM and the ad platforms connect to show which channel booked the job."
+    },
+    {
+      "label": "Industry",
+      "href": "/industries/hvac",
+      "title": "HVAC Marketing",
+      "body": "How ASP markets HVAC companies."
+    }
+  ],
+  "dateModified": "2026-10-15"
+}
