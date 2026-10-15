@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "ASP — Assess. Strategize. Perform.",
+    default: "ASP — Home Service Marketing Agency | Assess. Strategize. Perform.",
     template: "%s | ASP",
   },
   description:

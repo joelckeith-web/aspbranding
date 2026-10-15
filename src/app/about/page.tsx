@@ -89,6 +89,9 @@ export default function AboutPage() {
               <p className="text-gray-600 leading-relaxed">
                 Whether you&apos;re a small startup or a growing enterprise, we tailor our approach to meet your unique needs and drive measurable results. We don&apos;t believe in one-size-fits-all — every strategy we build is custom-designed for your revenue stage, industry, and growth goals.
               </p>
+              <p className="text-gray-600 leading-relaxed mt-6">
+                ASP is based in Austin, Texas, and aspbranding.com is our only website.
+              </p>
             </ScrollReveal>
             <ScrollReveal animation="slide-right">
               <img
