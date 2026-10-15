@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import matter from "gray-matter";
 
 /**
  * Trade landing pages: one industry hub per trade (/industries/<trade>), trade x
@@ -42,6 +43,8 @@ export interface TradePage {
   faqs: { question: string; answer: string }[];
   cta: { heading: string; body: string };
   related?: { label: string; href: string; title: string; body: string }[];
+  /** Slug of the long-form blog guide this page links to (shown only once that post is published). */
+  guideSlug?: string;
   /** Optional imagery + Element Bank motion. Pages without it keep the plain layout. */
   media?: {
     hero?: { src: string; position?: string };
@@ -84,4 +87,14 @@ export function getTradePage(kind: TradePageKind, slug: string): TradePage | und
 
 export function getPublishedTradePages(kind: TradePageKind): TradePage[] {
   return getTradePages(kind).filter((p) => p.status === "published");
+}
+
+/** The linked guide's title and description, or undefined until the post is published. */
+export function getPublishedGuide(slug?: string): { href: string; title: string; description: string } | undefined {
+  if (!slug) return undefined;
+  const file = path.join(process.cwd(), "content", "posts", `${slug}.md`);
+  if (!fs.existsSync(file)) return undefined;
+  const { data } = matter(fs.readFileSync(file, "utf8"));
+  if (data.status !== "published") return undefined;
+  return { href: `/blog/${slug}`, title: String(data.title), description: String(data.metaDescription ?? "") };
 }

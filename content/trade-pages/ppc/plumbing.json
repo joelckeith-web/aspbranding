@@ -119,6 +119,14 @@
     {
       "question": "Who owns the plumbing ad accounts?",
       "answer": "You do. Every ad account is set up in your name from day one, ad spend is paid from your own accounts, and there's no exit fee if you leave."
+    },
+    {
+      "question": "Can a drain cleaning company run Local Services Ads?",
+      "answer": "In California and Florida, yes: Google lists \"Drain expert\" as its own Local Services Ads category there. Elsewhere in the US, Google lists no separate drain category, and whether a drain-only company qualifies under \"Plumbers\" is Google's call. Google screens every business before ads run."
+    },
+    {
+      "question": "Should plumbing ads run after hours?",
+      "answer": "Only if someone will answer. If your crew takes after-hours calls, the ad schedule should run then, and BLS notes evening and weekend work is common for plumbers. If nobody picks up at 10 p.m., those clicks are wasted."
     }
   ],
   "cta": {
@@ -169,5 +177,6 @@
       ]
     },
     "og": "/images/og/ppc-plumbing.jpg"
-  }
+  },
+  "guideSlug": "plumbing-marketing-ideas"
 }

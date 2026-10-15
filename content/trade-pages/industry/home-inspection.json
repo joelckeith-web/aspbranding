@@ -22,7 +22,7 @@
     "cards": [
       {
         "title": "Agents are a channel",
-        "body": "Agents are part of most purchases, so we treat agent relationships as a channel of their own, next to search and ads, with assets your team can hand them."
+        "body": "Agents are part of most purchases. We treat them as a channel of their own, next to search and ads, and build materials your team can hand them."
       },
       {
         "title": "Show who does the inspection",
@@ -30,7 +30,7 @@
       },
       {
         "title": "Bigger firms have more to show",
-        "body": "Census counted 7,496 building inspection services establishments with paid employees in 2023, a broader category than home inspection, and 6,424 had fewer than five employees."
+        "body": "In 2023, Census counted 7,496 building inspection services establishments with paid employees. That category is broader than home inspection. Of those, 6,424 had fewer than five employees."
       }
     ]
   },
@@ -45,7 +45,7 @@
       },
       {
         "title": "Local Services Ads",
-        "body": "Home inspector is a US Local Services Ads category where Google runs it. Rank depends on review volume, response time and dispute rate, so your office team matters.",
+        "body": "Home inspector is a US Local Services Ads category where Google runs it. Your rank depends partly on your reviews and how fast you respond, so your office team matters.",
         "href": "/ppc"
       },
       {
@@ -55,12 +55,12 @@
       },
       {
         "title": "Facebook and Instagram",
-        "body": "Campaigns that keep your company in front of buyers and agents between transactions, built from footage of your own inspectors, not stock photography.",
+        "body": "Campaigns that keep your company in front of buyers and agents between home sales. They use video of your own inspectors, not stock photos.",
         "href": "/meta-ads"
       },
       {
         "title": "Business Profile per office",
-        "body": "Each office's Google Business Profile, citations and review capture, managed as an active channel rather than set up once and forgotten.",
+        "body": "Each office's Google Business Profile, citations and review capture, managed as an active channel, not set up once and forgotten.",
         "href": "/local-seo-pro"
       },
       {
@@ -95,7 +95,7 @@
       },
       {
         "title": "Keep the source attached",
-        "body": "Where your scheduling software supports it, the lead source stays attached when your office books the job, and tracking numbers get audited quarterly."
+        "body": "Where your scheduling software supports it, the lead source stays attached when your office books the job. Tracking numbers get audited every quarter."
       },
       {
         "title": "Shift budget to what books",
@@ -111,23 +111,31 @@
   "faqs": [
     {
       "question": "How do Local Services Ads work with several offices?",
-      "answer": "Google screens every business before ads run. When one business has several locations serving the same area, Local Services shows only its highest-ranking ad, so office coverage areas need planning before the profiles go live."
+      "answer": "Google screens every business before ads run. If one business has several locations serving the same area, Local Services shows only its highest-ranking ad. Plan each office's coverage area before the profiles go live."
     },
     {
       "question": "How do you market to real estate agents?",
-      "answer": "We build assets your team can put in front of agents: inspector bios with credentials, an active Business Profile with current reviews, and email and social content they can forward to clients. Agent referrals then get their own line in the report."
+      "answer": "We build materials your team can share with agents. That means inspector bios with credentials, an active Business Profile with current reviews, and email and social content agents can forward to clients. Agent referrals then get their own line in the report."
     },
     {
       "question": "Why does response time matter for inspection leads?",
-      "answer": "Local Services Ads rank partly on response time and reviews, so a slow reply can cost placement as well as the lead. With an office team, the fix is a clear owner for every new lead."
+      "answer": "Local Services Ads rank partly on response time and reviews. A slow reply can cost you your ad placement as well as the lead. With an office team, the fix is a clear owner for every new lead."
     },
     {
       "question": "Can you market commercial inspections too?",
-      "answer": "Yes. We can build commercial inspection pages next to your residential ones and check which commercial credential each inspector holds before it goes on the site."
+      "answer": "Yes. We can build commercial inspection pages next to your residential ones. Before a commercial credential goes on the site, we check which one each inspector holds."
     },
     {
       "question": "Does ASP own our ad accounts or reviews?",
-      "answer": "No. Your website, each office's Business Profile and reviews, the ad accounts, call tracking data and customer records are set up in your company's name, and there is no exit fee."
+      "answer": "No. Your website, each office's Business Profile and reviews, the ad accounts, call tracking data and customer records are set up in your company's name. There is no exit fee."
+    },
+    {
+      "question": "Do you build pages for each area our inspectors cover?",
+      "answer": "Yes. Service-area pages cover the places your inspectors work, written with real local detail instead of copied city pages. Each inspection service buyers search for gets its own page too."
+    },
+    {
+      "question": "Can you track an inspection after our office books it?",
+      "answer": "Yes, where your scheduling software supports it. Each source and office listing gets its own tracking number, and the source stays on the job when your office books it. Staff and campaigns change, so we check tracking numbers every quarter."
     }
   ],
   "cta": {
@@ -179,5 +187,6 @@
       ]
     },
     "og": "/images/og/industry-home-inspection.jpg"
-  }
+  },
+  "guideSlug": "home-inspection-business-marketing"
 }

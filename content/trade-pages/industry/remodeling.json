@@ -9,7 +9,7 @@
   "hero": {
     "eyebrow": "Remodeling & Exteriors",
     "h1": "Remodeling Marketing Built for Signed Projects",
-    "subhead": "Fill your project pipeline and know which channel signed each job. ASP runs SEO, Google and Local Services Ads, Facebook ads and the attribution behind them.",
+    "subhead": "Fill your project pipeline and know which channel signed each job. ASP runs SEO, Google and Local Services Ads, Facebook ads and the tracking that ties each job to its source.",
     "points": [
       "Kitchen, bath and exterior product lines",
       "Signed revenue reported by channel",
@@ -22,11 +22,11 @@
     "cards": [
       {
         "title": "Replacements lead the spending",
-        "body": "Projects such as roofing, windows and HVAC made up 49 percent of homeowner improvement spending in 2023, per Harvard's Joint Center for Housing Studies."
+        "body": "Replacement projects such as roofing, windows and HVAC made up 49 percent of homeowner improvement spending in 2023. That figure comes from Harvard's Joint Center for Housing Studies."
       },
       {
         "title": "Bigger firms are taking share",
-        "body": "General remodelers with revenues of at least $2.5 million grew their share of industry receipts from 45 percent in 2007 to 57 percent in 2017."
+        "body": "General remodelers with at least $2.5 million in revenue held 45 percent of industry receipts in 2007. By 2017, their share had grown to 57 percent."
       },
       {
         "title": "How exterior jobs get paid",
@@ -40,12 +40,12 @@
     "cards": [
       {
         "title": "Project-type SEO",
-        "body": "A page for each project type you want more of that buyers search for, such as kitchens, baths, siding or windows, with cost breakdowns and side-by-side comparisons.",
+        "body": "A page for each project type buyers search for and you want more of, such as kitchens, baths, siding or windows. Each page includes cost breakdowns and side-by-side comparisons.",
         "href": "/seo"
       },
       {
         "title": "Google Search and LSA",
-        "body": "Search Ads reach homeowners pricing a project now. Local Services Ads categories include bathroom and kitchen remodeling, general contractor, roofers, siding and window repair, where offered.",
+        "body": "Search Ads reach homeowners pricing a project now. Where Google offers them, Local Services Ads categories include bathroom and kitchen remodeling, general contractor, roofers, siding and window repair.",
         "href": "/ppc"
       },
       {
@@ -65,7 +65,7 @@
       },
       {
         "title": "Signed-project attribution",
-        "body": "Call tracking and form fields carry each lead's source into your CRM, so reports show signed projects and revenue by channel instead of lead counts.",
+        "body": "Call tracking and form fields carry each lead's source into your CRM. Reports then show signed projects and revenue by channel instead of lead counts.",
         "href": "/blog/marketing-attribution-home-service-businesses"
       }
     ]
@@ -104,7 +104,7 @@
       },
       {
         "title": "Weight budget to capacity",
-        "body": "Spend leans toward the project types your crews and subcontractors can deliver, then gets reviewed against signed revenue every month."
+        "body": "Spend leans toward the project types your crews and subcontractors can deliver. Every month, we check it against signed revenue."
       }
     ]
   },
@@ -115,23 +115,31 @@
   "faqs": [
     {
       "question": "What is remodeling contractor marketing?",
-      "answer": "It is the search, ads, content and follow-up that bring homeowners to you for kitchen, bath and exterior projects, plus the tracking that shows which of those efforts produced signed work."
+      "answer": "It is the search, ads, content and follow-up that bring homeowners to you for kitchen, bath and exterior projects. It also includes the tracking that shows which of those efforts produced signed work."
     },
     {
       "question": "Do Facebook ads work for remodeling companies?",
-      "answer": "Remodeling suits Meta well because the decision takes weeks and finished-project photos have time to do their job. We retarget people who visited your project pages before spending on cold audiences."
+      "answer": "Remodeling suits Meta well. The decision takes weeks, so photos of finished projects have time to do their job. We retarget people who visited your project pages before spending on cold audiences."
     },
     {
       "question": "How do we know which channel is working?",
-      "answer": "Judge it by signed projects, not lead counts. For firms between $1 million and $3 million in revenue, we compare first-touch and last-touch credit. Between $3 million and $10 million, a simple multi-touch model becomes worth the effort."
+      "answer": "Judge it by signed projects, not lead counts. For firms with $1 million to $3 million in revenue, we compare the channel that first found the buyer with the one that closed them. From $3 million to $10 million, a multi-touch model is worth it."
     },
     {
       "question": "Our crews are already stretched. Should we still market?",
-      "answer": "Yes, with the budget aimed carefully. In 2023, 64 percent of residential remodelers reported some or serious shortages of skilled trade subcontractors, so we weight spend toward the project types your team can deliver."
+      "answer": "Yes, with the budget aimed carefully. In 2023, 64 percent of residential remodelers reported some or serious shortages of skilled trade subcontractors. So we put more of the spend on the project types your team can deliver."
     },
     {
       "question": "Do you work with roofing, siding and window companies?",
       "answer": "Yes. Exterior replacement firms use the same method with their own product lines and calendars, and roofers with storm-driven demand can add StormFront."
+    },
+    {
+      "question": "How much should a remodeler spend on marketing?",
+      "answer": "Start from what a signed project is worth to you rather than a flat monthly figure. A high-ticket job can carry a higher cost per lead and still pay. Our marketing budget calculator helps with the math."
+    },
+    {
+      "question": "Who owns the project photos and videos you make for us?",
+      "answer": "You do. The project galleries, videos and written content we produce are yours, along with your website, Business Profile, ad accounts and CRM records, and there's no exit fee to take them with you."
     }
   ],
   "cta": {
@@ -183,5 +191,6 @@
       ]
     },
     "og": "/images/og/industry-remodeling.jpg"
-  }
+  },
+  "guideSlug": "remodeling-marketing-ideas"
 }

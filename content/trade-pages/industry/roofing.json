@@ -127,6 +127,14 @@
     {
       "question": "How much does roofing marketing cost with ASP?",
       "answer": "It depends on the package, and the package cards on this page show what each one includes. Ad spend is separate. You pay Google and Meta directly from your own accounts, and it is not part of any ASP fee."
+    },
+    {
+      "question": "Can you help a roofing company recruit crew?",
+      "answer": "Yes. When you need crew, ASP runs recruiting campaigns on Meta with their own budget, kept apart from the finished-roof photos and video aimed at replacement buyers."
+    },
+    {
+      "question": "How do you handle the slow winter months in roofing?",
+      "answer": "We use them to line up inspections and planned replacements. BLS notes roofing work may be limited during winter in northern states, so spend pushes hardest when your crews can get on roofs."
     }
   ],
   "cta": {
@@ -178,5 +186,6 @@
       ]
     },
     "og": "/images/og/industry-roofing.jpg"
-  }
+  },
+  "guideSlug": "roofing-lead-generation"
 }

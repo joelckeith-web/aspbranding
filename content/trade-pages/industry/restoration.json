@@ -9,7 +9,7 @@
   "hero": {
     "eyebrow": "Restoration marketing",
     "h1": "Restoration Marketing for the Moment Damage Hits",
-    "subhead": "When water, fire or mold damage hits, ASP works to make your company easy to find with local search, water damage Local Services Ads and storm-timed content.",
+    "subhead": "When water, fire or mold damage hits, ASP works to make your company easy to find. We use local search, water damage Local Services Ads and storm-timed content.",
     "points": [
       "Calls traced to booked restoration jobs",
       "StormFront content timed to weather events",
@@ -26,11 +26,11 @@
       },
       {
         "title": "Some demand follows the weather",
-        "body": "In markets touched by the Atlantic hurricane season, it runs June 1 to November 30, with most activity mid-August to mid-October. StormFront publishes targeted content when qualifying weather events hit."
+        "body": "In markets the Atlantic hurricane season reaches, it runs June 1 to November 30. Most activity falls from mid-August to mid-October. StormFront publishes targeted content when qualifying weather events hit."
       },
       {
         "title": "When owners call a pro",
-        "body": "EPA advises calling a professional after sewage or other contaminated-water damage, and tells people hiring for mold to check experience and references. Your pages should answer that first."
+        "body": "EPA advises calling a professional after damage from sewage or other contaminated water. It also tells people hiring for mold work to check experience and references. Your pages should answer that first."
       }
     ]
   },
@@ -40,7 +40,7 @@
     "cards": [
       {
         "title": "Restoration SEO",
-        "body": "Separate pages for water damage, mold remediation and fire and smoke damage, each naming the IICRC standard you follow: S500, S520 or S700.",
+        "body": "Separate pages for water damage, mold remediation, and fire and smoke damage. Each one names the IICRC standard you follow: S500, S520 or S700.",
         "href": "/seo"
       },
       {
@@ -60,12 +60,12 @@
       },
       {
         "title": "Meta for name recognition",
-        "body": "Emergency calls come from search, so Meta builds familiarity in your area beforehand and brings back people who visited your site.",
+        "body": "Emergency calls come from search. Meta makes your name familiar in your area beforehand and brings back people who visited your site.",
         "href": "/meta-ads"
       },
       {
         "title": "Call tracking to revenue",
-        "body": "Each source gets its own tracked number, forms carry campaign tags, and lead source flows into your CRM wherever it supports that.",
+        "body": "Each source gets its own tracking number, and forms carry campaign tags. Lead source then flows into your CRM wherever your CRM supports it.",
         "href": "/blog/marketing-attribution-home-service-businesses"
       }
     ]
@@ -110,7 +110,7 @@
   "faqs": [
     {
       "question": "What does a restoration marketing agency do?",
-      "answer": "It gets a water, fire or mold restoration company found when damage happens and shows which channels produced booked jobs. ASP runs local search, service pages, Local Services Ads, Search Ads, Meta and StormFront content, with call tracking tied to your CRM."
+      "answer": "It gets your restoration company found when water, fire or mold damage happens. It also shows which channels produced booked jobs. ASP runs local search, service pages, Local Services Ads, Search Ads, Meta and StormFront content, with call tracking tied to your CRM."
     },
     {
       "question": "Can I advertise fire and mold work on Local Services Ads?",
@@ -123,6 +123,10 @@
     {
       "question": "Who owns my Business Profile and ad accounts?",
       "answer": "You do. You stay the primary owner of your Business Profile, and ASP works inside it as a manager you can remove. Your ad accounts are in your name too, and nothing costs an exit fee to hand back."
+    },
+    {
+      "question": "Do Facebook ads bring in emergency restoration calls?",
+      "answer": "Not directly. People search for help the moment damage happens, so we use Facebook and Instagram to make your name familiar in your area beforehand and to bring back people who visited your site."
     }
   ],
   "cta": {
@@ -174,5 +178,6 @@
       ]
     },
     "og": "/images/og/industry-restoration.jpg"
-  }
+  },
+  "guideSlug": "water-damage-restoration-marketing"
 }

@@ -112,6 +112,14 @@
     {
       "question": "Is this the same as Local SEO Pro?",
       "answer": "Local SEO Pro is the local half: your Business Profile, citations, heatmap and rankings. Landscaping SEO adds the service pages, content and technical work on your site. Most clients need both, and they report together."
+    },
+    {
+      "question": "Can a landscaping company pay Google to rank higher on the map?",
+      "answer": "No. Google says there's no way to request or pay for a better local ranking. Local Services Ads are a paid placement, but they're ads, not a boost to your profile's ranking."
+    },
+    {
+      "question": "What helps a landscaping company rank on the map?",
+      "answer": "Google says local results are mainly based on relevance, distance and prominence. Your profile has to match the services you sell, cover the area you serve and earn the reviews that feed prominence."
     }
   ],
   "cta": {
@@ -162,5 +170,6 @@
       ]
     },
     "og": "/images/og/seo-landscaping.jpg"
-  }
+  },
+  "guideSlug": "lawn-care-business-marketing"
 }

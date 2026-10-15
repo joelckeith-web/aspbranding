@@ -121,6 +121,10 @@
     {
       "question": "Who owns my website and ad accounts?",
       "answer": "You do. Your website, domain, Business Profile, ad accounts and CRM data are set up in your name, and ad spend goes from your accounts straight to the platforms. ASP doesn't charge exit fees to transfer what we built. Details are on our what-you-own page."
+    },
+    {
+      "question": "What does an electrician marketing agency do?",
+      "answer": "It puts your company in front of people who need electrical work, then shows which calls became paid jobs. ASP runs service pages, your Business Profile, Google Ads and Local Services Ads together and reports them against revenue."
     }
   ],
   "cta": {
@@ -172,5 +176,6 @@
       ]
     },
     "og": "/images/og/industry-electrical.jpg"
-  }
+  },
+  "guideSlug": "electrician-marketing-ideas"
 }

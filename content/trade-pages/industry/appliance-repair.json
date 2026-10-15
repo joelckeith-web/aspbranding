@@ -125,6 +125,10 @@
     {
       "question": "Do I keep everything if I stop working with ASP?",
       "answer": "Yes. Accounts, profile, website and call data are in your name from day one, with no exit fees."
+    },
+    {
+      "question": "How do you keep out calls for brands we don't service?",
+      "answer": "With a negative keyword list in your search campaigns. Brands you don't service and addresses outside your drive time get filtered out, and campaigns are grouped by appliance so each one is judged on the repairs it books where your CRM supports it."
     }
   ],
   "cta": {
@@ -170,5 +174,6 @@
       ]
     },
     "og": "/images/og/industry-appliance-repair.jpg"
-  }
+  },
+  "guideSlug": "appliance-repair-marketing-ideas"
 }

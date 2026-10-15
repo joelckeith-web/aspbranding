@@ -127,6 +127,14 @@
     {
       "question": "Who owns the website and ad accounts?",
       "answer": "You do. Your domain, website, Business Profile, ad accounts and CRM data are set up in your name, ad spend goes straight to Google and Meta, and there are no exit fees if you leave."
+    },
+    {
+      "question": "Can you help a landscaping company hire crew?",
+      "answer": "Yes, because more booked work only helps if you can staff it. Recruiting runs on Meta as its own campaign with its own budget, so hiring spend is never read as lead-generation performance."
+    },
+    {
+      "question": "How do you count repeat mowing customers in reports?",
+      "answer": "We credit the first job to the channel that won the customer, and every repeat visit after that counts as retention. That way a season of mowing revenue can't inflate the numbers for the ad that brought them in."
     }
   ],
   "cta": {
@@ -178,5 +186,6 @@
       ]
     },
     "og": "/images/og/industry-landscaping.jpg"
-  }
+  },
+  "guideSlug": "lawn-care-business-marketing"
 }

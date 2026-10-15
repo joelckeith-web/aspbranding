@@ -118,6 +118,14 @@
     {
       "question": "What's the difference between roofing SEO and Local SEO Pro?",
       "answer": "Local SEO Pro handles your Business Profile, citations, ranking heatmap and local schema. Roofing SEO covers keyword strategy, service pages, content depth and technical fixes. Most clients need both, and the two report together."
+    },
+    {
+      "question": "Do AI Overviews change how roofers rank?",
+      "answer": "Not the work itself. Rankings and AI answers draw on the same work: first-hand detail, clear authorship and a site that crawls cleanly. No separate file or markup makes an AI cite you. What changes is measurement, because some searches end without a click."
+    },
+    {
+      "question": "Do project photo galleries hurt roofing SEO?",
+      "answer": "They don't have to. Project galleries and before-and-after photos are worth keeping. They need to be sized so they don't slow the page down on a phone, since phone load speed is one of the technical checks we run."
     }
   ],
   "cta": {
@@ -168,5 +176,6 @@
       ]
     },
     "og": "/images/og/seo-roofing.jpg"
-  }
+  },
+  "guideSlug": "roofing-lead-generation"
 }

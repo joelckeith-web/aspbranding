@@ -9,7 +9,7 @@
   "hero": {
     "eyebrow": "Carpet Cleaning Marketing",
     "h1": "Carpet Cleaning Marketing Built on Repeat Customers",
-    "subhead": "For carpet cleaning companies doing $500,000 to $600,000 a year. ASP runs paid media, SEO and repeat-customer follow-up built to keep every crew booked.",
+    "subhead": "For carpet cleaning companies doing $500,000 to $600,000 a year. ASP runs paid ads, SEO and follow-up with past customers, all built to keep every crew booked.",
     "points": [
       "Repeat jobs tracked apart from new ones",
       "Reminder timing starts from CRI guidance",
@@ -55,7 +55,7 @@
       },
       {
         "title": "Business Profile and citations",
-        "body": "Your Google Business Profile kept current across every area your crews cover, with citation cleanup and review capture handled for you.",
+        "body": "Your Google Business Profile kept current in every area your crews cover. We also clean up your listings on other sites and handle review requests.",
         "href": "/local-seo-pro"
       },
       {
@@ -65,7 +65,7 @@
       },
       {
         "title": "Repeat-customer follow-up",
-        "body": "Rebooking reminders, win-back messages and review requests. If you run Housecall Pro, we build them on its job events so each fires from real job activity.",
+        "body": "Rebooking reminders, win-back messages and review requests. If you run Housecall Pro, we build them on its job events, so each one is triggered by real work.",
         "href": "/growth-system"
       }
     ]
@@ -115,15 +115,15 @@
   "faqs": [
     {
       "question": "How often should we remind customers to book again?",
-      "answer": "CRI recommends professional cleaning every 12 to 18 months for homes and businesses. That interval is a sensible starting point for reminder timing, and your own repeat-booking data should set the final schedule."
+      "answer": "CRI recommends professional cleaning every 12 to 18 months for homes and businesses. That is a sensible starting point for reminder timing. Your own repeat-booking data should then set the final schedule."
     },
     {
       "question": "Can a company with several locations run Local Services Ads?",
-      "answer": "Yes, where Google offers the category. If two of your locations serve the same area, Google shows only your highest-ranking ad there, so map each location's coverage first."
+      "answer": "Yes, where Google offers the category. If two of your locations serve the same area, Google shows only your highest-ranking ad there. So map each location's coverage first."
     },
     {
       "question": "Do you market commercial carpet cleaning?",
-      "answer": "Yes. Commercial pages and ads are written for facility buyers and name the standards your crews follow, such as CRI 204 for commercial maintenance and ANSI/IICRC S100 for cleaning procedures."
+      "answer": "Yes. We write commercial pages and ads for facility buyers. They name the standards your crews follow, such as CRI 204 for commercial maintenance and ANSI/IICRC S100 for cleaning procedures."
     },
     {
       "question": "Do you work with Housecall Pro?",
@@ -132,6 +132,14 @@
     {
       "question": "What does ASP cost for a carpet cleaning company?",
       "answer": "ASP sells whole packages; the pricing cards above show what each one includes. Ad spend is paid from your own accounts straight to Google and Meta."
+    },
+    {
+      "question": "Do Facebook ads work for carpet cleaning companies?",
+      "answer": "They fit carpet cleaning well. It's a lower-ticket service people buy again, so a seasonal offer can sell directly to past customers and to the neighborhoods you already serve."
+    },
+    {
+      "question": "Who owns our customer list if we leave ASP?",
+      "answer": "You do. In a repeat business, the customer list pays you again and again, so it stays yours. So do your website, Business Profile and reviews, ad accounts and the follow-up automations we build, with no exit fee to move any of it."
     }
   ],
   "cta": {
@@ -179,5 +187,6 @@
       ]
     },
     "og": "/images/og/industry-carpet-cleaning.jpg"
-  }
+  },
+  "guideSlug": "carpet-cleaning-lead-generation"
 }

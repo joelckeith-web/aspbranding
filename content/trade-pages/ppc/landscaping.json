@@ -114,6 +114,14 @@
     {
       "question": "What happens to my ads in winter?",
       "answer": "Spend drops when your lawn work slows, unless you sell snow removal, in which case budget moves there. Your account and its history stay in your name year-round."
+    },
+    {
+      "question": "How do lawn care companies rank higher in Local Services Ads?",
+      "answer": "By working on more than the bid. Google's auction weighs your bid, how likely your ad is to bring a lead, and profile quality, including rating, number of reviews, average response time, images and completed verification checks. Google says missed calls may hurt responsiveness."
+    },
+    {
+      "question": "Why are my landscaping ads paying for clicks far outside my area?",
+      "answer": "Service-area businesses routinely pay for clicks outside the drive time they'd accept. We compare where the spend went with where your crews want to work, then tighten the targeting to match."
     }
   ],
   "cta": {
@@ -164,5 +172,6 @@
       ]
     },
     "og": "/images/og/ppc-landscaping.jpg"
-  }
+  },
+  "guideSlug": "lawn-care-business-marketing"
 }

@@ -122,6 +122,14 @@
     {
       "question": "Does electrician SEO help with Google's AI Overviews?",
       "answer": "The same work helps there. AI answers draw on content that is indexed, useful and trusted, so first-hand detail from your electricians and a clean site matter. ASP doesn't promise AI citations, because no one controls them."
+    },
+    {
+      "question": "How does an electrician rank for solar work?",
+      "answer": "Start with pages built for that work. BLS expects electricians to keep being needed to link solar and wind power to homes and businesses, so if you do solar or other generation work, those services get their own pages."
+    },
+    {
+      "question": "Which electrical services should get their own page to rank?",
+      "answer": "We weigh three things: what a booked job in that service is worth to you, how much search demand there is, and how strong the pages already ranking are. Commercial electrical work gets its own pages and project proof."
     }
   ],
   "cta": {
@@ -172,5 +180,6 @@
       ]
     },
     "og": "/images/og/seo-electrical.jpg"
-  }
+  },
+  "guideSlug": "electrician-marketing-ideas"
 }

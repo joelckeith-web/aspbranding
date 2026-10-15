@@ -115,6 +115,14 @@
     {
       "question": "Will you change my conversion action to get faster results?",
       "answer": "No. Counting a page view or a phone-number click makes the dashboard look better and adds nothing to your schedule. We use geography, budget weighting, ad count and creative instead."
+    },
+    {
+      "question": "Can a pressure washing company use the window cleaning LSA category?",
+      "answer": "That's Google's call, and we don't assume it. Google describes window cleaning as cleaning windows, mirrors, skylights and gutters. Until Google lists a category that fits, Search Ads do the paid work of reaching people already looking."
+    },
+    {
+      "question": "What makes a good pressure washing video ad?",
+      "answer": "Before-and-after clips from your own jobs, planned as vertical video for feeds and Reels rather than cropped from landscape footage. A yearly house wash can carry a seasonal offer, and retargeting site visitors runs before any cold audience."
     }
   ],
   "cta": {
@@ -165,5 +173,6 @@
       ]
     },
     "og": "/images/og/ppc-pressure-washing.jpg"
-  }
+  },
+  "guideSlug": "pressure-washing-business-marketing"
 }

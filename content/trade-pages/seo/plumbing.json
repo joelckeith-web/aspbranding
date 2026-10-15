@@ -114,6 +114,14 @@
     {
       "question": "How do you show plumbing SEO is working?",
       "answer": "Rankings and impressions show visibility moving, leads show it landing, and booked jobs show it paid. Domain Authority stays out of the report, because it's a third-party score Google doesn't use."
+    },
+    {
+      "question": "How does a plumber rank for \"plumber near me\" searches?",
+      "answer": "Mostly in the map pack, through your Business Profile, and with a short service page that loads fast on a phone. If you take after-hours calls, your pages and profile should say so clearly."
+    },
+    {
+      "question": "When should a plumber publish seasonal pages so they rank in time?",
+      "answer": "Before the season, not during it. EPA holds Fix a Leak Week every year, so leak pages are worth scheduling ahead of it. The National Weather Service tells people to take precautions so pipes don't freeze, so frozen-pipe pages go up before cold weather."
     }
   ],
   "cta": {
@@ -158,5 +166,6 @@
       ]
     },
     "og": "/images/og/seo-plumbing.jpg"
-  }
+  },
+  "guideSlug": "plumbing-marketing-ideas"
 }

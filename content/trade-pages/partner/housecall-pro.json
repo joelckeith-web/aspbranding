@@ -116,6 +116,14 @@
     {
       "question": "Is ASP part of Housecall Pro?",
       "answer": "No. ASP is a separate marketing agency and a Housecall Pro Affiliate. Housecall Pro makes the software, and the setup and marketing work on this page is ASP's, not Housecall Pro's."
+    },
+    {
+      "question": "Does Housecall Pro connect to Google Ads?",
+      "answer": "Not through a listed integration. As of October 2026, HCP's integrations page showed no native Google Ads or Google Analytics integration. ASP fills that gap by sending booked revenue from HCP back to Google Ads as offline conversions."
+    },
+    {
+      "question": "What call tracking works with Housecall Pro?",
+      "answer": "HCP's integrations page lists CallRail for call and web-form tracking. ASP uses CallRail or WhatConverts with most clients and passes the tracked source into HCP's Lead Source field."
     }
   ],
   "cta": {
@@ -167,5 +175,6 @@
       ]
     },
     "og": "/images/og/partner-housecall-pro.jpg"
-  }
+  },
+  "guideSlug": "housecall-pro-marketing"
 }

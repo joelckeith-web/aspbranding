@@ -128,6 +128,14 @@
     {
       "question": "Can you guarantee a certain number of calls?",
       "answer": "No. ASP doesn't guarantee rankings, lead volumes or revenue. You see the numbers behind every channel instead, and every account stays in your name."
+    },
+    {
+      "question": "What should I look for when hiring an HVAC marketing agency?",
+      "answer": "Look for reporting on booked jobs, not clicks. Ask whether you will see cost per booked job by channel, whether every account is set up in your name, and whether the plan shifts budget between peak repair season and the shoulder months."
+    },
+    {
+      "question": "Do you publish HVAC content when extreme weather hits?",
+      "answer": "Yes, through StormFront. It watches your service area and publishes content when qualifying events like extreme heat or a cold snap hit, so a relevant page is live while homeowners look for help."
     }
   ],
   "cta": {
@@ -177,5 +185,6 @@
       "alt": "HVAC technician installing ductwork in an attic"
     },
     "og": "/images/og/industry-hvac.jpg"
-  }
+  },
+  "guideSlug": "hvac-marketing-strategies"
 }

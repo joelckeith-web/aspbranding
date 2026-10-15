@@ -9,7 +9,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CountUp } from "@/components/ui/CountUp";
 import { BreadcrumbSchema, FaqPageSchema, ServiceSchema } from "@/components/schema/StructuredData";
 import caseStudies from "@/data/case-studies.json";
-import { type TradePage, tradePageUrl } from "@/lib/trade-pages";
+import { type TradePage, getPublishedGuide, tradePageUrl } from "@/lib/trade-pages";
 import "./trade-motion.css";
 
 const SITE = "https://www.aspbranding.com";
@@ -138,6 +138,7 @@ export function TradePageView({ page }: { page: TradePage }) {
   // Pages with a `media` block get photos plus the Element Bank motion; the rest keep the plain layout.
   const media = page.media;
   const motion = Boolean(media);
+  const guide = getPublishedGuide(page.guideSlug);
 
   return (
     <div className={motion ? "bk" : undefined}>
@@ -291,6 +292,25 @@ export function TradePageView({ page }: { page: TradePage }) {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* Link to the long-form guide: depth lives there, not on the landing page */}
+      {guide && (
+        <section className="bg-white pb-16">
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+            <Link
+              href={guide.href}
+              className="group flex flex-col gap-4 rounded-[var(--radius-asp-xl)] border border-gray-200 bg-asp-surface-light p-7 transition hover:border-asp-blue md:flex-row md:items-center md:justify-between"
+            >
+              <div className="max-w-3xl">
+                <p className={`font-black uppercase tracking-wide text-sm text-asp-blue ${motion ? "bk-eyebrow" : ""}`}>The full guide</p>
+                <p className="mt-2 font-black text-2xl leading-tight text-asp-black">{guide.title}</p>
+                {guide.description && <p className="mt-2 text-base leading-relaxed text-black/70">{guide.description}</p>}
+              </div>
+              <span className="flex-none font-bold text-asp-blue">Read the guide →</span>
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* Stat strip */}
       {page.stats && page.stats.length > 0 && (

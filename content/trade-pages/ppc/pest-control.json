@@ -123,6 +123,14 @@
     {
       "question": "Will you change my conversion action to exit the learning phase faster?",
       "answer": "No. Switching to a softer event like a page view makes the dashboard look better and changes nothing on your schedule. We use geography, budget weighting, ad count and creative instead."
+    },
+    {
+      "question": "Should pest control ad budgets rise in summer?",
+      "answer": "Not on a national calendar alone. BLS figures show about 12% more people on pest control payrolls in July 2024 than in January 2024, but that isn't ad demand. Your budget follows your own account and job data."
+    },
+    {
+      "question": "How do you track Local Services Ads leads for pest control?",
+      "answer": "Each LSA lead is tagged as LSA in your CRM and checked every month against Google's LSA billing. That lets the report show cost per booked job for LSA next to your other channels."
     }
   ],
   "cta": {
@@ -169,5 +177,6 @@
       ]
     },
     "og": "/images/og/ppc-pest-control.jpg"
-  }
+  },
+  "guideSlug": "pest-control-marketing-ideas"
 }

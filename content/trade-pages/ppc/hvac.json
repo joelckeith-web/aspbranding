@@ -116,6 +116,14 @@
     {
       "question": "Who owns the HVAC ad accounts?",
       "answer": "You do. Google Ads, Meta and Local Services Ads accounts are set up in your name and paid from your own billing, and there are no exit fees."
+    },
+    {
+      "question": "Can homeowners book HVAC jobs straight from a Local Services Ad?",
+      "answer": "Yes, in some cases. LSA leads arrive as phone calls, message requests or bookings made straight from the ad, and Google lists AC contractors among the home-service types its booking integrations support in the US."
+    },
+    {
+      "question": "Does Performance Max work for HVAC?",
+      "answer": "Sometimes, and it needs watching. It spends across Search, Display, YouTube and Gmail, with limited visibility into where the money went. That's why it comes after Search and Local Services Ads have proven themselves in your account."
     }
   ],
   "cta": {
@@ -160,5 +168,6 @@
       ]
     },
     "og": "/images/og/ppc-hvac.jpg"
-  }
+  },
+  "guideSlug": "hvac-marketing-strategies"
 }

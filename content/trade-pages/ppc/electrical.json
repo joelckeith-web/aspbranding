@@ -113,6 +113,14 @@
     {
       "question": "Do I own my ad accounts?",
       "answer": "Yes. Your Google Ads, Local Services Ads and Meta accounts are set up in your name, and ASP never collects, holds or marks up what you spend. The what-you-own page lists everything else that stays yours."
+    },
+    {
+      "question": "How should an electrician advertise EV charger installs?",
+      "answer": "In their own ad group, judged on its own cost per job and sent to a page about home capacity and added circuits. The Department of Energy says some homes may need an electrician to add circuits before a Level 2 charger goes in."
+    },
+    {
+      "question": "Should an electrician start with Google Ads or SEO?",
+      "answer": "If you need jobs booked this month, start with paid and build organic underneath it. Paid ends when the budget does, while SEO is slower to move but keeps returning once it does. Most established operators run both."
     }
   ],
   "cta": {
@@ -163,5 +171,6 @@
       ]
     },
     "og": "/images/og/ppc-electrical.jpg"
-  }
+  },
+  "guideSlug": "electrician-marketing-ideas"
 }

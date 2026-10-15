@@ -132,6 +132,14 @@
     {
       "question": "Who owns the accounts if we stop working together?",
       "answer": "You do. Your website, Business Profile, ad accounts and data are in your name from the start, and ASP charges no handover or exit fees. Our What You Own page has the full list."
+    },
+    {
+      "question": "What do you put on a pest control website to build trust?",
+      "answer": "Your license and insurance details where buyers can see them, plus your guarantee terms if you offer one. A 2005 EPA consumer fact sheet lists all three among the questions homeowners should ask. A steady flow of recent reviews on your Business Profile helps too."
+    },
+    {
+      "question": "Do you plan pest control marketing around the seasons?",
+      "answer": "Yes, service line by service line. Some pests keep their own schedule: the CDC says ticks are most active from April through September, though people can be exposed year-round, so a tick service can be planned around that window."
     }
   ],
   "cta": {
@@ -179,5 +187,6 @@
       ]
     },
     "og": "/images/og/industry-pest-control.jpg"
-  }
+  },
+  "guideSlug": "pest-control-marketing-ideas"
 }

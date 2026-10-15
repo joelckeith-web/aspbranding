@@ -123,6 +123,14 @@
     {
       "question": "How much does flooring marketing cost?",
       "answer": "ASP sells whole packages, shown in the pricing cards on this page with what each includes. Ad spend goes straight from your own accounts to the platforms."
+    },
+    {
+      "question": "How do you track a flooring lead to the installed job?",
+      "answer": "Call tracking numbers and form fields record where each lead came from. Where your CRM supports it, that source stays with the lead through the measure, the signed job and the install, so you see installed jobs and revenue by channel."
+    },
+    {
+      "question": "Do you work with flooring showrooms as well as installers?",
+      "answer": "Yes. ASP runs SEO, Google Ads, Local Services Ads where Google offers the flooring category, and Facebook ads for both. Flooring is decided over weeks, so the offer fits a long decision, such as an in-home measure or a showroom visit."
     }
   ],
   "cta": {
@@ -178,5 +186,6 @@
       "alt": "Flooring crew at work on a job site"
     },
     "og": "/images/og/industry-flooring.jpg"
-  }
+  },
+  "guideSlug": "flooring-marketing-ideas"
 }

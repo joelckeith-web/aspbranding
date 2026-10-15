@@ -116,6 +116,10 @@
     {
       "question": "How much should a roofer spend on ads?",
       "answer": "Work back from what a booked job is worth, not a flat monthly number. A replacement can carry a much higher cost per lead than a small repair and still pay. Spend goes straight to Google and Meta."
+    },
+    {
+      "question": "Which searches should roofing ads keep out?",
+      "answer": "Searches such as those from people looking for roofing jobs, pricing shingles to buy or planning a do-it-yourself repair. Those go on the negative keyword list, which grows every week, so the budget stays on homeowners who want a roofer."
     }
   ],
   "cta": {
@@ -166,5 +170,6 @@
       ]
     },
     "og": "/images/og/ppc-roofing.jpg"
-  }
+  },
+  "guideSlug": "roofing-lead-generation"
 }

@@ -107,6 +107,14 @@
     {
       "question": "How is SEO different from Local Services Ads?",
       "answer": "Local Services Ads are a paid slot charged per lead, and you are visible while you pay. SEO is the organic and map work underneath, slower to build and still there when ad spend pauses."
+    },
+    {
+      "question": "Do reviews help a pest control company rank in the map pack?",
+      "answer": "Yes, they're part of it. On the map side, Business Profile data, review volume and recency, and consistent citations carry real weight. Local SEO Pro manages that work, with citation audits across 60+ directories and a ranking heatmap from 50+ grid points each month."
+    },
+    {
+      "question": "Can pages on new invasive pests help us show up in local search?",
+      "answer": "Yes, when the pest is showing up in your area. A clear page on what it is and how you treat it gives local searchers a straight answer. BLS expects the growing number of invasive insect species to create demand for pest control services."
     }
   ],
   "cta": {
@@ -153,5 +161,6 @@
       ]
     },
     "og": "/images/og/seo-pest-control.jpg"
-  }
+  },
+  "guideSlug": "pest-control-marketing-ideas"
 }

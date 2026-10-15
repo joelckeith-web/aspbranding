@@ -122,6 +122,14 @@
     {
       "question": "Do you only work with plumbers?",
       "answer": "No. ASP works across HVAC, plumbing, roofing, electrical and other home service trades. Our leadership team owns trades-based businesses, so the work is built around how jobs get sold, booked and done."
+    },
+    {
+      "question": "Will Facebook ads bring in emergency plumbing calls?",
+      "answer": "Not reliably, and we don't pitch Meta that way, because emergency calls happen in search. Meta keeps your name in front of homeowners who read your repipe or water heater pages and left without calling."
+    },
+    {
+      "question": "What happens to our marketing when a hard freeze hits?",
+      "answer": "StormFront publishes content tied to qualifying freeze, flood or heavy-rain events in your service area, so a relevant page is live while people search. A hard freeze also tests whether your phones are ready."
     }
   ],
   "cta": {
@@ -173,5 +181,6 @@
       ]
     },
     "og": "/images/og/industry-plumbing.jpg"
-  }
+  },
+  "guideSlug": "plumbing-marketing-ideas"
 }

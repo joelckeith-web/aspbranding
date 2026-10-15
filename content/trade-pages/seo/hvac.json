@@ -123,6 +123,14 @@
     {
       "question": "What do you need from us?",
       "answer": "Time for interviews with you or a senior tech, access to your own accounts, and a straight answer on which services you want more of."
+    },
+    {
+      "question": "Can an HVAC company rank for heat pump searches?",
+      "answer": "Yes, when your market's research supports it. EIA counted about 13 percent of U.S. households heating mainly with a heat pump in 2020. The same units also cool the house, so one well-built page can serve buyers in both seasons."
+    },
+    {
+      "question": "How does an HVAC company get into the Google map pack?",
+      "answer": "It starts with getting your Google Business Profile right: categories, services, service areas, photos, posts and reviews. Local SEO Pro then maps where you rank from 50+ grid points each month, so you see which neighborhoods show you and which don't."
     }
   ],
   "cta": {
@@ -171,5 +179,6 @@
       "alt": "HVAC technician installing ductwork in an attic"
     },
     "og": "/images/og/seo-hvac.jpg"
-  }
+  },
+  "guideSlug": "hvac-marketing-strategies"
 }

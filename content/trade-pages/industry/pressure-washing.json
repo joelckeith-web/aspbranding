@@ -121,6 +121,14 @@
     {
       "question": "Who owns my accounts if I leave?",
       "answer": "You do. Your website, Business Profile, reviews, ad accounts, call tracking and CRM data are built in your name, and ASP charges no exit fee to hand them over."
+    },
+    {
+      "question": "What photos and video will you need from our crews?",
+      "answer": "Before-and-after shots and short vertical videos from your own jobs. We plan what your crews capture, so your ads and Business Profile have a steady supply of real work to show."
+    },
+    {
+      "question": "How do you set up our Business Profile service area?",
+      "answer": "We set it to match where your crews work. A business that travels to customers without a storefront gets one service-area profile, and Google says the area generally shouldn't reach past about 2 hours' drive from your base, though larger areas can suit some businesses."
     }
   ],
   "cta": {
@@ -172,5 +180,6 @@
       ]
     },
     "og": "/images/og/industry-pressure-washing.jpg"
-  }
+  },
+  "guideSlug": "pressure-washing-business-marketing"
 }
