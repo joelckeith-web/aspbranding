@@ -14,27 +14,27 @@
         "Housecall Pro calls its built-in outreach automated marketing. According to HCP's own feature pages, here is what the software does by itself:"
       ],
       "bullets": [
-        "Automated marketing: postcards, one-time or recurring email campaigns to customer segments, reminder emails before each job and thank-you emails after.",
-        "AI follow-up: texts up to 10 customers a day who are due for follow-up, with messages you can review, edit, skip or turn off.",
+        "Automated marketing: postcards, including one-time or recurring campaigns to customer segments; email marketing; reminder emails before each job and thank-you emails after.",
+        "Automated Text Campaigns: texts up to 10 customers a day who are due for follow-up, with messages you can review, edit, skip or turn off.",
         "Review management: automated review requests after each job or payment, and one dashboard to view and respond to Google and Facebook reviews.",
         "Lead Source field: records where a customer found you, on customers, jobs and estimates.",
         "Reporting: custom reports filtered by job status, customer and lead source, plus Analyst AI, which builds reports from a typed question.",
         "Online Booking: bookable time slots on your website, social media and Google, based on your team's schedule, service area and job duration.",
-        "CSR AI: answers calls and website chats and books jobs from your account's services and availability, with text answering in alpha."
+        "CSR AI: answers calls and website chats and books jobs from your account's services and availability."
       ]
     },
     {
       "heading": "Where HCP stops and a marketing agency starts",
       "paragraphs": [
-        "Housecall Pro's tools mostly work once a customer is in your system. A marketing agency works on both sides of that line. Here is the split, tool by tool."
+        "Most of Housecall Pro's marketing tools work once a customer is in your system. A marketing agency works on both sides of that line. Here is the split, tool by tool."
       ],
       "bullets": [
         "Finding new customers. Housecall Pro: its automated marketing is aimed at repeat business and referrals. ASP: SEO, Google Business Profile, Google Ads and Meta ads that bring new homeowners to you.",
         "Lead source. Housecall Pro: a field on each customer, job or estimate. ASP: call tracking numbers and form fields that capture the source and pass it into HCP, so the field is filled from data.",
         "Google Ads. Housecall Pro: as of October 2026, its integrations page lists no native Google Ads or Google Analytics integration. ASP: runs the Google Ads account and sends booked revenue back to it as offline conversions.",
         "Local Services Ads. Housecall Pro: connects Local Services Ads and Reserve with Google bookings to Job Inbox, and sends 'Book Online' clicks to HCP's booking flow. ASP: manages the LSA account itself, including the reviews and response time it ranks on.",
-        "Reviews. Housecall Pro: sends the request and gathers Google and Facebook replies in one place. ASP: times requests, routes them to the right platform and folds reviews into Business Profile management.",
-        "Follow-up. Housecall Pro: postcards, email campaigns and AI follow-up texts. ASP: maps quote-to-close sequences, maintenance reminders and win-back campaigns to your sales process, built on HCP's job events.",
+        "Reviews. Housecall Pro: sends the request and gathers Google and Facebook reviews in one place. ASP: times requests, routes them to the right platform and folds reviews into Business Profile management.",
+        "Follow-up. Housecall Pro: postcards, email campaigns and automated text campaigns. ASP: maps quote-to-close sequences, maintenance reminders and win-back campaigns to your sales process, built on HCP's job events.",
         "Reporting. Housecall Pro: job, estimate and lead-source reports inside the software. ASP: a monthly review that puts ad spend next to booked revenue, reported as cost per booked job."
       ]
     },
@@ -64,7 +64,7 @@
   "faqs": [
     {
       "question": "Does Housecall Pro do marketing for you?",
-      "answer": "It automates part of it. HCP's automated marketing sends postcards, email campaigns, job reminders and follow-ups, and its review tools request reviews after each job or payment. Its feature pages describe outreach to customers already in your system, not running Google Ads, Meta ads or SEO, and that is the work an agency adds."
+      "answer": "It automates part of it. HCP's automated marketing sends postcards, email campaigns, job reminders and follow-ups, and its review tools request reviews after each job or payment. Its automated marketing page describes outreach to customers already in your system, not running Google Ads, Meta ads or SEO, and that is the work an agency adds."
     },
     {
       "question": "Can Housecall Pro track which ad produced a job?",
