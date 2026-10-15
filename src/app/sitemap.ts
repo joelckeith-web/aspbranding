@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog/posts";
+import { getPublishedTradePages, tradePageUrl, type TradePageKind } from "@/lib/trade-pages";
 
 const BASE = "https://www.aspbranding.com";
 
@@ -62,5 +63,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...blogEntries];
+  const tradeKinds: TradePageKind[] = ["industry", "seo", "ppc", "partner"];
+  const tradeEntries: MetadataRoute.Sitemap = tradeKinds.flatMap((kind) =>
+    getPublishedTradePages(kind).map((p) => ({
+      url: `${BASE}${tradePageUrl(p)}`,
+      lastModified: new Date(p.dateModified),
+      changeFrequency: "monthly" as const,
+      priority: kind === "industry" ? 0.8 : 0.7,
+    })),
+  );
+  const industriesIndex: MetadataRoute.Sitemap = getPublishedTradePages("industry").length
+    ? [{ url: `${BASE}/industries`, lastModified: now, changeFrequency: "monthly", priority: 0.8 }]
+    : [];
+
+  return [...staticEntries, ...industriesIndex, ...tradeEntries, ...blogEntries];
 }

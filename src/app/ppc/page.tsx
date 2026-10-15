@@ -8,6 +8,8 @@ import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ExpandableDetails } from "@/components/sections/ExpandableDetails";
 import { SectionBreak } from "@/components/sections/SectionBreak";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { TradeGridCard } from "@/components/sections/TradeGridCard";
+import { getPublishedTradePages } from "@/lib/trade-pages";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
 const PAGE_TITLE = "PPC Management Services for Home Service Businesses";
@@ -36,6 +38,8 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
 };
+
+const LIVE_TRADES = new Set(getPublishedTradePages("ppc").map((p) => p.slug));
 
 const TRADES = [
   { name: "HVAC", slug: "hvac", icon: "thermometer" },
@@ -374,10 +378,7 @@ export default function PpcPage() {
           <ScrollReveal animation="stagger">
             <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
               {TRADES.map((t) => (
-                <div
-                  key={t.slug}
-                  className="flex flex-col items-center gap-3 rounded-[var(--radius-asp-xl)] border border-asp-blue-light/25 bg-white/[0.03] px-4 py-6 text-center transition-colors hover:border-asp-blue-light/60"
-                >
+                <TradeGridCard key={t.slug} href={LIVE_TRADES.has(t.slug) ? `/ppc/${t.slug}` : undefined}>
                   <svg
                     className="h-8 w-8 text-asp-blue-light"
                     fill="none"
@@ -389,7 +390,7 @@ export default function PpcPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d={ICONS[t.icon]} />
                   </svg>
                   <span className="font-bold text-base">{t.name}</span>
-                </div>
+                </TradeGridCard>
               ))}
             </div>
           </ScrollReveal>

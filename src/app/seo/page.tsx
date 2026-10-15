@@ -8,6 +8,8 @@ import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { ExpandableDetails } from "@/components/sections/ExpandableDetails";
 import { SectionBreak } from "@/components/sections/SectionBreak";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { TradeGridCard } from "@/components/sections/TradeGridCard";
+import { getPublishedTradePages } from "@/lib/trade-pages";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 
 const PAGE_TITLE = "Home Service SEO for Contractors";
@@ -39,10 +41,12 @@ export const metadata: Metadata = {
 };
 
 /**
- * Trade grid. Phase 1 renders these as non-linking cards — the per-trade SEO
- * pages don't exist yet, and the site's rule is that we never ship a link to a
- * 404. Phase 2 turns `href` on and points each card at /seo/<slug>.
+ * Trade grid. A card links to /seo/<slug> only once that page is published
+ * (content/trade-pages/seo); the rest stay non-linking so we never ship a link
+ * to a 404 or a noindexed draft.
  */
+const LIVE_TRADES = new Set(getPublishedTradePages("seo").map((p) => p.slug));
+
 const TRADES = [
   { name: "HVAC", slug: "hvac", icon: "thermometer" },
   { name: "Plumbing", slug: "plumbing", icon: "wrench" },
@@ -342,10 +346,7 @@ export default function SeoPage() {
           <ScrollReveal animation="stagger">
             <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
               {TRADES.map((t) => (
-                <div
-                  key={t.slug}
-                  className="flex flex-col items-center gap-3 rounded-[var(--radius-asp-xl)] border border-asp-blue-light/25 bg-white/[0.03] px-4 py-6 text-center transition-colors hover:border-asp-blue-light/60"
-                >
+                <TradeGridCard key={t.slug} href={LIVE_TRADES.has(t.slug) ? `/seo/${t.slug}` : undefined}>
                   <svg
                     className="h-8 w-8 text-asp-blue-light"
                     fill="none"
@@ -357,7 +358,7 @@ export default function SeoPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d={ICONS[t.icon]} />
                   </svg>
                   <span className="font-bold text-base">{t.name}</span>
-                </div>
+                </TradeGridCard>
               ))}
             </div>
           </ScrollReveal>
