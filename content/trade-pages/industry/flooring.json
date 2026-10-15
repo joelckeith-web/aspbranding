@@ -5,88 +5,136 @@
   "status": "review",
   "metaTitle": "Flooring Marketing for Installers and Showrooms",
   "metaDescription": "Flooring marketing from ASP: SEO, Google and Local Services Ads, and Facebook ads for flooring companies, measured against installed jobs, not clicks.",
-  "h1": "Flooring Marketing for Installers and Showrooms",
-  "intro": "Flooring marketing is the work of getting your company chosen when a homeowner or facility manager starts looking for new floors, then proving which channel produced each installed job. ASP runs SEO, Google and Local Services Ads, and Facebook ads for flooring installers and showrooms, measured against booked revenue.",
-  "sections": [
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Flooring Marketing",
+    "h1": "Flooring Marketing Built Around Installed Jobs",
+    "subhead": "Win more in-home measures and signed floors, and see which channel paid for each one. ASP runs your SEO, Google and Local Services Ads, and Facebook ads.",
+    "points": [
+      "Reporting on installed jobs, not clicks",
+      "Commercial flooring results in our case study",
+      "Your accounts, your data, no exit fee"
+    ]
+  },
+  "why": {
+    "heading": "What it takes to win flooring work",
+    "intro": "Flooring buyers take weeks to decide, and most flooring contractors are small shops. A company with several crews has more finished work to show.",
+    "cards": [
+      {
+        "title": "Older owners favor replacement work",
+        "body": "In 2023, owners 65 and over put an average of 54 percent of their improvement dollars into replacement projects such as flooring, against 47 percent for owners under 65."
+      },
+      {
+        "title": "Pro installs are gaining ground",
+        "body": "From 2021 to 2023, spending on professionally installed improvement projects rose 14 percent in real terms, while do-it-yourself spending fell 13 percent, Harvard's JCHS reports."
+      },
+      {
+        "title": "Book what your crews can install",
+        "body": "JCHS reports projected job gains will not close the skilled-trade deficit for flooring installers. We weight spend toward the services and areas your crews can take on."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What ASP runs for flooring companies",
+    "intro": "Search catches buyers ready to book. Facebook stays in front of the ones still deciding.",
+    "cards": [
+      {
+        "title": "Flooring SEO",
+        "body": "A page for each flooring service with real demand, such as installation, repair, sanding and refinishing, built in order of what each job is worth to you.",
+        "href": "/seo"
+      },
+      {
+        "title": "Google and Local Services Ads",
+        "body": "Search Ads for buyers typing 'floor refinishing near me', plus Local Services Ads where Google offers the flooring category in your area.",
+        "href": "/ppc"
+      },
+      {
+        "title": "Business Profile and reviews",
+        "body": "Your Google Business Profile run as an active channel, with services, service areas, finished-floor photos, weekly posts and review capture.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Facebook and Instagram ads",
+        "body": "Before-and-after rooms and short install walk-throughs, shown first to people who visited your flooring pages without calling.",
+        "href": "/meta-ads"
+      },
+      {
+        "title": "Installed-job reporting",
+        "body": "Call tracking and form fields tag every lead, and the source stays attached through the measure, the signed job and the install.",
+        "href": "/blog/marketing-attribution-home-service-businesses"
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "How flooring demand works",
-      "paragraphs": [
-        "BLS expects new-home construction and the renovation of existing homes to be the primary source of flooring and tile installation work through 2035. It projects employment of flooring installers and tile and stone setters to grow 4 percent from 2025 to 2035.",
-        "Homeowners are hiring out more of their projects. Harvard's Joint Center for Housing Studies (JCHS) reports that from 2021 to 2023, owner spending on skilled-labor projects, including interior replacements such as flooring, grew faster than the improvement market overall. Over the same years, spending on professionally installed projects rose 14 percent in real terms, while do-it-yourself spending fell 13 percent.",
-        "Older owners lean toward replacement work. In 2023, owners age 65 and over spent an average of 54 percent of their improvement dollars on replacement projects such as flooring, compared with 47 percent for owners under 65. Write for that buyer too: cost, durability and what install day looks like."
-      ]
+      "value": "17,989",
+      "label": "flooring contractor establishments with paid employees",
+      "source": "Census CBP, 2023"
     },
     {
-      "heading": "Search and Local Services Ads for flooring companies",
-      "paragraphs": [
-        "Search comes first, because the homeowner typing 'hardwood floor refinishing near me' already wants the work done. We build a page for each flooring service that has real demand, such as installation, repair, sanding and refinishing, in order of what a booked job in that service is worth to you.",
-        "Flooring services is an eligible Local Services Ads category in the US, where Google offers it in your area. Google ranks those ads in an auction, and it weighs your bid, how likely your ad is to produce a lead, and profile quality: your rating, review count, response time, photos and the verification checks you have completed.",
-        "Most flooring contractors are small shops. Census counted 17,989 flooring contractor establishments with paid employees in 2023, and 13,809 of them had fewer than five employees. BLS says certification is not required for flooring installers, so a voluntary credential is worth showing when your team has one. The National Wood Flooring Association runs a Certified Professional program and says many of its member manufacturers recommend hiring NWFA Certified Professionals."
-      ]
-    },
-    {
-      "heading": "Facebook ads for flooring companies",
-      "paragraphs": [
-        "Flooring is decided over weeks, not minutes, and that is where Facebook and Instagram ads earn a place in the plan. A homeowner pricing new floors has time to look at finished rooms, before-and-after photos and short videos of your crew before filling out a form.",
-        "We build the Meta account in a set order. Retargeting people who visited your flooring pages without calling goes live before money goes to cold audiences, and the offer fits a long decision, such as an in-home measure or a showroom visit. Search still runs first: if people in your area are searching for flooring and finding someone else, that gets fixed before Facebook gets more budget."
-      ],
-      "bullets": [
-        "Before-and-after photos of finished rooms from your own jobs",
-        "A short walk-through of a completed install",
-        "An installer answering one question customers ask every week",
-        "Vertical video shot for feeds and Reels, not cropped from landscape footage"
-      ]
-    },
-    {
-      "heading": "How we measure flooring marketing",
-      "paragraphs": [
-        "A flooring lead is not a sale. The path runs from a call or form, to a measure or estimate, to a signed job, to the install, and the report has to follow it all the way. Call tracking numbers and form fields record where each lead came from, and that source is carried into your CRM so you see installed jobs and revenue by channel.",
-        "Foundation includes Housecall Pro attribution setup if you run HCP. Where your CRM supports it, booked revenue is sent back to Google Ads as an offline conversion, so bidding follows the leads that turn into jobs instead of every lead that calls.",
-        "Crew capacity matters as much as lead volume. JCHS reports that projected job gains will not close the skilled-trade deficit for flooring installers, so we weight the budget toward the services and areas your crews can take on."
-      ]
-    },
-    {
-      "heading": "What you own",
-      "paragraphs": [
-        "Your website and domain, your Google Business Profile and its reviews, your Google, Meta and Local Services Ads accounts, and your CRM records are all set up in your name. Ad spend goes straight from your accounts to the platforms, and ASP charges no handover or exit fee if you move on. The photos and videos of your finished floors stay in your content library, which matters in a trade that sells on finished work."
-      ]
+      "value": "13,809",
+      "label": "of those had fewer than five employees",
+      "source": "Census CBP, 2023"
     }
   ],
+  "process": {
+    "heading": "How we start with your flooring company",
+    "steps": [
+      {
+        "title": "Run the Growth Diagnostic",
+        "body": "About 90 seconds online gives you a read on where your marketing stands before anyone pitches you."
+      },
+      {
+        "title": "Audit the site and accounts",
+        "body": "A 30-minute call, then we go through your site, ad accounts and tracking. You keep the findings whether or not you hire us."
+      },
+      {
+        "title": "Fix tracking, then build",
+        "body": "Where your CRM supports it, lead source is wired through to the job first, so each flooring page and campaign is judged on installs."
+      },
+      {
+        "title": "Report against installed jobs",
+        "body": "Each month you see what was spent, what it booked and what changes next."
+      }
+    ]
+  },
   "caseStudySlug": "commercial-flooring",
+  "pricing": {
+    "heading": "Packages for flooring companies",
+    "subhead": "Organic SEO for your flooring service pages is included from Foundation up. Management of your Google, Meta and Local Services Ads is included from Growth up."
+  },
   "faqs": [
     {
       "question": "Do Facebook ads work for flooring companies?",
-      "answer": "They can, because flooring is a decision people make over weeks, which gives photos and video of finished rooms time to work. We start with retargeting people who already visited your site, then test cold audiences once there is lead data to build from. Facebook runs alongside search, not in place of it."
+      "answer": "They can. Flooring is decided over weeks, which gives photos and video of finished rooms time to work. We retarget site visitors first, test cold audiences once there is lead data, and keep search running alongside."
     },
     {
       "question": "Can a flooring company run Local Services Ads?",
-      "answer": "Yes, where Google offers it in your area. Google's screening for flooring businesses lists general and professional liability insurance, plus state-level business and owner licenses where local law requires them. Google also runs business and owner checks for select users."
+      "answer": "Yes, where Google offers the flooring category in your area. Google ranks those ads in an auction on your bid, how likely the ad is to produce a lead, and profile quality, including rating, reviews, response time and photos."
     },
     {
       "question": "Do you work with commercial flooring contractors?",
-      "answer": "Yes. The case study on this page is a commercial flooring and concrete coatings company that was invisible on the terms its buyers searched. The work was keyword research, a competitive gap analysis, on-page SEO, local SEO and content aimed at high-value commercial terms."
+      "answer": "Yes. Our case study is a commercial flooring and concrete coatings company that was invisible on the terms its buyers searched. The work was keyword research, a competitive gap analysis, on-page SEO, local SEO and content aimed at high-value commercial terms."
     },
     {
-      "question": "Do you build backlinks for flooring websites?",
-      "answer": "No. ASP doesn't buy links or sell link packages. Links earned through useful content, real partnerships and press are worth having, but we don't sell them as a product."
+      "question": "Should we show our installers' certifications?",
+      "answer": "Yes, when your team holds one. The National Wood Flooring Association says many of its member manufacturers recommend hiring NWFA Certified Professionals, so that credential belongs on your site and in your ads."
     },
     {
-      "question": "How much does flooring marketing cost with ASP?",
-      "answer": "ASP's Foundation tier is $2,500 a month. Growth, which adds paid media management for Google Ads, Meta and Local Services Ads, is $3,850 a month. Ad spend is separate and paid straight to the platforms, and our pricing page lists what each tier includes."
+      "question": "How much does flooring marketing cost?",
+      "answer": "ASP sells whole packages, shown in the pricing cards on this page with what each includes. Ad spend goes straight from your own accounts to the platforms."
     }
   ],
+  "cta": {
+    "heading": "Get more floors on the schedule",
+    "body": "Start with the Growth Diagnostic or a 30-minute audit call. You'll see what is working in your flooring marketing and what isn't."
+  },
   "related": [
     {
       "label": "Service",
       "href": "/meta-ads",
       "title": "Meta Ads Management",
-      "body": "How we run Facebook and Instagram ads for trades where buyers take weeks to decide."
-    },
-    {
-      "label": "Service",
-      "href": "/seo",
-      "title": "Home Service SEO",
-      "body": "The method behind the service pages and content on a flooring site."
+      "body": "Facebook and Instagram ads for projects buyers decide over weeks."
     },
     {
       "label": "Proof",
@@ -95,11 +143,16 @@
       "body": "The full commercial flooring write-up and other client results."
     },
     {
+      "label": "Guide",
+      "href": "/blog/marketing-attribution-home-service-businesses",
+      "title": "Marketing Attribution Guide",
+      "body": "How call tracking, forms, your CRM and ad platforms connect."
+    },
+    {
       "label": "Industry",
       "href": "/industries/remodeling",
       "title": "Remodeling Marketing",
       "body": "Marketing for kitchen, bath and exterior remodeling firms."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

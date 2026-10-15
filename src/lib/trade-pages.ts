@@ -64,6 +64,8 @@ export function getTradePages(kind: TradePageKind): TradePage[] {
     .readdirSync(dir)
     .filter((f) => f.endsWith(".json"))
     .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")) as TradePage)
+    // Only landing-format pages render; any older long-form draft is skipped.
+    .filter((p) => Boolean(p.hero))
     .sort((a, b) => a.trade.localeCompare(b.trade));
 }
 

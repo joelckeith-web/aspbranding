@@ -3,75 +3,137 @@
   "slug": "home-inspection",
   "trade": "Home Inspection",
   "status": "review",
-  "metaTitle": "Home Inspection Company Marketing for Multi-Inspector Firms",
-  "metaDescription": "Home inspection company marketing for multi-inspector firms: SEO, Local Services Ads, agent marketing and attribution across every inspector's calendar.",
-  "h1": "Home Inspection Company Marketing",
-  "intro": "Home inspection company marketing for a staffed, multi-inspector firm has two buyers to win: the homebuyer and the agent advising them. ASP runs SEO, Local Services Ads, Facebook ads and agent-facing marketing for larger inspection companies, and tracks bookings back to their source across all of your inspectors.",
-  "sections": [
+  "metaTitle": "Home Inspection Marketing for Multi-Inspector Companies",
+  "metaDescription": "Home inspection marketing for staffed, multi-inspector companies: SEO, Local Services Ads, agent-referral marketing and bookings tracked to their source.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Home Inspection Marketing",
+    "h1": "Home Inspection Company Marketing for Multi-Inspector Firms",
+    "subhead": "Win more agent referrals and direct bookings, and see which source fills each inspector's calendar. ASP runs SEO, Local Services Ads, Facebook ads and agent marketing.",
+    "points": [
+      "Built for staffed, multi-inspector companies",
+      "Agent referrals tracked as their own channel",
+      "Multi-location inspection case study below"
+    ]
+  },
+  "why": {
+    "heading": "Win the agent and the homebuyer",
+    "intro": "Home inspections serve homebuyers, and most buyers work with an agent who advises them. A staffed firm with several inspectors can market to both at once.",
+    "cards": [
+      {
+        "title": "Agents are a channel",
+        "body": "Agents are part of most purchases, so we treat agent relationships as a channel of their own, next to search and ads, with assets your team can hand them."
+      },
+      {
+        "title": "Show who does the inspection",
+        "body": "Most sites bury their credentials. Named inspector bios put each license and credential where agents and buyers can see them."
+      },
+      {
+        "title": "Bigger firms have more to show",
+        "body": "Census counted 7,496 building inspection services establishments with paid employees in 2023, a broader category than home inspection, and 6,424 had fewer than five employees."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What ASP runs for inspection companies",
+    "intro": "Search and ads bring direct bookings. Agent marketing and Facebook keep your name in front of referral sources between transactions.",
+    "cards": [
+      {
+        "title": "Inspection SEO",
+        "body": "A page for each inspection service buyers search for, plus service-area pages written with real local detail for the places your inspectors work.",
+        "href": "/seo"
+      },
+      {
+        "title": "Local Services Ads",
+        "body": "Home inspector is a US Local Services Ads category where Google runs it. Rank depends on review volume, response time and dispute rate, so your office team matters.",
+        "href": "/ppc"
+      },
+      {
+        "title": "Google Search Ads",
+        "body": "Search campaigns cover the inspection searches Local Services Ads don't reach, with one ad group per service or service area.",
+        "href": "/ppc"
+      },
+      {
+        "title": "Facebook and Instagram",
+        "body": "Campaigns that keep your company in front of buyers and agents between transactions, built from footage of your own inspectors, not stock photography.",
+        "href": "/meta-ads"
+      },
+      {
+        "title": "Business Profile per office",
+        "body": "Each office's Google Business Profile, citations and review capture, managed as an active channel rather than set up once and forgotten.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Booking attribution",
+        "body": "Each source and office listing gets its own tracking number, so reports show booked inspections from Local Services Ads, search, Facebook and agent referrals.",
+        "href": "/blog/marketing-attribution-home-service-businesses"
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "How home inspection demand works",
-      "paragraphs": [
-        "Home inspectors serve homebuyers, so US home sales are a useful read on demand. NAR reported in October 2026 that existing-home sales ran at a seasonally adjusted annual rate of 3.99 million in September 2026, up 1.5 percent from August and down 2.2 percent from a year earlier.",
-        "The buyer pool is changing. First-time buyers fell to a record-low 21 percent share in NAR's 2025 Profile of Home Buyers and Sellers, and their typical age rose to 40. Federal law also directs HUD to tell potential homebuyers about the availability and importance of an independent home inspection.",
-        "Most inspection businesses are small. Census counted 7,496 building inspection services establishments with paid employees in 2023, a category broader than home inspection, and 6,424 of them had fewer than five employees. A firm with an office team and several inspectors has more to market: more service areas, more specialties and more credentialed inspectors to put in front of buyers and agents."
-      ]
+      "value": "88%",
+      "label": "of buyers used an agent or broker",
+      "source": "NAR Profile of Home Buyers and Sellers, 2025"
     },
     {
-      "heading": "Marketing to real estate agents",
-      "paragraphs": [
-        "Agents are part of most purchases. In NAR's 2025 Profile, 88 percent of buyers used an agent or broker, and 92 percent of buyers of previously owned homes relied on one. For a multi-inspector firm, agent relationships work as a channel of their own, next to search and ads.",
-        "We support that channel with assets your team can put in front of agents: inspector bios with licenses and credentials, an active Google Business Profile with current reviews, and email and social content agents can forward to their clients. Put each inspector's license on the bio. BLS says most states and localities require construction and building inspectors, the occupation that includes home inspectors, to hold a license or certification."
-      ]
-    },
-    {
-      "heading": "SEO and ads for inspection companies",
-      "paragraphs": [
-        "On the search side, we build a page for each inspection service buyers search for, in order of what each booking is worth to you. Service-area pages cover the places your inspectors work, written with real local detail rather than copied city pages.",
-        "Home inspector is an eligible Local Services Ads category in the US, where Google runs it in your area. Google's screening for home inspectors lists general and professional liability insurance, plus state-level business and owner licenses where local law applies. LSA rank depends on review volume, response time and dispute rate, so the office team answering those leads is part of how the ad performs.",
-        "Google Search Ads cover searches Local Services Ads don't reach, and Facebook and Instagram keep your name in front of buyers and agents between transactions. The case study on this page is a multi-location inspection company where Facebook campaigns were rebuilt from the creative up, Local Services Ads were scaled across every service area, and YouTube, email and local SEO ran alongside."
-      ]
-    },
-    {
-      "heading": "Scheduling and attribution across multiple inspectors",
-      "paragraphs": [
-        "With several inspectors and an office team, a lead passes through more hands before it becomes a booked inspection. Each marketing source and each office listing gets its own tracking number, website forms capture the campaign a visitor came from, and that source has to stay attached when your office books the job in your scheduling software.",
-        "The report then shows booked inspections and revenue by source, including Local Services Ads, Google Ads, organic search, Facebook and agent referrals, so budget follows what books. Tracking numbers get audited quarterly, because staff change, campaigns get added and numbers get reassigned. Where your software supports it, booked revenue goes back to Google Ads as an offline conversion."
-      ]
-    },
-    {
-      "heading": "What you own",
-      "paragraphs": [
-        "Everything built for your inspection company stays with the company: the website and domain, each office's Google Business Profile and reviews, the ad accounts, call tracking data, customer records, and the video and email content we produce. Ad spend is paid from your accounts straight to Google and Meta, never through ASP, and there is no exit fee."
-      ]
+      "value": "92%",
+      "label": "of previously owned home buyers relied on one",
+      "source": "NAR Profile of Home Buyers and Sellers, 2025"
     }
   ],
+  "process": {
+    "heading": "How we start with an inspection company",
+    "steps": [
+      {
+        "title": "Start with the Diagnostic",
+        "body": "About 90 seconds online tells you where your marketing stands, before any sales conversation."
+      },
+      {
+        "title": "Audit the current setup",
+        "body": "On a 30-minute call and in the review after it, we check your site, ad accounts and tracking numbers. You keep the findings."
+      },
+      {
+        "title": "Keep the source attached",
+        "body": "Where your scheduling software supports it, the lead source stays attached when your office books the job, and tracking numbers get audited quarterly."
+      },
+      {
+        "title": "Shift budget to what books",
+        "body": "Monthly reports put booked inspections and revenue by source side by side, so budget follows what books."
+      }
+    ]
+  },
   "caseStudySlug": "home-inspection",
+  "pricing": {
+    "heading": "Packages for multi-inspector firms",
+    "subhead": "Organic SEO for your inspection pages comes with Foundation and every package above it. Growth adds management of your Local Services Ads, Google Ads and Meta campaigns."
+  },
   "faqs": [
     {
-      "question": "How do Local Services Ads work for an inspection company with several offices?",
-      "answer": "Google asks businesses serving multiple locations for business- and employee-level licenses for each location. When one business has several locations serving the same area, Local Services shows only its highest-ranking ad for a search. Office coverage areas need planning before the profiles go live."
+      "question": "How do Local Services Ads work with several offices?",
+      "answer": "Google screens every business before ads run. When one business has several locations serving the same area, Local Services shows only its highest-ranking ad, so office coverage areas need planning before the profiles go live."
     },
     {
-      "question": "What credentials should go on our inspector bios?",
-      "answer": "Each inspector's state license where your state requires one, plus any association credential they hold. For example, ASHI's Certified Inspector credential requires passing the National Home Inspector Examination, completing at least 250 fee-paid inspections that meet ASHI's Standards of Practice, and report review. ASHI has operated since 1976."
-    },
-    {
-      "question": "Can you market commercial inspections too?",
-      "answer": "Yes, we can build commercial pages next to the residential ones. Those pages should name the standard behind the work, such as ASTM E2018, the standard guide for baseline property condition assessments of commercial real estate. InterNACHI has discontinued its commercial property inspection certification and now refers inspectors to the Certified Commercial Property Inspectors Association, so check which commercial credential each inspector holds before it goes on the site."
+      "question": "How do you market to real estate agents?",
+      "answer": "We build assets your team can put in front of agents: inspector bios with credentials, an active Business Profile with current reviews, and email and social content they can forward to clients. Agent referrals then get their own line in the report."
     },
     {
       "question": "Why does response time matter for inspection leads?",
-      "answer": "Google's Local Services Ads weigh response time and reviews when ranking, so slow replies can cost placement as well as the lead. With an office team, the fix is a clear owner for every new lead and a schedule that covers the hours leads come in."
+      "answer": "Local Services Ads rank partly on response time and reviews, so a slow reply can cost placement as well as the lead. With an office team, the fix is a clear owner for every new lead."
     },
     {
-      "question": "What does marketing cost for a multi-inspector firm?",
-      "answer": "Which tier fits depends on the channels you need. ASP's Foundation tier is $2,500 a month, Growth is $3,850 a month, and Premier is priced to the engagement. The pricing page lists what each includes, and ad spend is paid to the platforms separately."
+      "question": "Can you market commercial inspections too?",
+      "answer": "Yes. We can build commercial inspection pages next to your residential ones and check which commercial credential each inspector holds before it goes on the site."
     },
     {
       "question": "Does ASP own our ad accounts or reviews?",
-      "answer": "No. They are set up in your company's name, and our What You Own page lists every asset."
+      "answer": "No. Your website, each office's Business Profile and reviews, the ad accounts, call tracking data and customer records are set up in your company's name, and there is no exit fee."
     }
   ],
+  "cta": {
+    "heading": "Grow bookings across every inspector",
+    "body": "Start with the Growth Diagnostic or book a 30-minute audit call. We'll review your site, ads and tracking and tell you what to fix first."
+  },
   "related": [
     {
       "label": "Service",
@@ -97,6 +159,5 @@
       "title": "Speed to Lead",
       "body": "Why the time between a new lead and the first reply matters."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

@@ -4,102 +4,153 @@
   "trade": "Pressure Washing",
   "status": "review",
   "metaTitle": "Pressure Washing Marketing for Exterior Cleaning Companies",
-  "metaDescription": "Pressure washing marketing from ASP: Google Business Profile, search, Google Ads and Facebook, tracked to booked jobs. Your accounts stay in your name.",
-  "h1": "Pressure Washing Marketing Agency",
-  "intro": "ASP is a pressure washing marketing agency for house wash, roof cleaning and flatwork companies. We run your Business Profile, website, Google Ads and Facebook ads as one system and report it against booked jobs and revenue. Everything we build is set up in your name.",
-  "sections": [
+  "metaDescription": "Pressure washing marketing from ASP: before-and-after creative, Google Business Profile, search and Facebook ads, timed to your season and tracked to jobs.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Pressure Washing",
+    "h1": "Pressure Washing Marketing Agency",
+    "subhead": "Marketing that puts your before-and-after work in front of local homeowners. ASP runs your profile, website, Google ads and Facebook ads, judged by booked jobs.",
+    "points": [
+      "Creative built from your own jobs",
+      "Spend timed to your busy months",
+      "Accounts set up in your name"
+    ]
+  },
+  "why": {
+    "heading": "Why pressure washing marketing runs on your own work",
+    "intro": "Pressure washing is a visual job, so your own photos and video carry the pitch. Your season shapes the plan too.",
+    "cards": [
+      {
+        "title": "Your work is the ad",
+        "body": "Before-and-after sequences of your own jobs are one of the formats we lean on. Stock images of another company's driveway are a common reason trade ads underperform."
+      },
+      {
+        "title": "Plan around your own season",
+        "body": "Federal data has no separate category for pressure washing. So we build your calendar from your invoices and call logs, then from tracked jobs."
+      },
+      {
+        "title": "No LSA shortcut",
+        "body": "Google's Local Services Ads list had no pressure washing category when checked on October 15, 2026. Search Ads and your Business Profile carry that load."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What ASP runs for pressure washing companies",
+    "cards": [
+      {
+        "title": "Pressure washing advertising",
+        "body": "Google Search Ads with an ad group per service: house washing, roof cleaning, concrete, decks and fences. Wasted searches get filtered out every week.",
+        "href": "/ppc/pressure-washing"
+      },
+      {
+        "title": "Google Business Profile",
+        "body": "Accurate services, before-and-after photos, steady review requests and weekly posts, so your profile shows the work buyers want to see.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Service pages that sell",
+        "body": "A page each for house washing, roof cleaning, flatwork and decks, answering what a buyer wants to know before calling.",
+        "href": "/seo"
+      },
+      {
+        "title": "Facebook before-and-after ads",
+        "body": "Vertical before-and-after video, seasonal house wash offers and retargeting for site visitors who didn't book.",
+        "href": "/meta-ads"
+      },
+      {
+        "title": "Job tracking and repeat customers",
+        "body": "Calls and forms keep their source on the job where your CRM supports it. A yearly house wash customer counts as won once.",
+        "href": "/blog/marketing-attribution-home-service-businesses"
+      },
+      {
+        "title": "Housecall Pro setup",
+        "body": "If you run Housecall Pro, we configure its job attribution as a Housecall Pro Affiliate, linking completed washes to their lead source.",
+        "href": "/housecall-pro"
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "How demand works for pressure washing",
-      "paragraphs": [
-        "Federal data doesn't track pressure washing on its own. The trade has no NAICS code of its own; the closest federal category is Other Services to Buildings and Dwellings, which lists building exterior cleaning and drain or gutter cleaning as examples. That same category also includes pool, chimney and duct cleaning.",
-        "Employment in the broader category swings with the season: US private employment was 103,283 in January 2024 and 131,517 in July 2024. Those are worker counts, not a measure of customer demand. Pool cleaning sits in the same group, so that swing can't be pinned on pressure washing alone, and that is why we build your marketing calendar from your own booked jobs once tracking is in place."
-      ]
-    },
-    {
-      "heading": "The channels ASP runs for pressure washing companies",
-      "paragraphs": [
-        "Most of the work starts with Google. According to Google, three things mainly decide local results: relevance, distance and prominence. Google also says no one can pay to rank higher in them. A business that travels to customers without a storefront gets one service-area profile, and Google says the area generally shouldn't extend past about 2 hours' drive from its base, though larger areas can suit some businesses.",
-        "Each channel below has a clear role in the plan."
-      ],
-      "bullets": [
-        "Google Business Profile: services listed accurately, before-and-after photos, steady review requests and weekly posts.",
-        "Website and service pages: house washing, roof cleaning, concrete and flatwork, decks and fences, each answering what a buyer wants to know before calling.",
-        "Google Search Ads: the main paid channel, since Google's Local Services Ads list had no pressure washing category when it was checked on October 15, 2026.",
-        "Facebook and Instagram: before-and-after video, seasonal offers and retargeting site visitors who didn't book."
-      ]
-    },
-    {
-      "heading": "Trust signals that belong on your site",
-      "paragraphs": [
-        "Put the credentials your company holds where buyers will see them. The Power Washers of North America, a non-profit trade association founded in 1992, reports issuing more than 7,000 certifications. Its House Wash Certification teaches contractors to clean homes with low-pressure methods, covering chemical handling and surface protection. The United Association of Mobile Contract Cleaners offers certifications including Wash Water Control, Roof Cleaning and Wood Restoration.",
-        "How you handle runoff is worth explaining too. In its lead-safe renovation guidance, EPA advises proper disposal of pressure washing waste water and points firms to their local water treatment authority. If your crews capture or route wash water by local rules, a short section on your site says so plainly."
-      ]
-    },
-    {
-      "heading": "How we measure pressure washing marketing",
-      "paragraphs": [
-        "We report calls, forms, booked jobs and revenue by channel, not clicks alone. Tracking numbers tag each call by source, and forms pass their source into your CRM so it stays attached to the job, where your CRM supports it.",
-        "Repeat customers get counted separately. A homeowner who books a house wash every year was won once, so later visits count as retention instead of new acquisition, which keeps each channel's numbers honest. If you run Housecall Pro, ASP is an Official Housecall Pro Affiliate Partner and sets up Housecall Pro attribution as part of the Foundation tier."
-      ]
-    },
-    {
-      "heading": "What you own",
-      "paragraphs": [
-        "Your website, domain, Business Profile and reviews, ad accounts, call tracking and CRM data are built in your name. Ad spend goes from your accounts straight to Google and Meta. If you ever leave, there's no exit fee to take it all with you."
-      ]
+      "value": "103,283 → 131,517",
+      "label": "Jan to July employment, broader building-services category",
+      "source": "BLS QCEW, 2024"
     }
   ],
+  "process": {
+    "heading": "How we start with your company",
+    "steps": [
+      {
+        "title": "Review what you have",
+        "body": "We look at your profile, site, ads and tracking and show you what's costing you jobs."
+      },
+      {
+        "title": "Gather your best work",
+        "body": "We plan which before-and-after shots and short videos your crews capture, so there's a steady supply."
+      },
+      {
+        "title": "Launch search first",
+        "body": "Search Ads and your profile go first to catch people already looking; Facebook builds around them."
+      },
+      {
+        "title": "Read the results monthly",
+        "body": "You see calls, booked jobs and revenue by channel each month, with repeat washes counted separately."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Packages for pressure washing companies",
+    "subhead": "Organic SEO is included from Foundation up for pressure washing companies, and paid media management, including your Google and Facebook ads, is included from Growth up."
+  },
   "faqs": [
     {
       "question": "What does a pressure washing marketing agency do?",
-      "answer": "It runs the channels that turn local searches into booked jobs: your Business Profile, website, Google Ads and Facebook ads, plus the tracking that shows which one produced each job. ASP runs those as one system and reviews them with you every month."
+      "answer": "It gets your work in front of homeowners searching nearby and tracks which channel booked each job. ASP runs your Business Profile, website, Google ads and Facebook ads together, with one monthly review."
     },
     {
-      "question": "Can pressure washing companies run Google Local Services Ads?",
-      "answer": "Not under a pressure washing category. Google's US list had no pressure washing or power washing category when it was checked on October 15, 2026, and Google describes the list as what's available \"at this time,\" so it can change. Our pressure washing advertising page covers how we build paid search without it."
+      "question": "Can pressure washing companies run Local Services Ads?",
+      "answer": "Not under a category of their own. Google's US list had no pressure washing or power washing category when checked on October 15, 2026. Google calls the list what's available \"at this time,\" so we keep watching it."
     },
     {
-      "question": "Do PWNA or UAMCC certifications help my marketing?",
-      "answer": "They give buyers a specific reason to trust you. Both are voluntary association certifications, not licenses, so their value comes from showing them clearly. We put them on your site, profile and ads where a homeowner comparing quotes will see them."
+      "question": "Do certifications help my marketing?",
+      "answer": "Voluntary certifications from groups like PWNA or UAMCC give homeowners comparing quotes a reason to trust you. We show them on your site, profile and ads."
     },
     {
-      "question": "How do you plan around slow months?",
-      "answer": "We plan budget and content around your calendar rather than a national average, since federal data doesn't track pressure washing on its own. Spend leads into your busy months and pulls back when crews are booked. After a season of tracked jobs, your own numbers set the schedule."
-    },
-    {
-      "question": "What does pressure washing marketing cost?",
-      "answer": "ASP's Foundation tier is $2,500 a month and Growth is $3,850 a month, with paid media management included in Growth. Local SEO Pro runs on its own at $1,200 a month. Ad spend is separate; our pricing page shows what each tier includes."
+      "question": "How do you plan around slow stretches?",
+      "answer": "From your own history, since no national data series tracks pressure washing alone. Spend leads into your busy months and eases off when crews are booked. After a tracked season, your booked jobs set the schedule."
     },
     {
       "question": "Who owns my accounts if I leave?",
-      "answer": "You do, the whole time. Everything is set up in your name from day one, and ASP charges no exit fees to transfer it. Our what-you-own page lists each asset."
+      "answer": "You do. Your website, Business Profile, reviews, ad accounts, call tracking and CRM data are built in your name, and ASP charges no exit fee to hand them over."
     }
   ],
+  "cta": {
+    "heading": "Show more homeowners your best work",
+    "body": "Book a call and we'll look at your profile, website, ads and tracking together. You'll leave with the findings and what to fix first."
+  },
   "related": [
     {
       "label": "Paid",
       "href": "/ppc/pressure-washing",
       "title": "Pressure Washing Advertising",
-      "body": "Google Search Ads and Facebook ads built for a trade with no LSA category as of October 2026."
+      "body": "Search Ads and Facebook ads for a trade with no LSA category as of October 2026."
     },
     {
-      "label": "Organic",
-      "href": "/seo",
-      "title": "Home Service SEO",
-      "body": "Service pages, content and technical work, measured against booked jobs."
+      "label": "Meta",
+      "href": "/meta-ads",
+      "title": "Meta Ads Management",
+      "body": "Before-and-after video, audiences and retargeting on Facebook and Instagram."
     },
     {
       "label": "Local",
       "href": "/local-seo-pro",
       "title": "Local SEO Pro",
-      "body": "Business Profile management, citations and a ranking heatmap."
+      "body": "Profile management, citations and a local ranking heatmap."
     },
     {
       "label": "Ownership",
       "href": "/what-you-own",
       "title": "What You Own",
-      "body": "Every account, asset and report stays in your name."
+      "body": "Your accounts, data and reports, built in your name."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

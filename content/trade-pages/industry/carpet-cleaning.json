@@ -4,75 +4,146 @@
   "trade": "Carpet Cleaning",
   "status": "review",
   "metaTitle": "Carpet Cleaning Marketing for Multi-Crew Companies",
-  "metaDescription": "Carpet cleaning marketing for multi-crew residential and commercial companies: SEO, Local Services Ads, repeat-customer follow-up and booked-job reporting.",
-  "h1": "Carpet Cleaning Marketing for Multi-Crew Companies",
-  "intro": "Carpet cleaning marketing for a multi-crew company has two jobs: win new residential and commercial customers, and bring them back on schedule. ASP runs SEO, Local Services Ads, Google and Facebook ads, and repeat-customer follow-up for larger carpet cleaning companies, measured against booked jobs.",
-  "sections": [
+  "metaDescription": "Carpet cleaning marketing for multi-crew companies: SEO, Local Services Ads, Google and Facebook ads, and repeat-customer follow-up built around booked jobs.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Carpet Cleaning Marketing",
+    "h1": "Carpet Cleaning Marketing Built on Repeat Customers",
+    "subhead": "For carpet cleaning companies doing $500,000 to $600,000 a year. ASP runs paid media, SEO and repeat-customer follow-up built to keep every crew booked.",
+    "points": [
+      "Repeat jobs tracked apart from new ones",
+      "Reminder timing starts from CRI guidance",
+      "Your customer list stays yours"
+    ]
+  },
+  "why": {
+    "heading": "Your customer list is the asset",
+    "intro": "The Carpet and Rug Institute (CRI) recommends professional cleaning every 12 to 18 months for both homes and businesses. That gives you a natural reminder schedule after every job.",
+    "cards": [
+      {
+        "title": "Credit repeats to follow-up",
+        "body": "The first job belongs to the channel that found the customer. Repeat cleanings get credited to your follow-up, so ad results don't look better than they are."
+      },
+      {
+        "title": "Catch customers who stopped booking",
+        "body": "Splitting new and repeat jobs shows which past customers have gone quiet, so a win-back message can reach them."
+      },
+      {
+        "title": "Show the credentials buyers ask about",
+        "body": "CRI's hiring guidance suggests asking whether technicians are IICRC certified and how long the company has been in business. Put both answers on your site and ads."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What ASP runs for carpet cleaning companies",
+    "intro": "Ads and search win the first job. Follow-up built on your job data wins the next one.",
+    "cards": [
+      {
+        "title": "Local Services Ads",
+        "body": "Carpet cleaning services is a US Local Services Ads category where Google runs it. With several crews finishing jobs, a review request after each one keeps your profile growing.",
+        "href": "/ppc"
+      },
+      {
+        "title": "Google Search Ads",
+        "body": "Search campaigns for the homeowner dealing with a stain or a move-out today, split by service so you can see which one pays.",
+        "href": "/ppc"
+      },
+      {
+        "title": "Carpet cleaning SEO",
+        "body": "Separate pages for the services buyers search for, such as carpet, upholstery, rugs and commercial maintenance.",
+        "href": "/seo"
+      },
+      {
+        "title": "Business Profile and citations",
+        "body": "Your Google Business Profile kept current across every area your crews cover, with citation cleanup and review capture handled for you.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Facebook and Instagram",
+        "body": "Seasonal offers aimed at past customers and the neighborhoods you already serve, built from your own customer lists.",
+        "href": "/meta-ads"
+      },
+      {
+        "title": "Repeat-customer follow-up",
+        "body": "Rebooking reminders, win-back messages and review requests. If you run Housecall Pro, we build them on its job events so each fires from real job activity.",
+        "href": "/growth-system"
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "How carpet cleaning demand works",
-      "paragraphs": [
-        "The Carpet and Rug Institute (CRI) recommends professional cleaning every 12 to 18 months for both homes and businesses. That interval gives you a natural reminder schedule after every finished job.",
-        "Commercial accounts come with their own standards. CRI publishes CRI 204, a commercial carpet maintenance and cleaning standard for business facilities, and the ANSI/IICRC S100 standard sets procedures for professional cleaning of commercial and residential carpet and rugs. The 2021 seventh edition of S100 is current, and a revision is under way.",
-        "Most carpet cleaning businesses are small. In 2023, Census counted 6,673 carpet and upholstery cleaning establishments with paid employees, and 4,829 had fewer than five employees, while 256 had 20 to 49 and 47 had 50 to 99. A company running several crews has more to show a buyer: a wider service area, commercial capacity and certified technicians if your team holds the credential."
-      ]
+      "value": "6,673",
+      "label": "carpet and upholstery cleaning establishments with paid employees",
+      "source": "Census CBP, 2023"
     },
     {
-      "heading": "Channels ASP runs for carpet cleaning companies",
-      "paragraphs": [
-        "Carpet cleaning services is one of Google's Local Services Ads categories in the US, in areas where Google runs it. Placement comes from an auction that looks at your bid, how likely the ad is to bring in a lead, and your profile quality, which covers your rating, number of reviews, average response time, high-quality photos and completed verification checks. With several crews finishing jobs, a review request after every job keeps that profile growing.",
-        "On the organic side, we build separate pages for the services you sell that buyers search for, such as carpet, upholstery, rugs and commercial maintenance, and keep your Google Business Profile current in every area your crews cover.",
-        "Google Search Ads catch the homeowner dealing with a stain or a move-out today. Facebook and Instagram fit a low-ticket recurring service well, because a seasonal offer can sell directly to past customers and to the neighborhoods you already serve."
-      ]
+      "value": "4,829",
+      "label": "of them had fewer than five employees",
+      "source": "Census CBP, 2023"
     },
     {
-      "heading": "Trust signals carpet cleaning buyers check",
-      "paragraphs": [
-        "CRI's consumer hiring guidance suggests asking whether a cleaner's technicians are IICRC certified and how long the company has been in business. Those answers belong on your website, your Business Profile and your ads.",
-        "Manufacturer warranties are another reason to show credentials. CRI says carpet manufacturers recommend, and sometimes require, Seal of Approval certified cleaners for warranty protection. Cleaners who use Seal of Approval solutions with Seal of Approval equipment can be recognized as Seal of Approval service providers, and a company can apply to become an IICRC Certified Firm with at least one IICRC Certified Technician, proof of general liability insurance and a $25 application fee."
-      ]
-    },
-    {
-      "heading": "Repeat customers and how we measure them",
-      "paragraphs": [
-        "The first job gets credited to the channel that brought the customer in. Every repeat cleaning after that counts as retention and gets credited to your follow-up, not to the original ad. Mixing the two makes acquisition look better than it is and hides customers who stopped coming back.",
-        "If you run Housecall Pro, which lists carpet cleaning among its industries, we build reminders, win-back messages and review requests on HCP's job events so each one fires from real activity. HCP attribution setup is part of the Foundation tier, and the monthly report shows new-customer jobs and revenue by channel."
-      ]
-    },
-    {
-      "heading": "What you own",
-      "paragraphs": [
-        "In a recurring business, the customer list is the asset that pays you again and again, and it stays yours. So do the website and domain, your Google Business Profile and reviews, your ad accounts and the reminder and follow-up automations we build. If you leave, ASP charges no handover or exit fee to move any of it."
-      ]
+      "value": "256",
+      "label": "had 20 to 49 employees",
+      "source": "Census CBP, 2023"
     }
   ],
+  "process": {
+    "heading": "How we start with a carpet cleaning company",
+    "steps": [
+      {
+        "title": "Begin with the Diagnostic",
+        "body": "Spend about 90 seconds online and get a read on where your marketing stands before anyone sells you anything."
+      },
+      {
+        "title": "Split new from repeat",
+        "body": "We separate first jobs from repeat cleanings, so each ad channel and your follow-up get their own credit."
+      },
+      {
+        "title": "Turn on follow-up",
+        "body": "Reminders start from CRI's 12-to-18-month guidance, then your own repeat-booking data sets the final schedule."
+      },
+      {
+        "title": "Report by job type",
+        "body": "Each month shows new-customer jobs and revenue by channel, kept apart from repeat work."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Packages for carpet cleaning companies",
+    "subhead": "Organic SEO is part of every package, starting with Foundation. Growth is where ASP takes over your Google, Local Services and Meta ad management."
+  },
   "faqs": [
-    {
-      "question": "Can a carpet cleaning company with several locations run Local Services Ads?",
-      "answer": "Yes, where Google offers the category. Google asks businesses serving multiple locations for business- and employee-level licenses for each location where licenses apply. When one business has several locations serving the same area, Local Services shows only the highest-ranking ad, so coverage areas need planning before the profiles go live."
-    },
     {
       "question": "How often should we remind customers to book again?",
       "answer": "CRI recommends professional cleaning every 12 to 18 months for homes and businesses. That interval is a sensible starting point for reminder timing, and your own repeat-booking data should set the final schedule."
     },
     {
+      "question": "Can a company with several locations run Local Services Ads?",
+      "answer": "Yes, where Google offers the category. If two of your locations serve the same area, Google shows only your highest-ranking ad there, so map each location's coverage first."
+    },
+    {
       "question": "Do you market commercial carpet cleaning?",
-      "answer": "Yes. Commercial pages and ads are written for facility buyers and name the standards your crews follow, such as CRI 204 for commercial carpet maintenance and ANSI/IICRC S100 for cleaning procedures."
+      "answer": "Yes. Commercial pages and ads are written for facility buyers and name the standards your crews follow, such as CRI 204 for commercial maintenance and ANSI/IICRC S100 for cleaning procedures."
     },
     {
       "question": "Do you work with Housecall Pro?",
-      "answer": "Yes. ASP is an Official Housecall Pro Affiliate Partner, and HCP attribution setup is included in the Foundation tier. Discounts for new HCP accounts only."
+      "answer": "Yes. ASP is a Housecall Pro Affiliate, and Housecall Pro lists carpet cleaning among its industries. We build rebooking reminders, win-back messages and review requests on HCP's job events."
     },
     {
-      "question": "What does ASP cost for a multi-crew carpet cleaning company?",
-      "answer": "Which tier fits a multi-crew company depends on the channels you need. Foundation is $2,500 a month, and Growth, which adds paid media management, is $3,850 a month; our pricing page has the full breakdown. Ad spend is paid directly to Google and Meta."
+      "question": "What does ASP cost for a carpet cleaning company?",
+      "answer": "ASP sells whole packages; the pricing cards above show what each one includes. Ad spend is paid from your own accounts straight to Google and Meta."
     }
   ],
+  "cta": {
+    "heading": "Book more repeat cleanings",
+    "body": "Start with a 30-minute audit call. We'll look at your ads, site and follow-up, then show you what to fix first."
+  },
   "related": [
     {
       "label": "Local",
       "href": "/local-seo-pro",
       "title": "Local SEO Pro",
-      "body": "Business Profile management, citations and review capture across every area your crews cover."
+      "body": "Business Profile, citations and review capture across every area your crews cover."
     },
     {
       "label": "Service",
@@ -81,10 +152,10 @@
       "body": "Google Search Ads and Local Services Ads, measured against booked jobs."
     },
     {
-      "label": "Integration",
-      "href": "/ai-integration",
-      "title": "AI Integration",
-      "body": "How we set up Housecall Pro's attribution and follow-up tools."
+      "label": "Partner",
+      "href": "/housecall-pro",
+      "title": "Housecall Pro Marketing",
+      "body": "What ASP adds on top of Housecall Pro's own tools."
     },
     {
       "label": "Guide",
@@ -92,6 +163,5 @@
       "title": "Marketing Attribution Guide",
       "body": "Including how to split new-customer and repeat-customer credit."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

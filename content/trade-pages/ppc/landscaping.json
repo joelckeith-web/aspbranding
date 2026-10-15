@@ -4,101 +4,146 @@
   "trade": "Landscaping & Lawn Care",
   "status": "review",
   "metaTitle": "Landscaping Advertising: Google Ads, LSA & Facebook Ads",
-  "metaDescription": "Landscaping advertising run against booked jobs: Google Search Ads, Local Services Ads for lawn care and landscaping, and Facebook ads for seasonal offers.",
-  "h1": "Landscaping Advertising",
-  "intro": "Landscaping advertising works best when each channel has one job. ASP runs Google Search Ads, Local Services Ads and Facebook ads for lawn care and landscape companies, with tracking that follows leads to booked jobs where your CRM supports it. Your ad accounts stay in your name.",
-  "sections": [
+  "metaDescription": "Landscaping advertising from ASP: Local Services Ads, Google Search Ads and Facebook ads with finished-yard creative, budgeted by season and tracked to jobs.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Landscaping advertising",
+    "h1": "Landscaping Advertising and Facebook Ads",
+    "subhead": "Ads aimed at the months you need to fill. ASP runs Local Services Ads, Google Search Ads and Facebook ads, tracked to booked jobs where your CRM allows.",
+    "points": [
+      "Four LSA categories on Google's October 2026 list",
+      "Facebook creative from your own yards",
+      "Budget shifts with your season"
+    ]
+  },
+  "why": {
+    "heading": "Why landscaping ads need a seasonal plan",
+    "intro": "A flat monthly budget spends the same in a slow month as in a packed one. We give each channel one job and move spend with your calendar.",
+    "cards": [
+      {
+        "title": "Workforce swings by season",
+        "body": "US private employment in landscaping services ran about 34% higher in July 2024 than in January 2024. That's workers, not leads, but it shows the workforce swing within a year."
+      },
+      {
+        "title": "Search catches people looking",
+        "body": "Google Search Ads and Local Services Ads reach homeowners already looking for a lawn or landscape company, which is the shorter path to a booked job."
+      },
+      {
+        "title": "Facebook keeps you remembered",
+        "body": "Between searches, Facebook and Instagram show your finished yards to homeowners in your area and bring back site visitors who didn't call."
+      }
+    ]
+  },
+  "services": {
+    "heading": "Landscaping ad channels ASP manages",
+    "cards": [
+      {
+        "title": "Local Services Ads",
+        "body": "Pay-per-lead ads above the map, managed on signals Google names, including rating, review count and response time."
+      },
+      {
+        "title": "Google Search Ads",
+        "body": "One ad group per service, phrase match and a weekly-growing negative list, aimed at retaining walls, walkways and other installs you want more of.",
+        "href": "/ppc"
+      },
+      {
+        "title": "Landscaping Facebook ads",
+        "body": "Before-and-after yard video, seasonal lawn offers, and design consultation offers for hardscape buyers. Retargeting runs before any cold audience spend.",
+        "href": "/meta-ads"
+      },
+      {
+        "title": "Crew recruiting ads",
+        "body": "Hiring campaigns on Meta reach crew members who are working, not browsing job boards, on a budget kept apart from lead generation."
+      },
+      {
+        "title": "Tracking and offline conversions",
+        "body": "Conversion actions count real leads. With Housecall Pro, completed jobs and revenue can feed back to Google Ads so bidding learns from booked work.",
+        "href": "/blog/marketing-attribution-home-service-businesses"
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "Local Services Ads for lawn, landscape, tree and snow work",
-      "paragraphs": [
-        "Google's US Local Services Ads list, checked October 2026, includes Landscaping services, Lawn care services, Tree services and Snow removal as separate categories. That gives a lawn and landscape company a pay-per-lead option in the placement that sits above the map results.",
-        "Google screens businesses before ads run. For lawn care and landscaping, its screening page lists business and owner background checks for select users, general and professional liability insurance, and state-level business and owner licenses where local law requires them. The requirements are Google's and can change.",
-        "Ranking inside Local Services Ads comes from an auction that weighs your bid and your profile quality. Google says rating, number of reviews, average response time, images and completed verification checks feed profile quality, and that missed calls may hurt responsiveness. We manage LSA against those signals, which puts review requests and answered calls on the same list as the bid."
-      ]
-    },
-    {
-      "heading": "Google Search Ads for the work you want more of",
-      "paragraphs": [
-        "The federal definition of landscaping services includes building walkways, retaining walls, decks, fences and ponds. Search Ads are where install jobs like those get targeted by name. Each service or service area gets its own ad group with phrase match, so you can tell which service is paying, and the negative keyword list grows every week.",
-        "Our account defaults are search partners off, display off on search campaigns, location targeting set to Presence, and Max Conversions bidding until the account has the volume for a target cost per acquisition. Branded search sits in its own campaign.",
-        "Service-area businesses routinely pay for clicks outside the drive time they would accept. We compare where the spend went with where your crews want to work and tighten the targeting to match."
-      ]
-    },
-    {
-      "heading": "Planning ad spend around the season",
-      "paragraphs": [
-        "BLS says grounds maintenance workers may be busier in spring, summer and fall, and US private employment in landscaping services ran about 34% higher in July 2024 than in January 2024. That is payroll, not lead volume, but it shows how far the trade's workforce swings within a year.",
-        "Budget and ad schedules follow your calendar. Spend leads into your busy months and pulls back when your crews are full, and companies that sell snow removal move weight to winter. After a season with tracking in place, those shifts come from your booked-job data instead of a guess."
-      ]
-    },
-    {
-      "heading": "Landscaping Facebook ads",
-      "paragraphs": [
-        "Facebook and Instagram don't catch someone searching for a mowing service today. They keep your name in front of homeowners in your area between searches and bring back people who read your site and didn't call. Retargeting goes live before any money goes to cold audiences, because past site visitors are the cheapest audience you have.",
-        "Offers match the job. Recurring lawn care can carry a seasonal offer directly. Design and hardscape buyers take longer to decide, so those ads offer a design consultation or an estimate, backed by photos and video of projects your crews built. Stock images of somebody else's job are a common reason trade accounts underperform, and a service-area audience needs a steady supply of new creative.",
-        "Meta also helps with hiring, since the crew members you want are usually working and not browsing job boards. Recruiting runs as its own campaign with its own budget."
-      ]
-    },
-    {
-      "heading": "Tracking each lead to a booked job",
-      "paragraphs": [
-        "Tracking gets fixed before bidding changes, because the account optimizes toward whatever it counts. The conversion action is set to the lead you sell and stays there, even if the account takes longer to leave the learning phase.",
-        "Calls get tracking numbers by source, forms pass their source into your CRM, and booked jobs get matched back to the source that produced them, where your CRM supports it. With Housecall Pro, completed jobs and their revenue can be sent back to Google Ads as offline conversions, so bidding learns from booked work instead of raw leads.",
-        "Your ad spend is paid straight to Google and Meta from accounts in your name. It isn't part of any ASP fee."
-      ]
+      "value": "4",
+      "label": "LSA categories covering lawn, landscape, tree, snow",
+      "source": "Google LSA category list, checked Oct 2026"
     }
   ],
+  "process": {
+    "heading": "How we take over your ads",
+    "steps": [
+      {
+        "title": "Read the account first",
+        "body": "Settings, search terms, geography and tracking get reviewed, and you see the findings before budget moves."
+      },
+      {
+        "title": "Fix tracking",
+        "body": "The conversion action is set to the lead you sell and stays there."
+      },
+      {
+        "title": "Set the seasonal budget",
+        "body": "Spend leads into your busy months, pulls back when crews are full, and moves to snow removal if you sell it."
+      },
+      {
+        "title": "Review what it booked",
+        "body": "Each month you see what was spent, what it booked and which creative carried it."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Packages for landscaping advertising",
+    "subhead": "Your ad spend goes straight to Google and Meta. For landscaping ads, paid media management is included from Growth up, and Organic SEO from Foundation up."
+  },
   "faqs": [
     {
       "question": "Can my landscaping company run Local Services Ads?",
-      "answer": "When we checked in October 2026, Google's US list included categories for landscaping, lawn care, tree services and snow removal. You'll need to pass Google's screening, which for lawn care and landscaping includes liability insurance, state licenses where local law requires them, and background checks for select users. Once you're live, reviews and response time feed your ranking."
+      "answer": "When we checked in October 2026, Google's US list had categories for landscaping, lawn care, tree services and snow removal. Google screens each business before its ads go live. After that, reviews and response time feed your ranking."
     },
     {
       "question": "Do Facebook ads work for lawn care companies?",
-      "answer": "For the right offer, yes. Recurring services and seasonal offers can work on Meta, and so can showing finished projects for larger installs. We start with retargeting your site visitors, because ads asking people who don't know you yet to book a service call rarely work in the trades."
+      "answer": "For the right offer, yes. Seasonal lawn offers and before-and-after project video suit Meta. Asking strangers to book a service call cold rarely works in the trades, so we start with people who already visited your site."
     },
     {
-      "question": "Should I start with Google Ads or Facebook ads?",
-      "answer": "Google, in almost every case. Search and Local Services Ads catch people already looking, which is the shorter path to a booked job. Facebook works best as the layer that keeps you in front of the same homeowners between searches."
+      "question": "Should I start with Google or Facebook?",
+      "answer": "Google, in almost every case, because it reaches people who are searching right now. Facebook then keeps your company familiar between searches."
     },
     {
-      "question": "How much should a landscaping company spend on ads?",
-      "answer": "Work back from what a booked customer is worth, not from a flat monthly number. A recurring maintenance customer can be worth a full season of visits, which changes what you can afford to pay to win the first one. Ad spend goes to the platforms directly; our management fees are on the pricing page."
+      "question": "How much should I spend on landscaping ads?",
+      "answer": "Start from what a customer is worth. A weekly mowing customer can be worth a whole season of visits, which changes what you can pay to win them. Spend goes to the platforms directly."
     },
     {
-      "question": "What happens to my ads in the off-season?",
-      "answer": "We don't run the same budget all year. Spend pulls back when your demand drops and moves to whatever you sell in winter, such as snow removal. The account and its history stay in your name the whole time."
-    },
-    {
-      "question": "Who owns the ad accounts?",
-      "answer": "You do. Your Google Ads, Local Services Ads and Meta accounts are set up in your name, with the campaign and conversion history inside them. Our what-you-own page has the full list."
+      "question": "What happens to my ads in winter?",
+      "answer": "Spend drops when your lawn work slows, unless you sell snow removal, in which case budget moves there. Your account and its history stay in your name year-round."
     }
   ],
+  "cta": {
+    "heading": "Make next season's ad budget count",
+    "body": "Book a call and we'll read your Google, LSA and Facebook accounts with you: settings, search terms, where spend went and what tracking counts."
+  },
   "related": [
     {
       "label": "Hub",
       "href": "/industries/landscaping",
       "title": "Landscaping Marketing",
-      "body": "The whole plan for lawn, landscape and snow removal companies."
+      "body": "How ASP runs marketing for lawn and landscape companies."
     },
     {
       "label": "Organic",
       "href": "/seo/landscaping",
       "title": "Landscaping SEO",
-      "body": "Map results and service pages that work alongside your ads."
+      "body": "Service pages and map work that support your ads."
     },
     {
       "label": "Meta",
       "href": "/meta-ads",
       "title": "Meta Ads Management",
-      "body": "How ASP runs Facebook and Instagram creative, audiences and retargeting."
+      "body": "Facebook and Instagram creative, audiences and retargeting."
     },
     {
       "label": "Method",
       "href": "/ppc",
       "title": "PPC Management Services",
-      "body": "The audit and account method behind every paid program we run."
+      "body": "The audit and account structure behind every paid program."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

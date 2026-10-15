@@ -12,6 +12,7 @@ import { type TradePage, tradePageUrl } from "@/lib/trade-pages";
 const SITE = "https://www.aspbranding.com";
 
 // Literal class names so Tailwind generates them.
+const STAT_COLS: Record<number, string> = { 1: "sm:grid-cols-1", 2: "sm:grid-cols-2 max-w-3xl", 3: "sm:grid-cols-3" };
 const STEP_COLS: Record<number, string> = { 2: "md:grid-cols-2", 3: "md:grid-cols-3", 4: "md:grid-cols-2 lg:grid-cols-4" };
 
 const SERVICE_TYPE: Record<TradePage["kind"], string> = {
@@ -200,7 +201,7 @@ export function TradePageView({ page }: { page: TradePage }) {
       {/* Stat strip */}
       {page.stats && page.stats.length > 0 && (
         <section className="py-14 bg-asp-surface-navy text-white">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8 grid gap-8 sm:grid-cols-3 text-center">
+          <div className={`mx-auto max-w-6xl px-6 lg:px-8 grid gap-8 text-center ${STAT_COLS[page.stats.length] ?? "sm:grid-cols-3"}`}>
             {page.stats.map((s) => (
               <div key={s.label}>
                 <p className="font-black text-4xl md:text-5xl text-asp-blue-light">{s.value}</p>
@@ -267,7 +268,7 @@ export function TradePageView({ page }: { page: TradePage }) {
       <FAQAccordion faqs={faqs} heading="Frequently Asked Questions" columns={2} widthClassName="max-w-6xl" />
 
       {page.related && page.related.length > 0 && (
-        <RelatedPages items={page.related} heading={`More for ${page.trade.toLowerCase()} businesses`} />
+        <RelatedPages items={page.related} heading={`More for ${page.trade} Businesses`} />
       )}
 
       <section className="py-14 md:py-16 bg-white">

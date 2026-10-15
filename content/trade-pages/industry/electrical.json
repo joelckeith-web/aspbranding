@@ -3,106 +3,154 @@
   "slug": "electrical",
   "trade": "Electrical",
   "status": "review",
-  "metaTitle": "Electrician Marketing Agency for Electrical Contractors",
-  "metaDescription": "Electrician marketing for residential and commercial contractors: search, maps, Local Services Ads and call tracking measured against booked jobs, not clicks.",
-  "h1": "Electrician Marketing Agency",
-  "intro": "Electrician marketing is the work of getting your company found by homeowners and businesses who need electrical work, then proving which calls became paid jobs. ASP runs search, maps, Local Services Ads and tracking for electrical contractors, and we report against booked revenue instead of clicks.",
-  "sections": [
+  "metaTitle": "Electrician Marketing for Residential and Commercial Work",
+  "metaDescription": "Electrician marketing from ASP: separate residential and commercial pages and ad groups, EV charger pages, Local Services Ads and tracking to the booked job.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Electrical contractors",
+    "h1": "Electrician Marketing Built Around Booked Jobs",
+    "subhead": "Bring in residential service calls and commercial bids, then see which channel paid for each one. ASP runs your search, maps, Local Services Ads and tracking.",
+    "points": [
+      "Residential and commercial run as separate services",
+      "Reported against booked jobs, not clicks",
+      "Your accounts, in your name, no exit fees"
+    ]
+  },
+  "why": {
+    "heading": "Two kinds of electrical buyer need two kinds of marketing",
+    "intro": "A homeowner with a dead circuit wants a phone number fast. A facility manager wants proof before asking for a bid. Planned work like EV chargers runs on its own timeline.",
+    "cards": [
+      {
+        "title": "Urgent residential calls",
+        "body": "Search ads and the map pack catch the homeowner who needs an electrician today. We make your company easy to find and easy to call."
+      },
+      {
+        "title": "EV chargers and planned upgrades",
+        "body": "The Department of Energy says most EV drivers charge overnight at home. Some homes may need added circuits for Level 2 charging, and that buyer reads before calling."
+      },
+      {
+        "title": "Commercial bids",
+        "body": "Commercial buyers often want to see your licensing, insurance and past projects. Dedicated commercial pages give them that proof and keep those leads apart from service calls."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What ASP runs for electrical contractors",
+    "cards": [
+      {
+        "title": "Electrician SEO",
+        "body": "Pages for each service you want more of, from urgent repairs to EV charger installs and commercial work, plus the technical fixes Google needs to read them.",
+        "href": "/seo/electrical"
+      },
+      {
+        "title": "Electrician advertising",
+        "body": "Local Services Ads and Google Search Ads for calls that can't wait. Search runs one ad group per service, so each shows its own cost per job.",
+        "href": "/ppc/electrical"
+      },
+      {
+        "title": "Business Profile and maps",
+        "body": "Local SEO Pro covers your Google Business Profile, citations and review capture, plus a local ranking heatmap.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Meta for retargeting and hiring",
+        "body": "Meta brings back site visitors who didn't call and runs crew recruiting as a separate campaign, so hiring spend never counts as lead cost.",
+        "href": "/meta-ads"
+      },
+      {
+        "title": "Tracking to the paid job",
+        "body": "Where your CRM supports it, the lead source follows each call to the job record. On Housecall Pro, completed jobs can feed back into Google Ads bidding.",
+        "href": "/blog/marketing-attribution-home-service-businesses"
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "How demand for electrical work shows up",
-      "paragraphs": [
-        "Electrical work does not run on one calendar. Some calls are urgent, and the homeowner wants someone at the house today. Other jobs are planned over weeks, like adding capacity for a car charger or wiring a remodel. Your marketing has to reach both kinds of buyer, and they look for help in different ways.",
-        "Some of the planned work comes from newer equipment. The Department of Energy says most electric vehicle drivers charge overnight at home, and owners may install Level 2 (240-volt) equipment for a faster charge. It also says some homes may not have enough electrical capacity for Level 2 charging, and a qualified electrician can add circuits to cover it. BLS expects electricians to keep being needed to connect solar and wind generation to homes and businesses.",
-        "The U.S. Fire Administration estimated that about 24,000 residential building electrical fires were reported to U.S. fire departments each year from 2014 to 2016. Those figures are several years old, but they show electrical fires are a real hazard in homes."
-      ]
+      "value": "100,285",
+      "label": "Private electrical and wiring contractor establishments, U.S.",
+      "source": "BLS QCEW, 2025"
     },
     {
-      "heading": "Residential and commercial electrical work need different marketing",
-      "paragraphs": [
-        "Electricians held about 821,000 jobs in the U.S. in 2025, and BLS puts 66 percent of them with electrical and wiring contractors, while 7 percent are self-employed. Most of the trade works inside contracting companies with crews to keep busy. That is who we build for.",
-        "The contractors themselves split between two markets. BLS counted 61,028 private residential electrical contractor establishments in 2025, out of 100,285 private electrical and wiring contractor establishments. A homeowner with a problem wants a fast answer and an easy way to call. A commercial buyer often wants to see your licensing, insurance and the kind of projects you take on before asking for a bid.",
-        "We keep the two sides apart. Residential and commercial services get their own pages and ad groups, so the report shows which service is paying."
-      ]
-    },
-    {
-      "heading": "The channels ASP runs for electrical contractors",
-      "paragraphs": [
-        "Each channel has one job. Search ads and the map pack catch the person who needs an electrician now. Local Services Ads put a pay-per-lead listing above the map, and electricians are an eligible category. Service pages and content win the planned jobs, where the buyer reads before calling.",
-        "Hiring is part of the picture in this trade. BLS projects electrician employment to grow 9 percent from 2025 to 2035, much faster than average, with about 72,700 openings a year. When you need crew, recruiting runs on Meta as its own campaign, kept separate from lead generation."
-      ],
-      "bullets": [
-        "Google Search Ads for urgent, high-intent searches",
-        "Local Services Ads, managed against reviews and response time",
-        "Google Business Profile and map-pack work through Local SEO Pro",
-        "Service pages and content for planned and commercial work",
-        "Meta for retargeting site visitors and for recruiting"
-      ]
-    },
-    {
-      "heading": "How we measure results: calls, booked jobs and revenue",
-      "paragraphs": [
-        "We judge electrician marketing in three steps: the call or form, the booked job, and the revenue from that job. Rankings, clicks and impressions are early signs, not the result. Where your CRM supports it, we carry the lead source through to the job record so you can see which channel earned its keep.",
-        "ASP is an Official Housecall Pro Affiliate Partner, and Housecall Pro attribution setup is part of our Foundation tier. When a job is booked and completed in Housecall Pro, that outcome can be sent back to Google Ads (paid media runs in our Growth tier), so bidding learns from real jobs instead of raw leads. Our attribution guide explains how the pieces connect."
-      ]
-    },
-    {
-      "heading": "What you own",
-      "paragraphs": [
-        "Your website, domain, Google Business Profile, ad accounts and CRM data are set up in your name from day one. Your ad spend is paid straight to the ad platforms from your own accounts, and ASP never collects, holds or marks it up. ASP doesn't charge exit fees to transfer what we built for you. The full list is on our what-you-own page."
-      ]
+      "value": "61,028",
+      "label": "Of those, private residential electrical contractors",
+      "source": "BLS QCEW, 2025"
     }
   ],
+  "process": {
+    "heading": "How we start with your electrical shop",
+    "steps": [
+      {
+        "title": "Audit your market",
+        "body": "We look at your services, your service area and the contractors you compete with, and the audit sets the scope before you sign."
+      },
+      {
+        "title": "Set up job tracking",
+        "body": "Calls and forms get tracked before bids change, with booked jobs added where your CRM supports it."
+      },
+      {
+        "title": "Split the markets",
+        "body": "Residential service, commercial work and EV chargers each get their own pages and ad groups, so every service is judged on its own."
+      },
+      {
+        "title": "Report on revenue",
+        "body": "Your monthly report covers calls, booked jobs and revenue. Rankings and clicks count only as early signs."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Packages for electrical contractors",
+    "subhead": "Organic SEO is included from Foundation up and paid media management from Growth up, so you can start with organic and maps, then add ads when your electricians have room."
+  },
   "faqs": [
     {
-      "question": "What does an electrician marketing agency do?",
-      "answer": "It gets your company in front of people who need electrical work and turns those searches into booked jobs. For electrical contractors that usually means service pages, a Google Business Profile, Google Ads and Local Services Ads, with tracking back to the job. ASP runs those pieces together and reports them against revenue."
+      "question": "Should residential and commercial electrical work be marketed separately?",
+      "answer": "Yes, in most cases. A homeowner and a facility buyer search differently and look for different proof before they call. Separate pages and ad groups also show you which service is paying."
     },
     {
-      "question": "Should I market residential and commercial electrical work separately?",
-      "answer": "In most cases, yes. A homeowner and a facility buyer search differently and need different proof before they call. Separate pages and ad groups let you see which service is paying."
+      "question": "Is EV charger installation worth marketing?",
+      "answer": "If you install chargers, give the work its own page. The Department of Energy says some homes may not have enough capacity for Level 2 charging, and a qualified electrician can add circuits. A good page explains that before the buyer calls."
     },
     {
-      "question": "Is it worth marketing EV charger installation?",
-      "answer": "If you do the work, it deserves its own page. The Department of Energy says most EV drivers charge at home overnight, and some homes may need added circuits for Level 2 charging. A page that explains capacity, circuits and permits answers the questions a buyer brings to the call."
+      "question": "How do I know which marketing is working?",
+      "answer": "We follow each lead from the first call or form to the booked job and its revenue. Where your CRM supports it, the lead source stays attached to the job. On Housecall Pro, we set up its job attribution. ASP is a Housecall Pro Affiliate."
     },
     {
-      "question": "How do you know which marketing is working?",
-      "answer": "We follow each lead from the first call or form to the booked job and its revenue. Where your CRM supports it, the lead source carries through to the job record. If you run Housecall Pro, attribution setup is included in our Foundation tier."
-    },
-    {
-      "question": "What does electrician marketing cost?",
-      "answer": "It depends on your market, your service area and which channels you need. Foundation is $2,500 a month and Growth is $3,850 a month. Every current option is on the pricing page."
+      "question": "Can marketing help me hire electricians?",
+      "answer": "Hiring is part of growth in this trade: BLS projects about 72,700 electrician openings a year, on average, from 2025 to 2035. ASP runs recruiting on Meta as a separate campaign, so hiring spend stays out of your lead costs."
     },
     {
       "question": "Who owns my website and ad accounts?",
-      "answer": "You do. Your accounts are set up in your name, what we build for you is yours unless your Scope of Work says otherwise, and ASP does not charge exit fees to transfer it. The full breakdown is on our what-you-own page."
+      "answer": "You do. Your website, domain, Business Profile, ad accounts and CRM data are set up in your name, and ad spend goes from your accounts straight to the platforms. ASP doesn't charge exit fees to transfer what we built. Details are on our what-you-own page."
     }
   ],
+  "cta": {
+    "heading": "Get a plan for the electrical work you want",
+    "body": "Tell us which jobs you want more of, residential, commercial or EV chargers, and we'll show you where those calls can come from and how we'd track them."
+  },
   "related": [
     {
       "label": "Organic",
       "href": "/seo/electrical",
       "title": "Electrician SEO",
-      "body": "Service pages, Business Profile work and technical fixes for electrical contractors."
+      "body": "Service pages, map-pack work and technical fixes for electrical contractors."
     },
     {
       "label": "Paid",
       "href": "/ppc/electrical",
       "title": "Electrician Advertising",
-      "body": "Google Search Ads, Local Services Ads and Meta, tracked to booked jobs."
-    },
-    {
-      "label": "Ownership",
-      "href": "/what-you-own",
-      "title": "What You Own",
-      "body": "Every account, asset and report built in your name, with no exit fees."
+      "body": "Local Services Ads, Search and Meta, tracked to booked jobs."
     },
     {
       "label": "Guide",
       "href": "/blog/marketing-attribution-home-service-businesses",
       "title": "Marketing Attribution for Home Service Businesses",
       "body": "How a booked job gets traced back to the channel that produced it."
+    },
+    {
+      "label": "Ownership",
+      "href": "/what-you-own",
+      "title": "What You Own",
+      "body": "Every account and asset built in your name, with no exit fees."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

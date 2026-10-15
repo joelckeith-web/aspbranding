@@ -3,96 +3,141 @@
   "slug": "plumbing",
   "trade": "Plumbing",
   "status": "review",
-  "metaTitle": "Plumbing SEO Services for Plumbing Companies",
-  "metaDescription": "Plumbing SEO from ASP: map pack, service pages for emergency and planned work, and technical fixes, reported against booked jobs. See what drives the cost.",
-  "h1": "Plumbing SEO Services",
-  "intro": "Plumbing SEO is the work of getting your company found in the map pack and the organic results when homeowners search for a plumber or a plumbing job. ASP builds the pages, local signals and technical fixes behind that, and reports it against booked jobs instead of rankings alone.",
-  "sections": [
+  "metaTitle": "Plumbing SEO for Emergency Calls and Planned Jobs",
+  "metaDescription": "Plumbing SEO from ASP: map pack, service pages for urgent and planned work, leak and freeze content, and technical fixes, all reported against booked jobs.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Plumbing SEO",
+    "h1": "Plumbing SEO Services Measured on Booked Jobs",
+    "subhead": "Get found when a pipe bursts and when a homeowner is pricing a water heater. ASP builds the pages, map pack signals and technical fixes behind both.",
+    "points": [
+      "Service pages for urgent and planned jobs",
+      "Business Profile and map pack managed",
+      "No bought links, no Domain Authority reports"
+    ]
+  },
+  "why": {
+    "heading": "Plumbing searches split into two kinds",
+    "intro": "Someone with a leak under the sink wants a number and a reason to trust you. Someone planning a repipe wants answers first. Each needs a different page.",
+    "cards": [
+      {
+        "title": "Urgent searches land on maps",
+        "body": "Emergency searches are mostly won in the map pack and on a fast mobile page. If you take evening or weekend calls, say so plainly."
+      },
+      {
+        "title": "Planned work reads first",
+        "body": "A buyer comparing tankless heaters or a whole-house repipe reads before calling. Pages that explain the options and what moves the price are written for that buyer."
+      },
+      {
+        "title": "Leak content reaches worried homeowners",
+        "body": "EPA estimates the average household's leaks can waste more than 9,300 gallons a year. Leak-detection and high-water-bill pages reach homeowners who already suspect a problem."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What plumbing SEO includes with ASP",
+    "intro": "Organic and local work run together and report in one place.",
+    "cards": [
+      {
+        "title": "Service pages that sell",
+        "body": "Pages for drain cleaning, water heaters, repipes and leak repair, built first where a booked job is worth the most to you."
+      },
+      {
+        "title": "Map pack visibility",
+        "body": "Profile management that follows Google's service-area rules, citation cleanup across 60+ directories, review capture and a neighborhood-level ranking heatmap.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Seasonal and freeze content",
+        "body": "Freeze-prevention pages go up before cold weather, leak content is worth scheduling ahead of EPA's annual Fix a Leak Week, and StormFront covers qualifying weather events.",
+        "href": "/stormfront"
+      },
+      {
+        "title": "Your experience on the page",
+        "body": "We interview you or a senior tech for real job costs and failure stories, and show the licenses and credentials buyers look for."
+      },
+      {
+        "title": "Technical fixes",
+        "body": "Broken redirects, indexing problems and slow mobile pages get fixed in order of what each one costs you."
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "Emergency searches and planned-work searches need different pages",
-      "paragraphs": [
-        "Someone typing \"plumber near me\" with a leak under the sink wants a phone number and a reason to trust you. That search is mostly won in the map pack, on your Business Profile and on a short service page that loads fast on a phone. Because plumbers are often on call for emergencies, BLS says evening and weekend work is common, so if you take after-hours calls, your pages and profile should say so clearly.",
-        "A homeowner pricing a tankless water heater or a whole-house repipe reads first and calls later. That buyer needs a page that explains the options, what moves the price and what the job involves. BLS expects demand for plumbers to come from repairing and maintaining plumbing in existing buildings as well as new construction. Which of those jobs get their own pages first depends on what a booked job is worth to you."
-      ]
-    },
-    {
-      "heading": "Map pack and Google Business Profile for plumbers",
-      "paragraphs": [
-        "For local searches, your Google Business Profile does much of the work. Google's guidelines say a service-area business should keep one profile for its central office with a service area set, and it can't list a virtual office unless that office is staffed during business hours. Keeping the profile in line with those rules is part of managing it.",
-        "Local SEO Pro runs this side: Business Profile management, citation cleanup across 60+ directories, review capture and a monthly ranking heatmap from 50+ grid points across your service area. The heatmap shows where you rank neighborhood by neighborhood, not just the city average."
-      ]
-    },
-    {
-      "heading": "Plumbing content built around real problems and the calendar",
-      "paragraphs": [
-        "Good plumbing content answers what homeowners are already worried about. EPA estimates the average household's leaks can waste more than 9,300 gallons of water a year, and 9 percent of homes have leaks wasting 50 gallons or more a day. Pages on leak detection, running toilets and high water bills speak to people who already know something is wrong.",
-        "Some of it follows a calendar. EPA holds Fix a Leak Week every year, so leak content is worth scheduling ahead of it. The National Weather Service tells people to take precautions so water pipes don't freeze, so freeze-prevention and frozen-pipe pages get published before cold weather, not during it.",
-        "StormFront covers the surprise events, publishing content when a qualifying freeze, flood or heavy-rain event hits your area."
-      ]
-    },
-    {
-      "heading": "Licenses and real experience on the page",
-      "paragraphs": [
-        "Most states and some localities require plumbers to be licensed, often after 2 to 5 years of experience and an exam, and some states require master plumber status for a plumbing contractor's license. That is a trust signal, and it belongs where buyers can see it. License numbers, master plumber credentials and years in the trade go on service pages and on named author bios.",
-        "The rest comes from you. We sit down with you or a senior tech and record what a slab leak repair cost last month, why a cheap fix fails a few years later and what you tell a homeowner before they ask. That first-hand detail is what other sites can't copy."
-      ]
-    },
-    {
-      "heading": "What plumbing SEO costs",
-      "paragraphs": [
-        "Four things set the price: how large and competitive your market is, how wide your service area runs, how many services and locations need their own pages, and how much technical debt the current site carries. A single-location company in a small town needs far less work than a multi-location company in a big metro with broken redirects and pages Google can't index.",
-        "ASP's published price points: Local SEO Pro, which covers the Business Profile and map pack side, is $1,200 a month. Organic SEO has no rate card; it's scoped inside the Growth System after the audit. The Growth System tiers are Foundation at $2,500 a month, Growth at $3,850 a month and Premier at a custom price. You see the scope and the number before you commit, and current details are on our pricing page.",
-        "Those prices never include buying backlinks. ASP doesn't sell link building."
-      ]
+      "value": "9%",
+      "label": "Homes with leaks wasting 50+ gallons daily",
+      "source": "EPA WaterSense, retrieved 2026"
     }
   ],
+  "process": {
+    "heading": "How plumbing SEO gets built",
+    "steps": [
+      {
+        "title": "Audit the site",
+        "body": "We check what's indexed, what ranks, what's broken and which plumbing searches other companies own. You get the findings either way."
+      },
+      {
+        "title": "Clear the blockers",
+        "body": "Indexing and redirect problems get fixed first, ordered by what they cost you, not by a tool's severity score."
+      },
+      {
+        "title": "Build by job value",
+        "body": "We weigh what each plumbing job is worth to you, how much demand there is and how strong the competing pages are."
+      },
+      {
+        "title": "Report on booked jobs",
+        "body": "Rankings show movement and leads show it landing. Where your CRM supports it, lead source is carried through to the job."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Plumbing SEO inside every package",
+    "subhead": "Every package, starting with Foundation, includes Organic SEO: plumbing service pages, content and technical fixes. The cards below price the whole system, not SEO by itself."
+  },
   "faqs": [
     {
-      "question": "How long does plumbing SEO take to work?",
-      "answer": "There's no honest fixed timeline. It depends on your site's history, the technical problems in the way and how many plumbers compete in your area. Technical fixes tend to show first, on-page changes next, and new content builds slowest but lasts longest."
+      "question": "How long does plumbing SEO take?",
+      "answer": "There's no honest fixed timeline. It depends on your site's history, what's broken and how many plumbers compete near you. Technical fixes tend to show first, on-page changes next, and new content builds slowest but lasts longest."
     },
     {
-      "question": "Do you build backlinks for plumbing websites?",
-      "answer": "No. ASP doesn't buy links or sell link packages. Links that come from useful content, real local partnerships and press are worth having, but they are earned, not sold."
+      "question": "Do you buy backlinks for plumbing sites?",
+      "answer": "No. ASP doesn't buy links or sell link packages. Links that come from useful content, real local partnerships and press are worth having, and they are earned."
     },
     {
-      "question": "How is plumbing SEO different from Local SEO Pro?",
-      "answer": "Local SEO Pro covers your Business Profile, citations, reviews and map pack rankings. Plumbing SEO covers the service pages, content and technical fixes on your website. Most clients need both, and they report together."
-    },
-    {
-      "question": "How do you measure whether plumbing SEO is working?",
-      "answer": "Rankings and impressions show whether visibility is moving, leads show whether it's landing, and booked jobs show whether it paid. Where your CRM supports it, we carry lead source through to the job. Domain Authority isn't in the report, because it's a third-party score Google doesn't use."
+      "question": "How is this different from Local SEO Pro?",
+      "answer": "Local SEO Pro handles your Business Profile, citations, reviews and map pack rankings. Plumbing SEO handles the service pages, content and technical fixes on your website. Most clients need both, and they report together."
     },
     {
       "question": "Does every plumbing service need its own page?",
-      "answer": "Not always. A service with steady search demand, a good margin and weak competing pages gets its own page first. A service nobody searches for by name gets covered inside a broader page, and you see the list before anything gets written."
+      "answer": "No. A service with steady search demand, a good margin and weak competing pages gets its own page first. Services nobody searches for by name get folded into a broader page, and you see the list first."
+    },
+    {
+      "question": "How do you show plumbing SEO is working?",
+      "answer": "Rankings and impressions show visibility moving, leads show it landing, and booked jobs show it paid. Domain Authority stays out of the report, because it's a third-party score Google doesn't use."
     }
   ],
+  "cta": {
+    "heading": "See what's holding your plumbing rankings back",
+    "body": "Book a call and we'll walk your site with you, show the gaps, and point to the plumbing pages worth building first."
+  },
   "related": [
     {
       "label": "Industry",
       "href": "/industries/plumbing",
       "title": "Plumbing Marketing",
-      "body": "How ASP markets a plumbing company across search, ads and Meta, and how results get tied to booked jobs."
+      "body": "The full plumbing program: search, ads, Meta and booked-job tracking."
     },
     {
       "label": "Service",
       "href": "/ppc/plumbing",
       "title": "Plumbing Advertising",
-      "body": "Local Services Ads, Google Search Ads and Meta for plumbing companies."
+      "body": "Local Services Ads and Search Ads for urgent plumbing calls."
     },
     {
       "label": "Local",
       "href": "/local-seo-pro",
       "title": "Local SEO Pro",
-      "body": "Business Profile management, citation cleanup and a monthly ranking heatmap."
-    },
-    {
-      "label": "Pricing",
-      "href": "/pricing",
-      "title": "Pricing and tiers",
-      "body": "Foundation, Growth and Premier, plus standalone products like Local SEO Pro."
+      "body": "Business Profile, citations and a monthly ranking heatmap."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

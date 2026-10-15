@@ -4,105 +4,144 @@
   "trade": "Landscaping & Lawn Care",
   "status": "review",
   "metaTitle": "Landscaping SEO for Lawn Care and Landscape Companies",
-  "metaDescription": "Landscaping SEO from ASP: service pages, Google Business Profile work and technical fixes for lawn and landscape companies, measured against booked jobs.",
-  "h1": "Landscaping SEO",
-  "intro": "Landscaping SEO is the work of getting your lawn care and landscape services found in Google's map results and organic listings by people in your service area. ASP builds the pages, profile and technical health behind that, and we measure it against booked jobs, not rankings alone.",
-  "sections": [
-    {
-      "heading": "How Google ranks landscaping companies on the map",
-      "paragraphs": [
-        "Google says local results are mainly based on relevance, distance and prominence, and that there is no way to request or pay for a better local ranking. For a lawn or landscape company, that means your profile has to match the services you sell, cover the area you serve and earn the reviews that feed prominence.",
-        "Google's rules also limit how you set up profiles. A business that travels to customers and has no storefront gets one service-area profile, and that area shouldn't stretch farther than about 2 hours of driving from where you're based, though Google says a larger area can suit some businesses. Separate profiles are allowed only for locations with their own service areas and their own staff. We set up and manage your profiles inside those rules."
-      ]
-    },
-    {
-      "heading": "Service pages built around the work your crews do",
-      "paragraphs": [
-        "The federal definition of landscaping services runs from lawn and landscape maintenance to tree and shrub installs to walkways, retaining walls, decks, fences and ponds. Each of those is a different job with a different buyer, so one catch-all services page can't answer all of them well.",
-        "We build pages in order of what a booked job is worth to you, not in order of search volume. A service with steady demand, good margin and weak pages from the companies already ranking gets built first. Over time a page grows into a cluster: the main service page plus the cost breakdown, the method comparison and the seasonal problem, all linked together.",
-        "Sourced detail makes a page more useful. An irrigation page, for example, can cite EPA WaterSense, which says residential outdoor water use in the US is nearly 8 billion gallons a day, mainly for landscape irrigation."
-      ]
-    },
-    {
-      "heading": "Licenses and credentials on the page",
-      "paragraphs": [
-        "Credentials you already hold should be easy to find on your site. BLS says most states require licensing for workers who apply pesticides, and EPA notes that many state agencies require applicator certification for all commercial pesticide use. If your crews hold those licenses, they belong on your weed control and fertilization pages.",
-        "Voluntary credentials count too. The National Association of Landscape Professionals offers a Landscape Industry Certified Technician certification for experienced technicians in softscape or hardscape installation, maintenance and irrigation. We also interview you or a senior crew lead for details only your company knows, such as what a typical job costs and why a cheap install fails, and we build that into the pages."
-      ]
-    },
-    {
-      "heading": "Fix the site first, then build for the season",
-      "paragraphs": [
-        "Technical problems get sequenced by what they cost you. Pages Google can't index, redirect chains and slow mobile pages come before cosmetic fixes. After that, new content goes in on a schedule over months rather than all at once.",
-        "Timing follows your calendar. BLS says grounds maintenance workers may be busier in spring, summer and fall, so your spring service pages and seasonal content should be live before the season starts, not halfway through it."
-      ]
-    },
-    {
-      "heading": "What landscaping SEO costs",
-      "paragraphs": [
-        "Four things set the price: how big and competitive your market is, how wide your service area is, how many services and locations need their own pages, and how much technical debt sits on your current site. The audit measures each one, and you see the scope and the number before you commit.",
-        "ASP's published price points: Local SEO Pro is $1,200 a month and covers your Business Profile, citations, a local ranking heatmap and a monthly ranking report. Foundation is $2,500 a month and includes Local SEO Pro. Growth is $3,850 a month and adds a custom website build and paid media management. Premier is custom. Organic SEO isn't sold as a standalone retainer with a rate card. It sits inside the Growth System, and its scope comes from the audit. Current options are on our pricing page."
-      ]
-    },
-    {
-      "heading": "How we report landscaping SEO results",
-      "paragraphs": [
-        "Rankings and impressions show whether visibility is moving. Calls and form leads show whether it's landing. Booked jobs and revenue show whether it was worth doing, and that's the number your monthly review is built around.",
-        "We don't buy links or sell link packages, and Domain Authority isn't in the report. It's a third-party score Google doesn't use."
-      ]
-    }
-  ],
+  "metaDescription": "Landscaping SEO from ASP: service pages for the jobs worth most, Business Profile work and technical fixes, timed to your season and measured on booked jobs.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Lawn and landscape SEO",
+    "h1": "Landscaping SEO",
+    "subhead": "SEO aimed at the lawn care, install and snow removal searches in your service area. ASP builds the pages, profile and site health, and reports on booked jobs.",
+    "points": [
+      "Pages built in order of job value",
+      "Content live before your season starts",
+      "No bought links or Domain Authority scores"
+    ]
+  },
+  "why": {
+    "heading": "Why one services page isn't enough",
+    "intro": "Mowing, tree planting, walkways and retaining walls are different jobs with different buyers. A single catch-all page can't answer all of them well.",
+    "cards": [
+      {
+        "title": "Map rankings can't be bought",
+        "body": "Google names relevance, distance and prominence as the main local ranking factors, and says a better ranking can't be paid for. Your profile and pages must match what you sell."
+      },
+      {
+        "title": "Ready before the rush",
+        "body": "According to BLS, grounds maintenance workers may be busier from spring through fall. So spring pages and seasonal content go live before the rush, not halfway through it."
+      },
+      {
+        "title": "Experience only you have",
+        "body": "We interview you or a senior crew lead for what a typical job costs and why a cheap install fails, then build it into the pages."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What landscaping SEO includes",
+    "intro": "The organic work ASP runs for lawn, landscape and snow removal companies.",
+    "cards": [
+      {
+        "title": "Service page clusters",
+        "body": "A main service page plus its cost breakdown, method comparison and seasonal problem, built in order of what a booked job is worth to you."
+      },
+      {
+        "title": "Business Profile and local",
+        "body": "Profile setup inside Google's service-area rules, citations, review capture and a local ranking heatmap so you can see where you show up.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Technical fixes first",
+        "body": "Indexing problems, redirect chains and slow mobile pages get fixed in order of what they cost you, before new content goes in."
+      },
+      {
+        "title": "Seasonal content schedule",
+        "body": "Content built out over months, with spring services and snow removal pages published ahead of their seasons."
+      },
+      {
+        "title": "Credentials on the page",
+        "body": "Show the licenses and certifications buyers look for on the pages where they matter."
+      },
+      {
+        "title": "Booked-job reporting",
+        "body": "Rankings show movement, calls and forms show interest, and booked jobs show whether it paid. That's what your monthly review covers.",
+        "href": "/blog/marketing-attribution-home-service-businesses"
+      }
+    ]
+  },
+  "stats": [],
+  "process": {
+    "heading": "How landscaping SEO gets built",
+    "steps": [
+      {
+        "title": "Research and audit",
+        "body": "What homeowners search, what those jobs are worth once booked, and what the ranking companies have that you don't."
+      },
+      {
+        "title": "Unblock the site",
+        "body": "Indexing and crawl problems that cost you jobs get fixed before anything new is written."
+      },
+      {
+        "title": "Build for the season",
+        "body": "Pages for your highest-value services go live first, timed ahead of your busy months."
+      },
+      {
+        "title": "Report on booked work",
+        "body": "A monthly review shows what moved, what it booked and what gets built next."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "How landscaping SEO is packaged",
+    "subhead": "There's no separate SEO rate card. Organic SEO is included from Foundation up, and it covers service pages, content and technical fixes."
+  },
   "faqs": [
     {
       "question": "How long does landscaping SEO take to work?",
-      "answer": "There's no honest fixed timeline. It depends on your site's history, the technical debt in the way and how competitive your market is. Technical fixes usually show first, on-page changes next, and new content clusters move slowest but hold longest."
+      "answer": "There's no honest fixed timeline. It depends on your site's history, technical debt and local competition. Technical fixes tend to show first, page changes next, and new content clusters move slowest but hold longest."
     },
     {
-      "question": "Do I need a separate Business Profile for every town I serve?",
-      "answer": "No. Google allows a service-area business without a storefront one Business Profile. You can have more than one only if you have separate locations with their own service areas and staff. Coverage of individual towns comes from your service area settings and your website instead."
-    },
-    {
-      "question": "Can I pay Google to rank higher on the map?",
-      "answer": "No. Google says there's no way to request or pay for a better local ranking. Local Services Ads are a paid placement, but they are ads, not a boost to your profile's ranking. Our landscaping advertising page covers that side."
-    },
-    {
-      "question": "Do you build backlinks for landscaping websites?",
-      "answer": "No. ASP doesn't buy links or sell link packages. Links that come from useful content, real partnerships and PR are worth having, and we let them come from the work itself."
+      "question": "Do I need a Business Profile for every town I serve?",
+      "answer": "No. A service-area business without a storefront gets one profile under Google's rules. Extra profiles are for separate locations with their own staff and service areas. Individual towns are covered by your service area settings and your website."
     },
     {
       "question": "Should snow removal get its own page?",
-      "answer": "If you sell it, yes. It's a different service with a different season and a different buyer decision than lawn care, and one combined page serves neither well. We'd build it before winter so it's ready when the first storm hits."
+      "answer": "If you sell it, yes. It's a different service, season and buying decision than lawn care. We publish it before winter so it's ready when homeowners start searching."
     },
     {
-      "question": "Is Local SEO Pro the same as landscaping SEO?",
-      "answer": "It's the local half. Local SEO Pro covers your Business Profile, citations across 60+ directories, a ranking heatmap and competitor tracking. Full landscaping SEO adds service pages, content and technical work on your website. Most clients need both, and they report together."
+      "question": "Do you build backlinks?",
+      "answer": "No. ASP doesn't buy links or sell link packages. Links earned from useful pages, real partnerships and local PR are welcome, and they come from the work itself."
+    },
+    {
+      "question": "Is this the same as Local SEO Pro?",
+      "answer": "Local SEO Pro is the local half: your Business Profile, citations, heatmap and rankings. Landscaping SEO adds the service pages, content and technical work on your site. Most clients need both, and they report together."
     }
   ],
+  "cta": {
+    "heading": "Get your pages ready for spring",
+    "body": "Book a call and we'll go through what's indexed, what ranks and which landscaping searches your competitors own. You keep the findings either way."
+  },
   "related": [
     {
       "label": "Hub",
       "href": "/industries/landscaping",
       "title": "Landscaping Marketing",
-      "body": "How ASP runs marketing for lawn, landscape and snow removal companies."
+      "body": "The full plan for lawn, landscape and snow removal companies."
     },
     {
       "label": "Paid",
       "href": "/ppc/landscaping",
       "title": "Landscaping Advertising",
-      "body": "Local Services Ads, Search Ads and Facebook ads for the same service area."
+      "body": "Ads that run alongside your pages through the busy season."
     },
     {
       "label": "Local",
       "href": "/local-seo-pro",
       "title": "Local SEO Pro",
-      "body": "The Business Profile, citation and heatmap side of local search, $1,200 a month."
+      "body": "Business Profile, citations and a heatmap of where you rank."
     },
     {
-      "label": "Pricing",
-      "href": "/pricing",
-      "title": "Pricing",
-      "body": "Published tiers and what each one includes."
+      "label": "Guide",
+      "href": "/blog/local-seo-for-home-service-businesses",
+      "title": "Local SEO for Home Service Businesses",
+      "body": "The longer read on map results and service-area profiles."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

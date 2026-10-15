@@ -3,106 +3,160 @@
   "slug": "landscaping",
   "trade": "Landscaping & Lawn Care",
   "status": "review",
-  "metaTitle": "Landscaping Marketing Agency for Lawn & Landscape Pros",
-  "metaDescription": "Landscaping marketing for lawn care, landscape and snow removal pros: search, maps, paid ads and tracking tied to booked jobs. Everything stays in your name.",
-  "h1": "Landscaping Marketing Agency",
-  "intro": "ASP is a landscaping marketing agency for lawn care, landscape and snow removal companies. We run your search, maps, paid ads and tracking as one system, and we judge it by booked jobs and revenue, not clicks. Everything we build goes in your name.",
-  "sections": [
+  "metaTitle": "Landscaping Marketing for Lawn and Landscape Companies",
+  "metaDescription": "Landscaping marketing from ASP: maps, search, Google Ads, LSA and Facebook, planned around your season and tracked to booked jobs. Built in your name.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Landscaping & Lawn Care",
+    "h1": "Landscaping Marketing Agency",
+    "subhead": "Marketing planned around your season and judged by booked jobs. ASP runs your Business Profile, website, Google ads, Facebook ads and tracking as one system.",
+    "points": [
+      "Marketing timed to your busy months",
+      "Reported against booked jobs, not clicks",
+      "Accounts and data stay in your name"
+    ]
+  },
+  "why": {
+    "heading": "Why landscaping marketing needs its own plan",
+    "intro": "BLS says grounds maintenance workers may be busier in spring, summer and fall. A weekly mowing customer and a retaining wall customer also buy in very different ways.",
+    "cards": [
+      {
+        "title": "The season sets the calendar",
+        "body": "Spend and content lead into your busy months, and companies that sell snow removal shift weight to winter. After one tracked season, your own booked jobs set the calendar."
+      },
+      {
+        "title": "Mowing and hardscape sell differently",
+        "body": "Recurring lawn care can carry a seasonal offer. Design work, walkways and retaining walls take longer to decide, so they get project photos and a design consultation or estimate offer."
+      },
+      {
+        "title": "Show the yards you built",
+        "body": "Stock photos of somebody else's job hold trade ads back. We plan what your crews shoot, before and after, so ads and your profile keep fresh work to show."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What ASP runs for landscaping companies",
+    "intro": "Each channel covers a different point in how a homeowner hires a lawn or landscape company.",
+    "cards": [
+      {
+        "title": "Landscaping SEO",
+        "body": "Service pages for mowing, installs, irrigation and snow, plus the technical fixes that let Google find them. Measured against booked jobs, not rankings alone.",
+        "href": "/seo/landscaping"
+      },
+      {
+        "title": "Landscaping advertising",
+        "body": "Search Ads for the installs you want more of, plus Local Services Ads in the lawn, landscaping, tree and snow categories on Google's October 2026 list.",
+        "href": "/ppc/landscaping"
+      },
+      {
+        "title": "Business Profile and maps",
+        "body": "A complete, active profile, steady review requests and weekly posts. Google says a better local ranking can't be bought, so the profile work comes first.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Facebook and Instagram",
+        "body": "Spring offers, finished-yard video and retargeting the homeowners who visited your site and didn't call. Crew recruiting runs as its own campaign when you need hands.",
+        "href": "/meta-ads"
+      },
+      {
+        "title": "Tracking to booked jobs",
+        "body": "Calls and forms tagged by source, kept on the job record where your CRM allows. Repeat mowing visits count as retention, not new wins.",
+        "href": "/blog/marketing-attribution-home-service-businesses"
+      },
+      {
+        "title": "Housecall Pro attribution",
+        "body": "As a Housecall Pro Affiliate, ASP sets up job attribution so completed jobs tie back to the channel that booked them.",
+        "href": "/housecall-pro"
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "How demand works in landscaping and lawn care",
-      "paragraphs": [
-        "Landscaping runs on the growing season. The Bureau of Labor Statistics says some grounds maintenance jobs are seasonal, and that workers may be busier or work longer hours in spring, summer and fall. Employment points the same way: US private employment in landscaping services was 740,983 in January 2024 and 995,164 in July 2024, about 34% higher in July. That counts workers, not customer demand.",
-        "The trade is also wide. The federal definition of landscaping services covers lawn and landscape maintenance, installing trees, shrubs, plants, lawns and gardens, and designing and building walkways, retaining walls, decks, fences and ponds. A weekly mowing customer and a retaining wall customer are buying different jobs on different timelines, so each side needs its own pages, ads and offers.",
-        "Snow removal adds a winter calendar for companies that sell it. We plan your marketing around the months your crews are busy and the months you need to fill, and once tracking is in place that plan comes from your own booked-job history."
-      ]
+      "value": "123,133",
+      "label": "Private landscaping establishments in the US",
+      "source": "BLS QCEW, 2024"
     },
     {
-      "heading": "The channels ASP runs for landscaping companies",
-      "paragraphs": [
-        "Landscaping is a big, local trade. BLS counted 123,133 private establishments in landscaping services in the US in 2024, with average employment of 900,726. Your marketing has one job inside that number: make your company the clear choice in the neighborhoods you serve.",
-        "Each channel below covers a different point in how a homeowner hires. The organic side is covered in detail on our landscaping SEO page, and the paid side on our landscaping advertising page."
-      ],
-      "bullets": [
-        "Google Business Profile and the map results. Google's own help page names relevance, distance and prominence as the main factors in local results and says a better local ranking can't be bought. A complete, active profile and steady reviews come first.",
-        "Local Services Ads. Landscaping services, Lawn care services, Tree services and Snow removal were separate categories on Google's US list when we checked it in October 2026, so each kind of work has a category to apply under, subject to Google's screening.",
-        "Google Search Ads for the installs and design work you want more of, built one service and one area at a time.",
-        "Service pages and SEO for the searches homeowners make before they are ready to call.",
-        "Facebook and Instagram for seasonal offers, finished-project photos and bringing back site visitors who didn't call."
-      ]
-    },
-    {
-      "heading": "Hiring crews is part of the plan",
-      "paragraphs": [
-        "More booked work only helps if you can staff it. Grounds maintenance workers held about 1.3 million jobs in the US in 2025, and BLS projects employment in the occupation to grow 5 percent from 2025 to 2035.",
-        "When you need crew, we run recruiting on Meta as its own campaign with its own budget. Keeping it separate means hiring spend never gets read as lead-generation performance."
-      ]
-    },
-    {
-      "heading": "How we measure landscaping marketing",
-      "paragraphs": [
-        "Clicks and calls are the start of the report, not the end. We follow each lead from the first call or form to the booked job and the revenue it produced. Call tracking tags each phone lead by source, forms carry their source into your CRM, and that source stays on the job record where your CRM supports it.",
-        "Recurring customers need one more rule. The first job is credited to the channel that won the customer, and every repeat visit after that counts as retention, not new acquisition. Mixing the two would let a season of mowing revenue inflate the numbers for whichever ad brought the customer in.",
-        "If you run Housecall Pro, ASP is an Official Housecall Pro Affiliate Partner, and Housecall Pro attribution setup is part of our Foundation tier."
-      ]
-    },
-    {
-      "heading": "What you own",
-      "paragraphs": [
-        "Your domain, website code, Google Business Profile and reviews, ad accounts, CRM data and reports are set up in your name. You pay Google and Meta directly for ad spend, and it isn't part of any ASP fee. ASP doesn't charge exit fees to transfer what we built for you if you leave."
-      ]
+      "value": "About 34%",
+      "label": "More landscaping employment in July than January",
+      "source": "BLS QCEW, 2024"
     }
   ],
+  "process": {
+    "heading": "How a landscaping engagement starts",
+    "steps": [
+      {
+        "title": "Audit what you run now",
+        "body": "We review your profile, site, ads and tracking, then show you the findings before any budget moves."
+      },
+      {
+        "title": "Map your season",
+        "body": "We set which months to push, which to hold, and whether snow removal carries your winter."
+      },
+      {
+        "title": "Build and launch",
+        "body": "Tracking goes in first, then pages, profile work and ads, highest-value services first."
+      },
+      {
+        "title": "Review it monthly",
+        "body": "One monthly review covers what was spent, what it booked and what changes next."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Packages for landscaping companies",
+    "subhead": "For lawn and landscape companies, Organic SEO is included from Foundation up, and paid media management is included from Growth up. Pick the one that fits your next season."
+  },
   "faqs": [
     {
       "question": "What does a landscaping marketing agency do?",
-      "answer": "It runs the work that brings in booked jobs: your Business Profile and map visibility, your website and service pages, your paid ads and the tracking that ties each lead to revenue. At ASP those pieces run as one system with one monthly review, instead of separate vendors with separate reports."
+      "answer": "It runs the work that turns local searches into booked jobs: your Business Profile, website, Google ads, Facebook ads and the tracking behind them. ASP runs those as one system with one monthly review."
     },
     {
-      "question": "Should a lawn care company market the same way as a design-build landscaper?",
-      "answer": "No. Recurring maintenance is a lower-ticket, repeat purchase, so it can carry a seasonal offer directly. Design and hardscape work is a longer decision, so it needs project photos, detailed service pages and an offer like a design consultation or an estimate. Many companies sell both, and we plan each side separately."
+      "question": "Should lawn care and design-build work be marketed the same way?",
+      "answer": "No. Weekly maintenance is a repeat, lower-ticket purchase that can carry a seasonal offer. Hardscape and design work is a longer decision that needs project photos and an estimate or design consultation offer. Many companies sell both, so we plan each side separately."
     },
     {
-      "question": "Can landscaping companies run Google Local Services Ads?",
-      "answer": "Yes. When we checked in October 2026, Google's US category list included Landscaping services, Lawn care services, Tree services and Snow removal. Google screens each business before its ads run, and the requirements are Google's to set. Our landscaping advertising page covers how we manage it."
+      "question": "Can landscaping companies run Local Services Ads?",
+      "answer": "Yes. When we checked Google's US list in October 2026, it had separate categories for landscaping, lawn care, tree services and snow removal. Google screens every business before ads run. Our landscaping advertising page explains how we manage it."
     },
     {
-      "question": "How do you handle the slow months?",
-      "answer": "We plan around them instead of running the same budget all year. Spend and content lead into your busy season, and companies that sell snow removal shift weight to winter services. Once we have a season of your booked-job data, the calendar comes from your own numbers."
-    },
-    {
-      "question": "What does landscaping marketing cost with ASP?",
-      "answer": "Our published tiers start with Foundation at $2,500 a month, and Growth at $3,850 a month adds paid media management. Ad spend is separate and paid directly to the platforms. The full breakdown is on our pricing page."
+      "question": "What happens in the slow months?",
+      "answer": "Budget and content pull back after your peak and shift to winter work like snow removal if you sell it. After a season of tracked booked jobs, your own numbers set the plan."
     },
     {
       "question": "Who owns the website and ad accounts?",
-      "answer": "You do. They are set up in your name from the start, and there are no exit fees to transfer them. Our what-you-own page lists every asset."
+      "answer": "You do. Your domain, website, Business Profile, ad accounts and CRM data are set up in your name, ad spend goes straight to Google and Meta, and there are no exit fees if you leave."
     }
   ],
+  "cta": {
+    "heading": "Ready to plan your next season?",
+    "body": "Book a call and we'll review your profile, site, ads and tracking with you. You'll see what to fix first and what your busy months need."
+  },
   "related": [
     {
       "label": "Organic",
       "href": "/seo/landscaping",
       "title": "Landscaping SEO",
-      "body": "Map results, service pages and technical work for lawn and landscape companies."
+      "body": "Service pages, map results and site fixes for lawn and landscape companies."
     },
     {
       "label": "Paid",
       "href": "/ppc/landscaping",
       "title": "Landscaping Advertising",
-      "body": "Local Services Ads, Google Search Ads and Facebook ads, tracked to booked jobs."
+      "body": "Search Ads, Local Services Ads and Facebook ads tied to booked jobs."
     },
     {
-      "label": "Local",
-      "href": "/local-seo-pro",
-      "title": "Local SEO Pro",
-      "body": "Business Profile management, citation cleanup and a ranking heatmap."
+      "label": "Meta",
+      "href": "/meta-ads",
+      "title": "Meta Ads Management",
+      "body": "Facebook and Instagram creative built from your own finished work."
     },
     {
       "label": "Ownership",
       "href": "/what-you-own",
       "title": "What You Own",
-      "body": "Every account, asset and report we build stays in your name."
+      "body": "Each account and asset ASP builds is yours, with no exit fees."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }

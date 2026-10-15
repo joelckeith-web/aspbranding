@@ -3,107 +3,165 @@
   "slug": "pest-control",
   "trade": "Pest Control",
   "status": "review",
-  "metaTitle": "Pest Control Marketing Agency for Growing Companies",
-  "metaDescription": "Pest control marketing from ASP: local SEO, Google and Local Services Ads, Meta and follow-up, measured against booked jobs. Every account stays in your name.",
-  "h1": "Pest Control Marketing Agency",
-  "intro": "ASP is a pest control marketing agency for companies that want booked jobs, not just leads. We run local search, Google and Local Services Ads, Meta and customer follow-up as one system, then measure it against the revenue in your CRM. Everything we build stays in your name.",
-  "sections": [
+  "metaTitle": "Pest Control Marketing for Recurring Service Companies",
+  "metaDescription": "Pest control marketing from ASP: local search, Google and Local Services Ads, Meta and follow-up built to keep routes full, tracked to booked jobs.",
+  "dateModified": "2026-10-15",
+  "hero": {
+    "eyebrow": "Pest control marketing",
+    "h1": "Pest Control Marketing Built to Fill Your Routes",
+    "subhead": "Win new customers, keep them on service, and see which channel won each booked job. ASP runs local search, ads, Meta and follow-up as one system.",
+    "points": [
+      "Every account and asset in your name",
+      "Reported against booked jobs, not clicks",
+      "ASP is a Housecall Pro Affiliate"
+    ]
+  },
+  "why": {
+    "heading": "Recurring service needs recurring lead flow",
+    "intro": "When a customer stays on a recurring plan, the first treatment is only the start. Your marketing has to win that first job and protect the account after it.",
+    "cards": [
+      {
+        "title": "Win the nearby search",
+        "body": "Homeowners pick from the pest control companies they find close by. We build up your Business Profile, reviews and service pages to make you the company they call."
+      },
+      {
+        "title": "Keep customers on service",
+        "body": "Maintenance reminders, win-back messages and review requests run in the same system, so a first treatment has a path to the next visit."
+      },
+      {
+        "title": "Know which channel paid off",
+        "body": "The first job is credited to the channel that won the customer. Later visits count as retention, so they do not pad the first channel's numbers."
+      }
+    ]
+  },
+  "services": {
+    "heading": "What ASP runs for pest control companies",
+    "intro": "Each piece reports into the same booked-job numbers, so you can see what is working and what to cut.",
+    "cards": [
+      {
+        "title": "Pest Control SEO",
+        "body": "Service pages for termites, rodents, mosquitoes and the other pests you treat, built in order of what a booked job is worth to you.",
+        "href": "/seo/pest-control"
+      },
+      {
+        "title": "Pest Control Advertising",
+        "body": "Google Search Ads and Local Services Ads put you in front of buyers right away while organic rankings build.",
+        "href": "/ppc/pest-control"
+      },
+      {
+        "title": "Local SEO and Business Profile",
+        "body": "Business Profile management, citation cleanup and a monthly ranking heatmap that shows where you rank across your service area.",
+        "href": "/local-seo-pro"
+      },
+      {
+        "title": "Meta retargeting and offers",
+        "body": "Retargeting for site visitors who have not called yet, plus seasonal offers that suit recurring plans.",
+        "href": "/meta-ads"
+      },
+      {
+        "title": "Follow-up and retention",
+        "body": "Quote follow-up, win-back for lapsed customers and review capture, so every account you win gets a next step.",
+        "href": "/growth-system"
+      },
+      {
+        "title": "Attribution and reporting",
+        "body": "Call tracking, tagged forms and your CRM tie each lead to the booked job and the revenue it produced.",
+        "href": "/blog/marketing-attribution-home-service-businesses"
+      }
+    ]
+  },
+  "stats": [
     {
-      "heading": "How demand works in pest control",
-      "paragraphs": [
-        "Bureau of Labor Statistics data shows private pest control employers in the US had 141,809 people on staff in January 2024 and 159,456 in July 2024, about 12% more. Staffing is not the same thing as customer calls, but it shows the industry carried more staff in July than in January that year.",
-        "Some pests keep their own schedule. The CDC says ticks are most active from April through September, though people can be exposed year-round.",
-        "The trade also covers a lot of ground. The federal industry definition includes controlling birds, mosquitoes, rodents, termites and other insects and pests, plus fumigation. A termite inspection and a mosquito treatment reach different buyers, so we plan the marketing by service line instead of treating pest control as one product."
-      ]
+      "value": "17,606",
+      "label": "Private pest control establishments in the US",
+      "source": "BLS QCEW, 2024"
     },
     {
-      "heading": "Marketing channels ASP runs for pest control companies",
-      "paragraphs": [
-        "Homeowners shopping for pest control choose from the companies they find nearby, so local search is part of every plan we run. Paid search and Local Services Ads cover the gap while organic rankings build, and follow-up gives a first treatment a path to a repeat visit.",
-        "BLS counted 17,606 private pest control establishments in the US in 2024. Every channel below exists to make your company the one a homeowner calls."
-      ],
-      "bullets": [
-        "Local search: Google Business Profile management, citation cleanup and a monthly ranking heatmap through Local SEO Pro.",
-        "Organic SEO: service pages and supporting content for the pests you want more of, built in order of what a booked job is worth to you.",
-        "Google Search Ads and Local Services Ads: pest control services is an eligible Local Services Ads category in the US, so companies that pass Google's screening can run pay-per-lead ads alongside search ads.",
-        "Meta: retargeting for people who read a service page and did not call, plus seasonal offers for recurring services.",
-        "Follow-up: maintenance reminders, win-back messages and review requests built into the same system."
-      ]
+      "value": "About 12%",
+      "label": "Higher private pest employment, July vs. January 2024",
+      "source": "BLS QCEW, 2024"
     },
     {
-      "heading": "What homeowners check before they hire",
-      "paragraphs": [
-        "BLS notes that while some people handle pests themselves, many prefer to hire a professional. When they do, a 2005 EPA consumer fact sheet gives them questions to ask, including whether the company is licensed, carries appropriate insurance and guarantees its work.",
-        "Your marketing should answer those questions before anyone has to ask. That means license and insurance details where a buyer can see them, guarantee terms stated plainly if you offer one, and a steady flow of recent reviews on your Business Profile, since review volume and recency carry real weight in the map results."
-      ]
-    },
-    {
-      "heading": "How results are measured",
-      "paragraphs": [
-        "We track every lead from the first call or form to the booked job and the revenue it produced. That takes four connected pieces: call tracking for phone leads, forms that capture campaign tags, your CRM, and the ad platforms that need booked-job data sent back to them.",
-        "If you run Housecall Pro, ASP is an Official Housecall Pro Affiliate Partner, and Housecall Pro attribution setup is part of our Foundation tier. Completed jobs and their revenue can be sent back to Google Ads as offline conversions, so bidding learns from booked work instead of raw leads.",
-        "Repeat customers get counted the right way. The first job is credited to the channel that won the customer, and later visits count as retention, so renewals do not inflate the numbers for the channel that brought in the first job."
-      ]
-    },
-    {
-      "heading": "What you own",
-      "paragraphs": [
-        "Your domain, website code, Google Business Profile and reviews, ad accounts and CRM data are set up in your name from day one. Ad spend is paid straight to Google and Meta from your own accounts, and ASP does not mark it up.",
-        "If you ever leave, ASP does not charge handover or exit fees to transfer what was built for you. The full list is on our What You Own page."
-      ]
+      "value": "Apr–Sep",
+      "label": "Peak tick months; exposure possible year-round",
+      "source": "CDC, 2024"
     }
   ],
+  "process": {
+    "heading": "How a pest control engagement starts",
+    "steps": [
+      {
+        "title": "Map your service lines",
+        "body": "We plan by pest and service, since a termite job and a mosquito treatment reach different buyers."
+      },
+      {
+        "title": "Connect tracking first",
+        "body": "Calls, forms and your CRM get connected first, so lead source carries through to the job wherever your CRM supports it."
+      },
+      {
+        "title": "Launch the right channels",
+        "body": "Local search is part of every plan. Paid search and Local Services Ads cover the gap while organic rankings build."
+      },
+      {
+        "title": "Report on booked jobs",
+        "body": "Each month you see leads, booked jobs and revenue by channel, with new customers kept apart from repeat visits."
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Packages for pest control companies",
+    "subhead": "Pick the package that fits your company today; each one scales into the next as you grow. Organic SEO is included from Foundation up; paid media management is included from Growth up."
+  },
   "faqs": [
     {
       "question": "What does a pest control marketing agency do?",
-      "answer": "It runs the channels that bring in pest control customers and proves which ones paid off. At ASP that means local search, service pages, Google Search Ads, Local Services Ads, Meta and follow-up, all reported against booked jobs in your CRM."
+      "answer": "It runs the channels that bring in pest control customers and shows which ones paid off. At ASP that means local search, service pages, Google Search Ads, Local Services Ads, Meta and follow-up, all reported against booked jobs in your CRM."
     },
     {
-      "question": "Where should a pest control company start with marketing?",
-      "answer": "It depends on how soon you need jobs on the books. Paid search and Local Services Ads put you in front of buyers right away and stop when the budget stops. SEO takes months to move and keeps paying after it does, so most established companies run both."
+      "question": "Can you help keep customers on recurring plans?",
+      "answer": "Yes. Follow-up covers maintenance reminders, win-back messages and review requests, and repeat jobs are reported apart from new customers. We do not promise a renewal rate; we show you what the follow-up produced."
     },
     {
-      "question": "Can you help us keep customers on recurring plans?",
-      "answer": "Yes. Our follow-up layer covers maintenance reminders, win-back messages and review requests, and we report repeat jobs separately from new customers. We do not promise a renewal rate; we show you what the follow-up produced."
+      "question": "Should we start with ads or SEO?",
+      "answer": "It depends on how soon you need jobs on the books. Ads put you in front of buyers right away and stop when the budget stops. SEO takes months to move and keeps paying after it does, so most established companies run both."
     },
     {
       "question": "Do you work with pest control companies on Housecall Pro?",
-      "answer": "Yes. ASP is an Official Housecall Pro Affiliate Partner, and we set up attribution so lead source carries through to the job. Discounts apply to new Housecall Pro accounts only. If you use another CRM, we carry lead source to the job where that CRM supports it."
-    },
-    {
-      "question": "How much does pest control marketing cost?",
-      "answer": "Our published tiers start with Foundation at $2,500 a month, and Growth at $3,850 a month adds paid media management. Ad spend is separate and paid to the platforms. Full details are on our pricing page."
+      "answer": "Yes. ASP is a Housecall Pro Affiliate, and we set up attribution so lead source carries through to the job. Where they apply, partner discounts are for new Housecall Pro accounts only. Other CRMs carry lead source where they support it."
     },
     {
       "question": "Who owns the accounts if we stop working together?",
-      "answer": "You do. Your website, Business Profile, ad accounts and data are in your name from the start, and there are no exit fees. Our What You Own page covers the details."
+      "answer": "You do. Your website, Business Profile, ad accounts and data are in your name from the start, and ASP charges no handover or exit fees. Our What You Own page has the full list."
     }
   ],
+  "cta": {
+    "heading": "Keep your pest control routes full",
+    "body": "Tell us which pests and service areas you want more of. We'll review what you run today and show you what we would build first."
+  },
   "related": [
     {
       "label": "SEO",
       "href": "/seo/pest-control",
       "title": "Pest Control SEO",
-      "body": "Service pages, Business Profile work and technical fixes for organic and map results."
+      "body": "Service pages for the pests you treat, plus Business Profile and technical work."
     },
     {
       "label": "Ads",
       "href": "/ppc/pest-control",
       "title": "Pest Control Advertising",
-      "body": "Google Search Ads, Local Services Ads and Meta, tracked to booked jobs."
+      "body": "Local Services Ads, Search Ads and Meta, tracked to booked jobs."
+    },
+    {
+      "label": "System",
+      "href": "/growth-system",
+      "title": "The Growth System",
+      "body": "Marketing, operations and follow-up run as one system."
     },
     {
       "label": "Ownership",
       "href": "/what-you-own",
       "title": "What You Own",
-      "body": "Every account and asset we build stays in your name."
-    },
-    {
-      "label": "Pricing",
-      "href": "/pricing",
-      "title": "Pricing",
-      "body": "Foundation, Growth and Premier tiers, plus standalone products."
+      "body": "Every account and asset we build is registered to your company."
     }
-  ],
-  "dateModified": "2026-10-15"
+  ]
 }
