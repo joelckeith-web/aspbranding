@@ -42,6 +42,13 @@ export interface TradePage {
   faqs: { question: string; answer: string }[];
   cta: { heading: string; body: string };
   related?: { label: string; href: string; title: string; body: string }[];
+  /** Optional imagery + Element Bank motion. Pages without it keep the plain layout. */
+  media?: {
+    hero?: { src: string; position?: string };
+    why?: { src: string; alt: string; chips?: string[] };
+    services?: { src: string; alt: string; chips?: string[] };
+    caseStudy?: { src: string; alt: string };
+  };
 }
 
 const ROOT = path.join(process.cwd(), "content", "trade-pages");

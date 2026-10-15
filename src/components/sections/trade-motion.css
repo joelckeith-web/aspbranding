@@ -1,0 +1,98 @@
+/*
+ * Trade landing-page motion, ported from the approved ASP Element Bank
+ * (asp-reels-kit bank.mjs, Joel 10/14): eyebrow dot, gradient rule wipe,
+ * focus brackets, topic chip, browser frame, grid field, spotlight, step
+ * badge, ambient glow loop and the CTA light sweep. Same motion rules:
+ * decelerate, never overshoot. Colours use the site tokens.
+ * Animations start when the ScrollReveal wrapper becomes .reveal-visible.
+ */
+.bk {
+  --bk-dec: cubic-bezier(0.16, 1, 0.3, 1);
+  --bk-grad: linear-gradient(135deg, var(--color-asp-blue-light) 0%, var(--color-asp-purple) 100%);
+  --bk-line: rgba(76, 201, 240, 0.18);
+}
+
+/* Eyebrow: glowing dot + label */
+.bk-eyebrow { display: inline-flex; align-items: center; gap: 0.6rem; }
+.bk-eyebrow::before {
+  content: ""; width: 0.5rem; height: 0.5rem; border-radius: 9999px;
+  background: var(--color-asp-blue-light); box-shadow: 0 0 10px var(--color-asp-blue-light);
+}
+
+/* Gradient rule wipe (the signature line) */
+.bk-rule { display: block; height: 4px; width: 96px; border-radius: 2px; background: var(--bk-grad); transform-origin: left; transform: scaleX(0); }
+.reveal-visible .bk-rule, .bk-rule.bk-now { animation: bk-wipe 0.7s var(--bk-dec) 0.15s both; }
+
+/* Focus brackets closing in on a photo */
+.bk-brackets > span {
+  position: absolute; width: 56px; height: 56px; border-style: solid; border-color: var(--color-asp-blue-light);
+  filter: drop-shadow(0 0 8px rgba(76, 201, 240, 0.7)); opacity: 0;
+}
+.bk-brackets > span:nth-child(1) { left: 16px; top: 16px; border-width: 4px 0 0 4px; border-radius: 14px 0 0 0; }
+.bk-brackets > span:nth-child(2) { right: 16px; top: 16px; border-width: 4px 4px 0 0; border-radius: 0 14px 0 0; }
+.bk-brackets > span:nth-child(3) { left: 16px; bottom: 16px; border-width: 0 0 4px 4px; border-radius: 0 0 0 14px; }
+.bk-brackets > span:nth-child(4) { right: 16px; bottom: 16px; border-width: 0 4px 4px 0; border-radius: 0 0 14px 0; }
+.reveal-visible .bk-brackets > span:nth-child(1) { animation: bk-in0 0.7s var(--bk-dec) 0.3s both; }
+.reveal-visible .bk-brackets > span:nth-child(2) { animation: bk-in1 0.7s var(--bk-dec) 0.3s both; }
+.reveal-visible .bk-brackets > span:nth-child(3) { animation: bk-in2 0.7s var(--bk-dec) 0.3s both; }
+.reveal-visible .bk-brackets > span:nth-child(4) { animation: bk-in3 0.7s var(--bk-dec) 0.3s both; }
+
+/* Topic chip */
+.bk-chip {
+  display: inline-flex; align-items: center; gap: 0.6rem; height: 2.5rem; padding: 0 1.1rem 0 0.9rem; border-radius: 9999px;
+  background: rgba(0, 18, 51, 0.92); border: 1.5px solid var(--bk-line); color: var(--color-asp-blue-light);
+  font-weight: 700; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap;
+}
+.bk-chip::before { content: ""; width: 0.45rem; height: 0.45rem; border-radius: 9999px; background: var(--color-asp-blue-light); box-shadow: 0 0 10px var(--color-asp-blue-light); }
+.reveal-visible .bk-chip { animation: bk-chip 0.8s var(--bk-dec) both; }
+.reveal-visible .bk-chip:nth-child(2) { animation-delay: 0.12s; }
+.reveal-visible .bk-chip:nth-child(3) { animation-delay: 0.24s; }
+
+/* Browser frame around a screenshot */
+.bk-browser { border-radius: 18px; border: 1.5px solid var(--bk-line); overflow: hidden; background: #0b0e1a;
+  box-shadow: 0 0 0 1px rgba(76, 201, 240, 0.12), 0 30px 80px rgba(0, 0, 0, 0.45); }
+.bk-browser-bar { display: flex; align-items: center; gap: 0.5rem; height: 2.25rem; padding: 0 1rem; background: #001233; border-bottom: 1.5px solid var(--bk-line); }
+.bk-browser-bar i { width: 0.6rem; height: 0.6rem; border-radius: 9999px; background: rgba(255, 255, 255, 0.25); }
+.bk-browser-bar i:first-child { background: var(--color-asp-blue-light); }
+.bk-browser-bar b { margin-left: 0.75rem; flex: 1; height: 1.1rem; border-radius: 9999px; background: rgba(255, 255, 255, 0.06); border: 1px solid var(--bk-line); }
+.reveal-visible .bk-browser { animation: bk-pop 0.7s var(--bk-dec) both; }
+
+/* Grid field + spotlight ground (stat band, CTA) */
+.bk-ground { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.bk-grid { position: absolute; inset: -80px; opacity: 0.5;
+  background-image: linear-gradient(var(--bk-line) 1px, transparent 1px), linear-gradient(90deg, var(--bk-line) 1px, transparent 1px);
+  background-size: 80px 80px; animation: bk-gridpan 10s linear infinite; }
+.bk-glow { position: absolute; border-radius: 9999px; filter: blur(90px); }
+.bk-spot { width: 560px; height: 560px; left: 50%; top: 50%; margin: -280px 0 0 -280px;
+  background: radial-gradient(circle, rgba(76, 201, 240, 0.35), rgba(159, 76, 255, 0.18)); animation: bk-breathe 6s ease-in-out infinite; }
+.bk-vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 30%, var(--color-asp-surface-navy) 85%); }
+.bk-drift1 { width: 520px; height: 520px; left: -160px; top: -200px; background: rgba(76, 201, 240, 0.28); animation: bk-drift1 9s linear infinite; }
+.bk-drift2 { width: 480px; height: 480px; right: -160px; bottom: -200px; background: rgba(159, 76, 255, 0.24); animation: bk-drift2 9s linear infinite; }
+
+/* Step badge */
+.bk-step { display: inline-grid; place-items: center; width: 3rem; height: 3rem; border-radius: 0.9rem; background: var(--bk-grad);
+  color: #fff; font-weight: 900; font-size: 1.1rem; box-shadow: 0 8px 24px rgba(76, 201, 240, 0.35); }
+
+/* CTA light sweep */
+.bk-sweep { position: relative; overflow: hidden; }
+.bk-sweep::after { content: ""; position: absolute; top: 0; bottom: 0; width: 40%; left: -60%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.35), transparent); animation: bk-sweep 2.4s ease-in-out 0.6s infinite; }
+
+@keyframes bk-wipe { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes bk-pop { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: none; } }
+@keyframes bk-chip { from { opacity: 0; clip-path: inset(0 calc(100% - 2.5rem) 0 0 round 9999px); } to { opacity: 1; clip-path: inset(0 0 0 0 round 9999px); } }
+@keyframes bk-in0 { from { opacity: 0; transform: translate(-24px, -24px); } to { opacity: 1; transform: none; } }
+@keyframes bk-in1 { from { opacity: 0; transform: translate(24px, -24px); } to { opacity: 1; transform: none; } }
+@keyframes bk-in2 { from { opacity: 0; transform: translate(-24px, 24px); } to { opacity: 1; transform: none; } }
+@keyframes bk-in3 { from { opacity: 0; transform: translate(24px, 24px); } to { opacity: 1; transform: none; } }
+@keyframes bk-gridpan { to { transform: translate(80px, 80px); } }
+@keyframes bk-breathe { 0%, 100% { opacity: 0.55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+@keyframes bk-drift1 { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(120px, 70px); } 50% { transform: translate(40px, 160px); } 75% { transform: translate(-70px, 80px); } }
+@keyframes bk-drift2 { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(-100px, -60px); } 50% { transform: translate(-30px, -150px); } 75% { transform: translate(90px, -70px); } }
+@keyframes bk-sweep { 0% { left: -60%; } 60%, 100% { left: 130%; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .bk *, .bk *::before, .bk *::after { animation: none !important; }
+  .bk-rule { transform: none; }
+  .bk-brackets > span { opacity: 1; }
+}

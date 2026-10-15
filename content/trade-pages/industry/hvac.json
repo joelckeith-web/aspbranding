@@ -153,5 +153,28 @@
       "title": "Case Studies",
       "body": "Programs we've run for home service companies, including HVAC."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/industries/hvac-viking.jpg",
+      "position": "70% 45%"
+    },
+    "why": {
+      "src": "/images/backgrounds/viking-rooftop-crew.jpg",
+      "alt": "Two HVAC technicians servicing a rooftop unit"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    },
+    "caseStudy": {
+      "src": "/images/backgrounds/viking-attic-tech.jpg",
+      "alt": "HVAC technician installing ductwork in an attic"
+    }
+  }
 }
