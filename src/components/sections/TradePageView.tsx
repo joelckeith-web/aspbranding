@@ -48,8 +48,11 @@ const stripLinks = (text: string) => text.replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g
 
 export function tradePageMetadata(page: TradePage): Metadata {
   const url = `${SITE}${tradePageUrl(page)}`;
+  const og = page.media?.og ?? "/og-image.png";
+  const ogAlt = page.media?.og ? page.hero.h1 : "ASP — Assess. Strategize. Perform.";
   return {
-    title: page.metaTitle,
+    // The site template appends " | ASP"; skip it when that would push the title past 60 characters.
+    title: page.metaTitle.length + " | ASP".length <= 60 ? page.metaTitle : { absolute: page.metaTitle },
     description: page.metaDescription,
     alternates: { canonical: url },
     // Review drafts stay reachable for Joel's review but out of the index.
@@ -61,14 +64,14 @@ export function tradePageMetadata(page: TradePage): Metadata {
       url,
       title: page.metaTitle,
       description: page.metaDescription,
-      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ASP — Assess. Strategize. Perform." }],
+      images: [{ url: og, width: 1200, height: 630, alt: ogAlt }],
     },
     twitter: {
       card: "summary_large_image",
       creator: "@aspbranding",
       title: page.metaTitle,
       description: page.metaDescription,
-      images: ["/og-image.png"],
+      images: [og],
     },
   };
 }

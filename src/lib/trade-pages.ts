@@ -45,6 +45,8 @@ export interface TradePage {
   /** Optional imagery + Element Bank motion. Pages without it keep the plain layout. */
   media?: {
     hero?: { src: string; position?: string };
+    /** 1200x630 social share image */
+    og?: string;
     why?: { src: string; alt: string; chips?: string[] };
     services?: { src: string; alt: string; chips?: string[] };
     caseStudy?: { src: string; alt: string };
