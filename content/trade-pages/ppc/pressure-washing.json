@@ -146,5 +146,23 @@
       "title": "Local SEO Pro",
       "body": "The map and profile side that works next to your ads."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/pressure-washing-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/industries/pressure-washing.jpg",
+      "alt": "Pressure washing a concrete surface"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Google Ads",
+        "Meta"
+      ]
+    }
+  }
 }

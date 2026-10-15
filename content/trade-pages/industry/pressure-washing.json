@@ -152,5 +152,24 @@
       "title": "What You Own",
       "body": "Your accounts, data and reports, built in your name."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/pressure-washing-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/industries/pressure-washing.jpg",
+      "alt": "Pressure washing a concrete surface"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

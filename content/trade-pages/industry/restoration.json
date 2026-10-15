@@ -154,5 +154,24 @@
       "title": "Speed to Lead for Home Service Businesses: The Real Math",
       "body": "What a missed call costs when the job is urgent."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/restoration-0.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/restoration-2.jpg",
+      "alt": "Basement stripped to the framing during restoration"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

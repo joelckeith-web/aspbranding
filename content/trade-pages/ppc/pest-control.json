@@ -154,5 +154,19 @@
       "title": "Marketing Attribution for Home Service Businesses",
       "body": "How calls, forms, your CRM and ad platforms connect."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/pest-control-0.jpg",
+      "position": "center 45%"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

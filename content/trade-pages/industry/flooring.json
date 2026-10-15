@@ -154,5 +154,28 @@
       "title": "Remodeling Marketing",
       "body": "Marketing for kitchen, bath and exterior remodeling firms."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/flooring-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/flooring-0.jpg",
+      "alt": "Installer laying plank flooring"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    },
+    "caseStudy": {
+      "src": "/images/trades/flooring-cs.jpg",
+      "alt": "Flooring crew at work on a job site"
+    }
+  }
 }

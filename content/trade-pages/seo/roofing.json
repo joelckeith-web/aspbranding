@@ -149,5 +149,23 @@
       "title": "StormFront",
       "body": "Event posts that publish when qualifying weather hits your area."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/roofing-2.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/roofing-1.jpg",
+      "alt": "Two roofers working on an asphalt shingle roof"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "SEO",
+        "Local SEO"
+      ]
+    }
+  }
 }

@@ -147,5 +147,24 @@
       "title": "Remodeling Marketing",
       "body": "Marketing and attribution for kitchen, bath and exterior firms."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/housecall-pro-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/housecall-pro-2.jpg",
+      "alt": "Service pro with a tablet at the back of a work van"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Housecall Pro",
+        "Google Ads",
+        "SEO"
+      ]
+    }
+  }
 }

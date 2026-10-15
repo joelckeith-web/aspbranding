@@ -143,5 +143,23 @@
       "title": "Local SEO for Home Service Businesses",
       "body": "The longer read on map results and service-area profiles."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/landscaping-2.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/landscaping-1.jpg",
+      "alt": "Two landscapers mowing and trimming a residential lawn"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "SEO",
+        "Local SEO"
+      ]
+    }
+  }
 }

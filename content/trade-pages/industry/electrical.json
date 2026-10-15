@@ -152,5 +152,24 @@
       "title": "What You Own",
       "body": "Every account and asset built in your name, with no exit fees."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/electrical-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/industries/electrical.jpg",
+      "alt": "Electrician testing a residential electrical panel"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

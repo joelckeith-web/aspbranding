@@ -159,5 +159,24 @@
       "title": "Speed to Lead",
       "body": "Why the time between a new lead and the first reply matters."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/home-inspection-0.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/home-inspection-2.jpg",
+      "alt": "Person looking over the front of a brick house"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

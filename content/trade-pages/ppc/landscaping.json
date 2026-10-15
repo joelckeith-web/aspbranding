@@ -145,5 +145,23 @@
       "title": "PPC Management Services",
       "body": "The audit and account structure behind every paid program."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/landscaping-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/landscaping-2.jpg",
+      "alt": "Landscaper trimming along a residential sidewalk"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

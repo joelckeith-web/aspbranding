@@ -163,5 +163,20 @@
       "title": "What You Own",
       "body": "Every account and asset we build is registered to your company."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/pest-control-0.jpg",
+      "position": "center 45%"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

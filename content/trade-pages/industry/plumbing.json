@@ -153,5 +153,24 @@
       "title": "What You Own",
       "body": "Every account and asset ASP builds, set up in your name."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/plumbing-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/plumbing-2.jpg",
+      "alt": "Plumber working on a water heater"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

@@ -158,5 +158,24 @@
       "title": "What You Own",
       "body": "Each account and asset ASP builds is yours, with no exit fees."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/landscaping-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/landscaping-2.jpg",
+      "alt": "Landscaper trimming along a residential sidewalk"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

@@ -163,5 +163,24 @@
       "title": "Flooring Marketing",
       "body": "Marketing for flooring installers and showrooms."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/remodeling-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/industries/remodel-outdoor.jpg",
+      "alt": "Outdoor kitchen remodel under a covered patio"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

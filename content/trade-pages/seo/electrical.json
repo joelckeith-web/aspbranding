@@ -153,5 +153,23 @@
       "title": "Local SEO for Home Service Businesses",
       "body": "How the map pack and your Business Profile work together."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/industries/electrical.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/electrical-1.jpg",
+      "alt": "Electrician working on a home electric meter and panel"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "SEO",
+        "Local SEO"
+      ]
+    }
+  }
 }

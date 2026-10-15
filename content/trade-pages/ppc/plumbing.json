@@ -150,5 +150,23 @@
       "title": "Speed to Lead",
       "body": "Why answering fast matters once ads make the phone ring."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/plumbing-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/plumbing-2.jpg",
+      "alt": "Plumber working on a water heater"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

@@ -148,5 +148,27 @@
       "title": "How ASP Does SEO",
       "body": "The method behind every trade program, with answers to common questions."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/backgrounds/viking-rooftop-crew.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/hvac-0.jpg",
+      "alt": "HVAC technician climbing into a service van"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "SEO",
+        "Local SEO"
+      ]
+    },
+    "caseStudy": {
+      "src": "/images/backgrounds/viking-attic-tech.jpg",
+      "alt": "HVAC technician installing ductwork in an attic"
+    }
+  }
 }

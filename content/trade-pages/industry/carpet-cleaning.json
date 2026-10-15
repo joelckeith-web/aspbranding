@@ -163,5 +163,20 @@
       "title": "Marketing Attribution Guide",
       "body": "Including how to split new-customer and repeat-customer credit."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/carpet-cleaning-0.jpg",
+      "position": "center 45%"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

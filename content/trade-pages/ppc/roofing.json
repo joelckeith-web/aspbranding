@@ -147,5 +147,23 @@
       "title": "Local SEO Pro",
       "body": "The review and profile work that LSA ranking leans on."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/roofing-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/roofing-2.jpg",
+      "alt": "Roofer on the roof of a brick house"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

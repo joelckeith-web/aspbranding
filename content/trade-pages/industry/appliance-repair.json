@@ -150,5 +150,24 @@
       "title": "AI Integration",
       "body": "How ASP sets up Housecall Pro's AI tools, including CSR AI."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/appliance-repair-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/industries/appliance-repair.jpg",
+      "alt": "Technician repairing a dishwasher"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Local SEO",
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

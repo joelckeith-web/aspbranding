@@ -138,5 +138,19 @@
       "title": "SEO Services",
       "body": "How ASP approaches SEO for home service companies."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/pest-control-0.jpg",
+      "position": "center 45%"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "SEO",
+        "Local SEO"
+      ]
+    }
+  }
 }

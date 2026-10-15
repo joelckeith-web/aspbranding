@@ -139,5 +139,23 @@
       "title": "Local SEO Pro",
       "body": "Business Profile, citations and a monthly ranking heatmap."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/plumbing-2.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/trades/plumbing-1.jpg",
+      "alt": "Plumber working on pipes under a sink"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "SEO",
+        "Local SEO"
+      ]
+    }
+  }
 }

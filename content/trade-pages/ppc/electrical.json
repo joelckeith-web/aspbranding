@@ -144,5 +144,23 @@
       "title": "Speed to Lead",
       "body": "Why answering fast matters once the ads start ringing."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/electrical-1.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/industries/electrical.jpg",
+      "alt": "Electrician testing a residential electrical panel"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }

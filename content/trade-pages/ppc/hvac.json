@@ -141,5 +141,23 @@
       "title": "Speed to Lead",
       "body": "Why answering fast decides whether a call becomes a booked job."
     }
-  ]
+  ],
+  "media": {
+    "hero": {
+      "src": "/images/trades/hvac-0.jpg",
+      "position": "center 45%"
+    },
+    "why": {
+      "src": "/images/backgrounds/viking-rooftop-crew.jpg",
+      "alt": "Two HVAC technicians servicing a rooftop unit"
+    },
+    "services": {
+      "src": "/images/proof/dashboard-overview.jpg",
+      "alt": "ASP marketing overview dashboard showing ad spend, conversions and website sessions",
+      "chips": [
+        "Google Ads",
+        "LSA"
+      ]
+    }
+  }
 }
