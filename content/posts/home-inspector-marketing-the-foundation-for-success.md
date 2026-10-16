@@ -89,7 +89,7 @@ Once the foundation is solid, paid advertising accelerates what's already workin
 
 ### Local Services Ads (LSAs)
 
-LSAs are effectively pay-per-lead — Google only charges you when someone contacts you. They appear at the very top of search results, above even regular ads. And Google Guaranteed verification (background check, insurance verification, license check) builds consumer trust in a way traditional ads can't. For home inspectors, LSAs are usually the best first paid channel, full stop.
+LSAs are effectively pay-per-lead — Google only charges you when someone contacts you. They appear at the very top of search results, above even regular ads. And the Google Verified badge comes from Google's screening, which Google says "varies by business category and location and may include background, business registration, insurance, and license checks, and minimum review requirements." That screening builds consumer trust in a way traditional ads can't. For home inspectors, LSAs are usually the best first paid channel, full stop.
 
 The operational discipline that makes LSAs work:
 
