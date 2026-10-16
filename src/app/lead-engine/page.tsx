@@ -354,7 +354,7 @@ export default function LeadEnginePage() {
                 We run your marketing and build you a dashboard that shows where every digital lead
                 came from. See it for yourself inside 30 days, or we refund your first month.
               </p>
-              <ul className="space-y-2.5">
+              <ul className="hidden sm:block space-y-2.5">
                 {[
                   "Website, SEO and local search, run for you",
                   "Every digital lead traced to its source",
