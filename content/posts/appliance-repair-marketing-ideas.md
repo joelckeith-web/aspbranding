@@ -1,8 +1,8 @@
 ---
 title: "Appliance Repair Marketing Ideas That Turn Calls Into Booked Repairs"
 slug: "appliance-repair-marketing-ideas"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Tag every lead with its source using call tracking numbers and form fields, then carry that source into your CRM. Where your CRM supports it, the source follows the lead to the booked repair and its revenue, so you can compare cost per booked job by channel. If you run Housecall Pro, we set up attribution inside it."
     - question: "Do I keep everything if I stop working with ASP?"
       answer: "Yes. Your Local Services Ads, Google Ads and Meta accounts are opened in your name, and you pay the platforms directly. Your Business Profile, reviews, website, domain and customer and call data stay yours, and there are no exit fees. Our What You Own page lists every asset."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

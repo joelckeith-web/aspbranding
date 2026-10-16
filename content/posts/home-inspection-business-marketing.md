@@ -1,8 +1,8 @@
 ---
 title: "Home Inspection Business Marketing for Multi-Inspector Firms"
 slug: "home-inspection-business-marketing"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Local Services Ads weigh how fast you respond, next to review volume and dispute rate. A lead that waits can hurt the ad's rank, and the buyer may book someone else. In a staffed firm, name one person to own each new lead, and set a schedule that covers the hours when leads tend to arrive."
     - question: "Who owns the ad accounts, profiles and reviews?"
       answer: "Your firm does. The website and domain, each office's Business Profile and reviews, the ad accounts, call tracking data and customer records are set up in your company's name. Ad spend goes from your accounts straight to Google and Meta, and ASP charges no exit fee. Our What You Own page lists every asset."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

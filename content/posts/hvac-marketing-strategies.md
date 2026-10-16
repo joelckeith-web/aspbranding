@@ -1,8 +1,8 @@
 ---
 title: "HVAC Marketing Strategies for Heating and Cooling Companies"
 slug: "hvac-marketing-strategies"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "Track every call and form by source, then follow that source to the booked job and its revenue in your CRM where it supports attribution. That lets you compare channels on cost per booked job instead of cost per click. On Housecall Pro, booked revenue can also be sent back to Google Ads as an offline conversion so bidding favors real jobs."
     - question: "Should an HVAC company have a Business Profile in every town it serves?"
       answer: "Not unless there is a staffed office in that town. Google's guidelines say a service-area business should keep one profile for its central office with a designated service area. It can't list a virtual office unless that office is staffed during business hours. Cover the other towns with service-area pages on your website."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
@@ -54,7 +54,7 @@ A homeowner whose system just quit wants a company they can call right away. Pai
 
 Local Services Ads are Google's pay-per-lead ads. Google [lists](https://support.google.com/localservices/answer/6224841?hl=en) "HVAC (heating or air conditioning)" among its US categories, though availability depends on your area. You pay for leads related to your business rather than for clicks. Each lead arrives as a phone call, a message request or a booking made through the ad. Google treats HVAC as an urgent category because people often call about time-sensitive problems like a broken heater in freezing weather. It also screens every business before ads run.
 
-Your bid is only part of where the ad shows. Google's [page on ad rankings](https://support.google.com/localservices/answer/7527305?hl=en) also weighs how likely your ad is to bring a lead and your profile quality. Profile quality covers your rating, number of reviews, response time, photos and completed verification checks. The same page warns that missed calls may hurt your responsiveness. Reviews should come from real customers and stay inside Google's review policies and the FTC's rule on fake reviews. Never offer incentives, set quotas or script what customers say. Google now calls its badge Google Verified, and the money-back guarantee tied to the older badge is being discontinued, so your ads and site should not promise one.
+Your bid is only part of where the ad shows. Google's [page on ad rankings](https://support.google.com/localservices/answer/7527305?hl=en) also weighs how likely your ad is to bring a lead and your profile quality. Profile quality covers your rating, number of reviews, response time, photos and completed verification checks. The same page warns that missed calls may hurt your responsiveness. Reviews should come from real customers and stay inside Google's review policies and the FTC's rule on fake reviews. Never offer incentives, set quotas or script what customers say. Google now calls its badge Google Verified, and Google says it will discontinue the money-back guarantee tied to the older badge, so your ads and site should not promise one.
 
 Google Search Ads let you pick which services and areas to push. Repair, replacement and maintenance searches come from different buyers, so each one gets its own ad group. That split shows whether replacement clicks or repair clicks are paying for themselves. Our [HVAC advertising page](/ppc/hvac) covers the account setup in more detail.
 

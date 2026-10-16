@@ -1,8 +1,8 @@
 ---
 title: "Water Damage Restoration Marketing and Lead Generation"
 slug: "water-damage-restoration-marketing"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Explain the basics honestly without promising what a policy will pay. FEMA's flood insurance program states that most homeowners insurance does not cover flood damage. A page that says so plainly helps a homeowner understand their situation. It also builds trust with someone who may be hearing it for the first time."
     - question: "Who owns my Business Profile and ad accounts?"
       answer: "You do. You stay the primary owner of your Business Profile, and we work inside it as a manager you can remove. Your website, domain, ad accounts and CRM data are set up in your name too. You pay the ad platforms directly, and there is no handover or exit fee to take it all with you."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

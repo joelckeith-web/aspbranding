@@ -1,8 +1,8 @@
 ---
 title: "Pest Control Marketing Ideas for Established Companies"
 slug: "pest-control-marketing-ideas"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Make the request part of your follow-up so every customer gets asked the same way, for example by text or email with your Google review link. Follow Google's review guidelines and the FTC's rule on fake reviews. Never offer a discount or gift for a review, never set review quotas and never script what a customer should say."
     - question: "How do I know which pest control marketing is working?"
       answer: "Track each lead from the first call or form to the booked job and its revenue. That takes call tracking, forms that capture campaign tags, your CRM and booked-job data sent back to the ad platforms. Count repeat visits as retention, not new customers, so recurring service does not inflate the channel that won the first job."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

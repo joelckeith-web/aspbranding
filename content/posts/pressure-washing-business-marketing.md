@@ -1,8 +1,8 @@
 ---
 title: "Pressure Washing Business Marketing for Exterior Cleaning Companies"
 slug: "pressure-washing-business-marketing"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Yes. They answer different questions for different buyers, so each deserves its own page and its own ad group. Separate ad groups also show which service is booking jobs, so you can move budget toward it. A service nobody searches for by name can sit inside a broader page instead."
     - question: "How do I know which pressure washing marketing is working?"
       answer: "Report calls, forms, booked jobs and revenue by channel instead of clicks. Tracking numbers tag each call by source, and forms pass their source into your CRM where it supports it. Count a yearly repeat customer as retention after the first job, so the channel that won them is not credited again every year."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

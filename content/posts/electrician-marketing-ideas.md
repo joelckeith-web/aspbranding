@@ -1,8 +1,8 @@
 ---
 title: "Electrician Marketing Ideas for Residential and Commercial Work"
 slug: "electrician-marketing-ideas"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "If you need booked jobs this month, start with paid ads and build organic underneath. Paid stops when the budget stops, while SEO takes months to move but keeps returning after it does. Most established operators run both, and the search terms that convert in the ad account point to the pages worth building next."
     - question: "Will Facebook ads bring in emergency electrical calls?"
       answer: "Not reliably. Emergency electrical work is searched for when it happens, which makes it a job for Google. Meta helps by making your name familiar before that moment and bringing back site visitors who didn't call. It can also reach working electricians when you need to hire, as long as recruiting runs on its own budget."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
@@ -62,7 +62,7 @@ Keep the two sides apart in your marketing. Residential and commercial services 
 
 Electricians are one of the US categories where Google [offers](https://support.google.com/localservices/answer/6224841?hl=en) Local Services Ads. Rather than paying per click, you are billed for leads related to your business. Those leads arrive as calls, messages or bookings made through the ad. Before any ads run, Google screens the business.
 
-Once you are live, your position depends on your bid, how likely your ad is to produce a lead and your profile quality. Google's [ranking page](https://support.google.com/localservices/answer/7527305?hl=en) lists rating, number of reviews, response time, images and completed verification checks under profile quality. It also says missed calls may hurt your responsiveness. Set the ad schedule around the hours your team can pick up. Reviews should come only from real customers and be handled within Google's review policies and the FTC's rule on fake reviews, without incentives, quotas or scripts. Google's badge is now called Google Verified. The money-back guarantee tied to the older badge is being discontinued, so use the current name and skip the guarantee in your copy.
+Once you are live, your position depends on your bid, how likely your ad is to produce a lead and your profile quality. Google's [ranking page](https://support.google.com/localservices/answer/7527305?hl=en) lists rating, number of reviews, response time, images and completed verification checks under profile quality. It also says missed calls may hurt your responsiveness. Set the ad schedule around the hours your team can pick up. Reviews should come only from real customers and be handled within Google's review policies and the FTC's rule on fake reviews, without incentives, quotas or scripts. Google's badge is now called Google Verified. Google says it will discontinue the money-back guarantee tied to the older badge, so use the current name and skip the guarantee in your copy.
 
 Search Ads let you choose which services and areas to grow. Build one ad group per service or service area, use phrase match and add to the negative keyword list every week. Planned work gets its own ad groups too. A charger ad group can send people to a page about capacity and permits. That keeps charger work apart from emergency calls, so each is judged on its own cost per job. Our [electrician advertising page](/ppc/electrical) covers the setup.
 

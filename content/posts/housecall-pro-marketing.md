@@ -1,8 +1,8 @@
 ---
 title: "Housecall Pro Marketing Tools and What an Agency Adds"
 slug: "housecall-pro-marketing"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Discounts are for new HCP accounts only, and full terms are shared during your growth audit. If you already use Housecall Pro, the discount does not apply, but we can audit your current setup and fix what is misaligned, from lead sources to follow-up."
     - question: "Is ASP part of Housecall Pro?"
       answer: "No. Housecall Pro makes the software, and ASP is a separate marketing agency. ASP is a Housecall Pro Affiliate, and the setup and marketing work described in this guide is ASP's work, not Housecall Pro's. We set up the marketing around the software, working inside your own HCP account."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

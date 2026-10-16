@@ -1,8 +1,8 @@
 ---
 title: "Lawn Care Business Marketing for Lawn and Landscape Companies"
 slug: "lawn-care-business-marketing"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "If you sell it, yes. Snow removal is a different service with a different season and a different buyer decision than lawn care, and one combined page serves neither well. Build the page before winter so it is indexed and ready when the first storm hits."
     - question: "How do I track which landscaping marketing is working?"
       answer: "Follow each lead from the first call or form to the booked job and its revenue. Call tracking tags phone leads by source, forms carry their source into your CRM, and the source stays on the job where your CRM supports it. Count repeat visits as retention so mowing revenue does not inflate the channel that won the customer."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

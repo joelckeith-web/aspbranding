@@ -1,8 +1,8 @@
 ---
 title: "Roofing Lead Generation for Repair, Replacement and Storm Work"
 slug: "roofing-lead-generation"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "Usually not. BLS notes that roofing work may be limited in winter in northern states. It also notes that roofers may work overtime in the busy summer months and that crews usually do not work in bad weather. Budgets should follow the months your crews can take the work and ease off when the schedule is already full."
     - question: "How much should a roofer spend on Google Ads?"
       answer: "Work back from what a booked job is worth to you, not from a flat monthly figure. A replacement can still pay even with a much higher cost per lead than a small repair. Ad spend goes directly to Google from your own account, separate from management fees, and the budget should lean toward the services you most want to sell."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
@@ -66,7 +66,7 @@ Search Ads catch the homeowner who types a problem into Google, like a leak, mis
 
 Local Services Ads add a pay-per-lead option. Google [lists](https://support.google.com/localservices/answer/6224841?hl=en) roofers as a Local Services Ads category in the US, and leads come in as phone calls, messages or bookings made through the ad. Before any ads go live, Google screens the business.
 
-Rank on these ads is not just a bidding contest. Google's [ad rankings page](https://support.google.com/localservices/answer/7527305?hl=en) weighs your bid, how likely your ad is to produce a lead, the context of the search and your profile quality. Profile quality includes your rating, review count, response time, photos and completed verification checks. Every review should come from a real customer and fall within Google's review policies and the FTC's rule on fake reviews. Keep incentives, quotas and scripts out of it. Google now calls its badge Google Verified. The money-back guarantee tied to the older badge is being discontinued, so ad copy shouldn't be built around it. Our [roofing advertising page](/ppc/roofing) covers account setup.
+Rank on these ads is not just a bidding contest. Google's [ad rankings page](https://support.google.com/localservices/answer/7527305?hl=en) weighs your bid, how likely your ad is to produce a lead, the context of the search and your profile quality. Profile quality includes your rating, review count, response time, photos and completed verification checks. Every review should come from a real customer and fall within Google's review policies and the FTC's rule on fake reviews. Keep incentives, quotas and scripts out of it. Google now calls its badge Google Verified. Google says it will discontinue the money-back guarantee tied to the older badge, so ad copy shouldn't be built around it. Our [roofing advertising page](/ppc/roofing) covers account setup.
 
 **Key Takeaway:** Split Search Ads by service with roofing-specific negatives, and treat reviews and response time as ranking factors alongside your Local Services Ads bid.
 

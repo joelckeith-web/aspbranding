@@ -1,8 +1,8 @@
 ---
 title: "Flooring Marketing Ideas That Turn Estimates Into Installed Jobs"
 slug: "flooring-marketing-ideas"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "No. ASP doesn't pay for links or sell link packages. Links that come from useful content, real partnerships and press are worth having, but we don't sell them as a product. The time goes into service pages, your Business Profile and content that answers what flooring buyers ask."
     - question: "How do I know which marketing produced an installed job?"
       answer: "Record where each lead came from with call tracking numbers and form fields, then carry that source into your CRM. Follow it through the measure, the signed job and the install, so you see installed jobs and revenue by channel. Where your CRM supports it, booked revenue can go back to Google Ads as an offline conversion."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

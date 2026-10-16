@@ -1,8 +1,8 @@
 ---
 title: "Plumbing Marketing Ideas for Emergency and Planned Work"
 slug: "plumbing-marketing-ideas"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "Not for emergencies. Burst pipes and no-hot-water calls get searched on Google the moment they happen. Facebook and Instagram work better for retargeting homeowners who read your water heater or repipe page and left, and for recruiting plumbers who already have jobs. Keep recruiting on its own budget so it never mixes into your cost per job."
     - question: "How much should a plumbing company spend on ads?"
       answer: "Start from what a booked job is worth to you, not from a flat monthly number. A drain call and a full repipe pay very different amounts, so they can support very different costs per job. Ad spend is paid directly to Google or Meta from your own accounts and is separate from what you pay for management."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
@@ -54,7 +54,7 @@ Local Services Ads put a pay-per-lead listing above the map results for people w
 
 With these ads, you are charged for leads tied to your services instead of clicks. A lead can be a phone call, a message request or a booking made straight from the ad. Where you rank depends on your bid, how likely your ad is to produce a lead and your profile quality. Google's [ranking page](https://support.google.com/localservices/answer/7527305?hl=en) defines profile quality as your rating, review count, response time, photos and completed verification checks, and it says missed calls may hurt your responsiveness.
 
-That makes phone coverage part of the ad strategy, and reviews part of it too. Earn reviews from real customers and keep every request within Google's review policies and the FTC's rule on fake reviews. Don't offer rewards, set quotas or hand customers a script. Google has also renamed its badge to Google Verified. The money-back guarantee tied to the older badge is being discontinued, so ads and site copy should use the current name and leave the guarantee out.
+That makes phone coverage part of the ad strategy, and reviews part of it too. Earn reviews from real customers and keep every request within Google's review policies and the FTC's rule on fake reviews. Don't offer rewards, set quotas or hand customers a script. Google has also renamed its badge to Google Verified. Google says it will discontinue the money-back guarantee tied to the older badge, so ads and site copy should use the current name and leave the guarantee out.
 
 **Key Takeaway:** On Local Services Ads, a missed call may hurt your rank as well as cost you a job, so plan phone coverage before raising the budget.
 

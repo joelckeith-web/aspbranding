@@ -1,8 +1,8 @@
 ---
 title: "Remodeling Marketing Ideas for Kitchen, Bath and Exterior Firms"
 slug: "remodeling-marketing-ideas"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Yes. Exterior replacement firms run on the same method, with their own product lines and calendars. Each product line gets its own pages, campaigns and tracking to signed jobs. Roofing companies with storm-driven demand can also use StormFront, our weather-triggered content product."
     - question: "Which attribution model should a remodeling firm use?"
       answer: "It depends on size. Between $1 million and $3 million in revenue, compare first-touch and last-touch credit, because the gap shows which channels introduce buyers and which close them. Between $3 million and $10 million, a simple multi-touch model becomes worth the effort. Either way, report signed projects and revenue by channel, not lead counts."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Carpet Cleaning Lead Generation for Multi-Crew Companies"
 slug: "carpet-cleaning-lead-generation"
-publishDate: "2026-10-20"
-dateModified: "2026-10-20"
+publishDate: "2026-10-16"
+dateModified: "2026-10-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -31,7 +31,7 @@ schema:
       answer: "Yes. ASP is a Housecall Pro Affiliate. Carpet cleaning appears in Housecall Pro's industry menu. We set up reminders, win-back messages and review requests to trigger from HCP job events. Partner discounts are for new HCP accounts only, and full terms are shared during your growth audit."
     - question: "Who owns our customer list and accounts?"
       answer: "You do. Your customer list, website and domain, Business Profile and reviews, ad accounts and the follow-up automations we build all belong to your company. Ad spend goes directly from your accounts to Google and Meta, never through ASP, and we charge no handover or exit fee if you leave."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
