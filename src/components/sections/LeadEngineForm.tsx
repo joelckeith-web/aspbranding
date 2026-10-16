@@ -130,13 +130,8 @@ export function LeadEngineForm({
 
     payload.lp_variant = variant;
 
-    // Honeypot — silent success if filled. (Named "fax" here because this
-    // form has a real website field, unlike /contact.)
-    if (payload.fax) {
-      setFormState("success");
-      form.reset();
-      return;
-    }
+    // Honeypot ("fax") goes to the server, which flags it instead of
+    // dropping it (Joel 2026-10-16: let everything through).
 
     // Time-gate — anything under 3 seconds is bot behaviour.
     const formTime = Date.now() - mountedAt.current;

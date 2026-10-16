@@ -111,12 +111,8 @@ export function FrameworksForm({
     if (fbp) payload.fbp = fbp;
     if (fbc) payload.fbc = fbc;
 
-    // Honeypot — silent success so bots don't learn the trap exists.
-    if (payload.fax) {
-      setFormState("success");
-      form.reset();
-      return;
-    }
+    // Honeypot ("fax") goes to the server, which flags it instead of
+    // dropping it (Joel 2026-10-16: let everything through).
 
     const formTime = Date.now() - mountedAt.current;
     if (formTime < 3000) {
