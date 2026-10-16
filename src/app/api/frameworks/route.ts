@@ -6,6 +6,7 @@ import { reviewSubmission } from "@/lib/ai-spam-review";
 import { appendRow } from "@/lib/sheets";
 import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 import { isTestLead } from "@/lib/test-lead";
+import { queueFiltered } from "@/lib/filtered-lead";
 
 // Delivery handler for the gated lead magnet. Mirrors the /api/lead-engine
 // defense stack (honeypot → keyword filter → time-gate → reCAPTCHA → AI
@@ -60,9 +61,13 @@ export async function POST(request: Request) {
     // Honeypot — silent 200 so bots don't learn the trap exists.
     if (typeof fax === "string" && fax.length > 0) {
       console.log("[frameworks] honeypot tripped:", { email, fax });
+      await queueFiltered({ form: "frameworks", reason: "honeypot field filled", name, email, phone, websiteUrl, body });
       return NextResponse.json({ success: true });
     }
 
+    // A free PDF reaching a vendor costs nothing; dropping a real prospect
+    // costs the lead. So the keyword and AI filters FLAG here, never drop.
+    let flagged = "";
     const spam = checkSpam({ name, company: websiteUrl, message: websiteUrl });
     if (spam.isSpam) {
       console.log("[frameworks] spam filter matched:", {
@@ -71,7 +76,7 @@ export async function POST(request: Request) {
         name,
         websiteUrl,
       });
-      return NextResponse.json({ success: true });
+      flagged = `keyword filter: ${spam.matched}`;
     }
 
     if (typeof formTime === "number" && formTime < MIN_FORM_TIME_MS) {
@@ -118,7 +123,7 @@ export async function POST(request: Request) {
         websiteUrl,
         reason: review.reason,
       });
-      return NextResponse.json({ success: true });
+      flagged = flagged || `AI vendor check: ${review.reason}`;
     }
     if (review.errored) {
       console.warn("[frameworks] AI review errored, failing open:", review.reason);
@@ -202,7 +207,7 @@ export async function POST(request: Request) {
 
     const notify = await sendMail({
       to: "info@aspbranding.com",
-      subject: `${testLead ? "[TEST] " : ""}Frameworks download: ${name} — ${websiteUrl}`,
+      subject: `${testLead ? "[TEST] " : ""}${flagged ? "[FLAGGED] " : ""}Frameworks download: ${name} — ${websiteUrl}`,
       replyTo: email,
       html: `
         <h2>New 5 Frameworks download</h2>
@@ -242,10 +247,10 @@ export async function POST(request: Request) {
         typeof body.utm_campaign === "string" ? body.utm_campaign : "",
         typeof body.utm_source === "string" ? body.utm_source : "",
         marketingConsent || "",
-        testLead ? "TEST" : "New",
+        testLead ? "TEST" : flagged ? "Flagged" : "New",
         "",
         "",
-        "",
+        flagged,
       ]);
       if (!queued.ok) {
         console.error("[frameworks] call-queue append failed:", queued.reason, { email });

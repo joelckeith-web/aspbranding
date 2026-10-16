@@ -5,6 +5,7 @@ import { checkSpam } from "@/lib/spam-filter";
 import { reviewSubmission } from "@/lib/ai-spam-review";
 import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 import { isTestLead } from "@/lib/test-lead";
+import { queueFiltered } from "@/lib/filtered-lead";
 
 // Application handler for the 90-Day Install offer. Mirrors the
 // /api/contact defense stack (honeypot → keyword filter → time-gate →
@@ -47,6 +48,7 @@ export async function POST(request: Request) {
     // Honeypot — silent 200 so bots don't learn the trap exists.
     if (typeof fax === "string" && fax.length > 0) {
       console.log("[lead-engine] honeypot tripped:", { email, fax });
+      await queueFiltered({ form: "lead-engine", reason: "honeypot field filled", name, email, phone, websiteUrl, revenue, body });
       return NextResponse.json({ success: true });
     }
 
@@ -59,6 +61,7 @@ export async function POST(request: Request) {
         name,
         company,
       });
+      await queueFiltered({ form: "lead-engine", reason: `keyword filter: ${spam.matched} (company: ${company})`, name, email, phone, websiteUrl, revenue, body });
       return NextResponse.json({ success: true });
     }
 
@@ -111,6 +114,7 @@ export async function POST(request: Request) {
         company,
         reason: review.reason,
       });
+      await queueFiltered({ form: "lead-engine", reason: `AI vendor check: ${review.reason} (company: ${company})`, name, email, phone, websiteUrl, revenue, body });
       return NextResponse.json({ success: true });
     }
     if (review.errored) {
