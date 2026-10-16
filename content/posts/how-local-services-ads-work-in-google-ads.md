@@ -24,7 +24,7 @@ schema:
     - question: "Can I give feedback on a lead in Google Ads?"
       answer: "Yes. Google says the Leads page in Google Ads includes a lead feedback form, along with each lead's type, its charged status and a way to download your leads. The Google Ads help pages we checked don't explain how that feedback ties to credits or disputes after the move. If a charge looks wrong, ask Google's support team how it is handled for your account."
     - question: "How do I pause my ads for a slow or overbooked week?"
-      answer: "Change the campaign status to Paused. Google says that stops your ads and stops new leads. When you want leads again, set the status back to Enabled. Pausing applies to the whole campaign. If you only want to stop one service category, Google says you can opt out of a category at any time in your campaign settings."
+      answer: "Change the campaign status to Paused. Google says that stops your ads and stops new leads. To turn leads back on, set the campaign to Enabled again. Pausing applies to the whole campaign. If you only want to stop one service category, Google says you can opt out of a category at any time in your campaign settings."
     - question: "Who receives the lead email alerts?"
       answer: "By default, Google opts in every account user and direct manager to lead email alerts. You manage the alerts on the Notifications page under Admin in Google Ads. Google requires at least one active user to stay opted in at all times. Check the list whenever someone joins or leaves, so the alerts reach whoever calls customers back."
     - question: "Should I keep running Search and Performance Max campaigns too?"
@@ -153,7 +153,7 @@ Yes. Google says the Leads page in Google Ads includes a lead feedback form, alo
 
 ### How do I pause my ads for a slow or overbooked week?
 
-Change the campaign status to Paused. Google says that stops your ads and stops new leads. When you want leads again, set the status back to Enabled. Pausing applies to the whole campaign. If you only want to stop one service category, Google says you can opt out of a category at any time in your campaign settings.
+Change the campaign status to Paused. Google says that stops your ads and stops new leads. To turn leads back on, set the campaign to Enabled again. Pausing applies to the whole campaign. If you only want to stop one service category, Google says you can opt out of a category at any time in your campaign settings.
 
 ### Who receives the lead email alerts?
 
