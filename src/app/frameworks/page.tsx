@@ -71,19 +71,19 @@ export default function FrameworksPage() {
           here: it hides content until JavaScript runs, which delayed the
           headline by 4+ seconds on mobile. */}
       <section className="relative bg-asp-black text-white overflow-hidden">
-        <div className="container mx-auto px-4 py-14 md:py-20 lg:py-24">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-7xl mx-auto">
+        <div className="container mx-auto px-4 py-8 md:py-20 lg:py-24">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-14 items-center max-w-7xl mx-auto">
             <div>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 Free guide for home service businesses
               </span>
-              <h1 className="font-black text-4xl md:text-5xl 2xl:text-6xl leading-[1.05] mb-6">
+              <h1 className="font-black text-3xl md:text-5xl 2xl:text-6xl leading-[1.05] mb-4 md:mb-6">
                 The 5 marketing frameworks we install for home service businesses.
               </h1>
-              <p className="text-lg text-white/70 leading-relaxed mb-6">
+              <p className="text-base md:text-lg text-white/70 leading-relaxed md:mb-6">
                 Same frameworks we build for our clients. Free, and we email it straight to you.
               </p>
-              <p className="text-white/60 leading-relaxed">
+              <p className="hidden md:block text-white/60 leading-relaxed">
                 You can act on all five without us. That is what makes them worth reading.
               </p>
             </div>

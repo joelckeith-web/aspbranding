@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { LeadEngineForm } from "@/components/sections/LeadEngineForm";
+import { AuditRequestForm } from "@/components/sections/AuditRequestForm";
 import testimonials from "@/data/testimonials.json";
 import { BrandIcon, type BrandIconName } from "@/components/ui/BrandIcon";
 import { DashboardMock, TracedLeadsMock } from "@/components/sections/LeadEngineVisuals";
@@ -222,7 +223,7 @@ function ApplyCTA({ label = "See what's in it for me" }: { label?: string }) {
   return (
     <div className="text-center mt-10">
       <a
-        href="#apply"
+        href="#audit"
         className="inline-block bg-asp-purple text-white font-black tracking-tight py-4 px-12 rounded-[var(--radius-asp-lg)] no-underline text-lg [text-shadow:0_2px_4px_rgba(0,0,0,0.45)] shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] hover:bg-[#8A34F0] transition-colors"
       >
         {label}
@@ -319,7 +320,8 @@ function CompareTable({
 export default function LeadEnginePage() {
   return (
     <main id="primary" className="site-main">
-      {/* Hero — promise left / application right */}
+      {/* Hero — promise left / free audit request right (Joel 10/16: the free
+          Systems Audit is the front door; the full application sits lower) */}
       <section className="relative bg-asp-black text-white overflow-hidden">
         {/* Real Viking crew on a rooftop install. Dark wash keeps the copy and
             form readable; the crew stays visible on the right on desktop and
@@ -373,8 +375,8 @@ export default function LeadEnginePage() {
                 ))}
               </ul>
             </div>
-            <div id="apply-hero">
-              <LeadEngineForm />
+            <div id="audit" className="scroll-mt-24">
+              <AuditRequestForm />
             </div>
           </div>
         </div>
@@ -698,12 +700,12 @@ export default function LeadEnginePage() {
         </div>
       </section>
 
-      {/* Secondary path — the free Systems Audit. Deliberately not a co-equal CTA. */}
+      {/* Back to the front door for anyone who scrolled past the audit. */}
       <section className="py-12 bg-white border-t border-gray-200">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-3">
-              Not ready to apply? Start with a free Systems Audit.
+              Not ready to apply? Start with the free Systems Audit.
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
               We&apos;ll audit your systems and walk you through it on a 45-minute call. You get a
@@ -711,7 +713,7 @@ export default function LeadEnginePage() {
               your website, and a straight answer on where your lead tracking is broken.
             </p>
             <a
-              href="/contact?ref=systems-audit"
+              href="#audit"
               className="inline-block border-2 border-asp-blue text-asp-blue font-bold py-3 px-8 rounded-[var(--radius-asp-lg)] hover:bg-asp-blue hover:text-white transition-colors no-underline"
             >
               Book your free Systems Audit

@@ -267,7 +267,8 @@ export function LeadEngineForm({
 
           <div>
             <input
-              type="url"
+              type="text"
+              inputMode="url"
               name="websiteUrl"
               placeholder="Website URL *"
               required={!noWebsite}

@@ -67,7 +67,7 @@ export async function POST(request: Request) {
       console.log("[frameworks] honeypot tripped:", { email, fax });
       flagged = "honeypot field filled";
     }
-    const spam = checkSpam({ name, company: websiteUrl, message: websiteUrl });
+    const spam = checkSpam({ name, company: websiteUrl || "", message: websiteUrl || "" });
     if (spam.isSpam) {
       console.log("[frameworks] spam filter matched:", {
         email,
@@ -86,9 +86,9 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!name || !email || !websiteUrl) {
+    if (!name || !email) {
       return NextResponse.json(
-        { error: "Name, email and business website are required." },
+        { error: "Name and email are required." },
         { status: 400 },
       );
     }
@@ -114,7 +114,7 @@ export async function POST(request: Request) {
         email,
         company: websiteUrl,
         service: "5-marketing-frameworks",
-        message: `Website: ${websiteUrl} · Phone: ${phone || "not given"}`,
+        message: `Website: ${websiteUrl || "not given"} · Phone: ${phone || "not given"}`,
       });
     if (review.classification === "vendor") {
       console.log("[frameworks] AI flagged as vendor:", {
@@ -207,7 +207,7 @@ export async function POST(request: Request) {
 
     const notify = await sendMail({
       to: "info@aspbranding.com",
-      subject: `${testLead ? "[TEST] " : ""}${flagged ? "[FLAGGED] " : ""}Frameworks download: ${name} — ${websiteUrl}`,
+      subject: `${testLead ? "[TEST] " : ""}${flagged ? "[FLAGGED] " : ""}Frameworks download: ${name} — ${websiteUrl || email}`,
       replyTo: email,
       html: `
         <h2>New 5 Frameworks download</h2>
@@ -215,7 +215,7 @@ export async function POST(request: Request) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "Not given"}</p>
-        <p><strong>Website:</strong> ${websiteUrl}</p>
+        <p><strong>Website:</strong> ${websiteUrl || "Not given"}</p>
         <hr />
         <h3>Marketing consent</h3>
         <p><strong>Consented:</strong> ${marketingConsent || "Not recorded"}</p>
@@ -239,7 +239,7 @@ export async function POST(request: Request) {
       const queued = await appendRow(sheetId, "Leads!A:O", [
         new Date().toISOString().replace("T", " ").slice(0, 16),
         name,
-        websiteUrl,
+        websiteUrl || "",
         phone || "",
         email,
         "",

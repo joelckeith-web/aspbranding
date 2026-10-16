@@ -202,27 +202,29 @@ export function FrameworksForm({
   return (
     <div className="relative rounded-[var(--radius-asp-xl)] p-[2px] bg-asp-gradient-cta shadow-asp-xl">
       <div className="bg-white rounded-[calc(var(--radius-asp-xl)-2px)] p-6 md:p-8">
-        <h3 className="font-bold text-xl text-asp-blue mb-1">Send me the 5 frameworks</h3>
-        <p className="text-gray-500 text-sm mb-6">
-          Free. We email it to you so you have it to keep.
-        </p>
+        <div className="flex items-center gap-4 mb-5">
+          {/* The cover, so a cold visitor sees the thing they're getting. */}
+          <img
+            src="/images/proof/frameworks-guide-cover.png"
+            alt="Cover of The 5 Marketing Frameworks guide"
+            width={935}
+            height={1210}
+            className="w-16 md:w-20 h-auto rounded-md shadow-asp-md ring-1 ring-black/10 shrink-0"
+          />
+          <div>
+            <h3 className="font-bold text-xl text-asp-blue mb-1">Send me the 5 frameworks</h3>
+            <p className="text-gray-500 text-sm">Free, 21 pages. We email it so you have it to keep.</p>
+          </div>
+        </div>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input type="text" name="name" placeholder="Full Name *" required className={inputClass} />
             <input type="email" name="email" placeholder="Email Address *" required className={inputClass} />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input
-              type="text"
-              name="websiteUrl"
-              inputMode="url"
-              placeholder="Business Website *"
-              required
-              className={inputClass}
-            />
-            <input type="tel" name="phone" placeholder="Phone (optional)" className={inputClass} />
-          </div>
+          {/* Name + email only (Joel 10/16): every extra required field on a
+              free PDF costs downloads, mostly on phones. */}
+          <input type="tel" name="phone" placeholder="Phone (optional)" className={inputClass} />
 
           {/* Honeypot — hidden from humans, tempting to bots. */}
           <input
