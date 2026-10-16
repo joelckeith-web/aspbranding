@@ -6,7 +6,6 @@ import { reviewSubmission } from "@/lib/ai-spam-review";
 import { appendRow } from "@/lib/sheets";
 import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 import { isTestLead } from "@/lib/test-lead";
-import { queueFiltered } from "@/lib/filtered-lead";
 
 // Delivery handler for the gated lead magnet. Mirrors the /api/lead-engine
 // defense stack (honeypot → keyword filter → time-gate → reCAPTCHA → AI
@@ -58,16 +57,16 @@ export async function POST(request: Request) {
       fax,
     } = body;
 
-    // Honeypot — silent 200 so bots don't learn the trap exists.
+    // Joel 2026-10-16: loosen the spam filters and let everything through.
+    // A real prospect was silently dropped on 10/15. The honeypot, keyword
+    // and AI checks now FLAG a submission (subject + sheet status) and never
+    // drop it. reCAPTCHA and the time-gate below still block. Tighten again
+    // only if flagged junk becomes a nuisance.
+    let flagged = "";
     if (typeof fax === "string" && fax.length > 0) {
       console.log("[frameworks] honeypot tripped:", { email, fax });
-      await queueFiltered({ form: "frameworks", reason: "honeypot field filled", name, email, phone, websiteUrl, body });
-      return NextResponse.json({ success: true });
+      flagged = "honeypot field filled";
     }
-
-    // A free PDF reaching a vendor costs nothing; dropping a real prospect
-    // costs the lead. So the keyword and AI filters FLAG here, never drop.
-    let flagged = "";
     const spam = checkSpam({ name, company: websiteUrl, message: websiteUrl });
     if (spam.isSpam) {
       console.log("[frameworks] spam filter matched:", {
@@ -76,7 +75,7 @@ export async function POST(request: Request) {
         name,
         websiteUrl,
       });
-      flagged = `keyword filter: ${spam.matched}`;
+      flagged = flagged || `keyword filter: ${spam.matched}`;
     }
 
     if (typeof formTime === "number" && formTime < MIN_FORM_TIME_MS) {
@@ -176,7 +175,8 @@ export async function POST(request: Request) {
     // Reaches Meta even when the browser blocks the pixel; dedupes on event_id.
     // Never throws, so tracking can never cost the lead.
     const [firstName, ...rest] = String(name).trim().split(/\s+/);
-    const metaStatus = await sendMetaEvent({
+    // Flagged submits skip CAPI so likely junk doesn't train Meta's delivery.
+    const metaStatus = flagged ? "skipped (flagged)" : await sendMetaEvent({
       eventName: "Lead",
       eventId:
         typeof body.metaEventId === "string" && /^[\w-]{8,80}$/.test(body.metaEventId)
@@ -211,6 +211,7 @@ export async function POST(request: Request) {
       replyTo: email,
       html: `
         <h2>New 5 Frameworks download</h2>
+        ${flagged ? `<p style="color:#b45309"><strong>Spam check flagged this:</strong> ${flagged}. It came through anyway — judge it yourself.</p>` : ""}
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "Not given"}</p>

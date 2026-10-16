@@ -5,7 +5,6 @@ import { checkSpam } from "@/lib/spam-filter";
 import { reviewSubmission } from "@/lib/ai-spam-review";
 import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 import { isTestLead } from "@/lib/test-lead";
-import { queueFiltered } from "@/lib/filtered-lead";
 
 // Application handler for the 90-Day Install offer. Mirrors the
 // /api/contact defense stack (honeypot → keyword filter → time-gate →
@@ -45,11 +44,14 @@ export async function POST(request: Request) {
       fax,
     } = body;
 
-    // Honeypot — silent 200 so bots don't learn the trap exists.
+    // Joel 2026-10-16: loosen the spam filters and let everything through.
+    // The honeypot, keyword and AI checks now FLAG an application ([FLAGGED]
+    // subject + reason in the email) and never drop it. reCAPTCHA, the
+    // time-gate and required fields still block. Tighten only if it gets noisy.
+    let flagged = "";
     if (typeof fax === "string" && fax.length > 0) {
       console.log("[lead-engine] honeypot tripped:", { email, fax });
-      await queueFiltered({ form: "lead-engine", reason: "honeypot field filled", name, email, phone, websiteUrl, revenue, body });
-      return NextResponse.json({ success: true });
+      flagged = "honeypot field filled";
     }
 
     // Cold-pitch keyword filter — same silent-200 pattern as /api/contact.
@@ -61,8 +63,7 @@ export async function POST(request: Request) {
         name,
         company,
       });
-      await queueFiltered({ form: "lead-engine", reason: `keyword filter: ${spam.matched} (company: ${company})`, name, email, phone, websiteUrl, revenue, body });
-      return NextResponse.json({ success: true });
+      flagged = flagged || `keyword filter: ${spam.matched}`;
     }
 
     // Time-gate — anything filled out faster than 3s is bot behaviour.
@@ -114,8 +115,7 @@ export async function POST(request: Request) {
         company,
         reason: review.reason,
       });
-      await queueFiltered({ form: "lead-engine", reason: `AI vendor check: ${review.reason} (company: ${company})`, name, email, phone, websiteUrl, revenue, body });
-      return NextResponse.json({ success: true });
+      flagged = flagged || `AI vendor check: ${review.reason}`;
     }
     if (review.errored) {
       console.warn("[lead-engine] AI review errored, failing open:", review.reason);
@@ -126,7 +126,8 @@ export async function POST(request: Request) {
     // Reaches Meta even when the browser blocks the pixel; dedupes on event_id.
     // Never throws, so tracking can never cost the lead.
     const [firstName, ...rest] = String(name).trim().split(/\s+/);
-    const metaStatus = await sendMetaEvent({
+    // Flagged submits skip CAPI so likely junk doesn't train Meta's delivery.
+    const metaStatus = flagged ? "skipped (flagged)" : await sendMetaEvent({
       eventName: "SubmitApplication",
       eventId:
         typeof body.metaEventId === "string" && /^[\w-]{8,80}$/.test(body.metaEventId)
@@ -157,10 +158,11 @@ export async function POST(request: Request) {
 
     await sendMail({
       to: "info@aspbranding.com",
-      subject: `${testLead ? "[TEST] " : ""}Lead Engine Application: ${name} — ${company} (${revenue})`,
+      subject: `${testLead ? "[TEST] " : ""}${flagged ? "[FLAGGED] " : ""}Lead Engine Application: ${name} — ${company} (${revenue})`,
       replyTo: email,
       html: `
         <h2>New 90-Day Install Application</h2>
+        ${flagged ? `<p style="color:#b45309"><strong>Spam check flagged this:</strong> ${flagged}. It came through anyway — judge it yourself.</p>` : ""}
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "Not given"}</p>
