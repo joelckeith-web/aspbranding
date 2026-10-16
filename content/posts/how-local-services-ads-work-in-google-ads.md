@@ -29,7 +29,7 @@ schema:
       answer: "By default, Google opts in every account user and direct manager to lead email alerts. You manage the alerts on the Notifications page under Admin in Google Ads. Google requires at least one active user to stay opted in at all times. Check the list whenever someone joins or leaves, so the alerts reach whoever calls customers back."
     - question: "Should I keep running Search and Performance Max campaigns too?"
       answer: "Google's advice is to pair pay-per-lead campaigns with Search, Performance Max and Demand Gen campaigns rather than run them alone. Pay-per-lead campaigns have no keyword targeting, while Search campaigns are built on keywords you choose, so the two can cover different searches. Whether that fits your company depends on your budget and the jobs you want more of. Compare every campaign by cost per booked job."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
