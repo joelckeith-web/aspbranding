@@ -29,7 +29,7 @@ schema:
       answer: "Google divides your historical average weekly budget by 7 to set a daily average budget. Monthly spend is capped at that daily average times 30.4. A $700 weekly average, for example, becomes $100 a day with a $3,040 monthly cap. Check the new figure under Campaigns > Settings after your move."
     - question: "Can I start a new Local Services Ads campaign inside Google Ads?"
       answer: "Not yet. Google says you can't create new campaigns with pay-per-lead goals directly in Google Ads at this time. New pay-per-lead campaigns still start at g.co/localservices. Existing accounts move into Google Ads on their own migration date, and the old LSA dashboard redirects there afterward."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "7 min read"
 ---
