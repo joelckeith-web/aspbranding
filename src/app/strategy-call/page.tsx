@@ -57,8 +57,11 @@ const CASES = [
       { value: "$10K", label: "a month saved in ad spend" },
       { value: "+20%", label: "lead growth" },
     ],
+    // Joel, 2026-10-21: after the 12-month case study the company broke $4M,
+    // then $5M the year after.
+    since: "Since then, they broke $4M, then $5M the year after.",
   },
-].map((c) => ({ ...c, headline: caseStudies.find((cs) => cs.slug === c.slug)?.headline ?? "" }));
+].map((c: { slug: string; label: string; challenge: string; results: { value: string; label: string }[]; since?: string }) => ({ ...c, headline: caseStudies.find((cs) => cs.slug === c.slug)?.headline ?? "" }));
 
 const STEPS = [
   {
@@ -429,6 +432,14 @@ export default function StrategyCallPage() {
                       </div>
                     ))}
                   </div>
+                  {c.since && (
+                    <p className="flex items-center gap-3 rounded-[var(--radius-asp-lg)] bg-asp-surface-navy text-white font-bold px-4 py-3 mb-6">
+                      <svg className="w-5 h-5 text-asp-blue-light shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24" aria-hidden>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                      </svg>
+                      {c.since}
+                    </p>
+                  )}
                   <a href="/case-studies" className="mt-auto font-bold text-asp-blue underline underline-offset-4 hover:text-asp-purple transition-colors">
                     Read the full case study
                   </a>

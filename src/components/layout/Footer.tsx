@@ -190,15 +190,29 @@ export function Footer() {
               { src: "/images/badges/nefba-light.png", alt: "Northeast Florida Builders Association Member", className: "h-6 md:h-8" },
               { src: "/images/badges/superior-service-color.png", alt: "Superior Service" },
               { src: "/images/badges/hcp-affiliate.png", alt: "Certified Housecall Pro Affiliate" },
-            ].map((badge: { src: string; alt: string; className?: string }) => (
-              <img
-                key={badge.src}
-                src={badge.src}
-                alt={badge.alt}
-                className={`${badge.className ?? "h-12 md:h-16"} w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200`}
-                loading="lazy"
-              />
-            ))}
+              {
+                src: "/images/badges/tma-featured-2026-dark.png",
+                alt: "ASP — Featured Home Services Marketing Agency — TopMarketingAgencies.com 2026",
+                href: "https://topmarketingagencies.com/agencies/asp/",
+              },
+            ].map((badge: { src: string; alt: string; className?: string; href?: string }) => {
+              const img = (
+                <img
+                  key={badge.src}
+                  src={badge.src}
+                  alt={badge.alt}
+                  className={`${badge.className ?? "h-12 md:h-16"} w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-200`}
+                  loading="lazy"
+                />
+              );
+              return badge.href ? (
+                <a key={badge.src} href={badge.href} target="_blank" rel="noopener">
+                  {img}
+                </a>
+              ) : (
+                img
+              );
+            })}
           </div>
         </div>
       </div>
