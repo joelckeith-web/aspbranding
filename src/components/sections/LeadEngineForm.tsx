@@ -78,11 +78,22 @@ const CONSENT_TEXT =
 
 // variant/submitLabel exist for the CTA A/B test (/lead-engine vs
 // /lead-engine/explore). The variant rides along with the application so the
-// notification email shows which page converted.
+// notification email shows which page converted. successHref sends a verified
+// applicant to a thank-you URL instead of the in-place success card, so the
+// page can be a Meta conversion on its own URL (/strategy-call/booked).
 export function LeadEngineForm({
   variant = "A",
   submitLabel = "Show me what's possible",
-}: { variant?: string; submitLabel?: string } = {}) {
+  title = "See what we could do for your business",
+  intro = "Every application gets a discovery call first. We only take businesses we know we can win for.",
+  successHref,
+}: {
+  variant?: string;
+  submitLabel?: string;
+  title?: string;
+  intro?: string;
+  successHref?: string;
+} = {}) {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [noWebsite, setNoWebsite] = useState(false);
@@ -202,6 +213,10 @@ export function LeadEngineForm({
             lp_variant: variant,
           });
         }
+        if (successHref) {
+          window.location.assign(successHref);
+          return;
+        }
         setFormState("success");
         form.reset();
       } else {
@@ -249,11 +264,8 @@ export function LeadEngineForm({
   return (
     <div className="relative rounded-[var(--radius-asp-xl)] p-[2px] bg-asp-gradient-cta shadow-asp-xl">
       <div className="bg-white rounded-[calc(var(--radius-asp-xl)-2px)] p-6 md:p-8">
-        <h3 className="font-bold text-xl text-asp-blue mb-1">See what we could do for your business</h3>
-        <p className="text-gray-500 text-sm mb-6">
-          Every application gets a discovery call first. We only take businesses we know we can win
-          for.
-        </p>
+        <h3 className="font-bold text-xl text-asp-blue mb-1">{title}</h3>
+        <p className="text-gray-500 text-sm mb-6">{intro}</p>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
