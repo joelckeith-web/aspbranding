@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
+import { StrategyCallCalendar } from "@/components/sections/StrategyCallCalendar";
 
 // Thank-you page after a verified /strategy-call application. Its own URL so
 // Meta can count it as the conversion (no pop-up scheduler). The next step is
 // picking a time; one case study warms the visitor up before the call.
 //
-// The Calendly event below is the only live one on the account and was built
-// for signed clients; it wants a cold-prospect version before paid traffic.
+// The calendar is Joel's discovery-call event (Joel, 2026-10-22). Booking
+// fires the Meta Schedule event and moves on to /strategy-call/confirmed.
 
 export const metadata: Metadata = {
   title: "Pick a Time for Your Strategy Call",
   robots: { index: false, follow: false },
 };
 
-const CALENDLY_EMBED =
-  "https://calendly.com/joel-keith-asp/onboarding-strategy-session?hide_gdpr_banner=1&primary_color=9f4cff";
 
 export default function StrategyCallBookedPage() {
   return (
@@ -45,11 +44,7 @@ export default function StrategyCallBookedPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-8 items-start">
           <div className="rounded-[var(--radius-asp-xl)] p-[2px] bg-asp-gradient-cta shadow-asp-xl">
             <div className="bg-white rounded-[calc(var(--radius-asp-xl)-2px)] overflow-hidden">
-              <iframe
-                src={CALENDLY_EMBED}
-                title="Pick a time for your strategy call"
-                className="w-full h-[700px] border-0"
-              />
+              <StrategyCallCalendar />
             </div>
           </div>
 
