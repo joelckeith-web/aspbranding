@@ -96,7 +96,7 @@ export default function StrategyCallConfirmedPage() {
               <p className="text-gray-700 leading-relaxed">
                 Add the call to your calendar so it doesn&apos;t get buried. The details are in your
                 confirmation email. We&apos;ll meet on video so Joel can share his screen. Plan on about
-                30 to 45 minutes.
+                30 minutes.
               </p>
             </div>
 
