@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BlogCard } from "@/components/blog/BlogCard";
+import { PreferredSourceLink } from "@/components/layout/PreferredSourceLink";
 import {
   ArticleSchema,
   FaqSchema,
@@ -206,6 +207,11 @@ export default async function BlogPostPage({
             <span className="text-sm text-white/60">
               By {frontmatter.author.name}
             </span>
+            <PreferredSourceLink
+              domain="aspbranding.com"
+              label="Add ASP as a preferred source on Google"
+              className="text-sm text-white/60 underline underline-offset-2 hover:text-white"
+            />
           </div>
 
           {/* H1 Title */}

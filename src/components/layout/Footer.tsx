@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { PreferredSourceLink } from "@/components/layout/PreferredSourceLink";
 import { BUSINESS, FOOTER_SYSTEM, FOOTER_COMPANY, FOOTER_PRODUCTS, FOOTER_GUIDES } from "@/lib/constants";
 
 export function Footer() {
@@ -222,6 +223,11 @@ export function Footer() {
             >
               Terms of Service
             </Link>
+            <PreferredSourceLink
+              domain="aspbranding.com"
+              label="Add as a preferred source on Google"
+              className="hover:text-white/70 transition-colors no-underline"
+            />
           </div>
         </div>
       </div>
