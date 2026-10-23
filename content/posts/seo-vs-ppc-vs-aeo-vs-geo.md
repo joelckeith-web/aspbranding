@@ -31,7 +31,7 @@ schema:
       answer: "In a Pew Research Center study of 900 U.S. adults in March 2025, users who saw an AI summary clicked a traditional search result in 8% of visits. Users who did not see one clicked in 15% of visits. About 18% of the Google searches in that study produced an AI summary."
     - question: "What does GEO cost?"
       answer: "If you already run a local SEO program, GEO mostly rides on the Business Profile, review and listing work it covers, so it adds little new cost. At ASP, GEO has no separate price or package. If your public record needs a large cleanup first, the size of that cleanup sets the cost."
-status: "review"
+status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "8 min read"
 ---
