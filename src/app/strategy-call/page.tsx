@@ -8,8 +8,8 @@ import testimonials from "@/data/testimonials.json";
 import caseStudies from "@/data/case-studies.json";
 
 // Paid-traffic landing page built on the 7 Figure Agency niche landing page
-// method (2026-10-21): proof early, Joel's video near the top, one green offer
-// (apply, then pick a time) repeated down the page, one red offer (the 5
+// method (2026-10-21): the application form in the hero (Joel, 2026-10-26), proof
+// early, one green offer (apply, then pick a time) repeated down the page, one red offer (the 5
 // Frameworks guide) for visitors who aren't ready, and an exit pop that offers
 // the guide. NOT in the sitemap or nav; noindex. Traffic: Meta, cold email,
 // newsletter.
@@ -194,37 +194,11 @@ function Check({ muted = false }: { muted?: boolean }) {
   );
 }
 
-// Holds the frame for Joel's 2–3 minute landing page video until it's recorded.
-function VideoSlot() {
-  return (
-    <div className="rounded-[var(--radius-asp-xl)] border border-white/15 bg-asp-surface-navy/80 overflow-hidden shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
-      <div className="relative aspect-video bg-cover bg-center" style={{ backgroundImage: "url(/images/backgrounds/team-hero.jpg)" }}>
-        <div className="absolute inset-0 bg-gradient-to-t from-asp-black via-asp-black/50 to-asp-black/20" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="flex h-20 w-20 items-center justify-center rounded-full bg-asp-purple shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)]">
-            <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </span>
-        </div>
-      </div>
-      <div className="p-5">
-        <p className="font-black text-white text-lg leading-snug mb-1">
-          Watch Joel explain how we track every digital lead
-        </p>
-        <p className="text-white/60 text-sm leading-relaxed">
-          Joel Keith, a partner at ASP, walks through two published case studies and explains how we
-          wire the tracking before the marketing goes on top.
-        </p>
-      </div>
-    </div>
-  );
-}
-
 export default function StrategyCallPage() {
   return (
     <main id="primary" className="site-main">
-      {/* Hero — promise left / Joel's video right */}
+      {/* Hero — promise left / application form right (Joel, 2026-10-26: form in
+          the hero instead of a video; his photo moves down to "Who you'll talk to") */}
       <section className="relative bg-asp-black text-white overflow-hidden">
         <div aria-hidden className="absolute inset-0 pointer-events-none">
           <div
@@ -241,8 +215,8 @@ export default function StrategyCallPage() {
           />
         </div>
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14 lg:pt-32 lg:pb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+            <div className="lg:pt-6">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 For home service business owners
               </span>
@@ -255,25 +229,39 @@ export default function StrategyCallPage() {
                 campaign and page produced each digital lead. We run your marketing and build the
                 tracking that proves which marketing booked which jobs.
               </p>
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-4">
-                <a
-                  href="#apply"
-                  className="inline-block bg-asp-purple text-white font-black tracking-tight py-4 px-10 rounded-[var(--radius-asp-lg)] no-underline text-lg [text-shadow:0_2px_4px_rgba(0,0,0,0.45)] shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] hover:bg-[#8A34F0] transition-colors"
-                >
-                  Apply for a strategy call
-                </a>
-                <a
-                  href="#guide"
-                  className="text-white font-bold underline underline-offset-4 decoration-asp-blue-light hover:text-asp-blue-light transition-colors"
-                >
-                  Not ready yet? Get our free guide
-                </a>
-              </div>
-              <p className="text-white/50 text-sm mt-5">
+              <ol className="space-y-4 list-none p-0 m-0 mb-8">
+                {[
+                  "Fill out the short application.",
+                  "Pick a time on Joel's calendar.",
+                  "Talk with Joel and see if we're a fit.",
+                ].map((t, i) => (
+                  <li key={t} className="flex items-start gap-4">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-asp-blue-light to-asp-purple font-black text-sm">
+                      {i + 1}
+                    </span>
+                    <span className="text-white/80 leading-relaxed pt-1">{t}</span>
+                  </li>
+                ))}
+              </ol>
+              <p className="text-white/50 text-sm mb-4">
                 A strategy call is a sales conversation with Joel to see if we&apos;re a fit.
               </p>
+              <a
+                href="#guide"
+                className="text-white font-bold underline underline-offset-4 decoration-asp-blue-light hover:text-asp-blue-light transition-colors"
+              >
+                Not ready yet? Get our free guide
+              </a>
             </div>
-            <VideoSlot />
+            <div id="apply" className="scroll-mt-24">
+              <LeadEngineForm
+                variant="strategy-call"
+                title="Apply for a strategy call"
+                intro="After you apply, you'll pick a time on Joel's calendar for your strategy call."
+                submitLabel="Submit my application"
+                successHref="/strategy-call/booked"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -509,17 +497,9 @@ export default function StrategyCallPage() {
 
       <FAQSection items={FAQS} eyebrow="Before you apply" heading="Common questions." compact />
 
-      {/* Application — copy left, form right */}
-      <section
-        id="apply"
-        className="relative py-14 md:py-16 lg:py-24 bg-asp-surface-navy text-white overflow-hidden scroll-mt-24"
-      >
+      {/* Who you'll talk to — Joel's photo, then back up to the hero form */}
+      <section className="relative py-14 md:py-16 lg:py-24 bg-asp-surface-navy text-white overflow-hidden">
         <div aria-hidden className="absolute inset-0 pointer-events-none">
-          <div
-            className="absolute inset-0 bg-cover opacity-30"
-            style={{ backgroundImage: "url(/images/backgrounds/viking-attic-tech.jpg)", backgroundPosition: "center 35%" }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-asp-surface-navy/70 via-asp-surface-navy/90 to-asp-surface-navy lg:bg-gradient-to-r lg:from-asp-surface-navy lg:via-asp-surface-navy/85 lg:to-asp-surface-navy/60" />
           <div
             className="absolute inset-0"
             style={{
@@ -529,41 +509,36 @@ export default function StrategyCallPage() {
           />
         </div>
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <ScrollReveal>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-16 items-center">
+            <ScrollReveal className="lg:col-span-2">
+              <div className="relative mx-auto max-w-sm rounded-[var(--radius-asp-xl)] overflow-hidden bg-gradient-to-br from-asp-blue-light/40 via-asp-blue/50 to-asp-purple/60 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/team/joel-cutout.webp"
+                  alt="Joel Keith, partner at ASP"
+                  width={900}
+                  height={1344}
+                  loading="lazy"
+                  className="relative block w-full h-auto"
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal className="lg:col-span-3">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-                Get started
+                Who you&apos;ll talk to
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5 leading-tight">
-                Apply for a strategy call.
+                You&apos;ll talk to Joel.
               </h2>
-              <p className="text-white/70 text-lg leading-relaxed mb-8">
-                Fill out the short application, then pick a time for a sales conversation with Joel
-                to see if we&apos;re a fit.
+              <p className="text-white/75 text-lg leading-relaxed mb-5">
+                Joel Keith is a partner at ASP. He runs every sales call himself, along with every
+                client relationship.
               </p>
-              <ol className="space-y-4 list-none p-0 m-0">
-                {[
-                  "Fill out the short application.",
-                  "Pick a time on Joel's calendar.",
-                  "Talk with Joel and see if we're a fit.",
-                ].map((t, i) => (
-                  <li key={t} className="flex items-start gap-4">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-asp-blue-light to-asp-purple font-black text-sm">
-                      {i + 1}
-                    </span>
-                    <span className="text-white/80 leading-relaxed pt-1">{t}</span>
-                  </li>
-                ))}
-              </ol>
-            </ScrollReveal>
-            <ScrollReveal>
-              <LeadEngineForm
-                variant="strategy-call"
-                title="Apply for a strategy call"
-                intro="After you apply, you'll pick a time on Joel's calendar for your strategy call."
-                submitLabel="Submit my application"
-                successHref="/strategy-call/booked"
-              />
+              <p className="text-white/75 text-lg leading-relaxed">
+                A strategy call is a sales conversation with Joel to see if we&apos;re a fit. Fill out
+                the short application, then pick a time on his calendar.
+              </p>
+              <ApplyCTA align="left" />
             </ScrollReveal>
           </div>
         </div>
