@@ -31,6 +31,7 @@ export type StrategyCallCopy = {
   fitNo: string[];
   faqs: { q: string; a: string }[];
   reviewsNote?: string;
+  dashboardSrc?: { src: string; width: number; height: number };
   dashboardAlt?: string;
   dashboardCaption?: string;
 };
@@ -356,7 +357,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               </p>
             </ScrollReveal>
             <ScrollReveal>
-              <TracedLeadsMock alt={copy.dashboardAlt} caption={copy.dashboardCaption} />
+              <TracedLeadsMock {...copy.dashboardSrc} alt={copy.dashboardAlt} caption={copy.dashboardCaption} />
             </ScrollReveal>
           </div>
         </div>
@@ -447,16 +448,16 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
         </div>
       </section>
 
-      {/* Client interview — Viking is the HVAC case study client (Joel, 2026-10-26) */}
+      {/* Client interview (Joel, 2026-10-26: don't imply ASP has only one HVAC client) */}
       <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-10">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                Hear it from a client
+                Client interview
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
-                The HVAC company behind the case study.
+                Hear it from one of our clients.
               </h2>
             </div>
             <VikingInterview />

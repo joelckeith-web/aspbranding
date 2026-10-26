@@ -48,11 +48,14 @@ const HVAC_COPY: StrategyCallCopy = {
     ...DEFAULT_COPY.faqs,
   ],
   reviewsNote: "Reviews from ASP clients across industries.",
-  // The dashboard is a home inspection client's (Joel, 2026-10-26), so the HVAC
-  // page says so instead of implying it's the HVAC client.
+  // Viking's Google Ads in its ASP dashboard, Jul 1 – Sep 30, 2026 (Joel, 2026-10-26:
+  // use an HVAC client's dashboard and the strongest period). 114.16 conversions
+  // reported by Google Ads / 655 clicks = 17.4%.
+  dashboardSrc: { src: "/images/proof/viking-google-ads-q3-2026.webp", width: 1297, height: 487 },
   dashboardAlt:
-    "Results from a home inspection client's ASP dashboard: 373 conversions at $78.60 each, 309 phone calls and 64 quote form submissions in September 2026.",
-  dashboardCaption: "From a home inspection client's dashboard, September 2026. Client name removed.",
+    "Viking Heating and Air Conditioning's Google Ads in its ASP dashboard, July to September 2026: $11,459.59 spend, 655 clicks, and conversions reported by Google Ads including 63.56 schedule-now clicks, 18 calls from ads, 15 contact forms, 10.6 call-link clicks and 7 Local Services phone leads.",
+  dashboardCaption:
+    "Viking Heating and Air Conditioning's Google Ads, July to September 2026: 114 conversions from 655 ad clicks, a 17.4% conversion rate."
 };
 
 export default function StrategyCallHvacPage() {
