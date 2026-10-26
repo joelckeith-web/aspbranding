@@ -31,7 +31,7 @@ schema:
       answer: "For some tools. Microsoft introduced AI Performance in Bing Webmaster Tools as a public preview in February 2026, showing citations in Copilot and AI summaries in Bing. Google Search Console now has a generative AI performance report with impression data for AI Overviews and AI Mode, which Google says rolled out to all websites worldwide as of August 31, 2026. OpenAI's and Perplexity's crawler pages describe no similar report."
     - question: "What should a home service business do about GEO right now?"
       answer: "Keep your Google Business Profile complete, your name, address and phone number consistent everywhere, your reviews recent and your service pages useful. Make sure your site lets the AI search crawlers in. Google says businesses with complete, accurate info are more likely to show up in local search results and that more reviews and positive ratings can help local ranking, so that work pays off in local search whether or not an assistant ever names you."
-status: "review"
+status: "published"
 contentPillar: "google-algorithm-updates"
 readingTime: "7 min read"
 ---
