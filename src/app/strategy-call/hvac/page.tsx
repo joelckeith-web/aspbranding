@@ -48,6 +48,11 @@ const HVAC_COPY: StrategyCallCopy = {
     ...DEFAULT_COPY.faqs,
   ],
   reviewsNote: "Reviews from ASP clients across industries.",
+  // The dashboard is a home inspection client's (Joel, 2026-10-26), so the HVAC
+  // page says so instead of implying it's the HVAC client.
+  dashboardAlt:
+    "Results from a home inspection client's ASP dashboard: 373 conversions at $78.60 each, 309 phone calls and 64 quote form submissions in September 2026.",
+  dashboardCaption: "From a home inspection client's dashboard, September 2026. Client name removed.",
 };
 
 export default function StrategyCallHvacPage() {

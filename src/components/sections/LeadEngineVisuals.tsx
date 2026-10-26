@@ -51,14 +51,17 @@ export function DashboardMock() {
   );
 }
 
-export function TracedLeadsMock() {
+export function TracedLeadsMock({
+  alt = "Results from a current client's ASP dashboard: 373 conversions at $78.60 each, 309 phone calls and 64 quote form submissions in September 2026.",
+  caption = "Results from the same client's dashboard, September 2026.",
+}: { alt?: string; caption?: string } = {}) {
   return (
     <BrowserFrame
       src="/images/proof/dashboard-results.jpg"
       width={970}
       height={406}
-      alt="Results from a current client's ASP dashboard: 373 conversions at $78.60 each, 309 phone calls and 64 quote form submissions in September 2026."
-      caption="Results from the same client's dashboard, September 2026."
+      alt={alt}
+      caption={caption}
     />
   );
 }

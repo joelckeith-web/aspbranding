@@ -30,6 +30,8 @@ export type StrategyCallCopy = {
   fitNo: string[];
   faqs: { q: string; a: string }[];
   reviewsNote?: string;
+  dashboardAlt?: string;
+  dashboardCaption?: string;
 };
 
 // Tray G. is a law firm; Kevin's quote waits on Joel's sign-off for paid use.
@@ -353,7 +355,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               </p>
             </ScrollReveal>
             <ScrollReveal>
-              <TracedLeadsMock />
+              <TracedLeadsMock alt={copy.dashboardAlt} caption={copy.dashboardCaption} />
             </ScrollReveal>
           </div>
         </div>
