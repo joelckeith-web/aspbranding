@@ -29,7 +29,7 @@ import { DashboardMock, TracedLeadsMock } from "@/components/sections/LeadEngine
 export const metadata: Metadata = {
   title: "See Exactly What Your Marketing Brings In",
   description:
-    "ASP runs your website, SEO, local search and CRM connection, and builds you a dashboard that traces every digital lead to its source. See it for yourself inside 30 days, or your first month is refunded.",
+    "ASP runs your website, SEO, local search and CRM connection, and builds you a dashboard that traces every digital lead to its source. See it for yourself inside 30 days, or your first month's management fee is refunded.",
   robots: { index: false, follow: false },
 };
 
@@ -138,7 +138,7 @@ const STEPS = [
 const FAQS = [
   {
     q: "What does the guarantee cover, exactly?",
-    a: "Connect your CRM, give us access, answer the setup questions, and show up to the kickoff call. That's your part. Inside your first 30 days you get the marketing system built and every digital lead traced to its source — paid search, paid social, organic, your Google Business Profile, and direct traffic. If you've done your part and you still can't see it, we refund your first month, release you from the rest of the 90 days, and you keep everything we built. Two limits worth stating plainly: word-of-mouth referrals can't be traced by any system, and the guarantee covers leads generated after your system goes live, not contacts already sitting in your CRM.",
+    a: "Connect your CRM, give us access, answer the setup questions, and show up to the kickoff call. That's your part. Inside your first 30 days you get the marketing system built and every digital lead traced to its source — paid search, paid social, organic, your Google Business Profile, and direct traffic. If you've done your part and you still can't see it, we refund your first month's management fee, release you from the rest of the 90 days, and you keep everything we built. Two limits worth stating plainly: word-of-mouth referrals can't be traced by any system, and the guarantee covers leads generated after your system goes live, not contacts already sitting in your CRM.",
   },
   {
     q: "What does it cost?",
@@ -350,7 +350,7 @@ export default function LeadEnginePage() {
               </h1>
               <p className="text-white/75 text-lg leading-relaxed mb-6">
                 We run your marketing and build you a dashboard that shows where every digital lead
-                came from. See it for yourself inside 30 days, or we refund your first month.
+                came from. See it for yourself inside 30 days, or we refund your first month&apos;s management fee.
               </p>
               <ul className="space-y-2.5">
                 {[
@@ -574,7 +574,7 @@ export default function LeadEnginePage() {
                 kickoff call. That&apos;s your part.
               </p>
               <p className="font-bold text-white text-lg">
-                Do your part and still can&apos;t see it? We refund your first month.
+                Do your part and still can&apos;t see it? We refund your first month&apos;s management fee.
               </p>
               <div className="[&>div]:text-left">
                 <ApplyCTA />

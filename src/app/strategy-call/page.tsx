@@ -440,7 +440,7 @@ export default function StrategyCallPage() {
                       {c.since}
                     </p>
                   )}
-                  <a href="/case-studies" className="mt-auto font-bold text-asp-blue underline underline-offset-4 hover:text-asp-purple transition-colors">
+                  <a href={`/case-studies#${c.slug}`} className="mt-auto font-bold text-asp-blue underline underline-offset-4 hover:text-asp-purple transition-colors">
                     Read the full case study
                   </a>
                 </article>

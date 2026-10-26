@@ -121,7 +121,7 @@ export default function CaseStudiesPage() {
           <div className="space-y-10 lg:space-y-12">
             {caseStudies.map((cs) => (
               <ScrollReveal key={cs.slug}>
-                <article className="bg-white rounded-[var(--radius-asp-2xl)] shadow-asp-lg border border-asp-blue/10 overflow-hidden">
+                <article id={cs.slug} className="scroll-mt-24 bg-white rounded-[var(--radius-asp-2xl)] shadow-asp-lg border border-asp-blue/10 overflow-hidden">
                   <div className="grid grid-cols-1 lg:grid-cols-5 gap-0">
                     {/* Left: meta + headline */}
                     <div className="lg:col-span-2 bg-gradient-to-br from-asp-blue via-asp-blue to-asp-purple text-white p-8 lg:p-10 flex flex-col">
