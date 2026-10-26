@@ -2,6 +2,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { LeadEngineForm } from "@/components/sections/LeadEngineForm";
 import { TracedLeadsMock } from "@/components/sections/LeadEngineVisuals";
+import { VikingInterview } from "@/components/sections/VikingInterview";
 import { ExitGuidePop } from "@/components/sections/ExitGuidePop";
 import testimonials from "@/data/testimonials.json";
 import caseStudies from "@/data/case-studies.json";
@@ -443,6 +444,24 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               ))}
             </div>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Client interview — Viking is the HVAC case study client (Joel, 2026-10-26) */}
+      <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                Hear it from a client
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
+                The HVAC company behind the case study.
+              </h2>
+            </div>
+            <VikingInterview />
+          </ScrollReveal>
+          <ApplyCTA />
         </div>
       </section>
 

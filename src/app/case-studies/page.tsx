@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { VikingInterview } from "@/components/sections/VikingInterview";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
@@ -229,6 +230,11 @@ export default function CaseStudiesPage() {
                     </div>
                   </div>
                 </article>
+                {cs.slug === "hvac-services" && (
+                  <div className="mt-8 max-w-3xl mx-auto">
+                    <VikingInterview />
+                  </div>
+                )}
               </ScrollReveal>
             ))}
           </div>

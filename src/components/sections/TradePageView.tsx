@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { VikingInterview } from "@/components/sections/VikingInterview";
 import Image from "next/image";
 import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
@@ -389,6 +390,11 @@ export function TradePageView({ page }: { page: TradePage }) {
                 </div>
               )}
             </ScrollReveal>
+            {proof.slug === "hvac-services" && (
+              <div className="mt-12 max-w-3xl">
+                <VikingInterview dark />
+              </div>
+            )}
           </div>
         </section>
       )}
