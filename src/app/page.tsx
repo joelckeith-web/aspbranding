@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { ClientLogos } from "@/components/sections/ClientLogos";
+import { PressStrip } from "@/components/sections/PressStrip";
 import { GrowthSystem } from "@/components/sections/GrowthSystem";
 import { Industries } from "@/components/sections/Industries";
 import { ResultsBanner } from "@/components/sections/ResultsBanner";
@@ -48,6 +49,9 @@ export default function HomePage() {
         youtubeId="qpT2xpI5Lu4"
         showTrustLogos
       />
+
+      {/* 1b. Press + TopMarketingAgencies listing — dark strip under the hero */}
+      <PressStrip />
 
       {/* 2. Client logos — WHITE strip */}
       <ClientLogos />
