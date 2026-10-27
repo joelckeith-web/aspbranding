@@ -27,38 +27,39 @@ const NEXSTAR = (host: string) => `https://${host}/business/press-releases/acces
 const LOCAL_PAPER = (host: string) =>
   `https://${host}/article/ASP-Announces-2026-Growth-Initiatives-Following-Industry-Recognition/6ada1477030e750002f937dd`;
 
-// Logo heights are tuned so the six marks read at a similar visual weight.
+// Brand-color logos, dark-background versions (dark wordmark text reversed to white).
+// Heights are tuned so the six marks read at a similar visual weight.
 export const NATIONAL_OUTLETS: PressOutlet[] = [
-  { name: "AP News", href: PRESS_RELEASE.url, logo: "ap-white.png", logoClass: "h-8 md:h-9" },
+  { name: "AP News", href: PRESS_RELEASE.url, logo: "ap-color.png", logoClass: "h-8 md:h-9" },
   {
     name: "USA Today",
     href: `https://www.usatoday.com/press-release/story/52066/${RELEASE_SLUG}/`,
-    logo: "usatoday-white.png",
+    logo: "usatoday-color.png",
     logoClass: "h-5 md:h-6",
   },
   {
     name: "Yahoo Finance",
     href: "https://finance.yahoo.com/news/asp-announces-2026-growth-initiatives-164500943.html",
-    logo: "yahoofinance-white.png",
+    logo: "yahoofinance-color.png",
     logoClass: "h-5 md:h-6",
   },
   {
     name: "Morningstar",
     href: `https://www.morningstar.com/news/accesswire/1239937msn/${RELEASE_SLUG}`,
-    logo: "morningstar-white.png",
+    logo: "morningstar-color.png",
     logoClass: "h-5 md:h-6",
   },
   {
     name: "Business Insider",
     href: `https://markets.businessinsider.com/news/stocks/${RELEASE_SLUG}-1036655809`,
-    logo: "businessinsider-white.png",
+    logo: "businessinsider-color.png",
     logoClass: "h-4 md:h-[18px]",
   },
   {
     name: "The Globe and Mail",
     href: `https://www.theglobeandmail.com/investing/markets/markets-news/ACCESS%20Newswire/8328875/${RELEASE_SLUG}/`,
-    logo: "globeandmail-white.png",
-    logoClass: "h-4 md:h-[18px]",
+    logo: "globeandmail-color.png",
+    logoClass: "h-5 md:h-6",
   },
   {
     name: "StreetInsider",
