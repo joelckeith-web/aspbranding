@@ -57,11 +57,11 @@ export default function HomePage() {
       {/* 3. Growth System — DARK navy + image */}
       <GrowthSystem />
 
+      {/* 4a. Press + TopMarketingAgencies seal — white strip, styled like the client logos */}
+      <PressStrip />
+
       {/* 4. Testimonials — WHITE (break between Growth System and Industries) */}
       <Testimonials />
-
-      {/* 4b. Press + TopMarketingAgencies listing — dark strip after the testimonials */}
-      <PressStrip />
 
       {/* 5-6. Industries + Results — shared gradient backdrop (black → purple mid → black) */}
       <div className="relative bg-asp-black overflow-hidden">
