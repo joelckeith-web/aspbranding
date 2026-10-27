@@ -6,7 +6,7 @@ import { VikingInterview } from "@/components/sections/VikingInterview";
 import { ExitGuidePop } from "@/components/sections/ExitGuidePop";
 import testimonials from "@/data/testimonials.json";
 import caseStudies from "@/data/case-studies.json";
-import { RANKING } from "@/data/press";
+import { PressStrip } from "@/components/sections/PressStrip";
 
 // Paid-traffic landing page built on the 7 Figure Agency niche landing page
 // method (2026-10-21): the application form in the hero (Joel, 2026-10-26), proof
@@ -281,17 +281,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
         <BlueWash />
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
-              {/* No outbound link here: this is a paid-traffic page. */}
-              <div className="col-span-2 lg:col-span-1 rounded-[var(--radius-asp-xl)] p-[1px] bg-gradient-to-br from-asp-blue-light to-asp-purple shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
-                <div className="h-full rounded-[calc(var(--radius-asp-xl)-1px)] bg-asp-surface-navy p-6 text-center">
-                  <p className="font-black text-3xl lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple mb-2">
-                    2026
-                  </p>
-                  <p className="text-white font-bold text-sm mb-2">{RANKING.title}</p>
-                  <p className="text-white/50 text-xs leading-relaxed">Listed by {RANKING.source}</p>
-                </div>
-              </div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {copy.proof.map((p) => (
                 <div
                   key={p.label}
@@ -306,11 +296,11 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               ))}
             </div>
           </ScrollReveal>
-          <p className="mt-6 text-center text-xs text-white/50">
-            In the news: AP News, USA Today, Yahoo Finance and more.
-          </p>
         </div>
       </section>
+
+      {/* Recognition + press: own section; no outbound links on this paid-traffic page */}
+      <PressStrip links={false} />
 
       {/* Reviews — right-to-left marquee, same as /lead-engine */}
       <section className="py-14 md:py-16 lg:py-20 bg-white">
