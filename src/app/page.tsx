@@ -51,9 +51,6 @@ export default function HomePage() {
         size="home"
       />
 
-      {/* 1b. Press + TopMarketingAgencies listing — dark strip under the hero */}
-      <PressStrip />
-
       {/* 2. Client logos — WHITE strip */}
       <ClientLogos />
 
@@ -62,6 +59,9 @@ export default function HomePage() {
 
       {/* 4. Testimonials — WHITE (break between Growth System and Industries) */}
       <Testimonials />
+
+      {/* 4b. Press + TopMarketingAgencies listing — dark strip after the testimonials */}
+      <PressStrip />
 
       {/* 5-6. Industries + Results — shared gradient backdrop (black → purple mid → black) */}
       <div className="relative bg-asp-black overflow-hidden">
