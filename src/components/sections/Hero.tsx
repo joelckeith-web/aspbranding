@@ -19,7 +19,7 @@ interface HeroProps {
   pillars?: string;
   headingClassName?: string;
   /** "compact" roughly halves the hero height — used on interior pages like the blog. */
-  size?: "default" | "compact";
+  size?: "default" | "compact" | "home";
 }
 
 export function Hero({
@@ -41,12 +41,17 @@ export function Hero({
   size = "default",
 }: HeroProps) {
   const isCompact = size === "compact";
+  // "home": shorter than default so the press strip under it shows sooner (Joel, 2026-10-27).
   const minHeight = isCompact
     ? "min-h-[38vh] lg:min-h-[42vh] 2xl:min-h-[46vh]"
-    : "min-h-[60vh] lg:min-h-[65vh] 2xl:min-h-[85vh]";
+    : size === "home"
+      ? "min-h-[50vh] 2xl:min-h-[60vh]"
+      : "min-h-[60vh] lg:min-h-[65vh] 2xl:min-h-[85vh]";
   const contentPadding = isCompact
     ? "py-12 md:py-16 lg:py-20"
-    : "py-16 md:py-24 lg:py-28 2xl:py-32 3xl:py-40";
+    : size === "home"
+      ? "pt-28 pb-12 md:pt-28 md:pb-14 lg:pt-32 lg:pb-16 2xl:pt-36 2xl:pb-20"
+      : "py-16 md:py-24 lg:py-28 2xl:py-32 3xl:py-40";
 
   return (
     <section className={`hero relative ${minHeight} flex items-center text-white overflow-hidden`}>

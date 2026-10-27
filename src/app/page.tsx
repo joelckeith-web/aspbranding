@@ -48,6 +48,7 @@ export default function HomePage() {
         bgType="video"
         youtubeId="qpT2xpI5Lu4"
         showTrustLogos
+        size="home"
       />
 
       {/* 1b. Press + TopMarketingAgencies listing — dark strip under the hero */}

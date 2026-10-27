@@ -62,7 +62,7 @@ export default function PressPage() {
                 &ldquo;This ranking means a lot to everyone on our team, because it reflects the work we do for our clients
                 every day.&rdquo;
               </blockquote>
-              <figcaption className="mt-3 text-sm text-gray-500">Joel Keith, Founder and CEO, ASP</figcaption>
+              <figcaption className="mt-3 text-sm text-gray-500">Joel Keith, CEO, ASP</figcaption>
             </figure>
             <div className="flex flex-wrap gap-3">
               <a
