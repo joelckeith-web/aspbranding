@@ -10,9 +10,14 @@ import { isTestLead } from "@/lib/test-lead";
 
 export const STRATEGY_CALL_CALENDLY = "https://calendly.com/joel-keith-asp/discovery-call";
 
+// Tall enough for the month grid plus the time list before Calendly reports
+// its real height.
+const MIN_HEIGHT = 1000;
+
 export function StrategyCallCalendar() {
   const [src, setSrc] = useState<string | null>(null);
   const [email, setEmail] = useState("");
+  const [height, setHeight] = useState(MIN_HEIGHT);
 
   useEffect(() => {
     let name = "";
@@ -37,7 +42,15 @@ export function StrategyCallCalendar() {
   useEffect(() => {
     function onMessage(e: MessageEvent) {
       if (e.origin !== "https://calendly.com") return;
-      const data = e.data as { event?: string } | undefined;
+      const data = e.data as { event?: string; payload?: { height?: string } } | undefined;
+      // Calendly reports its content height on every step; size the box to it
+      // so the calendar and the time list never scroll inside the frame
+      // (Joel, 2026-10-28).
+      if (data?.event === "calendly.page_height") {
+        const h = parseInt(String(data.payload?.height ?? ""), 10);
+        if (h > 0) setHeight(Math.max(MIN_HEIGHT, h + 20));
+        return;
+      }
       if (data?.event !== "calendly.event_scheduled") return;
       if (!isTestLead(email)) {
         window.fbq?.("track", "Schedule", { content_name: "Strategy Call" });
@@ -57,10 +70,10 @@ export function StrategyCallCalendar() {
           src={src}
           title="Pick a time for your strategy call"
           className="w-full block"
-          style={{ height: 700, border: 0 }}
+          style={{ height, border: 0 }}
         />
       ) : (
-        <div style={{ height: 700 }} aria-hidden />
+        <div style={{ height: MIN_HEIGHT }} aria-hidden />
       )}
       <p className="text-gray-400 text-xs px-5 py-3">
         Calendar not loading?{" "}
