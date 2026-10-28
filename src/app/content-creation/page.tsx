@@ -262,7 +262,7 @@ export default function ContentCreationPage() {
                     <span className="text-white/60 text-sm">/ month</span>
                   </div>
                   <p className="text-white/75 leading-relaxed mb-6">
-                    Content Creation Package <strong>plus</strong> Local SEO Pro, StormFront, HCP attribution setup, and monthly performance reporting. Content lands harder when the local channel and weather-triggered system are firing alongside it.
+                    Content Creation Package <strong>plus</strong> Local SEO Pro, organic SEO, HCP attribution setup, and monthly performance reporting. Content lands harder when the local channel is firing alongside it.
                   </p>
                   <Link
                     href="/contact?topic=foundation"
@@ -295,12 +295,6 @@ export default function ContentCreationPage() {
             href: "/local-seo-pro",
             title: "Local SEO Pro",
             body: "Own the local map. GBP management, citations, heatmap reporting, and competitive intelligence for home service operators.",
-          },
-          {
-            label: "Sibling product",
-            href: "/stormfront",
-            title: "StormFront",
-            body: "A proprietary weather-triggered content system for storm-chasing and weather-driven operators.",
           },
           {
             label: "Pillar",

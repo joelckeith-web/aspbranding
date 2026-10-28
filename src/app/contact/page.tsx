@@ -31,7 +31,6 @@ const GROWTH_PACKAGES = [
   { value: "growth", label: "Growth — $3,850/mo" },
   { value: "premier", label: "Premier Partnership — custom" },
   { value: "local-seo-pro", label: "Local SEO Pro — $1,200/mo" },
-  { value: "stormfront", label: "StormFront — $549/mo" },
   { value: "content-package", label: "Content Creation Package — $499/mo" },
   { value: "fractional", label: "Fractional C-Suite — custom" },
   { value: "other", label: "Not sure yet — help me figure it out" },

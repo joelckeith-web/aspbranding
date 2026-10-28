@@ -29,12 +29,6 @@ const PRODUCT_SUMMARIES = [
       "Full-service Google Business Profile management, 60+ primary citation audit and cleanup, monthly local ranking heatmap (50+ grid points), competitor and market intelligence, local schema and on-site optimization, and monthly performance reporting tied to booked revenue. $1,200/month, standalone or inside the Growth System.",
   },
   {
-    title: "StormFront",
-    url: `${BASE}/stormfront`,
-    summary:
-      "Proprietary weather-triggered content system. Watches National Weather Service feeds and other data sources across a client's service area, fires location-aware content to blog, Google Business Profile, and social when qualifying events hit (storms, freezes, heat waves, droughts). Built for roofing, HVAC, plumbing, and restoration operators where demand is weather-driven. $549/month.",
-  },
-  {
     title: "Content Creation Package",
     url: `${BASE}/content-creation`,
     summary:
@@ -50,7 +44,7 @@ const PRODUCT_SUMMARIES = [
     title: "Fractional C-Suite",
     url: `${BASE}/fractional`,
     summary:
-      "Fractional CFO, CMO, and COO leadership for owner-operated service businesses in the $5M–$20M revenue band. CFO Foundation from $600/month, CFO C-Suite from $2,200/month, CMO and COO engagements custom-scoped. The integrated model gives owners a single leadership team rather than disconnected vendors.",
+      "Fractional CFO, CMO, and COO leadership for owner-operated service businesses in the $3M–$20M revenue band, most often $5M and up. CFO Foundation from $600/month, CFO C-Suite from $2,200/month, CMO and COO engagements custom-scoped. The integrated model gives owners a single leadership team rather than disconnected vendors.",
   },
 ];
 

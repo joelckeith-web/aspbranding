@@ -10,7 +10,7 @@ import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredD
 export const metadata: Metadata = {
   title: "Fractional C-Suite — CFO, CMO, COO Leadership",
   description:
-    "Fractional CFO, CMO, and COO leadership for $5M–$20M owner-operated service businesses. One integrated team. Leadership, not more vendors.",
+    "Fractional CFO, CMO, and COO leadership for $3M–$20M owner-operated service businesses. One integrated team. Leadership, not more vendors.",
 };
 
 const SYMPTOMS = [
@@ -116,7 +116,7 @@ const SERVICES = [
 
 const FIT_CRITERIA = {
   fit: [
-    "$5M–$20M in annual revenue.",
+    "$3M–$20M in annual revenue, most often $5M and up.",
     "You have a team, but you're still making every strategic decision.",
     "Financial planning is reactive, not proactive.",
     "Marketing works but you can't explain why or scale it consistently.",
@@ -124,7 +124,7 @@ const FIT_CRITERIA = {
     "You're ready to lead like a CEO, not just work like an operator.",
   ],
   notFit: [
-    "Under $5M — you need execution more than leadership right now.",
+    "Under $3M — you need execution more than leadership right now.",
     "Over $20M — you likely need full-time C-suite with equity.",
     "Not willing to look at your numbers honestly.",
     "Looking for task execution, not strategic direction.",
@@ -182,7 +182,7 @@ const FAQS = [
   {
     question: "I already have a team. Why do I need this?",
     answer:
-      "Most $5M–$20M operators already have a team. The gap isn't doers — it's senior leadership translating strategy into execution. Fractional C-suite fills that gap without the cost or commitment of a full-time hire.",
+      "Most $3M–$20M operators already have a team. The gap isn't doers — it's senior leadership translating strategy into execution. Fractional C-suite fills that gap without the cost or commitment of a full-time hire.",
   },
   {
     question: "What if I'm not ready to commit to everything?",
@@ -192,7 +192,7 @@ const FAQS = [
   {
     question: "Who is this NOT for?",
     answer:
-      "Under $5M — you need execution, not leadership. Over $20M — you likely need full-time C-suite with equity. Not willing to look honestly at the numbers — this engagement won't work. Looking for task execution — hire a vendor instead.",
+      "Under $3M — you need execution, not leadership. Over $20M — you likely need full-time C-suite with equity. Not willing to look honestly at the numbers — this engagement won't work. Looking for task execution — hire a vendor instead.",
   },
 ];
 
@@ -202,14 +202,14 @@ export default function FractionalPage() {
       <BreadcrumbSchema items={[{ name: "Home", url: "https://www.aspbranding.com/" }, { name: "Fractional C-Suite", url: "https://www.aspbranding.com/fractional" }]} />
       <ServiceSchema
         name="Fractional C-Suite"
-        description="Fractional CFO, CMO, and COO leadership for $5M–$20M owner-operated service businesses. One integrated team delivering strategic direction, not just vendor output."
+        description="Fractional CFO, CMO, and COO leadership for $3M–$20M owner-operated service businesses. One integrated team delivering strategic direction, not just vendor output."
         url="https://www.aspbranding.com/fractional"
         serviceType="Fractional Executive Leadership"
       />
       <Hero
         eyebrow="Fractional C-Suite"
         heading="You built a great business.<br>Now you need a <span class='hero-text-gradient'>leadership team.</span>"
-        subheading="Fractional CFO, CMO, and COO leadership for $5M–$20M owner-operated service businesses. C-level direction — not more vendors."
+        subheading="Fractional CFO, CMO, and COO leadership for $3M–$20M owner-operated service businesses. C-level direction — not more vendors."
         ctaText="Book a discovery call"
         ctaUrl="/contact?topic=fractional"
         cta2Text="See what you get"

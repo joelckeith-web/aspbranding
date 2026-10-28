@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Roofing advertising",
     "h1": "Roofing Advertising Measured by Booked Roof Jobs",
-    "subhead": "Reach the homeowner with a leak today and the one pricing a new roof over the next few weeks. ASP runs Google Ads, Local Services Ads and Meta for roofers.",
-    "points": [
-      "Ad accounts and spend in your name",
-      "Conversion action set to real leads",
-      "Budgets that follow the storm calendar"
-    ]
+    "subhead": "Reach the homeowner with a leak today and the one pricing a new roof over the next few weeks. ASP runs Google Ads, Local Services Ads and Meta for roofers."
   },
   "why": {
     "heading": "Ad spend that follows the roofing calendar",
@@ -68,13 +63,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "About 12,000",
-      "label": "Average yearly roofer job openings projected",
-      "source": "BLS OOH, 2025–35"
-    }
-  ],
   "process": {
     "heading": "From account audit to storm season",
     "steps": [
@@ -131,7 +119,7 @@
       "label": "Industry",
       "href": "/industries/roofing",
       "title": "Roofing Marketing Agency",
-      "body": "How ads, SEO and StormFront fit together for roofers."
+      "body": "How ads and SEO fit together for roofers."
     },
     {
       "label": "Organic",

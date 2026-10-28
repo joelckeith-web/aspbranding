@@ -52,9 +52,7 @@ Competition is local. BLS counted 26,626 private residential roofing contractor 
 
 Storms add sudden spikes on top of the season. NOAA's National Severe Storms Laboratory [says](https://www.nssl.noaa.gov/education/svrwx101/hail/) hail can damage homes, and the area where Nebraska, Colorado and Wyoming meet averages seven to nine hail days a year. In guidance [published in 2013](https://www.professionalroofing.net/Articles/Tech-Today--10-01-2013/2338), the National Roofing Contractors Association recommended inspecting roofs at least twice a year, preferably in the spring and fall. It also suggested extra inspections after severe weather such as a hurricane, tornado or hailstorm.
 
-Two kinds of content cover that demand. The first is evergreen pages on hail damage, wind damage and storm inspections, which should be live and indexed well before storm season so they are ready when searches spike. Inspection pages timed to spring and fall also give homeowners a reason to call before a leak forces it.
-
-The second is event content. [StormFront](/stormfront), ASP's weather-triggered content system, watches your service area for qualifying weather events. When one hits, it publishes location-aware posts to your blog, Google Business Profile and social profiles. Each post has a call to action that fits the event, like a roof inspection after hail.
+Evergreen content covers that demand. Pages on hail damage, wind damage and storm inspections, which should be live and indexed well before storm season so they are ready when searches spike. Inspection pages timed to spring and fall also give homeowners a reason to call before a leak forces it.
 
 Missed calls may count against you on Local Services Ads, so call coverage and message handling need to be in place before a storm budget goes up.
 

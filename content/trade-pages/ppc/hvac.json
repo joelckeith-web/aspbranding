@@ -5,16 +5,11 @@
   "status": "published",
   "metaTitle": "HVAC Advertising and PPC: Google Ads, LSA and Meta",
   "metaDescription": "HVAC advertising and PPC from ASP: Google Search Ads split by repair and replacement, Local Services Ads, Meta retargeting and budgets that follow the season.",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-11-02",
   "hero": {
     "eyebrow": "HVAC advertising",
     "h1": "HVAC PPC and Advertising Judged by Booked Jobs",
-    "subhead": "Get in front of homeowners when the AC quits or the furnace won't start. ASP runs your Google Ads, Local Services Ads and Meta, with budgets that follow the season.",
-    "points": [
-      "Accounts and billing in your name",
-      "Audit before any budget moves",
-      "Every channel judged on cost per booked job"
-    ]
+    "subhead": "Get in front of homeowners when the AC quits or the furnace won't start. ASP runs your Google Ads, Local Services Ads and Meta, with budgets that follow the season."
   },
   "why": {
     "heading": "Paid search that follows the weather",
@@ -53,9 +48,9 @@
         "href": "/meta-ads"
       },
       {
-        "title": "Meta for hiring",
-        "body": "The techs you want are usually employed, not browsing job boards. Recruiting runs on its own budget, apart from lead generation.",
-        "href": "/meta-ads"
+        "title": "Results from HVAC clients",
+        "body": "One HVAC company grew revenue 33% in its first 90 days with a new site, Google Ads and LSA. Another broke through the $3M revenue barrier.",
+        "href": "/case-studies"
       },
       {
         "title": "Call and booked-job tracking",
@@ -64,13 +59,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "40,600",
-      "label": "Projected yearly job openings, HVAC techs",
-      "source": "BLS OOH, 2025–35"
-    }
-  ],
   "process": {
     "heading": "How we run HVAC ad accounts",
     "steps": [
@@ -92,6 +80,7 @@
       }
     ]
   },
+  "caseStudySlug": "hvac-90-days",
   "pricing": {
     "heading": "Packages that include HVAC ad management",
     "subhead": "Paid media management for Google Ads, Meta and LSA is included from Growth up. Ad spend is separate and goes straight to the platforms."
@@ -100,6 +89,10 @@
     {
       "question": "Are Local Services Ads worth it for an HVAC company?",
       "answer": "If you qualify and your reviews support it, LSA is usually the first paid channel we'd set up, because you pay per lead and the placement sits above the map. Search Ads still matter, since LSA inventory is capped in each metro."
+    },
+    {
+      "question": "How much should an HVAC company spend on Google Ads and Local Services Ads?",
+      "answer": "There's no single right number. Start from what a booked job is worth to you and how competitive your market is. Local Services Ads charge per lead, and Google says the bids of similar local businesses determine how much each lead is worth. Search budgets should rise and fall with the heating and cooling seasons, and either way the spend goes straight to Google from your own account."
     },
     {
       "question": "Why do missed calls matter for LSA?",

@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Lawn and landscape SEO",
     "h1": "Landscaping SEO",
-    "subhead": "SEO aimed at the lawn care, install and snow removal searches in your service area. ASP builds the pages, profile and site health, and reports on booked jobs.",
-    "points": [
-      "Pages built in order of job value",
-      "Content live before your season starts",
-      "No bought links or Domain Authority scores"
-    ]
+    "subhead": "SEO aimed at the lawn care, install and snow removal searches in your service area. ASP builds the pages, profile and site health, and reports on booked jobs."
   },
   "why": {
     "heading": "Why one services page isn't enough",
@@ -66,7 +61,6 @@
       }
     ]
   },
-  "stats": [],
   "process": {
     "heading": "How landscaping SEO gets built",
     "steps": [

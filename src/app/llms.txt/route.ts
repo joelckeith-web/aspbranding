@@ -12,7 +12,7 @@ ASP is a US-based marketing and operations agency headquartered in Austin, Texas
 - [About ASP](${BASE}/about): Company background, team, values, and how we work.
 - [Contact ASP](${BASE}/contact): Book a free growth audit or reach us directly.
 - [Case Studies](${BASE}/case-studies): Industry-anonymized revenue results across HVAC, home inspection, healthcare, and commercial flooring.
-- [Pricing](${BASE}/pricing): Tier structure (Foundation, Growth, Premier) plus productized entry points (Local SEO Pro, StormFront, Content Creation Package).
+- [Pricing](${BASE}/pricing): Tier structure (Foundation, Growth, Premier) plus productized entry points (Local SEO Pro, Content Creation Package).
 - [Growth Diagnostic](${BASE}/diagnostic): 90-second, 7-question decision tool that recommends the right ASP tier.
 - [AI Readiness Check](${BASE}/ai-readiness): 7-question, 2-minute check that tells a home service business whether its systems are ready for AI (crawl / walk / run) and the first move to make. Free, no email required.
 
@@ -22,9 +22,8 @@ ASP is a US-based marketing and operations agency headquartered in Austin, Texas
 - [AI Consulting](${BASE}/ai-consulting): AI consulting for home service businesses — automations for office data entry, tag-triggered follow-up (review requests, estimate and quote follow-ups, invoice reminders), operations and logistics handoffs, AI search over internal SOPs, and custom AI builds when the tool doesn't exist off the shelf. Crawl / walk / run rollout. Routes into the Growth and Premier tiers; standalone builds priced in writing after a free AI Readiness Check.
 - [ChatGPT Ads Management](${BASE}/chatgpt-ads-management): Early-mover paid media management on the ChatGPT Ads Manager platform. Campaign setup, audience strategy, prompt-native creative, and booked-revenue attribution — wired into the same stack that runs Google and Meta. ASP is a verified advertiser.
 - [Local SEO Pro](${BASE}/local-seo-pro): Full-service Google Business Profile management, citation cleanup, local ranking heatmap, $1,200/month.
-- [StormFront](${BASE}/stormfront): Proprietary weather-triggered content system for roofing, HVAC, plumbing, and restoration operators. $549/month.
 - [Content Creation Package](${BASE}/content-creation): Social graphics, captions, and weekly GBP posts built on your brand kit. $499/month.
-- [Fractional C-Suite](${BASE}/fractional): Fractional CFO, CMO, and COO leadership for $5M–$20M owner-operated service businesses.
+- [Fractional C-Suite](${BASE}/fractional): Fractional CFO, CMO, and COO leadership for $3M–$20M owner-operated service businesses (most often $5M and up).
 
 ## Key Facts
 - Headquarters: Austin, Texas, United States

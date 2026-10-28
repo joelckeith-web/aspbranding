@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Plumbing SEO",
     "h1": "Plumbing SEO Services Measured on Booked Jobs",
-    "subhead": "Get found when a pipe bursts and when a homeowner is pricing a water heater. ASP builds the pages, map pack signals and technical fixes behind both.",
-    "points": [
-      "Service pages for urgent and planned jobs",
-      "Business Profile and map pack managed",
-      "No bought links, no Domain Authority reports"
-    ]
+    "subhead": "Get found when a pipe bursts and when a homeowner is pricing a water heater. ASP builds the pages, map pack signals and technical fixes behind both."
   },
   "why": {
     "heading": "Plumbing searches split into two kinds",
@@ -49,8 +44,7 @@
       },
       {
         "title": "Seasonal and freeze content",
-        "body": "Freeze-prevention pages go up before cold weather, leak content is worth scheduling ahead of EPA's annual Fix a Leak Week, and StormFront covers qualifying weather events.",
-        "href": "/stormfront"
+        "body": "Freeze-prevention pages go up before cold weather, and leak content is worth scheduling ahead of EPA's annual Fix a Leak Week."
       },
       {
         "title": "Your experience on the page",
@@ -62,13 +56,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "9%",
-      "label": "Homes with leaks wasting 50+ gallons daily",
-      "source": "EPA WaterSense, retrieved 2026"
-    }
-  ],
   "process": {
     "heading": "How plumbing SEO gets built",
     "steps": [

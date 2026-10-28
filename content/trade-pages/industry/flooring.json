@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Flooring Marketing",
     "h1": "Flooring Marketing Built Around Installed Jobs",
-    "subhead": "Win more in-home measures and signed floors, and see which channel paid for each one. ASP runs your SEO, Google and Local Services Ads, and Facebook ads.",
-    "points": [
-      "Reporting on installed jobs, not clicks",
-      "Commercial flooring results in our case study",
-      "Your accounts, your data, no exit fee"
-    ]
+    "subhead": "Win more in-home measures and signed floors, and see which channel paid for each one. ASP runs your SEO, Google and Local Services Ads, and Facebook ads."
   },
   "why": {
     "heading": "What it takes to win flooring work",
@@ -65,18 +60,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "17,989",
-      "label": "flooring contractor establishments with paid employees",
-      "source": "Census CBP, 2023"
-    },
-    {
-      "value": "13,809",
-      "label": "of those had fewer than five employees",
-      "source": "Census CBP, 2023"
-    }
-  ],
   "process": {
     "heading": "How we start with your flooring company",
     "steps": [
@@ -180,10 +163,6 @@
         "Google Ads",
         "LSA"
       ]
-    },
-    "caseStudy": {
-      "src": "/images/trades/flooring-cs.jpg",
-      "alt": "Flooring crew at work on a job site"
     },
     "og": "/images/og/industry-flooring.jpg"
   },

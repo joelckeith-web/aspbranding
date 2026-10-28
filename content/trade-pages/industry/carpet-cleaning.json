@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Carpet Cleaning Marketing",
     "h1": "Carpet Cleaning Marketing Built on Repeat Customers",
-    "subhead": "For carpet cleaning companies doing $500,000 to $600,000 a year. ASP runs paid ads, SEO and follow-up with past customers, all built to keep every crew booked.",
-    "points": [
-      "Repeat jobs tracked apart from new ones",
-      "Reminder timing starts from CRI guidance",
-      "Your customer list stays yours"
-    ]
+    "subhead": "For carpet cleaning companies doing $500,000 to $600,000 a year. ASP runs paid ads, SEO and follow-up with past customers, all built to keep every crew booked."
   },
   "why": {
     "heading": "Your customer list is the asset",
@@ -70,23 +65,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "6,673",
-      "label": "carpet and upholstery cleaning establishments with paid employees",
-      "source": "Census CBP, 2023"
-    },
-    {
-      "value": "4,829",
-      "label": "of them had fewer than five employees",
-      "source": "Census CBP, 2023"
-    },
-    {
-      "value": "256",
-      "label": "had 20 to 49 employees",
-      "source": "Census CBP, 2023"
-    }
-  ],
   "process": {
     "heading": "How we start with a carpet cleaning company",
     "steps": [

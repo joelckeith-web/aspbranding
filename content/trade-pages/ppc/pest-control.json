@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Pest control advertising",
     "h1": "Pest Control Advertising Tracked to Booked Jobs",
-    "subhead": "Reach homeowners the moment they search for pest help, then trace your ad spend to booked jobs. ASP runs Google Ads, Local Services Ads and Meta for you.",
-    "points": [
-      "Ad accounts set up in your name",
-      "Spend paid straight to Google and Meta",
-      "Conversions set to real leads"
-    ]
+    "subhead": "Reach homeowners the moment they search for pest help, then trace your ad spend to booked jobs. ASP runs Google Ads, Local Services Ads and Meta for you."
   },
   "why": {
     "heading": "Why pest control companies run paid search",
@@ -66,18 +61,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "108,700",
-      "label": "Pest control worker jobs in the US",
-      "source": "BLS OOH, 2025"
-    },
-    {
-      "value": "6%",
-      "label": "Projected pest control worker employment growth, 2025–35",
-      "source": "BLS OOH projection, 2025–2035"
-    }
-  ],
   "process": {
     "heading": "How we launch your pest control ads",
     "steps": [

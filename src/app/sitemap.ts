@@ -20,7 +20,6 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/geo", priority: 0.7, changeFrequency: "monthly" },
   { path: "/what-you-own", priority: 0.8, changeFrequency: "monthly" },
   { path: "/local-seo-pro", priority: 0.8, changeFrequency: "monthly" },
-  { path: "/stormfront", priority: 0.8, changeFrequency: "monthly" },
   { path: "/content-creation", priority: 0.8, changeFrequency: "monthly" },
   { path: "/podcast", priority: 0.8, changeFrequency: "monthly" },
   { path: "/fractional", priority: 0.8, changeFrequency: "monthly" },
