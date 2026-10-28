@@ -131,7 +131,7 @@ export function TradePageView({ page }: { page: TradePage }) {
   crumbs.push({ name: page.hero.h1, url });
 
   const proof = page.caseStudySlug
-    ? (caseStudies as { slug: string; industry: string; headline: string; timeframe?: string; hideOnIndex?: boolean; results: { label: string; value: string }[] }[]).find(
+    ? (caseStudies as { slug: string; industry: string; headline: string; timeframe?: string; results: { label: string; value: string }[] }[]).find(
         (c) => c.slug === page.caseStudySlug,
       )
     : undefined;
@@ -263,9 +263,9 @@ export function TradePageView({ page }: { page: TradePage }) {
                     {c.href && <span className="mt-5 font-bold text-asp-blue">Learn more →</span>}
                   </>
                 );
-                const cls = "flex flex-col rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 shadow-asp-md transition";
+                const cls = "flex flex-col rounded-[var(--radius-asp-xl)] border border-gray-300 bg-white p-7 shadow-[0_12px_32px_-10px_rgba(0,35,102,0.28)] transition";
                 return c.href ? (
-                  <Link key={c.title} href={c.href} className={`${cls} hover:border-asp-blue hover:shadow-asp-lg`}>
+                  <Link key={c.title} href={c.href} className={`${cls} hover:-translate-y-1 hover:border-asp-blue hover:shadow-[0_20px_44px_-12px_rgba(0,35,102,0.38)]`}>
                     {body}
                   </Link>
                 ) : (
@@ -316,11 +316,9 @@ export function TradePageView({ page }: { page: TradePage }) {
                   </div>
                 ))}
               </div>
-              {!proof.hideOnIndex && (
-                <Link href={`/case-studies#${proof.slug}`} className="mt-8 inline-block font-bold underline underline-offset-4">
-                  Read the full case study
-                </Link>
-              )}
+              <Link href={`/case-studies#${proof.slug}`} className="mt-8 inline-block font-bold underline underline-offset-4">
+                Read the full case study
+              </Link>
             </ScrollReveal>
             {proof.slug === "hvac-services" && (
               <div className="mx-auto mt-12 max-w-4xl">

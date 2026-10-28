@@ -3,11 +3,14 @@
     "slug": "hvac-90-days",
     "industry": "HVAC Services",
     "timeframe": "First 90 Days",
-    "hideOnIndex": true,
-    "services": [],
+    "services": ["New Website", "Google Ads", "Local Service Ads"],
     "headline": "+33% revenue in the first 90 days.",
     "challenge": "An HVAC company already doing about $1M a year wanted more booked jobs from its marketing.",
-    "solution": [],
+    "solution": [
+      "New website built to turn visits into booked calls",
+      "Google Ads campaigns launched and managed",
+      "Google Local Service Ads launched and managed for direct lead capture"
+    ],
     "results": [
       { "label": "Revenue increase in the first 90 days", "value": "+33%" },
       { "label": "New revenue in the first 3 months", "value": "About $83K" },
