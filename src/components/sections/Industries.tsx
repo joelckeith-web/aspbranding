@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import industriesData from "@/data/industries.json";
 
 export function Industries() {
@@ -101,7 +102,16 @@ export function Industries() {
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent" />
                 <h3 className="absolute bottom-4 left-5 right-5 font-black text-xl lg:text-2xl text-white drop-shadow-lg">
-                  {industry.name}
+                  {industry.name === "HVAC" ? (
+                    <Link
+                      href="/industries/hvac"
+                      className="text-white underline decoration-white/40 underline-offset-4 hover:decoration-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                    >
+                      {industry.name}
+                    </Link>
+                  ) : (
+                    industry.name
+                  )}
                 </h3>
               </div>
               <div className="p-6">

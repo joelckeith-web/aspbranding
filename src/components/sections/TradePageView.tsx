@@ -8,7 +8,7 @@ import { RelatedPages } from "@/components/sections/RelatedPages";
 import { PricingCards } from "@/components/sections/PricingCards";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { CountUp } from "@/components/ui/CountUp";
-import { BreadcrumbSchema, FaqPageSchema, ServiceSchema } from "@/components/schema/StructuredData";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 import caseStudies from "@/data/case-studies.json";
 import { type TradePage, getPublishedGuide, tradePageUrl } from "@/lib/trade-pages";
 import "./trade-motion.css";
@@ -151,8 +151,6 @@ export function TradePageView({ page }: { page: TradePage }) {
         serviceType={SERVICE_TYPE[page.kind]}
         audienceType={`${page.trade} businesses`}
       />
-      <FaqPageSchema items={faqs} />
-
       <Hero
         eyebrow={page.hero.eyebrow}
         heading={page.hero.h1}

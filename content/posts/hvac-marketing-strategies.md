@@ -102,32 +102,6 @@ Ownership belongs in the same conversation. Your ad accounts, Business Profile, 
 
 **Key Takeaway:** Judge every channel by cost per booked job, and make sure the accounts and data behind that number belong to you.
 
-## Frequently Asked Questions
-
-### What are the best HVAC marketing strategies?
-
-The strongest HVAC marketing strategies follow the season and are measured by booked jobs. Local Services Ads and Google Search Ads catch urgent repair calls. A complete Business Profile and real service pages compete for map-pack calls and planned work. Meta keeps your name in front of replacement shoppers, and call tracking shows which channel paid for itself.
-
-### When should an HVAC company run maintenance campaigns?
-
-Run them ahead of the spring and fall check-up windows. ENERGY STAR tells homeowners to have the cooling system checked in the spring and the heating system in the fall, because contractors get busy once summer and winter come. Tune-up pages and campaigns should be live before those windows open, and emergency repair terms can take more of the budget during the peaks.
-
-### Are Local Services Ads worth it for HVAC companies?
-
-If you qualify and your reviews support a strong profile, they are usually the first paid channel to set up. Google lists HVAC as a US Local Services Ads category, and you pay for leads instead of clicks. Ranking weighs your bid, how likely your ad is to bring a lead and your profile quality, so quick responses and real reviews matter.
-
-### Can Facebook ads bring in emergency HVAC calls?
-
-Not reliably. A homeowner with no heat or a dead AC unit searches on Google at that moment. Meta works better for retargeting people who read your replacement or heat pump page and did not call. It also helps with recruiting technicians on a separate budget, so hiring spend stays out of your lead numbers.
-
-### How do I know which HVAC marketing is working?
-
-Track every call and form by source, then follow that source to the booked job and its revenue in your CRM where it supports attribution. That lets you compare channels on cost per booked job instead of cost per click. On Housecall Pro, booked revenue can also be sent back to Google Ads as an offline conversion so bidding favors real jobs.
-
-### Should an HVAC company have a Business Profile in every town it serves?
-
-Not unless there is a staffed office in that town. Google's guidelines say a service-area business should keep one profile for its central office with a designated service area. It can't list a virtual office unless that office is staffed during business hours. Cover the other towns with service-area pages on your website.
-
 ## Where to Start With HVAC Marketing
 
 Start with the pieces that catch urgent calls. Those are a complete Business Profile, a phone that gets answered and tracking on every call. Next, add Local Services Ads and search ads split by service, then build pages for your highest-value work and plan seasonal content one season ahead. If you want a second look at your current setup, [book a call with ASP](/contact).
