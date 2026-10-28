@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Review priority for a home service business</title><desc id="d">Flow graphic showing ASP&#39;s review priority for a home service business: Google reviews and Business Profile first, then Yelp, then the trade directories that show up as sources.</desc>
+<rect width="880" height="300" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" fill="#002366" font-weight="700">Where to build reviews, in order</text>
+<text x="40" y="70" font-size="14" fill="#4b5563">ASP&#39;s working priority for a home service business</text>
+<rect x="40" y="96" width="230" height="120" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<circle cx="64" cy="122" r="13" fill="#1E5BD8"/><text x="64" y="127" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle">1</text>
+<text x="86" y="127.0" font-size="13.5" fill="#111827" font-weight="700">Google reviews +</text>
+<text x="86" y="143.5" font-size="13.5" fill="#111827" font-weight="700">Business Profile</text>
+<text x="56" y="171.0" font-size="11.5" fill="#4b5563">Google: Business Profiles can</text>
+<text x="56" y="187.5" font-size="11.5" fill="#4b5563">help visibility in AI responses</text>
+<path d="M278 156 L324 156" stroke="#002366" stroke-width="2.5"/><path d="M324 150 L334 156 L324 162 Z" fill="#002366"/>
+<rect x="330" y="96" width="230" height="120" rx="10" fill="#9F4CFF" fill-opacity="0.07" stroke="#9F4CFF" stroke-width="1.5"/>
+<circle cx="354" cy="122" r="13" fill="#9F4CFF"/><text x="354" y="127" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle">2</text>
+<text x="376" y="127.0" font-size="13.5" fill="#111827" font-weight="700">Yelp</text>
+<text x="346" y="154.0" font-size="11.5" fill="#4b5563">Licensing reviews to OpenAI</text>
+<text x="346" y="170.5" font-size="11.5" fill="#4b5563">(MarTech, citing Axios, July 28,</text>
+<text x="346" y="187.0" font-size="11.5" fill="#4b5563">2026)</text>
+<path d="M568 156 L614 156" stroke="#002366" stroke-width="2.5"/><path d="M614 150 L624 156 L614 162 Z" fill="#002366"/>
+<rect x="620" y="96" width="230" height="120" rx="10" fill="#1E5BD8" fill-opacity="0.07" stroke="#1E5BD8" stroke-width="1.5"/>
+<circle cx="644" cy="122" r="13" fill="#1E5BD8"/><text x="644" y="127" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle">3</text>
+<text x="666" y="127.0" font-size="13.5" fill="#111827" font-weight="700">Trade directories</text>
+<text x="636" y="154.0" font-size="11.5" fill="#4b5563">The ones that show up as sources</text>
+<text x="636" y="170.5" font-size="11.5" fill="#4b5563">for your trade</text>
+<rect x="40" y="232" width="810" height="30" rx="8" fill="#002366" fill-opacity="0.06"/>
+<text x="54" y="252" font-size="12.5" fill="#002366" font-weight="700">Reviews on more than one platform: different AI tools draw on different sources.</text>
+<text x="40" y="286" font-size="12" fill="#6b7280">Illustrative. Order reflects ASP&#39;s working priority, not measured citation share. Sources: Google Search Central; MarTech.</text>
+</svg>
