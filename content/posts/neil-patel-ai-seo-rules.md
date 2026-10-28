@@ -1,5 +1,5 @@
 ---
-title: "Neil Patel's 5 AI SEO Rules: Where ASP Agrees and Where We Differ"
+title: "Neil Patel's 5 AI SEO Rules for 2027: Where ASP Agrees and Where We Differ"
 slug: "neil-patel-ai-seo-rules"
 publishDate: "2026-10-28"
 dateModified: "2026-10-28"
