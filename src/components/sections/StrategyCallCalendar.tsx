@@ -12,7 +12,7 @@ export const STRATEGY_CALL_CALENDLY = "https://calendly.com/joel-keith-asp/disco
 
 // Tall enough for the month grid plus the time list before Calendly reports
 // its real height.
-const MIN_HEIGHT = 1000;
+const MIN_HEIGHT = 820;
 
 export function StrategyCallCalendar() {
   const [src, setSrc] = useState<string | null>(null);

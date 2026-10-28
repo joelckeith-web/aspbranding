@@ -43,7 +43,7 @@ export default function StrategyCallBookedPage() {
       <section className="py-12 md:py-16 bg-asp-surface-light">
         {/* Calendar gets the full width so Calendly shows the month and the
             time list side by side (Joel, 2026-10-28: no scrolling to see it). */}
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
           <div className="rounded-[var(--radius-asp-xl)] p-[2px] bg-asp-gradient-cta shadow-asp-xl">
             <div className="bg-white rounded-[calc(var(--radius-asp-xl)-2px)] overflow-hidden">
               <StrategyCallCalendar />
