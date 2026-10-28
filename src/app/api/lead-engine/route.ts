@@ -75,8 +75,18 @@ export async function POST(request: Request) {
       );
     }
 
-    // Every field but phone is required — the form is the qualification filter.
-    if (!name || !email || !company || !websiteUrl || !crm || !revenue || !jobValue) {
+    // The /strategy-call form (Joel, 2026-10-28) asks one qualifier, then name,
+    // email and phone; everything else waits for the call.
+    const strategyCall = body.kind === "strategy-call";
+    if (strategyCall) {
+      if (!name || !email || !phone || !revenue) {
+        return NextResponse.json(
+          { error: "Name, email, phone and annual revenue are all required." },
+          { status: 400 },
+        );
+      }
+    } else if (!name || !email || !company || !websiteUrl || !crm || !revenue || !jobValue) {
+      // Every field but phone is required — the form is the qualification filter.
       return NextResponse.json(
         {
           error:
@@ -107,7 +117,9 @@ export async function POST(request: Request) {
         email,
         company,
         service: "90-day-lead-engine",
-        message: `Website: ${websiteUrl} · CRM: ${crm} · Revenue: ${revenue} · Avg job: ${jobValue}`,
+        message: strategyCall
+          ? `Strategy call application · Revenue: ${revenue}`
+          : `Website: ${websiteUrl} · CRM: ${crm} · Revenue: ${revenue} · Avg job: ${jobValue}`,
       });
     if (review.classification === "vendor") {
       console.log("[lead-engine] AI flagged as vendor:", {
@@ -158,19 +170,20 @@ export async function POST(request: Request) {
 
     await sendMail({
       to: "info@aspbranding.com",
-      subject: `${testLead ? "[TEST] " : ""}${flagged ? "[FLAGGED] " : ""}Lead Engine Application: ${name} — ${company} (${revenue})`,
+      subject: `${testLead ? "[TEST] " : ""}${flagged ? "[FLAGGED] " : ""}${strategyCall ? `Strategy Call Application: ${name} (${revenue})` : `Lead Engine Application: ${name} — ${company} (${revenue})`}`,
       replyTo: email,
       html: `
-        <h2>New 90-Day Install Application</h2>
+        <h2>${strategyCall ? "New Strategy Call Application" : "New 90-Day Install Application"}</h2>
+        ${strategyCall && typeof body.referrerPath === "string" ? `<p><strong>Page:</strong> ${body.referrerPath.replace(/[^\w/-]/g, "")}</p>` : ""}
         ${flagged ? `<p style="color:#b45309"><strong>Spam check flagged this:</strong> ${flagged}. It came through anyway — judge it yourself.</p>` : ""}
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "Not given"}</p>
-        <p><strong>Company:</strong> ${company}</p>
+        ${strategyCall ? "" : `<p><strong>Company:</strong> ${company}</p>
         <p><strong>Website:</strong> ${websiteUrl}</p>
-        <p><strong>CRM:</strong> ${crm}</p>
+        <p><strong>CRM:</strong> ${crm}</p>`}
         <p><strong>Annual revenue:</strong> ${revenue}</p>
-        <p><strong>Average job value:</strong> ${jobValue}</p>
+        ${strategyCall ? "" : `<p><strong>Average job value:</strong> ${jobValue}</p>`}
         <hr />
         <h3>Marketing consent</h3>
         <p><strong>Consented:</strong> ${marketingConsent || "Not recorded"}</p>

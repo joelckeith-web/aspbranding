@@ -1,6 +1,6 @@
 import { FAQSection } from "@/components/sections/FAQSection";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { LeadEngineForm } from "@/components/sections/LeadEngineForm";
+import { StrategyCallForm } from "@/components/sections/StrategyCallForm";
 import { TracedLeadsMock } from "@/components/sections/LeadEngineVisuals";
 import { VikingInterview } from "@/components/sections/VikingInterview";
 import { ExitGuidePop } from "@/components/sections/ExitGuidePop";
@@ -35,6 +35,7 @@ export type StrategyCallCopy = {
   dashboardSrc?: { src: string; width: number; height: number };
   dashboardAlt?: string;
   dashboardCaption?: string;
+  steps?: { step: string; title: string; body: string }[];
 };
 
 // Tray G. is a law firm; Kevin's quote waits on Joel's sign-off for paid use.
@@ -75,7 +76,7 @@ const CASES = [
   },
 ].map((c: { slug: string; label: string; challenge: string; results: { value: string; label: string }[]; since?: string }) => ({ ...c, headline: caseStudies.find((cs) => cs.slug === c.slug)?.headline ?? "" }));
 
-const STEPS = [
+export const STEPS = [
   {
     step: "1",
     title: "We wire the measuring first",
@@ -226,16 +227,24 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
             }}
           />
         </div>
-        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14 lg:pt-32 lg:pb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-            <div className="lg:pt-6">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+        {/* Mobile order: headline, form, then the rest (Brady Sticker via Joel,
+            2026-10-28: 80–90% of paid traffic is on a phone, so the form starts
+            above the fold). Desktop keeps promise left / form right. */}
+        <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-14 lg:pt-32 lg:pb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] gap-x-14 gap-y-5 lg:gap-y-0 items-start">
+            <div className="lg:pt-6 lg:col-start-1 lg:row-start-1">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3 lg:mb-4">
                 {copy.heroEyebrow}
               </span>
-              <h1 className="font-black text-4xl md:text-5xl 2xl:text-6xl leading-[1.08] mb-5">
+              <h1 className="font-black text-3xl md:text-5xl 2xl:text-6xl leading-[1.08] lg:mb-5">
                 {copy.heroLead}{" "}
                 <span className="hero-text-gradient">{copy.heroGradient}</span>
               </h1>
+            </div>
+            <div id="apply" className="scroll-mt-24 lg:col-start-2 lg:row-start-1 lg:row-span-2">
+              <StrategyCallForm title="Apply for a strategy call" successHref="/strategy-call/booked" />
+            </div>
+            <div className="mt-5 lg:mt-0 lg:col-start-1 lg:row-start-2">
               <p className="text-white/75 text-lg leading-relaxed mb-8">
                 {copy.heroSub}
               </p>
@@ -262,15 +271,6 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               >
                 Not ready yet? Get our free guide
               </a>
-            </div>
-            <div id="apply" className="scroll-mt-24">
-              <LeadEngineForm
-                variant="strategy-call"
-                title="Apply for a strategy call"
-                intro="After you apply, you'll pick a time on Joel's calendar for your strategy call."
-                submitLabel="Submit my application"
-                successHref="/strategy-call/booked"
-              />
             </div>
           </div>
         </div>
@@ -383,7 +383,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
           </ScrollReveal>
           <ScrollReveal>
             <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-4">
-              {STEPS.map((s, i) => (
+              {(copy.steps ?? STEPS).map((s, i) => (
                 <div key={s.step} className="contents">
                   {i > 0 && <StepArrow />}
                   <div className="flex-1 self-stretch rounded-[var(--radius-asp-xl)] border border-white/10 bg-asp-surface-navy/80 p-7 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
