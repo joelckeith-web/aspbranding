@@ -83,22 +83,10 @@ The theme is efficiency: in a soft market you don't necessarily need a bigger bu
 
 **Key Takeaway:** In a soft market, spend on intent and speed — GBP and high-intent ads, fast lead response, and your existing customer list — not on broad awareness. A sharper budget beats a bigger one.
 
-## Common questions
-
-### How much should an HVAC company spend on marketing?
-
-A common framework is a percentage of gross revenue: roughly 5 to 7 percent to maintain your position, 8 to 10 percent for healthy growth, and 11 to 15 percent when you're aggressively going after market share. Newer businesses and those in competitive metros sit at the higher end; established operators with strong repeat business can hold the lower end. In a soft-demand year, leaning toward the higher end is how you take share while competitors pull back. The right number depends on your revenue, margins, and goals — run yours through a calculator rather than guessing.
-
-### Should I cut marketing when business is slow?
-
-Usually no — and counterintuitively, a slowdown is often the moment to hold or increase it. When demand softens, the total pool of jobs shrinks, so every job becomes a share battle between you and competitors. The operators who cut marketing disappear from search exactly when buyers are comparing options, and they hand that visibility to the businesses still showing up. Cutting marketing in a downturn protects this month's cash flow at the cost of next quarter's pipeline.
-
-### What marketing works best for HVAC in a down market?
-
-Focus on high-intent channels and speed. In a soft market you want to capture the homeowners who are ready to buy right now: a fully optimized Google Business Profile, search and Local Services Ads for "AC repair near me" style queries, and fast lead response so you win the call before a competitor does. Then lean on the customers you already have — maintenance plans, repeat-and-referral campaigns, and review requests — because selling to an existing customer is far cheaper than winning a new one.
-
 ## The takeaway
 
 Soft HVAC demand into 2026 is real, but the right response isn't to retreat — it's to spend sharper. When the pool of jobs shrinks, marketing becomes a fight for share, and the operators who keep showing up take the work that the ones who go dark give away. Set your budget on purpose — 5 to 7 percent to hold, 8 to 10 for growth, 11 to 15 to take share — and point it at the homeowners closest to buying.
 
 Want to set your number with confidence? [Run the free ASP Marketing Budget Calculator](/marketing-budget-calculator), then [contact ASP](/contact) and we'll help you put it to work where it'll actually move booked jobs this year.
+
+**Related HVAC resources:** [HVAC marketing strategies](/blog/hvac-marketing-strategies) · [HVAC marketing services](/industries/hvac).

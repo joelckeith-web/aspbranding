@@ -233,6 +233,14 @@ export default function CaseStudiesPage() {
                 {cs.slug === "hvac-services" && (
                   <div className="mt-8 max-w-3xl mx-auto">
                     <VikingInterview />
+                    <p className="mt-4 text-center">
+                      <Link
+                        href="/industries/hvac"
+                        className="font-bold text-asp-blue underline underline-offset-4 hover:text-asp-purple"
+                      >
+                        HVAC marketing services
+                      </Link>
+                    </p>
                   </div>
                 )}
               </ScrollReveal>
