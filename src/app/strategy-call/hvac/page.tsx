@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { StrategyCallLanding, DEFAULT_COPY, type StrategyCallCopy } from "../StrategyCallLanding";
+import { StrategyCallLanding, DEFAULT_COPY, STEPS, type StrategyCallCopy } from "../StrategyCallLanding";
 
 // HVAC version of the paid strategy-call page (Joel, 2026-10-26: ASP pivots
 // toward HVAC; HVAC may be called out in ads). Same layout and form as
@@ -21,7 +21,13 @@ const HVAC_COPY: StrategyCallCopy = {
   heroLead: "HVAC owners:",
   heroGradient: "can't tell which marketing booked which jobs?",
   heroSub:
-    "Follow our onboarding process and within 30 days you'll see which channel, campaign and page produced each digital lead. We run your marketing and build the tracking that proves which marketing booked which jobs. Word of mouth and walk-ins can't be traced by any system, and we'll say so.",
+    "Follow our onboarding process and within 30 days you'll see which channel, campaign and page produced each digital lead. We run your marketing and build the tracking that proves which marketing booked which jobs.",
+  // Joel, 2026-10-28: HVAC customers call; they don't walk in. The walk-ins
+  // caveat stays on the general page only. Call-tracking wording is from the
+  // citation-checked HVAC video script (2026-10-28).
+  steps: STEPS.map((s) =>
+    s.step === "3" ? { ...s, body: "Every month, we meet with you to go over the numbers." } : s,
+  ),
   proof: [
     { stat: "$3M+", label: "Revenue barrier broken", source: "Regional HVAC company, 12-month case study" },
     { stat: "161+", label: "Google Ads conversions", source: "Regional HVAC company, 12-month case study" },
@@ -45,7 +51,14 @@ const HVAC_COPY: StrategyCallCopy = {
       q: "Does it matter which field system we use?",
       a: "To trace booked jobs to their source, every job and lead needs to live in one field system. We're an official Housecall Pro Affiliate Partner.",
     },
-    ...DEFAULT_COPY.faqs,
+    ...DEFAULT_COPY.faqs.map((f) =>
+      f.q === "What can you track and what can't you?"
+        ? {
+            q: "How do you track phone calls?",
+            a: "When somebody finds you online and calls, call tracking records the call and shows where it came from, like the Google ad or keyword. For calls tracking can't see, your office asks how they found you. Follow our onboarding process and within 30 days you'll see which channel, campaign and page produced each digital lead.",
+          }
+        : f,
+    ),
   ],
   reviewsNote: "Reviews from ASP clients across industries.",
   // Viking's Google Ads in its ASP dashboard, Jul 1 – Sep 30, 2026 (Joel, 2026-10-26:
