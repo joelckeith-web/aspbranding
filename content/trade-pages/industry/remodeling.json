@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Remodeling & Exteriors",
     "h1": "Remodeling Marketing Built for Signed Projects",
-    "subhead": "Fill your project pipeline and know which channel signed each job. ASP runs SEO, Google and Local Services Ads, Facebook ads and the tracking that ties each job to its source.",
-    "points": [
-      "Kitchen, bath and exterior product lines",
-      "Signed revenue reported by channel",
-      "You own every account and asset"
-    ]
+    "subhead": "Fill your project pipeline and know which channel signed each job. ASP runs SEO, Google and Local Services Ads, Facebook ads and the tracking that ties each job to its source."
   },
   "why": {
     "heading": "Where the remodeling money is",
@@ -65,23 +60,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "$611 billion",
-      "label": "US home improvement and repair spending, 2022",
-      "source": "Harvard JCHS, 2025"
-    },
-    {
-      "value": "$46 billion",
-      "label": "homeowner spending on roof replacements in 2023",
-      "source": "Harvard JCHS, 2025"
-    },
-    {
-      "value": "57%",
-      "label": "of 2023's Top 500 remodelers were specialty firms",
-      "source": "Harvard JCHS, 2025"
-    }
-  ],
   "process": {
     "heading": "How we start with a remodeling firm",
     "steps": [

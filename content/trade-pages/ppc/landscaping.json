@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Landscaping advertising",
     "h1": "Landscaping Advertising and Facebook Ads",
-    "subhead": "Ads aimed at the months you need to fill. ASP runs Local Services Ads, Google Search Ads and Facebook ads, tracked to booked jobs where your CRM allows.",
-    "points": [
-      "Four LSA categories on Google's October 2026 list",
-      "Facebook creative from your own yards",
-      "Budget shifts with your season"
-    ]
+    "subhead": "Ads aimed at the months you need to fill. ASP runs Local Services Ads, Google Search Ads and Facebook ads, tracked to booked jobs where your CRM allows."
   },
   "why": {
     "heading": "Why landscaping ads need a seasonal plan",
@@ -62,13 +57,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "4",
-      "label": "LSA categories covering lawn, landscape, tree, snow",
-      "source": "Google LSA category list, checked Oct 2026"
-    }
-  ],
   "process": {
     "heading": "How we take over your ads",
     "steps": [

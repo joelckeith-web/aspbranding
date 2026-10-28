@@ -1,5 +1,21 @@
 [
   {
+    "slug": "hvac-90-days",
+    "industry": "HVAC Services",
+    "timeframe": "First 90 Days",
+    "hideOnIndex": true,
+    "services": [],
+    "headline": "+33% revenue in the first 90 days.",
+    "challenge": "An HVAC company already doing about $1M a year wanted more booked jobs from its marketing.",
+    "solution": [],
+    "results": [
+      { "label": "Revenue increase in the first 90 days", "value": "+33%" },
+      { "label": "New revenue in the first 3 months", "value": "About $83K" },
+      { "label": "Annual revenue when we started", "value": "About $1M" }
+    ],
+    "footnote": ""
+  },
+  {
     "slug": "hvac-services",
     "industry": "HVAC Services",
     "timeframe": "12 Months",

@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Pressure Washing",
     "h1": "Pressure Washing Marketing Agency",
-    "subhead": "Marketing that puts your before-and-after work in front of local homeowners. ASP runs your profile, website, Google ads and Facebook ads, judged by booked jobs.",
-    "points": [
-      "Creative built from your own jobs",
-      "Spend timed to your busy months",
-      "Accounts set up in your name"
-    ]
+    "subhead": "Marketing that puts your before-and-after work in front of local homeowners. ASP runs your profile, website, Google ads and Facebook ads, judged by booked jobs."
   },
   "why": {
     "heading": "Why pressure washing marketing runs on your own work",
@@ -69,13 +64,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "103,283 → 131,517",
-      "label": "Jan to July employment, broader building-services category",
-      "source": "BLS QCEW, 2024"
-    }
-  ],
   "process": {
     "heading": "How we start with your company",
     "steps": [

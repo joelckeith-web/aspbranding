@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Pest control marketing",
     "h1": "Pest Control Marketing Built to Fill Your Routes",
-    "subhead": "Win new customers, keep them on service, and see which channel won each booked job. ASP runs local search, ads, Meta and follow-up as one system.",
-    "points": [
-      "Every account and asset in your name",
-      "Reported against booked jobs, not clicks",
-      "ASP is a Housecall Pro Affiliate"
-    ]
+    "subhead": "Win new customers, keep them on service, and see which channel won each booked job. ASP runs local search, ads, Meta and follow-up as one system."
   },
   "why": {
     "heading": "Recurring service needs recurring lead flow",
@@ -70,23 +65,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "17,606",
-      "label": "Private pest control establishments in the US",
-      "source": "BLS QCEW, 2024"
-    },
-    {
-      "value": "About 12%",
-      "label": "Higher private pest employment, July vs. January 2024",
-      "source": "BLS QCEW, 2024"
-    },
-    {
-      "value": "Apr–Sep",
-      "label": "Peak tick months; exposure possible year-round",
-      "source": "CDC, 2024"
-    }
-  ],
   "process": {
     "heading": "How a pest control engagement starts",
     "steps": [

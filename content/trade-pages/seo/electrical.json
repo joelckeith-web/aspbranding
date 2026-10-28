@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Electrician SEO",
     "h1": "Electrician SEO Services Built to Book Jobs",
-    "subhead": "Compete in the map pack and organic results for the electrical jobs you want more of. ASP builds the pages, profile and technical health, then measures them against booked jobs.",
-    "points": [
-      "Pages for the services you want more of",
-      "No link buying, no link packages",
-      "Calls and booked jobs, not Domain Authority"
-    ]
+    "subhead": "Compete in the map pack and organic results for the electrical jobs you want more of. ASP builds the pages, profile and technical health, then measures them against booked jobs."
   },
   "why": {
     "heading": "Why electrical buyers need more than a homepage",
@@ -65,18 +60,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "61,028",
-      "label": "Private residential electrical contractor establishments nationwide",
-      "source": "BLS QCEW, 2025"
-    },
-    {
-      "value": "12%",
-      "label": "Share of residential building electrical fires in January",
-      "source": "USFA, 2014–16 data (published 2018)"
-    }
-  ],
   "process": {
     "heading": "How electrician SEO work runs",
     "steps": [

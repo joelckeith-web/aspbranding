@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "HVAC marketing",
     "h1": "An HVAC Marketing Agency Measured in Booked Jobs",
-    "subhead": "Keep your crews busy through heat waves, cold snaps and the slow months between. ASP runs your local search, Google Ads, Local Services Ads and Housecall Pro tracking.",
-    "points": [
-      "Housecall Pro Affiliate",
-      "Every account set up in your name",
-      "Reported against booked jobs, not clicks"
-    ]
+    "subhead": "Keep your crews busy through heat waves, cold snaps and the slow months between. ASP runs your local search, Google Ads, Local Services Ads and Housecall Pro tracking."
   },
   "why": {
     "heading": "Built around how heating and cooling demand moves",
@@ -70,18 +65,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "52%",
-      "label": "Avg. US household energy for heating, AC",
-      "source": "EIA RECS, 2020"
-    },
-    {
-      "value": "88%",
-      "label": "US households using air conditioning",
-      "source": "EIA RECS, 2020"
-    }
-  ],
   "process": {
     "heading": "How an HVAC program gets built",
     "steps": [
@@ -191,10 +174,6 @@
         "Google Ads",
         "LSA"
       ]
-    },
-    "caseStudy": {
-      "src": "/images/backgrounds/viking-attic-tech.jpg",
-      "alt": "HVAC technician installing ductwork in an attic"
     },
     "og": "/images/og/industry-hvac.jpg"
   },

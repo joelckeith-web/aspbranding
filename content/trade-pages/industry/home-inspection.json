@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Home Inspection Marketing",
     "h1": "Home Inspection Company Marketing for Multi-Inspector Firms",
-    "subhead": "Win more agent referrals and direct bookings, and see which source fills each inspector's calendar. ASP runs SEO, Local Services Ads, Facebook ads and agent marketing.",
-    "points": [
-      "Built for staffed, multi-inspector companies",
-      "Agent referrals tracked as their own channel",
-      "Multi-location inspection case study below"
-    ]
+    "subhead": "Win more agent referrals and direct bookings, and see which source fills each inspector's calendar. ASP runs SEO, Local Services Ads, Facebook ads and agent marketing."
   },
   "why": {
     "heading": "Win the agent and the homebuyer",
@@ -70,18 +65,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "88%",
-      "label": "of buyers used an agent or broker",
-      "source": "NAR Profile of Home Buyers and Sellers, 2025"
-    },
-    {
-      "value": "92%",
-      "label": "of previously owned home buyers relied on one",
-      "source": "NAR Profile of Home Buyers and Sellers, 2025"
-    }
-  ],
   "process": {
     "heading": "How we start with an inspection company",
     "steps": [

@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Electrician advertising",
     "h1": "Electrician Advertising Tracked to Booked Jobs",
-    "subhead": "Reach homeowners who need an electrician today and buyers planning a charger install. ASP runs Local Services Ads, Google Search and Meta, with accounts in your name.",
-    "points": [
-      "Pay-per-lead Local Services Ads",
-      "One ad group per service",
-      "Ad spend paid straight to Google and Meta"
-    ]
+    "subhead": "Reach homeowners who need an electrician today and buyers planning a charger install. ASP runs Local Services Ads, Google Search and Meta, with accounts in your name."
   },
   "why": {
     "heading": "Why Google treats electrical calls as urgent",
@@ -61,13 +56,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "About 72,700",
-      "label": "Projected electrician openings per year, 2025–2035",
-      "source": "BLS Occupational Outlook Handbook, 2025–35 projections"
-    }
-  ],
   "process": {
     "heading": "How we launch electrician ads",
     "steps": [

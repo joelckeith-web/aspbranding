@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "HVAC advertising",
     "h1": "HVAC PPC and Advertising Judged by Booked Jobs",
-    "subhead": "Get in front of homeowners when the AC quits or the furnace won't start. ASP runs your Google Ads, Local Services Ads and Meta, with budgets that follow the season.",
-    "points": [
-      "Accounts and billing in your name",
-      "Audit before any budget moves",
-      "Every channel judged on cost per booked job"
-    ]
+    "subhead": "Get in front of homeowners when the AC quits or the furnace won't start. ASP runs your Google Ads, Local Services Ads and Meta, with budgets that follow the season."
   },
   "why": {
     "heading": "Paid search that follows the weather",
@@ -64,13 +59,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "40,600",
-      "label": "Projected yearly job openings, HVAC techs",
-      "source": "BLS OOH, 2025–35"
-    }
-  ],
   "process": {
     "heading": "How we run HVAC ad accounts",
     "steps": [
@@ -92,6 +80,7 @@
       }
     ]
   },
+  "caseStudySlug": "hvac-90-days",
   "pricing": {
     "heading": "Packages that include HVAC ad management",
     "subhead": "Paid media management for Google Ads, Meta and LSA is included from Growth up. Ad spend is separate and goes straight to the platforms."

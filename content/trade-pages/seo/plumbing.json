@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Plumbing SEO",
     "h1": "Plumbing SEO Services Measured on Booked Jobs",
-    "subhead": "Get found when a pipe bursts and when a homeowner is pricing a water heater. ASP builds the pages, map pack signals and technical fixes behind both.",
-    "points": [
-      "Service pages for urgent and planned jobs",
-      "Business Profile and map pack managed",
-      "No bought links, no Domain Authority reports"
-    ]
+    "subhead": "Get found when a pipe bursts and when a homeowner is pricing a water heater. ASP builds the pages, map pack signals and technical fixes behind both."
   },
   "why": {
     "heading": "Plumbing searches split into two kinds",
@@ -61,13 +56,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "9%",
-      "label": "Homes with leaks wasting 50+ gallons daily",
-      "source": "EPA WaterSense, retrieved 2026"
-    }
-  ],
   "process": {
     "heading": "How plumbing SEO gets built",
     "steps": [

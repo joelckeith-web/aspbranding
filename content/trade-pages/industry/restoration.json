@@ -9,11 +9,7 @@
   "hero": {
     "eyebrow": "Restoration marketing",
     "h1": "Restoration Marketing for the Moment Damage Hits",
-    "subhead": "When water, fire or mold damage hits, ASP works to make your company easy to find. We use local search, water damage Local Services Ads and storm-timed content.",
-    "points": [
-      "Calls traced to booked restoration jobs",
-      "Every account in your name"
-    ]
+    "subhead": "When water, fire or mold damage hits, ASP works to make your company easy to find. We use local search, water damage Local Services Ads and storm-timed content."
   },
   "why": {
     "heading": "Why restoration marketing runs on urgency",
@@ -64,18 +60,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "343,000",
-      "label": "US residential building fires, 2024 estimate",
-      "source": "USFA, 2024"
-    },
-    {
-      "value": "Sep 10",
-      "label": "Peak day of the Atlantic hurricane season",
-      "source": "NOAA NHC climatology, 1944–2020 data"
-    }
-  ],
   "process": {
     "heading": "How a restoration engagement starts",
     "steps": [

@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Pest control SEO",
     "h1": "Pest Control SEO for Every Pest You Treat",
-    "subhead": "Compete in the map pack and organic results when someone nearby needs termite, rodent or mosquito help. ASP builds the pages, profile and technical health behind it.",
-    "points": [
-      "Page plan built around booked-job value",
-      "No link buying or link packages",
-      "Reported on leads and booked jobs"
-    ]
+    "subhead": "Compete in the map pack and organic results when someone nearby needs termite, rodent or mosquito help. ASP builds the pages, profile and technical health behind it."
   },
   "why": {
     "heading": "Each pest is its own search",
@@ -65,7 +60,6 @@
       }
     ]
   },
-  "stats": [],
   "process": {
     "heading": "How pest control SEO gets built",
     "steps": [

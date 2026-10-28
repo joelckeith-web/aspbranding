@@ -19,12 +19,6 @@ export interface TradeCard {
   href?: string;
 }
 
-export interface TradeStat {
-  value: string;
-  label: string;
-  source: string;
-}
-
 export interface TradePage {
   kind: TradePageKind;
   slug: string;
@@ -33,10 +27,9 @@ export interface TradePage {
   metaTitle: string;
   metaDescription: string;
   dateModified: string;
-  hero: { eyebrow: string; h1: string; subhead: string; points: string[] };
+  hero: { eyebrow: string; h1: string; subhead: string };
   why: { heading: string; intro: string; cards: TradeCard[] };
   services: { heading: string; intro?: string; cards: TradeCard[] };
-  stats?: TradeStat[];
   process: { heading: string; steps: TradeCard[] };
   caseStudySlug?: string;
   pricing: { heading: string; subhead: string };
@@ -52,7 +45,6 @@ export interface TradePage {
     og?: string;
     why?: { src: string; alt: string; chips?: string[] };
     services?: { src: string; alt: string; chips?: string[] };
-    caseStudy?: { src: string; alt: string };
   };
 }
 

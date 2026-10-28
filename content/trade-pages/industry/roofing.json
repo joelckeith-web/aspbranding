@@ -9,11 +9,7 @@
   "hero": {
     "eyebrow": "Roofing marketing",
     "h1": "Roofing Marketing Agency Built for Storm Season",
-    "subhead": "For roofers who want more inspection, repair and replacement jobs on the board. ASP runs search, Local Services Ads and Meta as one system, measured against booked jobs.",
-    "points": [
-      "Every ad account set up in your name",
-      "Results reported against booked jobs, not clicks"
-    ]
+    "subhead": "For roofers who want more inspection, repair and replacement jobs on the board. ASP runs search, Local Services Ads and Meta as one system, measured against booked jobs."
   },
   "why": {
     "heading": "Roofing demand comes in storms and seasons",
@@ -64,18 +60,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "7–9",
-      "label": "Average yearly hail days, NE-CO-WY corner",
-      "source": "NOAA NSSL (retrieved 2026)"
-    },
-    {
-      "value": "At least 2",
-      "label": "Yearly homeowner roof inspections NRCA recommended",
-      "source": "NRCA guidance, 2013"
-    }
-  ],
   "process": {
     "heading": "How a roofing engagement starts",
     "steps": [

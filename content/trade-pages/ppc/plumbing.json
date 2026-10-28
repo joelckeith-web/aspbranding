@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Plumbing advertising",
     "h1": "Plumbing Advertising Judged on Booked Jobs",
-    "subhead": "Paid ads that put your number in front of homeowners with an urgent plumbing problem, plus a separate budget for planned work. ASP manages Local Services Ads, Search and Meta.",
-    "points": [
-      "Pay-per-lead Local Services Ads managed",
-      "Search Ads built one service per group",
-      "Ad accounts in your name"
-    ]
+    "subhead": "Paid ads that put your number in front of homeowners with an urgent plumbing problem, plus a separate budget for planned work. ASP manages Local Services Ads, Search and Meta."
   },
   "why": {
     "heading": "Why urgent and planned plumbing ads need separate budgets",
@@ -62,18 +57,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "About 42,000",
-      "label": "Projected openings per year, plumbers, pipefitters, steamfitters",
-      "source": "BLS OOH, 2025–35 projections"
-    },
-    {
-      "value": "Nearly 1 trillion",
-      "label": "Gallons US household leaks can waste yearly",
-      "source": "EPA WaterSense, retrieved 2026"
-    }
-  ],
   "process": {
     "heading": "How a plumbing ad account gets run",
     "steps": [

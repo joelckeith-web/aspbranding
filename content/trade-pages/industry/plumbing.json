@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Plumbing marketing",
     "h1": "Plumbing Marketing Agency for Emergency and Planned Work",
-    "subhead": "More booked plumbing jobs, from the late-night burst pipe to the planned repipe. ASP runs search, ads and follow-up, then ties leads to jobs where your CRM allows.",
-    "points": [
-      "Emergency calls and planned jobs, budgeted separately",
-      "Housecall Pro Affiliate with attribution setup",
-      "Every ad account set up in your name"
-    ]
+    "subhead": "More booked plumbing jobs, from the late-night burst pipe to the planned repipe. ASP runs search, ads and follow-up, then ties leads to jobs where your CRM allows."
   },
   "why": {
     "heading": "Two kinds of plumbing calls, two different buyers",
@@ -65,13 +60,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "94,274",
-      "label": "Private residential plumbing and HVAC establishments, combined",
-      "source": "BLS QCEW, 2025"
-    }
-  ],
   "process": {
     "heading": "How we start with a plumbing company",
     "steps": [

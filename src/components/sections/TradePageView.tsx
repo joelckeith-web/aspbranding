@@ -6,8 +6,8 @@ import { Hero } from "@/components/sections/Hero";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { PricingCards } from "@/components/sections/PricingCards";
+import { PressStrip } from "@/components/sections/PressStrip";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { CountUp } from "@/components/ui/CountUp";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
 import caseStudies from "@/data/case-studies.json";
 import { type TradePage, getPublishedGuide, tradePageUrl } from "@/lib/trade-pages";
@@ -16,7 +16,7 @@ import "./trade-motion.css";
 const SITE = "https://www.aspbranding.com";
 
 // Literal class names so Tailwind generates them.
-const STAT_COLS: Record<number, string> = { 1: "sm:grid-cols-1", 2: "sm:grid-cols-2 max-w-3xl", 3: "sm:grid-cols-3" };
+const RESULT_COLS: Record<number, string> = { 2: "lg:grid-cols-2", 3: "lg:grid-cols-3", 4: "lg:grid-cols-4", 5: "lg:grid-cols-5" };
 const STEP_COLS: Record<number, string> = { 2: "md:grid-cols-2", 3: "md:grid-cols-3", 4: "md:grid-cols-2 lg:grid-cols-4" };
 
 const SERVICE_TYPE: Record<TradePage["kind"], string> = {
@@ -131,7 +131,7 @@ export function TradePageView({ page }: { page: TradePage }) {
   crumbs.push({ name: page.hero.h1, url });
 
   const proof = page.caseStudySlug
-    ? (caseStudies as { slug: string; industry: string; headline: string; timeframe?: string; results: { label: string; value: string }[] }[]).find(
+    ? (caseStudies as { slug: string; industry: string; headline: string; timeframe?: string; hideOnIndex?: boolean; results: { label: string; value: string }[] }[]).find(
         (c) => c.slug === page.caseStudySlug,
       )
     : undefined;
@@ -165,21 +165,8 @@ export function TradePageView({ page }: { page: TradePage }) {
         size="compact"
       />
 
-      {/* Proof points strip: three equal columns, each centred */}
-      {page.hero.points.length > 0 && (
-        <section className="bg-asp-black text-white">
-          <ul className="mx-auto max-w-7xl px-6 lg:px-8 py-5 grid grid-cols-1 sm:grid-cols-3 sm:divide-x sm:divide-white/15">
-            {page.hero.points.map((pt) => (
-              <li key={pt} className="flex items-center justify-center gap-3 px-4 py-3 text-center">
-                <svg className="h-5 w-5 flex-none text-asp-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                </svg>
-                <span className="font-bold leading-snug text-[15px] lg:whitespace-nowrap">{pt}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {/* Same press + badge strip as the homepage (Joel, 2026-10-28) */}
+      <PressStrip />
 
       {/* Why this trade is different */}
       <section className="py-16 md:py-20 bg-asp-surface-light">
@@ -276,9 +263,9 @@ export function TradePageView({ page }: { page: TradePage }) {
                     {c.href && <span className="mt-5 font-bold text-asp-blue">Learn more →</span>}
                   </>
                 );
-                const cls = "flex flex-col rounded-[var(--radius-asp-xl)] border border-gray-200 p-7 transition";
+                const cls = "flex flex-col rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 shadow-asp-md transition";
                 return c.href ? (
-                  <Link key={c.title} href={c.href} className={`${cls} hover:border-asp-blue hover:shadow-asp-sm`}>
+                  <Link key={c.title} href={c.href} className={`${cls} hover:border-asp-blue hover:shadow-asp-lg`}>
                     {body}
                   </Link>
                 ) : (
@@ -311,24 +298,35 @@ export function TradePageView({ page }: { page: TradePage }) {
         </section>
       )}
 
-      {/* Stat strip */}
-      {page.stats && page.stats.length > 0 && (
-        <section className={`relative overflow-hidden bg-asp-surface-navy text-white ${motion ? "py-20" : "py-14"}`}>
-          {motion && (
-            <div className="bk-ground" aria-hidden>
-              <div className="bk-grid" />
-              <div className="bk-glow bk-spot" />
-              <div className="bk-vignette" />
-            </div>
-          )}
-          <div className={`relative mx-auto max-w-6xl px-6 lg:px-8 grid gap-8 text-center ${STAT_COLS[page.stats.length] ?? "sm:grid-cols-3"}`}>
-            {page.stats.map((s) => (
-              <div key={s.label}>
-                <p className="font-black text-4xl md:text-5xl text-asp-blue-light">{motion ? <CountUp value={s.value} /> : s.value}</p>
-                <p className="mt-2 font-bold">{s.label}</p>
-                <p className="mt-1 text-xs text-white/50">Source: {s.source}</p>
+      {/* Case study: results first, then the client interview (Joel, 2026-10-28) */}
+      {proof && (
+        <section className="py-14 md:py-16 bg-asp-black text-white">
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+            <ScrollReveal>
+              <p className={`font-black uppercase tracking-wide text-sm text-asp-blue-light ${motion ? "bk-eyebrow" : ""}`}>
+                Case study · {proof.industry}
+                {proof.timeframe ? ` · ${proof.timeframe}` : ""}
+              </p>
+              <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">{proof.headline}</h2>
+              <div className={`mt-8 grid gap-6 sm:grid-cols-2 ${RESULT_COLS[proof.results.length] ?? "lg:grid-cols-3"}`}>
+                {proof.results.map((r) => (
+                  <div key={r.label} className="rounded-[var(--radius-asp-xl)] bg-white/5 p-6">
+                    <p className="font-black text-2xl md:text-3xl text-asp-blue-light">{r.value}</p>
+                    <p className="mt-2 text-white/70">{r.label}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+              {!proof.hideOnIndex && (
+                <Link href={`/case-studies#${proof.slug}`} className="mt-8 inline-block font-bold underline underline-offset-4">
+                  Read the full case study
+                </Link>
+              )}
+            </ScrollReveal>
+            {proof.slug === "hvac-services" && (
+              <div className="mx-auto mt-12 max-w-4xl">
+                <VikingInterview dark />
+              </div>
+            )}
           </div>
         </section>
       )}
@@ -358,44 +356,6 @@ export function TradePageView({ page }: { page: TradePage }) {
           </ScrollReveal>
         </div>
       </section>
-
-      {proof && (
-        <section className="py-14 md:py-16 bg-asp-black text-white">
-          <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <ScrollReveal className={media?.caseStudy ? "grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]" : ""}>
-              <div>
-                <p className={`font-black uppercase tracking-wide text-sm text-asp-blue-light ${motion ? "bk-eyebrow" : ""}`}>
-                  Case study · {proof.industry}
-                  {proof.timeframe ? ` · ${proof.timeframe}` : ""}
-                </p>
-                <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight">{proof.headline}</h2>
-                <div className={`mt-8 grid gap-6 sm:grid-cols-2 ${media?.caseStudy ? "" : "lg:grid-cols-3"}`}>
-                  {proof.results.map((r) => (
-                    <div key={r.label} className="rounded-[var(--radius-asp-xl)] bg-white/5 p-6">
-                      <p className="font-black text-3xl text-asp-blue-light">{r.value}</p>
-                      <p className="mt-2 text-white/70">{r.label}</p>
-                    </div>
-                  ))}
-                </div>
-                <Link href="/case-studies" className="mt-8 inline-block font-bold underline underline-offset-4">
-                  Read the full case study
-                </Link>
-              </div>
-              {media?.caseStudy && (
-                <div className="relative aspect-[4/5] overflow-hidden rounded-[var(--radius-asp-xl)]">
-                  <Image src={media.caseStudy.src} alt={media.caseStudy.alt} fill sizes="(min-width: 1024px) 480px, 100vw" className="object-cover" />
-                  <Brackets />
-                </div>
-              )}
-            </ScrollReveal>
-            {proof.slug === "hvac-services" && (
-              <div className="mt-12 max-w-3xl">
-                <VikingInterview dark />
-              </div>
-            )}
-          </div>
-        </section>
-      )}
 
       {/* Package rate card (whole packages only) */}
       <div className="bg-asp-black">

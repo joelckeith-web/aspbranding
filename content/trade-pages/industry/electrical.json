@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Electrical contractors",
     "h1": "Electrician Marketing Built Around Booked Jobs",
-    "subhead": "Bring in residential service calls and commercial bids, then see which channel paid for each one. ASP runs your search, maps, Local Services Ads and tracking.",
-    "points": [
-      "Residential and commercial run as separate services",
-      "Reported against booked jobs, not clicks",
-      "Your accounts, in your name, no exit fees"
-    ]
+    "subhead": "Bring in residential service calls and commercial bids, then see which channel paid for each one. ASP runs your search, maps, Local Services Ads and tracking."
   },
   "why": {
     "heading": "Two kinds of electrical buyer need two kinds of marketing",
@@ -64,18 +59,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "100,285",
-      "label": "Private electrical and wiring contractor establishments, U.S.",
-      "source": "BLS QCEW, 2025"
-    },
-    {
-      "value": "61,028",
-      "label": "Of those, private residential electrical contractors",
-      "source": "BLS QCEW, 2025"
-    }
-  ],
   "process": {
     "heading": "How we start with your electrical shop",
     "steps": [

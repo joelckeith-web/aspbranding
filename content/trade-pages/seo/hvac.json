@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "HVAC SEO",
     "h1": "HVAC SEO Services Built Around Booked Jobs",
-    "subhead": "Show up when homeowners search for AC repair, furnace service or a new system. ASP works on your Business Profile, service pages and site health, and reports against booked jobs.",
-    "points": [
-      "Organic SEO included from Foundation up",
-      "No link buying, no link packages",
-      "Pages and content live on your domain"
-    ]
+    "subhead": "Show up when homeowners search for AC repair, furnace service or a new system. ASP works on your Business Profile, service pages and site health, and reports against booked jobs."
   },
   "why": {
     "heading": "Visibility that keeps working between the peaks",
@@ -65,18 +60,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "11%",
-      "label": "Projected HVAC tech employment growth, 2025–35",
-      "source": "BLS OOH, 2025–35"
-    },
-    {
-      "value": "13%",
-      "label": "US homes heating mainly with a heat pump",
-      "source": "EIA RECS, 2020"
-    }
-  ],
   "process": {
     "heading": "How HVAC SEO work runs",
     "steps": [
@@ -173,10 +156,6 @@
         "SEO",
         "Local SEO"
       ]
-    },
-    "caseStudy": {
-      "src": "/images/backgrounds/viking-attic-tech.jpg",
-      "alt": "HVAC technician installing ductwork in an attic"
     },
     "og": "/images/og/seo-hvac.jpg"
   },

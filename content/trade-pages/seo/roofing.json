@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Roofing SEO",
     "h1": "Roofing SEO Services Planned Around Storm Season",
-    "subhead": "Be the roofer homeowners find when they search for a leak repair, a new roof or hail damage help. ASP builds the pages, profile work and fixes behind it.",
-    "points": [
-      "Page plan built around storm season",
-      "No bought links or link packages",
-      "Reported against booked roof jobs"
-    ]
+    "subhead": "Be the roofer homeowners find when they search for a leak repair, a new roof or hail damage help. ASP builds the pages, profile work and fixes behind it."
   },
   "why": {
     "heading": "Why roofers need SEO before storm season",
@@ -61,13 +56,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "26,626",
-      "label": "Private residential roofing contractor establishments, US",
-      "source": "BLS QCEW, 2025"
-    }
-  ],
   "process": {
     "heading": "From audit to booked roofing jobs",
     "steps": [

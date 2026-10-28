@@ -9,12 +9,7 @@
   "hero": {
     "eyebrow": "Appliance repair marketing",
     "h1": "Appliance Repair Marketing That Keeps Techs Booked",
-    "subhead": "Steady calls for refrigerator, washer, dryer and oven repairs, screened for the work you take. ASP runs your Local Services Ads, Business Profile, search ads and tracking.",
-    "points": [
-      "High-volume lead systems with smart qualification",
-      "Every lead lands in accounts you own",
-      "Booked repairs tracked where your CRM allows"
-    ]
+    "subhead": "Steady calls for refrigerator, washer, dryer and oven repairs, screened for the work you take. ASP runs your Local Services Ads, Business Profile, search ads and tracking."
   },
   "why": {
     "heading": "Built for high volume and lower tickets",
@@ -68,18 +63,6 @@
       }
     ]
   },
-  "stats": [
-    {
-      "value": "6,354",
-      "label": "US private appliance repair establishments",
-      "source": "BLS QCEW, 2025"
-    },
-    {
-      "value": "Fewer than 4",
-      "label": "Avg. employees per US appliance repair establishment",
-      "source": "BLS QCEW, 2025 (derived)"
-    }
-  ],
   "process": {
     "heading": "How we build your appliance lead flow",
     "steps": [
