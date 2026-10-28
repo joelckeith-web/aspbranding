@@ -138,7 +138,6 @@ export default function RootLayout({
                       { "@type": "Offer", name: "Foundation", priceCurrency: "USD", price: "2500" },
                       { "@type": "Offer", name: "Growth", priceCurrency: "USD", price: "3850" },
                       { "@type": "Offer", name: "Local SEO Pro", priceCurrency: "USD", price: "1200" },
-                      { "@type": "Offer", name: "StormFront", priceCurrency: "USD", price: "549" },
                       { "@type": "Offer", name: "Content Creation Package", priceCurrency: "USD", price: "499" },
                       { "@type": "Offer", name: "Podcast Studio", priceCurrency: "USD", price: "497" },
                     ],

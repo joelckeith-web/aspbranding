@@ -28,7 +28,7 @@ schema:
     - question: "How much should a remodeler spend on marketing?"
       answer: "Work back from what a signed project is worth to you rather than starting from a flat monthly number. A high-ticket job can still pay even with a higher cost per lead. Our marketing budget calculator helps with the math, and ad spend is paid directly to the platforms from your own accounts."
     - question: "Do you work with roofing, siding and window companies?"
-      answer: "Yes. Exterior replacement firms run on the same method, with their own product lines and calendars. Each product line gets its own pages, campaigns and tracking to signed jobs. Roofing companies with storm-driven demand can also use StormFront, our weather-triggered content product."
+      answer: "Yes. Exterior replacement firms run on the same method, with their own product lines and calendars. Each product line gets its own pages, campaigns and tracking to signed jobs."
     - question: "Which attribution model should a remodeling firm use?"
       answer: "It depends on size. Between $1 million and $3 million in revenue, compare first-touch and last-touch credit, because the gap shows which channels introduce buyers and which close them. Between $3 million and $10 million, a simple multi-touch model becomes worth the effort. Either way, report signed projects and revenue by channel, not lead counts."
 status: "published"
@@ -90,8 +90,6 @@ JCHS says specialty replacement firms are driving that concentration. Companies 
 
 Crews set the ceiling. In 2023, 64 percent of residential remodelers reported some or serious shortages of skilled trade subcontractors, according to an NAHB survey cited by JCHS. That is why we weight the budget toward the project types your crews and subcontractors can deliver. Meta can also run hiring as its own campaign with its own budget, kept separate from lead generation.
 
-Roofing and other exterior firms with storm-driven demand can add [StormFront](/stormfront), our weather-triggered content product.
-
 **Key Takeaway:** Larger and specialty replacement firms should market each product line as its own system, sized to what crews and subcontractors can deliver.
 
 ## Tracking Signed Projects
@@ -130,7 +128,7 @@ Work back from what a signed project is worth to you rather than starting from a
 
 ### Do you work with roofing, siding and window companies?
 
-Yes. Exterior replacement firms run on the same method, with their own product lines and calendars. Each product line gets its own pages, campaigns and tracking to signed jobs. Roofing companies with storm-driven demand can also use StormFront, our weather-triggered content product.
+Yes. Exterior replacement firms run on the same method, with their own product lines and calendars. Each product line gets its own pages, campaigns and tracking to signed jobs.
 
 ### Which attribution model should a remodeling firm use?
 

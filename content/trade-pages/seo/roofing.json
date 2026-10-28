@@ -43,11 +43,6 @@
         "body": "Repair, replacement, hail damage and wind damage pages built around real search demand. Clusters get built in order of what a booked job is worth to you."
       },
       {
-        "title": "StormFront event posts",
-        "body": "When qualifying weather hits your service area, StormFront publishes location-aware posts to your blog, Business Profile and social, on top of your evergreen storm pages.",
-        "href": "/stormfront"
-      },
-      {
         "title": "Map pack and citations",
         "body": "Local SEO Pro manages your profile, audits citations across 60+ directories on a 90-day cycle and maps your rankings from 50+ grid points monthly.",
         "href": "/local-seo-pro"
@@ -105,7 +100,7 @@
     },
     {
       "question": "Will SEO help me get storm work after a hailstorm?",
-      "answer": "It helps most when the pages already exist. Hail and storm-damage pages indexed before the season are ready when searches spike, and StormFront adds posts when qualifying weather hits your area."
+      "answer": "It helps most when the pages already exist. Hail and storm-damage pages indexed before the season are ready when searches spike."
     },
     {
       "question": "Can I add a Business Profile for each town I serve?",
@@ -150,12 +145,6 @@
       "href": "/local-seo-pro",
       "title": "Local SEO Pro",
       "body": "Business Profile, citations and the monthly ranking heatmap."
-    },
-    {
-      "label": "Product",
-      "href": "/stormfront",
-      "title": "StormFront",
-      "body": "Event posts that publish when qualifying weather hits your area."
     }
   ],
   "media": {

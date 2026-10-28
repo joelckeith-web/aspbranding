@@ -11,7 +11,6 @@ const TIERS = [
       "Monthly performance report",
       "Organic SEO (service pages, content, technical fixes)",
       "Local SEO Pro (GBP, citations, heatmap, rankings)",
-      "StormFront weather-triggered content",
       "Content Creation Package (social + GBP content)",
       "Housecall Pro attribution setup",
     ],
@@ -64,15 +63,6 @@ const ENTRY_PRODUCTS = [
     body: "Full-service GBP management, citation acquisition, local ranking heatmap, review capture automation, monthly ranking report.",
     ctaLabel: "Learn more",
     href: "/local-seo-pro",
-  },
-  {
-    name: "StormFront",
-    price: "$549",
-    period: "/ month",
-    oneLiner: "Weather-triggered content that shows up when your customers are searching.",
-    body: "Fully managed weather-event-triggered blog system. Drafts, publishes, and indexes automatically when storms, heat waves, or seasonal triggers fire in your service area.",
-    ctaLabel: "Learn more",
-    href: "/stormfront",
   },
   {
     name: "Content Creation Package",
@@ -225,7 +215,7 @@ export function PricingCards({
                 </span>
                 <h3 className="font-black text-xl mb-1">Fractional C-Suite</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  For $5M+ operators ready for senior-level marketing leadership — budget ownership, financial planning, channel-level P&amp;L. A deeper engagement than what&apos;s built into Growth or Premier.
+                  For $3M+ operators (most often $5M and up) ready for senior-level marketing leadership — budget ownership, financial planning, channel-level P&amp;L. A deeper engagement than what&apos;s built into Growth or Premier.
                 </p>
               </div>
               <Link
@@ -256,7 +246,7 @@ export function PricingCards({
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {ENTRY_PRODUCTS.map((p) => (
                 <div
                   key={p.name}

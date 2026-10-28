@@ -25,8 +25,6 @@ schema:
       answer: "Google's US category list had no separate fire and smoke or mold-only category as of October 15, 2026, though the water damage category's description does mention mold. For fire and mold work beyond that, Google Search Ads with their own ad groups do the job, and Meta keeps your name familiar between emergencies."
     - question: "How fast does water damage need attention?"
       answer: "To prevent mold growth, EPA advises drying water-damaged areas and items within 24 to 48 hours. That short window gives a homeowner little time to shop around. That is why being easy to find and answering quickly carry so much weight in restoration marketing."
-    - question: "How does StormFront work for restoration companies?"
-      answer: "StormFront is our weather-triggered content system. It watches your service area and publishes timed content when qualifying weather events hit, including water and storm damage events. Your core service pages and Business Profile should be ready first, so the timed posts have somewhere useful to send people."
     - question: "How should a restoration company handle flood insurance questions?"
       answer: "Explain the basics honestly without promising what a policy will pay. FEMA's flood insurance program states that most homeowners insurance does not cover flood damage. A page that says so plainly helps a homeowner understand their situation. It also builds trust with someone who may be hearing it for the first time."
     - question: "Who owns my Business Profile and ad accounts?"
@@ -54,7 +52,7 @@ That makes response part of the marketing. A missed call can send the homeowner 
 
 Some restoration demand follows the calendar. In markets touched by the Atlantic hurricane season, the [official season](https://www.nhc.noaa.gov/climo/) runs June 1 to November 30, with most activity between mid-August and mid-October. On the fire side, the US Fire Administration [estimates 343,000 residential building fires in 2024](https://www.usfa.fema.gov/statistics/), though not every fire leads to restoration work.
 
-Weather-driven demand rewards content that is ready before the event. [StormFront](/stormfront), our weather-triggered content system, publishes timed posts when water or storm damage events hit your service area. Your core service pages should already be live and indexed, so the timed content has somewhere useful to send people.
+Weather-driven demand rewards content that is ready before the event. Your core service pages should already be live and indexed before storm season, so they are ready when searches spike.
 
 Use your own job history to see how much of your work follows storms and how much comes from other causes. Then plan spend around that mix.
 
@@ -127,10 +125,6 @@ Google's US category list had no separate fire and smoke or mold-only category a
 ### How fast does water damage need attention?
 
 To prevent mold growth, EPA advises drying water-damaged areas and items within 24 to 48 hours. That short window gives a homeowner little time to shop around. That is why being easy to find and answering quickly carry so much weight in restoration marketing.
-
-### How does StormFront work for restoration companies?
-
-StormFront is our weather-triggered content system. It watches your service area and publishes timed content when qualifying weather events hit, including water and storm damage events. Your core service pages and Business Profile should be ready first, so the timed posts have somewhere useful to send people.
 
 ### How should a restoration company handle flood insurance questions?
 

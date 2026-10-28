@@ -122,8 +122,6 @@ Without closed-loop attribution, you're optimizing to the wrong number. With it,
 
 PPC is one layer of [the ASP Growth System](/growth-system). It runs alongside SEO, AEO, content, and the Housecall Pro attribution stack, so every paid click becomes a tracked, attributable job — not a cost-per-click report detached from outcomes. You own the ad accounts, the landing pages, the creative, and the attribution data from day one. If we ever part ways, you walk away with a working asset, not a locked account.
 
-Our productized PPC offering is [Stormfront at $549/month](/stormfront) for smaller accounts, with full-scope paid media inside the [Growth System](/pricing) tiers.
-
 ## Conclusion
 
 PPC for home service businesses is not a mystery. The mistakes are consistent, the fixes are documented, and the accounts that get the discipline right out-perform the ones that don't by large margins. Start with a real strategy document, build dedicated landing pages, maintain keyword hygiene, hold yourself to an optimization cadence, and treat mobile as the default — not the edge case.

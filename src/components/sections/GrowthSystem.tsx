@@ -5,7 +5,7 @@ const OUTCOMES = [
   {
     label: "More Leads",
     headline: "Leads your pipeline actually needs.",
-    body: "Local SEO, Google Business Profile, paid media, StormFront weather-triggered content, AEO visibility. Engineered for owner-operators who need predictable lead flow — not vanity traffic.",
+    body: "Local SEO, Google Business Profile, paid media, AEO visibility. Engineered for owner-operators who need predictable lead flow — not vanity traffic.",
     accent: "from-asp-blue-light to-asp-purple",
   },
   {

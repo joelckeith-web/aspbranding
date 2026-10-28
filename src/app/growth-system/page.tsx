@@ -25,10 +25,6 @@ const COMPONENTS = [
     body: "Google Ads, Local Services Ads, Meta. Managed against revenue, not impressions — every dollar tied to a booked job inside your CRM.",
   },
   {
-    title: "StormFront",
-    body: "Weather-triggered content that publishes on the days your phones already ring. Proprietary system built for roofing, HVAC, plumbing, and restoration operators.",
-  },
-  {
     title: "Answer Engine Optimization",
     body: "The content strategy that puts your business in Google's AI answers — AI Overviews and AI Mode — when buyers ask who they should hire.",
   },
@@ -150,7 +146,7 @@ export default function GrowthSystemPage() {
                 {
                   label: "More Leads",
                   headline: "Leads your pipeline actually needs.",
-                  body: "Local SEO, GBP, paid media, StormFront, AEO visibility. Predictable lead flow — not vanity traffic.",
+                  body: "Local SEO, GBP, paid media, AEO visibility. Predictable lead flow — not vanity traffic.",
                 },
                 {
                   label: "Better Operations",
@@ -208,9 +204,8 @@ export default function GrowthSystemPage() {
                 Every component below runs against the same revenue number. Each one is a lever most agencies sell as a separate retainer — we run them as one.
               </p>
               <p className="text-white/60 text-sm">
-                Four of these components are also available as standalone products:{" "}
+                Three of these components are also available as standalone products:{" "}
                 <Link href="/local-seo-pro" className="text-asp-blue-light hover:text-white font-semibold">Local SEO Pro</Link>,{" "}
-                <Link href="/stormfront" className="text-asp-blue-light hover:text-white font-semibold">StormFront</Link>,{" "}
                 <Link href="/content-creation" className="text-asp-blue-light hover:text-white font-semibold">Content Creation Package</Link>, and{" "}
                 <Link href="/ai-integration" className="text-asp-blue-light hover:text-white font-semibold">AI Integration</Link>.
               </p>
@@ -418,7 +413,7 @@ export default function GrowthSystemPage() {
             label: "Leadership",
             href: "/fractional",
             title: "Fractional C-Suite",
-            body: "For $5M–$20M operators ready for senior CFO / CMO / COO leadership. One cohesive team, not disconnected vendors.",
+            body: "For $3M–$20M operators (most often $5M and up) ready for senior CFO / CMO / COO leadership. One cohesive team, not disconnected vendors.",
           },
         ]}
       />

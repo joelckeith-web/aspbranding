@@ -12,7 +12,6 @@
     "subhead": "When water, fire or mold damage hits, ASP works to make your company easy to find. We use local search, water damage Local Services Ads and storm-timed content.",
     "points": [
       "Calls traced to booked restoration jobs",
-      "StormFront content timed to weather events",
       "Every account in your name"
     ]
   },
@@ -26,7 +25,7 @@
       },
       {
         "title": "Some demand follows the weather",
-        "body": "In markets the Atlantic hurricane season reaches, it runs June 1 to November 30. Most activity falls from mid-August to mid-October. StormFront publishes targeted content when qualifying weather events hit."
+        "body": "In markets the Atlantic hurricane season reaches, it runs June 1 to November 30. Most activity falls from mid-August to mid-October."
       },
       {
         "title": "When owners call a pro",
@@ -47,11 +46,6 @@
         "title": "Google Ads and LSA",
         "body": "Water damage services is a Local Services Ads category in the US. As of October 2026, fire, smoke and mold-only work runs on Search Ads, split by service.",
         "href": "/ppc"
-      },
-      {
-        "title": "StormFront content",
-        "body": "Weather-triggered posts drafted, published and indexed when water or storm damage events hit your service area.",
-        "href": "/stormfront"
       },
       {
         "title": "Business Profile and maps",
@@ -110,15 +104,11 @@
   "faqs": [
     {
       "question": "What does a restoration marketing agency do?",
-      "answer": "It gets your restoration company found when water, fire or mold damage happens. It also shows which channels produced booked jobs. ASP runs local search, service pages, Local Services Ads, Search Ads, Meta and StormFront content, with call tracking tied to your CRM."
+      "answer": "It gets your restoration company found when water, fire or mold damage happens. It also shows which channels produced booked jobs. ASP runs local search, service pages, Local Services Ads, Search Ads and Meta, with call tracking tied to your CRM."
     },
     {
       "question": "Can I advertise fire and mold work on Local Services Ads?",
       "answer": "As of October 15, 2026, Google's US list had no separate fire and smoke or mold-only category. The water damage category's description does mention mold. Fire and mold work beyond that runs on Google Search Ads with its own ad groups."
-    },
-    {
-      "question": "How does StormFront help a restoration company?",
-      "answer": "StormFront watches your service area and publishes targeted content when qualifying weather events hit, including water and storm damage events. The content is timed to the spike in search that follows."
     },
     {
       "question": "Who owns my Business Profile and ad accounts?",
@@ -134,12 +124,6 @@
     "body": "Tell us your service area and which jobs you want more of: water, fire or mold. We'll look at your current setup and point out what we would fix first."
   },
   "related": [
-    {
-      "label": "Content",
-      "href": "/stormfront",
-      "title": "StormFront",
-      "body": "Weather-triggered content for water and storm damage events."
-    },
     {
       "label": "Local",
       "href": "/local-seo-pro",

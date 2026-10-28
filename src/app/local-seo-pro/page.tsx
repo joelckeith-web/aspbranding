@@ -260,7 +260,7 @@ export default function LocalSeoProPage() {
                     <span className="text-white/60 text-sm">/ month</span>
                   </div>
                   <p className="text-white/75 leading-relaxed mb-6">
-                    Local SEO Pro <strong>plus</strong> StormFront, the Content Creation Package, HCP attribution setup, and monthly performance reporting. Three productized services plus the reporting layer for $252 more than Local SEO Pro alone.
+                    Local SEO Pro <strong>plus</strong> organic SEO, the Content Creation Package, HCP attribution setup, and monthly performance reporting.
                   </p>
                   <Link
                     href="/contact?topic=foundation"
@@ -288,12 +288,6 @@ export default function LocalSeoProPage() {
 
       <RelatedPages
         items={[
-          {
-            label: "Sibling product",
-            href: "/stormfront",
-            title: "StormFront",
-            body: "A proprietary weather-triggered content system for storm-chasing and weather-driven home service operators.",
-          },
           {
             label: "Sibling product",
             href: "/content-creation",

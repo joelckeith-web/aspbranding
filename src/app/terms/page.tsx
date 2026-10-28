@@ -49,7 +49,7 @@ export default function TermsPage() {
 
           <h2 className="font-black text-2xl text-asp-blue mt-10 mb-4">2. Services</h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            ASP offers digital marketing, operations, and AI-integration services, including but not limited to the Growth System, AI Integration, Local SEO Pro, StormFront, Content Creation Package, Podcast Studio, Fractional C-Suite, and related a-la-carte services. The specific scope, deliverables, pricing, and timeline of any engagement are defined in a separate written agreement (a <em>&ldquo;Scope of Work&rdquo;</em> or <em>&ldquo;Order Form&rdquo;</em>) between ASP and the client.
+            ASP offers digital marketing, operations, and AI-integration services, including but not limited to the Growth System, AI Integration, Local SEO Pro, Content Creation Package, Podcast Studio, Fractional C-Suite, and related a-la-carte services. The specific scope, deliverables, pricing, and timeline of any engagement are defined in a separate written agreement (a <em>&ldquo;Scope of Work&rdquo;</em> or <em>&ldquo;Order Form&rdquo;</em>) between ASP and the client.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             In the event of a conflict between these Terms and a signed Scope of Work, the Scope of Work controls for that engagement.
@@ -60,7 +60,7 @@ export default function TermsPage() {
             ASP operates on an ownership-first model. Unless a Scope of Work states otherwise, clients own all deliverables created specifically for them under an active engagement, including websites, design files, creative assets, content, automations, and data produced on their behalf. ASP does not charge handover or exit fees to transfer these assets at the conclusion of an engagement.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
-            ASP retains ownership of its own methodologies, frameworks, internal tooling, and any generally-reusable technology that is not specifically created for a client. The Site itself — including its copy, design, proprietary systems like StormFront, and all ASP trademarks and branding — remains the exclusive property of ASP.
+            ASP retains ownership of its own methodologies, frameworks, internal tooling, and any generally-reusable technology that is not specifically created for a client. The Site itself — including its copy, design, proprietary systems, and all ASP trademarks and branding — remains the exclusive property of ASP.
           </p>
 
           <h2 className="font-black text-2xl text-asp-blue mt-10 mb-4">4. Client Responsibilities</h2>

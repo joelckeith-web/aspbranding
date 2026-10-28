@@ -114,7 +114,7 @@ The right fit depends on the gap. Operators with strong marketing execution who 
 
 Strategic direction is built into [every Growth System tier](/pricing). Foundation tier includes quarterly direction. Growth tier adds fractional CMO-level strategic oversight integrated with the execution work — paid media, content, attribution. Premier tier includes dedicated leadership and quarterly business reviews tied to revenue planning.
 
-For operators at $5M+ who need more than what's bundled in the tiers — senior marketing leadership with budget ownership and channel P&L — [Fractional C-Suite](/fractional) is the right engagement. The integrated model exists because most home service operators don't want to manage three separate vendors (consultant, agency, fractional CMO). They want one team accountable to one revenue number.
+For operators at $3M+ who need more than what's bundled in the tiers — senior marketing leadership with budget ownership and channel P&L — [Fractional C-Suite](/fractional) is the right engagement. The integrated model exists because most home service operators don't want to manage three separate vendors (consultant, agency, fractional CMO). They want one team accountable to one revenue number.
 
 ## Common questions
 

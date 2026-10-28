@@ -26,7 +26,7 @@ const DEFAULT_FAQS: FAQItem[] = [
   },
   {
     q: "Can I start smaller than Foundation?",
-    a: "Yes. Local SEO Pro ($1,200/mo), StormFront ($549/mo), and the Content Creation Package ($499/mo) are standalone, fully managed offers. Every one includes a quarterly review where we show you what stepping up to Foundation unlocks — but there's zero pressure to upgrade before you're ready.",
+    a: "Yes. Local SEO Pro ($1,200/mo) and the Content Creation Package ($499/mo) are standalone, fully managed offers. Every one includes a quarterly review where we show you what stepping up to Foundation unlocks — but there's zero pressure to upgrade before you're ready.",
   },
   {
     q: "What does Premier actually include?",

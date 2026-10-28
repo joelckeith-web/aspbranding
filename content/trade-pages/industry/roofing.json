@@ -3,15 +3,14 @@
   "slug": "roofing",
   "trade": "Roofing",
   "status": "published",
-  "metaTitle": "Roofing Marketing Agency: Search, LSA and StormFront",
-  "metaDescription": "ASP is a roofing marketing agency for contractors: Google Ads, Local Services Ads, SEO and StormFront storm content, tracked from the call to the booked job.",
+  "metaTitle": "Roofing Marketing Agency: Search, LSA and Meta Ads",
+  "metaDescription": "ASP is a roofing marketing agency for contractors: Google Ads, Local Services Ads, SEO and Meta ads, tracked from the call to the booked job.",
   "dateModified": "2026-10-15",
   "hero": {
     "eyebrow": "Roofing marketing",
     "h1": "Roofing Marketing Agency Built for Storm Season",
-    "subhead": "For roofers who want more inspection, repair and replacement jobs on the board. ASP runs search, Local Services Ads, Meta and StormFront as one system, measured against booked jobs.",
+    "subhead": "For roofers who want more inspection, repair and replacement jobs on the board. ASP runs search, Local Services Ads and Meta as one system, measured against booked jobs.",
     "points": [
-      "Weather-triggered StormFront content for your area",
       "Every ad account set up in your name",
       "Results reported against booked jobs, not clicks"
     ]
@@ -22,7 +21,7 @@
     "cards": [
       {
         "title": "After the hail",
-        "body": "NOAA says hail can damage homes. When qualifying weather hits your area, StormFront posts to your blog, Business Profile and social, with a call to action that fits the storm."
+        "body": "NOAA says hail can damage homes. Hail and storm-damage pages indexed before the season are ready when searches spike."
       },
       {
         "title": "Busy summers, northern winter limits",
@@ -47,11 +46,6 @@
         "title": "Roofing ads and LSA",
         "body": "Google Search Ads for the homeowner who needs a roofer now, and Local Services Ads, where you pay for leads instead of clicks.",
         "href": "/ppc/roofing"
-      },
-      {
-        "title": "StormFront storm content",
-        "body": "Posts our specialists write in your brand voice, published when qualifying weather hits your service area and timed to the spike in search.",
-        "href": "/stormfront"
       },
       {
         "title": "Business Profile and map pack",
@@ -91,7 +85,7 @@
       },
       {
         "title": "Get storm-ready",
-        "body": "Hail, wind and storm-inspection pages should be live and indexed ahead of the season, and StormFront starts watching your service area."
+        "body": "Hail, wind and storm-inspection pages should be live and indexed ahead of the season."
       },
       {
         "title": "Run the channels",
@@ -108,10 +102,6 @@
     "subhead": "Organic SEO is included from Foundation up, and paid media management is included from Growth up. Pick the package that fits how hard you want to push storm season."
   },
   "faqs": [
-    {
-      "question": "Is StormFront only for roofers in hail country?",
-      "answer": "No. StormFront watches for storm events, extreme temperatures, seasonal indicators and drought or flood cycles across your own service area. It fires when qualifying weather hits your market."
-    },
     {
       "question": "Do you only market storm damage work?",
       "answer": "No. Storm work is one part of roofing demand. BLS names replacement, repair and new installation as the work that will create demand for roofers, and each gets its own pages and ads where search demand supports it."
@@ -153,12 +143,6 @@
       "href": "/ppc/roofing",
       "title": "Roofing Advertising",
       "body": "Google Ads, Local Services Ads and Meta, judged by booked roof jobs."
-    },
-    {
-      "label": "Product",
-      "href": "/stormfront",
-      "title": "StormFront",
-      "body": "How weather-triggered content works and what it includes."
     },
     {
       "label": "Ownership",

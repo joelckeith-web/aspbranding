@@ -113,7 +113,6 @@ const TIERS: Record<string, Tier> = {
     body: "You're early in building the real marketing foundation. Foundation gets you on top of local SEO, GBP, and the reporting that proves what's working — plus the HCP attribution layer so every lead is traceable to revenue. Most operators at this stage add the website add-on too.",
     includes: [
       "Local SEO Pro + Google Business Profile",
-      "StormFront weather-triggered content",
       "Content Creation Package",
       "Housecall Pro attribution setup",
       "Monthly performance report",

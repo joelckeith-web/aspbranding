@@ -5,7 +5,7 @@
   "status": "published",
   "metaTitle": "HVAC Marketing Agency for Heating and Cooling Companies",
   "metaDescription": "HVAC marketing built to keep your crews booked through every season: local SEO, Google Ads, LSA and Housecall Pro tracking, measured against booked jobs.",
-  "dateModified": "2026-10-15",
+  "dateModified": "2026-11-02",
   "hero": {
     "eyebrow": "HVAC marketing",
     "h1": "An HVAC Marketing Agency Measured in Booked Jobs",
@@ -54,14 +54,14 @@
         "href": "/local-seo-pro"
       },
       {
+        "title": "Showing up in AI search answers",
+        "body": "Google's AI Overviews and AI Mode build answers from pages it already trusts, and AI assistants read your Business Profile, reviews and listings. We keep both sides accurate and complete, with no promise of a mention.",
+        "href": "/aeo"
+      },
+      {
         "title": "Meta retargeting",
         "body": "Stay in front of homeowners who read your replacement page and left without calling.",
         "href": "/meta-ads"
-      },
-      {
-        "title": "StormFront for weather spikes",
-        "body": "StormFront publishes content when qualifying events like extreme heat or a cold snap hit your service area.",
-        "href": "/stormfront"
       },
       {
         "title": "Housecall Pro attribution",
@@ -106,7 +106,7 @@
   "caseStudySlug": "hvac-services",
   "pricing": {
     "heading": "Packages for HVAC companies",
-    "subhead": "Organic SEO is included from Foundation up. For HVAC companies ready to run Google Ads and LSA through the peaks, paid media management is included from Growth up."
+    "subhead": "Organic SEO is included from Foundation up. For HVAC companies ready to run Google Ads and LSA through the peaks, paid media management is included from Growth up. Ad spend is not part of any ASP fee. You pay it straight to the ad platforms from your own accounts, and the right amount depends on your market. On Foundation, a custom website is an add-on with a one-time setup fee at signup, then included monthly, and Growth includes the build."
   },
   "faqs": [
     {
@@ -134,8 +134,20 @@
       "answer": "Look for reporting on booked jobs, not clicks. Ask whether you will see cost per booked job by channel, whether every account is set up in your name, and whether the plan shifts budget between peak repair season and the shoulder months."
     },
     {
-      "question": "Do you publish HVAC content when extreme weather hits?",
-      "answer": "Yes, through StormFront. It watches your service area and publishes content when qualifying events like extreme heat or a cold snap hit, so a relevant page is live while homeowners look for help."
+      "question": "How long until we see results?",
+      "answer": "It depends on whether your accounts are new or already have history behind them. Google Ads and Local Services Ads reach homeowners while the budget runs and stop when it does. Map and organic placement takes longer to earn, then keeps returning, and how long depends on your domain's history, the technical problems in the way and how competitive your market is. There's no honest fixed timeline, so we don't quote one, and the monthly review shows what moved."
+    },
+    {
+      "question": "How do you help with reviews and our Google Business Profile?",
+      "answer": "Local SEO Pro, included from Foundation up, manages your Business Profile: categories, services, service areas, photos and posts. It also covers citations across 60+ directories, review capture automation and a monthly ranking heatmap from 50+ grid points. You stay the primary owner of the profile and its reviews, and ASP works inside it as a manager you can remove. For review requests, NiceJob is the tool we prefer."
+    },
+    {
+      "question": "Do you help HVAC companies show up in AI search answers?",
+      "answer": "Yes, as part of the SEO work. Google's AI Overviews and AI Mode build answers from pages that are already indexed and trusted, so we write service pages from interviews with you or a senior tech and fix what stops Google from reading your site. For assistants like ChatGPT and Perplexity, we keep your Business Profile, reviews and listings accurate and consistent. Nobody can promise a mention in an AI answer, and we don't."
+    },
+    {
+      "question": "Do you work as an HVAC marketing consultant?",
+      "answer": "Yes, and we also run the work. Growth includes fractional CMO-level marketing direction. For operators doing $3M or more a year (most often $5M and up) who want senior marketing leadership, our Fractional C-Suite page covers a CMO engagement for brand strategy, lead generation, content systems and growth planning, quoted to your growth stage."
     }
   ],
   "cta": {

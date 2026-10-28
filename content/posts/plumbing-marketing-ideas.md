@@ -82,8 +82,6 @@ Leak content speaks to people who already know something is wrong. EPA says the 
 
 Weather stacks sudden spikes on top of normal demand. The National Weather Service's [cold-weather guidance](https://www.weather.gov/safety/cold-before) tells people to take precautions so their water pipes don't freeze. Freeze-prevention and frozen-pipe pages should be published before cold weather arrives, not during the first hard freeze.
 
-Surprise events need a faster response. When a qualifying freeze, flood or heavy-rain event hits your service area, [StormFront](/stormfront), ASP's weather-triggered content system, publishes content tied to that event. The posts come from a library written by our specialists in your brand voice, so a relevant page is up while people are searching.
-
 A hard freeze also tests your phones. Before the cold arrives, decide who answers after hours and how messages get returned, because the extra calls only help if someone picks up. Our [speed to lead guide](/blog/speed-to-lead-home-service-businesses) covers the math on missed calls and weekend coverage.
 
 **Key Takeaway:** Publish freeze content before winter, and settle after-hours phone coverage before the first cold snap.
