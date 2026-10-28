@@ -38,6 +38,10 @@ readingTime: "10 min read"
 
 Wondering which AI SEO advice is worth acting on when you run an HVAC, plumbing or other home service company? Neil Patel's YouTube video [The 5 Rules of AI SEO for 2027](https://www.youtube.com/watch?v=S-AK2ik_fU0) gives five tips for getting a website pulled into AI answers. He says to structure content so AI can pull it, let a human write the final version, stay in your own topic lane, manage what people say about you off your site, and answer the questions only an expert could answer. At ASP, a growth-systems marketing agency for home service operators, we agree with most of that advice, but we see some of the reasons behind it differently.
 
+[![Thumbnail of Neil Patel's YouTube video The 5 Rules of AI SEO for 2027.](/images/blog/neil-patel-ai-seo-rules-video.jpg)](https://www.youtube.com/watch?v=S-AK2ik_fU0)
+
+*Neil Patel's video, [The 5 Rules of AI SEO for 2027](https://www.youtube.com/watch?v=S-AK2ik_fU0), on YouTube. Image: Neil Patel.*
+
 For a local business, we would put his fourth tip first: reviews and what people say about you. Below, we take each tip in turn. We cover what Patel says, where ASP stands, what Google has published and what a home service owner should do. It is the same thinking behind our [answer engine optimization work](/aeo).
 
 ## How Patel's Tips Compare With ASP's View
