@@ -37,12 +37,12 @@ const HVAC_COPY: StrategyCallCopy = {
   casesEyebrow: "HVAC case study",
   casesHeading: "How a regional HVAC company broke past $3M in revenue",
   fitYes: [
-    "You run an HVAC company doing about $750,000 or more a year.",
-    "You have a team of at least 3 people.",
+    "You run an HVAC company doing about $65K or more a month.",
+    "You have a 3-5 person team.",
     "You still run the business hands-on.",
   ],
   fitNo: [
-    "HVAC companies under about $750K a year or with fewer than 3 people.",
+    "HVAC companies under about $65K a month or with fewer than 3 people.",
     "Owners who can't fund ad spend on top of our fee.",
     "Shops that won't keep every job and lead in one field system.",
   ],
