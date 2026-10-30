@@ -337,7 +337,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                 title={copy.video.title}
                 poster={copy.video.poster}
                 duration={copy.video.duration}
-                playAt={{ x: "52%", y: "76%" }}
+                playAt={{ x: "56%", y: "76%" }}
               />
             </div>
           </div>

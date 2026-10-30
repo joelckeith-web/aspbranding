@@ -39,8 +39,8 @@ export function YouTubeFacade({
           aria-label={`Play: ${title} (${duration})`}
         >
           <span className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: playAt.x, top: playAt.y }}>
-            <span className="flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-full bg-asp-purple shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] transition-transform group-hover:scale-105">
-              <svg className="ml-1 h-7 w-7 md:h-8 md:w-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+            <span className="flex h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 items-center justify-center rounded-full bg-asp-purple shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] transition-transform group-hover:scale-105">
+              <svg className="ml-1 h-5 w-5 sm:h-7 sm:w-7 md:h-8 md:w-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
                 <path d="M8 5v14l11-7z" />
               </svg>
             </span>
