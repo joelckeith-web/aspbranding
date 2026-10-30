@@ -40,10 +40,12 @@ export function StrategyCallForm({
   title,
   successHref,
   submitLabel = "Submit and pick a time",
+  consentText = CONSENT_TEXT,
 }: {
   title: string;
   successHref: string;
   submitLabel?: string;
+  consentText?: string;
 }) {
   const [step, setStep] = useState<1 | 2>(1);
   const [revenue, setRevenue] = useState("");
@@ -113,7 +115,7 @@ export function StrategyCallForm({
     if (fbc) payload.fbc = fbc;
 
     payload.marketingConsent = consent ? "Yes" : "No";
-    payload.consentText = CONSENT_TEXT;
+    payload.consentText = consentText;
     payload.consentAt = new Date().toISOString();
 
     if (recaptchaSiteKey && window.grecaptcha?.enterprise) {
@@ -223,7 +225,7 @@ export function StrategyCallForm({
                 className="w-4 h-4 mt-0.5 shrink-0 rounded border-gray-300 accent-asp-blue"
               />
               <span>
-                {CONSENT_TEXT} See our{" "}
+                {consentText} See our{" "}
                 <a href="/privacy-policy" className="underline hover:text-asp-blue">
                   Privacy Policy
                 </a>{" "}

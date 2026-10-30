@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { StrategyCallForm } from "@/components/sections/StrategyCallForm";
-import { TracedLeadsMock } from "@/components/sections/LeadEngineVisuals";
+import { VikingInterview } from "@/components/sections/VikingInterview";
 
 // Short-page A/B variant of /strategy-call/hvac (Joel, 2026-10-30), built to
 // Hormozi's landing page structure: an outcome headline, a one-line subhead,
-// proof as the hero image, the form, three objection bullets, then a little
+// the HVAC client video in the hero, the form, three objection bullets, then a little
 // proof and the legal footer. No guide offer, no exit pop, no review marquee.
 // Same form, pixel event, API and booking flow as the control, so the only
 // variable is the page. Copy reuses the citation-verified HVAC page wording.
@@ -54,8 +54,9 @@ export default function StrategyCallHvacShortPage() {
             }}
           />
         </div>
-        {/* Mobile order: headline, subhead, form, then the proof image.
-            Desktop: promise + proof left, form right. */}
+        {/* Mobile order: headline, subhead, form, then the video.
+            Desktop: promise + video left, form right (Joel, 2026-10-30: the
+            HVAC video in the hero, like acquisition.com; no dashboard here). */}
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 lg:pt-32 lg:pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] gap-x-14 gap-y-6 lg:gap-y-0 items-start">
             <div className="lg:col-start-1 lg:row-start-1">
@@ -74,8 +75,9 @@ export default function StrategyCallHvacShortPage() {
             </div>
             <div id="apply" className="scroll-mt-24 lg:col-start-2 lg:row-start-1 lg:row-span-2">
               <StrategyCallForm
-                title="Apply for a strategy call with Joel"
-                submitLabel="Submit and pick your call time"
+                title="Book a strategy call with Joel"
+                submitLabel="Pick my call time"
+                consentText="Yes, ASP can email me about this strategy call and send marketing updates. I can unsubscribe any time."
                 successHref="/strategy-call/booked"
               />
               <p className="text-white/50 text-sm mt-4 text-center">
@@ -83,13 +85,7 @@ export default function StrategyCallHvacShortPage() {
               </p>
             </div>
             <div className="lg:col-start-1 lg:row-start-2">
-              <TracedLeadsMock
-                src="/images/proof/viking-google-ads-q3-2026.webp"
-                width={1297}
-                height={487}
-                alt="Viking Heating and Air Conditioning's Google Ads in its ASP dashboard, July to September 2026: $11,459.59 spend, 655 clicks, and conversions reported by Google Ads including 63.56 schedule-now clicks, 18 calls from ads, 15 contact forms, 10.6 call-link clicks and 7 Local Services phone leads."
-                caption="Viking Heating and Air Conditioning's Google Ads, July to September 2026: 114 conversions from 655 ad clicks, a 17.4% conversion rate."
-              />
+              <VikingInterview dark />
             </div>
           </div>
         </div>
@@ -132,7 +128,7 @@ export default function StrategyCallHvacShortPage() {
             href="#apply"
             className="inline-block bg-asp-purple text-white font-black tracking-tight py-4 px-10 rounded-[var(--radius-asp-lg)] no-underline text-lg hover:bg-[#8A34F0] transition-colors"
           >
-            Apply for a strategy call with Joel
+            Book a strategy call with Joel
           </a>
         </div>
       </section>
