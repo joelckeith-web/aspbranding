@@ -60,6 +60,21 @@ const HVAC_COPY: StrategyCallCopy = {
         : f,
     ),
   ],
+  // Joel's HVAC strategy-call video (YouTube, unlisted, uploaded 2026-10-30). The
+  // points are lines from the video itself.
+  video: {
+    id: "3lnb2z6PenM",
+    title: "HVAC Owners: Do You Know Which Marketing Made the Phone Ring?",
+    poster: "/images/video/hvac-strategy-call-poster.webp",
+    duration: "2:15",
+    eyebrow: "Watch: 2 minutes with Joel",
+    heading: "See which marketing made the phone ring.",
+    points: [
+      "Call tracking records each call and shows where it came from, like the Google ad or keyword.",
+      "We set up the tracking first, then run the marketing on top of it, every month.",
+      "Every account is in your name: the website, the ad accounts, the data.",
+    ],
+  },
   reviewsNote: "Reviews from ASP clients across industries.",
   // Viking's Google Ads in its ASP dashboard, Jul 1 – Sep 30, 2026 (Joel, 2026-10-26:
   // use an HVAC client's dashboard and the strongest period). 114.16 conversions

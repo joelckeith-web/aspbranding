@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { YouTubeFacade } from "@/components/sections/YouTubeFacade";
 
 // Confirmation page after a strategy call is booked (StrategyCallCalendar
 // sends people here on calendly.event_scheduled). Copy is the reviewed 7FA #26
@@ -10,9 +11,10 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-// Joel's confirmation video (about 70 seconds). Paste the embed URL here once
-// it's recorded; the video block stays hidden until then.
-const CONFIRMATION_VIDEO_EMBED = "";
+// Joel's confirmation video (47 seconds, YouTube unlisted, uploaded 2026-10-30).
+// Not trade-specific, so it serves every landing page's bookings. Only the
+// 16:9 cut is on YouTube so far; the 9:16 cut for phones is still to upload.
+const CONFIRMATION_VIDEO_ID = "FXcWufAgrW0";
 
 const HANDY = [
   "Your yearly revenue",
@@ -61,24 +63,21 @@ export default function StrategyCallConfirmedPage() {
         </div>
       </section>
 
-      {CONFIRMATION_VIDEO_EMBED && (
+      {CONFIRMATION_VIDEO_ID && (
         <section className="pt-12 md:pt-16 bg-asp-surface-light">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="rounded-[var(--radius-asp-xl)] bg-asp-surface-navy overflow-hidden shadow-asp-xl">
-              <div className="aspect-video">
-                <iframe
-                  src={CONFIRMATION_VIDEO_EMBED}
-                  title="Watch this before our call"
-                  className="w-full h-full border-0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+              <YouTubeFacade
+                id={CONFIRMATION_VIDEO_ID}
+                title="Before Our Strategy Call: What to Expect"
+                poster="/images/video/confirmation-poster.webp"
+                duration="0:47"
+              />
               <div className="p-5">
                 <p className="font-black text-white text-lg leading-snug mb-1">Watch this before our call</p>
                 <p className="text-white/60 text-sm leading-relaxed">
                   Joel walks through what the call covers, what to have handy and who to bring along.
-                  It&apos;s just over a minute long.
+                  It&apos;s under a minute long.
                 </p>
               </div>
             </div>

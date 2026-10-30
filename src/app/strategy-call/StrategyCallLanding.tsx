@@ -3,6 +3,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { StrategyCallForm } from "@/components/sections/StrategyCallForm";
 import { TracedLeadsMock } from "@/components/sections/LeadEngineVisuals";
 import { VikingInterview } from "@/components/sections/VikingInterview";
+import { YouTubeFacade } from "@/components/sections/YouTubeFacade";
 import { ExitGuidePop } from "@/components/sections/ExitGuidePop";
 import testimonials from "@/data/testimonials.json";
 import caseStudies from "@/data/case-studies.json";
@@ -36,6 +37,16 @@ export type StrategyCallCopy = {
   dashboardAlt?: string;
   dashboardCaption?: string;
   steps?: { step: string; title: string; body: string }[];
+  // Joel's talking-head video, shown right below the proof numbers.
+  video?: {
+    id: string;
+    title: string;
+    poster: string;
+    duration: string;
+    eyebrow: string;
+    heading: string;
+    points: string[];
+  };
 };
 
 // Tray G. is a law firm; Kevin's quote waits on Joel's sign-off for paid use.
@@ -298,6 +309,39 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* Joel's video (Joel, 2026-10-30: one of the top sections, not the hero).
+          Text left, player right on desktop; stacked on phones. */}
+      {copy.video && (
+        <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
+          <BlueWash />
+          <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div className="lg:col-span-5">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                {copy.video.eyebrow}
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl leading-[1.1] mb-6">{copy.video.heading}</h2>
+              <ul className="space-y-4 list-none p-0 m-0">
+                {copy.video.points.map((pt) => (
+                  <li key={pt} className="flex items-start gap-3">
+                    <Check />
+                    <span className="text-white/80 leading-relaxed">{pt}</span>
+                  </li>
+                ))}
+              </ul>
+              <ApplyCTA align="left" />
+            </div>
+            <div className="lg:col-span-7">
+              <YouTubeFacade
+                id={copy.video.id}
+                title={copy.video.title}
+                poster={copy.video.poster}
+                duration={copy.video.duration}
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Recognition + press: own section; no outbound links on this paid-traffic page */}
       <PressStrip links={false} />
