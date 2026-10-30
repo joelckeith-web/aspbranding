@@ -72,6 +72,7 @@ export default function StrategyCallConfirmedPage() {
                 title="Before Our Strategy Call: What to Expect"
                 poster="/images/video/confirmation-poster.webp"
                 duration="0:47"
+                playAt={{ x: "52%", y: "76%" }}
               />
               <div className="p-5">
                 <p className="font-black text-white text-lg leading-snug mb-1">Watch this before our call</p>
