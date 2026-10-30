@@ -66,7 +66,6 @@ const HVAC_COPY: StrategyCallCopy = {
     id: "3lnb2z6PenM",
     title: "HVAC Owners: Do You Know Which Marketing Made the Phone Ring?",
     poster: "/images/video/hvac-strategy-call-poster.webp",
-    duration: "2:15",
     eyebrow: "Watch: 2 minutes with Joel",
     heading: "See which marketing made the phone ring.",
     points: [

@@ -42,7 +42,6 @@ export type StrategyCallCopy = {
     id: string;
     title: string;
     poster: string;
-    duration: string;
     eyebrow: string;
     heading: string;
     points: string[];
@@ -336,8 +335,6 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                 id={copy.video.id}
                 title={copy.video.title}
                 poster={copy.video.poster}
-                duration={copy.video.duration}
-                playAt={{ x: "56%", y: "76%" }}
               />
             </div>
           </div>
