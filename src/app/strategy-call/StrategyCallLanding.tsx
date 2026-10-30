@@ -263,22 +263,21 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
         </div>
       </section>
 
-      {/* Proof numbers */}
-      <section className="relative py-12 md:py-14 bg-asp-surface-navy text-white overflow-hidden">
-        <BlueWash />
+      {/* Proof numbers (Joel, 2026-10-30: white background, not the blue wash) */}
+      <section className="relative py-12 md:py-14 bg-white overflow-hidden">
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal animation="stagger">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {copy.proof.map((p) => (
                 <div
                   key={p.label}
-                  className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-asp-surface-navy/80 p-6 text-center shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]"
+                  className="rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-6 text-center shadow-[0_12px_32px_-8px_rgba(15,23,42,0.15)]"
                 >
                   <p className="font-black text-3xl lg:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple mb-2">
                     {p.stat}
                   </p>
-                  <p className="text-white font-bold text-sm mb-2">{p.label}</p>
-                  <p className="text-white/50 text-xs leading-relaxed">{p.source}</p>
+                  <p className="text-asp-blue font-bold text-sm mb-2">{p.label}</p>
+                  <p className="text-gray-500 text-xs leading-relaxed">{p.source}</p>
                 </div>
               ))}
             </div>
