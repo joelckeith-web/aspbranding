@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { StrategyCallForm } from "@/components/sections/StrategyCallForm";
-import { VikingInterview } from "@/components/sections/VikingInterview";
+import { YouTubeLite } from "@/components/sections/YouTubeLite";
 
 // Short-page A/B variant of /strategy-call/hvac (Joel, 2026-10-30), built to
 // Hormozi's landing page structure: an outcome headline, a one-line subhead,
-// the HVAC client video in the hero, the form, three objection bullets, then a little
+// Joel's HVAC video in the hero, the form, three objection bullets, then a little
 // proof and the legal footer. No guide offer, no exit pop, no review marquee.
 // Same form, pixel event, API and booking flow as the control, so the only
 // variable is the page. Copy reuses the citation-verified HVAC page wording.
@@ -85,7 +85,11 @@ export default function StrategyCallHvacShortPage() {
               </p>
             </div>
             <div className="lg:col-start-1 lg:row-start-2">
-              <VikingInterview dark />
+              <YouTubeLite
+                id="3lnb2z6PenM"
+                title="HVAC Owners: Do You Know Which Marketing Made the Phone Ring?"
+                duration="2:15"
+              />
             </div>
           </div>
         </div>

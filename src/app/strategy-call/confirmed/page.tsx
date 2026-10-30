@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-// Joel's confirmation video (about 70 seconds). Paste the embed URL here once
-// it's recorded; the video block stays hidden until then.
-const CONFIRMATION_VIDEO_EMBED = "";
+// Joel's confirmation video, "Before Our Strategy Call: What to Expect"
+// (47 seconds, unlisted; Joel, 2026-10-30).
+const CONFIRMATION_VIDEO_EMBED = "https://www.youtube-nocookie.com/embed/FXcWufAgrW0?rel=0&modestbranding=1&cc_load_policy=1&playsinline=1";
 
 const HANDY = [
   "Your yearly revenue",
@@ -78,7 +78,7 @@ export default function StrategyCallConfirmedPage() {
                 <p className="font-black text-white text-lg leading-snug mb-1">Watch this before our call</p>
                 <p className="text-white/60 text-sm leading-relaxed">
                   Joel walks through what the call covers, what to have handy and who to bring along.
-                  It&apos;s just over a minute long.
+                  It&apos;s under a minute long.
                 </p>
               </div>
             </div>
