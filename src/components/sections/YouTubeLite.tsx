@@ -34,19 +34,14 @@ export function YouTubeLite({
           style={{ backgroundImage: `url(https://i.ytimg.com/vi/${id}/maxresdefault.jpg)` }}
           aria-label={`Play: ${title}${duration ? ` (${duration})` : ""}`}
         >
-          <span className="absolute inset-0 bg-gradient-to-t from-asp-black/60 via-transparent to-transparent" />
-          <span className="absolute inset-0 flex items-center justify-center">
-            <span className="flex h-20 w-20 items-center justify-center rounded-full bg-asp-purple shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] transition-transform group-hover:scale-105">
-              <svg className="ml-1 h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </span>
+          {/* Play control sits in the corner, not the centre, so it never covers
+              the text designed into the thumbnail. The whole image is clickable. */}
+          <span className="absolute bottom-4 right-4 flex items-center gap-2 rounded-full bg-asp-purple py-2 pl-3 pr-4 text-sm font-bold text-white shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] transition-transform group-hover:scale-105">
+            <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            {duration ? `Play · ${duration}` : "Play"}
           </span>
-          {duration && (
-            <span className="absolute bottom-4 right-4 rounded-md bg-asp-black/75 px-2 py-1 text-xs font-bold text-white">
-              {duration}
-            </span>
-          )}
         </button>
       )}
     </div>
