@@ -255,32 +255,9 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               <StrategyCallForm title="Apply for a strategy call" successHref="/strategy-call/booked" />
             </div>
             <div className="mt-5 lg:mt-0 lg:col-start-1 lg:row-start-2">
-              <p className="text-white/75 text-lg leading-relaxed mb-8">
+              <p className="text-white/75 text-lg leading-relaxed">
                 {copy.heroSub}
               </p>
-              <ol className="space-y-4 list-none p-0 m-0 mb-8">
-                {[
-                  "Fill out the short application.",
-                  "Pick a time on Joel's calendar.",
-                  "Talk with Joel and see if we're a fit.",
-                ].map((t, i) => (
-                  <li key={t} className="flex items-start gap-4">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-asp-blue-light to-asp-purple font-black text-sm">
-                      {i + 1}
-                    </span>
-                    <span className="text-white/80 leading-relaxed pt-1">{t}</span>
-                  </li>
-                ))}
-              </ol>
-              <p className="text-white/50 text-sm mb-4">
-                A strategy call is a sales conversation with Joel to see if we&apos;re a fit.
-              </p>
-              <a
-                href="#guide"
-                className="text-white font-bold underline underline-offset-4 decoration-asp-blue-light hover:text-asp-blue-light transition-colors"
-              >
-                Not ready yet? Get our free guide
-              </a>
             </div>
           </div>
         </div>
@@ -443,6 +420,24 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
         </div>
       </section>
 
+      {/* Client interview (Joel, 2026-10-26: don't imply ASP has only one HVAC client) */}
+      <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
+                Client interview
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
+                Hear it from one of our clients.
+              </h2>
+            </div>
+            <VikingInterview />
+          </ScrollReveal>
+          <ApplyCTA />
+        </div>
+      </section>
+
       {/* Case studies */}
       <section className="py-14 md:py-16 lg:py-20 bg-white">
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
@@ -491,24 +486,6 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               ))}
             </div>
           </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Client interview (Joel, 2026-10-26: don't imply ASP has only one HVAC client) */}
-      <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center mb-10">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                Client interview
-              </span>
-              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
-                Hear it from one of our clients.
-              </h2>
-            </div>
-            <VikingInterview />
-          </ScrollReveal>
-          <ApplyCTA />
         </div>
       </section>
 
@@ -619,10 +596,22 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
       </section>
 
       {/* Secondary path — the free guide. Deliberately not a co-equal CTA. */}
-      <section id="guide" className="py-14 md:py-16 bg-white border-t border-gray-200 scroll-mt-24">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal>
-            <div className="text-center">
+      <section id="guide" className="py-14 md:py-16 lg:py-20 bg-white border-t border-gray-200 scroll-mt-24 overflow-hidden">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          {/* Print mockup of the real guide: the cover standing, pages 4-5 open beside it (Joel, 2026-10-30) */}
+          <div className="lg:col-span-7">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/guide/frameworks-print-mockup.webp"
+              alt="Printed copies of The 5 Marketing Frameworks for Trades Businesses: one standing with the cover showing, one open to The Lead Source Map"
+              width={1200}
+              height={701}
+              loading="lazy"
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="lg:col-span-5">
+            <ScrollReveal>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
                 Free guide
               </span>
@@ -633,26 +622,24 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                 If you&apos;re not ready to talk yet, get the five frameworks we install, sent straight
                 to your email.
               </p>
-            </div>
-            <ol className="space-y-3 list-none p-0 m-0 mb-8 max-w-xl mx-auto">
-              {FRAMEWORKS.map((f, i) => (
-                <li key={f} className="flex items-start gap-4">
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-asp-blue-light to-asp-purple font-black text-xs text-white">
-                    {i + 1}
-                  </span>
-                  <span className="text-gray-700 leading-relaxed">{f}</span>
-                </li>
-              ))}
-            </ol>
-            <div className="text-center">
+              <ol className="space-y-3 list-none p-0 m-0 mb-8">
+                {FRAMEWORKS.map((f, i) => (
+                  <li key={f} className="flex items-start gap-4">
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-asp-blue-light to-asp-purple font-black text-xs text-white">
+                      {i + 1}
+                    </span>
+                    <span className="text-gray-700 leading-relaxed">{f}</span>
+                  </li>
+                ))}
+              </ol>
               <a
                 href="/frameworks"
                 className="inline-block border-2 border-asp-blue text-asp-blue font-bold py-3 px-8 rounded-[var(--radius-asp-lg)] hover:bg-asp-blue hover:text-white transition-colors no-underline"
               >
                 Send me the guide
               </a>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
