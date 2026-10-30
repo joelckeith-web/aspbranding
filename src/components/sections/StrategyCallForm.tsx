@@ -39,9 +39,11 @@ const CONSENT_TEXT =
 export function StrategyCallForm({
   title,
   successHref,
+  submitLabel = "Submit and pick a time",
 }: {
   title: string;
   successHref: string;
+  submitLabel?: string;
 }) {
   const [step, setStep] = useState<1 | 2>(1);
   const [revenue, setRevenue] = useState("");
@@ -238,7 +240,7 @@ export function StrategyCallForm({
               disabled={formState === "sending"}
               className="w-full bg-gradient-to-r from-asp-blue-light to-asp-purple text-white font-bold py-3.5 px-6 rounded-[var(--radius-asp-md)] hover:opacity-90 transition-all duration-150 disabled:opacity-50"
             >
-              {formState === "sending" ? "Submitting..." : "Submit and pick a time"}
+              {formState === "sending" ? "Submitting..." : submitLabel}
             </button>
             <button
               type="button"
