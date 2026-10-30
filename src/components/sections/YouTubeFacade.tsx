@@ -37,12 +37,24 @@ export function YouTubeFacade({ id, title, poster }: { id: string; title: string
   const command = (func: string, args: unknown[] = []) =>
     frame.current?.contentWindow?.postMessage(JSON.stringify({ event: "command", func, args }), "*");
 
+  // The videos have captions burned in, but YouTube turns its own captions on
+  // for muted autoplay. Unload the captions module once the player is ready.
+  const hideYouTubeCaptions = () => {
+    for (const ms of [500, 1500, 3000]) {
+      setTimeout(() => {
+        command("unloadModule", ["captions"]);
+        command("unloadModule", ["cc"]);
+      }, ms);
+    }
+  };
+
   const startWithSound = () => {
     if (mounted) {
       command("seekTo", [0, true]);
       command("unMute");
       command("setVolume", [100]);
       command("playVideo");
+      hideYouTubeCaptions();
     } else {
       setMounted(true);
     }
@@ -54,7 +66,7 @@ export function YouTubeFacade({ id, title, poster }: { id: string; title: string
   // mounts on their click, so it can start with sound.
   const [src] = useState(
     () =>
-      `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&playsinline=1&rel=0&modestbranding=1&enablejsapi=1`,
+      `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&playsinline=1&rel=0&modestbranding=1&enablejsapi=1&cc_load_policy=0&iv_load_policy=3`,
   );
   const iframeSrc = reduced && withSound ? src : `${src}&mute=1`;
 
@@ -70,6 +82,7 @@ export function YouTubeFacade({ id, title, poster }: { id: string; title: string
           className="absolute inset-0 h-full w-full"
           src={iframeSrc}
           title={title}
+          onLoad={hideYouTubeCaptions}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
