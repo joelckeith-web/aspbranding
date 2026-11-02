@@ -2,6 +2,7 @@ import { FAQSection } from "@/components/sections/FAQSection";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { StrategyCallForm } from "@/components/sections/StrategyCallForm";
 import { TracedLeadsMock } from "@/components/sections/LeadEngineVisuals";
+import { QcInterview } from "@/components/sections/QcInterview";
 import { VikingInterview } from "@/components/sections/VikingInterview";
 import { YouTubeFacade } from "@/components/sections/YouTubeFacade";
 import { ExitGuidePop } from "@/components/sections/ExitGuidePop";
@@ -419,19 +420,22 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
         </div>
       </section>
 
-      {/* Client interview (Joel, 2026-10-26: don't imply ASP has only one HVAC client) */}
+      {/* Client interviews (Joel, 2026-10-26: don't imply ASP has only one HVAC client) */}
       <section className="py-14 md:py-16 lg:py-20 bg-asp-surface-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-10">
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-                Client interview
+                Client interviews
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
-                Hear it from one of our clients.
+                Hear it from our clients.
               </h2>
             </div>
-            <VikingInterview />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <VikingInterview />
+              <QcInterview />
+            </div>
           </ScrollReveal>
           <ApplyCTA />
         </div>
