@@ -33,7 +33,7 @@ schema:
       answer: "No. Google says offering free or discounted goods or services in exchange for reviews is strictly prohibited. The FTC's 2024 rule on fake reviews also bans incentives tied to a review expressing a particular sentiment. Ask every customer instead, using a Google review link or QR code."
     - question: "Do AI Overviews need a separate HVAC SEO strategy?"
       answer: "Google says the best practices for SEO remain relevant for its AI features and that there are no additional requirements to appear in AI Overviews or AI Mode. A page has to be indexed and eligible to show with a snippet. Keeping your Business Profile up to date is also on Google's list."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "7 min read"
 ---
