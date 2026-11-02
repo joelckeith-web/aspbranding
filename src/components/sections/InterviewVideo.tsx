@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 
-// Client interview player. Shows a local poster first and only loads the
-// YouTube player on click, so the page stays fast.
+// Client interview player. Shows the video's YouTube thumbnail first and only
+// loads the YouTube player on click, so the page stays fast. The play button
+// sits in the corner so it never covers the thumbnail (Joel, 2026-11-02).
 export function InterviewVideo({
   youtubeId,
   poster,
@@ -13,8 +14,6 @@ export function InterviewVideo({
   person,
   name,
   caption,
-  playAt = { x: "50%", y: "50%" },
-  scrim = true,
   dark = false,
 }: {
   youtubeId: string;
@@ -25,10 +24,6 @@ export function InterviewVideo({
   person: string;
   name: string;
   caption: string;
-  // Where the play button sits on the poster, so it never covers the poster's headline.
-  playAt?: { x: string; y: string };
-  // Darkens a video-frame poster. Off for designed posters, so their text stays readable.
-  scrim?: boolean;
   dark?: boolean;
 }) {
   const [playing, setPlaying] = useState(false);
@@ -52,18 +47,14 @@ export function InterviewVideo({
             style={{ backgroundImage: `url(${poster})` }}
             aria-label={`Play the interview with ${person} (${spokenDuration})`}
           >
-            {scrim && <span className="absolute inset-0 bg-gradient-to-t from-asp-black/70 via-asp-black/10 to-transparent" />}
-            <span
-              className="absolute -translate-x-1/2 -translate-y-1/2"
-              style={{ left: playAt.x, top: playAt.y }}
-            >
-              <span className="flex h-14 w-14 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-asp-purple shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] transition-transform group-hover:scale-105">
-                <svg className="ml-1 h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+            <span className="absolute bottom-3 right-3 flex items-center gap-2">
+              <span className="rounded-md bg-asp-black/75 px-2 py-1 text-xs font-bold text-white">{duration}</span>
+              <span className="flex h-11 w-11 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-asp-purple shadow-[0_10px_28px_-6px_rgba(159,76,255,0.7)] transition-transform group-hover:scale-105">
+                <svg className="ml-0.5 h-5 w-5 sm:h-6 sm:w-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </span>
             </span>
-            <span className="absolute bottom-4 right-4 rounded-md bg-asp-black/75 px-2 py-1 text-xs font-bold text-white">{duration}</span>
           </button>
         )}
       </div>

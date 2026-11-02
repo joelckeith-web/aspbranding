@@ -7,7 +7,7 @@ export function VikingInterview({ dark = false }: { dark?: boolean }) {
   return (
     <InterviewVideo
       youtubeId="lxEd909lojg"
-      poster="/images/proof/viking-interview-poster.webp"
+      poster="/images/proof/viking-interview-thumb.webp"
       duration="4:38"
       spokenDuration="4 minutes 38 seconds"
       title="Nikki Bridge of Viking Heating and Air Conditioning on working with ASP"
