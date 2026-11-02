@@ -14,6 +14,7 @@ export function InterviewVideo({
   name,
   caption,
   playAt = { x: "50%", y: "50%" },
+  scrim = true,
   dark = false,
 }: {
   youtubeId: string;
@@ -26,6 +27,8 @@ export function InterviewVideo({
   caption: string;
   // Where the play button sits on the poster, so it never covers the poster's headline.
   playAt?: { x: string; y: string };
+  // Darkens a video-frame poster. Off for designed posters, so their text stays readable.
+  scrim?: boolean;
   dark?: boolean;
 }) {
   const [playing, setPlaying] = useState(false);
@@ -49,7 +52,7 @@ export function InterviewVideo({
             style={{ backgroundImage: `url(${poster})` }}
             aria-label={`Play the interview with ${person} (${spokenDuration})`}
           >
-            <span className="absolute inset-0 bg-gradient-to-t from-asp-black/70 via-asp-black/10 to-transparent" />
+            {scrim && <span className="absolute inset-0 bg-gradient-to-t from-asp-black/70 via-asp-black/10 to-transparent" />}
             <span
               className="absolute -translate-x-1/2 -translate-y-1/2"
               style={{ left: playAt.x, top: playAt.y }}

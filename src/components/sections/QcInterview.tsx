@@ -14,6 +14,7 @@ export function QcInterview({ dark = false }: { dark?: boolean }) {
       name="Sean Quy"
       caption=", owner of QC Mechanical in Orting, Washington, on working with ASP."
       playAt={{ x: "54%", y: "60%" }}
+      scrim={false}
       dark={dark}
     />
   );
