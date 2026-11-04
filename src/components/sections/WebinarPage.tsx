@@ -5,12 +5,13 @@ import { fillDate } from "@/lib/webinar";
 import type { WebinarCopy } from "@/app/webinar/copy";
 
 // Live audit workshop page. The ask sits beside the promise above the fold, on
-// a full-bleed photo. No headshots: on ASP's site those stay on the team page.
+// a full-bleed photo. Headshots appear only in the host section (Joel, 2026-11-04).
 
 const withDate = (s: string) => fillDate(s);
 
 const PARTNER_LOGO = "/images/webinar/ai-for-founders.png";
-const ASP_LOGO = "/images/logos/asp-logo.png";
+const JOEL_PHOTO = "/images/webinar/joel-keith.webp";
+const RYAN_PHOTO = "/images/webinar/ryan-estes.webp";
 
 export type WebinarHero = { src: string; alt: string; position?: string };
 
@@ -23,35 +24,50 @@ function HostsBadge() {
   );
 }
 
-function HostCard({
+function HostSection({
   name,
   title,
   role,
   bio,
-  logo,
-  logoAlt,
+  photo,
+  photoAlt,
+  flip,
 }: {
   name: string;
   title: string;
   role: string;
   bio: string;
-  logo: string;
-  logoAlt: string;
+  photo: string;
+  photoAlt: string;
+  flip?: boolean;
 }) {
   return (
-    <ScrollReveal className="h-full">
-      <div className="h-full rounded-[var(--radius-asp-xl)] bg-white/5 ring-1 ring-white/10 p-7 lg:p-9">
-        <div className="flex items-center justify-between gap-4 mb-6">
-          <Image src={logo} alt={logoAlt} width={64} height={64} className="h-16 w-16 rounded-[var(--radius-asp-md)] object-contain" />
-          <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/20">
+    <div
+      className={`grid items-center gap-8 md:gap-14 ${
+        flip ? "md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]" : "md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"
+      }`}
+    >
+      <ScrollReveal className={flip ? "md:order-2" : ""}>
+        <div className="relative mx-auto w-full max-w-sm md:max-w-none overflow-hidden rounded-[var(--radius-asp-xl)] bg-[#0a0a0a] ring-1 ring-white/10 aspect-[4/5]">
+          <Image
+            src={photo}
+            alt={photoAlt}
+            fill
+            sizes="(min-width: 768px) 40vw, 90vw"
+            className="object-cover object-top"
+          />
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent" />
+          <span className="absolute left-5 bottom-5 rounded-full bg-white/10 backdrop-blur px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/20">
             {role}
           </span>
         </div>
-        <h3 className="font-black text-3xl md:text-4xl text-white mb-2 leading-none">{name}</h3>
-        <p className="font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-5">{title}</p>
-        <p className="text-white/70 leading-relaxed">{bio}</p>
-      </div>
-    </ScrollReveal>
+      </ScrollReveal>
+      <ScrollReveal delay={80} className={flip ? "md:order-1" : ""}>
+        <p className="font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">{title}</p>
+        <h3 className="font-black text-4xl md:text-5xl text-white mb-6 leading-none">{name}</h3>
+        <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-xl">{bio}</p>
+      </ScrollReveal>
+    </div>
   );
 }
 
@@ -181,25 +197,26 @@ export function WebinarPage({
       {/* HOSTS — one full section each. */}
       <section className="relative py-16 md:py-24 bg-asp-black text-white overflow-hidden">
         <div className="container mx-auto px-4">
-          <ScrollReveal className="max-w-3xl mx-auto text-center mb-12">
+          <ScrollReveal className="max-w-3xl mx-auto text-center mb-14 md:mb-20">
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl">{copy.hosts.header}</h2>
           </ScrollReveal>
-          <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2">
-            <HostCard
+          <div className="max-w-6xl mx-auto space-y-16 md:space-y-24">
+            <HostSection
               name="Ryan Estes"
               title="AI for Founders"
               role="Host"
               bio={copy.hosts.ryan}
-              logo={PARTNER_LOGO}
-              logoAlt="AI for Founders"
+              photo={RYAN_PHOTO}
+              photoAlt="Ryan Estes of AI for Founders"
             />
-            <HostCard
+            <HostSection
               name="Joel Keith"
               title="CEO, ASP"
               role="Guest"
               bio={copy.hosts.joel}
-              logo={ASP_LOGO}
-              logoAlt="ASP"
+              photo={JOEL_PHOTO}
+              photoAlt="Joel Keith, CEO at ASP"
+              flip
             />
           </div>
         </div>
