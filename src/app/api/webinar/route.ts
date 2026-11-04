@@ -86,6 +86,13 @@ export async function POST(request: Request) {
     }
 
     const testLead = isTestLead(email);
+
+    // Launch gate: the page and email promise a date and a Zoom link, so real
+    // sign-ups stay closed until both are set in src/lib/webinar.ts.
+    if (!testLead && (!WEBINAR.dateLabel || !WEBINAR.zoomUrl)) {
+      return NextResponse.json({ error: "Sign-ups open soon. Please check back." }, { status: 503 });
+    }
+
     const review = testLead
       ? { classification: "prospect", errored: false, reason: "test lead" }
       : await reviewSubmission({
@@ -117,7 +124,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           error:
-            "We couldn't send your confirmation just now. Please try again, or email info@aspbranding.com and we'll register you.",
+            "We couldn't send your confirmation just now. Please try again, or email info@aspbranding.com.",
         },
         { status: 502 },
       );
