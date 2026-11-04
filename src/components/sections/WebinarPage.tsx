@@ -1,101 +1,64 @@
 import Image from "next/image";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { WebinarForm } from "@/components/sections/WebinarForm";
-import { fillDate, type WebinarTopic } from "@/lib/webinar";
+import { fillDate } from "@/lib/webinar";
 import type { WebinarCopy } from "@/app/webinar/copy";
 
-// Shared layout for both webinar topic variants. The ask sits beside the
-// promise above the fold, on a full-bleed photo; each host then gets a full
-// section with a large portrait, so the page sells the people as much as the
-// topic.
+// Live audit workshop page. The ask sits beside the promise above the fold, on
+// a full-bleed photo. No headshots: on ASP's site those stay on the team page.
 
 const withDate = (s: string) => fillDate(s);
 
-const JOEL_PHOTO = "/images/webinar/joel-keith.webp";
-// Placeholder from Ryan's public media kit (media.kitcaster.com/ryan-estes)
-// until he sends an approved photo. Swap the file, nothing else.
-const RYAN_PHOTO = "/images/webinar/ryan-estes-placeholder.webp";
+const PARTNER_LOGO = "/images/webinar/ai-for-founders.png";
+const ASP_LOGO = "/images/logos/asp-logo.png";
 
 export type WebinarHero = { src: string; alt: string; position?: string };
 
 function HostsBadge() {
   return (
-    <div className="flex items-center gap-3">
-      <div className="flex -space-x-3">
-        {[JOEL_PHOTO, RYAN_PHOTO].map((src, i) => (
-          <Image
-            key={src}
-            src={src}
-            alt=""
-            width={48}
-            height={48}
-            className={`h-12 w-12 rounded-full object-cover ring-2 ring-asp-black ${
-              i === 1 ? "object-[50%_45%] scale-110" : "object-top"
-            }`}
-          />
-        ))}
-      </div>
-      <p className="text-sm text-white/70 leading-snug">
-        Hosted by <span className="font-bold text-white">Joel Keith</span>
-        <br className="sm:hidden" /> and <span className="font-bold text-white">Ryan Estes</span>
-      </p>
-    </div>
+    <p className="text-sm text-white/70 leading-snug">
+      Hosted by <span className="font-bold text-white">Ryan Estes</span>
+      <br className="sm:hidden" /> with guest <span className="font-bold text-white">Joel Keith</span>
+    </p>
   );
 }
 
-function HostSection({
+function HostCard({
   name,
   title,
   role,
   bio,
-  photo,
-  photoAlt,
-  flip,
+  logo,
+  logoAlt,
 }: {
   name: string;
   title: string;
   role: string;
   bio: string;
-  photo: string;
-  photoAlt: string;
-  flip?: boolean;
+  logo: string;
+  logoAlt: string;
 }) {
   return (
-    <div
-      className={`grid items-center gap-8 md:gap-14 ${
-        flip ? "md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]" : "md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"
-      }`}
-    >
-      <ScrollReveal className={flip ? "md:order-2" : ""}>
-        <div className="relative mx-auto w-full max-w-sm md:max-w-none overflow-hidden rounded-[var(--radius-asp-xl)] bg-[#0a0a0a] ring-1 ring-white/10 aspect-[4/5]">
-          <Image
-            src={photo}
-            alt={photoAlt}
-            fill
-            sizes="(min-width: 768px) 40vw, 90vw"
-            className="object-cover object-top"
-          />
-          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 to-transparent" />
-          <span className="absolute left-5 bottom-5 rounded-full bg-white/10 backdrop-blur px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/20">
+    <ScrollReveal className="h-full">
+      <div className="h-full rounded-[var(--radius-asp-xl)] bg-white/5 ring-1 ring-white/10 p-7 lg:p-9">
+        <div className="flex items-center justify-between gap-4 mb-6">
+          <Image src={logo} alt={logoAlt} width={64} height={64} className="h-16 w-16 rounded-[var(--radius-asp-md)] object-contain" />
+          <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white ring-1 ring-white/20">
             {role}
           </span>
         </div>
-      </ScrollReveal>
-      <ScrollReveal delay={80} className={flip ? "md:order-1" : ""}>
-        <p className="font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">{title}</p>
-        <h3 className="font-black text-4xl md:text-5xl text-white mb-6 leading-none">{name}</h3>
-        <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-xl">{bio}</p>
-      </ScrollReveal>
-    </div>
+        <h3 className="font-black text-3xl md:text-4xl text-white mb-2 leading-none">{name}</h3>
+        <p className="font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-5">{title}</p>
+        <p className="text-white/70 leading-relaxed">{bio}</p>
+      </div>
+    </ScrollReveal>
   );
 }
 
 export function WebinarPage({
-  topic,
   copy,
   hero,
 }: {
-  topic: WebinarTopic;
   copy: WebinarCopy;
   hero: WebinarHero;
 }) {
@@ -119,13 +82,22 @@ export function WebinarPage({
         <div className="container mx-auto px-4 py-14 md:py-20 lg:py-28">
           <div className="grid lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] gap-10 lg:gap-14 items-center max-w-7xl mx-auto">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full bg-white/10 ring-1 ring-white/15 px-3 py-1 font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-6">
-                <span className="relative flex h-2 w-2" aria-hidden="true">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-asp-blue-light opacity-60" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-asp-blue-light" />
+              <div className="flex items-center gap-3 mb-6">
+                <Image
+                  src={PARTNER_LOGO}
+                  alt="AI for Founders"
+                  width={56}
+                  height={56}
+                  className="h-14 w-14 shrink-0 rounded-[var(--radius-asp-md)] ring-1 ring-white/15"
+                />
+                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 ring-1 ring-white/15 px-3 py-1 font-bold text-xs uppercase tracking-widest text-asp-blue-light">
+                  <span className="relative flex h-2 w-2 shrink-0" aria-hidden="true">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-asp-blue-light opacity-60" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-asp-blue-light" />
+                  </span>
+                  {copy.hero.eyebrow}
                 </span>
-                {copy.hero.eyebrow}
-              </span>
+              </div>
               <h1 className="font-black text-4xl md:text-6xl 2xl:text-7xl leading-[1.02] mb-6 max-w-3xl">
                 {copy.hero.h1}
               </h1>
@@ -144,7 +116,6 @@ export function WebinarPage({
             </div>
             <div id="register" className="scroll-mt-6">
               <WebinarForm
-                topic={topic}
                 heading={copy.form.heading}
                 subtext={copy.form.subtext}
                 submitLabel={copy.form.submitLabel}
@@ -154,13 +125,10 @@ export function WebinarPage({
         </div>
       </section>
 
-      {/* AGENDA */}
+      {/* WHAT YOU GET */}
       <section className="relative py-16 md:py-20 lg:py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-4">
           <ScrollReveal className="max-w-3xl mx-auto text-center mb-12">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              The agenda
-            </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
               {copy.learn.header}
             </h2>
@@ -168,7 +136,7 @@ export function WebinarPage({
           <div className="max-w-5xl mx-auto grid gap-5 md:grid-cols-2">
             {copy.learn.items.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 60}>
-                <div className="group h-full rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 lg:p-8 shadow-asp-sm transition-all hover:-translate-y-0.5 hover:shadow-asp-md">
+                <div className="h-full rounded-[var(--radius-asp-xl)] border border-gray-200 bg-white p-7 lg:p-8 shadow-asp-sm">
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-asp-gradient-cta font-black text-white text-sm mb-5">
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -181,19 +149,31 @@ export function WebinarPage({
         </div>
       </section>
 
+      {/* RUN OF SHOW */}
+      <section className="relative py-16 md:py-20 bg-asp-black text-white overflow-hidden">
+        <div className="container mx-auto px-4">
+          <ScrollReveal className="max-w-3xl mx-auto text-center mb-10">
+            <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl">{copy.show.header}</h2>
+          </ScrollReveal>
+          <ol className="max-w-3xl mx-auto divide-y divide-white/10 border-y border-white/10">
+            {copy.show.rows.map((row) => (
+              <li key={row.time} className="grid gap-1 py-5 md:grid-cols-[10rem_1fr] md:gap-6">
+                <span className="font-bold text-sm text-asp-blue-light">{row.time}</span>
+                <span className="text-white/80 leading-relaxed">{row.body}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {/* WHO IT IS FOR — filter, never diagnose. */}
       <section className="relative py-14 md:py-16 bg-gray-50 overflow-hidden">
         <div className="container mx-auto px-4">
-          <ScrollReveal className="max-w-4xl mx-auto grid md:grid-cols-[auto_1fr] gap-6 md:gap-10 items-center">
-            <span className="font-bold text-xs uppercase tracking-widest text-asp-purple md:[writing-mode:vertical-rl] md:rotate-180">
-              Who this is for
-            </span>
-            <div>
-              <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-3 leading-tight">
-                {copy.who.header}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">{copy.who.body}</p>
-            </div>
+          <ScrollReveal className="max-w-3xl mx-auto text-center">
+            <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-3 leading-tight">
+              {copy.who.header}
+            </h2>
+            <p className="text-gray-600 leading-relaxed">{copy.who.body}</p>
           </ScrollReveal>
         </div>
       </section>
@@ -201,29 +181,25 @@ export function WebinarPage({
       {/* HOSTS — one full section each. */}
       <section className="relative py-16 md:py-24 bg-asp-black text-white overflow-hidden">
         <div className="container mx-auto px-4">
-          <ScrollReveal className="max-w-3xl mx-auto text-center mb-14 md:mb-20">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Your hosts
-            </span>
+          <ScrollReveal className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl">{copy.hosts.header}</h2>
           </ScrollReveal>
-          <div className="max-w-6xl mx-auto space-y-16 md:space-y-24">
-            <HostSection
-              name="Joel Keith"
-              title="CEO and Managing Partner, ASP"
-              role="Presenting"
-              bio={copy.hosts.joel}
-              photo={JOEL_PHOTO}
-              photoAlt="Joel Keith, CEO and Managing Partner at ASP"
-            />
-            <HostSection
+          <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2">
+            <HostCard
               name="Ryan Estes"
-              title="Inbox Alchemy"
-              role="Speaking and running the Q&A"
+              title="AI for Founders"
+              role="Host"
               bio={copy.hosts.ryan}
-              photo={RYAN_PHOTO}
-              photoAlt="Ryan Estes of Inbox Alchemy"
-              flip
+              logo={PARTNER_LOGO}
+              logoAlt="AI for Founders"
+            />
+            <HostCard
+              name="Joel Keith"
+              title="CEO, ASP"
+              role="Guest"
+              bio={copy.hosts.joel}
+              logo={ASP_LOGO}
+              logoAlt="ASP"
             />
           </div>
         </div>

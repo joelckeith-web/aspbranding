@@ -6,7 +6,7 @@ import { reviewSubmission } from "@/lib/ai-spam-review";
 import { appendRow } from "@/lib/sheets";
 import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 import { isTestLead } from "@/lib/test-lead";
-import { WEBINAR, WEBINAR_TOPICS, REVENUE_RANGES, fillDate, type WebinarTopic } from "@/lib/webinar";
+import { WEBINAR, WEBINAR_NAME, REVENUE_RANGES, fillDate } from "@/lib/webinar";
 import { WEBINAR_COPY } from "@/app/webinar/copy";
 
 // Registration handler for the live webinar. Same defense stack as
@@ -54,7 +54,6 @@ export async function POST(request: Request) {
       formTime,
       fax,
     } = body;
-    const topic: WebinarTopic = body.topic === "ai-search" ? "ai-search" : "numbers";
 
     if (typeof fax === "string" && fax.length > 0) {
       console.log("[webinar] honeypot tripped:", { email, fax });
@@ -93,7 +92,7 @@ export async function POST(request: Request) {
         name,
         email,
         company: websiteUrl,
-        service: `webinar-${topic}`,
+        service: "webinar-live-audits",
         message: `Website: ${websiteUrl} · Revenue: ${revenueRange} · Phone: ${phone || "not given"}`,
       });
     if (review.classification === "vendor") {
@@ -102,7 +101,7 @@ export async function POST(request: Request) {
     }
 
     // --- Confirmation email. This is the promise made on the page. ---
-    const mail = WEBINAR_COPY[topic].confirmationEmail;
+    const mail = WEBINAR_COPY.confirmationEmail;
     const paragraphs = fillTokens(mail.body)
       .split(/\n{2,}/)
       .map((p) => `<p>${esc(p).replace(/\n/g, "<br/>")}</p>`)
@@ -141,7 +140,7 @@ export async function POST(request: Request) {
       ),
       user: { email, phone, firstName, lastName: rest.join(" ") || undefined },
       test: testLead,
-      customData: { content_name: `Webinar: ${WEBINAR_TOPICS[topic]}` },
+      customData: { content_name: `Webinar: ${WEBINAR_NAME}` },
     });
     console.log("[webinar] meta capi:", metaStatus);
 
@@ -150,10 +149,10 @@ export async function POST(request: Request) {
       .join("");
     const notify = await sendMail({
       to: "info@aspbranding.com",
-      subject: `${testLead ? "[TEST] " : ""}Webinar registration (${WEBINAR_TOPICS[topic]}): ${name} — ${revenueRange}`,
+      subject: `${testLead ? "[TEST] " : ""}Webinar registration (${WEBINAR_NAME}): ${name} — ${revenueRange}`,
       replyTo: email,
       html: `
-        <h2>New webinar registration — ${esc(WEBINAR_TOPICS[topic])}</h2>
+        <h2>New webinar registration: ${esc(WEBINAR_NAME)}</h2>
         <p><strong>Name:</strong> ${esc(name)}</p>
         <p><strong>Email:</strong> ${esc(email)}</p>
         <p><strong>Phone:</strong> ${esc(phone || "Not given")}</p>
@@ -172,7 +171,7 @@ export async function POST(request: Request) {
     if (sheetId) {
       const queued = await appendRow(sheetId, "Registrations!A:K", [
         new Date().toISOString().replace("T", " ").slice(0, 16),
-        WEBINAR_TOPICS[topic],
+        WEBINAR_NAME,
         name,
         email,
         websiteUrl,

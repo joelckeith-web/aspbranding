@@ -1,6 +1,6 @@
 "use client";
 
-// Registration form for the live webinar (both topic variants).
+// Registration form for the live audit workshop.
 //
 // Fields: name, email, business website, revenue range, optional phone. The
 // revenue range is the one qualifier — under-$500K registrants are welcome on
@@ -12,7 +12,7 @@
 import { useEffect, useRef, useState } from "react";
 import { metaCookies, newEventId } from "@/lib/meta-browser";
 import { isTestLead } from "@/lib/test-lead";
-import { REVENUE_RANGES, WEBINAR_TOPICS, type WebinarTopic } from "@/lib/webinar";
+import { REVENUE_RANGES, WEBINAR_NAME } from "@/lib/webinar";
 
 const RECAPTCHA_ACTION = "webinar_register";
 
@@ -31,15 +31,13 @@ const inputClass =
 
 // Byte-identical to the wording rendered above the button.
 const CONSENT_TEXT =
-  "Yes, ASP can email me about the webinar and send marketing updates. I can unsubscribe any time.";
+  "Yes, ASP can email me about the workshop and send marketing updates. I can unsubscribe any time.";
 
 export function WebinarForm({
-  topic,
   heading,
   subtext,
   submitLabel,
 }: {
-  topic: WebinarTopic;
   heading: string;
   subtext: string;
   submitLabel: string;
@@ -85,7 +83,6 @@ export function WebinarForm({
     const payload: Record<string, string | number> = Object.fromEntries(
       Array.from(data.entries()).map(([k, v]) => [k, String(v)])
     );
-    payload.topic = topic;
 
     const metaEventId = newEventId("reg");
     payload.metaEventId = metaEventId;
@@ -138,12 +135,12 @@ export function WebinarForm({
           window.fbq?.(
             "track",
             "CompleteRegistration",
-            { content_name: `Webinar: ${WEBINAR_TOPICS[topic]}` },
+            { content_name: `Webinar: ${WEBINAR_NAME}` },
             { eventID: metaEventId },
           );
           window.gtag?.("event", "sign_up", {
             method: "webinar",
-            event_label: WEBINAR_TOPICS[topic],
+            event_label: WEBINAR_NAME,
           });
         }
         setFormState("success");
