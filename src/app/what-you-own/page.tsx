@@ -300,7 +300,41 @@ const REASONS = [
   },
 ];
 
+const LEAVING = [
+  {
+    label: "What we do when you leave",
+    intro: "Within 14 days of your notice:",
+    items: [
+      "We hand over any logins we hold and confirm every account is in your name.",
+      "We send you your content and creative files.",
+      "We remove our own access, so only you and the people you choose can get in.",
+      "We don't charge a fee for any of it.",
+    ],
+  },
+  {
+    label: "What stops",
+    intro: "The monthly work stops, because that's the part you were paying us to do:",
+    items: [
+      "Ads: we stop managing your campaigns. They keep running and billing your card until you pause them, because the accounts are yours.",
+      "Search: new pages, technical fixes and content stop.",
+      "Google Business Profile: posts, updates and review responses stop.",
+      "Reporting: we stop maintaining your dashboards and tracking, and stop reporting results against booked jobs.",
+      "Support: we're no longer the people you call when something breaks.",
+    ],
+  },
+];
+
 const FAQS = [
+  {
+    question: "If I cancel ASP, do my ads stop too?",
+    answer:
+      "No. Your ad accounts are in your name and billed to your card, so campaigns keep running until you pause them. We stop managing them when the engagement ends, so decide before your last day whether to pause them, run them yourself or hand them to someone else.",
+  },
+  {
+    question: "How long does the handover take?",
+    answer:
+      "Within 14 days of your notice. Most accounts are in your name from day one, so there's little to transfer. We hand over the logins we hold, send your files and remove our access, with no fees.",
+  },
   {
     question: "Do I own my website if ASP builds it?",
     answer:
@@ -564,6 +598,66 @@ export default function WhatYouOwnPage() {
           <p className="mt-6 text-center text-black/60">
             We spell out that line plainly so there is no confusion about where it sits.
           </p>
+        </div>
+      </section>
+
+      {/* If you ever leave */}
+      <section className="relative overflow-hidden py-16 md:py-20 bg-asp-surface-light border-t border-gray-200">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{ background: "radial-gradient(ellipse 45% 55% at 15% 20%, rgba(76, 201, 240, 0.10), transparent 70%)" }}
+        />
+        <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
+          <ScrollReveal>
+            <div className="max-w-3xl">
+              <p className="font-black uppercase tracking-wide text-sm text-asp-blue">If you ever leave</p>
+              <h2 className="mt-3 font-black text-3xl md:text-4xl leading-tight text-asp-black">
+                Leaving shouldn&rsquo;t mean starting over.
+              </h2>
+              <p className="mt-5 text-lg text-black/70 leading-relaxed">
+                Plenty of owners find out what their last agency really controlled on the day they tried to leave.
+                Here&rsquo;s exactly what happens if you leave ASP, so you know before you sign. Everything on the
+                &ldquo;What you own&rdquo; list above stays with you, with no handover or exit fees.
+              </p>
+            </div>
+          </ScrollReveal>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {LEAVING.map((col) => (
+              <ScrollReveal key={col.label}>
+                <div className="h-full rounded-[var(--radius-asp-2xl)] border border-gray-200 bg-white p-7 shadow-asp-sm lg:p-9">
+                  <p className="font-bold text-xs uppercase tracking-widest text-asp-blue">{col.label}</p>
+                  <p className="mt-4 text-lg text-black/75 leading-relaxed">{col.intro}</p>
+                  <ul className="mt-5 space-y-3">
+                    {col.items.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-black/75 leading-relaxed">
+                        <span aria-hidden="true" className="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-asp-blue-light" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+          <ScrollReveal>
+            <div className="mt-6 rounded-[var(--radius-asp-2xl)] border-2 border-asp-blue bg-asp-blue/[0.03] p-7 lg:p-9">
+              <p className="font-bold text-xs uppercase tracking-widest text-asp-blue">What to expect after</p>
+              <p className="mt-4 text-lg text-black/75 leading-relaxed">
+                Your rankings and lead flow won&rsquo;t disappear the day you leave. The work we did stays on your
+                site and in your accounts. But competitors keep working and Google keeps changing, so without someone
+                running it every month, results usually slip over time. You can run it yourself, hire someone else, or
+                come back. Either way, you start from everything we built, not from zero.
+              </p>
+              <p className="mt-4 text-black/60">
+                The exact ownership terms are in section 3 of our{" "}
+                <Link href="/terms" className="font-semibold text-asp-blue underline decoration-asp-blue-light/60 underline-offset-4 hover:decoration-asp-blue">
+                  terms of service
+                </Link>
+                .
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
