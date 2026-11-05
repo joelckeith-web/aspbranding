@@ -339,34 +339,22 @@ export default function FrameworksPage() {
         </div>
       </section>
 
-      {/* WHO WROTE IT — approved bio with Joel's current public title (CEO).
-          The headshot is Joel's explicit call for this page (2026-11-05). */}
+      {/* AUTHOR — approved bio with Joel's current public title (CEO).
+          The headshot is Joel's explicit call for this page (2026-11-05). The
+          text centers on the section; the headshot stands on the bottom edge. */}
       <section className="relative overflow-hidden bg-gradient-to-b md:bg-gradient-to-r from-asp-surface-navy via-asp-blue to-asp-purple text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-6 md:gap-8 items-end">
-          <ScrollReveal className="md:col-span-7 lg:col-span-8 pt-14 md:py-16 lg:py-20">
-            <span className={`${EYEBROW} text-asp-blue-light mb-4`}>Who wrote it</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-8 md:gap-10 items-center">
+          <ScrollReveal className="md:col-span-7 lg:col-span-8 pt-14 md:py-12">
+            <span className={`${EYEBROW} text-asp-blue-light mb-4`}>Author:</span>
             <h2 className="font-black text-3xl md:text-4xl mb-4">Joel Keith, CEO, ASP</h2>
-            <p className="text-white/85 text-lg leading-relaxed mb-8">
+            <p className="text-white/85 text-lg leading-relaxed m-0">
               Joel Keith is the CEO of ASP, a growth-systems marketing agency for home service
               operators. He is a marketing operator who has spent years inside home service
               companies, building and refining the systems ASP now runs for clients. ASP is an
               Official Housecall Pro Affiliate Partner.
             </p>
-            {/* White tile: the mark's dark band and blue ring get lost directly
-                on this gradient. Sized so "Certified" and "Affiliate" read. */}
-            <div className="inline-block rounded-2xl bg-white p-2 shadow-asp-lg">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/badges/hcp-affiliate.png"
-                alt="Certified Housecall Pro Affiliate"
-                width={160}
-                height={160}
-                className="w-36 h-36 md:w-40 md:h-40"
-                loading="lazy"
-              />
-            </div>
           </ScrollReveal>
-          <div className="md:col-span-5 lg:col-span-4">
+          <div className="md:col-span-5 lg:col-span-4 self-end md:pt-12">
             {/* Cropped where the shoulders reach the image edges (y~820 of 1344);
                 any lower and the shirt ends in a hard vertical cut on both sides. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -376,7 +364,7 @@ export default function FrameworksPage() {
               width={900}
               height={820}
               loading="lazy"
-              className="block w-[78%] md:w-full max-w-[420px] h-auto aspect-[900/820] object-cover object-top mx-auto md:ml-auto md:mr-0"
+              className="block w-[78%] md:w-full max-w-[360px] h-auto aspect-[900/820] object-cover object-top mx-auto"
             />
           </div>
         </div>
