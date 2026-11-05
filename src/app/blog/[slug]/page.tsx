@@ -153,41 +153,6 @@ export default async function BlogPostPage({
       <section className="bg-asp-gradient-hero text-white pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(76,201,240,0.06)_0%,transparent_60%)] pointer-events-none" />
         <div className="max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 text-sm text-white/60">
-              <li>
-                <Link
-                  href="/"
-                  className="hover:text-white transition-colors no-underline text-white/60"
-                >
-                  Home
-                </Link>
-              </li>
-              <li aria-hidden="true">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="hover:text-white transition-colors no-underline text-white/60"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li aria-hidden="true">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </li>
-              <li className="text-white/90 truncate max-w-xs">
-                {frontmatter.title}
-              </li>
-            </ol>
-          </nav>
-
           {/* Category badge, date, reading time, author */}
           <div className="flex flex-wrap items-center gap-4 mb-6">
             <span
@@ -207,17 +172,19 @@ export default async function BlogPostPage({
             <span className="text-sm text-white/60">
               By {frontmatter.author.name}
             </span>
-            <PreferredSourceLink
-              domain="aspbranding.com"
-              label="Add ASP as a preferred source on Google"
-              className="text-sm text-white/60 underline underline-offset-2 hover:text-white"
-            />
           </div>
 
           {/* H1 Title */}
           <h1 className="font-black text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl">
             {frontmatter.title}
           </h1>
+
+          <PreferredSourceLink
+            domain="aspbranding.com"
+            label="Add ASP as a preferred source on Google"
+            pill
+            className="mt-8"
+          />
         </div>
       </section>
 
