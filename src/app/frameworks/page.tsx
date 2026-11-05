@@ -340,11 +340,10 @@ export default function FrameworksPage() {
       </section>
 
       {/* AUTHOR — approved bio with Joel's current public title (CEO).
-          The headshot is Joel's explicit call for this page (2026-11-05). The
-          text centers on the section; the headshot stands on the bottom edge. */}
-      <section className="relative overflow-hidden bg-gradient-to-b md:bg-gradient-to-r from-asp-surface-navy via-asp-blue to-asp-purple text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-8 md:gap-10 items-center">
-          <ScrollReveal className="md:col-span-7 lg:col-span-8 pt-14 md:py-12">
+          The headshot is Joel's explicit call for this page (2026-11-05). */}
+      <section className="relative overflow-hidden py-14 md:py-16 bg-gradient-to-b md:bg-gradient-to-r from-asp-surface-navy via-asp-blue to-asp-purple text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-10 items-center">
+          <ScrollReveal className="md:col-span-7 lg:col-span-8">
             <span className={`${EYEBROW} text-asp-blue-light mb-4`}>Author:</span>
             <h2 className="font-black text-3xl md:text-4xl mb-4">Joel Keith, CEO, ASP</h2>
             <p className="text-white/85 text-lg leading-relaxed m-0">
@@ -354,18 +353,21 @@ export default function FrameworksPage() {
               Official Housecall Pro Affiliate Partner.
             </p>
           </ScrollReveal>
-          <div className="md:col-span-5 lg:col-span-4 self-end md:pt-12">
-            {/* Cropped where the shoulders reach the image edges (y~820 of 1344);
-                any lower and the shirt ends in a hard vertical cut on both sides. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/team/joel-cutout.webp"
-              alt="Joel Keith, CEO of ASP"
-              width={900}
-              height={820}
-              loading="lazy"
-              className="block w-[78%] md:w-full max-w-[360px] h-auto aspect-[900/820] object-cover object-top mx-auto"
-            />
+          <div className="md:col-span-5 lg:col-span-4">
+            {/* Framed like the strategy call page: the shoulders run to the image
+                edge, so the frame has to be what cuts them off. Unframed, the
+                shirt ends in a hard vertical line on both sides. */}
+            <div className="mx-auto w-[80%] md:w-full max-w-[340px] pt-5 rounded-[var(--radius-asp-2xl)] overflow-hidden bg-gradient-to-br from-asp-blue-light via-asp-blue to-asp-surface-navy ring-1 ring-white/20 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/team/joel-cutout.webp"
+                alt="Joel Keith, CEO of ASP"
+                width={900}
+                height={1100}
+                loading="lazy"
+                className="block w-full h-auto aspect-[900/1100] object-cover object-top"
+              />
+            </div>
           </div>
         </div>
       </section>
