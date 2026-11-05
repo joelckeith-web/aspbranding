@@ -9,7 +9,8 @@ Claude often can't open a live Google Business Profile, so take screenshots of y
 Here are screenshots of the live Google Business Profile for [business]. Using only what they show, list the category, services, hours, review count and rating, how recent the newest reviews are, owner replies, photos, and call and booking links. Mark anything you can't see as NOT VERIFIED. Add it to the audit.
 
 ----------------------------------------------------------------
-THE THREE AI QUESTIONS (ask in ChatGPT, Gemini, Perplexity and Google)
+THE THREE AI QUESTIONS
+Ask questions 1 and 2 in ChatGPT, Gemini, Perplexity and Google's AI Mode. Question 3 goes into Claude.
 
 Use a temporary or logged-out chat, and ask each one more than once.
 
@@ -23,7 +24,7 @@ Who are the best [trade] companies in [town, state]? Who would you call, and why
 
 [Your customer's urgent problem, such as "My AC stopped working"] in [town, state]. Which company should I call?
 
-Tip: build these from the way people actually search for your trade. Take your trade's biggest "near me" searches, such as "ac repair near me" or "kitchen remodel near me", and put your town in place of "near me."
+Tip: build these from the way people search for your trade. Take your trade's biggest "near me" searches, such as "ac repair near me" or "kitchen remodel near me", and put your town in place of "near me."
 
 3. Who is AI reading? Paste the links you copied into Claude with this:
 

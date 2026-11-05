@@ -26,9 +26,18 @@ BEFORE YOU START
 - Ask ChatGPT, Gemini and Perplexity in a temporary or logged-out chat, so your history doesn't shape the answer.
 - Run each question more than once. AI answers change from run to run, so look for the pattern.
 - Check what comes back. Claude makes mistakes and can fill in details on its own, so open the links it gives you before you act on anything.
+- If Claude stops partway through the audit, type "keep going."
 - Nobody can guarantee your business a spot in an AI answer.
+
+CHECK YOUR SITE ON YOUR PHONE
+
+The audit leaves this part to you, because Claude can't see how your site looks in your hand.
+- Can someone tell what you do, where, and how to call in five seconds?
+- Is the call button easy to tap?
+- Is there one clear next step?
+- Run PageSpeed Insights and the Rich Results Test (links in 3-free-tools.txt).
 
 WANT IT DONE FOR YOU?
 
-Book a strategy call with Joel Keith at ASP: https://aspbranding.com/strategy-call
+Book a strategy call with Joel Keith at ASP: https://www.aspbranding.com/strategy-call
 More workshops from AI for Founders: https://aiforfounders.co

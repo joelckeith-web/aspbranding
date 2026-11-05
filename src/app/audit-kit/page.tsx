@@ -33,18 +33,18 @@ const CONTENTS: { n: string; title: string; body: string }[] = [
   },
   {
     n: "03",
-    title: "The same audit as a Claude Code command",
-    body: "If you use Claude Code, drop it into your commands folder and run the audit with one slash command.",
-  },
-  {
-    n: "04",
     title: "The free tools list",
     body: "Every free tool we used, with links, from PageSpeed Insights to Apple Business Connect.",
   },
   {
-    n: "05",
+    n: "04",
     title: "Your next 30 days",
     body: "The four-week plan from the end of the workshop. None of it needs a big budget.",
+  },
+  {
+    n: "05",
+    title: "The same audit as a Claude Code command",
+    body: "If you use Claude Code, drop it into your commands folder and run the audit with one slash command.",
   },
 ];
 

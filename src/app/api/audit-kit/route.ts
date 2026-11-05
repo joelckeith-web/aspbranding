@@ -123,7 +123,7 @@ export async function POST(request: Request) {
         <p>Start with the README. The one-file audit is the first file: fill in your business details,
            paste it into Claude with web search on, and it works through every step.</p>
         <p>If you'd rather we ran it for you, you can book a strategy call at
-           <a href="https://aspbranding.com/strategy-call">aspbranding.com/strategy-call</a>.</p>
+           <a href="https://www.aspbranding.com/strategy-call">aspbranding.com/strategy-call</a>.</p>
         <p>Joel Keith<br/>ASP</p>
         <p style="color:#888;font-size:12px">
           Direct link if the button doesn't work: <a href="${url}">${url}</a>

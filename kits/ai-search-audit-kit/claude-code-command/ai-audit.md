@@ -3,11 +3,11 @@ description: Audit how a local business shows up on Google and in AI answers
 argument-hint: business name, trade, town and state, website, main phone
 ---
 
-You're auditing how one local business shows up on Google and in AI answers. Work through every step below in order, without stopping to ask me, and give me one report at the end.
+You're auditing how one local business shows up on Google and in AI answers.
 
 Business details: $ARGUMENTS
 
-If any of these are missing from the details (business name, trade, town and state, website, main phone), ask me for them once before you start.
+If any of these are missing from the details (business name, trade, town and state, website, main phone), ask me for them once before you start. Once you have them, work through every step below in order without stopping to ask me, and give me one report at the end.
 
 Rules for every step: Use only what you can open, and give the URL for each finding. If you can't open or confirm something, write NOT VERIFIED and never guess or fill the gap from memory. If information comes from a site other than the business's own, such as Yelp, Birdeye or BBB, label it secondhand. Say when something is your judgment. Don't judge how the site looks on a phone; I'll check that myself. Before you write the report, go back over each finding and check it against the page you cited.
 

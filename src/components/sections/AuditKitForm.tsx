@@ -39,7 +39,7 @@ const inputClass =
 // Byte-identical to the wording rendered above the button — storing only
 // "Yes" proves nothing later; what they agreed to is the record.
 const CONSENT_TEXT =
-  "Yes, ASP can email me the kit and send marketing updates. I can unsubscribe any time.";
+  "Yes, ASP can send me marketing updates. I can unsubscribe any time.";
 
 export function AuditKitForm() {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");

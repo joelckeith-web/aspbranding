@@ -1,7 +1,7 @@
 AI SEARCH AUDIT: ONE FILE
-Fill in the five details in brackets, then paste everything below the line into a new Claude chat with web search on. If you have screenshots of your Google Business Profile, attach them to the same message.
+Fill in the five details in brackets next to Business, Trade, Town, Website and Main phone. Leave the brackets in the steps; Claude fills those in. Then paste everything below the line into a new Claude chat with web search on. If you have screenshots of your Google Business Profile, attach them to the same message.
 
-A full audit can take anywhere from 20 minutes to an hour and a half, depending on how big the business is.
+A full audit can take anywhere from 20 minutes to an hour and a half, depending on how big the business is. If Claude stops partway, type "keep going."
 
 ----------------------------------------------------------------
 
