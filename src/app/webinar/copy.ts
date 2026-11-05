@@ -26,7 +26,7 @@ export const WEBINAR_COPY: WebinarCopy = {
     eyebrow: "Free live workshop from AI for Founders with ASP",
     h1: "When a customer asks AI who to call, does it name you?",
     subhead:
-      "Joel Keith audits real Google Business Profiles and websites live, using the AI tool Claude. Ryan Estes hosts, and attendees get a prompt pack, a tools list and a 30-day plan.",
+      "Joel Keith audits real Google Business Profiles and websites live, using the AI tool Claude. Ryan Estes hosts, and attendees can download the audit prompt and a tools list.",
     dateLine: "Live on Zoom on {{DATE}}. 60 minutes. Free.",
   },
   learn: {
@@ -45,8 +45,8 @@ export const WEBINAR_COPY: WebinarCopy = {
         body: "AI is the focus, but Joel and Ryan also cover the basics: answer fast, know what books jobs, price for profit and own your audience.",
       },
       {
-        title: "The folder of everything we use",
-        body: "Attendees can download the audit file, the prompts, a tools list and a 30-day plan at the end.",
+        title: "The audit prompt, free to download",
+        body: "At the end, attendees can download one prompt that runs the audit and writes a 30-day plan, plus a tools list.",
       },
     ],
   },
@@ -93,7 +93,7 @@ export const WEBINAR_COPY: WebinarCopy = {
   ],
   finalCta: {
     header: "See what AI says about a real business, live",
-    body: "Join us live on Zoom on {{DATE}}. Watch the audits, ask your question in the chat and download the folder of everything we use.",
+    body: "Join us live on Zoom on {{DATE}}. Watch the audits, ask your question in the chat and download the audit prompt.",
     button: "Sign up free",
   },
   form: {
@@ -103,6 +103,6 @@ export const WEBINAR_COPY: WebinarCopy = {
   },
   confirmationEmail: {
     subject: "You're in: your Zoom link for the live AI audits",
-    body: "You are signed up for our free live workshop. We will audit real Google Business Profiles and websites, live with Claude, and look at the answers from AI tools.\n\nWhen: {{DATE}} (live, 60 minutes)\nJoin on Zoom: {{ZOOM_LINK}}\n\nRyan Estes hosts. I run the audits. At the end, you can download the folder of everything we use: the audit file, the prompts, a tools list and a 30-day plan.\n\nBring your questions. Ryan takes them from the chat near the end.\n\nSee you there.\n\nJoel Keith, ASP",
+    body: "You are signed up for our free live workshop. We will audit real Google Business Profiles and websites, live with Claude, and look at the answers from AI tools.\n\nWhen: {{DATE}} (live, 60 minutes)\nJoin on Zoom: {{ZOOM_LINK}}\n\nRyan Estes hosts. I run the audits. At the end, you can download the audit prompt we use, which runs the audit and writes a 30-day plan, plus a tools list.\n\nBring your questions. Ryan takes them from the chat near the end.\n\nSee you there.\n\nJoel Keith, ASP",
   },
 };

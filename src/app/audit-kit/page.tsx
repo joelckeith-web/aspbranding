@@ -14,44 +14,33 @@ import { AuditKitForm } from "@/components/sections/AuditKitForm";
 export const metadata: Metadata = {
   title: "AI Search Audit Kit — Free Download | ASP",
   description:
-    "The folder from the AI for Founders x ASP live audit workshop: the one-file Claude audit, every prompt from the show, the free tools list and a 30-day plan.",
+    "From the AI for Founders x ASP live audit workshop: one Claude prompt that audits your business and writes a 30-day plan, plus the free tools list.",
   robots: { index: false, follow: false },
 };
 
 const CONTENTS: { n: string; title: string; body: string }[] = [
   {
     n: "01",
-    title: "The one-file audit",
+    title: "One prompt that runs everything",
     body:
-      "Fill in your business details, paste it into Claude with web search on, and it works through all seven steps in order. A full audit can take anywhere from 20 minutes to an hour and a half.",
+      "Fill in your business details, paste it into Claude with web search on, and it runs the audit step by step, then writes a 30-day plan for your business. There's nothing to paste in between.",
   },
   {
     n: "02",
-    title: "Every prompt from the show",
-    body:
-      "The Google profile screenshot prompt, the three questions we asked AI, and two prompts to use every week: review replies and customer questions.",
-  },
-  {
-    n: "03",
     title: "The free tools list",
     body: "Every free tool we used, with links, from PageSpeed Insights to Apple Business Connect.",
   },
   {
-    n: "04",
-    title: "Your next 30 days",
-    body: "The four-week plan from the end of the workshop. None of it needs a big budget.",
-  },
-  {
-    n: "05",
-    title: "The same audit as a Claude Code command",
-    body: "If you use Claude Code, drop it into your commands folder and run the audit with one slash command.",
+    n: "03",
+    title: "The same prompt as a Claude Code command",
+    body: "If you use Claude Code, drop it into your commands folder and run the whole thing with one slash command.",
   },
 ];
 
 const STEPS: { title: string; body: string }[] = [
   { title: "Open the README", body: "It explains what each file is for and the order to use them in." },
   {
-    title: "Run the one-file audit",
+    title: "Run the prompt",
     body: "Paste it into a new Claude chat with web search on. Attach screenshots of your Google profile if you have them.",
   },
   {
@@ -76,8 +65,8 @@ export default function AuditKitPage() {
                 Run the same AI search audit on your own business.
               </h1>
               <p className="text-lg text-white/70 leading-relaxed">
-                Everything we used in the workshop is in one folder: the audit file, every prompt, the
-                free tools and a 30-day plan.
+                One prompt that audits your business and writes a 30-day plan, plus the free tools we
+                used in the workshop.
               </p>
             </div>
 
@@ -96,7 +85,7 @@ export default function AuditKitPage() {
               What&apos;s inside
             </span>
             <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl text-asp-blue">
-              Five files, and a README that ties them together.
+              Three files, and a README that explains them.
             </h2>
           </ScrollReveal>
 

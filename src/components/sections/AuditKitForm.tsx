@@ -1,7 +1,9 @@
 "use client";
 
 // Gate form for the AI Search Audit Kit (the folder promised at the end of the
-// AI for Founders x ASP workshop). Same fields and defenses as FrameworksForm.
+// AI for Founders x ASP workshop). Same defenses as FrameworksForm. Joel
+// 2026-11-05: no business website field; this is for anyone who joined, and
+// the email is what we keep for audience targeting.
 // Joel 2026-11-05: people fill in their info and download it right there, so
 // the success screen carries the download button; the API also emails a copy.
 import { useEffect, useRef, useState } from "react";
@@ -206,17 +208,7 @@ export function AuditKitForm() {
             <input type="text" name="name" placeholder="Full Name *" required className={inputClass} />
             <input type="email" name="email" placeholder="Email Address *" required className={inputClass} />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input
-              type="text"
-              name="websiteUrl"
-              inputMode="url"
-              placeholder="Business Website *"
-              required
-              className={inputClass}
-            />
-            <input type="tel" name="phone" placeholder="Phone (optional)" className={inputClass} />
-          </div>
+          <input type="tel" name="phone" placeholder="Phone (optional)" className={inputClass} />
 
           {/* Honeypot — hidden from humans, tempting to bots. */}
           <input

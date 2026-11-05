@@ -49,7 +49,6 @@ export async function POST(request: Request) {
       name,
       email,
       phone,
-      websiteUrl,
       marketingConsent,
       consentText,
       consentAt,
@@ -64,7 +63,7 @@ export async function POST(request: Request) {
       console.log("[audit-kit] honeypot tripped:", { email, fax });
       flagged = "honeypot field filled";
     }
-    const spam = checkSpam({ name, company: websiteUrl, message: websiteUrl });
+    const spam = checkSpam({ name, company: "", message: String(email ?? "") });
     if (spam.isSpam) {
       console.log("[audit-kit] spam filter matched:", { email, matched: spam.matched });
       flagged = flagged || `keyword filter: ${spam.matched}`;
@@ -77,9 +76,9 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!name || !email || !websiteUrl) {
+    if (!name || !email) {
       return NextResponse.json(
-        { error: "Name, email and business website are required." },
+        { error: "Name and email are required." },
         { status: 400 },
       );
     }
@@ -95,9 +94,9 @@ export async function POST(request: Request) {
       : await reviewSubmission({
         name,
         email,
-        company: websiteUrl,
+        company: "",
         service: "ai-search-audit-kit",
-        message: `Website: ${websiteUrl} · Phone: ${phone || "not given"}`,
+        message: `Webinar kit download · Phone: ${phone || "not given"}`,
       });
     if (review.classification === "vendor") {
       console.log("[audit-kit] AI flagged as vendor:", { email, reason: review.reason });
@@ -120,8 +119,9 @@ export async function POST(request: Request) {
               style="display:inline-block;padding:12px 22px;border-radius:10px;
                      background:#2E7DFF;color:#ffffff;font-weight:600;
                      text-decoration:none">Download the AI Search Audit Kit</a></p>
-        <p>Start with the README. The one-file audit is the first file: fill in your business details,
-           paste it into Claude with web search on, and it works through every step.</p>
+        <p>Start with the README. The first file is one prompt that runs everything: fill in your business
+           details, paste it into Claude with web search on, and it runs the audit, then writes a 30-day
+           plan for your business.</p>
         <p>If you'd rather we ran it for you, you can book a strategy call at
            <a href="https://www.aspbranding.com/strategy-call">aspbranding.com/strategy-call</a>.</p>
         <p>Joel Keith<br/>ASP</p>
@@ -158,7 +158,7 @@ export async function POST(request: Request) {
       .join("");
     const notify = await sendMail({
       to: "info@aspbranding.com",
-      subject: `${testLead ? "[TEST] " : ""}${flagged ? "[FLAGGED] " : ""}Audit kit download: ${name} — ${websiteUrl}`,
+      subject: `${testLead ? "[TEST] " : ""}${flagged ? "[FLAGGED] " : ""}Audit kit download: ${name}`,
       replyTo: email,
       html: `
         <h2>New AI Search Audit Kit download</h2>
@@ -166,7 +166,6 @@ export async function POST(request: Request) {
         <p><strong>Name:</strong> ${esc(name)}</p>
         <p><strong>Email:</strong> ${esc(email)}</p>
         <p><strong>Phone:</strong> ${esc(phone || "Not given")}</p>
-        <p><strong>Website:</strong> ${esc(websiteUrl)}</p>
         <p><strong>Copy email sent:</strong> ${delivery.ok ? "Yes" : `No (${esc(delivery.reason)})`}</p>
         <hr />
         <p><strong>Marketing consent:</strong> ${esc(marketingConsent || "Not recorded")} — ${esc(consentText || "")} (${esc(consentAt || "")})</p>
@@ -179,11 +178,10 @@ export async function POST(request: Request) {
     // Download list. Best-effort; set AUDIT_KIT_SHEET_ID (tab "Downloads").
     const sheetId = process.env.AUDIT_KIT_SHEET_ID;
     if (sheetId) {
-      const queued = await appendRow(sheetId, "Downloads!A:J", [
+      const queued = await appendRow(sheetId, "Downloads!A:I", [
         new Date().toISOString().replace("T", " ").slice(0, 16),
         name,
         email,
-        websiteUrl,
         phone || "",
         marketingConsent || "",
         typeof body.utm_source === "string" ? body.utm_source : "",
