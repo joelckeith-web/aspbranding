@@ -11,9 +11,11 @@ import { FAQAccordion } from "@/components/sections/FAQAccordion";
 // itself front and center, the same one call to action repeated down the page.
 // It does not sell the install and does not carry client revenue figures.
 //
-// Hero and closing bands stay plain WHITE: the print mockup is a dark navy book
-// with a baked-in shadow, so it disappears on dark sections and shows a clipped
-// shadow edge on tinted ones.
+// Layout (Joel 2026-11-05): less white, the guide doing the selling. Two book
+// renders he picked: standing + open in the hero (needs the glow behind it, the
+// book is dark navy), open flat + standing at the close (its soft shadow only
+// reads on a light section). Generated from the real PDF pages, so re-render
+// if the guide is revised. Do not swap them for each other.
 //
 // Copy rules from docs/joel-voice-profile.md:
 //   - One statement per section header. Never two sentences stacked.
@@ -30,46 +32,52 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const FRAMEWORKS: { n: string; title: string; body: string }[] = [
+const FRAMEWORKS: { n: string; title: string; body: string; page: number }[] = [
   {
     n: "01",
     title: "The Lead Source Map",
     body:
       "How to label every lead with the channel that produced it — Google Search, Google Business Profile, paid ads, social, referral, repeat customer — and why a Business Profile click arrives looking like someone who typed your name from memory.",
+    page: 4,
   },
   {
     n: "02",
     title: "The Speed-to-Lead System",
     body:
       "The response-time rules for getting to the lead first, because whoever calls back first probably books the job. What to measure, what to automate, and what has to stay human.",
+    page: 7,
   },
   {
     n: "03",
     title: "The Profile as a Channel",
     body:
       "Reviews and posts that keep a Profile active, and the UTM tagging that turns a listing into a channel you can measure.",
+    page: 10,
   },
   {
     n: "04",
     title: "The Money Math",
     body: "Margin by job type, breakeven, and what you can afford to spend to win a job.",
+    page: 12,
   },
   {
     n: "05",
     title: "The Site That Books Work",
     body:
       "The page structure that turns a visitor into a booked job, and why most trades sites lose the customer in ten seconds.",
+    page: 15,
   },
 ];
 
-// Real pages from the PDF (rendered from public/downloads/asp-5-marketing-frameworks.pdf).
-// If the guide is revised, re-render these so the preview matches what arrives.
-const PAGES: { src: string; caption: string }[] = [
-  { src: "/images/proof/frameworks-page-02.jpg", caption: "Five systems, in order" },
-  { src: "/images/proof/frameworks-page-05.jpg", caption: "Where every lead is born" },
-  { src: "/images/proof/frameworks-page-07.jpg", caption: "Speed to lead" },
-  { src: "/images/proof/frameworks-page-12.jpg", caption: "The money math" },
-  { src: "/images/proof/frameworks-page-18.jpg", caption: "Set it up in your CRM" },
+// Real PDF pages (public/downloads/asp-5-marketing-frameworks.pdf). If the guide
+// is revised, re-render these so the preview matches what arrives.
+const pageSrc = (n: number) => `/images/proof/frameworks-page-${String(n).padStart(2, "0")}.jpg`;
+
+// The fan in "Look inside", front page first.
+const FAN: { page: number; caption: string }[] = [
+  { page: 5, caption: "Where every lead is born" },
+  { page: 12, caption: "The money math" },
+  { page: 18, caption: "Set it up in your CRM" },
 ];
 
 // Questions the guide answers. Each one maps to a section of the PDF.
@@ -115,58 +123,68 @@ const FACTS = ["21 pages", "5 frameworks", "CRM setup section included"];
 const CTA_CLASS =
   "inline-block bg-asp-gradient-cta text-white font-semibold px-8 py-4 rounded-[10px] shadow-asp-md hover:shadow-asp-lg hover:-translate-y-0.5 transition-all no-underline";
 
-function GuideImage({ eager = false }: { eager?: boolean }) {
+const EYEBROW = "inline-block font-bold text-xs uppercase tracking-widest";
+
+function PageImage({ page, alt }: { page: number; alt: string }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src="/images/guide/frameworks-print-mockup.webp"
-      alt="Printed copies of The 5 Marketing Frameworks for Trades Businesses: one standing with the cover showing, one open to The Lead Source Map"
-      width={1200}
-      height={701}
-      loading={eager ? "eager" : "lazy"}
-      fetchPriority={eager ? "high" : undefined}
-      className="w-full h-auto"
+      src={pageSrc(page)}
+      alt={alt}
+      width={935}
+      height={1210}
+      loading="lazy"
+      className="block w-full h-auto"
     />
   );
 }
 
 export default function FrameworksPage() {
   return (
-    <main className="bg-white">
+    <main className="bg-asp-surface-navy">
       {/* HERO — no ScrollReveal: it hides content until JavaScript runs, which
           delayed the headline by 4+ seconds on mobile. */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-10 md:pt-7 md:pb-16 lg:pb-20">
+      <section className="relative overflow-hidden bg-asp-surface-navy text-white">
+        {/* The glow sits behind the book: its navy cover needs it to separate. */}
+        <div
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(46%_50%_at_22%_72%,rgba(76,201,240,0.34),transparent_72%),radial-gradient(42%_48%_at_50%_62%,rgba(159,76,255,0.32),transparent_72%)]"
+          aria-hidden="true"
+        />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-10 md:pt-7 md:pb-16 lg:pb-20">
           {/* Logo only. A link here would be an exit. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logos/asp-black.png"
+            src="/images/logos/asp-white.png"
             alt="ASP"
             className="h-6 md:h-8 w-auto mb-4 md:mb-10"
           />
 
-          <div className="grid lg:grid-cols-12 gap-4 lg:gap-12 items-center">
+          <div className="grid lg:grid-cols-12 gap-6 lg:gap-12 items-center">
             <div className="lg:col-span-7">
-              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-3">
-                Free guide
-              </span>
-              <h1 className="font-black text-3xl md:text-5xl leading-[1.08] text-asp-blue mb-3 md:mb-4">
+              <span className={`${EYEBROW} text-asp-blue-light mb-3`}>Free guide</span>
+              <h1 className="font-black text-3xl md:text-5xl leading-[1.08] text-white mb-3 md:mb-4">
                 The 5 marketing frameworks we install for trades businesses.
               </h1>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-4 md:mb-6">
+              <p className="text-base md:text-lg text-white/75 leading-relaxed mb-5 md:mb-6">
                 The five systems that decide whether marketing money turns into booked work. Free,
                 and we email it straight to you.
               </p>
-              <div className="w-[82%] mx-auto lg:w-full">
-                <GuideImage eager />
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/guide/frameworks-book-standing-open.webp"
+                alt="Printed copies of The 5 Marketing Frameworks for Trades Businesses: one standing with the cover showing, one open behind it to The Lead Source Map"
+                width={1873}
+                height={951}
+                fetchPriority="high"
+                className="w-full h-auto"
+              />
             </div>
 
             <div id="get" className="lg:col-span-5 scroll-mt-6">
               <FrameworksForm />
-              <ul className="flex flex-wrap justify-center gap-2 mt-4 text-sm text-gray-600 list-none p-0">
+              <ul className="flex flex-wrap justify-center gap-2 mt-4 text-sm text-white/80 list-none p-0">
                 {FACTS.map((t) => (
-                  <li key={t} className="rounded-full border border-gray-200 bg-white px-3 py-1">
+                  <li key={t} className="rounded-full border border-white/20 bg-white/5 px-3 py-1">
                     {t}
                   </li>
                 ))}
@@ -177,175 +195,200 @@ export default function FrameworksPage() {
       </section>
 
       {/* ONCE IT IS IN PLACE */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-14 md:py-16 lg:py-20 bg-[#eef2fb]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal className="text-center mb-10">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
-              Once it is in place
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl leading-tight">
+            <span className={`${EYEBROW} text-asp-purple mb-4`}>Once it is in place</span>
+            <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-blue">
               You will be able to answer these six questions.
             </h2>
           </ScrollReveal>
-          <ul className="grid md:grid-cols-2 gap-x-10 gap-y-5 list-none p-0 m-0">
-            {ANSWERS.map((a) => (
-              <li key={a} className="flex gap-3 text-white/80 leading-relaxed">
-                <svg
-                  className="w-5 h-5 mt-0.5 shrink-0 text-asp-blue-light"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                </svg>
-                <span>{a}</span>
+          <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 list-none p-0 m-0">
+            {ANSWERS.map((a, i) => (
+              <li key={a} className="rounded-2xl bg-white shadow-asp-md p-6">
+                <ScrollReveal delay={i * 50}>
+                  <span
+                    className="flex items-center justify-center w-9 h-9 rounded-[10px] bg-asp-gradient-accent mb-4"
+                    aria-hidden="true"
+                  >
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <p className="text-asp-blue font-semibold leading-snug m-0">{a}</p>
+                </ScrollReveal>
               </li>
             ))}
           </ul>
-          <div className="text-center mt-10">
-            <a href="#get" className={CTA_CLASS}>
-              Send me the 5 frameworks
-            </a>
-          </div>
         </div>
       </section>
 
-      {/* LOOK INSIDE — real pages, so the visitor can judge the depth. */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-gray-50 overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="max-w-3xl mx-auto text-center mb-10">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              Look inside
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-4">
+      {/* LOOK INSIDE — text left, real pages large and fanned off to the right
+          (same idea as the Good Faith report section). One page square, the
+          others tilting further as they step right. The pages are dark, so a
+          glow travels with them to show their edges. It lives on the fan, not
+          the section, or on a phone it bands straight through the text. */}
+      <section className="relative overflow-hidden bg-asp-black text-white py-14 md:py-20 lg:py-24">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <ScrollReveal className="lg:col-span-5">
+            <span className={`${EYEBROW} text-asp-blue-light mb-4`}>Look inside</span>
+            <h2 className="font-black text-3xl md:text-5xl leading-[1.08] mb-5">
               21 pages you can start on this week.
             </h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-white/75 text-lg leading-relaxed mb-8">
               Diagrams, numbered requirements and the trap in each framework. These are real pages
               from the guide.
             </p>
+            <ul className="list-none p-0 m-0 mb-9 border-t border-white/15">
+              {FAN.map((f) => (
+                <li key={f.page} className="flex items-baseline justify-between gap-4 border-b border-white/15 py-3.5">
+                  <span className="font-semibold">{f.caption}</span>
+                  <span className="text-sm text-white/60 shrink-0">Page {f.page}</span>
+                </li>
+              ))}
+            </ul>
+            <a href="#get" className={CTA_CLASS}>
+              Send me the 5 frameworks
+            </a>
           </ScrollReveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-5">
-            {PAGES.map((p, i) => (
-              <ScrollReveal
-                key={p.src}
-                delay={i * 60}
-                className={i === 0 ? "col-span-2 md:col-span-1" : ""}
-              >
-                <figure className="m-0">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={p.src}
-                    alt={`Page from the guide: ${p.caption}`}
-                    width={935}
-                    height={1210}
-                    loading="lazy"
-                    className={`w-full h-auto rounded-lg shadow-asp-lg ring-1 ring-black/10 ${
-                      i === 0 ? "max-w-[60%] md:max-w-none mx-auto" : ""
-                    }`}
-                  />
-                  <figcaption className="mt-3 text-center text-sm font-semibold text-asp-blue">
-                    {p.caption}
-                  </figcaption>
-                </figure>
-              </ScrollReveal>
-            ))}
+          <div className="lg:col-span-7">
+            <div className="relative w-[62%] ml-[4%] sm:w-[56%] sm:ml-[10%] lg:w-[62%] lg:ml-[2%] my-6 lg:my-4">
+              <div
+                className="pointer-events-none absolute -inset-y-[20%] -left-[10%] -right-[70%] bg-[radial-gradient(40%_50%_at_42%_50%,rgba(76,201,240,0.5),transparent_100%),radial-gradient(30%_50%_at_68%_50%,rgba(159,76,255,0.6),transparent_100%)]"
+                aria-hidden="true"
+              />
+              <div className="absolute inset-0 rotate-[10deg] translate-x-[40%] -translate-y-[1%] rounded-md overflow-hidden shadow-2xl ring-1 ring-white/30">
+                <PageImage page={FAN[2].page} alt={`Page from the guide: ${FAN[2].caption}`} />
+              </div>
+              <div className="absolute inset-0 rotate-[5deg] translate-x-[21%] -translate-y-[2%] rounded-md overflow-hidden shadow-2xl ring-1 ring-white/30">
+                <PageImage page={FAN[1].page} alt={`Page from the guide: ${FAN[1].caption}`} />
+              </div>
+              <div className="relative rounded-md overflow-hidden shadow-2xl ring-1 ring-white/30">
+                <PageImage page={FAN[0].page} alt={`Page from the guide: ${FAN[0].caption}`} />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* WHAT'S INSIDE */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-white overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="max-w-3xl mx-auto text-center mb-12">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              What is inside
-            </span>
-            <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-4">
-              Five frameworks, in the order they should be built.
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Each one feeds the next. Start with the tagging in the first and the ownership rule in the second.
-            </p>
-          </ScrollReveal>
+      {/* WHAT'S INSIDE — a sequence, because the guide says each one feeds the
+          next: numbered tiles on one connecting line, each beside its real
+          opening page. */}
+      <section className="relative py-14 md:py-20 lg:py-24 bg-[#eef2fb]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 lg:gap-14">
+          <div className="lg:col-span-4">
+            <ScrollReveal className="lg:sticky lg:top-10">
+              <span className={`${EYEBROW} text-asp-purple mb-4`}>What is inside</span>
+              <h2 className="font-black text-3xl md:text-4xl leading-tight text-asp-blue mb-4">
+                Five frameworks, in the order they should be built.
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Each one feeds the next. Start with the tagging in the first and the ownership rule in the second.
+              </p>
+              <a href="#get" className={`${CTA_CLASS} hidden lg:inline-block`}>
+                Send me the 5 frameworks
+              </a>
+            </ScrollReveal>
+          </div>
 
-          <div className="space-y-4">
+          <ol className="lg:col-span-8 list-none p-0 m-0">
             {FRAMEWORKS.map((f, i) => (
-              <ScrollReveal key={f.n} delay={i * 60}>
-                <div className="flex gap-5 rounded-2xl border border-gray-200 bg-white shadow-asp-md p-6 lg:p-7">
-                  <span className="font-black text-2xl text-asp-blue/30 shrink-0 leading-none pt-1">
+              <li key={f.n} className="relative pb-5">
+                {/* One segment per row, running from this tile to the next. */}
+                <span
+                  className="absolute left-[23px] md:left-[27px] top-6 bottom-0 w-0.5 bg-gradient-to-b from-asp-blue-light to-asp-purple"
+                  aria-hidden="true"
+                />
+                <ScrollReveal delay={i * 50} className="flex gap-4 md:gap-6">
+                  <span className="relative shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-[14px] bg-asp-gradient-accent text-white font-black text-lg md:text-xl shadow-asp-md">
                     {f.n}
                   </span>
-                  <div>
-                    <h3 className="font-black text-lg text-asp-blue mb-2 leading-snug">{f.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{f.body}</p>
+                  <div className="flex-1 min-w-0 flex gap-5 items-center rounded-2xl bg-white shadow-asp-md p-5 md:p-6">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-black text-lg md:text-xl text-asp-blue mb-2 leading-snug">{f.title}</h3>
+                      <p className="text-gray-600 text-sm md:text-base leading-relaxed m-0">{f.body}</p>
+                    </div>
+                    <div className="hidden sm:block shrink-0 w-24 md:w-28 rotate-[3deg] rounded overflow-hidden shadow-asp-lg ring-1 ring-black/10">
+                      <PageImage page={f.page} alt={`Opening page of ${f.title}`} />
+                    </div>
+                  </div>
+                </ScrollReveal>
+              </li>
+            ))}
+            <li className="relative">
+              <ScrollReveal delay={FRAMEWORKS.length * 50} className="flex gap-4 md:gap-6">
+                <span className="relative shrink-0 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-[14px] bg-asp-surface-navy text-white font-black text-[11px] md:text-xs uppercase tracking-widest">
+                  Plus
+                </span>
+                <div className="flex-1 min-w-0 flex gap-5 items-center rounded-2xl bg-asp-surface-navy text-white shadow-asp-lg p-5 md:p-6">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-black text-lg md:text-xl mb-2 leading-snug">Source tracking in your CRM</h3>
+                    <p className="text-white/75 text-sm md:text-base leading-relaxed m-0">
+                      The practical part: what to set up in Housecall Pro, Jobber, ServiceTitan,
+                      HubSpot or GoHighLevel so every job carries the channel that produced it.
+                    </p>
+                  </div>
+                  <div className="hidden sm:block shrink-0 w-24 md:w-28 rotate-[3deg] rounded overflow-hidden shadow-asp-lg ring-1 ring-white/15">
+                    <PageImage page={18} alt="Opening page of the CRM source tracking section" />
                   </div>
                 </div>
               </ScrollReveal>
-            ))}
-            <ScrollReveal delay={FRAMEWORKS.length * 60}>
-              <div className="flex gap-5 rounded-2xl border-2 border-asp-blue/20 bg-asp-blue/[0.03] shadow-asp-md p-6 lg:p-7">
-                <span className="font-black text-xs uppercase tracking-widest text-asp-purple shrink-0 pt-1.5">
-                  Plus
-                </span>
-                <div>
-                  <h3 className="font-black text-lg text-asp-blue mb-2 leading-snug">
-                    Source tracking in your CRM
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    The practical part: what to set up in Housecall Pro, Jobber, ServiceTitan,
-                    HubSpot or GoHighLevel so every job carries the channel that produced it.
-                  </p>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
-      {/* WHO WROTE IT — approved bio with Joel's current public title (CEO). */}
-      <section className="relative py-14 md:py-16 bg-gray-50 overflow-hidden">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollReveal className="text-center">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              Who wrote it
-            </span>
-            <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-4">
-              Joel Keith, CEO, ASP
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
+      {/* WHO WROTE IT — approved bio with Joel's current public title (CEO).
+          The headshot is Joel's explicit call for this page (2026-11-05). */}
+      <section className="relative overflow-hidden bg-gradient-to-b md:bg-gradient-to-r from-asp-surface-navy via-asp-blue to-asp-purple text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-6 md:gap-8 items-end">
+          <ScrollReveal className="md:col-span-7 lg:col-span-8 pt-14 md:py-16 lg:py-20">
+            <span className={`${EYEBROW} text-asp-blue-light mb-4`}>Who wrote it</span>
+            <h2 className="font-black text-3xl md:text-4xl mb-4">Joel Keith, CEO, ASP</h2>
+            <p className="text-white/85 text-lg leading-relaxed mb-8">
               Joel Keith is the CEO of ASP, a growth-systems marketing agency for home service
               operators. He is a marketing operator who has spent years inside home service
               companies, building and refining the systems ASP now runs for clients. ASP is an
               Official Housecall Pro Affiliate Partner.
             </p>
+            {/* White tile: the mark's dark band and blue ring get lost directly
+                on this gradient. Sized so "Certified" and "Affiliate" read. */}
+            <div className="inline-block rounded-2xl bg-white p-2 shadow-asp-lg">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/badges/hcp-affiliate.png"
+                alt="Certified Housecall Pro Affiliate"
+                width={160}
+                height={160}
+                className="w-36 h-36 md:w-40 md:h-40"
+                loading="lazy"
+              />
+            </div>
+          </ScrollReveal>
+          <div className="md:col-span-5 lg:col-span-4">
+            {/* Cropped where the shoulders reach the image edges (y~820 of 1344);
+                any lower and the shirt ends in a hard vertical cut on both sides. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/badges/hcp-affiliate.png"
-              alt="Housecall Pro Affiliate"
-              className="h-12 w-auto mx-auto"
+              src="/images/team/joel-cutout.webp"
+              alt="Joel Keith, CEO of ASP"
+              width={900}
+              height={820}
               loading="lazy"
+              className="block w-[78%] md:w-full max-w-[420px] h-auto aspect-[900/820] object-cover object-top mx-auto md:ml-auto md:mr-0"
             />
-          </ScrollReveal>
+          </div>
         </div>
       </section>
 
-      <div className="border-t border-gray-100">
-        <FAQAccordion faqs={FAQS} heading="Questions about the guide" />
-      </div>
+      <FAQAccordion faqs={FAQS} heading="Questions about the guide" />
 
       {/* CLOSE — who it is for (filter, never diagnose), the guide, the ask. */}
-      <section className="relative py-14 md:py-16 lg:py-20 bg-white border-t border-gray-100 overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          <ScrollReveal className="lg:col-span-7">
-            <GuideImage />
-          </ScrollReveal>
+      <section className="relative overflow-hidden py-14 md:py-16 lg:py-20 bg-[#eef2fb]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           <ScrollReveal className="lg:col-span-5">
-            <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-purple mb-4">
-              Who this is for
-            </span>
+            <span className={`${EYEBROW} text-asp-purple mb-4`}>Who this is for</span>
             <h2 className="font-black text-3xl md:text-4xl text-asp-blue mb-5 leading-tight">
               Home service businesses with customers, revenue and a crew.
             </h2>
@@ -356,13 +399,24 @@ export default function FrameworksPage() {
               Send me the 5 frameworks
             </a>
           </ScrollReveal>
+          <ScrollReveal className="lg:col-span-7">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/guide/frameworks-book-open-flat.webp"
+              alt="The 5 Marketing Frameworks for Trades Businesses: one copy lying open to The Lead Source Map with a second standing behind it"
+              width={1430}
+              height={1204}
+              loading="lazy"
+              className="w-full h-auto"
+            />
+          </ScrollReveal>
         </div>
       </section>
 
       {/* Site footer is hidden on standalone pages. */}
-      <footer className="bg-white border-t border-gray-100 py-6 text-center text-xs text-gray-500">
+      <footer className="bg-asp-surface-navy py-6 text-center text-xs text-white/70">
         © {new Date().getFullYear()} ASP ·{" "}
-        <a href="/privacy-policy" className="underline hover:text-asp-blue">
+        <a href="/privacy-policy" className="underline hover:text-white">
           Privacy Policy
         </a>
       </footer>
