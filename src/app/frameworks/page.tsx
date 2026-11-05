@@ -253,7 +253,7 @@ export default function FrameworksPage() {
           </ScrollReveal>
 
           <div className="lg:col-span-7">
-            <div className="relative w-[62%] ml-[4%] sm:w-[56%] sm:ml-[10%] lg:w-[62%] lg:ml-[2%] my-6 lg:my-4">
+            <div className="relative w-[62%] ml-[4%] sm:w-[56%] sm:ml-[10%] lg:w-[62%] lg:ml-[7%] my-6 lg:my-4">
               <div
                 className="pointer-events-none absolute -inset-y-[20%] -left-[10%] -right-[70%] bg-[radial-gradient(40%_50%_at_42%_50%,rgba(76,201,240,0.5),transparent_100%),radial-gradient(30%_50%_at_68%_50%,rgba(159,76,255,0.6),transparent_100%)]"
                 aria-hidden="true"
