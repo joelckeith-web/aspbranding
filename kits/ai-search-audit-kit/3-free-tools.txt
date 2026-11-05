@@ -1,0 +1,31 @@
+THE FREE TOOLS WE USED
+Each one is free or has a free tier.
+
+Google Business Profile: your listing on Google Search and Maps
+https://business.google.com
+
+Google Search Console: what you show up for on Google
+https://search.google.com/search-console
+
+Google Analytics: where your visitors come from
+https://analytics.google.com
+
+PageSpeed Insights: how fast your site loads on a phone
+https://pagespeed.web.dev
+
+Rich Results Test: checks your schema markup
+https://search.google.com/test/rich-results
+
+Bing Places: your listing on Bing
+https://www.bingplaces.com
+
+Apple Business Connect: your listing on Apple Maps
+https://businessconnect.apple.com
+
+Claude: runs the audit
+https://claude.ai
+
+ChatGPT, Gemini and Perplexity: check what AI says about you
+https://chatgpt.com
+https://gemini.google.com
+https://www.perplexity.ai
