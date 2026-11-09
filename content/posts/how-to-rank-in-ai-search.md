@@ -33,7 +33,7 @@ schema:
       answer: "Use the Generative AI performance report in Google Search Console. It counts how many times links to your site were shown to a user in a generative AI feature on Google Search. Google says it rolled the report out to all websites worldwide as of August 31, 2026."
     - question: "Does the GEO research prove these tactics work for local businesses?"
       answer: "No. The 2023 research paper that named generative engine optimization reported visibility gains of up to 40% on its own benchmark of queries. The authors also found the results varied across domains. It was a research benchmark built mostly from general informational questions, and it did not report results for local business recommendations."
-status: "review"
+status: "published"
 contentPillar: "google-algorithm-updates"
 readingTime: "7 min read"
 ---
