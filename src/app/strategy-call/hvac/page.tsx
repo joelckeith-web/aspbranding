@@ -18,10 +18,10 @@ export const metadata: Metadata = {
 const HVAC_COPY: StrategyCallCopy = {
   ...DEFAULT_COPY,
   heroEyebrow: "Strategy call for HVAC owners",
-  heroLead: "HVAC owners:",
-  heroGradient: "can't tell which marketing booked which jobs?",
+  heroLead: "Do you want more",
+  heroGradient: "HVAC jobs and more revenue?",
   heroSub:
-    "Follow our onboarding process and within 30 days you'll see which channel, campaign and page produced each digital lead. We run your marketing and build the tracking that proves which marketing booked which jobs.",
+    "We run your marketing every month, done for you, aimed at driving revenue for your HVAC company. Follow our onboarding process and within 30 days you'll see which channel, campaign and page produced each digital lead.",
   // Joel, 2026-10-28: HVAC customers call; they don't walk in. The walk-ins
   // caveat stays on the general page only. Call-tracking wording is from the
   // citation-checked HVAC video script (2026-10-28).
@@ -44,7 +44,7 @@ const HVAC_COPY: StrategyCallCopy = {
   fitNo: [
     "HVAC companies under about $65K a month or with fewer than 3 people.",
     "Owners who can't fund ad spend on top of our fee.",
-    "Shops that won't keep every job and lead in one field system.",
+    "Companies that won't keep every job and lead in one field system.",
   ],
   faqs: [
     {
