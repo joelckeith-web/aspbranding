@@ -4,6 +4,7 @@ import { verifyRecaptcha } from "@/lib/recaptcha";
 import { checkSpam } from "@/lib/spam-filter";
 import { reviewSubmission } from "@/lib/ai-spam-review";
 import { appendRow } from "@/lib/sheets";
+import { addNewsletterSubscriber } from "@/lib/beehiiv";
 import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 import { isTestLead } from "@/lib/test-lead";
 import { WEBINAR, WEBINAR_NAME, REVENUE_RANGES, fillDate } from "@/lib/webinar";
@@ -190,6 +191,17 @@ export async function POST(request: Request) {
         testLead ? "TEST" : "Registered",
       ]);
       if (!queued.ok) console.error("[webinar] sheet append failed:", queued.reason, { email });
+    }
+
+    // Newsletter. Only people who ticked the consent box; test addresses stay off the list.
+    if (marketingConsent === "Yes" && !testLead) {
+      const added = await addNewsletterSubscriber(String(email), {
+        tag: "webinar-dec-9-registrant",
+        utmSource: "webinar",
+        utmMedium: "registration",
+        utmCampaign: "ai-for-founders-dec-9",
+      });
+      if (!added.ok) console.error("[webinar] newsletter add failed:", added.reason, { email });
     }
 
     return NextResponse.json({ success: true });
