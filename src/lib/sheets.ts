@@ -100,6 +100,54 @@ async function getAccessToken(sa: ServiceAccount): Promise<string | null> {
   return cached.token;
 }
 
+/** Read a range as display strings. Never throws; returns a reason on failure. */
+export async function readRange(
+  spreadsheetId: string,
+  range: string,
+): Promise<{ ok: true; rows: string[][] } | { ok: false; reason: string }> {
+  const loaded = loadServiceAccount();
+  if (!loaded.sa) return { ok: false, reason: loaded.reason };
+  try {
+    const token = await getAccessToken(loaded.sa);
+    if (!token) return { ok: false, reason: "could not mint access token" };
+    const url =
+      `https://sheets.googleapis.com/v4/spreadsheets/${encodeURIComponent(spreadsheetId)}` +
+      `/values/${encodeURIComponent(range)}`;
+    const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` }, cache: "no-store" });
+    if (!res.ok) return { ok: false, reason: `sheets read ${res.status}: ${await res.text()}` };
+    const body = await res.json();
+    return { ok: true, rows: (body.values ?? []) as string[][] };
+  } catch (err) {
+    return { ok: false, reason: err instanceof Error ? err.message : "unknown error" };
+  }
+}
+
+/** Write one cell. Never throws; returns a reason on failure. */
+export async function updateCell(
+  spreadsheetId: string,
+  cell: string,
+  value: string,
+): Promise<{ ok: true } | { ok: false; reason: string }> {
+  const loaded = loadServiceAccount();
+  if (!loaded.sa) return { ok: false, reason: loaded.reason };
+  try {
+    const token = await getAccessToken(loaded.sa);
+    if (!token) return { ok: false, reason: "could not mint access token" };
+    const url =
+      `https://sheets.googleapis.com/v4/spreadsheets/${encodeURIComponent(spreadsheetId)}` +
+      `/values/${encodeURIComponent(cell)}?valueInputOption=RAW`;
+    const res = await fetch(url, {
+      method: "PUT",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ values: [[value]] }),
+    });
+    if (!res.ok) return { ok: false, reason: `sheets update ${res.status}: ${await res.text()}` };
+    return { ok: true };
+  } catch (err) {
+    return { ok: false, reason: err instanceof Error ? err.message : "unknown error" };
+  }
+}
+
 /**
  * Append one row. Never throws — a Sheets outage must not cost us a lead, so
  * every failure path returns a reason for the log and lets the caller carry on.

@@ -14,6 +14,10 @@ export type WebinarCopy = {
   finalCta: { header: string; body: string; button: string };
   form: { heading: string; subtext: string; submitLabel: string };
   confirmationEmail: { subject: string; body: string };
+  reminderEmails: {
+    dayBefore: { subject: string; body: string };
+    hourBefore: { subject: string; body: string };
+  };
 };
 
 export const WEBINAR_COPY: WebinarCopy = {
@@ -69,7 +73,7 @@ export const WEBINAR_COPY: WebinarCopy = {
   },
   who: {
     header: "Who this is for",
-    body: "This is for owners of home service businesses that already have customers, revenue and a crew. The businesses lined up for the audits are picked in advance, with the owners' OK, and come from different trades.",
+    body: "This is for owners of home service businesses that already have customers, revenue and a crew. The businesses lined up for the audits are picked in advance and come from different trades.",
   },
   hosts: {
     header: "Meet your host and guest",
@@ -104,5 +108,15 @@ export const WEBINAR_COPY: WebinarCopy = {
   confirmationEmail: {
     subject: "You're in: your Zoom link for the live AI audits",
     body: "You are signed up for our free live workshop. We will audit real Google Business Profiles and websites, live with Claude, and look at the answers from AI tools.\n\nWhen: {{DATE}} (live, 60 minutes)\nJoin on Zoom: {{ZOOM_LINK}}\n\nRyan Estes hosts. I run the audits. At the end, you can download the audit prompt we use, which runs the audit and writes a 30-day plan, plus a tools list.\n\nBring your questions. Ryan takes them from the chat near the end.\n\nSee you there.\n\nJoel Keith, ASP",
+  },
+  reminderEmails: {
+    dayBefore: {
+      subject: "Tomorrow: the live AI audits with Ryan and Joel",
+      body: "Our free live workshop is tomorrow. We will audit real Google Business Profiles and websites, live with Claude, and look at the answers from AI tools.\n\nWhen: {{DATE}} (live, 60 minutes)\nJoin on Zoom: {{ZOOM_LINK}}\n\nBring your questions. Ryan takes them from the chat near the end. At the end, you can download the audit prompt we use, which runs the audit and writes a 30-day plan, plus a tools list.\n\nSee you there.\n\nJoel Keith, ASP",
+    },
+    hourBefore: {
+      subject: "We go live in one hour: your Zoom link",
+      body: "We go live in one hour.\n\nJoin on Zoom: {{ZOOM_LINK}}\n\nBring your questions. Ryan takes them from the chat near the end.\n\nSee you there.\n\nJoel Keith, ASP",
+    },
   },
 };

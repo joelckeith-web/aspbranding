@@ -3,6 +3,10 @@
     {
       "path": "/api/cron/publish-next",
       "schedule": "0 16 * * 1"
+    },
+    {
+      "path": "/api/cron/webinar-reminders",
+      "schedule": "*/15 * * * *"
     }
   ]
 }
