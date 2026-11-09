@@ -117,7 +117,7 @@ export async function POST(request: Request) {
     const delivery = await sendMail({
       to: email,
       subject: fillTokens(mail.subject),
-      replyTo: "joel.keith@aspbranding.com",
+      replyTo: "info@aspbranding.com",
       html: `<p>${esc(String(name).trim().split(/\s+/)[0])},</p>${paragraphs}`,
     });
     if (!delivery.ok) {
