@@ -49,7 +49,7 @@ function sendReminder(kind: ReminderKind, to: string, name: string) {
     subject,
     html,
     from: `Joel Keith <${process.env.SMTP_USER}>`,
-    replyTo: "info@aspbranding.com",
+    replyTo: "joel.keith@aspbranding.com",
   });
 }
 
