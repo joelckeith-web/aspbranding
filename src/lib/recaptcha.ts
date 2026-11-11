@@ -3,7 +3,8 @@
 // aren't configured (dev / preview without keys), so local development
 // keeps working — production has all three vars set.
 
-const MIN_SCORE = 0.5;
+// Joel 2026-11-11: lowered from 0.5 so borderline real visitors get through.
+const MIN_SCORE = 0.3;
 
 type EnterpriseAssessment = {
   tokenProperties?: {

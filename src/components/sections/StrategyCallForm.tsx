@@ -97,7 +97,7 @@ export function StrategyCallForm({
     payload.referrerPath = window.location.pathname;
 
     const formTime = Date.now() - mountedAt.current;
-    if (formTime < 3000) {
+    if (formTime < 1500) {
       setFormState("error");
       setErrorMsg("Please take a moment before submitting.");
       return;

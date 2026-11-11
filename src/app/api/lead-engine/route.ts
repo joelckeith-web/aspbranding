@@ -11,7 +11,9 @@ import { isTestLead } from "@/lib/test-lead";
 // reCAPTCHA → AI review) with this form's own field set. The honeypot is
 // "fax" here because this form has a REAL website field.
 
-const MIN_FORM_TIME_MS = 3000;
+// Joel 2026-11-11: lowered from 3s so a real owner using autofill on the
+// three-field strategy-call form is not blocked.
+const MIN_FORM_TIME_MS = 1500;
 
 const UTM_KEYS = [
   "utm_source",
@@ -66,7 +68,7 @@ export async function POST(request: Request) {
       flagged = flagged || `keyword filter: ${spam.matched}`;
     }
 
-    // Time-gate — anything filled out faster than 3s is bot behaviour.
+    // Time-gate — anything filled out faster than 1.5s is bot behaviour.
     if (typeof formTime === "number" && formTime < MIN_FORM_TIME_MS) {
       console.log("[lead-engine] too-fast submit:", { email, formTime });
       return NextResponse.json(
@@ -138,8 +140,11 @@ export async function POST(request: Request) {
     // Reaches Meta even when the browser blocks the pixel; dedupes on event_id.
     // Never throws, so tracking can never cost the lead.
     const [firstName, ...rest] = String(name).trim().split(/\s+/);
-    // Flagged submits skip CAPI so likely junk doesn't train Meta's delivery.
-    const metaStatus = flagged ? "skipped (flagged)" : await sendMetaEvent({
+    // Joel 2026-11-11: only a tripped honeypot (a definite bot) skips CAPI.
+    // Keyword and AI flags still send the event so a real lead is never
+    // missing from Meta; the [FLAGGED] email lets Joel judge it.
+    const honeypotTripped = typeof fax === "string" && fax.length > 0;
+    const metaStatus = honeypotTripped ? "skipped (honeypot)" : await sendMetaEvent({
       eventName: "SubmitApplication",
       eventId:
         typeof body.metaEventId === "string" && /^[\w-]{8,80}$/.test(body.metaEventId)

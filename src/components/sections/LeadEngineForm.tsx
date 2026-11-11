@@ -146,7 +146,7 @@ export function LeadEngineForm({
 
     // Time-gate — anything under 3 seconds is bot behaviour.
     const formTime = Date.now() - mountedAt.current;
-    if (formTime < 3000) {
+    if (formTime < 1500) {
       setFormState("error");
       setErrorMsg("Please take a moment before submitting.");
       return;
