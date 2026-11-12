@@ -56,7 +56,7 @@ export function HeroApply() {
         </label>
       </div>
       <button className="gr-btn gr-btn-n" type="submit">Start my application</button>
-      <div className="gr-note">Step 1 of 2. Next: your proudest win, where you are stuck and your craziest story from the field.</div>
+      <div className="gr-note">Next: your contact details, then your proudest win, where you are stuck and your craziest story.</div>
     </form>
   );
 }

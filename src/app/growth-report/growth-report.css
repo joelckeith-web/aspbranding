@@ -120,3 +120,12 @@ details.gr-faq[open] summary::after { transform: rotate(225deg); }
 @media (prefers-reduced-motion: reduce) {
   .gr-root *, .gr-root *::before, .gr-root *::after { animation: none !important; transition: none !important; }
 }
+
+/* Apply page: form sits right under the intro on phones, beside both on desktop */
+.gr-apply { display: grid; gap: clamp(24px, 4vw, 56px); grid-template-columns: minmax(0, 1fr); grid-template-areas: "intro" "form" "steps"; align-items: start; }
+.gr-apply-intro { grid-area: intro; }
+.gr-apply-form { grid-area: form; }
+.gr-apply-steps { grid-area: steps; }
+@media (min-width: 960px) {
+  .gr-apply { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-areas: "intro form" "steps form"; row-gap: 28px; }
+}

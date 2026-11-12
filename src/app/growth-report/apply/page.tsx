@@ -26,8 +26,8 @@ export default function GrowthReportApply() {
       <section className="gr-sec gr-dark" style={{ paddingTop: "clamp(112px, 10vw, 144px)" }}>
         <div className="gr-tex" aria-hidden="true" />
         <div className="gr-wrap">
-          <div className="gr-split">
-            <div style={{ minWidth: 0, display: "flex", flexDirection: "column", gap: 22 }}>
+          <div className="gr-apply">
+            <div className="gr-apply-intro" style={{ minWidth: 0, display: "flex", flexDirection: "column", gap: 22 }}>
               <Link href={SHOW.path} aria-label="The Atomic Growth Report home" style={{ textDecoration: "none", display: "inline-flex", flexDirection: "column", gap: 2, width: "fit-content" }}>
                 <span style={{ display: "flex", alignItems: "center", gap: 10, fontWeight: 800, fontSize: 12, letterSpacing: "0.3em", color: "#fff" }}>
                   THE ATOMIC GROWTH <i style={{ display: "block", width: 40, height: 3, background: "linear-gradient(90deg,#2E7DFF,#8B5CF6)" }} />
@@ -42,6 +42,8 @@ export default function GrowthReportApply() {
                 how your business runs, what is working and where it is stuck. Joel brings two or three moves he would
                 make in your seat.
               </p>
+            </div>
+            <div className="gr-apply-steps" style={{ minWidth: 0, display: "flex", flexDirection: "column", gap: 22 }}>
               <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 14 }}>
                 {STEPS.map((s, i) => (
                   <li key={s.t} className="gr-reveal" style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
@@ -59,9 +61,11 @@ export default function GrowthReportApply() {
                 <span className="gr-ph">[Confirm: no cost to be a guest]</span>
               </p>
             </div>
-            <Suspense fallback={null}>
-              <ApplyForm />
-            </Suspense>
+            <div className="gr-apply-form" style={{ minWidth: 0 }}>
+              <Suspense fallback={null}>
+                <ApplyForm />
+              </Suspense>
+            </div>
           </div>
         </div>
       </section>
