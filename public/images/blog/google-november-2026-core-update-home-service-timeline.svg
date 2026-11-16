@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Timing the read on the November 2026 core update</title><desc id="d">Timeline of the November 2026 core update: baseline week Nov 2 to 8, release Nov 10, possible finish Nov 24, earliest read about Dec 1, repeat read Dec 1 to 7.</desc>
+<rect width="800" height="500" fill="#ffffff"/>
+<text x="40" y="44" font-size="21" fill="#002366" font-weight="700" text-anchor="start">Timing the read on the November 2026 core update</text>
+<text x="40" y="70" font-size="13" fill="#4b5563" font-weight="400" text-anchor="start">Assumes the rollout finishes November 24. Google had not posted completion as of Nov 16.</text>
+<line x1="60" y1="250" x2="760" y2="250" stroke="#9ca3af" stroke-width="2"/>
+<line x1="60.0" y1="245" x2="60.0" y2="255" stroke="#9ca3af"/>
+<text x="60.0" y="272" font-size="11.5" fill="#4b5563" font-weight="400" text-anchor="middle">Nov 2</text>
+<line x1="200.0" y1="245" x2="200.0" y2="255" stroke="#9ca3af"/>
+<text x="200.0" y="272" font-size="11.5" fill="#4b5563" font-weight="400" text-anchor="middle">Nov 9</text>
+<line x1="340.0" y1="245" x2="340.0" y2="255" stroke="#9ca3af"/>
+<text x="340.0" y="272" font-size="11.5" fill="#4b5563" font-weight="400" text-anchor="middle">Nov 16</text>
+<line x1="500.0" y1="245" x2="500.0" y2="255" stroke="#9ca3af"/>
+<text x="500.0" y="272" font-size="11.5" fill="#4b5563" font-weight="400" text-anchor="middle">Nov 24</text>
+<line x1="640.0" y1="245" x2="640.0" y2="255" stroke="#9ca3af"/>
+<text x="640.0" y="272" font-size="11.5" fill="#4b5563" font-weight="400" text-anchor="middle">Dec 1</text>
+<line x1="760.0" y1="245" x2="760.0" y2="255" stroke="#9ca3af"/>
+<text x="760.0" y="272" font-size="11.5" fill="#4b5563" font-weight="400" text-anchor="middle">Dec 7</text>
+<rect x="60.0" y="110" width="140.0" height="70" rx="6" fill="#1E5BD8" fill-opacity="0.12" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="68.0" y="128.0" font-size="11.5" fill="#002366" font-weight="600" text-anchor="start">Baseline week</text><text x="68.0" y="143.525" font-size="11.5" fill="#002366" font-weight="600" text-anchor="start">Mon Nov 2 to</text><text x="68.0" y="159.05" font-size="11.5" fill="#002366" font-weight="600" text-anchor="start">Sun Nov 8</text>
+<rect x="220.0" y="110" width="280.0" height="70" rx="6" fill="#9F4CFF" fill-opacity="0.12" stroke="#9F4CFF" stroke-width="1.5"/>
+<text x="228.0" y="128.0" font-size="11.5" fill="#111827" font-weight="600" text-anchor="start">Rollout: may take up to 2 weeks</text><text x="228.0" y="143.525" font-size="11.5" fill="#111827" font-weight="600" text-anchor="start">Structural changes on hold</text><text x="228.0" y="159.05" font-size="11.5" fill="#111827" font-weight="600" text-anchor="start">(began Nov 10, 10:06 a.m. PT)</text>
+<rect x="640.0" y="110" width="140.0" height="70" rx="6" fill="#1E5BD8" fill-opacity="0.12" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="648.0" y="128.0" font-size="11.5" fill="#002366" font-weight="600" text-anchor="start">Repeat read</text><text x="648.0" y="143.525" font-size="11.5" fill="#002366" font-weight="600" text-anchor="start">Dec 1-7 vs Nov 2-8</text><text x="648.0" y="159.05" font-size="11.5" fill="#002366" font-weight="600" text-anchor="start">plus year-over-year</text>
+<line x1="200.0" y1="215" x2="200.0" y2="250" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="200.0" y="193.0" font-size="11" fill="#4b5563" font-weight="600" text-anchor="middle">Nov 9 excluded:</text><text x="200.0" y="207.85" font-size="11" fill="#4b5563" font-weight="600" text-anchor="middle">pre-announcement movement</text>
+<line x1="500.0" y1="196" x2="500.0" y2="250" stroke="#b45309" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="500" y="300.0" font-size="11" fill="#b45309" font-weight="600" text-anchor="middle">Finish if it runs</text><text x="500" y="314.85" font-size="11" fill="#b45309" font-weight="600" text-anchor="middle">the full 2 weeks</text><text x="500" y="329.7" font-size="11" fill="#b45309" font-weight="600" text-anchor="middle">(not yet posted)</text>
+<text x="540" y="360.0" font-size="11" fill="#4b5563" font-weight="400" text-anchor="middle">Thanksgiving</text><text x="540" y="374.85" font-size="11" fill="#4b5563" font-weight="400" text-anchor="middle">Nov 26</text>
+<path d="M500.0 395 v-8 h140.0 v8" fill="none" stroke="#4b5563" stroke-width="1.5"/>
+<text x="570.0" y="412" font-size="11" fill="#4b5563" font-weight="600" text-anchor="middle">Wait at least a full week (Google)</text>
+<line x1="640.0" y1="280" x2="640.0" y2="330" stroke="#1E5BD8" stroke-width="2"/>
+<text x="646" y="300.0" font-size="11.5" fill="#1E5BD8" font-weight="700" text-anchor="start">Earliest read</text><text x="646" y="315.525" font-size="11.5" fill="#1E5BD8" font-weight="700" text-anchor="start">about Dec 1</text>
+<text x="40" y="450" font-size="11" fill="#4b5563" font-weight="400" text-anchor="start" font-style="italic">Illustrative. If the rollout runs longer, later dates move back by the same number of days.</text>
+<text x="40" y="468" font-size="11" fill="#4b5563" font-weight="400" text-anchor="start" font-style="italic">Sources: Google Search Status Dashboard; Google Search Central core updates guidance;</text>
+<text x="40" y="486" font-size="11" fill="#4b5563" font-weight="400" text-anchor="start" font-style="italic">ASP&#x27;s plan for the baseline, freeze and repeat read.</text>
+</svg>

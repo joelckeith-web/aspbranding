@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 477" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Search demand by trade</title><desc id="d">Table of summit figures: HVAC near-me +23%, plumbing +18%; intent growth HVAC not expected to grow, plumbing 1.5%, electrical and roofing 6%; electrical brand searches +25%.</desc>
+<rect width="800" height="477" fill="#ffffff"/>
+<text x="40" y="44" font-size="21" fill="#002366" font-weight="700" text-anchor="start">Search demand by trade</text>
+<text x="40" y="70" font-size="13" fill="#4b5563" font-weight="400" text-anchor="start">As shared at Google&#x27;s Home Services Summit</text>
+<rect x="40" y="100" width="720" height="48" rx="6" fill="#002366"/>
+<text x="52" y="121" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="start">Trade</text>
+<text x="182" y="121" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="start">Near-me search growth,</text>
+<text x="182" y="138" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="start">last year</text>
+<text x="372" y="121" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="start">Expected intent growth,</text>
+<text x="372" y="138" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="start">next year</text>
+<text x="562" y="121" font-size="12.5" fill="#ffffff" font-weight="700" text-anchor="start">Branded vs. generic</text>
+<rect x="40" y="148" width="720" height="66" fill="#ffffff"/>
+<text x="52" y="174" font-size="14" fill="#111827" font-weight="700" text-anchor="start">HVAC</text>
+<text x="182" y="174" font-size="12" fill="#111827" font-weight="400" text-anchor="start">HVAC/AC repair</text><text x="182" y="190" font-size="12" fill="#111827" font-weight="400" text-anchor="start">near me: +23%</text>
+<rect x="364" y="156" width="182" height="50" rx="6" fill="#1E5BD8" fill-opacity="0.12" stroke="#1E5BD8"/>
+<text x="372" y="174" font-size="12" fill="#002366" font-weight="600" text-anchor="start">Not expected to grow</text><text x="372" y="190" font-size="12" fill="#002366" font-weight="600" text-anchor="start">(the only trade)</text>
+<text x="562" y="174" font-size="12" fill="#111827" font-weight="400" text-anchor="start">Generic outgrowing</text><text x="562" y="190" font-size="12" fill="#111827" font-weight="400" text-anchor="start">branded</text>
+<rect x="40" y="214" width="720" height="66" fill="#f3f4f6"/>
+<text x="52" y="240" font-size="14" fill="#111827" font-weight="700" text-anchor="start">Plumbing</text>
+<text x="182" y="240" font-size="12" fill="#111827" font-weight="400" text-anchor="start">&quot;Plumber near me&quot;:</text><text x="182" y="256" font-size="12" fill="#111827" font-weight="400" text-anchor="start">+18%</text>
+<text x="372" y="240" font-size="12" fill="#111827" font-weight="400" text-anchor="start">About 1.5%</text>
+<text x="562" y="240" font-size="12" fill="#111827" font-weight="400" text-anchor="start">Generic outgrowing</text><text x="562" y="256" font-size="12" fill="#111827" font-weight="400" text-anchor="start">branded</text>
+<rect x="40" y="280" width="720" height="66" fill="#ffffff"/>
+<text x="52" y="306" font-size="14" fill="#111827" font-weight="700" text-anchor="start">Electrical</text>
+<text x="182" y="306" font-size="12" fill="#4b5563" font-weight="400" text-anchor="start">Not shared</text>
+<text x="372" y="306" font-size="12" fill="#111827" font-weight="400" text-anchor="start">About 6%</text>
+<text x="562" y="306" font-size="12" fill="#111827" font-weight="400" text-anchor="start">Brand searches +25%;</text><text x="562" y="322" font-size="12" fill="#111827" font-weight="400" text-anchor="start">only trade where branded</text><text x="562" y="338" font-size="12" fill="#111827" font-weight="400" text-anchor="start">grew significantly</text>
+<rect x="40" y="346" width="720" height="66" fill="#f3f4f6"/>
+<text x="52" y="372" font-size="14" fill="#111827" font-weight="700" text-anchor="start">Roofing</text>
+<text x="182" y="372" font-size="12" fill="#4b5563" font-weight="400" text-anchor="start">Not shared</text>
+<text x="372" y="372" font-size="12" fill="#111827" font-weight="400" text-anchor="start">About 6%</text>
+<text x="562" y="372" font-size="12" fill="#111827" font-weight="400" text-anchor="start">Generic outgrowing</text><text x="562" y="388" font-size="12" fill="#111827" font-weight="400" text-anchor="start">branded</text>
+<rect x="40" y="100" width="720" height="312" rx="6" fill="none" stroke="#9ca3af"/>
+<text x="40" y="442" font-size="11" fill="#4b5563" font-weight="400" text-anchor="start" font-style="italic">&quot;Intent&quot; is the term used in the summit notes and was not defined further. &quot;Last year&quot; and &quot;next year&quot; are as stated at the summit.</text>
+<text x="40" y="460" font-size="11" fill="#4b5563" font-weight="400" text-anchor="start" font-style="italic">Source: takeaways from Google&#x27;s Home Services Summit, relayed in a November 2026 debrief.</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 505" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Which change moved your calls?</title><desc id="d">Two-by-two chart: organic clicks across, Business Profile calls up and down. Steady organic with falling calls points to Google&#x27;s layout, not the core update.</desc>
+<rect width="800" height="505" fill="#ffffff"/>
+<text x="40" y="44" font-size="21" fill="#002366" font-weight="700" text-anchor="start">Which change moved your calls?</text>
+<text x="40" y="70" font-size="13" fill="#4b5563" font-weight="400" text-anchor="start">Compare each week with your Nov 2-8 baseline, and keep the two numbers separate.</text>
+<rect x="210" y="100" width="270" height="140" rx="10" fill="#ffffff" stroke="#9F4CFF" stroke-width="2"/>
+<rect x="210" y="100" width="270" height="7" rx="3.5" fill="#9F4CFF"/>
+<text x="226" y="136" font-size="15" fill="#111827" font-weight="700" text-anchor="start">Google&#x27;s results-page layout</text>
+<text x="226" y="158.0" font-size="12.5" fill="#4b5563" font-weight="400" text-anchor="start">Check the AI Overviews local pack</text><text x="226" y="174.875" font-size="12.5" fill="#4b5563" font-weight="400" text-anchor="start">test, 3-pack ads and LSAs.</text><text x="226" y="191.75" font-size="12.5" fill="#4b5563" font-weight="400" text-anchor="start">Not the core update.</text>
+<rect x="492" y="100" width="270" height="140" rx="10" fill="#ffffff" stroke="#b45309" stroke-width="2"/>
+<rect x="492" y="100" width="270" height="7" rx="3.5" fill="#b45309"/>
+<text x="508" y="136" font-size="15" fill="#111827" font-weight="700" text-anchor="start">More than one thing</text>
+<text x="508" y="156" font-size="15" fill="#111827" font-weight="700" text-anchor="start">may be going on</text>
+<text x="508" y="184.0" font-size="12.5" fill="#4b5563" font-weight="400" text-anchor="start">Including the usual holiday</text><text x="508" y="200.875" font-size="12.5" fill="#4b5563" font-weight="400" text-anchor="start">slowdown. Check each side.</text>
+<rect x="210" y="252" width="270" height="140" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+<rect x="210" y="252" width="270" height="7" rx="3.5" fill="#9ca3af"/>
+<text x="226" y="288" font-size="15" fill="#111827" font-weight="700" text-anchor="start">Neither change shows</text>
+<text x="226" y="310.0" font-size="12.5" fill="#4b5563" font-weight="400" text-anchor="start">in these two numbers</text>
+<rect x="492" y="252" width="270" height="140" rx="10" fill="#ffffff" stroke="#1E5BD8" stroke-width="2"/>
+<rect x="492" y="252" width="270" height="7" rx="3.5" fill="#1E5BD8"/>
+<text x="508" y="288" font-size="15" fill="#111827" font-weight="700" text-anchor="start">Look at the core</text>
+<text x="508" y="308" font-size="15" fill="#111827" font-weight="700" text-anchor="start">update first</text>
+<text x="508" y="336.0" font-size="12.5" fill="#4b5563" font-weight="400" text-anchor="start">Organic clicks are where</text><text x="508" y="352.875" font-size="12.5" fill="#4b5563" font-weight="400" text-anchor="start">a core update shows.</text>
+<text x="345" y="426" font-size="12" fill="#4b5563" font-weight="600" text-anchor="middle">Holding steady</text>
+<text x="627" y="426" font-size="12" fill="#4b5563" font-weight="600" text-anchor="middle">Falling</text>
+<text x="486" y="450" font-size="13" fill="#111827" font-weight="700" text-anchor="middle">Organic clicks in Search Console (Web search)</text>
+<text x="190" y="174" font-size="12" fill="#4b5563" font-weight="600" text-anchor="end">Falling</text>
+<text x="190" y="326" font-size="12" fill="#4b5563" font-weight="600" text-anchor="end">Holding steady</text>
+<text x="40" y="242.0" font-size="13" fill="#111827" font-weight="700" text-anchor="start">Business Profile</text><text x="40" y="259.55" font-size="13" fill="#111827" font-weight="700" text-anchor="start">calls and</text><text x="40" y="277.1" font-size="13" fill="#111827" font-weight="700" text-anchor="start">directions</text>
+<text x="40" y="470" font-size="11" fill="#4b5563" font-weight="400" text-anchor="start" font-style="italic">Illustrative. Organic numbers often swing until the core update rollout finishes.</text>
+<text x="40" y="488" font-size="11" fill="#4b5563" font-weight="400" text-anchor="start" font-style="italic">Sources: Google Search Status Dashboard; ASP research, November 2026.</text>
+</svg>
