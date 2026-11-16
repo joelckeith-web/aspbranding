@@ -1,5 +1,5 @@
 ---
-title: "What I'm Doing During Google's November 2026 Core Update"
+title: "How ASP Is Handling Google's November 2026 Core Update"
 slug: "google-november-2026-core-update-home-service"
 publishDate: "2026-11-23"
 dateModified: "2026-11-23"
