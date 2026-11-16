@@ -31,7 +31,7 @@ schema:
       answer: "Google Maps uses Gemini to write review summaries, so what customers write feeds what the summary says. You can keep new reviews coming and reply to the ones you get. Google's help page notes that replying to reviews shows customers you value their feedback."
     - question: "Will a complete Business Profile guarantee my business appears in AI answers?"
       answer: "No. Google says businesses with complete and accurate info are more likely to show up in local search results, but it has not published how its AI features choose among local businesses. No one outside Google can promise an AI mention. An accurate profile means that when an AI tool draws on it to describe your business, the facts it finds are correct."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "8 min read"
 ---
