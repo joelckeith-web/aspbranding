@@ -1,8 +1,8 @@
 ---
 title: "What Google Wants From Local Content in 2026"
 slug: "what-google-wants-from-local-content-2026"
-publishDate: "2026-12-14"
-dateModified: "2026-12-14"
+publishDate: "2026-11-16"
+dateModified: "2026-11-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "One takeaway from Google's Home Services Summit is that 70% of home service site traffic is mobile, and the advice was to put the mobile experience ahead of desktop looks. Check your most important pages on your own phone. Make sure the phone number and booking options are easy to tap, and that the page answers the question without a lot of scrolling past large images."
     - question: "If my calls dropped, is my content the problem?"
       answer: "Not necessarily. Organic clicks in Search Console are where a core update effect shows up. Calls and direction requests in Business Profile Insights and your call tracking are where changes to Google's local results show up, such as a tested local pack inside AI Overviews without call buttons, or more ads in the 3-pack. If organic clicks hold steady while Business Profile calls fall, that points to Google's results layout, not a core update. Rewriting good pages won't bring back a missing call button."
-status: "review"
+status: "published"
 contentPillar: "google-algorithm-updates"
 readingTime: "10 min read"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "How to Use the LSA Search Terms Report and Negative Keywords"
 slug: "lsa-search-terms-report-negative-keywords"
-publishDate: "2026-12-07"
-dateModified: "2026-12-07"
+publishDate: "2026-11-16"
+dateModified: "2026-11-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "On your Google Business Profile, not in Google Ads. Google's help page says your business name, address and hours sync one way from your Business Profile to Google Ads and can't be edited there. Changes to hours, phone number and minor name edits sync within 24 hours. Significant changes to your business name, storefront address or primary category need verification, and your campaign may pause while Google reviews them, which typically takes 24 to 48 hours. Service areas and ad schedules can be set separately in Google Ads."
     - question: "Can I still dispute a lead I shouldn't have been charged for?"
       answer: "Not the old way. Google's help page says manual lead disputes are no longer supported. One takeaway from Google's Home Services Summit is that you can now rate leads right away under Goals, then Leads, and that rating leads can result in credits for leads that were charged incorrectly. The Google help pages we checked for this guide don't explain how ratings turn into credits. If a charge looks wrong, ask Google's support team how it's handled for your account."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "10 min read"
 ---

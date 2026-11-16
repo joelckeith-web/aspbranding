@@ -1,8 +1,8 @@
 ---
-title: "How ASP Is Handling Google's November 2026 Core Update"
+title: "How To Handle Google's November 2026 Core Update"
 slug: "google-november-2026-core-update-home-service"
-publishDate: "2026-11-23"
-dateModified: "2026-11-23"
+publishDate: "2026-11-16"
+dateModified: "2026-11-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "For the March 2026 update, one SEO agency's analysis of 2,076 domains found that the top of the winner list was almost entirely the company that owns the thing, while the top of the loser list was almost entirely the platform people use to talk about the thing. In travel, it suggested Google may be preferring sites where people can take a direct action, such as booking. That analysis covers March, not November, and no home services dataset has confirmed the pattern. If November follows the same direction, a real company's own site could gain ground on directories, but that is a possibility, not a finding."
     - question: "How can I tell if the update caused my drop or something else did?"
       answer: "Look at two places separately. Organic clicks in Google Search Console are where a core update's effect shows. Calls and direction requests in Business Profile Insights, along with your call tracking, are where changes to Google's local results show. If your organic clicks hold steady while your Business Profile calls fall, that points to a layout change on Google's results page, not the core update. Those are different problems with different fixes."
-status: "review"
+status: "published"
 contentPillar: "google-algorithm-updates"
 readingTime: "9 min read"
 ---

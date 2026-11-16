@@ -1,8 +1,8 @@
 ---
 title: "Did the Core Update Drop Your Calls? Check These First"
 slug: "calls-dropped-core-update-or-local-results"
-publishDate: "2026-11-23"
-dateModified: "2026-11-23"
+publishDate: "2026-11-16"
+dateModified: "2026-11-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "It can happen, but the map pack runs on its own local ranking system, and past cases show map pack rankings holding while organic traffic falls. A summary of one local SEO firm's work describes businesses that lost more than 90 percent of their organic traffic while their Business Profile kept top map pack spots, and in one 2023 case, local pack changes arrived about two weeks after organic changes. That is a past pattern, not a finding about this update. As of November 12, no local-specific data on the November 2026 update had been published, so check your map pack numbers rather than assume."
     - question: "Can my website gain before the next core update?"
       answer: "Yes. Since December 2025, Google has documented that site owners who make content improvements can see a rise in position in Google Search results without having to wait for the next major core update. Google also says recovery after a drop could take several months, with no guarantee. That makes steady improvement to the pages your customers rely on a better bet than a rush job in the middle of a rollout."
-status: "review"
+status: "published"
 contentPillar: "google-algorithm-updates"
 readingTime: "9 min read"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "How Google's 20-Second Rule Works With Your Phone Menu"
 slug: "lsa-20-second-rule-phone-menu-voicemail"
-publishDate: "2026-11-30"
-dateModified: "2026-11-30"
+publishDate: "2026-11-16"
+dateModified: "2026-11-16"
 author:
   name: "Joel Keith"
   title: "CEO and Partner at ASP"
@@ -29,7 +29,7 @@ schema:
       answer: "Yes. Google says that in Google Ads you can edit the phone number your call and message leads are routed to, in real time. Your business phone number is pre-filled from your Google Business Profile, but you can edit it in your campaign settings. If ad calls currently land on a line with a long menu or a shared voicemail, a more direct line to whoever books jobs is worth considering. Test any new number the same way: call it and time it."
     - question: "Is a text lead priced the same as a call?"
       answer: "Usually not. Google says message leads are typically priced lower than the matching phone lead, although that's not always the case. The price of a message lead is based on the customer's estimated likelihood to book your business, using factors such as the message lead type, the service requested, whether the customer has contacted other Local Services advertisers and their past engagement with the ads. Texts and emails are optional lead types, while phone calls are required. If you turn messages on, answer them as quickly as you answer the phone."
-status: "review"
+status: "published"
 contentPillar: "service-deep-dive"
 readingTime: "9 min read"
 ---
