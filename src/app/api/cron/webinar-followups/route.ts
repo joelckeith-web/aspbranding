@@ -22,16 +22,14 @@ import {
 // Windows and rules are in src/lib/webinar-followups.ts.
 //
 // Manual checks:
-//   ?dryRun=1&at=2026-12-02T15:05:00Z   who would be emailed then (Bearer CRON_SECRET;
-//                                        on a preview deployment, counts only, no auth)
-//   ?previewTo=name+test@aspbranding.com send all five emails to one test address
-//                                        (Bearer CRON_SECRET, or no auth on a preview deployment)
+//   ?dryRun=1&at=2026-12-02T15:05:00Z   who would be emailed then (Bearer CRON_SECRET)
+//   ?previewTo=name+test@aspbranding.com send all five emails to one test address.
+//                                        No secret needed: it only ever mails an
+//                                        ASP "+test" inbox, never the sheet.
 
 export const maxDuration = 120;
 
 const MAX_PER_RUN = 60;
-
-const isPreview = () => process.env.VERCEL_ENV === "preview";
 
 function send(key: keyof typeof FOLLOWUP_COPY, to: string, name: string, variant: 0 | 1) {
   const { subject, html } = buildFollowup(key, name, variant, {
@@ -54,7 +52,6 @@ export async function GET(request: NextRequest) {
 
   const previewTo = params.get("previewTo");
   if (previewTo) {
-    if (!authed && !isPreview()) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     if (!isTestLead(previewTo)) {
       return NextResponse.json({ error: "previewTo must be a test address" }, { status: 400 });
     }
@@ -66,7 +63,7 @@ export async function GET(request: NextRequest) {
   }
 
   const dryRun = params.get("dryRun") === "1";
-  if (!authed && !(dryRun && isPreview())) {
+  if (!authed) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   if (!WEBINAR.startsAt || !WEBINAR.zoomUrl) {
@@ -101,9 +98,7 @@ export async function GET(request: NextRequest) {
         const pending = rows.filter(({ row }) => rowNeedsFollowup(row, kind));
         return [
           kind,
-          authed
-            ? pending.map(({ row }) => ({ email: row[FCOL.email], copy: copyKey(kind, row) }))
-            : { count: pending.length },
+          pending.map(({ row }) => ({ email: row[FCOL.email], copy: copyKey(kind, row) })),
         ];
       }),
     );
