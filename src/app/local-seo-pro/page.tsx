@@ -6,6 +6,7 @@ import { RelatedPages } from "@/components/sections/RelatedPages";
 import { ConsultationCTA } from "@/components/sections/ConsultationCTA";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
+import { AeoPackageSection } from "@/components/sections/AeoPackage";
 
 export const metadata: Metadata = {
   title: "Local SEO Pro — GBP, Citations, & Map Pack",
@@ -285,6 +286,12 @@ export default function LocalSeoProPage() {
           </ScrollReveal>
         </div>
       </section>
+
+      <AeoPackageSection
+        eyebrow="Add AI search"
+        heading="Local SEO Pro covers the map. This covers the answers above it."
+        subheading="AEO + Website is the monthly package for showing up in AI answers: the AEO work, the tracking, and the website it runs on."
+      />
 
       <RelatedPages
         items={[

@@ -9,6 +9,7 @@ import { ExpandableDetails } from "@/components/sections/ExpandableDetails";
 import { SectionBreak } from "@/components/sections/SectionBreak";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
+import { AeoPackageSection } from "@/components/sections/AeoPackage";
 
 const PAGE_TITLE = "Custom AI Solutions for Home Service Businesses";
 const PAGE_DESCRIPTION =
@@ -514,6 +515,11 @@ export default function CustomAiSolutionsPage() {
         variant="dark"
         size="sm"
         widthClassName="max-w-6xl"
+      />
+
+      <AeoPackageSection
+        heading="Want AI search handled first?"
+        subheading="AEO + Website is the monthly package for showing up in AI answers: the AEO work, the tracking, and the website it runs on."
       />
 
       {/* How to start */}

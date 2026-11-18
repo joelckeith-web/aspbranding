@@ -11,6 +11,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { TradeGridCard } from "@/components/sections/TradeGridCard";
 import { getPublishedTradePages } from "@/lib/trade-pages";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
+import { AeoPackageSection } from "@/components/sections/AeoPackage";
 
 const PAGE_TITLE = "Home Service SEO for Contractors";
 const PAGE_DESCRIPTION =
@@ -510,6 +511,13 @@ export default function SeoPage() {
         variant="dark"
         size="sm"
         widthClassName="max-w-6xl"
+      />
+
+      <AeoPackageSection
+        eyebrow="Two ways to start"
+        heading="AI search on its own, or the full organic program."
+        subheading="AEO + Website covers AI answers and the site they read. Foundation adds organic SEO, Local SEO Pro and content."
+        withFoundation
       />
 
       {/* How it works */}

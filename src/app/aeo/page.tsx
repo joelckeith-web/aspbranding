@@ -9,6 +9,7 @@ import { ExpandableDetails } from "@/components/sections/ExpandableDetails";
 import { SectionBreak } from "@/components/sections/SectionBreak";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/schema/StructuredData";
+import { AeoPackageSection } from "@/components/sections/AeoPackage";
 
 const PAGE_TITLE = "Answer Engine Optimization Services for Home Service Businesses";
 const PAGE_DESCRIPTION =
@@ -582,6 +583,8 @@ export default function AeoPage() {
         size="sm"
         widthClassName="max-w-6xl"
       />
+
+      <AeoPackageSection />
 
       {/* How to start */}
       <section className="py-14 md:py-16 bg-white">
