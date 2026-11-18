@@ -54,16 +54,26 @@ const TIERS = [
   },
 ];
 
+// AEO leads; the website is included because it is what the answer engines read.
+const AEO_PACKAGE = {
+  eyebrow: "Answer Engine Optimization",
+  name: "AEO + Website",
+  price: "$1,250",
+  period: "/ month",
+  headline: "Your customers are asking AI who to call. This is how you get into the answer.",
+  body: "Answer engine optimization run for you every month. A brand-new website comes with it, because an answer engine can only quote a site it can read.",
+  features: [
+    "AEO rankings tracked every month in Google's AI Overviews and AI Mode: which customer questions you appear in, and how often",
+    "A brand-new custom website, 10 pages at launch, built so answer engines can read it and quote it. Included.",
+    "Two new blog posts a month, each one answering a question your customers ask",
+    "Monthly performance report on what changed and what it moved",
+    "You own the website and every asset we build",
+  ],
+  ctaLabel: "Ask about AEO + Website",
+  href: "/contact?topic=website-aeo",
+};
+
 const ENTRY_PRODUCTS = [
-  {
-    name: "Website + AEO",
-    price: "$1,250",
-    period: "/ month",
-    oneLiner: "A new website built for AI search, kept current every month.",
-    body: "Custom 10-page website build, two blog posts a month, AEO rankings tracked in Google's AI Overviews, and a monthly performance report.",
-    ctaLabel: "Ask about this package",
-    href: "/contact?topic=website-aeo",
-  },
   {
     name: "Local SEO Pro",
     price: "$1,200",
@@ -254,8 +264,46 @@ export function PricingCards({
             </div>
           </ScrollReveal>
 
+          {/* AEO + Website — featured entry package */}
+          <ScrollReveal>
+            <div className="max-w-4xl mx-auto mb-6 rounded-[var(--radius-asp-2xl)] p-[2px] bg-gradient-to-br from-asp-blue-light via-asp-purple to-asp-blue-light shadow-[0_20px_60px_-10px_rgba(76,201,240,0.35)]">
+              <div className="rounded-[calc(var(--radius-asp-2xl)-2px)] bg-asp-surface-navy p-7 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="flex flex-col">
+                  <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-3">
+                    {AEO_PACKAGE.eyebrow}
+                  </span>
+                  <h4 className="font-black text-2xl md:text-3xl text-white mb-3">{AEO_PACKAGE.name}</h4>
+                  <p className="text-white font-semibold text-lg leading-snug mb-3">{AEO_PACKAGE.headline}</p>
+                  <p className="text-white/70 text-sm leading-relaxed mb-6">{AEO_PACKAGE.body}</p>
+                  <div className="flex items-baseline gap-2 mb-6 mt-auto">
+                    <span className="font-black text-4xl bg-clip-text text-transparent bg-gradient-to-r from-asp-blue-light to-asp-purple">
+                      {AEO_PACKAGE.price}
+                    </span>
+                    <span className="text-sm text-white/50">{AEO_PACKAGE.period}</span>
+                  </div>
+                  <Link
+                    href={AEO_PACKAGE.href}
+                    className="block text-center font-bold py-3.5 px-6 rounded-[var(--radius-asp-lg)] bg-gradient-to-r from-asp-blue-light to-asp-purple text-white hover:opacity-90 transition-all"
+                  >
+                    {AEO_PACKAGE.ctaLabel}
+                  </Link>
+                </div>
+                <ul className="space-y-4 md:pt-2">
+                  {AEO_PACKAGE.features.map((f) => (
+                    <li key={f} className="flex items-start gap-3">
+                      <svg className="w-5 h-5 flex-shrink-0 mt-0.5 text-asp-blue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm text-white/85 leading-relaxed">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </ScrollReveal>
+
           <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {ENTRY_PRODUCTS.map((p) => (
                 <div
                   key={p.name}
