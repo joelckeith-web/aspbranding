@@ -30,6 +30,7 @@ const GROWTH_PACKAGES = [
   { value: "foundation", label: "Foundation — $2,500/mo" },
   { value: "growth", label: "Growth — $3,850/mo" },
   { value: "premier", label: "Premier Partnership — custom" },
+  { value: "website-aeo", label: "Website + AEO — $1,250/mo" },
   { value: "local-seo-pro", label: "Local SEO Pro — $1,200/mo" },
   { value: "content-package", label: "Content Creation Package — $499/mo" },
   { value: "fractional", label: "Fractional C-Suite — custom" },

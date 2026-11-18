@@ -56,6 +56,15 @@ const TIERS = [
 
 const ENTRY_PRODUCTS = [
   {
+    name: "Website + AEO",
+    price: "$1,250",
+    period: "/ month",
+    oneLiner: "A new website built for AI search, kept current every month.",
+    body: "Custom 10-page website build, two blog posts a month, AEO rankings tracked in Google's AI Overviews, and a monthly performance report.",
+    ctaLabel: "Ask about this package",
+    href: "/contact?topic=website-aeo",
+  },
+  {
     name: "Local SEO Pro",
     price: "$1,200",
     period: "/ month",
@@ -246,7 +255,7 @@ export function PricingCards({
           </ScrollReveal>
 
           <ScrollReveal animation="stagger">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {ENTRY_PRODUCTS.map((p) => (
                 <div
                   key={p.name}
