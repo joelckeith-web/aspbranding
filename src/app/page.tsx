@@ -8,7 +8,6 @@ import { HCPPartnership } from "@/components/sections/HCPPartnership";
 import { PricingCards } from "@/components/sections/PricingCards";
 import { WhyChoose } from "@/components/sections/WhyChoose";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { TestimonialAnchor } from "@/components/sections/TestimonialAnchor";
 import { PortfolioShowcase } from "@/components/sections/PortfolioShowcase";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -98,9 +97,6 @@ export default function HomePage() {
 
       {/* 12. FAQ — LIGHT */}
       <FAQSection />
-
-      {/* 13. Anchor testimonial — dark, near-bottom prominence */}
-      <TestimonialAnchor quote="A game-changer for my business." />
 
       {/* 14. Final CTA */}
       <ConsultationCTA />

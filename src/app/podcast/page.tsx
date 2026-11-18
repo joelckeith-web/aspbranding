@@ -492,7 +492,10 @@ export default function PodcastPage() {
         ]}
       />
 
-      <TestimonialAnchor quote="A game-changer for my business." />
+      <TestimonialAnchor
+        quote="You&apos;re instrumental in what my business does."
+        attribution="Brian D."
+      />
 
       <ConsultationCTA />
     </main>
