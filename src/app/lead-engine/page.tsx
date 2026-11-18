@@ -33,9 +33,11 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-// Every home service review, quotes verbatim, first names only. Tray G. is a
-// law firm, so he stays off a page sold to home service owners.
-const REVIEWS = testimonials.filter((t) => t.firstName !== "Tray G.");
+// Every home service review, first names only. Reviewers from outside home
+// services (law, recovery, design, agencies) stay off a page sold to home
+// service owners.
+const NOT_HOME_SERVICE = ["Tray G.", "Jenna C.", "Laura M.", "Scott S.", "Chelsea O.", "Ryan E."];
+const REVIEWS = testimonials.filter((t) => !NOT_HOME_SERVICE.includes(t.firstName));
 
 // Proof, labeled by what the number measures — never by trade or client name.
 const PROOF = [
