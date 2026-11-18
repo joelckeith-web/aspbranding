@@ -5,9 +5,19 @@
 export const REPLAY = {
   /** YouTube video ID once the replay is uploaded. null = "coming soon" frame. */
   youtubeId: null as string | null,
+  /** Date the replay went up (YYYY-MM-DD), for the VideoObject schema. */
+  uploadDate: null as string | null,
   /** Timestamps for "in case you missed this part". Empty = section hidden. */
   chapters: [] as { time: string; seconds: number; label: string }[],
+  /** Cleaned transcript, one entry per paragraph. Empty = dropdown hidden. */
+  transcript: [] as { time?: string; speaker: string; text: string }[],
 };
+
+/** Search engines may index the page only once the video and transcript are
+ *  both in. Until then it stays noindex and out of the sitemap. Either way it
+ *  is never linked from the nav or any other page: direct URL only. */
+export const REPLAY_PATH = "/webinar/ai-search/replay";
+export const replayIndexable = () => Boolean(REPLAY.youtubeId && REPLAY.uploadDate && REPLAY.transcript.length > 0);
 
 const AUDIT_BASE = "https://calendly.com/joel-keith-asp/free-30-minute-ai-search-audit";
 
@@ -37,6 +47,7 @@ export const REPLAY_COPY = {
     kitButton: "Get the free audit kit",
   },
   chapters: { header: "Jump to a part" },
+  transcript: { summary: "Read the full transcript" },
   hosts: { header: "Who you'll hear from" },
   finalCta: {
     header: "See what AI says about your business",

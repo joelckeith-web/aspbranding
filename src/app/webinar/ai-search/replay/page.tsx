@@ -1,17 +1,71 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { REPLAY, REPLAY_COPY, auditBookingUrl } from "@/lib/webinar-replay";
+import { REPLAY, REPLAY_COPY, REPLAY_PATH, auditBookingUrl, replayIndexable } from "@/lib/webinar-replay";
+import { BUSINESS } from "@/lib/constants";
 
-// Ungated workshop replay. NOT in the sitemap or nav; noindex. Traffic comes
-// from the follow-up emails ({{REPLAY_LINK}}) and the newsletter.
+// Ungated workshop replay. Direct URL only: never linked from the nav or any
+// page. Traffic comes from the follow-up emails ({{REPLAY_LINK}}) and the
+// newsletter. Indexable (and in the sitemap) only once the video and the
+// transcript are in, so the transcript can earn search and AI-answer value.
 const copy = REPLAY_COPY;
 
 export const metadata: Metadata = {
   title: copy.meta.title,
   description: copy.meta.description,
-  robots: { index: false, follow: false },
+  alternates: { canonical: `${BUSINESS.url}${REPLAY_PATH}` },
+  robots: replayIndexable() ? { index: true, follow: true } : { index: false, follow: false },
 };
+
+function VideoSchema() {
+  if (!replayIndexable()) return null;
+  const json = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: copy.meta.title,
+    description: copy.meta.description,
+    thumbnailUrl: `https://i.ytimg.com/vi/${REPLAY.youtubeId}/maxresdefault.jpg`,
+    uploadDate: REPLAY.uploadDate,
+    embedUrl: `https://www.youtube.com/embed/${REPLAY.youtubeId}`,
+    contentUrl: `https://www.youtube.com/watch?v=${REPLAY.youtubeId}`,
+    transcript: REPLAY.transcript.map((p) => `${p.speaker}: ${p.text}`).join("\n"),
+    publisher: { "@type": "Organization", name: BUSINESS.name, url: BUSINESS.url },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(json).replace(/</g, "\\u003c") }}
+    />
+  );
+}
+
+function Transcript() {
+  return (
+    <details className="group mt-6 rounded-[var(--radius-asp-xl)] bg-white/5 ring-1 ring-white/10">
+      <summary className="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-bold text-lg text-white">
+        {copy.transcript.summary}
+        <span
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-transform group-open:rotate-45"
+          aria-hidden="true"
+        >
+          +
+        </span>
+      </summary>
+      <div className="max-h-[32rem] overflow-y-auto border-t border-white/10 px-6 py-5 space-y-4">
+        {REPLAY.transcript.length === 0 ? (
+          <p className="text-white/60">The transcript goes up here with the replay.</p>
+        ) : (
+          REPLAY.transcript.map((p, i) => (
+            <p key={i} className="text-white/75 leading-relaxed">
+              {p.time && <span className="mr-2 font-semibold text-asp-blue-light tabular-nums">{p.time}</span>}
+              <span className="font-semibold text-white">{p.speaker}:</span> {p.text}
+            </p>
+          ))
+        )}
+      </div>
+    </details>
+  );
+}
 
 const HERO_BG = "/images/backgrounds/hero-chatgpt-laptop.jpg";
 const PARTNER_LOGO = "/images/webinar/ai-for-founders.png";
@@ -59,6 +113,7 @@ function BookButton({ content, className = "" }: { content: string; className?: 
 export default function WebinarReplay() {
   return (
     <main className="bg-asp-black">
+      <VideoSchema />
       {/* HERO + VIDEO. The booking ask sits directly under the player. */}
       <section className="relative isolate overflow-hidden bg-asp-black text-white">
         <Image src={HERO_BG} alt="" fill priority sizes="100vw" className="-z-20 object-cover opacity-25" />
@@ -94,6 +149,8 @@ export default function WebinarReplay() {
                 </a>
               </div>
             </div>
+
+            <Transcript />
           </div>
         </div>
       </section>

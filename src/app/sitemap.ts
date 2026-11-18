@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog/posts";
 import { getPublishedTradePages, tradePageUrl, type TradePageKind } from "@/lib/trade-pages";
+import { REPLAY, REPLAY_PATH, replayIndexable } from "@/lib/webinar-replay";
 
 const BASE = "https://www.aspbranding.com";
 
@@ -76,5 +77,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ? [{ url: `${BASE}/industries`, lastModified: now, changeFrequency: "monthly", priority: 0.8 }]
     : [];
 
-  return [...staticEntries, ...industriesIndex, ...tradeEntries, ...blogEntries];
+  // Webinar replay: listed for search engines only once its video and
+  // transcript are in. It is never linked from the nav or any page.
+  const replayEntry: MetadataRoute.Sitemap =
+    replayIndexable() && REPLAY.uploadDate
+      ? [{ url: `${BASE}${REPLAY_PATH}`, lastModified: new Date(REPLAY.uploadDate), changeFrequency: "yearly", priority: 0.5 }]
+      : [];
+
+  return [...staticEntries, ...industriesIndex, ...tradeEntries, ...blogEntries, ...replayEntry];
 }
