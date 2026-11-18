@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { REPLAY, REPLAY_COPY, REPLAY_PATH, auditBookingUrl, replayIndexable } from "@/lib/webinar-replay";
 import { BUSINESS } from "@/lib/constants";
+import { Newsletter } from "@/components/sections/Newsletter";
 
 // Ungated workshop replay. Direct URL only: never linked from the nav or any
 // page. Traffic comes from the follow-up emails ({{REPLAY_LINK}}) and the
@@ -188,12 +189,14 @@ export default function WebinarReplay() {
             <h2 className="font-black text-2xl md:text-3xl text-asp-blue mb-8 text-center">{copy.hosts.header}</h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {[
-                { name: "Ryan Estes", role: "Host · AI for Founders", photo: "/images/webinar/ryan-estes.webp" },
-                { name: "Joel Keith", role: "Guest · CEO, ASP", photo: "/images/webinar/joel-keith.webp" },
+                // Ryan's source file has its own circle baked in, so the replay
+                // uses a square crop of his face (ryan-estes-face.webp).
+                { name: "Ryan Estes", role: "Host · AI for Founders", photo: "/images/webinar/ryan-estes-face.webp", fit: "object-cover" },
+                { name: "Joel Keith", role: "Guest · CEO, ASP", photo: "/images/webinar/joel-keith.webp", fit: "object-cover object-top" },
               ].map((h) => (
                 <div key={h.name} className="flex items-center gap-5 rounded-[var(--radius-asp-xl)] bg-white p-5 border border-gray-200 shadow-asp-sm">
                   <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full bg-gray-200">
-                    <Image src={h.photo} alt={h.name} fill sizes="80px" className="object-cover object-top" />
+                    <Image src={h.photo} alt={h.name} fill sizes="80px" className={h.fit} />
                   </div>
                   <div>
                     <p className="font-black text-xl text-asp-blue leading-tight">{h.name}</p>
@@ -205,6 +208,9 @@ export default function WebinarReplay() {
           </ScrollReveal>
         </div>
       </section>
+
+      {/* NEWSLETTER — the homepage signup, tagged so replay signups show apart. */}
+      <Newsletter source="webinar-replay" />
 
       {/* CLOSING CTA */}
       <section className="relative py-16 md:py-20 bg-asp-black text-white">

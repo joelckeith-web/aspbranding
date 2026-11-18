@@ -16,7 +16,7 @@ declare global {
 
 const RECAPTCHA_ACTION = "newsletter_submit";
 
-export function Newsletter() {
+export function Newsletter({ source = "homepage-newsletter" }: { source?: string } = {}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
@@ -101,7 +101,7 @@ export function Newsletter() {
         body: JSON.stringify({
           name,
           email,
-          source: "homepage-newsletter",
+          source,
           recaptchaToken,
           recaptchaAction: RECAPTCHA_ACTION,
           formTime,
