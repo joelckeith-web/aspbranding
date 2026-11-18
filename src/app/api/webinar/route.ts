@@ -9,6 +9,7 @@ import { clientIp, resolveFbc, sendMetaEvent } from "@/lib/meta-capi";
 import { isTestLead } from "@/lib/test-lead";
 import { WEBINAR, WEBINAR_NAME, REVENUE_RANGES, fillDate } from "@/lib/webinar";
 import { WEBINAR_COPY } from "@/app/webinar/copy";
+import { calendarLinksHtml } from "@/lib/webinar-calendar";
 
 // Registration handler for the live webinar. Same defense stack as
 // /api/frameworks (honeypot → keyword filter → time-gate → reCAPTCHA → AI
@@ -110,9 +111,14 @@ export async function POST(request: Request) {
 
     // --- Confirmation email. This is the promise made on the page. ---
     const mail = WEBINAR_COPY.confirmationEmail;
+    // The add-to-calendar line goes right under the When / Zoom paragraph.
+    const calendarLine = calendarLinksHtml();
     const paragraphs = fillTokens(mail.body)
       .split(/\n{2,}/)
-      .map((p) => `<p>${esc(p).replace(/\n/g, "<br/>")}</p>`)
+      .map((p) => {
+        const html = `<p>${esc(p).replace(/\n/g, "<br/>")}</p>`;
+        return p.startsWith("When:") ? html + calendarLine : html;
+      })
       .join("");
     const delivery = await sendMail({
       to: email,
