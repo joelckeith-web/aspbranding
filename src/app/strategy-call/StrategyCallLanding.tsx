@@ -38,6 +38,17 @@ export type StrategyCallCopy = {
   dashboardAlt?: string;
   dashboardCaption?: string;
   steps?: { step: string; title: string; body: string }[];
+  // Optional overrides (AEO page, 2026-11-19). Every default keeps the
+  // original pages exactly as they were.
+  ctaLabel?: string;
+  faqEyebrow?: string;
+  successHref?: string;
+  revenueOptions?: { value: string; label: string }[];
+  consentText?: string;
+  stepsHeading?: string;
+  problem?: { eyebrow: string; heading: string; paras: string[]; hideDashboard?: boolean };
+  ownership?: { eyebrow: string; heading: string; paras: string[]; image?: { src: string; alt: string; caption?: string } };
+  talk?: { heading: string; paras: string[] };
   // Joel's talking-head video, shown right below the proof numbers.
   video?: {
     id: string;
@@ -253,7 +264,12 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               </h1>
             </div>
             <div id="apply" className="scroll-mt-24 lg:col-start-2 lg:row-start-1 lg:row-span-2">
-              <StrategyCallForm title="Apply for a strategy call" successHref="/strategy-call/booked" />
+              <StrategyCallForm
+                title={copy.ctaLabel ?? "Apply for a strategy call"}
+                successHref={copy.successHref ?? "/strategy-call/booked"}
+                revenueOptions={copy.revenueOptions}
+                consentText={copy.consentText}
+              />
             </div>
             <div className="mt-5 lg:mt-0 lg:col-start-1 lg:row-start-2">
               <p className="text-white/75 text-lg leading-relaxed">
@@ -305,7 +321,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                   </li>
                 ))}
               </ul>
-              <ApplyCTA align="left" />
+              <ApplyCTA label={copy.ctaLabel} align="left" />
             </div>
             <div className="lg:col-span-7">
               <YouTubeFacade
@@ -357,7 +373,27 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
         </div>
       </section>
 
-      {/* The problem — copy left, real dashboard right */}
+      {/* The problem — copy left, real dashboard right. A page may replace the
+          copy and drop the dashboard (AEO page). */}
+      {copy.problem?.hideDashboard ? (
+        <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
+          <ImageWash src="/images/backgrounds/team-at-work.jpg" position="center 40%" />
+          <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <ScrollReveal>
+              <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                {copy.problem.eyebrow}
+              </span>
+              <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">{copy.problem.heading}</h2>
+              {copy.problem.paras.map((p) => (
+                <p key={p} className="text-white/75 text-lg leading-relaxed mb-5">
+                  {p}
+                </p>
+              ))}
+              <ApplyCTA label={copy.ctaLabel} />
+            </ScrollReveal>
+          </div>
+        </section>
+      ) : (
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-black text-white overflow-hidden">
         <ImageWash src="/images/backgrounds/team-at-work.jpg" position="center 40%" />
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
@@ -385,6 +421,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
           </div>
         </div>
       </section>
+      )}
 
       {/* How it works */}
       <section className="relative py-14 md:py-16 lg:py-20 bg-asp-surface-navy text-white overflow-hidden">
@@ -396,7 +433,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                 How it works
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl">
-                Tracking first, then the marketing on top.
+                {copy.stepsHeading ?? "Tracking first, then the marketing on top."}
               </h2>
             </div>
           </ScrollReveal>
@@ -415,7 +452,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                 </div>
               ))}
             </div>
-            <ApplyCTA />
+            <ApplyCTA label={copy.ctaLabel} />
           </ScrollReveal>
         </div>
       </section>
@@ -437,7 +474,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
               <QcInterview />
             </div>
           </ScrollReveal>
-          <ApplyCTA />
+          <ApplyCTA label={copy.ctaLabel} />
         </div>
       </section>
 
@@ -498,6 +535,34 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
         <div className="relative z-10 max-w-[var(--spacing-wide)] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             <ScrollReveal>
+              {copy.ownership ? (
+                <>
+                  <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
+                    {copy.ownership.eyebrow}
+                  </span>
+                  <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-6 leading-tight">{copy.ownership.heading}</h2>
+                  {copy.ownership.paras.map((p) => (
+                    <p key={p} className="text-white/75 text-lg leading-relaxed mb-5">
+                      {p}
+                    </p>
+                  ))}
+                  {copy.ownership.image && (
+                    <figure className="mt-6">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={copy.ownership.image.src}
+                        alt={copy.ownership.image.alt}
+                        loading="lazy"
+                        className="block w-full h-auto rounded-[var(--radius-asp-xl)]"
+                      />
+                      {copy.ownership.image.caption && (
+                        <figcaption className="text-white/50 text-xs mt-3">{copy.ownership.image.caption}</figcaption>
+                      )}
+                    </figure>
+                  )}
+                </>
+              ) : (
+                <>
               <span className="inline-block font-bold text-xs uppercase tracking-widest text-asp-blue-light mb-4">
                 What you own
               </span>
@@ -518,6 +583,8 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                 <Check />
                 ASP is an official Housecall Pro Affiliate Partner.
               </p>
+                </>
+              )}
             </ScrollReveal>
             <ScrollReveal>
               <div className="rounded-[var(--radius-asp-xl)] border border-white/10 bg-white/[0.04] overflow-hidden shadow-[0_24px_60px_-20px_rgba(0,0,0,0.9)]">
@@ -549,7 +616,7 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
         </div>
       </section>
 
-      <FAQSection items={copy.faqs} eyebrow="Before you apply" heading="Common questions." compact />
+      <FAQSection items={copy.faqs} eyebrow={copy.faqEyebrow ?? "Before you apply"} heading="Common questions." compact />
 
       {/* Who you'll talk to — Joel's photo, then back up to the hero form */}
       <section className="relative py-14 md:py-16 lg:py-24 bg-asp-surface-navy text-white overflow-hidden">
@@ -582,8 +649,16 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                 Who you&apos;ll talk to
               </span>
               <h2 className="font-black text-3xl md:text-4xl 2xl:text-5xl mb-5 leading-tight">
-                You&apos;ll talk to Joel.
+                {copy.talk?.heading ?? "You'll talk to Joel."}
               </h2>
+              {copy.talk ? (
+                copy.talk.paras.map((p) => (
+                  <p key={p} className="text-white/75 text-lg leading-relaxed mb-5">
+                    {p}
+                  </p>
+                ))
+              ) : (
+                <>
               <p className="text-white/75 text-lg leading-relaxed mb-5">
                 Joel Keith is a partner at ASP. He runs every sales call himself, along with every
                 client relationship.
@@ -592,7 +667,9 @@ export function StrategyCallLanding({ copy }: { copy: StrategyCallCopy }) {
                 A strategy call is a sales conversation with Joel to see if we&apos;re a fit. Fill out
                 the short application, then pick a time on his calendar.
               </p>
-              <ApplyCTA align="left" />
+                </>
+              )}
+              <ApplyCTA label={copy.ctaLabel} align="left" />
             </ScrollReveal>
           </div>
         </div>

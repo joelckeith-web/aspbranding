@@ -39,9 +39,15 @@ const CONSENT_TEXT =
 export function StrategyCallForm({
   title,
   successHref,
+  revenueOptions = REVENUE_OPTIONS,
+  consentText = CONSENT_TEXT,
 }: {
   title: string;
   successHref: string;
+  /** Per-page revenue bands; defaults to the standard strategy-call set. */
+  revenueOptions?: { value: string; label: string }[];
+  /** Per-page consent wording; recorded exactly as shown. */
+  consentText?: string;
 }) {
   const [step, setStep] = useState<1 | 2>(1);
   const [revenue, setRevenue] = useState("");
@@ -111,7 +117,7 @@ export function StrategyCallForm({
     if (fbc) payload.fbc = fbc;
 
     payload.marketingConsent = consent ? "Yes" : "No";
-    payload.consentText = CONSENT_TEXT;
+    payload.consentText = consentText;
     payload.consentAt = new Date().toISOString();
 
     if (recaptchaSiteKey && window.grecaptcha?.enterprise) {
@@ -185,7 +191,7 @@ export function StrategyCallForm({
           <fieldset>
             <legend className="font-bold text-gray-900 mb-3">What&apos;s your company&apos;s annual revenue?</legend>
             <div className="grid grid-cols-1 gap-2">
-              {REVENUE_OPTIONS.map((o) => (
+              {revenueOptions.map((o) => (
                 <button
                   key={o.value}
                   type="button"
@@ -221,7 +227,7 @@ export function StrategyCallForm({
                 className="w-4 h-4 mt-0.5 shrink-0 rounded border-gray-300 accent-asp-blue"
               />
               <span>
-                {CONSENT_TEXT} See our{" "}
+                {consentText} See our{" "}
                 <a href="/privacy-policy" className="underline hover:text-asp-blue">
                   Privacy Policy
                 </a>{" "}
