@@ -121,7 +121,10 @@ const AEO_COPY: StrategyCallCopy = {
       a: "An outdoor living company in Austin had about $500,000 in pipeline of new work within its first 90 days, from ChatGPT and Google's AI Overviews. An HVAC company in Washington has customers who say they asked AI and his company came up. These are results for two companies, not a promise of what yours will see.",
     },
     // The lead-tracing FAQ describes the Growth System, not this program.
-    ...DEFAULT_COPY.faqs.filter((f) => f.q !== "What can you track and what can't you?"),
+    // The account-ownership FAQ names ad accounts, which this program doesn't include.
+    ...DEFAULT_COPY.faqs.filter(
+      (f) => f.q !== "What can you track and what can't you?" && f.q !== "Do I own my accounts?",
+    ),
   ],
   reviewsNote: "Reviews from ASP clients across industries.",
 };
