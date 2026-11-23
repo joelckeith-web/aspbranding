@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Google and AI search rarely surface the same websites for local searches</title>
+<desc id="d">Bar chart: overlap between Google and GPT-4o search preview for local searches was 20.6% home cleaning, 17.1% roofing, 15.4% tax prep, 11.9% dentists, 2.5% auto repair, 0.1% IT support.</desc>
+<rect width="800" height="470" fill="#ffffff"/>
+<text x="40" y="44" font-size="21" font-weight="700" fill="#002366">Google and AI search rarely surface the same websites for local searches</text>
+<line x1="190.0" y1="92" x2="190.0" y2="356" stroke="#eef0f3"/>
+<text x="190.0" y="376" font-size="11.5" fill="#6b7280" text-anchor="middle">0%</text>
+<line x1="296.0" y1="92" x2="296.0" y2="356" stroke="#eef0f3"/>
+<text x="296.0" y="376" font-size="11.5" fill="#6b7280" text-anchor="middle">5%</text>
+<line x1="402.0" y1="92" x2="402.0" y2="356" stroke="#eef0f3"/>
+<text x="402.0" y="376" font-size="11.5" fill="#6b7280" text-anchor="middle">10%</text>
+<line x1="508.0" y1="92" x2="508.0" y2="356" stroke="#eef0f3"/>
+<text x="508.0" y="376" font-size="11.5" fill="#6b7280" text-anchor="middle">15%</text>
+<line x1="614.0" y1="92" x2="614.0" y2="356" stroke="#eef0f3"/>
+<text x="614.0" y="376" font-size="11.5" fill="#6b7280" text-anchor="middle">20%</text>
+<line x1="720.0" y1="92" x2="720.0" y2="356" stroke="#eef0f3"/>
+<text x="720.0" y="376" font-size="11.5" fill="#6b7280" text-anchor="middle">25%</text>
+<text x="178" y="120" font-size="13.5" fill="#111827" text-anchor="end" font-weight="600">Home cleaning</text>
+<rect x="190" y="100" width="436.7" height="30" rx="4" fill="#1E5BD8"/>
+<text x="634.7" y="120" font-size="13" font-weight="600" fill="#111827">20.6%</text>
+<text x="178" y="164" font-size="13.5" fill="#111827" text-anchor="end" font-weight="600">Roofing</text>
+<rect x="190" y="144" width="362.5" height="30" rx="4" fill="#1E5BD8"/>
+<text x="560.5" y="164" font-size="13" font-weight="600" fill="#111827">17.1%</text>
+<text x="178" y="208" font-size="13.5" fill="#111827" text-anchor="end">Tax preparation</text>
+<rect x="190" y="188" width="326.5" height="30" rx="4" fill="#aab6cc"/>
+<text x="524.5" y="208" font-size="13" font-weight="600" fill="#111827">15.4%</text>
+<text x="178" y="252" font-size="13.5" fill="#111827" text-anchor="end">Dentists</text>
+<rect x="190" y="232" width="252.3" height="30" rx="4" fill="#aab6cc"/>
+<text x="450.3" y="252" font-size="13" font-weight="600" fill="#111827">11.9%</text>
+<text x="178" y="296" font-size="13.5" fill="#111827" text-anchor="end">Auto repair</text>
+<rect x="190" y="276" width="53.0" height="30" rx="4" fill="#aab6cc"/>
+<text x="251.0" y="296" font-size="13" font-weight="600" fill="#111827">2.5%</text>
+<text x="178" y="340" font-size="13.5" fill="#111827" text-anchor="end">IT support</text>
+<rect x="190" y="320" width="2.1" height="30" rx="4" fill="#aab6cc"/>
+<text x="200.1" y="340" font-size="13" font-weight="600" fill="#111827">0.1%</text>
+<text x="455" y="398" font-size="13" font-weight="600" fill="#374151" text-anchor="middle">Domain overlap between Google and GPT-4o search preview (%)</text>
+<text x="40" y="428" font-size="11.5" fill="#6b7280">Share of website domains that both Google and GPT-4o search preview surfaced for local service searches, by category.</text>
+<text x="40" y="444" font-size="11.5" fill="#6b7280">Home cleaning was the highest overlap measured. Source: University of Toronto, 2025, arXiv preprint 2509.08919 (not</text>
+<text x="40" y="460" font-size="11.5" fill="#6b7280">peer reviewed).</text>
+</svg>

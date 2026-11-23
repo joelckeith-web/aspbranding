@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Where your Google reviews show up</title>
+<desc id="d">Diagram: Google Business Profile reviews count toward map pack ranking and Local Services Ads ranking; service-business reviews can include the job type.</desc>
+<rect width="800" height="470" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" font-weight="700" fill="#002366">Where your Google reviews show up</text>
+<rect x="40" y="190" width="200" height="80" rx="10" fill="#1E5BD8"/>
+<text x="140" y="225" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Your Google Business</text>
+<text x="140" y="245" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Profile reviews</text>
+<path d="M240 230 C 280 230, 280 129.0, 320 129.0" fill="none" stroke="#9ca3af" stroke-width="2"/>
+<path d="M320 129.0 l-8 -5 v10 z" fill="#9ca3af"/>
+<rect x="322" y="80" width="438" height="98" rx="10" fill="#f5f7fb" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="338" y="104" font-size="14" font-weight="700" fill="#111827">Map pack</text>
+<text x="338" y="126" font-size="12" fill="#1f2937">“More reviews and positive ratings can help your business’s</text>
+<text x="338" y="143" font-size="12" fill="#1f2937">local ranking.”</text>
+<path d="M240 230 C 280 230, 280 241.0, 320 241.0" fill="none" stroke="#9ca3af" stroke-width="2"/>
+<path d="M320 241.0 l-8 -5 v10 z" fill="#9ca3af"/>
+<rect x="322" y="192" width="438" height="98" rx="10" fill="#f5f7fb" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="338" y="216" font-size="14" font-weight="700" fill="#111827">Local Services Ads</text>
+<text x="338" y="238" font-size="12" fill="#1f2937">“Star ratings and number of reviews affect how your business</text>
+<text x="338" y="255" font-size="12" fill="#1f2937">is ranked within Local Services Ads.”</text>
+<path d="M240 230 C 280 230, 280 353.0, 320 353.0" fill="none" stroke="#9ca3af" stroke-width="2"/>
+<path d="M320 353.0 l-8 -5 v10 z" fill="#9ca3af"/>
+<rect x="322" y="304" width="438" height="98" rx="10" fill="#f5f7fb" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="338" y="328" font-size="14" font-weight="700" fill="#111827">Service-business reviews</text>
+<text x="338" y="350" font-size="12" fill="#1f2937">“Customers may be asked to identify what tasks your business</text>
+<text x="338" y="367" font-size="12" fill="#1f2937">performed.”</text>
+<text x="338" y="390" font-size="11.5" fill="#6b7280">Aspect ratings: “only certain service businesses”</text>
+<text x="40" y="428" font-size="11" fill="#6b7280">Illustrative. Labels quoted from Google help pages checked November 23, 2026.</text>
+<text x="40" y="444" font-size="11" fill="#6b7280">Google says there is no way to pay for a better local ranking.</text>
+</svg>

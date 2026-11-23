@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Where your business can appear inside an AI answer</title>
+<desc id="d">Two-by-two table: Google AI answers and ChatGPT, each with an earned spot (citation or link) and a paid spot (sponsored ad), with the rule for each.</desc>
+<rect width="800" height="470" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" font-weight="700" fill="#002366">Where your business can appear inside an AI answer</text>
+<rect x="210" y="70" width="270" height="40" rx="8" fill="#9F4CFF"/><text x="345" y="95" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Earned (citation or link)</text>
+<rect x="490" y="70" width="270" height="40" rx="8" fill="#1E5BD8"/><text x="625" y="95" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Paid (sponsored ad)</text>
+<rect x="40" y="120" width="160" height="110" rx="8" fill="#f3f4f6"/>
+<text x="52" y="170" font-size="14" font-weight="700" fill="#111827">Google AI Overviews</text>
+<text x="52" y="190" font-size="14" font-weight="700" fill="#111827">and AI Mode</text>
+<rect x="210" y="120" width="270" height="110" rx="8" fill="#f7f0ff" stroke="#9F4CFF" stroke-width="1.5"/>
+<rect x="490" y="120" width="270" height="110" rx="8" fill="#eef3fd" stroke="#1E5BD8" stroke-width="1.5"/>
+<rect x="40" y="240" width="160" height="110" rx="8" fill="#f3f4f6"/>
+<text x="52" y="290" font-size="14" font-weight="700" fill="#111827">ChatGPT</text>
+<rect x="210" y="240" width="270" height="110" rx="8" fill="#f7f0ff" stroke="#9F4CFF" stroke-width="1.5"/>
+<rect x="490" y="240" width="270" height="110" rx="8" fill="#eef3fd" stroke="#1E5BD8" stroke-width="1.5"/>
+<text x="40" y="382" font-size="12.5" fill="#374151">Google labels these ads “Sponsored” and says paid ads do not influence its organic AI responses.</text>
+<text x="40" y="400" font-size="12.5" fill="#374151">OpenAI says ads do not influence ChatGPT's answers. Local Services Ads stay on Search and Maps.</text>
+<text x="40" y="428" font-size="12" fill="#6b7280">Illustrative summary. Google and OpenAI have published no home-service performance data for ads in AI answers.</text>
+<text x="222" y="150" font-size="12" fill="#1f2937">Supporting link. The page must be</text><text x="222" y="169" font-size="12" fill="#1f2937">indexed and eligible to show in</text><text x="222" y="188" font-size="12" fill="#1f2937">Search with a snippet.</text><text x="502" y="150" font-size="12" fill="#1f2937">Sponsored text and Shopping ads from</text><text x="502" y="169" font-size="12" fill="#1f2937">existing Search, Shopping and</text><text x="502" y="188" font-size="12" fill="#1f2937">Performance Max campaigns. No separate</text><text x="502" y="207" font-size="12" fill="#1f2937">targeting or opt-out.</text><text x="222" y="270" font-size="12" fill="#1f2937">Search answers. Sites that block</text><text x="222" y="289" font-size="12" fill="#1f2937">OAI-SearchBot are not shown in</text><text x="222" y="308" font-size="12" fill="#1f2937">search answers but can still appear</text><text x="222" y="327" font-size="12" fill="#1f2937">as navigational links.</text><text x="502" y="270" font-size="12" fill="#1f2937">Sponsored ads, tested in the U.S. since</text><text x="502" y="289" font-size="12" fill="#1f2937">Feb 2026 on Free and Go. Self-serve</text><text x="502" y="308" font-size="12" fill="#1f2937">Ads Manager in beta since May 2026.</text>
+</svg>

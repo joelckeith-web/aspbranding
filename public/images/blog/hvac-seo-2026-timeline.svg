@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 492" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">What changed for HVAC search, 2025–2026</title>
+<desc id="d">Timeline from Dec 2025 to Nov 2026 showing the end of the 25C credit, Google's AI guide, Google's home repair calls announcement, EPA's May rule, new Search Console AI reports and three core updates.</desc>
+<rect width="800" height="492" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" font-weight="700" fill="#002366">What changed for HVAC search, 2025–2026</text>
+<circle cx="48" cy="76" r="7" fill="#9F4CFF"/><text x="62" y="81" font-size="13" fill="#374151">Google ranking updates</text>
+<circle cx="230" cy="76" r="7" fill="#1E5BD8"/><text x="244" y="81" font-size="13" fill="#374151">Google features and reports</text>
+<circle cx="440" cy="76" r="7" fill="#0f766e"/><text x="454" y="81" font-size="13" fill="#374151">Government rules and credits</text>
+<line x1="150" y1="112" x2="150" y2="406" stroke="#d1d5db" stroke-width="2"/>
+<text x="134" y="127" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Dec 31, 2025</text>
+<circle cx="150" cy="122" r="7" fill="#0f766e" stroke="#fff" stroke-width="2"/>
+<text x="166" y="127" font-size="12.5" fill="#1f2937">Federal 25C credit ends for property placed in service after this date</text>
+<text x="134" y="163" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Mar 27, 2026</text>
+<circle cx="150" cy="158" r="7" fill="#9F4CFF" stroke="#fff" stroke-width="2"/>
+<text x="166" y="163" font-size="12.5" fill="#1f2937" font-weight="600">March 2026 core update</text>
+<text x="134" y="199" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">May 15, 2026</text>
+<circle cx="150" cy="194" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="166" y="199" font-size="12.5" fill="#1f2937">Google publishes its guide to optimizing for generative AI search</text>
+<text x="134" y="235" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">May 19, 2026</text>
+<circle cx="150" cy="230" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="166" y="235" font-size="12.5" fill="#1f2937">Google announces it will call businesses for people in select categories like home repair</text>
+<text x="134" y="271" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">May 21, 2026</text>
+<circle cx="150" cy="266" r="7" fill="#0f766e" stroke="#fff" stroke-width="2"/>
+<text x="166" y="271" font-size="12.5" fill="#1f2937">EPA finalizes refrigerant rule revision</text>
+<circle cx="150" cy="288" r="7" fill="#9F4CFF" stroke="#fff" stroke-width="2"/>
+<text x="166" y="293" font-size="12.5" fill="#1f2937" font-weight="600">May 2026 core update</text>
+<text x="134" y="329" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Jun 3, 2026</text>
+<circle cx="150" cy="324" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="166" y="329" font-size="12.5" fill="#1f2937">Search Console Generative AI performance reports introduced</text>
+<text x="134" y="365" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Aug 31, 2026</text>
+<circle cx="150" cy="360" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="166" y="365" font-size="12.5" fill="#1f2937">AI control and AI reports rolled out to all websites</text>
+<text x="134" y="401" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Nov 10, 2026</text>
+<circle cx="150" cy="396" r="7" fill="#9F4CFF" stroke="#fff" stroke-width="2"/>
+<text x="166" y="401" font-size="12.5" fill="#1f2937" font-weight="600">November 2026 core update begins (still rolling out Nov 23)</text>
+<text x="40" y="436" font-size="11" fill="#6b7280">Sources: Google Search Central, Google Search Console Help, Google's I/O 2026 Search post, Google Search Status Dashboard, EPA, IRS.</text>
+<text x="40" y="452" font-size="11" fill="#6b7280">Spam and Discover updates not shown. Checked November 23, 2026.</text>
+</svg>

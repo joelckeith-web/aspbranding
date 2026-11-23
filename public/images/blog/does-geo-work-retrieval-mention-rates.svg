@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Brands get mentioned far more when the AI's search finds their own site</title>
+<desc id="d">Bars: brand mention rates were 2.8% GPT and 3.8% Gemini when neither the brand nor its site appeared in retrieval, 49.0% and 58.4% with an own-site citation but no branded search, 91.4% and 100% with both.</desc>
+<rect width="800" height="560" fill="#ffffff"/>
+<text x="40" y="44" font-size="21" font-weight="700" fill="#002366">Brands get mentioned far more when the AI's search finds their own site</text>
+<rect x="40" y="62" width="14" height="14" rx="3" fill="#1E5BD8"/><text x="60" y="74" font-size="13" fill="#374151">GPT</text>
+<rect x="110" y="62" width="14" height="14" rx="3" fill="#9F4CFF"/><text x="130" y="74" font-size="13" fill="#374151">Gemini</text>
+<line x1="100" y1="380.0" x2="760" y2="380.0" stroke="#eef0f3"/>
+<text x="92" y="384.0" font-size="11.5" fill="#6b7280" text-anchor="end">0%</text>
+<line x1="100" y1="312.5" x2="760" y2="312.5" stroke="#eef0f3"/>
+<text x="92" y="316.5" font-size="11.5" fill="#6b7280" text-anchor="end">25%</text>
+<line x1="100" y1="245.0" x2="760" y2="245.0" stroke="#eef0f3"/>
+<text x="92" y="249.0" font-size="11.5" fill="#6b7280" text-anchor="end">50%</text>
+<line x1="100" y1="177.5" x2="760" y2="177.5" stroke="#eef0f3"/>
+<text x="92" y="181.5" font-size="11.5" fill="#6b7280" text-anchor="end">75%</text>
+<line x1="100" y1="110.0" x2="760" y2="110.0" stroke="#eef0f3"/>
+<text x="92" y="114.0" font-size="11.5" fill="#6b7280" text-anchor="end">100%</text>
+<text transform="translate(52 245) rotate(-90)" font-size="13" font-weight="600" fill="#374151" text-anchor="middle">Brand mention rate (%)</text>
+<rect x="150.0" y="372.4" width="56" height="7.6" rx="4" fill="#1E5BD8"/>
+<text x="178.0" y="364.4" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">2.8%</text>
+<rect x="214.0" y="369.7" width="56" height="10.3" rx="4" fill="#9F4CFF"/>
+<text x="242.0" y="361.7" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">3.8%</text>
+<text x="210.0" y="402" font-size="12.5" fill="#1f2937" text-anchor="middle">Brand and its site not</text>
+<text x="210.0" y="418" font-size="12.5" fill="#1f2937" text-anchor="middle">in retrieval</text>
+<rect x="370.0" y="247.7" width="56" height="132.3" rx="4" fill="#1E5BD8"/>
+<text x="398.0" y="239.7" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">49.0%</text>
+<rect x="434.0" y="222.3" width="56" height="157.7" rx="4" fill="#9F4CFF"/>
+<text x="462.0" y="214.3" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">58.4%</text>
+<text x="430.0" y="402" font-size="12.5" fill="#1f2937" text-anchor="middle">Own-site citation, no</text>
+<text x="430.0" y="418" font-size="12.5" fill="#1f2937" text-anchor="middle">branded search</text>
+<rect x="590.0" y="133.2" width="56" height="246.8" rx="4" fill="#1E5BD8"/>
+<text x="618.0" y="125.2" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">91.4%</text>
+<rect x="654.0" y="110.0" width="56" height="270.0" rx="4" fill="#9F4CFF"/>
+<text x="682.0" y="102.0" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">100%</text>
+<text x="650.0" y="402" font-size="12.5" fill="#1f2937" text-anchor="middle">Own-site citation plus</text>
+<text x="650.0" y="418" font-size="12.5" fill="#1f2937" text-anchor="middle">branded search</text>
+<line x1="100" y1="380" x2="760" y2="380" stroke="#9ca3af"/>
+<text x="40" y="462" font-size="11.5" fill="#6b7280">Observational data from 75 anonymized projects in Aiso, a commercial AI-visibility tool: 34,960 unbranded prompt</text>
+<text x="40" y="478" font-size="11.5" fill="#6b7280">observations, June to September 2026. Shows association, not cause. Source: arXiv preprint 2609.23162 (single author,</text>
+<text x="40" y="494" font-size="11.5" fill="#6b7280">who is founder and CEO of the company that makes Aiso; not peer reviewed). 'Branded search' is the paper's 'branded</text>
+<text x="40" y="510" font-size="11.5" fill="#6b7280">fan-out.'</text>
+</svg>

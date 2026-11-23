@@ -7,12 +7,12 @@
 <text x="155.0" y="121" font-size="13" fill="#ffffff" font-weight="700" text-anchor="middle">Documented by the platforms</text>
 <rect x="40" y="148" width="230" height="77" rx="8" fill="#1E5BD8" fill-opacity="0.08" stroke="#1E5BD8" stroke-width="1.2"/>
 <text x="54" y="170.0" font-size="12.5" fill="#111827" font-weight="600">Crawler access</text>
-<text x="54" y="187.5" font-size="11" fill="#6b7280">Googlebot, OAI-SearchBot and</text>
-<text x="54" y="202.5" font-size="11" fill="#6b7280">PerplexityBot allowed</text>
+<text x="54" y="187.5" font-size="11" fill="#6b7280">OAI-SearchBot and PerplexityBot</text>
+<text x="54" y="202.5" font-size="11" fill="#6b7280">allowed in robots.txt</text>
 <rect x="40" y="233" width="230" height="77" rx="8" fill="#1E5BD8" fill-opacity="0.08" stroke="#1E5BD8" stroke-width="1.2"/>
 <text x="54" y="255.0" font-size="12.5" fill="#111827" font-weight="600">Indexed pages with snippets</text>
-<text x="54" y="272.5" font-size="11" fill="#6b7280">Google's entry rule for AI Overviews</text>
-<text x="54" y="287.5" font-size="11" fill="#6b7280">and AI Mode</text>
+<text x="54" y="272.5" font-size="11" fill="#6b7280">Site set to Include; Google's entry</text>
+<text x="54" y="287.5" font-size="11" fill="#6b7280">rules for AI Overviews and AI Mode</text>
 <rect x="40" y="318" width="230" height="77" rx="8" fill="#1E5BD8" fill-opacity="0.08" stroke="#1E5BD8" stroke-width="1.2"/>
 <text x="54" y="340.0" font-size="12.5" fill="#111827" font-weight="600">Current Business Profile</text>
 <text x="54" y="357.5" font-size="11" fill="#6b7280">Google says it can help in AI</text>
@@ -44,13 +44,13 @@
 <rect x="530" y="148" width="230" height="94" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="6 5"/>
 <text x="544" y="170.0" font-size="12.5" fill="#111827" font-weight="600">Research gains for local</text>
 <text x="544" y="186.5" font-size="12.5" fill="#111827" font-weight="600">businesses</text>
-<text x="544" y="204.0" font-size="11" fill="#6b7280">2023 GEO paper did not report local</text>
-<text x="544" y="219.0" font-size="11" fill="#6b7280">results</text>
+<text x="544" y="204.0" font-size="11" fill="#6b7280">2023 GEO paper tested a general</text>
+<text x="544" y="219.0" font-size="11" fill="#6b7280">benchmark, not local search</text>
 <rect x="530" y="250" width="230" height="94" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="6 5"/>
 <text x="544" y="272.0" font-size="12.5" fill="#111827" font-weight="600">A reliable way to get</text>
 <text x="544" y="288.5" font-size="12.5" fill="#111827" font-weight="600">recommended</text>
-<text x="544" y="306.0" font-size="11" fill="#6b7280">No outside controlled test of a</text>
-<text x="544" y="321.0" font-size="11" fill="#6b7280">profile edit</text>
+<text x="544" y="306.0" font-size="11" fill="#6b7280">OpenAI: claiming &#8220;does not guarantee</text>
+<text x="544" y="321.0" font-size="11" fill="#6b7280">higher placement or sales&#8221;</text>
 <rect x="530" y="352" width="230" height="77" rx="8" fill="#ffffff" fill-opacity="1" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="6 5"/>
 <text x="544" y="374.0" font-size="12.5" fill="#111827" font-weight="600">Guaranteed AI citations</text>
 <text x="544" y="391.5" font-size="11" fill="#6b7280">No platform publishes its</text>

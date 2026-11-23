@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 498" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Where to look when local search results change</title>
+<desc id="d">Table matching five questions about local search changes to the Google report that answers each: Search Console, its AI reports, branded filter, Analytics and settings.</desc>
+<rect width="800" height="498" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" font-weight="700" fill="#002366">Where to look when local search results change</text>
+<rect x="40" y="70" width="720" height="40" rx="6" fill="#1E5BD8"/>
+<text x="50" y="95" font-size="13.5" font-weight="700" fill="#ffffff">What you want to know</text>
+<text x="278" y="95" font-size="13.5" font-weight="700" fill="#ffffff">Where to look</text>
+<text x="506" y="95" font-size="13.5" font-weight="700" fill="#ffffff">What Google says it shows</text>
+<rect x="40" y="110" width="720" height="69" fill="#f5f7fb"/>
+<text x="50" y="131" font-size="12.5" fill="#1f2937" font-weight="600">Did a core update change my</text>
+<text x="50" y="148" font-size="12.5" fill="#1f2937" font-weight="600">organic traffic?</text>
+<text x="278" y="131" font-size="12.5" fill="#1f2937">Search Console performance</text>
+<text x="278" y="148" font-size="12.5" fill="#1f2937">report</text>
+<text x="506" y="131" font-size="12.5" fill="#1f2937">Wait at least a full week after the</text>
+<text x="506" y="148" font-size="12.5" fill="#1f2937">update completes, then compare with</text>
+<text x="506" y="165" font-size="12.5" fill="#1f2937">the week before it began</text>
+<text x="50" y="200" font-size="12.5" fill="#1f2937" font-weight="600">Am I showing up in AI</text>
+<text x="50" y="217" font-size="12.5" fill="#1f2937" font-weight="600">Overviews or AI Mode?</text>
+<text x="278" y="200" font-size="12.5" fill="#1f2937">Search Console generative AI</text>
+<text x="278" y="217" font-size="12.5" fill="#1f2937">reports</text>
+<text x="506" y="200" font-size="12.5" fill="#1f2937">Impressions by pages, countries,</text>
+<text x="506" y="217" font-size="12.5" fill="#1f2937">devices and dates; all sites since Aug</text>
+<text x="506" y="234" font-size="12.5" fill="#1f2937">31, 2026</text>
+<rect x="40" y="248" width="720" height="69" fill="#f5f7fb"/>
+<text x="50" y="269" font-size="12.5" fill="#1f2937" font-weight="600">Are people searching for my</text>
+<text x="50" y="286" font-size="12.5" fill="#1f2937" font-weight="600">company by name, or for the</text>
+<text x="50" y="303" font-size="12.5" fill="#1f2937" font-weight="600">service?</text>
+<text x="278" y="269" font-size="12.5" fill="#1f2937">Branded query filter (Search</text>
+<text x="278" y="286" font-size="12.5" fill="#1f2937">Console / Search Analytics</text>
+<text x="278" y="303" font-size="12.5" fill="#1f2937">API)</text>
+<text x="506" y="269" font-size="12.5" fill="#1f2937">Branded vs non-branded performance,</text>
+<text x="506" y="286" font-size="12.5" fill="#1f2937">eligible properties only</text>
+<text x="50" y="338" font-size="12.5" fill="#1f2937" font-weight="600">Did my calls or bookings drop?</text>
+<text x="278" y="338" font-size="12.5" fill="#1f2937">Business Profile metrics in</text>
+<text x="278" y="355" font-size="12.5" fill="#1f2937">Google Analytics</text>
+<text x="506" y="338" font-size="12.5" fill="#1f2937">Calls, bookings, direction requests</text>
+<text x="506" y="355" font-size="12.5" fill="#1f2937">and more; rolling 6-month window</text>
+<rect x="40" y="369" width="720" height="69" fill="#f5f7fb"/>
+<text x="50" y="390" font-size="12.5" fill="#1f2937" font-weight="600">Am I eligible for AI features</text>
+<text x="50" y="407" font-size="12.5" fill="#1f2937" font-weight="600">at all?</text>
+<text x="278" y="390" font-size="12.5" fill="#1f2937">Search Console settings</text>
+<text x="506" y="390" font-size="12.5" fill="#1f2937">Site must be indexed, snippet-eligible</text>
+<text x="506" y="407" font-size="12.5" fill="#1f2937">and included in Search generative AI</text>
+<text x="506" y="424" font-size="12.5" fill="#1f2937">features</text>
+<text x="40" y="464" font-size="11" fill="#6b7280">A reported Google test removes action buttons from the local pack inside AI Overviews; we found no Google announcement</text>
+<text x="40" y="480" font-size="11" fill="#6b7280">of it (Search Engine Roundtable, Nov 10, 2026).</text>
+</svg>

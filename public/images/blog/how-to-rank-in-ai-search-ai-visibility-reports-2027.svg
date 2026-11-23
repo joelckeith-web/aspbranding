@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Who gives you an AI visibility report (checked November 2026)</title>
+<desc id="d">Table of first-party AI visibility reports: Google Search Console, Bing Webmaster Tools and ChatGPT Business Hub, each with limits, and no Perplexity report found.</desc>
+<rect width="800" height="440" fill="#ffffff"/>
+<text x="40" y="44" font-size="21" font-weight="700" fill="#002366">Who gives you an AI visibility report (checked November 2026)</text>
+<rect x="40" y="70" width="720" height="40" rx="6" fill="#1E5BD8"/>
+<text x="48" y="95" font-size="13" font-weight="700" fill="#ffffff">Platform</text>
+<text x="198" y="95" font-size="13" font-weight="700" fill="#ffffff">First-party report</text>
+<text x="368" y="95" font-size="13" font-weight="700" fill="#ffffff">What it shows</text>
+<text x="548" y="95" font-size="13" font-weight="700" fill="#ffffff">Status and limits</text>
+<rect x="40" y="110" width="720" height="66" fill="#f5f7fb"/>
+<text x="48" y="130" font-size="12" fill="#1f2937" font-weight="600">Google AI Overviews</text>
+<text x="48" y="146" font-size="12" fill="#1f2937" font-weight="600">and AI Mode</text>
+<text x="198" y="130" font-size="12" fill="#1f2937">Search Console:</text>
+<text x="198" y="146" font-size="12" fill="#1f2937">Generative AI</text>
+<text x="198" y="162" font-size="12" fill="#1f2937">performance report</text>
+<text x="368" y="130" font-size="12" fill="#1f2937">Impressions; which pages</text>
+<text x="368" y="146" font-size="12" fill="#1f2937">appear; countries</text>
+<text x="548" y="130" font-size="12" fill="#1f2937">Worldwide since Aug 31, 2026.</text>
+<text x="548" y="146" font-size="12" fill="#1f2937">Impressions only; Google says</text>
+<text x="548" y="162" font-size="12" fill="#1f2937">more metrics will come.</text>
+<text x="48" y="196" font-size="12" fill="#1f2937" font-weight="600">Microsoft Copilot</text>
+<text x="48" y="212" font-size="12" fill="#1f2937" font-weight="600">and Bing AI</text>
+<text x="48" y="228" font-size="12" fill="#1f2937" font-weight="600">summaries</text>
+<text x="198" y="196" font-size="12" fill="#1f2937">Bing Webmaster Tools:</text>
+<text x="198" y="212" font-size="12" fill="#1f2937">AI Performance</text>
+<text x="368" y="196" font-size="12" fill="#1f2937">How often your content is</text>
+<text x="368" y="212" font-size="12" fill="#1f2937">cited; intents including</text>
+<text x="368" y="228" font-size="12" fill="#1f2937">“Local”; Citation Share</text>
+<text x="548" y="196" font-size="12" fill="#1f2937">Preview since Feb 2026,</text>
+<text x="548" y="212" font-size="12" fill="#1f2937">expanded Jun 2026. Topics</text>
+<text x="548" y="228" font-size="12" fill="#1f2937">Portfolio is a beta (Oct 2026);</text>
+<text x="548" y="244" font-size="12" fill="#1f2937">smaller sites may not see it.</text>
+<rect x="40" y="258" width="720" height="82" fill="#f5f7fb"/>
+<text x="48" y="278" font-size="12" fill="#1f2937" font-weight="600">ChatGPT</text>
+<text x="198" y="278" font-size="12" fill="#1f2937">Business Hub</text>
+<text x="198" y="294" font-size="12" fill="#1f2937">(Businesses in ChatGPT)</text>
+<text x="368" y="278" font-size="12" fill="#1f2937">Mentions; website clicks;</text>
+<text x="368" y="294" font-size="12" fill="#1f2937">discovery topics</text>
+<text x="548" y="278" font-size="12" fill="#1f2937">Beta since Nov 10, 2026.</text>
+<text x="548" y="294" font-size="12" fill="#1f2937">Claimed, eligible businesses</text>
+<text x="548" y="310" font-size="12" fill="#1f2937">only; shows data only above</text>
+<text x="548" y="326" font-size="12" fill="#1f2937">activity thresholds.</text>
+<text x="48" y="360" font-size="12" fill="#1f2937" font-weight="600">Perplexity</text>
+<text x="198" y="360" font-size="12" fill="#1f2937">None found</text>
+<text x="368" y="360" font-size="12" fill="#1f2937"></text>
+<text x="548" y="360" font-size="12" fill="#1f2937">No first-party business report</text>
+<text x="548" y="376" font-size="12" fill="#1f2937">found when checked in Nov 2026.</text>
+<text x="40" y="414" font-size="11" fill="#6b7280">Sources: Google Search Console Help; Google, June 2026; Bing Webmaster Blog (Feb, Oct 2026); Bing Search Blog (Jun 2026); OpenAI, Nov 2026.</text>
+<text x="40" y="430" font-size="11" fill="#6b7280">Checked November 23, 2026.</text>
+</svg>

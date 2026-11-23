@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 644" role="img" aria-labelledby="t d" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+<title id="t">Google Search changes that shape local content, 2026</title>
+<desc id="d">Timeline of 2026 Google Search changes: March, May and November core updates, plus AI guidance, booking features and new Search Console and Analytics reports.</desc>
+<rect width="800" height="644" fill="#ffffff"/>
+<text x="40" y="44" font-size="22" font-weight="700" fill="#002366">Google Search changes that shape local content, 2026</text>
+<circle cx="48" cy="74" r="7" fill="#9F4CFF"/><text x="62" y="79" font-size="13" fill="#374151">Ranking updates</text>
+<circle cx="200" cy="74" r="7" fill="#1E5BD8"/><text x="214" y="79" font-size="13" fill="#374151">Features, guidance and measurement</text>
+<line x1="140" y1="108" x2="140" y2="570" stroke="#d1d5db" stroke-width="2"/>
+<text x="124" y="123" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Mar 27 – Apr 8</text>
+<circle cx="140" cy="118" r="7" fill="#9F4CFF" stroke="#fff" stroke-width="2"/>
+<text x="156" y="123" font-size="12.5" fill="#1f2937" font-weight="600">March 2026 core update</text>
+<text x="124" y="157" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">May 19</text>
+<circle cx="140" cy="152" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="157" font-size="12.5" fill="#1f2937">Booking and calls for home repair announced for Search</text>
+<text x="124" y="191" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">May 19</text>
+<circle cx="140" cy="186" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="191" font-size="12.5" fill="#1f2937">U.S. AI Mode searches average 3x the length of a traditional search</text>
+<text x="124" y="225" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">May 21 – Jun 2</text>
+<circle cx="140" cy="220" r="7" fill="#9F4CFF" stroke="#fff" stroke-width="2"/>
+<text x="156" y="225" font-size="12.5" fill="#1f2937" font-weight="600">May 2026 core update</text>
+<text x="124" y="259" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Jun 3</text>
+<circle cx="140" cy="254" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="259" font-size="12.5" fill="#1f2937">AI Overviews 2.5B+ and AI Mode 1B+ monthly users</text>
+<text x="124" y="293" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Jun 8</text>
+<circle cx="140" cy="288" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="293" font-size="12.5" fill="#1f2937">Business Profile calls and bookings in Google Analytics</text>
+<text x="124" y="327" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Jul 10</text>
+<circle cx="140" cy="322" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="327" font-size="12.5" fill="#1f2937">Generative AI search guide last updated (covers non-commodity content and query fan-out)</text>
+<text x="124" y="361" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Aug 31</text>
+<circle cx="140" cy="356" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="361" font-size="12.5" fill="#1f2937">AI feature reports in Search Console for all sites</text>
+<text x="124" y="395" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Oct 1</text>
+<circle cx="140" cy="390" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="395" font-size="12.5" fill="#1f2937">Generative AI content guidance updated</text>
+<text x="124" y="429" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Oct 5</text>
+<circle cx="140" cy="424" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="429" font-size="12.5" fill="#1f2937">Helpful content page last updated (lists effort and originality criteria)</text>
+<text x="124" y="463" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Nov 4</text>
+<circle cx="140" cy="458" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="463" font-size="12.5" fill="#1f2937">AI Mode home services booking links via partners (reported)</text>
+<text x="124" y="497" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Nov 10</text>
+<circle cx="140" cy="492" r="7" fill="#9F4CFF" stroke="#fff" stroke-width="2"/>
+<text x="156" y="497" font-size="12.5" fill="#1f2937" font-weight="600">November 2026 core update begins (not marked complete as of Nov 23)</text>
+<text x="124" y="531" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Nov 12</text>
+<circle cx="140" cy="526" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="531" font-size="12.5" fill="#1f2937">Gemini 4 Hydrogen upgrade to Search</text>
+<text x="124" y="565" font-size="12.5" font-weight="600" fill="#111827" text-anchor="end">Nov 16</text>
+<circle cx="140" cy="560" r="7" fill="#1E5BD8" stroke="#fff" stroke-width="2"/>
+<text x="156" y="565" font-size="12.5" fill="#1f2937">Ask Maps home repair appointments; branded query filter in Search Analytics API</text>
+<text x="40" y="594" font-size="11" fill="#6b7280">Sources: Google Search Status Dashboard, Google Search Central, blog.google, Google Analytics Help; Nov 4 via Search Engine Roundtable.</text>
+<text x="40" y="610" font-size="11" fill="#6b7280">November core update status as of Nov 23, 2026.</text>
+</svg>

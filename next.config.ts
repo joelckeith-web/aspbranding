@@ -53,6 +53,11 @@ const nextConfig: NextConfig = {
       // Legacy WordPress top-level URLs (pre-v4) — 301 to v4 destinations
       // StormFront retired as an offer (Joel 10/28)
       { source: "/stormfront", destination: "/pricing", permanent: true },
+      {
+        source: "/blog/what-google-wants-from-local-content-2026",
+        destination: "/blog/what-google-wants-from-local-content-2027",
+        permanent: true,
+      },
       { source: "/contact-us", destination: "/contact", permanent: true },
       { source: "/services", destination: "/growth-system", permanent: true },
       {
