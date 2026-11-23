@@ -31,7 +31,7 @@ schema:
       answer: "No. Google's guide says structured data isn't required for generative AI search and there's no special schema.org markup you need to add. Google still recommends structured data as part of normal SEO, because it helps with eligibility for rich results in Google Search."
     - question: "What helps a local business show up accurately in AI answers?"
       answer: "The same work that helps local search. Keep your Google Business Profile complete and current, earn reviews steadily, and use one name, address and phone number everywhere. Build service pages that answer real questions from first-hand experience, and make sure your site can be crawled and indexed. None of it comes with a guarantee of an AI mention."
-status: "review"
+status: "published"
 contentPillar: "business-growth-strategy"
 readingTime: "7 min read"
 ---
