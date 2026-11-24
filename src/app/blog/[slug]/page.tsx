@@ -7,7 +7,10 @@ import {
   ArticleSchema,
   FaqSchema,
   BreadcrumbSchema,
+  VideoSchema,
 } from "@/components/blog/SchemaMarkup";
+import { PostVideo } from "@/components/blog/PostVideo";
+import { getTranscript } from "@/lib/blog/transcripts";
 import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog/posts";
 import { siteConfig } from "@/lib/blog/site-config";
 import type { BlogCategory } from "@/lib/blog/types";
@@ -135,12 +138,15 @@ export default async function BlogPostPage({
   const categoryLabel =
     categoryLabels[frontmatter.category] || frontmatter.category;
   const faqItems = frontmatter.schema?.faqItems || [];
+  const video = frontmatter.video?.youtubeId ? frontmatter.video : null;
+  const transcript = video ? getTranscript(post.slug) : null;
 
   return (
     <main id="primary" className="site-main">
       {/* ── Structured Data ── */}
       <ArticleSchema post={post} />
       {faqItems.length > 0 && <FaqSchema faqItems={faqItems} />}
+      {video && <VideoSchema video={video} transcript={transcript} />}
       <BreadcrumbSchema
         items={[
           { name: "Home", url: siteConfig.url },
@@ -212,6 +218,9 @@ export default async function BlogPostPage({
                   dangerouslySetInnerHTML={{ __html: content }}
                 />
               </div>
+
+              {/* ── Video + transcript ── */}
+              {video && <PostVideo video={video} transcript={transcript} />}
 
               {/* ── FAQ Accordion ── */}
               {faqItems.length > 0 && (

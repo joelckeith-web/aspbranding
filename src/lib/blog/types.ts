@@ -61,6 +61,25 @@ export interface BlogFrontmatter {
   status: PostStatus;
   contentPillar: ContentPillar;
   readingTime: string; // e.g. "8 min read"
+  /** Optional YouTube walkthrough shown at the end of the post with its transcript */
+  video?: PostVideo;
+}
+
+/** YouTube video attached to a post. Transcript lives in content/transcripts/{slug}.json */
+export interface PostVideo {
+  youtubeId: string;
+  title: string;
+  description: string;
+  uploadDate: string; // YYYY-MM-DD or full ISO 8601
+  duration: string; // ISO 8601, e.g. "PT11M31S"
+}
+
+/** Transcript section (one per video chapter) */
+export interface TranscriptSection {
+  time: string; // "m:ss"
+  seconds: number;
+  label: string;
+  paragraphs: string[];
 }
 
 /** Full blog post — frontmatter + rendered content */

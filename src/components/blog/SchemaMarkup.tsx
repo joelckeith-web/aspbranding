@@ -1,5 +1,10 @@
 import { siteConfig } from "@/lib/blog/site-config";
-import type { BlogPost, FaqItem } from "@/lib/blog/types";
+import type {
+  BlogPost,
+  FaqItem,
+  PostVideo,
+  TranscriptSection,
+} from "@/lib/blog/types";
 
 // Normalize YYYY-MM-DD or partial dates to an ISO 8601 datetime with a
 // timezone offset. Schema.org / Google Rich Results require full ISO 8601
@@ -71,6 +76,58 @@ export function ArticleSchema({ post }: ArticleSchemaProps) {
       name: "The Sauce — ASP Blog",
       url: siteConfig.blogUrl,
     },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+interface VideoSchemaProps {
+  video: PostVideo;
+  transcript: TranscriptSection[] | null;
+}
+
+/** VideoObject for a post's YouTube walkthrough, including chapters and transcript. */
+export function VideoSchema({ video, transcript }: VideoSchemaProps) {
+  const watchUrl = `https://www.youtube.com/watch?v=${video.youtubeId}`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: video.title,
+    description: video.description,
+    thumbnailUrl: [
+      `https://i.ytimg.com/vi/${video.youtubeId}/maxresdefault.jpg`,
+      `https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`,
+    ],
+    uploadDate: toIso8601(video.uploadDate),
+    duration: video.duration,
+    embedUrl: `https://www.youtube.com/embed/${video.youtubeId}`,
+    url: watchUrl,
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    ...(transcript
+      ? {
+          transcript: transcript
+            .map((s) => s.paragraphs.join(" "))
+            .join("\n\n"),
+          hasPart: transcript.map((s, i) => ({
+            "@type": "Clip",
+            name: s.label,
+            startOffset: s.seconds,
+            ...(transcript[i + 1]
+              ? { endOffset: transcript[i + 1].seconds }
+              : {}),
+            url: `${watchUrl}&t=${s.seconds}s`,
+          })),
+        }
+      : {}),
   };
 
   return (
