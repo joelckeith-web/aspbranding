@@ -35,6 +35,12 @@ schema:
       answer: "Not for Google. Google's generative AI search guide says, \"You don't need to create new machine readable files, AI text files, markup, or Markdown to appear in Google Search (including its generative AI capabilities), as Google Search itself doesn't use them.\" The same guide notes that such files may matter for other services or systems. For Google, your time is better spent on the pages and profile homeowners see."
 status: "published"
 contentPillar: "google-algorithm-updates"
+video:
+  youtubeId: "Rv2keswJBz0"
+  title: "Google Local SEO in 2027: What Google Wants From Home Service Sites"
+  description: "A walkthrough of this post for HVAC, plumbing, roofing and other home service owners: what Google wants from service pages and city pages, how booking and calling are moving into Google's results, and how to measure local content going into 2027."
+  uploadDate: "2026-11-24"
+  duration: "PT11M31S"
 readingTime: "16 min read"
 ---
 
